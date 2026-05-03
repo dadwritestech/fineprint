@@ -1,0 +1,95 @@
+<!-- fineprint snapshot: openai/api-pricing | source: https://developers.openai.com/api/docs/pricing -->
+
+Our latest models
+
+Prices per 1M tokens.
+
+Standard
+
+|  | Short context | Long context |  |  |  |  |
+|---|---|---|---|---|---|---|
+| Model | Input | Cached input | Output | Input | Cached input | Output |
+| gpt-5.5 | $5.00 | $0.50 | $30.00 | $10.00 | $1.00 | $45.00 |
+| gpt-5.5-pro | $30.00 | - | $180.00 | $60.00 | - | $270.00 |
+| gpt-5.4 | $2.50 | $0.25 | $15.00 | $5.00 | $0.50 | $22.50 |
+| gpt-5.4-mini | $0.75 | $0.075 | $4.50 | - | - | - |
+| gpt-5.4-nano | $0.20 | $0.02 | $1.25 | - | - | - |
+| gpt-5.4-pro | $30.00 | - | $180.00 | $60.00 | - | $270.00 |
+
+Regional processing (data residency) endpoints are charged a 10% uplift for `gpt-5.5`, `gpt-5.5-pro`, `gpt-5.4`, `gpt-5.4-mini`, `gpt-5.4-nano`, and `gpt-5.4-pro`. See our Your data guide for supported regions and processing details.
+
+Prices per 1M tokens unless noted.
+
+| Model | Modality | Input | Cached input | Output / cost |
+|---|---|---|---|---|
+| gpt-realtime-1.5 | Audio | $32.00 | $0.40 | $64.00 |
+| Text | $4.00 | $0.40 | $16.00 |  |
+| Image | $5.00 | $0.50 | - |  |
+| gpt-realtime-mini | Audio | $10.00 | $0.30 | $20.00 |
+| Text | $0.60 | $0.06 | $2.40 |  |
+| Image | $0.80 | $0.08 | - |  |
+
+Prices per 1M tokens.
+
+Standard
+
+For image generation cost estimates, use the calculator in the image generation guide.
+
+| Model | Modality | Input | Cached input | Output |
+|---|---|---|---|---|
+| gpt-image-2 | Image | $8.00 | $2.00 | $30.00 |
+| Text | $5.00 | $1.25 | - |  |
+| gpt-image-1.5 | Image | $8.00 | $2.00 | $32.00 |
+| Text | $5.00 | $1.25 | $10.00 |  |
+| gpt-image-1-mini | Image | $2.50 | $0.25 | $8.00 |
+| Text | $2.00 | $0.20 | - |  |
+
+Prices per second.
+
+Standard
+
+| Model | Size | Portrait | Landscape | Price per second |
+|---|---|---|---|---|
+| sora-2 | 720p | 720x1280 | 1280x720 | $0.10 |
+| sora-2-pro | 720p | 720x1280 | 1280x720 | $0.30 |
+| 1024p | 1024x1792 | 1792x1024 | $0.50 |  |
+| 1080p | 1080x1920 | 1920x1080 | $0.70 |  |
+
+Prices per 1M tokens unless noted.
+
+| Model | Use case | Input | Output | Estimated cost |
+|---|---|---|---|---|
+| gpt-4o-transcribe | Transcription | $2.50 | $10.00 | $0.006 / minute |
+| gpt-4o-mini-transcribe | Transcription | $1.25 | $5.00 | $0.003 / minute |
+
+| Tool | Details | Pricing |
+|---|---|---|
+| Web search | Web search (all models) | $10.00 / 1k calls + Search content tokens billed at model rates. |
+| Web search preview (reasoning models, including `gpt-5`, `o-series`) | $10.00 / 1k calls + Search content tokens billed at model rates. |  |
+| Web search preview (non-reasoning models) | $25.00 / 1k calls + Search content tokens are free. |  |
+| Containers | Hosted Shell and Code Interpreter | 1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container |
+| File search | Storage | $0.10 / GB per day (1 GB free) |
+| Tool call | $2.50 / 1k calls |  |
+| Agent Kit | ChatKit file and image upload storage | $0.10 / GB-day after 1 GB free per account per month |
+
+Tokens used for built-in tools are billed at the chosen model's per-token rates. GB refers to binary gigabytes (also known as gibibytes), where 1 GB is 2^30 bytes. Web search content tokens are tokens retrieved from the search index and fed to the model alongside your prompt to generate an answer. For `gpt-4o-mini` and `gpt-4.1-mini` with the non-preview web search tool, search content tokens are billed as a fixed block of 8,000 input tokens per call. File search tool call pricing applies to the Responses API only. Container pricing includes Hosted Shell and Code Interpreter. Eligible container sessions are billed at the full 20-minute session rate. Responses API, Chat Completions API, Realtime API, Batch API, and Assistants API are not priced separately. Tokens are billed at the chosen model's input and output rates.
+
+Prices per 1M tokens.
+
+Standard
+
+| Category | Model | Input | Cached input | Output |
+|---|---|---|---|---|
+| ChatGPT | gpt-5.3-chat-latest | $1.75 | $0.175 | $14.00 |
+| Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
+
+Prices per 1M tokens.
+
+Standard
+
+| Model | Training | Input | Cached input | Output |
+|---|---|---|---|---|
+| o4-mini-2025-04-16 | $100.00 / hour | $4.00 | $1.00 | $16.00 |
+| o4-mini-2025-04-16 with data sharing | $100.00 / hour | $2.00 | $0.50 | $8.00 |
+
+Tokens used for model grading in reinforcement fine-tuning are billed at that model's per-token rate. Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.
