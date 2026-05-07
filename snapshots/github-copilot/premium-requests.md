@@ -85,8 +85,8 @@ Note
 
 - The models included with Copilot plans are subject to change.
 - Model multipliers and costs are subject to change.
-- Discounted multipliers are available for using Copilot auto model selection in Copilot Chat in VS Code. See About Copilot auto model selection.
-  - If you are on a paid Copilot plan and use auto model selection, models qualify for a 10% multiplier discount. For example, Sonnet 4 would be billed at .9x rather than 1x when using auto model selection.
+- Discounted multipliers are available for using Copilot auto model selection. See About Copilot auto model selection.
+  - If you are on a paid Copilot plan and use auto model selection in Copilot Chat, Copilot CLI, or Copilot cloud agent, models qualify for a 10% multiplier discount. For example, Sonnet 4 would be billed at .9x rather than 1x when using auto model selection.
   - Discounted multipliers are not available for Copilot Free.
 
 Each model has a premium request multiplier, based on its complexity and resource usage. If you are on a paid Copilot plan, your premium request allowance is deducted according to this multiplier.
@@ -101,8 +101,7 @@ If you use Copilot Free, you have access to a limited number of models, and each
 | Claude Opus 4.5 | 3 | Not applicable |
 | Claude Opus 4.6 | 3 | Not applicable |
 | Claude Opus 4.6 (fast mode) (preview) | 30 | Not applicable |
-| Claude Opus 4.7 | 7.5 | Not applicable |
-| Claude Sonnet 4 | 1 | Not applicable |
+| Claude Opus 4.7 | 15 | Not applicable |
 | Claude Sonnet 4.5 | 1 | Not applicable |
 | Claude Sonnet 4.6 | 1 | Not applicable |
 | Gemini 2.5 Pro | 1 | Not applicable |
