@@ -21,13 +21,11 @@ No credit card required. Verified students have access to the GitHub Copilot Stu
 
 ### Pro
 
-Most popular
-
 Accelerate workflows with GitHub Copilot.
 
 $10USDper user / month
 
-Temporarily unavailable - read more
+Upgrades are paused as we roll out a flexible billing experience. We know this interrupts your flow and appreciate your patience while we get this right. Learn more
 
 #### Everything in Free and:
 
@@ -45,13 +43,15 @@ Scale with agents and more models.
 
 $39USDper user / month
 
-Temporarily unavailable - read more
+Upgrades are paused as we roll out a flexible billing experience. We know this interrupts your flow and appreciate your patience while we get this right. Learn more
 
 #### Everything in Pro and:
 
 - Access to all models, including Claude Opus 4.7 and more
 - 5× as many premium requests as Pro to use the latest models, with the option to buy more
 - Access to GitHub Spark
+
+Most popular
 
 GitHub Copilot is available on your favorite platforms:
 
