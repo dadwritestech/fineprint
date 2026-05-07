@@ -251,6 +251,7 @@ All Team plan features, plus:
 - Network-level access control
 - IP allowlisting
 - HIPAA-ready offering available
+- Claude Security (beta)
 
 Quiz
 
@@ -289,6 +290,8 @@ Enterprise (sales-assisted)
 #### Claude Code
 
 #### Claude Cowork
+
+#### Claude Security
 
 #### Analyze text and images
 
