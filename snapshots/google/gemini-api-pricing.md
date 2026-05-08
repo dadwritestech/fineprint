@@ -34,6 +34,60 @@ For large-scale deployments with custom needs for security, support, and complia
 
 Contact Sales
 
+## Gemini 3.1 Flash-Lite
+
+`gemini-3.1-flash-lite`
+
+Try it in Google AI Studio
+
+Our most cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.25 (text / image / video) $0.50 (audio) |
+| Output price (including thinking tokens) | Free of charge | $1.50 |
+| Context caching price | Not available | $0.025 (text / image / video) $0.05 (audio) $1.00 / 1,000,000 tokens per hour (storage price) |
+| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
+### Batch
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.125 (text / image / video) $0.25 (audio) |
+| Output price (including thinking tokens) | Free of charge | $0.75 |
+| Context caching price | Not available | $0.0125 (text / image / video) $0.025 (audio) $0.50 / 1,000,000 tokens per hour (storage price) |
+| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
+### Flex
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.125 (text / image / video) $0.25 (audio) |
+| Output price (including thinking tokens) | Free of charge | $0.75 |
+| Context caching price | Not available | $0.0125 (text / image / video) $0.025 (audio) $0.50 / 1,000,000 tokens per hour (storage price) |
+| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
+### Priority
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.45 (text / image / video) $0.90 (audio) |
+| Output price (including thinking tokens) | Free of charge | $2.70 |
+| Context caching price | Not available | $0.045 (text / image / video) $0.09 (audio) $1.80 / 1,000,000 tokens per hour (storage price) |
+| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
+* A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
+
 ## Gemini 3.1 Pro Preview
 
 `gemini-3.1-pro-preview` and `gemini-3.1-pro-preview-customtools`
@@ -60,8 +114,8 @@ The latest performance, intelligence, and usability improvements to the best mod
 | Input price | Not available | $1.00, prompts <= 200k tokens $2.00, prompts > 200k tokens |
 | Output price (including thinking tokens) | Not available | $6.00, prompts <= 200k tokens $9.00, prompts > 200k |
 | Context caching price | Not available | $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search* | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
-| Grounding with Google Maps | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 ### Flex
@@ -71,8 +125,8 @@ The latest performance, intelligence, and usability improvements to the best mod
 | Input price | Not available | $1.00, prompts <= 200k tokens $2.00, prompts > 200k tokens |
 | Output price (including thinking tokens) | Not available | $6.00, prompts <= 200k tokens $9.00, prompts > 200k |
 | Context caching price | Not available | $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search* | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
-| Grounding with Google Maps | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 ### Priority
@@ -246,8 +300,8 @@ Our most intelligent model built for speed, combining frontier intelligence with
 | Input price | Not available | $0.25 (text / image / video) $0.50 (audio) |
 | Output price (including thinking tokens) | Not available | $1.50 |
 | Context caching price | Not available | Same as Standard, Batch pricing not yet implemented  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search* | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
-| Grounding with Google Maps | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 ### Flex
@@ -257,8 +311,8 @@ Our most intelligent model built for speed, combining frontier intelligence with
 | Input price | Not available | $0.25 (text / image / video) $0.50 (audio) |
 | Output price (including thinking tokens) | Not available | $1.50 |
 | Context caching price | Not available | Same as Standard, Batch pricing not yet implemented  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search* | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
-| Grounding with Google Maps | Not available | 5,000 RPD (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 ### Priority
@@ -831,32 +885,6 @@ Gemini Robotics-ER, short for Gemini Robotics-Embodied Reasoning, is a thinking 
 | Grounding with Google Search | Not available | Not available |
 | Used to improve our products | Yes | No |
 
-## Gemini Robotics-ER 1.5 Preview
-
-`gemini-robotics-er-1.5-preview`
-
-Try it in Google AI Studio
-
-Gemini Robotics-ER, short for Gemini Robotics-Embodied Reasoning, is a thinking model that enhances robots' abilities to understand and interact with the physical world.
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $0.30 (text / image / video) $1.00 (audio) |
-| Output price (including thinking tokens) | Free of charge | $2.50 |
-| Grounding with Google Search | Free of charge, up to 500 RPD (limit shared with Flash-Lite RPD) | 1,500 RPD (free, limit shared with Flash-Lite RPD), then $35 / 1,000 grounded prompts |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | Not available |
-| Output price (including thinking tokens) | Not available | Not available |
-| Grounding with Google Search | Not available | Not available |
-| Used to improve our products | Yes | No |
-
 ## Gemini 2.5 Computer Use Preview
 
 `gemini-2.5-computer-use-preview-10-2025`
@@ -913,4 +941,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-04-28 UTC.
+Last updated 2026-05-07 UTC.
