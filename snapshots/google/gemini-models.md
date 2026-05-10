@@ -14,6 +14,10 @@ Preview
 
 Frontier-class performance rivaling larger models at a fraction of the cost.
 
+Stable
+
+Frontier-class performance rivaling larger models at a fraction of the cost.
+
 Preview
 
 Powerful, high-efficiency image generation and editing, optimized for speed and high-volume use cases.
@@ -108,8 +112,6 @@ High-dimensional vector representations for advanced semantic search, text class
 
 Advanced embodied reasoning model that understands physical spaces and plans multi-step tasks for robotic agents with new capabilities like instrument reading, improved spatial and physical reasoning.
 
-Advanced embodied reasoning model that understands physical spaces and plans multi-step tasks for robotic agents.
-
 ## Previous models
 
 Our second generation workhorse model, with next-gen features and improved capabilities, including superior speed, native tool use, and a 1M token context window.
@@ -144,4 +146,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-04-28 UTC.
+Last updated 2026-05-07 UTC.
