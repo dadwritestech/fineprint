@@ -22,6 +22,10 @@ Prices per 1M tokens unless noted.
 
 | Model | Modality | Input | Cached input | Output / cost |
 |---|---|---|---|---|
+| gpt-realtime-2 | Audio | $32.00 | $0.40 | $64.00 |
+| Text | $4.00 | $0.40 | $24.00 |  |
+| Image | $5.00 | $0.50 | - |  |
+| gpt-realtime-translate | Audio | - | - | $0.034 / minute |
 | gpt-realtime-1.5 | Audio | $32.00 | $0.40 | $64.00 |
 | Text | $4.00 | $0.40 | $16.00 |  |
 | Image | $5.00 | $0.50 | - |  |
@@ -80,7 +84,7 @@ Standard
 
 | Category | Model | Input | Cached input | Output |
 |---|---|---|---|---|
-| ChatGPT | gpt-5.3-chat-latest | $1.75 | $0.175 | $14.00 |
+| ChatGPT | chat-latest | $5.00 | $0.50 | $30.00 |
 | Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
 
 Prices per 1M tokens.
