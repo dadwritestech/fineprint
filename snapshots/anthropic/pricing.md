@@ -13,7 +13,6 @@ Free for everyone
 - Chat on web, iOS, Android, and on your desktop
 - Generate code and visualize data
 - Write, edit, and create content
-- Analyze text and images
 - Ability to search the web
 - Memory across conversations
 - Create files and execute code
@@ -38,9 +37,8 @@ Everything in Free, plus:
 - Access to unlimited projects to organize chats and documents
 - Access to Research
 - Ability to use more Claude models
-- Claude for Excel
-- Claude for PowerPoint
-- Claude for Word (beta)
+- Claude for Microsoft 365
+- Claude for Microsoft Outlook
 
 ### Max
 
@@ -77,8 +75,6 @@ Max 20x
 
 #### Claude Cowork
 
-#### Analyze text and images
-
 #### Ability to search the web
 
 #### Desktop extensions
@@ -113,11 +109,9 @@ Max 20x
 
 #### Claude for Slack
 
-#### Claude for Excel
+#### Claude for Microsoft 365
 
-#### Claude for PowerPoint
-
-#### Claude for Word
+#### Claude for Microsoft Outlook
 
 ### Security and administration
 
@@ -293,8 +287,6 @@ Enterprise (sales-assisted)
 
 #### Claude Security
 
-#### Analyze text and images
-
 #### Ability to search the web
 
 #### Desktop extensions
@@ -325,9 +317,9 @@ Enterprise (sales-assisted)
 
 #### Enterprise search
 
-#### Claude for Excel
+#### Claude for Microsoft 365
 
-#### Claude for PowerPoint
+#### Claude for Microsoft Outlook
 
 #### Claude for Chrome
 
@@ -366,6 +358,8 @@ Enterprise (sales-assisted)
 #### Custom data retention controls
 
 #### Google Docs cataloging
+
+#### Set org instructions
 
 #### HIPAA-ready offering
 
