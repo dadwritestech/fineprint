@@ -1,5 +1,7 @@
 <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
 
+Claude Platform on AWS: The rate limits on this page apply. Billing and spend limits differ: spend limits are not available, and billing is through AWS Marketplace (not Anthropic credit purchases). Organizations start at Tier 1. Rate limit increases go through your Anthropic account representative; there is no automatic tier advancement, and per-workspace rate limit configuration is not available. Fast mode is not available on Claude Platform on AWS.
+
 There are two types of limits:
 
 1. Spend limits set a maximum monthly cost an organization can incur for API usage.
@@ -29,7 +31,7 @@ To qualify for the next tier, you must meet a deposit requirement. To minimize t
 
 | Usage Tier | Credit Purchase | Max Credit Purchase | Monthly Spend Limit |
 |---|---|---|---|
-| Tier 1 | $5 | $100 | $100 |
+| Tier 1 | $5 | $500 | $500 |
 | Tier 2 | $40 | $500 | $500 |
 | Tier 3 | $200 | $1,000 | $1,000 |
 | Tier 4 | $400 | $200,000 | $200,000 |
@@ -68,7 +70,7 @@ Support can also raise tier-enforced limits. For urgent needs, contact support.
 
 The rate limits for the Messages API are measured in requests per minute (RPM), input tokens per minute (ITPM), and output tokens per minute (OTPM) for each model class. If you exceed any of the rate limits you will get a 429 error describing which rate limit was exceeded, along with a `retry-after` header indicating how long to wait.
 
-You might also encounter 429 errors due to acceleration limits on the API if your organization has a sharp increase in usage. To avoid hitting acceleration limits, ramp up your traffic gradually and maintain consistent usage patterns.
+You might also encounter 429 errors because of acceleration limits on the API if your organization has a sharp increase in usage. To avoid hitting acceleration limits, ramp up your traffic gradually and maintain consistent usage patterns.
 
 ### Cache-aware ITPM
 
@@ -92,9 +94,9 @@ This means when you have cached content, `input_tokens` will typically be much s
 
 For rate limit purposes on most models, only `input_tokens` + `cache_creation_input_tokens` count toward your ITPM limit, making prompt caching an effective way to increase your effective throughput.
 
-Example: With a 2,000,000 ITPM limit and an 80% cache hit rate, you could effectively process 10,000,000 total input tokens per minute (2M uncached + 8M cached), since cached tokens don't count towards your rate limit.
+Example: With a 2,000,000 ITPM limit and an 80% cache hit rate, you could effectively process 10,000,000 total input tokens per minute (2M uncached + 8M cached), because cached tokens don't count towards your rate limit.
 
-Some older models (marked with † in the rate limit tables below) also count `cache_read_input_tokens` towards ITPM rate limits.
+Claude Haiku 3.5 (marked with † in the following rate limit tables) also counts `cache_read_input_tokens` toward ITPM rate limits.
 
 For all models without the † marker, cached input tokens do not count towards rate limits and are billed at a reduced rate (10% of base input token price). This means you can achieve significantly higher effective throughput by using prompt caching.
 
@@ -131,25 +133,25 @@ Claude Managed Agents endpoints are rate-limited per organization. These limits 
 
 | Operation | Limit |
 |---|---|
-| Create endpoints (agents, sessions, environments, etc.) | 300 requests per minute |
-| Read endpoints (retrieve, list, stream, etc.) | 600 requests per minute |
+| Create endpoints (for example, agents, sessions, and environments) | 300 requests per minute |
+| Read endpoints (for example, retrieve, list, and stream) | 600 requests per minute |
 
 ### Fast mode rate limits
 
-When using fast mode (beta: research preview) with `speed: "fast"` on Opus 4.6, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
+When using fast mode (beta: research preview) with `speed: "fast"` on Opus 4.6 or Opus 4.7, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
 
-The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See the fast mode documentation for details on these headers.
+The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode for details on these headers.
 
 ### Monitoring your rate limits in the Console
 
 You can monitor your rate limit usage on the Usage page of the Claude Console.
 
-In addition to providing token and request charts, the Usage page provides two separate rate limit charts. Use these charts to see what headroom you have to grow, when you may be hitting peak use, better understand what rate limits to request, or how you can improve your caching rates. The charts visualize a number of metrics for a given rate limit (e.g. per model):
+In addition to providing token and request charts, the Usage page provides two separate rate limit charts. Use these charts to see what headroom you have to grow, when you may be hitting peak use, better understand what rate limits to request, or how you can improve your caching rates. The charts visualize a number of metrics for a given rate limit (for example, per model):
 
 - The Rate Limit - Input Tokens chart includes:
   - Hourly maximum uncached input tokens per minute
   - Your current input tokens per minute rate limit
-  - The cache rate for your input tokens (i.e. the percentage of input tokens read from the cache)
+  - The cache rate for your input tokens (that is, the percentage of input tokens read from the cache)
 - The Rate Limit - Output Tokens chart includes:
   - Hourly maximum output tokens per minute
   - Your current output tokens per minute rate limit
@@ -158,7 +160,7 @@ In addition to providing token and request charts, the Usage page provides two s
 
 For more about workspaces, see Workspaces.
 
-In order to protect Workspaces in your Organization from potential overuse, you can set custom spend and rate limits per Workspace.
+To protect Workspaces in your Organization from potential overuse, you can set custom spend and rate limits per Workspace.
 
 Example: If your Organization's limit is 40,000 input tokens per minute and 8,000 output tokens per minute, you might limit one Workspace to 30,000 input tokens per minute. This protects other Workspaces from potential overuse and ensures a more equitable distribution of resources across your Organization. The remaining unused tokens per minute (or more, if that Workspace doesn't use the limit) are then available for other Workspaces to use.
 
