@@ -4,6 +4,14 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### May 12, 2026
+
+- Fast mode (research preview) now supports Claude Opus 4.7. Set `speed: "fast"` with `model: "claude-opus-4-7"` and the `fast-mode-2026-02-01` beta header for significantly faster output token generation at premium pricing. Pricing, rate limits, and access are the same as for Opus 4.6 fast mode; interested customers should join the waitlist.
+
+### May 11, 2026
+
+- We've launched Claude Platform on AWS, bringing the Claude API to Anthropic-managed infrastructure accessible through AWS, with AWS billing and IAM authentication. Access the full Messages API, Files API, Message Batches API, Claude Managed Agents, Agent Skills, code execution, and tool use through native AWS endpoints. Learn more in Claude Platform on AWS.
+
 ### May 6, 2026
 
 - Multiagent sessions and Outcomes are now in public beta under the standard `managed-agents-2026-04-01` beta header.
@@ -71,9 +79,9 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### February 19, 2026
 
-- We've launched automatic caching for the Messages API. Add a single `cache_control` field to your request body and the system automatically caches the last cacheable block, moving the cache point forward as conversations grow. No manual breakpoint management required. Works alongside existing block-level cache control for fine-grained optimization. Available on the Claude API and Azure AI Foundry (preview). Learn more in Prompt caching.
+- We've launched automatic caching for the Messages API. Add a single `cache_control` field to your request body and the system automatically caches the last cacheable block, moving the cache point forward as conversations grow. No manual breakpoint management required. Works alongside existing block-level cache control for fine-grained optimization. Available on the Claude API and Microsoft Foundry (preview). Learn more in Prompt caching.
 - We've retired the Claude Sonnet 3.7 model (`claude-3-7-sonnet-20250219`) and the Claude Haiku 3.5 model (`claude-3-5-haiku-20241022`). All requests to these models will now return an error. We recommend upgrading to Claude Sonnet 4.6 and Claude Haiku 4.5 respectively. Researchers can request ongoing access through the External Researcher Access Program.
-- We announced the deprecation of the Claude Haiku 3 model (`claude-3-haiku-20240307`), with retirement scheduled for April 19, 2026. We recommend migrating to Claude Haiku 4.5. Read more in model deprecations.
+- We announced the deprecation of the Claude Haiku 3 model (`claude-3-haiku-20240307`), with retirement scheduled for April 20, 2026. We recommend migrating to Claude Haiku 4.5. Read more in Model deprecations.
 
 ### February 17, 2026
 
@@ -93,7 +101,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - We've launched the compaction API in beta, providing server-side context summarization for effectively infinite conversations. Available on Opus 4.6.
 - We've introduced data residency controls, allowing you to specify where model inference runs with the `inference_geo` parameter. US-only inference is available at 1.1x pricing for models released after February 1, 2026.
 - The 1M token context window is now available in beta for Claude Opus 4.6, in addition to Sonnet 4.5 and Sonnet 4. Long context pricing applies to requests exceeding 200k input tokens.
-- Fine-grained tool streaming is now generally available on all models and platforms (no beta header required). The `output_format` parameter for structured outputs has been moved to `output_config.format`.
+- Fine-grained tool streaming is now generally available on all models and platforms (no beta header required).
 
 ### January 29, 2026
 
@@ -160,7 +168,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 ### September 29, 2025
 
 - We've launched Claude Sonnet 4.5, our best model for complex agents and coding, with the highest intelligence across most tasks. Learn more in the models overview.
-- We've introduced global endpoint pricing for AWS Bedrock and Google Vertex AI. The Claude API (1P) pricing is unaffected.
+- We've introduced global endpoint pricing for Amazon Bedrock and Vertex AI. The Claude API (1P) pricing is unaffected.
 - We've introduced a new stop reason `model_context_window_exceeded` that allows you to request the maximum possible tokens without calculating input size. Learn more in Handling stop reasons.
 - We've launched the memory tool in beta, enabling Claude to store and consult information across conversations. Learn more in Memory tool.
 - We've launched context editing in beta, providing strategies to automatically manage conversation context. The initial release supports clearing older tool results and calls when approaching token limits. Learn more in Context editing.
@@ -173,8 +181,8 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 - We've unified our developer offerings under the Claude brand. You should see updated naming and URLs across our platform and documentation, but our developer interfaces will remain the same. Here are some notable changes:
   - Claude Console (console.anthropic.com) → Claude Console (platform.claude.com). The console will be available at both URLs until January 12, 2026. After that date, console.anthropic.com will automatically redirect to platform.claude.com.
-  - Anthropic Docs (docs.claude.com) → Claude Docs (docs.claude.com)
-  - Anthropic Help Center (support.claude.com) → Claude Help Center (support.claude.com)
+  - Anthropic Docs (docs.anthropic.com) → Claude Docs (docs.claude.com)
+  - Anthropic Help Center (support.anthropic.com) → Claude Help Center (support.claude.com)
   - API endpoints, headers, environment variables, and SDKs remain the same. Your existing integrations will continue working without any changes.
 
 ### September 10, 2025
@@ -205,7 +213,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 ### August 26, 2025
 
 - We've increased rate limits on the 1M token context window for Claude Sonnet 4 on the Claude API.
-- The 1M token context window is now available on Google Cloud's Vertex AI. For more information, see Claude on Vertex AI.
+- The 1M token context window is now available on Vertex AI. For more information, see Claude on Vertex AI.
 
 ### August 19, 2025
 
@@ -231,7 +239,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### August 8, 2025
 
-- Search result content blocks are now generally available on the Claude API and Google Cloud's Vertex AI. This feature enables natural citations for RAG applications with proper source attribution. The beta header `search-results-2025-06-09` is no longer required. Learn more in Search results.
+- Search result content blocks are now generally available on the Claude API and Vertex AI. This feature enables natural citations for RAG applications with proper source attribution. The beta header `search-results-2025-06-09` is no longer required. Learn more in Search results.
 
 ### August 5, 2025
 
@@ -448,11 +456,11 @@ We also released new official SDKs:
 
 ### June 20th, 2024
 
-- Claude Sonnet 3.5, our most intelligent model yet, is now generally available across the Claude API, Amazon Bedrock, and Google Vertex AI.
+- Claude Sonnet 3.5, our most intelligent model yet, is now generally available across the Claude API, Amazon Bedrock, and Vertex AI.
 
 ### May 30th, 2024
 
-- Tool use is now generally available across the Claude API, Amazon Bedrock, and Google Vertex AI.
+- Tool use is now generally available across the Claude API, Amazon Bedrock, and Vertex AI.
 
 ### May 10th, 2024
 
