@@ -873,7 +873,7 @@ Gemini Robotics-ER, short for Gemini Robotics-Embodied Reasoning, is a thinking 
 |---|---|---|
 | Input price | Free of charge | $1.00 (text / image / video) $2.00 (audio) |
 | Output price (including thinking tokens) | Free of charge | $5.00 |
-| Grounding with Google Search | Free of charge, up to 1500 RPD (limit shared with Flash RPD) | 5,000 RPD (free, limit shared with Flash RPD), then $14 / 1,000 search queries for text and image-based grounding. |
+| Grounding with Google Search | Not available | 5,000 prompts per month (free, limit shared with Flash), then $14 / 1,000 search queries for text and image-based grounding. |
 | Used to improve our products | Yes | No |
 
 ### Batch
@@ -935,10 +935,11 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 ## Notes
 
+- Document token billing: Tokens for the `DOCUMENT` modality (for example, PDFs) are billed at the image token rate. In API responses, these tokens appear under the `DOCUMENT` modality within `promptTokensDetails`.
 - Google AI Studio usage is free of charge in all available regions. See Billing FAQs for details.
 - Prices may differ from the prices listed here and the prices offered on Gemini Enterprise Agent Platform. For Gemini Enterprise Agent Platform prices, see the Gemini Enterprise Agent Platform pricing page.
 - If you are using dynamic retrieval to optimize costs, only requests that contain at least one grounding support URL from the web in their response are charged for Grounding with Google Search. Costs for Gemini always apply. Rate limits are subject to change.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-07 UTC.
+Last updated 2026-05-14 UTC.
