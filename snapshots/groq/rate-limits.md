@@ -16,10 +16,16 @@ Rate limits are measured in:
 - TPD: Tokens per day
 - ASH: Audio seconds per hour
 - ASD: Audio seconds per day
+- ITPM: Input tokens per minute
+- OTPM: Output tokens per minute
 
 Rate limits apply at the organization level, not individual users. You can hit any limit type depending on which threshold you reach first.
 
 Example: Let's say your RPM = 50 and your TPM = 200K. If you were to send 50 requests with only 100 tokens within a minute, you would reach your limit even though you did not send 200K tokens within those 50 requests.
+
+In addition to the combined TPM limit, some organizations are also subject to separate per-minute limits on input tokens (ITPM) and output tokens (OTPM). For example, an OTPM limit caps how many completion tokens your organization can generate per minute, regardless of how many input tokens are sent.
+
+If these limits are configured on your account, you'll see your TPM value on the Limits page — hover over it to see the "X in / Y out" breakdown. If no breakdown appears, your organization has a single combined TPM cap with no separate input/output limits.
 
 The following is a high level summary and there may be exceptions to these limits. You can view the current, exact rate limits for your organization on the limits page in your account settings.
 
