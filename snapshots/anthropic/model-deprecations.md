@@ -15,6 +15,8 @@ Anthropic uses the following terms to describe the model lifecycle:
 
 Deprecated models are likely to be less reliable than active models. Move workloads to active models to maintain the highest level of support and reliability.
 
+The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, and Microsoft Foundry. Partner-operated platforms (Amazon Bedrock and Vertex AI) set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (legacy), and Vertex AI model tables.
+
 ## Migrating to replacements
 
 Once a model is deprecated, migrate all usage to a suitable replacement before the retirement date. Requests to models past the retirement date will fail.
@@ -31,7 +33,7 @@ Anthropic notifies customers with active deployments for models with upcoming re
 
 To help identify usage of deprecated models, customers can access an audit of their API usage. Follow these steps:
 
-1. Go to the Usage page in Console
+1. Go to the Usage page in Claude Console
 2. Click the "Export" button
 3. Review the downloaded CSV to see usage broken down by API key and model
 
@@ -56,15 +58,22 @@ At some point, Anthropic hopes to make past models publicly available again. In 
 
 ## Model status
 
-All publicly released models are listed below with their status:
+Current and recently retired models are listed in the following table with their status:
 
-| API Model Name | Current State | Deprecated | Tentative Retirement Date |
+| API model name | Current state | Deprecated | Tentative retirement date |
 |---|---|---|---|
 | `claude-opus-4-7` | Active | N/A | Not sooner than April 16, 2027 |
 | `claude-opus-4-6` | Active | N/A | Not sooner than February 5, 2027 |
 | `claude-opus-4-5-20251101` | Active | N/A | Not sooner than November 24, 2026 |
 | `claude-opus-4-1-20250805` | Active | N/A | Not sooner than August 5, 2026 |
-| `claude-opus-4-20250514` | Deprecated | April 14, 2026 |  |
+| `claude-opus-4-20250514` | Deprecated | April 14, 2026 | June 15, 2026 |
+| `claude-sonnet-4-6` | Active | N/A | Not sooner than February 17, 2027 |
+| `claude-sonnet-4-5-20250929` | Active | N/A | Not sooner than September 29, 2026 |
+| `claude-sonnet-4-20250514` | Deprecated | April 14, 2026 | June 15, 2026 |
+| `claude-3-7-sonnet-20250219` | Retired | October 28, 2025 | February 19, 2026 |
+| `claude-haiku-4-5-20251001` | Active | N/A | Not sooner than October 15, 2026 |
+| `claude-3-5-haiku-20241022` | Retired | December 19, 2025 | February 19, 2026 |
+| `claude-3-haiku-20240307` | Retired | February 19, 2026 | April 20, 2026 |
 
 ## Deprecation history
 
@@ -74,7 +83,7 @@ All deprecations are listed below, with the most recent announcements at the top
 
 On April 14, 2026, Anthropic notified developers using Claude Sonnet 4 and Claude Opus 4 models of their upcoming retirement on the Claude API.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | June 15, 2026 | `claude-sonnet-4-20250514` | `claude-sonnet-4-6` |
 | June 15, 2026 | `claude-opus-4-20250514` | `claude-opus-4-7` |
@@ -85,7 +94,7 @@ This model was retired April 20, 2026.
 
 On February 19, 2026, Anthropic notified developers using Claude Haiku 3 model of its upcoming retirement on the Claude API.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | April 20, 2026 | `claude-3-haiku-20240307` | `claude-haiku-4-5-20251001` |
 
@@ -95,7 +104,7 @@ This model was retired February 19, 2026.
 
 On December 19, 2025, Anthropic notified developers using Claude Haiku 3.5 model of its upcoming retirement on the Claude API.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | February 19, 2026 | `claude-3-5-haiku-20241022` | `claude-haiku-4-5-20251001` |
 
@@ -105,7 +114,7 @@ This model was retired February 19, 2026.
 
 On October 28, 2025, Anthropic notified developers using Claude Sonnet 3.7 model of its upcoming retirement on the Claude API.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | February 19, 2026 | `claude-3-7-sonnet-20250219` | `claude-sonnet-4-6` |
 
@@ -115,7 +124,7 @@ These models were retired October 28, 2025.
 
 On August 13, 2025, Anthropic notified developers using Claude Sonnet 3.5 models of their upcoming retirement.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | October 28, 2025 | `claude-3-5-sonnet-20240620` | `claude-sonnet-4-6` |
 | October 28, 2025 | `claude-3-5-sonnet-20241022` | `claude-sonnet-4-6` |
@@ -126,7 +135,7 @@ This model was retired January 5, 2026.
 
 On June 30, 2025, Anthropic notified developers using Claude Opus 3 model of its upcoming retirement.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | January 5, 2026 | `claude-3-opus-20240229` | `claude-opus-4-7` |
 
@@ -136,7 +145,7 @@ These models were retired July 21, 2025.
 
 On January 21, 2025, Anthropic notified developers using Claude 2, Claude 2.1, and Claude Sonnet 3 models of their upcoming retirements.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | July 21, 2025 | `claude-2.0` | `claude-opus-4-7` |
 | July 21, 2025 | `claude-2.1` | `claude-opus-4-7` |
@@ -148,10 +157,12 @@ These models were retired November 6, 2024.
 
 On September 4, 2024, Anthropic notified developers using Claude 1 and Instant models of their upcoming retirements.
 
-| Retirement Date | Deprecated Model | Recommended Replacement |
+| Retirement date | Deprecated model | Recommended replacement |
 |---|---|---|
 | November 6, 2024 | `claude-1.0` | `claude-haiku-4-5-20251001` |
 | November 6, 2024 | `claude-1.1` | `claude-haiku-4-5-20251001` |
 | November 6, 2024 | `claude-1.2` | `claude-haiku-4-5-20251001` |
 | November 6, 2024 | `claude-1.3` | `claude-haiku-4-5-20251001` |
-| November 6, 2024 | `claude-instant-1.0` |  |
+| November 6, 2024 | `claude-instant-1.0` | `claude-haiku-4-5-20251001` |
+| November 6, 2024 | `claude-instant-1.1` | `claude-haiku-4-5-20251001` |
+| November 6, 2024 | `claude-instant-1.2` | `claude-haiku-4-5-20251001` |
