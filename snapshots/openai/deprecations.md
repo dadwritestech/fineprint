@@ -14,9 +14,30 @@ We use the terms "sunset" and "shut down" interchangeably to mean a model or end
 
 We use the term "legacy" to refer to models and endpoints that no longer receive updates. We tag endpoints and models as legacy to signal to developers where we're moving as a platform and that they should likely migrate to newer models or endpoints. You can expect that a legacy model or endpoint will be deprecated at some point in the future.
 
-## Deprecation history
+## Upcoming deprecations
 
-All deprecations are listed below, with the most recent announcements at the top.
+Upcoming deprecations are listed below, with the most recent announcements at the top.
+
+### 2026-05-08: gpt-5.2-chat-latest and gpt-5.3-chat-latest model snapshots
+
+On May 8th, 2026, we notified developers using `gpt-5.2-chat-latest` and `gpt-5.3-chat-latest` model snapshots of their deprecation and removal from the API.
+
+| Shutdown date | Model / system | Recommended replacement |
+|---|---|---|
+| Aug 10, 2026 | `gpt-5.2-chat-latest` | `gpt-5.5` |
+| Aug 10, 2026 | `gpt-5.3-chat-latest` | `gpt-5.5` |
+
+### Update to OpenAI's self-serve fine-tuning
+
+On May 7th, 2026, we notified developers using OpenAI's self-serve fine-tuning platform of updates to availability.
+
+Inference on fine-tuned models will continue to be available until the base models are deprecated.
+
+| Date | Update |
+|---|---|
+| May 7, 2026 | Creating fine-tuning jobs or training is not available to organizations that have not previously run fine-tuning. |
+| July 2, 2026 | Creating fine-tuning jobs is no longer available to organizations that have not run inference on a fine-tuned model in the past 60 days. |
+| Jan 6, 2027 | Active existing customers will no longer be able to create new fine-tuning jobs on this date. Inference on fine-tuned models will be disabled only when the underlying base model is deprecated. |
 
 ### 2026-04-22: Legacy GPT model snapshots
 
@@ -24,46 +45,43 @@ To improve reliability and make it easier for developers to choose the right mod
 
 | Shutdown date | Model snapshot | Substitute model |
 |---|---|---|
-| 2026-07-23 | `computer-use-preview-2025-03-11` \| `computer-use-preview` | `5.4-mini` |
-| 2026-07-23 | `gpt-4o-audio-preview-2024-12-17` | `gpt-audio` |
-| 2026-07-23 | `gpt-4o-mini-audio-preview-2024-12-17` | `gpt-audio` |
-| 2026-07-23 | `gpt-4o-mini-realtime-preview-2024-12-17` | `gpt-realtime-mini` |
-| 2026-07-23 | `gpt-4o-mini-search-preview-2025-03-11` | `4.1-mini` |
-| 2026-07-23 | `gpt-4o-mini-tts-2025-03-20` | `gpt-realtime` |
-| 2026-07-23 | `gpt-4o-search-preview-2025-03-11` | `gpt-4.1-mini` |
+| 2026-07-23 | `computer-use-preview-2025-03-11` \| `computer-use-preview` | `gpt-5.4-mini` |
+| 2026-07-23 | `gpt-4o-mini-search-preview-2025-03-11` | `gpt-5.4-mini` |
+| 2026-07-23 | `gpt-4o-mini-tts-2025-03-20` | `gpt-4o-mini-tts-2025-12-15` |
+| 2026-07-23 | `gpt-4o-search-preview-2025-03-11` | `gpt-5.4-mini` |
 | 2026-07-23 | `gpt-5-chat-latest` | `gpt-5.5` |
-| 2026-07-23 | `gpt-5-codex` | `gpt-5.4` |
+| 2026-07-23 | `gpt-5-codex` | `gpt-5.5` |
 | 2026-07-23 | `gpt-5.1-chat-latest` | `gpt-5.5` |
-| 2026-07-23 | `gpt-5.1-codex` | `gpt-5` |
-| 2026-07-23 | `gpt-5.1-codex-max` | `gpt-5.4` |
+| 2026-07-23 | `gpt-5.1-codex` | `gpt-5.5` |
+| 2026-07-23 | `gpt-5.1-codex-max` | `gpt-5.5` |
 | 2026-07-23 | `gpt-5.1-codex-mini` | `gpt-5.4-mini` |
-| 2026-07-23 | `gpt-audio-mini-2025-10-06` | `gpt-audio` |
+| 2026-07-23 | `gpt-audio-mini-2025-10-06` | `gpt-audio-1.5` |
 | 2026-07-23 | `gpt-realtime-mini-2025-10-06` | `gpt-realtime-mini` |
-| 2026-07-23 | `o3-deep-research-2025-06-26` \| `o3-deep-research` | `5.4-Pro` |
-| 2026-07-23 | `o4-mini-deep-research-2025-06-26` \| `o4-mini-deep-research` | `5.4-Pro` |
-| 2026-07-23 | `gpt-5.2-codex` | `gpt-5.4` |
-| 2026-10-23 | `gpt-3.5-turbo-0125` \| `gpt-3.5-turbo`, `gpt-3.5-turbo-completions` | `gpt-4.1-mini` |
-| 2026-10-23 | `gpt-4-0613` \| `gpt-4`, `gpt-4-0613-completions`, `gpt-4-completions` | `gpt-4.1` |
-| 2026-10-23 | `gpt-4-1106-preview` | `gpt-4.1` |
-| 2026-10-23 | `gpt-4-turbo` \| `gpt-4-turbo-2024-04-09`, `gpt-4-turbo-completions` | `gpt-4.1` |
-| 2026-10-23 | `gpt-4.1-nano` \| `gpt-4.1-nano-2025-04-14` | `gpt-5-nano` |
-| 2026-10-23 | `gpt-4o-2024-05-13` | `gpt-4.1` |
-| 2026-10-23 | `gpt-image-1` | `gpt-image-1.5` |
-| 2026-10-23 | `o1-2024-12-17` \| `o1` | `o3` |
-| 2026-10-23 | `o1-pro-2025-03-19` \| `o1-pro` | `5.4-Pro` |
-| 2026-10-23 | `o3-mini-2025-01-31` \| `o3-mini` | `o3` |
-| 2026-10-23 | `ft-o4-mini-2025-04-16` | `gpt-5-mini` |
-| 2026-10-23 | `o4-mini-2025-04-16` \| `o4-mini` | `gpt-5-mini` |
+| 2026-07-23 | `o3-deep-research-2025-06-26` \| `o3-deep-research` | `gpt-5.5-pro` |
+| 2026-07-23 | `o4-mini-deep-research-2025-06-26` \| `o4-mini-deep-research` | `gpt-5.5-pro` |
+| 2026-07-23 | `gpt-5.2-codex` | `gpt-5.5` |
+| 2026-10-23 | `gpt-3.5-turbo-0125` \| `gpt-3.5-turbo`, `gpt-3.5-turbo-completions` | `gpt-5.4-mini` |
+| 2026-10-23 | `gpt-4-0613` \| `gpt-4`, `gpt-4-0613-completions`, `gpt-4-completions` | `gpt-5.5` |
+| 2026-10-23 | `gpt-4-1106-preview` | `gpt-5.5` |
+| 2026-10-23 | `gpt-4-turbo` \| `gpt-4-turbo-2024-04-09`, `gpt-4-turbo-completions` | `gpt-5.5` |
+| 2026-10-23 | `gpt-4.1-nano` \| `gpt-4.1-nano-2025-04-14` | `gpt-5.4-nano` |
+| 2026-10-23 | `gpt-4o-2024-05-13` | `gpt-5.5` |
+| 2026-10-23 | `gpt-image-1` | `gpt-image-2` |
+| 2026-10-23 | `o1-2024-12-17` \| `o1` | `gpt-5.5` |
+| 2026-10-23 | `o1-pro-2025-03-19` \| `o1-pro` | `gpt-5.5-pro` |
+| 2026-10-23 | `o3-mini-2025-01-31` \| `o3-mini` | `gpt-5.5` |
+| 2026-10-23 | `ft-o4-mini-2025-04-16` | `gpt-5.4-mini` |
+| 2026-10-23 | `o4-mini-2025-04-16` \| `o4-mini` | `gpt-5.4-mini` |
 
 We are also removing fine-tuned versions as below:
 
 | Shutdown date | Model snapshot | Recommended replacement base model |
 |---|---|---|
-| 2026-10-23 | `ft-gpt-3.5-turbo` | `gpt-4.1-mini` |
-| 2026-10-23 | `ft-gpt-4` | `gpt-4.1` |
-| 2026-10-23 | `ft-gpt-4.1-nano-2025-04-14` | `gpt-5-nano` |
-| 2026-10-23 | `ft-babbage-002` | `gpt-5-mini` |
-| 2026-10-23 | `ft-davinci-002` | `gpt-5-mini` |
+| 2026-10-23 | `ft-gpt-3.5-turbo` | `gpt-5.4-mini` |
+| 2026-10-23 | `ft-gpt-4` | `gpt-5.5` |
+| 2026-10-23 | `ft-gpt-4.1-nano-2025-04-14` | `gpt-5.4-nano` |
+| 2026-10-23 | `ft-babbage-002` | `gpt-5.4-mini` |
+| 2026-10-23 | `ft-davinci-002` | `gpt-5.4-mini` |
 
 ### 2026-03-24: Sora 2 video generation models and Videos API
 
@@ -78,30 +96,14 @@ On March 24th, 2026, we notified developers using the Videos API and Sora 2 vide
 | 2026-09-24 | `sora-2-2025-12-08` | --- |
 | 2026-09-24 | `sora-2-pro-2025-10-06` | --- |
 
-### 2025-11-18: chatgpt-4o-latest snapshot
-
-On November 18th, 2025, we notified developers using `chatgpt-4o-latest` model snapshot of its deprecation and removal from the API on February 17, 2026.
-
-| Shutdown date | Model / system | Recommended replacement |
-|---|---|---|
-| 2026-02-17 | `chatgpt-4o-latest` | `gpt-5.1-chat-latest` |
-
-### 2025-11-17: codex-mini-latest model snapshot
-
-On November 17th, 2025, we notified developers using `codex-mini-latest` model of its deprecation and removal from the API on February 12, 2026. As part of this deprecation, we will no longer support our legacy local shell tool, which is only available for use with `codex-mini-latest`. For new use cases, please use our latest shell tool.
-
-| Shutdown date | Model / system | Recommended replacement |
-|---|---|---|
-| 2026-02-12 | `codex-mini-latest` | `gpt-5-codex-mini` |
-
 ### 2025-11-14: DALL·E model snapshots
 
 On November 14th, 2025, we notified developers using DALL·E model snapshots of their deprecation and removal from the API on May 12, 2026.
 
 | Shutdown date | Model / system | Recommended replacement |
 |---|---|---|
-| 2026-05-12 | `dall-e-2` | `gpt-image-1` or `gpt-image-1-mini` |
-| 2026-05-12 | `dall-e-3` | `gpt-image-1` or `gpt-image-1-mini` |
+| 2026-05-12 | `dall-e-2` | `gpt-image-2`, `gpt-image-1`, or `gpt-image-1-mini` |
+| 2026-05-12 | `dall-e-3` | `gpt-image-2`, `gpt-image-1`, or `gpt-image-1-mini` |
 
 ### 2025-09-26: Legacy GPT model snapshots
 
@@ -121,13 +123,13 @@ To improve reliability and make it easier for developers to choose the right mod
 
 ### 2025-09-15: Realtime API Beta
 
-The Realtime API Beta will be deprecated and removed from the API on May 7, 2026.
+The Realtime API Beta was deprecated and removed from the API on May 12, 2026.
 
-There are a few key differences between the interfaces in the Realtime beta API and the released GA API. See the migration guide to learn more about how to migrate your current beta integration.
+There are a few key differences between the interfaces in the Realtime beta API and the released GA API. See the migration guide for the current GA interface and related Realtime docs.
 
 | Shutdown date | Model / system | Recommended replacement |
 |---|---|---|
-| 2026‑05‑07 | OpenAI-Beta: realtime=v1 | Realtime API |
+| 2026‑05‑12 | OpenAI-Beta: realtime=v1 | Realtime API |
 
 ### 2025-08-20: Assistants API
 
@@ -153,6 +155,26 @@ In September, 2025, we notified developers using gpt-4o-realtime-preview models 
 | 2026-05-07 | gpt-4o-mini-realtime-preview | gpt-realtime-mini |
 | 2026-05-07 | gpt-4o-audio-preview | gpt-audio-1.5 |
 | 2026-05-07 | gpt-4o-mini-audio-preview | gpt-audio-mini |
+
+## Past deprecations
+
+Past deprecations are listed below, with the most recent announcements at the top.
+
+### 2025-11-18: chatgpt-4o-latest snapshot
+
+On November 18th, 2025, we notified developers using `chatgpt-4o-latest` model snapshot of its deprecation and removal from the API on February 17, 2026.
+
+| Shutdown date | Model / system | Recommended replacement |
+|---|---|---|
+| 2026-02-17 | `chatgpt-4o-latest` | `gpt-5.1-chat-latest` |
+
+### 2025-11-17: codex-mini-latest model snapshot
+
+On November 17th, 2025, we notified developers using `codex-mini-latest` model of its deprecation and removal from the API on February 12, 2026. As part of this deprecation, we will no longer support our legacy local shell tool, which is only available for use with `codex-mini-latest`. For new use cases, please use our latest shell tool.
+
+| Shutdown date | Model / system | Recommended replacement |
+|---|---|---|
+| 2026-02-12 | `codex-mini-latest` | `gpt-5-codex-mini` |
 
 ### 2025-06-10: gpt-4o-realtime-preview-2024-10-01
 
