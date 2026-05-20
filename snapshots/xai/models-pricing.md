@@ -2,23 +2,25 @@
 
 #### Key Information
 
-# Models and Pricing
+# Models
 
 View as Markdown
 
-We offer a range of models supporting multiple use cases and modalities.
-
-Upcoming model retirement — May 15, 2026. The following models will be retired on May 15 at 12:00pm PT: `grok-4-1-fast-reasoning`, `grok-4-1-fast-non-reasoning`, `grok-4-fast-reasoning`, `grok-4-fast-non-reasoning`, `grok-4-0709`, `grok-code-fast-1`, `grok-3`, and `grok-imagine-image-pro`. See the migration guide for recommended replacements.
+Create API key
 
 ### Grok 4.3
 
-Excels at agentic reasoning, knowledge work, and tool use.
+New
+
+Strong agentic tool calling with minimal hallucinations. Supports non-reasoning mode.
 
 Context1 million tokens
 
 Input$1.25 / 1M tokens
 
 Output$2.50 / 1M tokens
+
+ReasoningConfigurable
 
 View model
 
@@ -28,9 +30,11 @@ Real-time conversations, speech-to-text, and text-to-speech.
 
 Agent$3.00 / hour
 
-TTS$4.20 / 1M characters
+TTS$15.00 / 1M characters
 
 STT
+
+LatencySub-second
 
 Read docsTry in playground
 
@@ -40,9 +44,11 @@ Turn ideas into reality with image and video generation.
 
 ModesGeneration & editing
 
-Image$0.02 / image
+SpeedIndustry-leading
 
-Video$0.05 / second
+Image · 1K / 2K$0.02 / image
+
+Video · 480p / 720p$0.05 / sec
 
 Read docsTry in playground
 
@@ -60,7 +66,7 @@ Grok 4.3
 
 Coding
 
-Grok 4.3
+Grok Build 0.1
 
 Images
 
@@ -74,173 +80,6 @@ Voice
 
 Grok Voice API
 
-### Chat API
-
-We strongly recommend all API callers use grok-4.3. It is the most intelligent and fastest model we've built.
-
-View docs
-
-| Model | Context | Input | Output |  |
-|---|---|---|---|---|
-| grok-4.3 | 1M | $1.25 | $2.50 |  |
-| grok-4.20-multi-agent-0309 | 2M | $1.25 | $2.50 |  |
-| grok-4.20-0309-reasoning | 2M | $1.25 | $2.50 |  |
-| grok-4.20-0309-non-reasoning | 2M | $1.25 | $2.50 |  |
-| grok-4-1-fast-reasoning | 2M | $0.20 | $0.50 |  |
-| grok-4-1-fast-non-reasoning | 2M | $0.20 | $0.50 |  |
-
-Prices shown per million tokens
-
-### Imagine API
-
-Create and edit stunning images and videos, offering precise control and cutting edge fidelity.
-
-View docs
-
-| Model | Cost |  |
-|---|---|---|
-| grok-imagine-image-quality | $0.04 / image |  |
-| grok-imagine-image-pro | $0.07 / image |  |
-| grok-imagine-image | $0.02 / image |  |
-| grok-imagine-video | $0.05 / sec |  |
-
-### Voice API
-
-Stream and generate expressive, authentic voices and transcribe back to text with ease.
-
-View docs
-
-| Mode | Cost |  |
-|---|---|---|
-| Realtime | $0.05 / min ($3.00 / hr) |  |
-| Text to Speech | $4.20 / 1M characters |  |
-| Speech to Text | $0.10 / hr (REST), $0.20 / hr (Streaming) |  |
-
-## Tools Pricing
-
-Requests which make use of xAI provided server-side tools are priced based on two components: token usage and server-side tool invocations. Since the agent autonomously decides how many tools to call, costs scale with query complexity.
-
-### Token Costs
-
-All standard token types are billed at the rate for the model used in the request:
-
-- Input tokens: Your query and conversation history
-- Reasoning tokens: Agent's internal thinking and planning
-- Completion tokens: The final response
-- Image tokens: Visual content analysis (when applicable)
-- Cached prompt tokens: Prompt tokens that were served from cache rather than recomputed
-
-### Tool Invocation Costs
-
-| Tool | Description | Cost / 1k Calls | Tool Name |
-|---|---|---|---|
-| Web Search | Search the internet and browse web pages | $5 / 1k calls | `web_search` |
-| X Search | Search X posts, user profiles, and threads | $5 / 1k calls | `x_search` |
-| Code Execution | Run Python code in a sandboxed environment | $5 / 1k calls | `code_execution``code_interpreter` |
-| File Attachments | Search through files attached to messages | $10 / 1k calls | `attachment_search` |
-| Collections Search | Query your uploaded document collections (RAG) | $2.50 / 1k calls | `collections_search``file_search` |
-| Image Understanding | Analyze images found during Web Search and X Search* | Token-based | `view_image` |
-| X Video Understanding | Analyze videos found during X Search* | Token-based | `view_x_video` |
-| Remote MCP Tools | Connect and use custom MCP tool servers | Token-based | Tool name is set by each MCP server |
-
-Web Search$5 / 1k calls
-
-Search the internet and browse web pages
-
-`web_search`
-
-X Search$5 / 1k calls
-
-Search X posts, user profiles, and threads
-
-`x_search`
-
-Code Execution$5 / 1k calls
-
-Run Python code in a sandboxed environment
-
-`code_execution``code_interpreter`
-
-File Attachments$10 / 1k calls
-
-Search through files attached to messages
-
-`attachment_search`
-
-Collections Search$2.50 / 1k calls
-
-Query your uploaded document collections (RAG)
-
-`collections_search``file_search`
-
-Image UnderstandingToken-based
-
-Analyze images found during Web Search and X Search*
-
-`view_image`
-
-X Video UnderstandingToken-based
-
-Analyze videos found during X Search*
-
-`view_x_video`
-
-Remote MCP ToolsToken-based
-
-Connect and use custom MCP tool servers
-
-Tool name is set by each MCP server
-
-All tool names work in the Responses API. In the gRPC API (Python xAI SDK), `code_interpreter` and `file_search` are not supported.
-
-* Only applies to images and videos found by search tools — not to images passed directly in messages.
-
-For the view image and view x video tools, you will not be charged for the tool invocation itself but will be charged for the image tokens used to process the image or video.
-
-For Remote MCP tools, you will not be charged for the tool invocation but will be charged for any tokens used.
-
-For more information on using Tools, please visit our guide on Tools.
-
-## Batch API Pricing
-
-The Batch API lets you process large volumes of requests asynchronously at a fraction of the cost of standard pricing — effectively cutting your token costs in half. Batch requests are queued and processed in the background, with most completing within 24 hours.
-
-|  | Real-time API | Batch API |
-|---|---|---|
-| Token pricing | Standard rates | 20%-50% off standard rates |
-| Response time | Immediate (seconds) | Typically within 24 hours |
-| Rate limits | Per-minute limits apply | Requests don't count towards rate limits |
-
-The batch discount applies to all token types — input tokens, output tokens, cached tokens, and reasoning tokens. To see batch pricing for a specific model, visit the model's detail page and toggle "Show batch API pricing".
-
-The batch discount applies to text and language models only. Image and video generation are supported in the Batch API but are billed at standard rates. See Batch API documentation for full details.
-
-## Files and Collections Pricing
-
-Files and collections stored on the xAI platform are billed based on the amount of storage used. These charges will take effect starting on April 20th, 2026.
-
-| Resource | Rate |
-|---|---|
-| File storage | $0.025 / GiB / day |
-| Collection storage | $0.10 / GiB / day |
-
-### Download Costs
-
-Downloading data from files and collections is charged at a flat rate based on the amount of data transferred:
-
-| Resource | Rate |
-|---|---|
-| File downloads | $0.20 / GiB downloaded |
-| Collection downloads | $0.20 / GiB downloaded |
-
-You can view and manage your files and collections through the xAI console or the xAI API.
-
-## Usage Guidelines Violation Fee
-
-When your request is deemed to be in violation of our usage guideline by our system, we will still charge for the generation of the request.
-
-For violations that are caught before generation in the Responses API, we will charge a $0.05 usage guideline violation fee per request.
-
 ## Additional Information Regarding Models
 
 - No access to realtime events without search tools enabled
@@ -248,6 +87,7 @@ For violations that are caught before generation in the Responses API, we will c
   - To incorporate realtime data with your request, enable server-side search tools (Web Search / X Search). See Web Search and X Search.
 - Chat models
   - No role order limitation: You can mix `system`, `user`, or `assistant` roles in any sequence for your conversation context.
+  - `logprobs` and `top_logprobs` are not supported by models `grok-4.20` and newer. These fields will be silently ignored if set.
 - Image input models
   - Maximum image size: `20MiB`
   - Maximum number of images: No limit
@@ -266,89 +106,4 @@ Some models have aliases to help users automatically migrate to the next version
 
 For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
 
-## Billing and Availability
-
-Your model access might vary depending on various factors such as geographical location, account limitations, etc.
-
-For how the bills are charged, visit Manage Billing for more information.
-
-For the most up-to-date information on your team's model availability, visit Models Page on xAI Console.
-
-## Model Input and Output
-
-Each model can have one or multiple input and output capabilities. The input capabilities refer to which type(s) of prompt can the model accept in the request message body. The output capabilities refer to which type(s) of completion will the model generate in the response message body.
-
-This is a prompt example for models with `text` input capability:
-
-JSON
-
-```
-[
-  {
-    "role": "system",
-    "content": "You are Grok, a chatbot inspired by the Hitchhiker's Guide to the Galaxy."
-  },
-  {
-    "role": "user",
-    "content": "What is the meaning of life, the universe, and everything?"
-  }
-]
-```
-
-This is a prompt example for models with `text` and `image` input capabilities:
-
-JSON
-
-```
-[
-  {
-    "role": "user",
-    "content": [
-      {
-        "type": "image_url",
-        "image_url": {
-          "url": "data:image/jpeg;base64,<base64_image_string>",
-          "detail": "high"
-        }
-      },
-      {
-        "type": "text",
-        "text": "Describe what's in this image."
-      }
-    ]
-  }
-]
-```
-
-This is a prompt example for models with `text` input and `image` output capabilities:
-
-JSON
-
-```
-// The entire request body
-{
-  "model": "grok-4",
-  "prompt": "A cat in a tree",
-  "n": 4
-}
-```
-
-## Context Window
-
-The context window determines the maximum amount of tokens accepted by the model in the prompt.
-
-For more information on how token is counted, visit Consumption and Rate Limits.
-
-If you are sending the entire conversation history in the prompt for use cases like chat assistant, the sum of all the prompts in your conversation history must be no greater than the context window.
-
-## Cached prompt tokens
-
-Trying to run the same prompt multiple times? You can now use cached prompt tokens to incur less cost on repeated prompts. By reusing stored prompt data, you save on processing expenses for identical requests. Enable caching in your settings and start saving today!
-
-The caching is automatically enabled for all requests without user input. You can view the cached prompt token consumption in the `"usage"` object.
-
-For details on the pricing, please refer to the pricing table above, or on xAI Console.
-
-Did you find this page helpful?
-
-Last updated: May 6, 2026
+Last updated: May 15, 2026
