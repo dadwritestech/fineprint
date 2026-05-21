@@ -57,6 +57,8 @@ Everything in Pro, plus:
 
 Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
 
+Usage limits apply. Price and plans are subject to change at Anthropic's discretion.
+
 ## Compare features across plans
 
 Free
@@ -179,7 +181,7 @@ n/a
 
 #### Haiku
 
-#### Extra usage
+#### Usage credits
 
 #### Priority access at high traffic times
 
@@ -252,6 +254,8 @@ Quiz
 Which plan is right for you?
 
 Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+
+Usage limits apply. Price and plans are subject to change at Anthropic's discretion.
 
 Education plan
 
