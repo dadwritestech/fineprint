@@ -107,6 +107,7 @@ If you use Copilot Free, you have access to a limited number of models, and each
 | Gemini 2.5 Pro | 1 | Not applicable |
 | Gemini 3 Flash | 0.33 | Not applicable |
 | Gemini 3.1 Pro | 1 | Not applicable |
+| Gemini 3.5 Flash | 14 | Not applicable |
 | GPT-4.1 | 0 | 1 |
 | GPT-4o | 0 | 1 |
 | GPT-5 mini | 0 | 1 |
@@ -117,7 +118,6 @@ If you use Copilot Free, you have access to a limited number of models, and each
 | GPT-5.4 mini | 0.33 | Not applicable |
 | GPT-5.4 nano | 0.25 | Not applicable |
 | GPT-5.5 | 7.5 | Not applicable |
-| Grok Code Fast 1 | 0.25 | 1 |
 | Raptor mini | 0 | 1 |
 | Goldeneye | Not applicable | 1 |
 
