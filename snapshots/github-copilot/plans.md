@@ -339,6 +339,7 @@ Free
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -362,6 +363,7 @@ Pro
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -385,6 +387,7 @@ Pro+
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
