@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: openai/privacy | source: https://openai.com/policies/privacy-policy/ -->
 
-Updated: April 30, 2026
+Updated: May 18, 2026
 
 # US privacy policy
 
@@ -125,7 +125,7 @@ Some U.S. state privacy laws require specific disclosures. The following table p
 
 Your Opt-Out Rights. We don't "sell" Personal Data. Depending upon your choices, we may share limited data with select marketing partners for purposes of promoting our products and services to you on third-party properties.
 
-This is known as "targeted advertising" or sharing for "cross-context behavioral advertising" under certain state privacy laws. You can opt out using the marketing privacy control in your account settings. If you're not logged in, you can opt out using the Your Privacy Choices link on our website. You can also opt out using a legally recognized opt-out mechanism, like Global Privacy Control. You can learn more about the types of data we use and share for these purposes and controls we offer you here. We don't engage in these activities for users we know to be under 18 years of age.
+This is known as "targeted advertising" or sharing for "cross-context behavioral advertising" under certain state privacy laws. You can opt out using the marketing privacy control in your account settings. If you're not logged in, you can opt out within Settings > Data Controls on ChatGPT or using the Your Privacy Choices link on our website. You can also opt out using a legally recognized opt-out mechanism, like Global Privacy Control. You can learn more about the types of data we use and share for these purposes and controls we offer you here. We don't engage in these activities for users we know to be under 18 years of age.
 
 Your Other Rights. Depending on where you live and subject to applicable exceptions, you may have the following privacy rights in relation to your Personal Data:
 
