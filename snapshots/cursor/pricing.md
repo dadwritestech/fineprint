@@ -22,7 +22,7 @@ $20 / mo.
 
 ProPro+Ultra
 
-Everything on Hobby, plus:
+Everything in Hobby, plus:
 
 - ✓ Extended limits on Agent
 - ✓ Access to frontier models
