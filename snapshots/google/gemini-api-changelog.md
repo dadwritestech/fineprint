@@ -4,6 +4,12 @@
 
 This page documents updates to the Gemini API.
 
+## May 19, 2026
+
+- Released `gemini-3.5-flash`, the generally available (GA) version of Gemini 3.5 Flash, our most intelligent model for sustained frontier performance on agentic and coding tasks.
+- Launched the Managed Agents in the Gemini API in public preview. This enables developers to build and deploy autonomous, stateful agents that run in secure, isolated Google-hosted Linux sandbox environments. To learn more, see the Agents overview page and the Quickstart.
+- Released the general-purpose Antigravity Agent managed agent, `antigravity-preview-05-2026`, in public preview. The Antigravity agent can autonomously plan, reason, write and execute code, manage files, and browse the web inside its sandbox container. See the Antigravity Agent guide for code samples and specifications.
+
 ## May 7, 2026
 
 - Released `gemini-3.1-flash-lite`, the generally available (GA) version of Gemini 3.1 Flash-Lite, optimized for speed, scale, and cost efficiency.
@@ -756,4 +762,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-07 UTC.
+Last updated 2026-05-18 UTC.
