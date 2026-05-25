@@ -8,6 +8,10 @@ Advanced intelligence, complex problem-solving skills, and powerful agentic and 
 
 Preview
 
+Most intelligent model for sustained frontier performance on agentic and coding tasks.
+
+Stable
+
 Frontier-class performance rivaling larger models at a fraction of the cost.
 
 Preview
@@ -104,6 +108,8 @@ An agentic model that autonomously plans and executes multi-step research across
 
 Maximum comprehensiveness for automated context gathering and synthesis across hundreds of sources.
 
+A general-purpose managed agent that autonomously plans, reasons, runs code, manages files, and browses the web inside a secure, isolated Linux sandbox.
+
 ## Specialized task models
 
 Our first multimodal embedding model, mapping text, images, video, audio, and PDFs into a unified embedding space for advanced semantic search and RAG systems.
@@ -146,4 +152,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-07 UTC.
+Last updated 2026-05-18 UTC.
