@@ -143,8 +143,6 @@ The Batch API allows asynchronous processing of large volumes of requests with a
 | Claude Sonnet 4.6 | $1.50 / MTok | $7.50 / MTok |
 | Claude Sonnet 4.5 | $1.50 / MTok | $7.50 / MTok |
 | Claude Sonnet 4 (deprecated) | $1.50 / MTok | $7.50 / MTok |
-| Claude Haiku 4.5 | $0.50 / MTok | $2.50 / MTok |
-| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | $0.40 / MTok | $2 / MTok |
 
 For more information about batch processing, see Batch processing.
 
@@ -168,20 +166,13 @@ The additional tokens from tool use come from:
 - `tool_use` content blocks in API requests and responses
 - `tool_result` content blocks in API requests
 
-When you use `tools`, we also automatically include a special system prompt for the model which enables tool use. The number of tool use tokens required for each model are listed below (excluding the additional tokens listed above). Note that the table assumes at least 1 tool is provided. If no `tools` are provided, then a tool choice of `none` uses 0 additional system prompt tokens.
+When you use `tools`, the API also automatically includes a special system prompt for the model which enables tool use. The number of tool use tokens required for each model are listed below (excluding the additional tokens listed above). Note that the table assumes at least 1 tool is provided. If no `tools` are provided, then a tool choice of `none` uses 0 additional system prompt tokens.
 
 | Model | Tool choice | Tool use system prompt token count |
 |---|---|---|
 | Claude Opus 4.7 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
 | Claude Opus 4.6 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Opus 4.5 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Opus 4.1 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Opus 4 (deprecated) | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Sonnet 4.6 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Sonnet 4.5 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Sonnet 4 (deprecated) | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Haiku 4.5 | `auto`, `none``any`, `tool` | 346 tokens313 tokens |
-| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | `auto`, `none``any`, `tool` | 264 tokens340 tokens |
+| Claude Opus 4.5 | `auto`, `none``any`, `tool` |  |
 
 These token counts are added to your normal input and output tokens to calculate the total cost of a request.
 
@@ -217,11 +208,13 @@ When used without these tools, code execution is billed by execution time, track
 Code execution usage is tracked in the response:
 
 ```
-"usage": {
-  "input_tokens": 105,
-  "output_tokens": 239,
-  "server_tool_use": {
-    "code_execution_requests": 1
+{
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 239,
+    "server_tool_use": {
+      "code_execution_requests": 1
+    }
   }
 }
 ```
@@ -243,13 +236,15 @@ See tool use pricing for complete pricing details.
 Web search usage is charged in addition to token usage:
 
 ```
-"usage": {
-  "input_tokens": 105,
-  "output_tokens": 6039,
-  "cache_read_input_tokens": 7123,
-  "cache_creation_input_tokens": 7345,
-  "server_tool_use": {
-    "web_search_requests": 1
+{
+  "usage": {
+    "input_tokens": 105,
+    "output_tokens": 6039,
+    "cache_read_input_tokens": 7123,
+    "cache_creation_input_tokens": 7345,
+    "server_tool_use": {
+      "web_search_requests": 1
+    }
   }
 }
 ```
@@ -263,13 +258,15 @@ Each web search counts as one use, regardless of the number of results returned.
 Web fetch usage has no additional charges beyond standard token costs:
 
 ```
-"usage": {
-  "input_tokens": 25039,
-  "output_tokens": 931,
-  "cache_read_input_tokens": 0,
-  "cache_creation_input_tokens": 0,
-  "server_tool_use": {
-    "web_fetch_requests": 1
+{
+  "usage": {
+    "input_tokens": 25039,
+    "output_tokens": 931,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 0,
+    "server_tool_use": {
+      "web_fetch_requests": 1
+    }
   }
 }
 ```
