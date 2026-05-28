@@ -22,6 +22,10 @@ Some Copilot features use more advanced processing power and count as premium re
 
 The following Copilot features can use premium requests.
 
+Important
+
+Starting June 1, 2026, Copilot code review will have a model multiplier of 13. This means each time Copilot reviews a pull request or reviews code in your IDE, your monthly quota of Copilot premium requests will be reduced by 13.
+
 | Feature | Premium request consumption | SKU Attribution |
 |---|---|---|
 | Copilot Chat | Copilot Chat uses one premium request per user prompt, multiplied by the model's rate. This includes ask, edit, agent, and plan modes in Copilot Chat in an IDE. | Copilot premium requests |
@@ -102,6 +106,7 @@ If you use Copilot Free, you have access to a limited number of models, and each
 | Claude Opus 4.6 | 3 | Not applicable |
 | Claude Opus 4.6 (fast mode) (preview) | 30 | Not applicable |
 | Claude Opus 4.7 | 15 | Not applicable |
+| Claude Opus 4.8 | 15 | Not applicable |
 | Claude Sonnet 4.5 | 1 | Not applicable |
 | Claude Sonnet 4.6 | 1 | Not applicable |
 | Gemini 2.5 Pro | 1 | Not applicable |
@@ -119,7 +124,6 @@ If you use Copilot Free, you have access to a limited number of models, and each
 | GPT-5.4 nano | 0.25 | Not applicable |
 | GPT-5.5 | 7.5 | Not applicable |
 | Raptor mini | 0 | 1 |
-| Goldeneye | Not applicable | 1 |
 
 For GitHub Enterprise Cloud, requests processed with data residency or FedRAMP enforcement include an additional 10% multiplier. See GitHub Copilot with data residency.
 
