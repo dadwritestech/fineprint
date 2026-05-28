@@ -1,13 +1,5 @@
 <!-- fineprint snapshot: perplexity/api-pricing | source: https://docs.perplexity.ai/docs/getting-started/pricing -->
 
-For AI agents: see the complete llms.txt documentation index.
-
-Docs
-
-Cookbook
-
-API Reference
-
 This page shows pricing information to help you understand API costs.For billing setup, payment methods, and usage monitoring, visit the Admin section. For rate limits, see the Rate Limits & Usage Tiers page.
 
 ## Agent API Pricing
