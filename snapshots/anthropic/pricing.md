@@ -141,8 +141,6 @@ Max 20x
 
 #### Organization wide skills deployment
 
-#### Google Docs cataloging
-
 ### Payment options
 
 #### Credit card
@@ -238,7 +236,6 @@ $20/seat. Usage cost scales with model and task.
 All Team plan features, plus:
 
 - Admins set user and org spend limits
-- Google Docs cataloging
 - Role-based access with fine grained permissioning
 - System for Cross-domain Identity Management (SCIM)
 - Audit logs
@@ -360,8 +357,6 @@ Enterprise (sales-assisted)
 #### Compliance API
 
 #### Custom data retention controls
-
-#### Google Docs cataloging
 
 #### Set org instructions
 
