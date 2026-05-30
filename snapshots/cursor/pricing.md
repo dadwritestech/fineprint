@@ -38,13 +38,13 @@ $40 / user / mo.
 
 Everything on Individual, plus:
 
-- ✓ Cloud agents with shared team context
-- ✓ Team-wide rules, skills, and automations
-- ✓ Security review agent
-- ✓ SAML/OIDC SSO + enforced team-level privacy mode
-- ✓ Team plugin marketplace
-- ✓ Usage analytics
-- ✓ Centralized team billing
+- ✓ Centralized team billing and administration
+- ✓ Team marketplace for internal rules, skills, and plugins
+- ✓ Agentic code reviews with Bugbot
+- ✓ Cloud agents and automations with shared team context
+- ✓ Usage analytics to understand team behavior
+- ✓ Team-wide privacy mode
+- ✓ SAML/OIDC SSO
 
 Get Teams
 
@@ -52,15 +52,16 @@ Get Teams
 
 Custom
 
-Everything in Teams, plus:
+Everything on Teams, plus:
 
-- ✓ Pooled usage
+- ✓ Pooled usage to maximize budget efficiency
 - ✓ Invoice/PO billing
 - ✓ SCIM seat management
-- ✓ AI code tracking API and audit logs
-- ✓ Granular admin and model controls
+- ✓ Repository, model, and MCP access controls
+- ✓ Auto-run, browser, and network controls
+- ✓ Audit logs and service accounts
+- ✓ AI code tracking API
 - ✓ Priority support and account management
-- ✓ Bugbot on custom plan
 
 Contact Sales
 
