@@ -117,7 +117,7 @@ Rate limits are applied separately for each model; therefore you can use differe
 
 Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
 
-* - Opus rate limit is a total limit that applies to combined traffic across Opus 4.7, Opus 4.6, Opus 4.5, Opus 4.1, and Opus 4.
+* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, Opus 4.5, Opus 4.1, and Opus 4.
 
 ** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6, Sonnet 4.5, and Sonnet 4.
 
@@ -138,7 +138,7 @@ Claude Managed Agents endpoints are rate-limited per organization. These limits 
 
 ### Fast mode rate limits
 
-When using fast mode (beta: research preview) with `speed: "fast"` on Opus 4.6 or Opus 4.7, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
+When using fast mode (research preview) with `speed: "fast"` on Claude Opus 4.8, Opus 4.7, or Opus 4.6, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
 
 The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode for details on these headers.
 
