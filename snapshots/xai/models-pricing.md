@@ -24,17 +24,31 @@ ReasoningConfigurable
 
 View model
 
+### Grok Build 0.1
+
+New
+
+Fast coding model trained specifically for agentic coding workflows.
+
+Context256k tokens
+
+Input$1.00 / 1M tokens
+
+Output$2.00 / 1M tokens
+
+View model
+
 ### Voice API
 
 Real-time conversations, speech-to-text, and text-to-speech.
 
 Agent$3.00 / hour
 
-TTS$15.00 / 1M characters
+TTS$15.00 / 1M chars
 
-STT
+STT (Batch)$0.10 / hour
 
-LatencySub-second
+STT (Streaming)$0.20 / hour
 
 Read docsTry in playground
 
@@ -54,7 +68,7 @@ Read docsTry in playground
 
 ## Which model should I choose?
 
-Your choice depends on your use case. We have dedicated models and API's for audio, image, and video capabilities. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
+Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
 
 Use case
 
@@ -106,4 +120,4 @@ Some models have aliases to help users automatically migrate to the next version
 
 For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
 
-Last updated: May 15, 2026
+Last updated: May 29, 2026
