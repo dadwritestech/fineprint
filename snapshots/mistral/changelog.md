@@ -4,6 +4,16 @@
 
 Find out about all the latest changes to our tool. You may filter by date and type of release.
 
+### May 26
+
+## May 28
+
+- We launched Vibe, our unified agent at chat.mistral.ai, available in three modes: OTHER
+  - Work for productivity on web and mobile, with Skills, Workflows, Connectors, Libraries, and scheduled tasks.
+  - Code for developers, covering the Vibe CLI, the VS Code extension, and Vibe Code Web for remote coding sessions in a managed cloud sandbox.
+  - Chat preserves the legacy Le Chat experience for existing workflows.
+- Documentation restructured: previous `/le-chat/*` and `/mistral-vibe/*` paths now redirect to the new `/vibe/*` tree. OTHER
+
 ### Apr 26
 
 ## April 28
