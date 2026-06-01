@@ -20,17 +20,13 @@ Frontier-class performance rivaling larger models at a fraction of the cost.
 
 Stable
 
-Frontier-class performance rivaling larger models at a fraction of the cost.
-
-Preview
-
 Powerful, high-efficiency image generation and editing, optimized for speed and high-volume use cases.
 
-Preview
+Stable
 
 State-of-the-art image generation and editing models for highly contextual native image creation.
 
-Preview
+Stable
 
 High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications.
 
@@ -124,6 +120,8 @@ Our second generation workhorse model, with next-gen features and improved capab
 
 Our fastest second generation model, optimized for cost efficiency and low latency.
 
+Our most cost-efficient multimodal model, offering the fastest performance for high-frequency, lightweight tasks.
+
 Our state-of-the-art reasoning model, with advanced multimodal understanding.
 
 ## Model version name patterns
@@ -132,7 +130,7 @@ Gemini models are available in either stable, preview, latest, or experimental v
 
 Points to a specific stable model. Stable models usually don't change. Most production apps should use a specific stable model.
 
-For example: `gemini-2.5-flash`.
+For example: `gemini-3.5-flash`.
 
 Points to a preview model which may be used for production. Preview models will typically have billing enabled, might come with more restrictive rate limits and will be deprecated with at least 2 weeks notice.
 
@@ -152,4 +150,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-18 UTC.
+Last updated 2026-05-28 UTC.
