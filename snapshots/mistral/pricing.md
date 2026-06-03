@@ -4,327 +4,906 @@
 
 # Pricing
 
-### Free
+Free
 
-Your personal AI assistant for everyday life and work. Get started with Le Chat.
+Your personal AI agent for everyday tasks.
 
-- Chat, search, learn, create with Le Chat.
-- Access to Mistral's SOTA AI models.
-- Save and recall up to 500 memories.
-- Generate pictures.
-- Group chats into projects.
-- 40+ enterprise connectors.
-
-Popular
-
-### Pro
-
-Enhanced productivity, higher limits, and Mistral Vibe for all-day development.
-
-- More messages and web searches.
-- More extended thinking and deep research reports.
-- Up to 15GB of document storage.
-- Up to 1,000 projects.
-- Mistral Vibe for all-day coding, PAYG beyond.
-- Chat and email support.
-- State-of-the art image generation.
-
-Base
-
-$0012345678900123456789.0012345678900123456789/mo
-
-Excluding taxes
-
-Students
-
-$00123456789.0012345678900123456789/mo
-
-Excluding taxes
+- Test out Vibe's capabilities.
+- Access on web and mobile.
+- Access to Mistral's SOTA models.
+- Limited messages and web searches.
+- Limited coding sessions.
+- State-of-the-art image generation.
+- 100+ connectors.
 
 Start now
 
-### Team
+Popular
+
+Pro
+
+Full access to Vibe for long-running tasks plus all-day coding.
+
+$14.99
+
+/mo
+
+Excluding taxes
+
+Including taxes
+
+- More access and usage.
+- More messages and web searches.
+- Get more complex tasks done.
+- All-day coding in the CLI, IDE, and on web.
+- More image generations.
+- Chat and email support.
+
+Start now
+
+Team
 
 Secure, collaborative workspace for teams building with AI.
+
+$24.99
+
+/user/mo
+
+Excluding taxes
+
+Including taxes
 
 - Up to 30GB of storage /user.
 - Domain name verification.
 - Data export.
 
-$0012345678900123456789.0012345678900123456789/mo
+/mo
 
-Excluding taxes
-
-$0012345678900123456789 /mo /
-
-users
+Users
 
 Start now
 
-### Enterprise
+Enterprise
 
 Private deployments powered by custom models, UI, and tools.
 
-### Free
+- Custom models.
+- Custom agents.
+- Custom workflows.
+- Audit logs.
+- SAML SSO.
+- White label.
 
-Start today
+Contact us
 
-### Pro
+Education plan
 
-$14.99*
+For students.
 
-### Team
+$5.99
 
-$24.99*
+Excluding taxes
 
-### Enterprise
+Including taxes
 
-Custom
+Start now
 
-### Features
+|  | Free        Start now | Pro        Start now | Team        Start now | Enterprise        Contact us |
+|---|---|---|---|---|
+| Interfaces |  |  |  |  |
+| Vibe on web     Vibe in your browser: run long-horizon work and code tasks from a chat interface. |  |  |  |  |
+| Vibe CLI     Terminal-native coding agent powered by Devstral for autonomous software engineering tasks. |  |  |  |  |
+| Vibe for IDE     VS Code and JetBrains plugin powered by Devstral—tab completion, natural language code editing, and context-aware chat. |  |  |  |  |
+| Vibe on mobile (iOS and Android) |  |  |  |  |
+| Features and tools. |  |  |  |  |
+| Messages     Chat with our most powerful, SOTA models. |  | Up to 6x free | Up to 6x free |  |
+| Voice mode     Record or upload audio, get transcriptions, ask questions, or generate summaries. |  |  |  |  |
+| Skills     Create and load instructions, tools, and scripts for specialized, repeatable tasks. |  |  |  |  |
+| Web searches |  | Up to 5x free | Up to 5x free |  |
+| Libraries and document upload     Organize and include information for your chats. Supported file formats: PDF, images, CSV, all text files (.json...), Office Suite (ppt, xls, docx). | Limited | Up to 15GB | Up to 30GB / user |  |
+| Task scheduling     Schedule prompts, agents, or workflows to run automatically at set times. | Up to 5 | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) |  |
+| Workflows     Run multi-step automations orchestrated from Mistral Studio. |  |  |  |  |
+| Connectors (beta)     Search, summarize, and act across your stack with the widest enterprise-ready connector directory. |  |  |  |  |
+| Custom MCP connectors (beta)     Connect to any remote MCP server of choice. |  |  |  |  |
+| Canvas     Create documents, presentations, code, mockups, and more. |  |  |  |  |
+| Project folders     Group chats into organized, context-rich workspaces. |  | Up to 1,000 | Up to 1,000 |  |
+| Image generation     Generate and edit high-quality AI images, turning ideas into visuals with just a few words. |  | Up to 40x free | Up to 40x free |  |
+| Code interpreter (Chat mode)     Execute code in a sandbox, run scientific analysis, generate visualizations, and perform simulations. |  |  |  |  |
+| Verified news     Fetch reliable and verified news content in responses. |  |  |  |  |
+| Coding features. |  |  |  |  |
+| Use Vibe in the CLI, IDE, and remotely. |  |  |  |  |
+| Connectors     Pull context from your tools like Notion, Slack, Linear, and Drive directly into Vibe CLI while it codes. |  |  |  |  |
+| Hooks     Run custom shell commands before and after each agent turn to enforce conventions, block patterns, or trigger your own automations. |  |  |  |  |
+| Remote coding agents     Remote coding agent in isolated sandboxes for parallel task execution. |  |  |  |  |
+| Teleport     Hand off a Vibe CLI session from your local machine to a remote coding agent , then pick it back up locally when needed. |  |  |  |  |
+| Remote agent observability     Monitor remote coding sessions with run history, tool calls, code changes, logs, and audit trails. |  |  |  |  |
+| Domain name verification |  |  |  |  |
+| Team and enterprise features. |  |  |  |  |
+| Knowledge connectors     Connect external knowledge sources to Vibe for real-time, accurate answers. |  |  |  |  |
+| Custom deployments     Deploy self-hosted, in your private cloud, or on-premises; your data stays in your environment. |  |  |  |  |
+| Admin API     Programmatically manage users, teams, and permissions. |  |  |  |  |
+| Data export |  |  |  |  |
+| Audit logs     Detailed logs for tracking usage, changes, and ensuring compliance. |  |  |  |  |
+| SAML SSO |  |  |  |  |
+| White label     Dedicated hostname, your logo. |  |  |  |  |
+| Usage and data. |  |  |  |  |
+| Extend usage with PAYG credits     Keep going past your plan limit by paying only for what you use beyond it at API rate. |  |  |  |  |
+| Model training |  | Opt-out | Opt-out | Opt-out |
+| Customer service. |  |  |  |  |
+| Help center |  |  |  |  |
+| Chat and email support |  |  |  |  |
 
-Free
+Frequently asked questions.
 
-Pro
+Yes. Mistral Free provides limited access to Vibe, including our latest models, chat, search, creation, and Vibe for code for agentic coding in your terminal.
 
-Team
+For most tasks: Mistral Large (best overall performance). For coding: Mistral Medium 3.5. For document extraction: OCR. For cost-sensitive projects: Mistral Small. For more information, see the Models overview documentation.
 
-Enterprise
+We charge per million tokens processed - both input (your prompts) and output (responses) count. For example, Mistral Large costs $2 /M tokens in and $6 /M tokens out. Batch processing gets a 50% discount.
 
-Messages
+The Mistral Studio dashboard offers detailed tracking of API usage, including metrics for calls, endpoints, and user activity. It breaks down costs for services like completion, OCR, and fine-tuning, helping you monitor and optimize API consumption efficiently.
 
-Up to 6x free
+The Free plan is ideal for getting started with the AI assistant. Mistral Pro offers higher limits across chat plus access to coding with Mistral Vibe. You get more messages and web searches, more extended thinking and deep research reports, expanded Mistral Vibe capacity, and chat and email support.
 
-Up to 6x free
+Pro has higher ceilings compared to Free (e.g. up to 40x more image generations). Team and Enterprise plans have even higher allowances on certain features. For example, Flash answers: 200 / day on Team vs. 150 / day on Pro.
 
-Custom
+Yes, you can self-host our models anywhere. Open-weight models (e.g., Mistral 7B) are Apache 2.0 licensed for research/individual use; while commercial deployments require a Mistral license with separate terms for derivatives and production use.
 
-Voice mode
+Verified students can get Mistral Pro for $5.99 / month (normally $14.99).
 
-Custom
+Yes, the Mistral Enterprise plan includes custom SLAs, dedicated support, and private deployments. Contact us for more details.
 
-Agents
+Our most powerful models and APIs.
 
-Custom
+Open
 
-Mistral Vibe in Le Chat
+Mistral Medium 3.5
 
--
+Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
 
-Custom
+Text-to-text
 
-Mistral Vibe CLI
+Agentic
 
--
+Multimodal
 
-Custom
+Coding
 
-Mistral Vibe for IDE
+Reasoning
 
--
+Input (/M tokens)
 
--
+$1.5
 
--
+Output (/M tokens)
 
-Async coding agents
+$7.5
 
--
+Learn more
 
--
+Open
 
--
+Voxtral TTS
 
-Custom
+State-of-the-art text-to-speech generation and voice cloning.
 
-Web searches
+Voice
 
-Up to 5x Free
+Audio generation
 
-Up to 5x Free
+$0.016 per 1k characters
 
-Custom
+Premier
 
-Async coding agents
+OCR 3
 
--
+The world's best document extraction and understanding model.
 
-Custom
+OCR
 
-Think mode
+Multimodal
 
-Up to 30x Free
+Text-to-text
 
-Up to 30x Free
+OCR
 
-Custom
+$2 / 1000 pages
 
-Deep research (Preview)
+Annotations
 
-Up to 5x Free
+$3 / 1,000 pages
 
-Up to 5x Free
+mistral-ocr-latest
 
-Custom
+Enterprise APIs
 
-Memories (beta)
+Introducing our Enterprise APIs, including regional data processing controls, system-level SLAs, increased rate limits, and premium support.
 
-500
+Contact sales team
 
-1,000
+Browse our APIs.
 
-1,000
+Cutting-edge AI models across text, reasoning, vision, and more—ready to integrate into your workflows with minimal coding.
 
-1,000
+Capabilities
+
+33 results
+
+- Text-to-text
+- Multimodal
+- Agentic
+- Coding
+- Reasoning
+- OCR
+- Lightweight
+- Transcription
+- Voice
+- Classifier APIs
+- Embedding
+- Tools
+
+Licenses
+
+- Open
+- Premier
+- Labs
+
+Open
+
+Mistral Large 3
+
+Open-weight, general-purpose, flagship multimodal and multilingual model.
+
+Text-to-text
+
+Multimodal
+
+Input (/M tokens)
+
+$0.5
+
+Output (/M tokens)
+
+$1.5
+
+mistral-large-latest
+
+Open
+
+Mistral Medium 3.5
+
+Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
+
+Text-to-text
+
+Agentic
+
+Multimodal
+
+Coding
+
+Reasoning
+
+Input (/M tokens)
+
+$1.5
+
+Output (/M tokens)
+
+$7.5
+
+Learn more
+
+Premier
+
+OCR 3
+
+The world's best document extraction and understanding model.
+
+OCR
+
+Multimodal
+
+Text-to-text
+
+OCR
+
+$2 / 1000 pages
+
+Annotations
+
+$3 / 1,000 pages
+
+mistral-ocr-latest
+
+Open
+
+Devstral 2
+
+Open-weights agentic coding model for autonomous software engineering.
+
+Coding
+
+Agentic
+
+Text-to-text
+
+Input (/M tokens)
+
+$0.4
+
+Output (/M tokens)
+
+$2
+
+devstral-medium-latest
+
+Labs
+
+Devstral Small 2
+
+The best lightweight, open model for coding agents.
+
+Coding
+
+Agentic
+
+Text-to-text
+
+Lightweight
+
+Multimodal
+
+Input (/M tokens)
+
+$0.1
+
+Output (/M tokens)
+
+$0.3
+
+devstral-small-latest
+
+Premier
+
+Codestral
+
+Low-latency coding model optimized for high-frequency completion, fill-in-the-middle, and code generation tasks.
+
+Coding
+
+Text-to-text
+
+Input (/M tokens)
+
+$0.3
+
+Output (/M tokens)
+
+$0.9
+
+Training Cost (/M tokens)
+
+$3
+
+Storage Cost
+
+Input (/M tokens)
+
+$0.2
+
+Output (/M tokens)
+
+$0.6
+
+codestral-latest
+
+Labs
+
+Leanstral
+
+First open-source code agent for Lean 4.
+
+Coding
+
+API endpoint
+
+labs-leanstral-2603
+
+Open
+
+Mistral Small 4
+
+SOTA. Multimodal. Multilingual. Apache 2.0.
+
+Text-to-text
+
+Agentic
+
+Multimodal
+
+Lightweight
+
+Input (/M tokens)
+
+$0.1
+
+Output (/M tokens)
+
+$0.3
+
+mistral-small-latest
+
+Labs
+
+Mistral Small Creative
+
+A fine-tuned small model for creative writing, roleplay, and chat—trained on curated data.
+
+Text-to-text
+
+Multimodal
+
+Lightweight
+
+Input (/M tokens)
+
+$0.1
+
+Output (/M tokens)
+
+$0.3
+
+labs-mistral-small-creative
+
+Premier
+
+Magistral Medium
+
+Thinking model excelling in domain-specific, transparent, and multilingual reasoning.
+
+Text-to-text
+
+Reasoning
+
+Multimodal
+
+Input (/M tokens)
+
+$2
+
+Output (/M tokens)
+
+$5
+
+magistral-medium-latest
+
+Premier
+
+Magistral Small
+
+Thinking model excelling in domain-specific, transparent, and multilingual reasoning.
+
+Text-to-text
+
+Reasoning
+
+Multimodal
+
+Lightweight
+
+Input (/M tokens)
+
+$0.5
+
+Output (/M tokens)
+
+$1.5
+
+magistral-small-latest
+
+Open
+
+Ministral 3 - 3B
+
+Best-in-class frontier AI to the edge.
+
+Text-to-text
+
+Agentic
+
+Lightweight
+
+Input (/M tokens)
+
+$0.1
+
+Output (/M tokens)
+
+$0.1
+
+ministral-3b-latest
+
+Open
+
+Ministral 3 - 8B
+
+Best-in-class frontier AI to the edge.
+
+Text-to-text
+
+Agentic
+
+Lightweight
+
+Input (/M tokens)
+
+$0.15
+
+Output (/M tokens)
+
+$0.15
+
+ministral-8b-latest
+
+Open
+
+Ministral 3 - 14B
+
+Best-in-class frontier AI to the edge.
+
+Text-to-text
+
+Agentic
+
+Lightweight
+
+Input (/M tokens)
+
+$0.2
+
+Output (/M tokens)
+
+$0.2
+
+ministral-14b-latest
+
+Open
+
+Voxtral Small
+
+State-of-the-art performance on speech and audio understanding.
+
+Transcription
+
+Text-to-text
+
+Input (per min / per M tok)
+
+$0.004 (audio) / $0.1 (text)
+
+Output (/M tokens)
+
+$0.4
+
+Available on
+
+voxtral-small-latest
+
+Open
+
+Voxtral Mini
+
+Low-latency speech recognition for edge and devices.
+
+Voice
+
+Text-to-text
+
+Lightweight
+
+Input (per min / per M tok)
+
+$0.001 (audio) / $0.04 (text)
+
+Output (/M tokens)
+
+$0.04
+
+Available on
+
+voxtral-mini-latest
+
+Premier
+
+Voxtral Mini Transcribe
+
+State-of-the-art transcription model.
+
+Voice
+
+Text-to-text
+
+Price
+
+$0.002 per min
+
+voxtral-mini-latest
+
+Open
+
+Voxtral TTS
+
+State-of-the-art text-to-speech generation and voice cloning.
+
+Voice
+
+Audio generation
+
+$0.016 per 1k characters
+
+Classifier API model 3B
+
+Fine-tune Ministral 3B for classification tasks, like moderation, sentiment analysis, fraud detection, and more.
+
+Classifier APIs
+
+Training cost (/M tokens)
+
+$1
+
+Storage cost (per month per model)
+
+$2
+
+Input (/M tokens)
+
+$0.1
+
+Output (/M tokens)
+
+$0.1
+
+Classifier API model 3B
+
+Classifier API model 8B
+
+Fine-tune Ministral 8B for classification tasks, like moderation, sentiment analysis, fraud detection, and more.
+
+Classifier APIs
+
+Training cost (/M tokens)
+
+$1
+
+Storage cost (per month per model)
+
+$2
+
+Input (/M tokens)
+
+$0.04
+
+Output (/M tokens)
+
+$0.04
+
+Classifier API model 8B
+
+Mistral Moderation
+
+A classifier service for text content moderation.
+
+Classifier APIs
+
+Input (/M tokens)
+
+$0.1
+
+mistral-moderation-2603
+
+Premier
+
+Codestral Embed
+
+State-of-the-art embeddings for code and natural language queries.
+
+Embedding
+
+Coding
+
+Input (/M tokens)
+
+$0.15
+
+codestral-embed
+
+Mistral Embed
+
+State-of-the-art semantic model for extracting representation of text extracts.
+
+Embedding
+
+Text-to-text
+
+Input (/M tokens)
+
+$0.1
+
+mistral-embed
+
+Agent API
+
+Enhances AI with built-in tools for code execution, web search, image generation, persistent memory, and agentic orchestration.
+
+Tools
+
+Price
+
+Agent API
 
 Libraries
 
-Limited
+Upload and manage documents, enabling agents to access your external data.
 
-Up to 15GB
+Tools
 
-Up to 30GB / user
+OCR (per 1K pages)
 
-Custom
+$3
 
-Document upload
+Indexing (per M tokens)
 
-Up to 20x Free
+$1
 
-Up to 20x Free
+Call (per call)
 
-Custom
+$0.01
 
-Verified news
+Code execution
 
-Custom
+Execute and interpret code snippets within the chat interface.
 
-Connectors directory (beta)
+Tools
 
-Custom
+Price (per 1K calls)
 
-Custom MCP connectors (beta)
+$30
 
-Custom
+Code execution
 
-Projects
+Web search
 
-Up to 1,000
+Enhance your work, research, and learning with web search, complete with citations for accurate and up-to-date information.
 
-Up to 1,000
+Tools
 
-Custom
+Price (per 1K calls)
 
-Image generation
+$30
 
-Up to 40x Free
+Web search
 
-Up to 40x Free
+Images
 
-Custom
+Generate images based on user prompts and preferences.
 
-Code interpreter
+Tools
 
-Up to 5x Free
+Price (per 1K images)
 
-Up to 5x Free
+$100
 
-Custom
+Images
 
-Canvas mode
+Premium news
 
-Custom
+Access to news articles via integrated news provider verification for enhanced information retrieval.
 
-### Customer service
+Tools
 
-Free
+Price (per 1K calls)
 
-Pro
+$50
 
-Team
+Premium news
 
-Enterprise
+Data capture
 
-Help center
+Easily record and access API call data for debugging and continuous optimization.
 
-Custom
+Tools
 
-Knowledge base
+Price (per M tokens)
 
-Custom
+$0.04
 
-Chat and email support
+Data capture
 
--
+Open
 
-Custom
+Mistral NeMo
 
-### Team and enterprise features
+State-of-the-art Mistral model trained specifically for code tasks.
 
-Free
+Coding
 
-Pro
+Lightweight
 
-Team
+Input (/M tokens)
 
-Enterprise
+$0.15
 
-Domain name verification
+Output (/M tokens)
 
--
+$0.15
 
--
+Training Cost (/M tokens)
 
-Custom
+$1
 
-Admin API
+Storage Cost
 
--
+Input (/M tokens)
 
--
+$0.15
 
-Custom
+Output (/M tokens)
 
-Data export
+$0.15
 
--
+open-mistral-nemo
 
--
+Open
 
-Custom
+Mixtral 8x7B
 
-Audit logs
+A 7B sparse Mixture-of-Experts (SMoE). Uses 12.9B active parameters out of 45B total.
 
--
+Text-to-text
 
--
+Lightweight
 
--
+Input (/M tokens)
 
-Custom
+$0.7
 
-SAML SSO
+Output (/M tokens)
 
--
+$0.7
 
--
+open-mixtral-8x7b
 
--
+Open
 
-Custom
+Mixtral 8x22B
 
-White label
+Mixtral 8x22B is currently the most performant open model. A performant, 22B sparse Mixture-of-Experts (SMoE). Uses only 39B active parameters out of 141B.
 
--
+Text-to-text
 
--
+Input (/M tokens)
 
--
+$2
 
-Custom
+Output (/M tokens)
 
-* Excluding taxes
+$6
 
-FAQs
+open-mixtral-8x22b
 
-## The next chapter of AI is yours.
+### Let's build your AI advantage together.
+
+Our sales experts are here to provide all the details you need. Fill out the form, and we'll reach out to discuss how Mistral can meet your needs.
+
+Thank you for your submission.
+
+France
+
+Build your own AI future.
+
+Build, customize, and deploy AI solutions with complete control.
+
+Try Mistral Vibe
+
+Build in Mistral Studio
