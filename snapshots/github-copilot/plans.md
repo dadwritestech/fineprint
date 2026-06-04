@@ -4,7 +4,7 @@
 
 ### Free
 
-A fast way to get started with GitHub Copilot.
+For getting started with GitHub Copilot.
 
 $0USD
 
@@ -12,7 +12,6 @@ Get startedOpen in VS Code
 
 #### What's included:
 
-- 50 agent mode or chat requests per month
 - 2,000 completions per month
 - Access to Haiku 4.5, GPT-5 mini, and more
 - Copilot CLI
@@ -21,37 +20,50 @@ No credit card required. Verified students have access to the GitHub Copilot Stu
 
 ### Pro
 
-Accelerate workflows with GitHub Copilot.
+For everyday coding with agents in GitHub Copilot.
 
 $10USDper user / month
 
-Upgrades are paused as we roll out a flexible billing experience. We know this interrupts your flow and appreciate your patience while we get this right. Learn more
+New plan sign-ups are temporarily paused as we ensure a high-quality experience. We appreciate your patience. Learn more
 
 #### Everything in Free and:
 
-- Copilot cloud agent
-- Copilot code review
-- Claude and Codex on GitHub and VS Code
-- 300 premium requests, with the option to buy more
-- Unlimited agent mode and chats with GPT-5 mini
-- Unlimited inline suggestions
-- Access to models from Anthropic, Google, OpenAI, and more
+- Access to Cloud agent and code review
+- Unlimited code completion and next edit suggestions
+- Access to 3rd party agents (Claude Code and Codex)
+- Model selection
+- $15 monthly total credits for Pro
 
 ### Pro+
 
-Scale with agents and more models.
+For more complex development with premium models.
 
 $39USDper user / month
 
-Upgrades are paused as we roll out a flexible billing experience. We know this interrupts your flow and appreciate your patience while we get this right. Learn more
+New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student and Pro customers can upgrade to Pro+. We appreciate your patience. Learn more
 
 #### Everything in Pro and:
 
-- Access to all models, including Claude Opus 4.7 and more
-- 5× as many premium requests as Pro to use the latest models, with the option to buy more
-- Access to GitHub Spark
+- Access to premium models, including Opus
+- Audit logs
+- 4x+ included usage than Pro
+- $70 monthly total credits for Pro+
 
-Most popular
+### Max
+
+For sustained, high-volume agent workflows with GitHub Copilot.
+
+$100USDper user / month
+
+New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student, Pro, and Pro+ customers can upgrade to Max. We appreciate your patience. Learn more
+
+#### Everything in Pro+ and:
+
+- Priority access to new models and features
+- 2.9x+ included usage than Pro+
+- $200 monthly total credits for Max
+
+Best value
 
 GitHub Copilot is available on your favorite platforms:
 
@@ -78,39 +90,99 @@ Pro
 
 $10 per month
 
-Unavailable - Read more
+Learn more
 
 Pro+
 
 $39 per month
 
-Unavailable - Read more
+Upgrade now
 
-Premium requests
+Max
 
-Premium requests
+$100 per month
 
-Chat, agent mode, code review, cloud agent, and Copilot CLI use premium requests, with usage varying by feature or model. Learn more
+Upgrade now
 
-Free
+GitHub AI Credits
 
-50 per month
+Total GitHub AI Credits
 
-Pro
-
-300 per month
-
-Pro+
-
-1,500 per month
-
-Purchase additional premium requests at $0.04/request
+Credits used when interacting with Copilot features. Chat, agent mode, code review, Copilot cloud agent, Copilot CLI, and Copilot Apps consume GitHub AI Credits. Free plan supports CLI and agent mode. Learn more
 
 Free
 
+Limited chat and agent usage
+
+Pro
+
+$15 per month
+
+Pro+
+
+$70 per month
+
+Max
+
+$200 per month
+
+Base credits
+
+Free
+
+Limited chat and agent usage
+
+Pro
+
+$10 per month
+
+Pro+
+
+$39 per month
+
+Max
+
+$100 per month
+
+Flex allotment
+
+Variable additional usage on top of your base. Flex allotments may change over time.
+
+Free
+
+Pro
+
+$5 per month
+
+Pro+
+
+$31 per month
+
+Max
+
+$100 per month
+
+Pooled usage
+
+Included AI credits are shared org-wide with admin controls for spending.
+
+Free
+
 Pro
 
 Pro+
+
+Max
+
+Purchase additional GitHub AI Credits
+
+Free
+
+Pro
+
+Pro+
+
+Max
 
 Supported environments
 
@@ -124,6 +196,8 @@ Pro
 
 Pro+
 
+Max
+
 CLI
 
 Free
@@ -131,6 +205,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 GitHub (including github.com and GitHub Mobile)
 
@@ -140,21 +216,19 @@ Pro
 
 Pro+
 
+Max
+
 Agent mode
 
-Agent mode use with GPT-5 mini in VS Code, Visual Studio, JetBrains, Eclipse, and Xcode
+Agent mode use in VS Code, Visual Studio, JetBrains, Eclipse, and Xcode
 
 Free
 
-50 per month
-
 Pro
-
-Unlimited
 
 Pro+
 
-Unlimited
+Max
 
 Integrates with MCP servers
 
@@ -164,6 +238,8 @@ Pro
 
 Pro+
 
+Max
+
 Custom instructions and agents
 
 Free
@@ -171,6 +247,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 App modernization for Java and .NET
 
@@ -180,6 +258,8 @@ Pro
 
 Pro+
 
+Max
+
 Assign work to Copilot and it creates a pull request
 
 Free
@@ -187,6 +267,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Code review
 
@@ -198,6 +280,8 @@ Pro
 
 Pro+
 
+Max
+
 File diff reviews in code editors
 
 Free
@@ -206,6 +290,8 @@ Pro
 
 Pro+
 
+Max
+
 Custom instructions with instructions.md
 
 Free
@@ -213,6 +299,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Cloud agent
 
@@ -224,6 +312,8 @@ Pro
 
 Pro+
 
+Max
+
 Delegate tasks to third-party coding agents like Claude by Anthropic and OpenAI Codex (Preview)
 
 Free
@@ -231,6 +321,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Start and track issues from agents page or panel
 
@@ -240,6 +332,8 @@ Pro
 
 Pro+
 
+Max
+
 Start and track issues from code editors
 
 Free
@@ -247,6 +341,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Start and track issues from third-party project management tools
 
@@ -256,6 +352,8 @@ Pro
 
 Pro+
 
+Max
+
 Integrates with MCP servers
 
 Free
@@ -264,6 +362,8 @@ Pro
 
 Pro+
 
+Max
+
 Custom instructions and agents
 
 Free
@@ -271,6 +371,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Copilot CLI (preview)
 
@@ -282,6 +384,8 @@ Pro
 
 Pro+
 
+Max
+
 Delegate tasks to coding agents
 
 Free
@@ -289,6 +393,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Make and commit code changes locally or on GitHub
 
@@ -298,6 +404,8 @@ Pro
 
 Pro+
 
+Max
+
 Programmatic mode
 
 Free
@@ -306,21 +414,9 @@ Pro
 
 Pro+
 
+Max
+
 Models in Copilot
-
-Interactions with GPT-5 mini and more
-
-Free
-
-50 per month
-
-Pro
-
-Unlimited
-
-Pro+
-
-Unlimited
 
 Available models
 
@@ -336,10 +432,7 @@ Free
 - Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
-- Google Gemini 3.1 Pro (Preview)
-- Google Gemini 3.5 Flash
+- Anthropic Claude Opus 4.8
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -347,7 +440,10 @@ Free
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
-- xAI Grok Code Fast 1
+- Google Gemini 2.5 Pro
+- Google Gemini 3 Flash (Preview)
+- Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - Raptor mini (Preview)
 
 Pro
@@ -360,10 +456,7 @@ Pro
 - Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
-- Google Gemini 3.1 Pro (Preview)
-- Google Gemini 3.5 Flash
+- Anthropic Claude Opus 4.8
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -371,7 +464,10 @@ Pro
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
-- xAI Grok Code Fast 1
+- Google Gemini 2.5 Pro
+- Google Gemini 3 Flash (Preview)
+- Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - Raptor mini (Preview)
 
 Pro+
@@ -384,10 +480,7 @@ Pro+
 - Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
-- Google Gemini 3.1 Pro (Preview)
-- Google Gemini 3.5 Flash
+- Anthropic Claude Opus 4.8
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -395,7 +488,34 @@ Pro+
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
-- xAI Grok Code Fast 1
+- Google Gemini 2.5 Pro
+- Google Gemini 3 Flash (Preview)
+- Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
+- Raptor mini (Preview)
+
+Max
+
+- Anthropic Claude Haiku 4.5
+- Anthropic Claude Sonnet 4
+- Anthropic Claude Sonnet 4.5
+- Anthropic Claude Sonnet 4.6
+- Anthropic Claude Opus 4.5
+- Anthropic Claude Opus 4.6
+- Anthropic Claude Opus 4.6 (fast mode) (Preview)
+- Anthropic Claude Opus 4.7
+- Anthropic Claude Opus 4.8
+- OpenAI GPT-5 mini
+- OpenAI GPT-5.2
+- OpenAI GPT-5.2-Codex
+- OpenAI GPT-5.3-Codex
+- OpenAI GPT-5.4
+- OpenAI GPT-5.4 mini
+- OpenAI GPT-5.5
+- Google Gemini 2.5 Pro
+- Google Gemini 3 Flash (Preview)
+- Google Gemini 3.1 Pro (Preview)
+- Google Gemini 3.5 Flash
 - Raptor mini (Preview)
 
 Additional features
@@ -414,6 +534,10 @@ Pro+
 
 Unlimited
 
+Max
+
+Unlimited
+
 Copilot Spaces
 
 Free
@@ -422,6 +546,8 @@ Pro
 
 Pro+
 
+Max
+
 GitHub Spark (Preview)
 
 Free
@@ -429,6 +555,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Policies and management
 
@@ -440,6 +568,8 @@ Pro
 
 Pro+
 
+Max
+
 Data excluded from training by default
 
 Free
@@ -447,6 +577,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 Enterprise-grade security
 
@@ -456,6 +588,8 @@ Pro
 
 Pro+
 
+Max
+
 IP indemnity
 
 Free
@@ -463,6 +597,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 User management in github.com
 
@@ -472,6 +608,8 @@ Pro
 
 Pro+
 
+Max
+
 Usage metrics
 
 Free
@@ -480,6 +618,8 @@ Pro
 
 Pro+
 
+Max
+
 SAML SSO authentication
 
 Free
@@ -487,6 +627,8 @@ Free
 Pro
 
 Pro+
+
+Max
 
 - GitHub
 - VS Code
@@ -560,13 +702,15 @@ Access to Copilot Business and Enterprise is managed by your GitHub Administrato
 
 #### Plans & pricing
 
-#### What are the differences between the Free, Pro, Business, and Enterprise plans?
+#### What are the differences between the Free, Pro, Pro+, Max, Business, and Enterprise plans?
 
 GitHub Copilot has multiple offerings for organizations and an offering for individual developers. All the offerings include both code completion and chat assistance. The primary differences between the organization offerings and the individual offering are license management, policy management, and IP indemnity.
 
 Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions and will offer customers access to fine-tuned custom, private models for code completion.
 
 GitHub Copilot Pro is designed for individual developers, freelancers, students, educators, and open source maintainers. The plan includes all the features of GitHub Copilot Business except organizational license management, policy management, and IP indemnity.
+
+GitHub Copilot Max is built for heavy Copilot usage, including sustained agent-driven workflows, and includes $100/month in GitHub AI Credits.
 
 #### How can I upgrade my GitHub Copilot Free license to Copilot Pro?
 
@@ -590,18 +734,40 @@ To enable this functionality, an enterprise/org admin must first have Copilot en
 
 Note: This capability is not supported for Copilot code reviews in VS Code or other IDEs.
 
-#### How am I billed for Copilot code review usage from users without a Copilot license?
+#### How does billing work for Copilot code review usage generated by users without a Copilot license?
 
-Usage from non-licensed users is billed directly to your organization as "premium requests" (PRUs) at the standard multiplier rate for Copilot code review. This flexible model allows you to get full review coverage on every PR without needing to purchase a full Copilot seat for non-development contributors who may not need Copilot. Usage from your existing licensed users simply continues to draw from their included monthly allowance as it does today.
+Usage from non-licensed users is billed directly to your organization as GitHub AI Credits. This flexible model allows you to get full review coverage on every PR without purchasing a full Copilot seat for non-development contributors who may not need Copilot.
+
+Usage from your existing licensed users continues to draw from their included monthly allowance as it does today. Beginning June 1, 2026, code review workflows also consume GitHub Actions minutes.
 
 #### Is Copilot code review usage from users without a Copilot license enabled by default? How do I control the cost?
 
 No. This capability is off by default and gives the enterprise admin control to enable or disable. An admin must explicitly enable two separate policies to activate:
 
-1. 'Premium request paid usage' must be enabled to allow enterprises to be charged for premium requests exceeding their included usage.
+1. 'GitHub AI Credits paid usage' must be enabled to allow enterprises to be charged for GitHub AI Credits exceeding their included usage.
 2. A new Copilot code review policy ('Allow members without a Copilot license to use Copilot code review in github.com') must also be enabled.
 
 We encourage admins to set up budgets to control spending on our metered products, especially customers who have not enabled the 'Premium request paid usage' policy in the past. You can track all premium request usage in your billing dashboard to monitor and control spending.
+
+#### What are GitHub AI Credits?
+
+GitHub AI Credits are how you pay for AI usage in GitHub Copilot. Every plan includes a monthly allowance: 1 AI credit = $0.01 USD.
+
+You use credits when you chat with Copilot, work with agents, or use Copilot CLI, Spaces, and Spark. Code completions and next edit suggestions don't use credits. They remain unlimited with every paid plan.
+
+How many credits an interaction uses depends on the model you choose and the complexity of the task. A quick question to a lightweight model costs a fraction of a credit. A longer agent session on a frontier model across many files costs more.
+
+#### What happens when I hit my usage limit?
+
+When you've used your monthly allowance, you have a few options:
+
+- Wait for your next cycle. Your included allowance resets every month.
+- Keep working with paid usage. Set a dollar budget for additional usage and Copilot continues without interruption. Credits draw down at $0.01 each, so a $10 budget covers 1,000 credits.
+- Switch to a less expensive model. Lightweight models use fewer credits per interaction and stretch your remaining allowance further.
+
+On GitHub Copilot Business and GitHub Copilot Enterprise, admins set usage limits and decide whether additional paid usage is allowed. If it isn't, Copilot pauses until the next cycle.
+
+You can track your usage and reset date in your Copilot settings, with alerts at 75%, 90%, and 100% of any configured budget.
 
 #### Privacy
 
@@ -793,13 +959,15 @@ Access to Copilot Business and Enterprise is managed by your GitHub Administrato
 
 ### Plans & pricing
 
-#### What are the differences between the Free, Pro, Business, and Enterprise plans?
+#### What are the differences between the Free, Pro, Pro+, Max, Business, and Enterprise plans?
 
 GitHub Copilot has multiple offerings for organizations and an offering for individual developers. All the offerings include both code completion and chat assistance. The primary differences between the organization offerings and the individual offering are license management, policy management, and IP indemnity.
 
 Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions and will offer customers access to fine-tuned custom, private models for code completion.
 
 GitHub Copilot Pro is designed for individual developers, freelancers, students, educators, and open source maintainers. The plan includes all the features of GitHub Copilot Business except organizational license management, policy management, and IP indemnity.
+
+GitHub Copilot Max is built for heavy Copilot usage, including sustained agent-driven workflows, and includes $100/month in GitHub AI Credits.
 
 #### How can I upgrade my GitHub Copilot Free license to Copilot Pro?
 
@@ -823,18 +991,40 @@ To enable this functionality, an enterprise/org admin must first have Copilot en
 
 Note: This capability is not supported for Copilot code reviews in VS Code or other IDEs.
 
-#### How am I billed for Copilot code review usage from users without a Copilot license?
+#### How does billing work for Copilot code review usage generated by users without a Copilot license?
 
-Usage from non-licensed users is billed directly to your organization as "premium requests" (PRUs) at the standard multiplier rate for Copilot code review. This flexible model allows you to get full review coverage on every PR without needing to purchase a full Copilot seat for non-development contributors who may not need Copilot. Usage from your existing licensed users simply continues to draw from their included monthly allowance as it does today.
+Usage from non-licensed users is billed directly to your organization as GitHub AI Credits. This flexible model allows you to get full review coverage on every PR without purchasing a full Copilot seat for non-development contributors who may not need Copilot.
+
+Usage from your existing licensed users continues to draw from their included monthly allowance as it does today. Beginning June 1, 2026, code review workflows also consume GitHub Actions minutes.
 
 #### Is Copilot code review usage from users without a Copilot license enabled by default? How do I control the cost?
 
 No. This capability is off by default and gives the enterprise admin control to enable or disable. An admin must explicitly enable two separate policies to activate:
 
-1. 'Premium request paid usage' must be enabled to allow enterprises to be charged for premium requests exceeding their included usage.
+1. 'GitHub AI Credits paid usage' must be enabled to allow enterprises to be charged for GitHub AI Credits exceeding their included usage.
 2. A new Copilot code review policy ('Allow members without a Copilot license to use Copilot code review in github.com') must also be enabled.
 
 We encourage admins to set up budgets to control spending on our metered products, especially customers who have not enabled the 'Premium request paid usage' policy in the past. You can track all premium request usage in your billing dashboard to monitor and control spending.
+
+#### What are GitHub AI Credits?
+
+GitHub AI Credits are how you pay for AI usage in GitHub Copilot. Every plan includes a monthly allowance: 1 AI credit = $0.01 USD.
+
+You use credits when you chat with Copilot, work with agents, or use Copilot CLI, Spaces, and Spark. Code completions and next edit suggestions don't use credits. They remain unlimited with every paid plan.
+
+How many credits an interaction uses depends on the model you choose and the complexity of the task. A quick question to a lightweight model costs a fraction of a credit. A longer agent session on a frontier model across many files costs more.
+
+#### What happens when I hit my usage limit?
+
+When you've used your monthly allowance, you have a few options:
+
+- Wait for your next cycle. Your included allowance resets every month.
+- Keep working with paid usage. Set a dollar budget for additional usage and Copilot continues without interruption. Credits draw down at $0.01 each, so a $10 budget covers 1,000 credits.
+- Switch to a less expensive model. Lightweight models use fewer credits per interaction and stretch your remaining allowance further.
+
+On GitHub Copilot Business and GitHub Copilot Enterprise, admins set usage limits and decide whether additional paid usage is allowed. If it isn't, Copilot pauses until the next cycle.
+
+You can track your usage and reset date in your Copilot settings, with alerts at 75%, 90%, and 100% of any configured budget.
 
 ### Privacy
 
