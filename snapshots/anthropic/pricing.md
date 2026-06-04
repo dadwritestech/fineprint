@@ -195,6 +195,8 @@ Opt-out
 
 Opt-out
 
+Get $1,000 in Claude Code and Claude Cowork credits for every seat that activates by July 2.
+
 ### Team
 
 For teams of 5 to 150
@@ -430,7 +432,7 @@ Learn more
 
 Batch processing
 
-### Opus 4.7
+### Opus 4.8
 
 Most intelligent model for agents and coding
 
@@ -498,6 +500,8 @@ $0.10 / MTok
 
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
+Get up to 2.5x faster speeds with fast mode for Opus 4.8 at 2x standard pricing. Learn more.
+
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
 Pricing for Claude Platform features
@@ -551,6 +555,26 @@ Save 50% with batch processing.
 Learn more
 
 Batch processing
+
+### Opus 4.7
+
+Input
+
+$5 / MTok
+
+Output
+
+$25 / MTok
+
+Prompt caching
+
+Write
+
+$6.25 / MTok
+
+Read
+
+$0.50 / MTok
 
 ### Opus 4.6
 
