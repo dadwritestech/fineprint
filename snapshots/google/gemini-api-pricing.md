@@ -167,7 +167,7 @@ The latest performance, intelligence, and usability improvements to the best mod
 |---|---|---|
 | Input price | Not available | $1.00, prompts <= 200k tokens $2.00, prompts > 200k tokens |
 | Output price (including thinking tokens) | Not available | $6.00, prompts <= 200k tokens $9.00, prompts > 200k |
-| Context caching price | Not available | $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
+| Context caching price | Not available | Same as Standard  $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
 | Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
@@ -178,7 +178,7 @@ The latest performance, intelligence, and usability improvements to the best mod
 |---|---|---|
 | Input price | Not available | $1.00, prompts <= 200k tokens $2.00, prompts > 200k tokens |
 | Output price (including thinking tokens) | Not available | $6.00, prompts <= 200k tokens $9.00, prompts > 200k |
-| Context caching price | Not available | $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
+| Context caching price | Not available | Same as Standard  $0.20, prompts <= 200k tokens $0.40, prompts > 200k $4.50 / 1,000,000 tokens per hour (storage price) |
 | Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
@@ -295,7 +295,7 @@ Our most intelligent model built for speed, combining frontier intelligence with
 |---|---|---|
 | Input price | Not available | $0.25 (text / image / video) $0.50 (audio) |
 | Output price (including thinking tokens) | Not available | $1.50 |
-| Context caching price | Not available | Same as Standard, Batch pricing not yet implemented  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
+| Context caching price | Not available | Same as Standard  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
 | Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
@@ -306,7 +306,7 @@ Our most intelligent model built for speed, combining frontier intelligence with
 |---|---|---|
 | Input price | Not available | $0.25 (text / image / video) $0.50 (audio) |
 | Output price (including thinking tokens) | Not available | $1.50 |
-| Context caching price | Not available | Same as Standard, Batch pricing not yet implemented  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
+| Context caching price | Not available | Same as Standard  $0.05 (text / image / video)  $0.10 (audio)  $1.00 / 1,000,000 tokens per hour (storage price) |
 | Grounding with Google Search* | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Grounding with Google Maps | Not available | 5,000 requests per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
@@ -938,4 +938,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-29 UTC.
+Last updated 2026-06-02 UTC.
