@@ -36,6 +36,8 @@ Get Pro
 
 $40 / user / mo.
 
+StandardPremium
+
 Everything on Individual, plus:
 
 - ✓ Centralized team billing and administration
