@@ -16,12 +16,12 @@ The prices listed below are in units of per 1M tokens. A token, the smallest uni
 | Tool Calls | ✓ | ✓ |  |
 | Chat Prefix Completion（Beta） | ✓ | ✓ |  |
 | FIM Completion（Beta） | Non-thinking mode only | Non-thinking mode only |  |
-| PRICING | 1M INPUT TOKENS (CACHE HIT)(2) | $0.0028 | $0.003625 (75% off(3))$0.0145 |
-| 1M INPUT TOKENS (CACHE MISS) | $0.14 | $0.435 (75% off(3))$1.74 |  |
-| 1M OUTPUT TOKENS | $0.28 | $0.87 (75% off(3))$3.48 |  |
-| Concurrency Limit(4) | 2500 | 500 |  |
+| PRICING | 1M INPUT TOKENS (CACHE HIT) | $0.0028 | $0.003625 |
+| 1M INPUT TOKENS (CACHE MISS) | $0.14 | $0.435 |  |
+| 1M OUTPUT TOKENS | $0.28 | $0.87 |  |
+| Concurrency Limit(2) | 2500 | 500 |  |
 
-(1) The model names `deepseek-chat` and `deepseek-reasoner` will be deprecated in the future. For compatibility, they correspond to the non-thinking mode and thinking mode of `deepseek-v4-flash`, respectively.  (2) For all models, the input cache hit price has been reduced to 1/10 of the launch price. This price adjustment takes effect from 2026/4/26 12:15 UTC.  (3) The deepseek-v4-pro model API pricing will be officially adjusted to 1/4 of the original price after the 75% discount promotion ends on 2026/05/31 15:59 UTC.  (4) For more details on concurrency limits, please refer to Rate Limit & Isolation
+(1) The model names `deepseek-chat` and `deepseek-reasoner` will be deprecated on 2026/07/24 15:59 UTC. For compatibility, they correspond to the non-thinking mode and thinking mode of `deepseek-v4-flash`, respectively.  (2) For more details on concurrency limits, please refer to Rate Limit & Isolation
 
 The expense = number of tokens × price. The corresponding fees will be directly deducted from your topped-up balance or granted balance, with a preference for using the granted balance first when both balances are available.
 
