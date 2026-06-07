@@ -4,18 +4,27 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### June 5, 2026
+
+- We announced the deprecation of the Claude Opus 4.1 model (`claude-opus-4-1-20250805`), with retirement on the Claude API scheduled for August 5, 2026. We recommend migrating to Claude Opus 4.8. Read more in model deprecations.
+
+### June 2, 2026
+
+- The advisor tool now supports a `max_tokens` parameter to cap the advisor model's output per call, reducing latency and output token cost for workloads that don't need full-length advisor responses. Set `tools[].max_tokens` on the advisor tool definition; see Capping advisor output.
+- On the Claude API, you are no longer billed for a request when it returns `stop_reason: "refusal"` without Claude having generated any output. See Streaming refusals for detecting and handling refusals.
+
 ### May 29, 2026
 
 - Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and the `AnthropicSelfHostedEnvironmentAccess` managed policy.
 
 ### May 28, 2026
 
-- We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default, 128k max output tokens, and the same set of tools and platform features as Claude Opus 4.7. See What's new in Claude Opus 4.8 for capability improvements, new features, and migration guidance.
-- We've launched mid-conversation system messages. On Claude Opus 4.8, you can send `role: "system"` messages at non-first positions in the `messages` array, preserving prompt cache hits when instructions change during a long-running session. No beta header is required.
-- The Messages API now returns refusal categories in `stop_details` when Claude Opus 4.8 declines a request, so your application can route different classes of refusal to the right next step. No beta header is required. See Refusal categories.
+- We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, and Vertex AI (200k on Microsoft Foundry), 128k max output tokens, and the same set of tools and platform features as Claude Opus 4.7. See What's new in Claude Opus 4.8 for capability improvements, new features, and migration guidance.
+- We've launched mid-conversation system messages. On Claude Opus 4.8, you can send `role: "system"` messages after a user turn (subject to placement rules) in the `messages` array, preserving prompt cache hits when instructions change during a long-running session. No beta header is required.
+- The `stop_details` field on refusal responses is now publicly documented; it returns a `category` (`cyber`, `bio`, or `null`) and a human-readable `explanation`, so your application can route different classes of refusal to the right next step. No beta header is required.
 - On Claude Opus 4.8, the effort parameter defaults to `high` across all surfaces, including Claude Code and the Messages API.
 - On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.
-- Claude Opus 4.8 uses adaptive thinking to trigger reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.
+- With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.
 - Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.
 - Task budgets now support Claude Opus 4.8.
 - The advisor tool now supports Claude Opus 4.8.
@@ -27,6 +36,10 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - In Claude Code, Workflows are available as a research preview, letting you define and run multi-step agentic plans. See the Claude Code documentation.
 - We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30 days after launch. Migrate to fast mode for Claude Opus 4.8 or Claude Opus 4.7. Read more in Fast mode.
 - For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude apps in this release, see the release notes for Claude Apps.
+
+### May 27, 2026
+
+- The Messages API response now includes `usage.output_tokens_details.thinking_tokens`, reporting how many of the billed output tokens were extended thinking. When streaming, the breakdown appears only on the final `message_delta` event. No beta header is required.
 
 ### May 19, 2026
 
@@ -81,7 +94,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### April 14, 2026
 
-- We announced the deprecation of the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`), with retirement on the Claude API scheduled for June 15, 2026. We recommend migrating to Claude Sonnet 4.6 and Claude Opus 4.7 respectively. Read more in model deprecations.
+- We announced the deprecation of the Claude Sonnet 4 model (`claude-sonnet-4-20250514`) and the Claude Opus 4 model (`claude-opus-4-20250514`), with retirement on the Claude API scheduled for June 15, 2026. We recommend migrating to Claude Sonnet 4.6 and Claude Opus 4.8 respectively. Read more in model deprecations.
 
 ### April 9, 2026
 
