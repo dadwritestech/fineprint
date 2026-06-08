@@ -40,7 +40,7 @@ v26.03
 
 ### Voxtral Mini Transcribe Realtime
 
-An efficient audio input model, fine-tuned and optimized for live transcription purposes.
+An efficient audio input model, pre-trained and optimized for live transcription purposes.
 
 v26.02
 
@@ -53,6 +53,12 @@ v26.03
 ### OCR 3
 
 Our OCR service powering our Document AI stack.
+
+v25.12
+
+### Devstral 2
+
+Our frontier code agents model for solving software engineering tasks.
 
 v25.12
 
