@@ -28,6 +28,10 @@ State-of-the-art image generation and editing models for highly contextual nativ
 
 Stable
 
+Low-latency, real-time speech to speech translation model that supports 70+ languages.
+
+New Preview
+
 High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications.
 
 New Preview
@@ -150,4 +154,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-28 UTC.
+Last updated 2026-06-09 UTC.
