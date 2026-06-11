@@ -420,10 +420,11 @@ Models in Copilot
 
 Available models
 
-Agent mode, code review, coding agent, Copilot CLI, and Copilot Chat use premium requests, with usage varying by model. Model options may vary by feature. Learn more about premium requests
+Agent mode, code review, coding agent, Copilot CLI, and Copilot Chat use AI Credits, with usage varying by model. Model options may vary by feature. Learn more about AI Credits
 
 Free
 
+- Anthropic Claude Fable 5
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
@@ -448,6 +449,7 @@ Free
 
 Pro
 
+- Anthropic Claude Fable 5
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
@@ -472,6 +474,7 @@ Pro
 
 Pro+
 
+- Anthropic Claude Fable 5
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
@@ -496,6 +499,7 @@ Pro+
 
 Max
 
+- Anthropic Claude Fable 5
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
