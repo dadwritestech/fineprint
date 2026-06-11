@@ -173,6 +173,16 @@ n/a
 
 ### Models and usage
 
+#### Fable
+
+Promo
+
+Promo
+
+Promo
+
+Promo
+
 #### Opus
 
 #### Sonnet
@@ -194,8 +204,6 @@ Opt-out
 Opt-out
 
 Opt-out
-
-Get $1,000 in Claude Code and Claude Cowork credits for every seat that activates by July 2.
 
 ### Team
 
@@ -248,9 +256,11 @@ All Team plan features, plus:
 - HIPAA-ready offering available
 - Claude Security (beta)
 
-Quiz
+Questions
 
-Which plan is right for you?
+Chat with our buying agent and get started in minutes.
+
+Chat now
 
 Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
 
@@ -400,6 +410,10 @@ Annual
 
 ### Models and usage
 
+#### Fable
+
+Promo
+
 #### Opus
 
 #### Sonnet
@@ -432,9 +446,31 @@ Learn more
 
 Batch processing
 
+### Fable 5
+
+Next generation intelligence for long-running agents
+
+Input
+
+$10 / MTok
+
+Output
+
+$50 / MTok
+
+Prompt caching
+
+Write
+
+$12.50 / MTok
+
+Read
+
+$1 / MTok
+
 ### Opus 4.8
 
-Most intelligent model for agents and coding
+Ideal for complex agentic coding and enterprise work
 
 Input
 
