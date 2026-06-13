@@ -56,7 +56,7 @@ Custom
 
 Everything on Teams, plus:
 
-- ✓ Pooled usage to maximize budget efficiency
+- ✓ Pooled usage
 - ✓ Invoice/PO billing
 - ✓ SCIM seat management
 - ✓ Repository, model, and MCP access controls
@@ -79,7 +79,7 @@ Every plan includes a set amount of model usage. On-demand usage allows you to c
 
 Admins can access usage information and key metrics through the Admin Dashboard.
 
-Privacy mode can be enabled in settings or by a team admin. When it is enabled, we guarantee that code data is never stored by our model providers or used for training. You can learn more on our Security page.
+Privacy mode can be enabled in settings or by a team admin. When it is enabled, we guarantee that code data is not used for training by us or our model providers. You can learn more on our Security page.
 
 No. Cursor subscriptions are only sold directly through cursor.com. We do not authorize any resellers or third-party sellers. Subscriptions purchased from any other source are unauthorized and may be fraudulent, insecure, or obtained through abuse of our systems. These accounts may be suspended or terminated at any time. To protect your access and security, purchase Cursor only through our official website.
 
