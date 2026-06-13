@@ -64,6 +64,7 @@ Prices per 1M tokens unless noted.
 | Tool | Details | Pricing |
 |---|---|---|
 | Web search | Web search (all models) | $10.00 / 1k calls + Search content tokens billed at model rates. |
+| Image Web search (all models) | $10.00 / 1k calls + Search content tokens billed at model rates. |  |
 | Web search preview (reasoning models, including `gpt-5`, `o-series`) | $10.00 / 1k calls + Search content tokens billed at model rates. |  |
 | Web search preview (non-reasoning models) | $25.00 / 1k calls + Search content tokens are free. |  |
 | Containers | Hosted Shell and Code Interpreter | 1 GB $0.03, 4 GB $0.12, 16 GB $0.48, 64 GB $1.92 per 20-minute session per container. |
