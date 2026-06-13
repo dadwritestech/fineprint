@@ -29,7 +29,7 @@ To qualify for the next tier, you must meet a deposit requirement. To minimize t
 
 ### Requirements to advance tier
 
-| Usage Tier | Credit Purchase | Max Credit Purchase | Monthly Spend Limit |
+| Usage tier | Credit purchase | Max credit purchase | Monthly spend limit |
 |---|---|---|---|
 | Tier 1 | $5 | $500 | $500 |
 | Tier 2 | $40 | $500 | $500 |
@@ -37,11 +37,11 @@ To qualify for the next tier, you must meet a deposit requirement. To minimize t
 | Tier 4 | $400 | $200,000 | $200,000 |
 | Monthly Invoicing | N/A | N/A | No limit |
 
-Credit Purchase shows the cumulative credit purchases (excluding tax) required to advance to that tier. You advance immediately upon reaching the threshold.
+Credit purchase shows the cumulative credit purchases (excluding tax) required to advance to that tier. You advance immediately upon reaching the threshold.
 
-Max Credit Purchase limits the maximum amount you can add to your account in a single transaction to prevent account overfunding.
+Max credit purchase limits the maximum amount you can add to your account in a single transaction to prevent account overfunding.
 
-Monthly Spend Limit is the maximum you can spend on the API each calendar month at that tier.
+Monthly spend limit is the maximum you can spend on the API each calendar month at that tier.
 
 ## Increasing your spend limits
 
