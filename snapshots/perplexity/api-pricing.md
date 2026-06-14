@@ -24,8 +24,9 @@ When using tools with the Agent API:
 | `fetch_url` | $0.0005 per invocation | Fetches and extracts content from specific URLs |
 | `people_search` | $0.005 per invocation | Looks up professionals, employees, and people. $5 per 1,000 tool invocations |
 | `finance_search` | $0.005 per invocation | Retrieves financial data and market information. $5 per 1,000 tool invocations |
+| `sandbox` | $0.03 per session | Isolated container for executing code during an Agent API request. A session covers up to 20 minutes of active use for billing purposes — this is the billing window, not a runtime cap. SDK search queries made from inside the sandbox are billed at $0.005 per request (same as `web_search`). |
 
-Tool costs are separate from model token costs. Each tool invocation is billed individually — if a model makes 3 `web_search` calls and 2 `people_search` calls during a request, you pay model tokens + (3 × $0.005) + (2 × $0.005) for tools.
+Most tool costs are per invocation. `sandbox` is billed per container session — a 20-minute billing window per container, not a runtime cap — plus per SDK search query made from inside it. Tool costs are separate from model token costs.
 
 ## Search API Pricing
 
