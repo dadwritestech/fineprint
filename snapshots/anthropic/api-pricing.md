@@ -10,6 +10,8 @@ The following table shows pricing for all Claude models:
 
 | Model | Base Input Tokens | 5m Cache Writes | 1h Cache Writes | Cache Hits & Refreshes | Output Tokens |
 |---|---|---|---|---|---|
+| Claude Fable 5 | $10 / MTok | $12.50 / MTok | $20 / MTok | $1 / MTok | $50 / MTok |
+| Claude Mythos 5 (limited availability) | $10 / MTok | $12.50 / MTok | $20 / MTok | $1 / MTok | $50 / MTok |
 | Claude Opus 4.8 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
 | Claude Opus 4.7 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
 | Claude Opus 4.6 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
@@ -137,23 +139,20 @@ The Batch API allows asynchronous processing of large volumes of requests with a
 
 | Model | Batch input | Batch output |
 |---|---|---|
+| Claude Fable 5 | $5 / MTok | $25 / MTok |
+| Claude Mythos 5 (limited availability) | $5 / MTok | $25 / MTok |
 | Claude Opus 4.8 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.7 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.6 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.5 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.1 (deprecated) | $7.50 / MTok | $37.50 / MTok |
-| Claude Opus 4 (deprecated) | $7.50 / MTok | $37.50 / MTok |
-| Claude Sonnet 4.6 | $1.50 / MTok | $7.50 / MTok |
-| Claude Sonnet 4.5 | $1.50 / MTok | $7.50 / MTok |
-| Claude Sonnet 4 (deprecated) | $1.50 / MTok | $7.50 / MTok |
-| Claude Haiku 4.5 | $0.50 / MTok | $2.50 / MTok |
-| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | $0.40 / MTok | $2 / MTok |
+| Claude Opus 4 (deprecated) | $7.50 / MTok |  |
 
 For more information about batch processing, see Batch processing.
 
 ### Long context pricing
 
-Claude Mythos Preview, Claude Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6 include the full 1M token context window at standard pricing. (A 900k-token request is billed at the same per-token rate as a 9k-token request.) Prompt caching and batch processing discounts apply at standard rates across the full context window.
+Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6 include the full 1M token context window at standard pricing. (A 900k-token request is billed at the same per-token rate as a 9k-token request.) Prompt caching and batch processing discounts apply at standard rates across the full context window.
 
 ### Tool use pricing
 
@@ -177,15 +176,7 @@ When you use `tools`, the API also automatically includes a special system promp
 |---|---|---|
 | Claude Opus 4.8 | `auto`, `none``any`, `tool` | 290 tokens410 tokens |
 | Claude Opus 4.7 | `auto`, `none``any`, `tool` | 675 tokens804 tokens |
-| Claude Opus 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
-| Claude Opus 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
-| Claude Opus 4.1 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
-| Claude Opus 4 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
-| Claude Sonnet 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
-| Claude Sonnet 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
-| Claude Sonnet 4 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
-| Claude Haiku 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
-| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | `auto`, `none``any`, `tool` | 264 tokens355 tokens |
+| Claude Opus 4.6 | `auto`, `none``any`, `tool` |  |
 
 These token counts are added to your normal input and output tokens to calculate the total cost of a request.
 
