@@ -12,7 +12,7 @@ Create API key
 
 New
 
-Strong agentic tool calling with minimal hallucinations. Supports non-reasoning mode.
+Agentic tool calling, minimal hallucinations, non-reasoning mode.
 
 Context1 million tokens
 
