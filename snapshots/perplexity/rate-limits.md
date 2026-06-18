@@ -1,13 +1,5 @@
 <!-- fineprint snapshot: perplexity/rate-limits | source: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers -->
 
-For AI agents: see the complete llms.txt documentation index.
-
-Docs
-
-Cookbook
-
-API Reference
-
 ## What are Usage Tiers?
 
 Usage tiers determine your rate limits and access to beta features based on your cumulative API spending. As you spend more on API credits over time, you automatically advance to higher tiers with increased rate limits. Higher tiers unlock significantly more requests per minute, and once you reach a tier, you keep it permanently with no downgrade.
