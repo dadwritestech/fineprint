@@ -34,6 +34,7 @@ Everything in Free, plus:
 - More usage*
 - Includes Claude Code
 - Includes Claude Cowork
+- Includes Claude Design
 - Access to unlimited projects to organize chats and documents
 - Access to Research
 - Ability to use more Claude models
@@ -76,6 +77,8 @@ Max 20x
 #### Claude Code
 
 #### Claude Cowork
+
+#### Claude Design
 
 #### Ability to search the web
 
@@ -226,6 +229,7 @@ $100
 Per seat / month if billed annually. $125 if billed monthly.
 
 - Includes Claude Code and Claude Cowork
+- Includes Claude Design
 - Connect Microsoft 365, Slack, and more
 - Enterprise search across your organization
 - Central billing and administration
@@ -449,6 +453,8 @@ Batch processing
 ### Fable 5
 
 Next generation intelligence for long-running agents
+
+Claude Fable 5 is unavailable. Learn more
 
 Input
 
