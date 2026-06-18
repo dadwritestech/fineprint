@@ -24,7 +24,9 @@ For everyday coding with agents in GitHub Copilot.
 
 $10USDper user / month
 
-New plan sign-ups are temporarily paused as we ensure a high-quality experience. We appreciate your patience. Learn more
+Get started
+
+We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
 
 #### Everything in Free and:
 
@@ -40,7 +42,9 @@ For more complex development with premium models.
 
 $39USDper user / month
 
-New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student and Pro customers can upgrade to Pro+. We appreciate your patience. Learn more
+Get started
+
+We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
 
 #### Everything in Pro and:
 
@@ -55,7 +59,9 @@ For sustained, high-volume agent workflows with GitHub Copilot.
 
 $100USDper user / month
 
-New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student, Pro, and Pro+ customers can upgrade to Max. We appreciate your patience. Learn more
+Get started
+
+We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
 
 #### Everything in Pro+ and:
 
@@ -90,19 +96,19 @@ Pro
 
 $10 per month
 
-Learn more
+Get started
 
 Pro+
 
 $39 per month
 
-Upgrade now
+Get started
 
 Max
 
 $100 per month
 
-Upgrade now
+Get started
 
 GitHub AI Credits
 
