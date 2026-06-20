@@ -15,11 +15,6 @@ These limits apply to both Standard and Priority Tier usage. For more informatio
 
 - Limits are designed to prevent API abuse, while minimizing impact on common customer usage patterns.
 - Limits are defined by usage tier, where each tier is associated with a different set of spend and rate limits.
-- Your organization will increase tiers automatically as you reach certain thresholds while using the API. Limits are set at the organization level. You can see your organization's limits on the Limits page in the Claude Console.
-- You might hit rate limits over shorter time intervals. For instance, a rate of 60 requests per minute (RPM) might be enforced as 1 request per second. Short bursts of requests can exceed the limit and trigger rate limit errors.
-- The limits outlined below are the standard tier limits. If you're seeking higher, custom limits or Priority Tier for enhanced service levels, contact sales on the Limits page.
-- The API uses the token bucket algorithm to do rate limiting. This means that your capacity is continuously replenished up to your maximum limit, rather than being reset at fixed intervals.
-- All limits described here represent maximum allowed usage, not guaranteed minimums. These limits are intended to reduce unintentional overspend and ensure fair distribution of resources among users.
 
 ## Spend limits
 
@@ -117,9 +112,9 @@ Rate limits are applied separately for each model; therefore you can use differe
 
 Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
 
-* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, Opus 4.5, Opus 4.1 (deprecated), and Opus 4 (deprecated).
+* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, Opus 4.5, and Opus 4.1 (deprecated).
 
-** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6, Sonnet 4.5, and Sonnet 4 (deprecated).
+** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5.
 
 † - Limit counts `cache_read_input_tokens` towards ITPM usage.
 
