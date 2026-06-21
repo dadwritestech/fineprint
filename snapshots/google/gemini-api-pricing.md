@@ -243,7 +243,7 @@ Designed for speed and efficiency, the Gemini 3.1 Flash Image generation model i
 |---|---|---|
 | Input price | Not available | $0.50 (text/image) |
 | Output price | Not available | $3 (text and thinking)  $60.00 (images)  Equivalent to $0.045 per 0.5K image*  $0.067 per 1K image*, $0.101 per 2K image*, and $0.151 per 4K image*. |
-| Grounding with Google Search** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries for text and image-based grounding. |
+| Grounding with Google Web and Image Search** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries for text and image-based grounding. |
 | Used to improve our products | Yes | No |
 
 ### Batch
@@ -354,7 +354,7 @@ Our native image generation model, optimized for speed, flexibility, and context
 |---|---|---|
 | Input price | Not available | $2.00 (text/image),  equivalent to $0.0011 per image* |
 | Output price | Not available | $12.00 (text and thinking)  $120.00 (images)  Equivalent to $0.134 per 1K/2K image**  and $0.24 per 4K image** |
-| Grounding with Google Web and Image Search*** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search*** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 ### Batch
@@ -379,7 +379,7 @@ Our native image generation model, optimized for speed, flexibility, and context
 |---|---|---|
 | Input price | Not available | $3.60 (text/image) |
 | Output price | Not available | $21.60 (text and thinking)  $216.00 (images) |
-| Grounding with Google Web and Image Search*** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Grounding with Google Search*** | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
 | Used to improve our products | Yes | No |
 
 * Image input is set at 560 tokens or $0.0011 per image.
@@ -954,4 +954,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-06-09 UTC.
+Last updated 2026-06-18 UTC.
