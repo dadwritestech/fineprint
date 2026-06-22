@@ -56,10 +56,4 @@ Our OCR service powering our Document AI stack.
 
 v25.12
 
-### Devstral 2
-
-Our frontier code agents model for solving software engineering tasks.
-
-v25.12
-
 View all models
