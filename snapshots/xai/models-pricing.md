@@ -12,6 +12,8 @@ Create API key
 
 New
 
+grok-4.3
+
 Agentic tool calling, minimal hallucinations, non-reasoning mode.
 
 Context1 million tokens
@@ -27,6 +29,8 @@ View model
 ### Grok Build 0.1
 
 New
+
+grok-build-0.1
 
 Fast coding model trained specifically for agentic coding workflows.
 
