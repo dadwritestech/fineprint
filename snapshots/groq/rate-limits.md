@@ -49,6 +49,7 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
 | openai/gpt-oss-20b | 30 | 1K | 8K | 200K | - | - |
 | openai/gpt-oss-safeguard-20b | 30 | 1K | 8K | 200K | - | - |
 | qwen/qwen3-32b | 60 | 1K | 6K | 500K | - | - |
+| qwen/qwen3.6-27b | 30 | 1K | 8K | 200K | - | - |
 | whisper-large-v3 | 20 | 2K | - | - | 7.2K | 28.8K |
 | whisper-large-v3-turbo | 20 | 2K | - | - | 7.2K | 28.8K |
 
