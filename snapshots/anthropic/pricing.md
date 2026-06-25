@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: anthropic/pricing | source: https://claude.com/pricing -->
 
-Pricing
+# Pricing
 
 ### Free
 
@@ -80,6 +80,8 @@ Max 20x
 
 #### Claude Design
 
+#### @Claude
+
 #### Ability to search the web
 
 #### Desktop extensions
@@ -111,8 +113,6 @@ Max 20x
 #### Enterprise search
 
 #### Claude for Chrome
-
-#### Claude for Slack
 
 #### Claude for Microsoft 365
 
@@ -178,14 +178,6 @@ n/a
 
 #### Fable
 
-Promo
-
-Promo
-
-Promo
-
-Promo
-
 #### Opus
 
 #### Sonnet
@@ -230,7 +222,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 
 - Includes Claude Code and Claude Cowork
 - Includes Claude Design
-- Connect Microsoft 365, Slack, and more
+- Connect Microsoft 365, @Claude, and more
 - Enterprise search across your organization
 - Central billing and administration
 - Single sign-on (SSO)
@@ -302,6 +294,10 @@ Enterprise (sales-assisted)
 
 #### Claude Cowork
 
+#### Claude Design
+
+#### @Claude
+
 #### Claude Security
 
 #### Ability to search the web
@@ -334,13 +330,11 @@ Enterprise (sales-assisted)
 
 #### Enterprise search
 
+#### Claude for Chrome
+
 #### Claude for Microsoft 365
 
 #### Claude for Microsoft Outlook
-
-#### Claude for Chrome
-
-#### Claude for Slack
 
 ### Security and administration
 
@@ -415,8 +409,6 @@ Annual
 ### Models and usage
 
 #### Fable
-
-Promo
 
 #### Opus
 
@@ -679,46 +671,6 @@ Read
 $0.50 / MTok
 
 ### Opus 4.1
-
-Input
-
-$15 / MTok
-
-Output
-
-$75 / MTok
-
-Prompt caching
-
-Write
-
-$18.75 / MTok
-
-Read
-
-$1.50 / MTok
-
-### Sonnet 4
-
-Input
-
-$3 / MTok
-
-Output
-
-$15 / MTok
-
-Prompt caching
-
-Write
-
-$3.75 / MTok
-
-Read
-
-$0.30 / MTok
-
-### Opus 4
 
 Input
 
