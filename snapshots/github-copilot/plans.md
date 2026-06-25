@@ -380,7 +380,7 @@ Pro+
 
 Max
 
-Copilot CLI (preview)
+Copilot CLI
 
 Use Copilot from your terminal
 
