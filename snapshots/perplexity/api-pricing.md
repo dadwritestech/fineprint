@@ -4,7 +4,7 @@ This page shows pricing information to help you understand API costs.For billing
 
 ## Agent API Pricing
 
-The Agent API provides access to third-party models from OpenAI, Anthropic, Google, and xAI with transparent, token-based pricing at direct provider rates with no markup.
+The Agent API provides access to third-party models from providers including OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA with transparent, token-based pricing at direct provider rates with no markup.
 
 ### Model Pricing
 
@@ -12,7 +12,7 @@ Agent API pricing varies by provider and model, with each provider offering mult
 
 ## View Complete Third-Party Model Pricing
 
-See the full pricing breakdown for all available models from OpenAI, Anthropic, Google, and xAI, including cache rates and provider documentation links on the Agent API Models page.
+See the full pricing breakdown for all available models from OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA, including cache rates and provider documentation links on the Agent API Models page.
 
 ### Tool Pricing
 
