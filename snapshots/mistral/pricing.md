@@ -169,7 +169,25 @@ Output (/M tokens)
 
 $7.5
 
-Documentation
+mistral-medium-latest
+
+OCR 4
+
+The world's best document extraction and understanding model.
+
+OCR
+
+$4 / 1000 pages
+
+Batch-API
+
+$2 / 1000 pages
+
+Document AI
+
+$5 / 1000 pages
+
+mistral-ocr-latest
 
 Voxtral TTS
 
@@ -183,21 +201,7 @@ Available on
 
 `/v1/audio/speech`
 
-Documentation
-
-OCR 3
-
-The world's best document extraction and understanding model.
-
-OCR
-
-$2 / 1000 pages
-
-Annotations
-
-$3 / 1000 pages
-
-Documentation
+voxtral-mini-tts-latest
 
 Enterprise APIs
 
@@ -256,7 +260,7 @@ Output (/M tokens)
 
 $7.5
 
-Documentation
+mistral-medium-latest
 
 Mistral Small 4
 
@@ -274,15 +278,15 @@ Lightweight
 
 Input (/M tokens)
 
-$0.1
+$0.15
 
 Output (/M tokens)
 
-$0.3
+$0.6
 
-Documentation
+mistral-small-latest
 
-OCR 3
+OCR 4
 
 Premier
 
@@ -296,13 +300,17 @@ Text-to-text
 
 OCR
 
+$4 / 1000 pages
+
+Batch-API
+
 $2 / 1000 pages
 
-Annotations
+Document AI
 
-$3 / 1000 pages
+$5 / 1000 pages
 
-Documentation
+mistral-ocr-latest
 
 Mistral Large 3
 
@@ -322,7 +330,7 @@ Output (/M tokens)
 
 $1.5
 
-Documentation
+mistral-large-latest
 
 Voxtral TTS
 
@@ -340,7 +348,7 @@ Available on
 
 `/v1/audio/speech`
 
-Documentation
+voxtral-mini-tts-latest
 
 Voxtral Mini Transcribe 2
 
@@ -360,6 +368,8 @@ Available on
 
 `/v1/audio/transcriptions`
 
+voxtral-mini-latest
+
 Voxtral Mini Transcribe Realtime
 
 Open
@@ -374,7 +384,7 @@ Available on
 
 `/v1/audio/transcriptions`
 
-Documentation
+voxtral-mini-transcribe-realtime-2602
 
 Voxtral Small
 
@@ -398,6 +408,8 @@ Available on
 
 `/v1/chat/completions`
 
+voxtral-small-latest
+
 Devstral 2
 
 Open
@@ -417,6 +429,8 @@ $0.4
 Output (/M tokens)
 
 $2
+
+devstral-medium-latest
 
 Devstral Small 2
 
@@ -442,6 +456,8 @@ Output (/M tokens)
 
 $0.3
 
+devstral-small-latest
+
 Codestral
 
 Premier
@@ -460,6 +476,8 @@ Output (/M tokens)
 
 $0.9
 
+codestral-latest
+
 Leanstral
 
 Labs
@@ -471,6 +489,8 @@ Coding
 API endpoint
 
 Free
+
+labs-leanstral-2603
 
 Magistral Medium
 
@@ -491,6 +511,8 @@ $2
 Output (/M tokens)
 
 $5
+
+magistral-medium-latest
 
 Magistral Small
 
@@ -514,6 +536,8 @@ Output (/M tokens)
 
 $1.5
 
+magistral-small-latest
+
 Ministral 3 - 3B
 
 Open
@@ -534,7 +558,7 @@ Output (/M tokens)
 
 $0.1
 
-Documentation
+ministral-3b-latest
 
 Ministral 3 - 8B
 
@@ -556,7 +580,7 @@ Output (/M tokens)
 
 $0.15
 
-Documentation
+ministral-8b-latest
 
 Ministral 3 - 14B
 
@@ -577,6 +601,8 @@ $0.2
 Output (/M tokens)
 
 $0.2
+
+ministral-14b-latest
 
 Classifier API model 3B
 
@@ -600,6 +626,8 @@ Output (/M tokens)
 
 $0.1
 
+Classifier API model 3B
+
 Classifier API model 8B
 
 Fine-tune Ministral 8B for classification tasks, like moderation, sentiment analysis, fraud detection, and more.
@@ -622,6 +650,8 @@ Output (/M tokens)
 
 $0.04
 
+Classifier API model 8B
+
 Mistral Moderation
 
 A classifier service for text content moderation.
@@ -631,6 +661,8 @@ Classifier APIs
 Input (/M tokens)
 
 $0.1
+
+mistral-moderation-2603
 
 Codestral Embed
 
@@ -646,6 +678,8 @@ Input (/M tokens)
 
 $0.15
 
+codestral-embed
+
 Mistral Embed
 
 State-of-the-art semantic model for extracting representation of text extracts.
@@ -657,6 +691,8 @@ Text-to-text
 Input (/M tokens)
 
 $0.1
+
+mistral-embed
 
 Agent API
 
@@ -754,6 +790,8 @@ Output (/M tokens)
 
 $0.15
 
+open-mistral-nemo
+
 Mixtral 8x7B
 
 Open
@@ -772,6 +810,8 @@ Output (/M tokens)
 
 $0.7
 
+open-mixtral-8x7b
+
 Mixtral 8x22B
 
 Open
@@ -787,6 +827,8 @@ $2
 Output (/M tokens)
 
 $6
+
+open-mixtral-8x22b
 
 ### Let's build your AI advantage together.
 
