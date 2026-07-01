@@ -4,7 +4,7 @@
 
 Our usage policy (the "Usage Policy") applies to:
 
-- All the Mistral AI products accessible on our platform or applications, including Le Chat and Mistral AI Studio (the "Mistral AI products"),
+- All the Mistral AI products accessible on our platform or applications, including Vibe and Mistral AI Studio (the "Mistral AI products"),
 - All users of our Mistral AI Products accessible on our platform, including individuals, organizations, and businesses,
 - All content generated, shared, or accessed through our Mistral AI Products accessible on our platform, and
 - All interactions and activities conducted on or through the Mistral AI Products accessible on our platform.
@@ -76,7 +76,7 @@ Violations of this Usage Policy may result in temporary suspension or permanent 
 
 ## Report violations
 
-If you encounter any content or activity that violates this Usage Policy, please report it immediately through our Help Center or at legal@mistral.ai. We take all reports seriously and will investigate promptly.
+If you encounter any content or activity that violates this Usage Policy, please report it immediately via the form available at https://mistral.ai/report/. We take all reports seriously and will take the necessary measures as soon as possible.
 
 ## Updates
 
