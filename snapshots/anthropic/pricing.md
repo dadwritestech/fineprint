@@ -446,8 +446,6 @@ Batch processing
 
 Next generation intelligence for long-running agents
 
-Claude Fable 5 is unavailable. Learn more
-
 Input
 
 $10 / MTok
@@ -488,27 +486,29 @@ Read
 
 $0.50 / MTok
 
-### Sonnet 4.6
+### Sonnet 5
 
-Optimal balance of intelligence, cost, and speed
+High-performance model for coding and agents
 
-Input
+Input*
 
-$3 / MTok
+$2 / MTok
 
-Output
+Output*
 
-$15 / MTok
+$10 / MTok
 
 Prompt caching
 
-Write
+Write*
 
-$3.75 / MTok
+$2.50 / MTok
 
-Read
+Read*
 
-$0.30 / MTok
+$0.20 / MTok
+
+*Introductory pricing of $2/$10 per million input/output tokens through August 31, 2026; $3/$15 standard pricing thereafter.
 
 ### Haiku 4.5
 
@@ -589,6 +589,26 @@ Save 50% with batch processing.
 Learn more
 
 Batch processing
+
+### Sonnet 4.6
+
+Input
+
+$3 / MTok
+
+Output
+
+$15 / MTok
+
+Prompt caching
+
+Write
+
+$3.75 / MTok
+
+Read
+
+$0.30 / MTok
 
 ### Opus 4.7
 
