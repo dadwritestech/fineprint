@@ -56,6 +56,11 @@ You can expect to see the following header fields:
 | x-ratelimit-remaining-tokens | 149984 | The remaining number of tokens that are permitted before exhausting the rate limit. |
 | x-ratelimit-reset-requests | 1s | The time until the rate limit (based on requests) resets to its initial state. |
 | x-ratelimit-reset-tokens | 6m0s | The time until the rate limit (based on tokens) resets to its initial state. |
+| x-ratelimit-limit-project-tokens | 60000 | The token limit for the project. |
+| x-ratelimit-remaining-project-tokens | 57000 | The remaining number of tokens permitted before exhausting the project-scoped token rate limit. |
+| x-ratelimit-reset-project-tokens | 3s | The time until the project-scoped token rate limit resets to its initial state. |
+
+Project-token headers may be present when a project-scoped token limit applies.
 
 ### Fine-tuning rate limits
 
