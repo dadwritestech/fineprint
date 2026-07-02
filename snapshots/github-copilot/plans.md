@@ -15,6 +15,7 @@ Get startedOpen in VS Code
 - 2,000 completions per month
 - Access to Haiku 4.5, GPT-5 mini, and more
 - Copilot CLI
+- Community Support
 
 No credit card required. Verified students have access to the GitHub Copilot Student plan. Learn more
 
@@ -435,11 +436,12 @@ Free
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
+- Anthropic Claude Sonnet 5
 - Anthropic Claude Opus 4.5
 - Anthropic Claude Opus 4.6
-- Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
+- Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -452,6 +454,7 @@ Free
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Raptor mini (Preview)
+- Kimi K2.7 Code
 
 Pro
 
@@ -460,11 +463,12 @@ Pro
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
+- Anthropic Claude Sonnet 5
 - Anthropic Claude Opus 4.5
 - Anthropic Claude Opus 4.6
-- Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
+- Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -477,6 +481,7 @@ Pro
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Raptor mini (Preview)
+- Kimi K2.7 Code
 
 Pro+
 
@@ -485,11 +490,12 @@ Pro+
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
+- Anthropic Claude Sonnet 5
 - Anthropic Claude Opus 4.5
 - Anthropic Claude Opus 4.6
-- Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
+- Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -502,6 +508,7 @@ Pro+
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Raptor mini (Preview)
+- Kimi K2.7 Code
 
 Max
 
@@ -510,11 +517,12 @@ Max
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
+- Anthropic Claude Sonnet 5
 - Anthropic Claude Opus 4.5
 - Anthropic Claude Opus 4.6
-- Anthropic Claude Opus 4.6 (fast mode) (Preview)
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
+- Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -527,6 +535,7 @@ Max
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Raptor mini (Preview)
+- Kimi K2.7 Code
 
 Additional features
 
@@ -571,16 +580,6 @@ Max
 Policies and management
 
 Public code filter with code referencing
-
-Free
-
-Pro
-
-Pro+
-
-Max
-
-Data excluded from training by default
 
 Free
 
