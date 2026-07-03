@@ -15,7 +15,7 @@ Anthropic uses the following terms to describe the model lifecycle:
 
 Deprecated models are likely to be less reliable than active models. Move workloads to active models to maintain the highest level of support and reliability.
 
-The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, and Microsoft Foundry. Partner-operated platforms (Amazon Bedrock and Vertex AI) set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (legacy), and Vertex AI model tables.
+The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, and Microsoft Foundry. Partner-operated platforms (Amazon Bedrock and Google Cloud) set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (legacy), and Google Cloud model tables.
 
 ## Migrating to replacements
 
@@ -70,7 +70,13 @@ Current and recently retired models are listed in the following table with their
 | claude-opus-4-5-20251101 | Active | N/A | Not sooner than November 24, 2026 |
 | claude-opus-4-1-20250805 | Deprecated | June 5, 2026 | August 5, 2026 |
 | claude-opus-4-20250514 | Retired | April 14, 2026 | June 15, 2026 |
-| claude-sonnet-4-6 |  |  |  |
+| claude-sonnet-4-6 | Active | N/A | Not sooner than February 17, 2027 |
+| claude-sonnet-4-5-20250929 | Active | N/A | Not sooner than September 29, 2026 |
+| claude-sonnet-4-20250514 | Retired | April 14, 2026 | June 15, 2026 |
+| claude-3-7-sonnet-20250219 | Retired | October 28, 2025 | February 19, 2026 |
+| claude-haiku-4-5-20251001 | Active | N/A | Not sooner than October 15, 2026 |
+| claude-3-5-haiku-20241022 | Retired | December 19, 2025 | February 19, 2026 |
+| claude-3-haiku-20240307 | Retired | February 19, 2026 | April 20, 2026 |
 
 ## Deprecation history
 
@@ -170,7 +176,9 @@ On September 4, 2024, Anthropic notified developers using Claude 1 and Instant m
 | November 6, 2024 | `claude-1.1` | `claude-haiku-4-5-20251001` |
 | November 6, 2024 | `claude-1.2` | `claude-haiku-4-5-20251001` |
 | November 6, 2024 | `claude-1.3` | `claude-haiku-4-5-20251001` |
-| November 6, 2024 | `claude-instant-1.0` |  |
+| November 6, 2024 | `claude-instant-1.0` | `claude-haiku-4-5-20251001` |
+| November 6, 2024 | `claude-instant-1.1` | `claude-haiku-4-5-20251001` |
+| November 6, 2024 | `claude-instant-1.2` | `claude-haiku-4-5-20251001` |
 
 ## API parameter deprecations
 
@@ -178,6 +186,6 @@ Anthropic occasionally deprecates request parameters that no longer apply to cur
 
 | Parameter | Status | Behavior | Recommended replacement |
 |---|---|---|---|
-| `temperature`, `top_p`, `top_k` | Deprecated (Claude Opus 4.7 and later) | Returns a 400 error when set to a non-default value on Claude Opus 4.7 and later, including Claude Opus 4.8. | Omit and use prompting to guide model behavior. |
+| `temperature`, `top_p`, `top_k` | Deprecated (Claude Opus 4.7 and later) | Returns a 400 error when set to a non-default value on Claude Opus 4.7 and later, including Claude Opus 4.8, and on Claude Sonnet 5. | Omit and use prompting to guide model behavior. |
 
 For migration steps, see the migration guide.
