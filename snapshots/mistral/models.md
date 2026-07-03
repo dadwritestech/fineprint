@@ -50,10 +50,10 @@ State-of-the-art TTS with zero-shot voice cloning and multilingual support.
 
 v26.03
 
-### OCR 3
+### OCR 4
 
-Our OCR service powering our Document AI stack.
+Our latest OCR service with paragraph-level bounding boxes and structural block labels.
 
-v25.12
+v4.0
 
 View all models
