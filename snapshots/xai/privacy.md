@@ -129,6 +129,7 @@ To report child safety issues to us, please contact us here. Residents of Austra
 If you have any queries or complaints about our collection, use, or storage of your personal information, or if you wish to exercise any of your rights in relation to your personal information, please contact us at https://x.ai/privacy-portal/ or by the following contact details:
 
 - For the fastest response for world-wide requests and in the USA: x.AI LLC, https://x.ai/privacy-portal/
+- Information about our handling of California Consumer Privacy Act (CCPA) requests is available here
 
 Other contacts for privacy requests:
 
