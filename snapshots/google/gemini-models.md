@@ -4,17 +4,11 @@
 
 ## Gemini 3
 
-Advanced intelligence, complex problem-solving skills, and powerful agentic and vibe coding capabilities.
-
-Preview
+### Stable
 
 Most intelligent model for sustained frontier performance on agentic and coding tasks.
 
 Stable
-
-Frontier-class performance rivaling larger models at a fraction of the cost.
-
-Preview
 
 Frontier-class performance rivaling larger models at a fraction of the cost.
 
@@ -24,9 +18,23 @@ Powerful, high-efficiency image generation and editing, optimized for speed and 
 
 Stable
 
+Ultra-low latency and cost-effective image generation and editing, designed for high-volume interactive use cases.
+
+Stable
+
 State-of-the-art image generation and editing models for highly contextual native image creation.
 
 Stable
+
+### Preview
+
+Advanced intelligence, complex problem-solving skills, and powerful agentic and vibe coding capabilities.
+
+Preview
+
+Frontier-class performance rivaling larger models at a fraction of the cost.
+
+Preview
 
 Low-latency, real-time speech to speech translation model that supports 70+ languages.
 
@@ -37,6 +45,10 @@ High-quality, low-latency Live API model for real-time dialogue and voice-first 
 New Preview
 
 Powerful, low-latency speech generation.
+
+New Preview
+
+Fast, conversational video generation and editing. Turn text and images into video, and refine results through natural language.
 
 New Preview
 
@@ -80,11 +92,15 @@ This section contains all generative media models, including ones that may alrea
 
 High-efficiency production-scale visual creation, combining the intelligence of the Gemini 3 series with lightning-fast generation speeds.
 
+Designed as the efficiency specialist of the image generation family, offering ultra-low latency and cost-effective image generation and editing.
+
 State-of-the-art cinematic video generation with advanced creative controls and natively synchronized audio.
 
 A professional design engine with a reasoning core for studio-quality 4K visuals, complex layouts, and precise text rendering.
 
 High-efficiency, low-cost, developer-first video generation, editing, and cinematic control from the Veo 3.1 family.
+
+Fast, conversational video generation and editing. Turn text and images into video, and refine results through natural language.
 
 State-of-the-art native image generation and editing designed for fast, creative workflows.
 
@@ -154,4 +170,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-06-15 UTC.
+Last updated 2026-06-30 UTC.
