@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
 
-Claude Platform on AWS: The rate limits on this page apply. Billing and spend limits differ: spend limits are not available, and billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS.
+Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS. Billing and spend limits differ: spend limits are not available, and billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS.
 
 There are two types of limits:
 
@@ -8,8 +8,6 @@ There are two types of limits:
 2. Rate limits set the maximum number of API requests an organization can make over a defined period of time.
 
 The API enforces service-configured limits at the organization level, but you may also set user-configurable limits for your organization's workspaces.
-
-These limits apply to both Standard and Priority Tier usage. For more information about Priority Tier, see Service Tiers.
 
 ## About rate limits
 
@@ -95,7 +93,7 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
 
 * - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5.
 
-** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5.
+** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5 has a separate rate limit and is not part of this combined bucket.
 
 † - Limit counts `cache_read_input_tokens` towards ITPM usage.
 
@@ -114,7 +112,7 @@ Claude Managed Agents endpoints are rate-limited per organization. These limits 
 
 ### Fast mode rate limits
 
-When using fast mode (research preview) with `speed: "fast"` on Claude Opus 4.8, Opus 4.7, or Opus 4.6, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
+When using fast mode (research preview) with `speed: "fast"` on Claude Opus 4.8 or Opus 4.7, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.6: requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed. See Fast mode.
 
 The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode for details on these headers.
 
