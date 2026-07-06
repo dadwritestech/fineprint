@@ -8,13 +8,27 @@ View as Markdown
 
 Create API key
 
-### Grok 4.3
+### Grok Build 0.1
 
 New
 
+grok-build-0.1
+
+Our coding model — trained specifically for agentic coding workflows. Use Grok Build for code.
+
+View model
+
+Context256k tokens
+
+Input$1.00 / 1M tokens
+
+Output$2.00 / 1M tokens
+
+### Grok 4.3
+
 grok-4.3
 
-Agentic tool calling, minimal hallucinations, non-reasoning mode.
+For everything except code, audio, image, and video. The most intelligent and fastest model we've built.
 
 Context1 million tokens
 
@@ -23,22 +37,6 @@ Input$1.25 / 1M tokens
 Output$2.50 / 1M tokens
 
 ReasoningConfigurable
-
-View model
-
-### Grok Build 0.1
-
-New
-
-grok-build-0.1
-
-Fast coding model trained specifically for agentic coding workflows.
-
-Context256k tokens
-
-Input$1.00 / 1M tokens
-
-Output$2.00 / 1M tokens
 
 View model
 
@@ -66,25 +64,25 @@ SpeedIndustry-leading
 
 Image · 1K / 2K$0.02 / image
 
-Video · 480p / 720p$0.05 / sec
+Video · 480p / 720p / 1080p$0.05 / sec
 
 Read docsTry in playground
 
 ## Which model should I choose?
 
-Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
+Your choice depends on your use case. We have dedicated models and APIs for code, audio, image, and video capabilities. For code, use Grok Build — it is our coding model. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
 
 Use case
 
 Model
 
+Code
+
+Grok Build
+
 Chat
 
 Grok 4.3
-
-Coding
-
-Grok Build 0.1
 
 Images
 
