@@ -22,6 +22,25 @@ Limits vary depending on the specific model being used, and some limits only app
 
 Rate limits are more restricted for experimental and preview models.
 
+### Spend-based rate limits
+
+In addition to requests per minute (RPM) and tokens per minute (TPM) limits, the Gemini API enforces spend-based rate limits to protect against unexpected charges. Whether these limits apply to your account depends on your billing history and usage tier.
+
+The following table shows the spend-based rate limits for each usage tier. These limits are evaluated on a rolling 10-minute window. Whether these limits apply to your account depends on your billing history and account standing.
+
+| Usage tier | Spend rate limit (per 10 minutes) |
+|---|---|
+| Free | N/A |
+| Tier 1 | $10 |
+| Tier 2 | $200 |
+| Tier 3 | $200 |
+
+If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this:
+
+- Wait and retry after a short period.
+- Reduce the rate of expensive requests, for example by using smaller context windows or shorter outputs.
+- If you consistently hit this limit during normal usage, request a rate limit increase.
+
 ## Usage tiers
 
 Rate limits are tied to the project's usage tier. As your API usage and spending increase, you'll be automatically upgraded to a higher tier with increased rate limits.
@@ -66,9 +85,8 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 |---|---|
 | Text-out models |  |
 | Gemini 3.1 Pro Preview | 5,000,000 |
-| Gemini 3.1 Flash-Lite | 10,000,000 |
-| Gemini 3.1 Flash-Lite Preview | 10,000,000 |
-| Gemini 3.5 Flash | 3,000,000 |
+| Gemini 3.1 Flash Lite | 10,000,000 |
+| Gemini 3.1 Flash Lite Preview | 10,000,000 |
 | Gemini 3.5 Flash | 3,000,000 |
 | Gemini 2.5 Pro | 5,000,000 |
 | Gemini 2.5 Pro TTS | 25,000 |
@@ -76,13 +94,14 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Gemini 2.5 Flash Preview | 3,000,000 |
 | Gemini 2.5 Flash Image Preview | 3,000,000 |
 | Gemini 2.5 Flash TTS | 100,000 |
-| Gemini 2.5 Flash-Lite | 10,000,000 |
-| Gemini 2.5 Flash-Lite Preview | 10,000,000 |
+| Gemini 2.5 Flash Lite | 10,000,000 |
+| Gemini 2.5 Flash Lite Preview | 10,000,000 |
 | Gemini 2.0 Flash | 10,000,000 |
 | Gemini 2.0 Flash Image | 3,000,000 |
-| Gemini 2.0 Flash-Lite | 10,000,000 |
+| Gemini 2.0 Flash Lite | 10,000,000 |
 | Multi-modal generation models |  |
 | Gemini 3.1 Flash Image Preview 🍌 | 1,000,000 |
+| Gemini 3.1 Flash Lite Image 🍌 | 2,000,000 |
 | Gemini 3 Pro Image Preview 🍌 | 2,000,000 |
 | Embedding models |  |
 | Gemini Embedding | 500,000 |
@@ -93,9 +112,8 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 |---|---|
 | Text-out models |  |
 | Gemini 3.1 Pro Preview | 500,000,000 |
-| Gemini 3.1 Flash-Lite | 500,000,000 |
-| Gemini 3.1 Flash-Lite Preview | 500,000,000 |
-| Gemini 3.5 Flash | 400,000,000 |
+| Gemini 3.1 Flash Lite | 500,000,000 |
+| Gemini 3.1 Flash Lite Preview | 500,000,000 |
 | Gemini 3.5 Flash | 400,000,000 |
 | Gemini 2.5 Pro | 500,000,000 |
 | Gemini 2.5 Pro TTS | 100,000 |
@@ -103,13 +121,14 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Gemini 2.5 Flash Preview | 400,000,000 |
 | Gemini 2.5 Flash Image Preview | 400,000,000 |
 | Gemini 2.5 Flash TTS | 100,000 |
-| Gemini 2.5 Flash-Lite | 500,000,000 |
-| Gemini 2.5 Flash-Lite Preview | 500,000,000 |
+| Gemini 2.5 Flash Lite | 500,000,000 |
+| Gemini 2.5 Flash Lite Preview | 500,000,000 |
 | Gemini 2.0 Flash | 1,000,000,000 |
 | Gemini 2.0 Flash Image | 400,000,000 |
-| Gemini 2.0 Flash-Lite | 1,000,000,000 |
+| Gemini 2.0 Flash Lite | 1,000,000,000 |
 | Multi-modal generation models |  |
 | Gemini 3.1 Flash Image Preview 🍌 | 250,000,000 |
+| Gemini 3.1 Flash Lite Image 🍌 | 270,000,000 |
 | Gemini 3 Pro Image Preview 🍌 | 270,000,000 |
 | Embedding models |  |
 | Gemini Embedding | 5,000,000 |
@@ -120,9 +139,8 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 |---|---|
 | Text-out models |  |
 | Gemini 3.1 Pro Preview | 1,000,000,000 |
-| Gemini 3.1 Flash-Lite | 1,000,000,000 |
-| Gemini 3.1 Flash-Lite Preview | 1,000,000,000 |
-| Gemini 3.5 Flash | 1,000,000,000 |
+| Gemini 3.1 Flash Lite | 1,000,000,000 |
+| Gemini 3.1 Flash Lite Preview | 1,000,000,000 |
 | Gemini 3.5 Flash | 1,000,000,000 |
 | Gemini 2.5 Pro | 1,000,000,000 |
 | Gemini 2.5 Pro TTS | 1,000,000 |
@@ -130,13 +148,14 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Gemini 2.5 Flash Preview | 1,000,000,000 |
 | Gemini 2.5 Flash Image Preview | 1,000,000,000 |
 | Gemini 2.5 Flash TTS | 4,000,000 |
-| Gemini 2.5 Flash-Lite | 1,000,000,000 |
-| Gemini 2.5 Flash-Lite Preview | 1,000,000,000 |
+| Gemini 2.5 Flash Lite | 1,000,000,000 |
+| Gemini 2.5 Flash Lite Preview | 1,000,000,000 |
 | Gemini 2.0 Flash | 5,000,000,000 |
 | Gemini 2.0 Flash Image | 1,000,000,000 |
-| Gemini 2.0 Flash-Lite | 5,000,000,000 |
+| Gemini 2.0 Flash Lite | 5,000,000,000 |
 | Multi-modal generation models |  |
 | Gemini 3.1 Flash Image Preview 🍌 | 750,000,000 |
+| Gemini 3.1 Flash Lite Image 🍌 | 1,000,000,000 |
 | Gemini 3 Pro Image Preview 🍌 | 1,000,000,000 |
 | Embedding models |  |
 | Gemini Embedding | 10,000,000 |
@@ -157,4 +176,4 @@ We offer no guarantees about increasing your rate limit, but we'll do our best t
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-05-28 UTC.
+Last updated 2026-07-03 UTC.
