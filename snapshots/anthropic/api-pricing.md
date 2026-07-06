@@ -18,21 +18,25 @@ The following table shows pricing for all Claude models:
 | Claude Opus 4.5 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
 | Claude Opus 4.1 (deprecated) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
 | Claude Opus 4 (retired, except on Google Cloud) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
+| Claude Sonnet 5 through August 31, 2026 | $2 / MTok | $2.50 / MTok | $4 / MTok | $0.20 / MTok | $10 / MTok |
+| Claude Sonnet 5 starting September 1, 2026 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
 | Claude Sonnet 4.6 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
 | Claude Sonnet 4.5 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
 | Claude Sonnet 4 (retired, except on Bedrock and Google Cloud) | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
 | Claude Haiku 4.5 | $1 / MTok | $1.25 / MTok | $2 / MTok | $0.10 / MTok | $5 / MTok |
 | Claude Haiku 3.5 (retired, except on Bedrock and Google Cloud) | $0.80 / MTok | $1 / MTok | $1.60 / MTok | $0.08 / MTok | $4 / MTok |
 
+Introductory pricing of $2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15 per million input/output tokens will take effect.
+
 MTok = Million tokens. The "Base Input Tokens" column shows standard input pricing, the "5m Cache Writes", "1h Cache Writes", and "Cache Hits & Refreshes" columns are specific to prompt caching, and "Output Tokens" shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers.
 
-Opus 4.7 and later use a new tokenizer compared to previous models, contributing to their improved performance on a wide range of tasks. This new tokenizer may use up to 35% more tokens for the same fixed text.
+Claude Opus 4.7 and later Opus models, Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, and Claude Sonnet 5 use a newer tokenizer that contributes to their improved performance on a wide range of tasks. This tokenizer produces approximately 30% more tokens for the same text. The exact increase depends on the content and workload shape. Claude Sonnet 4.6 and earlier models use the previous tokenizer.
 
 For Claude Platform on AWS pricing, see Claude Platform on AWS pricing.
 
 ## Cloud platform pricing
 
-This section covers partner-operated cloud platforms, where the cloud provider invoices you. For Anthropic-operated cloud platforms billed through a marketplace, see Claude Platform on AWS pricing and Claude in Microsoft Foundry.
+This section covers partner-operated cloud platforms, where the cloud provider invoices you. For Anthropic-operated cloud platforms billed through a marketplace, see Claude Platform on AWS pricing and Claude in Microsoft Foundry pricing.
 
 Claude models are available on Amazon Bedrock and Google Cloud. For official pricing, visit:
 
@@ -82,6 +86,27 @@ When you sign up on the AWS Console Claude Platform on AWS service page, the AWS
 
 If you have an existing Amazon Bedrock private offer, contact your Anthropic or AWS account representative before getting started with Claude Platform on AWS to ensure your discounts are applied correctly. Discounts cannot be applied retroactively to usage incurred before your private offer is accepted.
 
+## Claude in Microsoft Foundry pricing
+
+Claude in Microsoft Foundry bills through the Azure Marketplace using Claude Consumption Units (CCUs). Anthropic rates your token usage in USD at standard per-model, per-feature rates, applies any negotiated discount, converts the result to CCUs at $0.01 per CCU, and reports the CCU quantity to the Azure Marketplace hourly. Your Azure bill shows a single CCU line item.
+
+| Concept | Details |
+|---|---|
+| Billing unit | Claude Consumption Unit (CCU) |
+| CCU price | $0.01 per CCU (fixed; discounts apply at token-to-CCU conversion, not to the CCU price) |
+| Conversion | Token usage rated in USD at standard per-model, per-feature rates (same as Claude API pricing), then converted to CCUs at $0.01 per CCU |
+| Billing cadence | Hourly metering to the Azure Marketplace; monthly invoices |
+| Payment model | Arrears only (postpaid); no prepaid credits |
+| Discounts | Applied as fewer CCUs metered |
+| Tax | Pre-tax metering; Azure Marketplace handles tax |
+| Cost visibility | Azure Cost Management shows aggregated CCU |
+
+Claude Consumption Units. If Customer accesses the Services through certain Marketplace Platforms (e.g., Claude Platform on AWS, Claude in Microsoft Foundry), usage will be invoiced in Claude Consumption Units ("CCU") rather than per MTok. A CCU is a unit of measure used solely for Marketplace Platform invoicing. One hundred (100) CCU represents $1.00 USD of fees owed for the Services, calculated at the applicable prices on claude.com/pricing#api, after application of any discounts.
+
+### Inference geography
+
+Deployments hosted on Azure can use the US Data Zone Standard deployment type, which keeps inference within the United States. This is equivalent to `inference_geo: "us"` on the Claude API and applies the same 1.1x pricing multiplier. See Data residency for details.
+
 ## Feature-specific pricing
 
 ### Prompt caching
@@ -111,18 +136,20 @@ For implementation details, supported models, and code examples, see Prompt cach
 
 For Claude Opus 4.6, Claude Sonnet 4.6, and later models, specifying US-only inference through the `inference_geo` parameter incurs a 1.1x multiplier on all token pricing categories, including input tokens, output tokens, cache writes, and cache reads. Global routing (the default) uses standard pricing.
 
-This applies to the Claude API (first-party) and Claude Platform on AWS. Partner-operated platforms (Bedrock and Google Cloud) have independent regional pricing. See Bedrock and Google Cloud for details. Earlier models do not support the `inference_geo` parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.
+This applies to the Claude API (first-party) and Claude Platform on AWS. On Claude in Microsoft Foundry, the same 1.1x multiplier applies to deployments that use the US Data Zone Standard deployment type (see Inference geography). Partner-operated platforms (Bedrock and Google Cloud) have independent regional pricing. See Bedrock and Google Cloud for details. Earlier models do not support the `inference_geo` parameter and always use standard pricing; requests that include the parameter on these models return a 400 error.
 
 For more information, see Data residency.
 
 ### Fast mode pricing
 
-Fast mode, in research preview, provides significantly faster output for Claude Opus 4.8, Claude Opus 4.7, and Claude Opus 4.6 at premium pricing. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is not available on Claude Platform on AWS.
+Fast mode, in research preview, provides significantly faster output for Claude Opus 4.8 and Claude Opus 4.7 at premium pricing. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is not available on Claude Platform on AWS.
 
 | Model | Input | Output |
 |---|---|---|
-| Claude Opus 4.6 / Claude Opus 4.7 | $30 / MTok | $150 / MTok |
 | Claude Opus 4.8 | $10 / MTok | $50 / MTok |
+| Claude Opus 4.7 | $30 / MTok | $150 / MTok |
+
+Fast mode for Claude Opus 4.7 is deprecated and will be removed on July 24, 2026. As of June 29, 2026, fast mode is not available on Claude Opus 4.6: requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed and are billed at standard rates. See Fast mode.
 
 Fast mode pricing stacks with other pricing modifiers:
 
@@ -147,6 +174,8 @@ The Batch API allows asynchronous processing of large volumes of requests with a
 | Claude Opus 4.5 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.1 (deprecated) | $7.50 / MTok | $37.50 / MTok |
 | Claude Opus 4 (retired, except on Google Cloud) | $7.50 / MTok | $37.50 / MTok |
+| Claude Sonnet 5 through August 31, 2026 | $1 / MTok | $5 / MTok |
+| Claude Sonnet 5 starting September 1, 2026 | $1.50 / MTok | $7.50 / MTok |
 | Claude Sonnet 4.6 | $1.50 / MTok | $7.50 / MTok |
 | Claude Sonnet 4.5 | $1.50 / MTok | $7.50 / MTok |
 | Claude Sonnet 4 (retired, except on Bedrock and Google Cloud) | $1.50 / MTok | $7.50 / MTok |
@@ -157,7 +186,7 @@ For more information about batch processing, see Batch processing.
 
 ### Long context pricing
 
-Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 4.8, Opus 4.7, Opus 4.6, and Sonnet 4.6 include the full 1M token context window at standard pricing. (A 900k-token request is billed at the same per-token rate as a 9k-token request.) Prompt caching and batch processing discounts apply at standard rates across the full context window.
+Claude Fable 5, Claude Mythos 5, Claude Mythos Preview, Claude Opus 4.8, Opus 4.7, Opus 4.6, Sonnet 5, and Sonnet 4.6 include the full 1M token context window at standard pricing. (A 900k-token request is billed at the same per-token rate as a 9k-token request.) Prompt caching and batch processing discounts apply at standard rates across the full context window.
 
 ### Tool use pricing
 
@@ -185,6 +214,7 @@ When you use `tools`, the API also automatically includes a special system promp
 | Claude Opus 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
 | Claude Opus 4.1 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
 | Claude Opus 4 (retired, except on Google Cloud) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
+| Claude Sonnet 5 | `auto`, `none``any`, `tool` | 354 tokens474 tokens |
 | Claude Sonnet 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
 | Claude Sonnet 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
 | Claude Sonnet 4 (retired, except on Bedrock and Google Cloud) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
