@@ -158,6 +158,24 @@ Our most cost-efficient model, optimized for high-volume agentic tasks, translat
 
 * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
+## Gemini Omni Flash Preview
+
+`gemini-omni-flash-preview`
+
+Try it in Google AI Studio
+
+Our next-generation video generation and editing model, available to developers on the paid tier of the Gemini API.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $1.50 (text / image / video / audio) |
+| Output price (including thinking tokens) | Not available | $9.00 (text) $17.50 (video)* |
+| Used to improve our products | Yes | No |
+
+* Billing is based on total output token consumption, calculated at a rate of 5,792 tokens per second of 720p video. Under Standard pricing, this equates to an effective price of approximately $0.10 per second.
+
 ## Gemini 3.1 Pro Preview
 
 `gemini-3.1-pro-preview` and `gemini-3.1-pro-preview-customtools`
@@ -229,7 +247,7 @@ Our low-latency, audio-to-audio model optimized for real-time dialogue with acou
 
 * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
-## Gemini 3.1 Flash Image 🍌
+## Gemini 3.1 Flash Image (Nano Banana 2) 🍌
 
 `gemini-3.1-flash-image`
 
@@ -257,6 +275,32 @@ Designed for speed and efficiency, the Gemini 3.1 Flash Image generation model i
 * Image output is priced at $60 per 1,000,000 tokens. Output images at 0.5K (512px) consume 747 tokens and are equivalent to $0.045 per image. Output images at 1K (1024x1024px) consume 1120 tokens and are equivalent to $0.067 per image. Output images at 2K (2048x2048px) consume 1680 tokens and are equivalent to $0.101 per image. Output images at 4K (4096x4096px) consume 2520 tokens and are equivalent to $0.151 per image.
 
 ** A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed. Retrieved context (text or images) provided by Grounding with Google Search is not charged as input tokens.
+
+## Gemini 3.1 Flash Lite Image 🍌
+
+`gemini-3.1-flash-lite-image`
+
+Try it in Google AI Studio
+
+Designed as the efficiency specialist of the image generation family, the Gemini 3.1 Flash Lite Image model is designed for ultra-low latency and cost-effective image generation and editing.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $0.25 (text/image/video) |
+| Output price | Not available | $1.50 (text and thinking)  $30.00 (images)  Equivalent to $0.0336 per 1K resolution image* |
+| Used to improve our products | Yes | No |
+
+### Batch
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $0.125 (text/image/video) |
+| Output price | Not available | $0.75 (text and thinking)  $15.00 (images)  Equivalent to $0.0168 per 1K resolution image* |
+| Used to improve our products | Yes | No |
+
+* Image output is priced at $30 per 1,000,000 tokens. Output images at 1K (1024x1024px) consume 1120 tokens and are equivalent to $0.0336 per image.
 
 ## Gemini 3.1 Flash TTS Preview
 
@@ -340,7 +384,7 @@ Our most intelligent model built for speed, combining frontier intelligence with
 
 * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
-## Gemini 3 Pro Image 🍌
+## Gemini 3 Pro Image (Nano Banana Pro) 🍌
 
 `gemini-3-pro-image`
 
@@ -588,7 +632,7 @@ Preview models may change before becoming stable and have more restrictive rate 
 | Output price (including thinking tokens) | Free of charge | $2.00 (text) $12.00 (audio) |
 | Used to improve our products | Yes | No |
 
-## Gemini 2.5 Flash Image 🍌
+## Gemini 2.5 Flash Image (Nano Banana) 🍌
 
 `gemini-2.5-flash-image`
 
@@ -954,4 +998,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-06-24 UTC.
+Last updated 2026-06-30 UTC.
