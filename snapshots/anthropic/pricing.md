@@ -35,11 +35,11 @@ Everything in Free, plus:
 - Includes Claude Code
 - Includes Claude Cowork
 - Includes Claude Design
+- Includes Claude Science
 - Access to unlimited projects to organize chats and documents
 - Access to Research
 - Ability to use more Claude models
 - Claude for Microsoft 365
-- Claude for Microsoft Outlook
 
 ### Max
 
@@ -79,6 +79,8 @@ Max 20x
 #### Claude Cowork
 
 #### Claude Design
+
+#### Claude Science
 
 #### @Claude
 
@@ -222,6 +224,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 
 - Includes Claude Code and Claude Cowork
 - Includes Claude Design
+- Includes Claude Science
 - Connect Microsoft 365, @Claude, and more
 - Enterprise search across your organization
 - Central billing and administration
@@ -295,6 +298,8 @@ Enterprise (sales-assisted)
 #### Claude Cowork
 
 #### Claude Design
+
+#### Claude Science
 
 #### @Claude
 
