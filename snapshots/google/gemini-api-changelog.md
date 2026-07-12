@@ -4,10 +4,14 @@
 
 This page documents updates to the Gemini API.
 
+## July 6, 2026
+
+- Developer logs support for the Interactions API: logs for supported Interactions API calls are now viewable in the AI Studio dashboard.
+
 ## June 30, 2026
 
 - Gemini Omni Flash in public preview: Released `gemini-omni-flash-preview`, a high-performance multimodal model designed for high-speed video generation and conversational video editing. Using the Interactions API, you can generate 3–10 second videos at 720p from text descriptions or animate still images, and then conversationally edit and refine the outputs. To get started, see the Gemini Omni Flash guide and the Gemini Omni Flash model card.
-- Released `gemini-3.1-flash-lite-image` (Nano Banana Lite) to general availability (GA), our built-in multimodal model optimized for ultra-low latency and cost-effective image generation and editing. See the Gemini 3.1 Flash Lite Image model card and the Image generation guide.
+- Released `gemini-3.1-flash-lite-image` (Nano Banana 2 Lite) to general availability (GA), our built-in multimodal model optimized for ultra-low latency and cost-effective image generation and editing. See the Gemini 3.1 Flash Lite Image model card and the Image generation guide.
 
 ## June 24, 2026
 
@@ -810,4 +814,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-06-30 UTC.
+Last updated 2026-07-09 UTC.
