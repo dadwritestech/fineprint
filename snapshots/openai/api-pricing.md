@@ -6,15 +6,18 @@ Prices per 1M tokens.
 
 Standard
 
-|  | Short context | Long context |  |  |  |  |
-|---|---|---|---|---|---|---|
-| Model | Input | Cached input | Output | Input | Cached input | Output |
-| gpt-5.5 | $5.00 | $0.50 | $30.00 | $10.00 | $1.00 | $45.00 |
-| gpt-5.5-pro | $30.00 | - | $180.00 | $60.00 | - | $270.00 |
-| gpt-5.4 | $2.50 | $0.25 | $15.00 | $5.00 | $0.50 | $22.50 |
-| gpt-5.4-mini | $0.75 | $0.075 | $4.50 | - | - | - |
-| gpt-5.4-nano | $0.20 | $0.02 | $1.25 | - | - | - |
-| gpt-5.4-pro | $30.00 | - | $180.00 | $60.00 | - | $270.00 |
+|  | Short context | Long context |  |  |  |  |  |  |
+|---|---|---|---|---|---|---|---|---|
+| Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+| gpt-5.6-sol | $5.00 | $0.50 | $6.25 | $30.00 | $10.00 | $1.00 | $12.50 | $45.00 |
+| gpt-5.6-terra | $2.50 | $0.25 | $3.125 | $15.00 | $5.00 | $0.50 | $6.25 | $22.50 |
+| gpt-5.6-luna | $1.00 | $0.10 | $1.25 | $6.00 | $2.00 | $0.20 | $2.50 | $9.00 |
+| gpt-5.5 | $5.00 | $0.50 | - | $30.00 | $10.00 | $1.00 | - | $45.00 |
+| gpt-5.5-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
+| gpt-5.4 | $2.50 | $0.25 | - | $15.00 | $5.00 | $0.50 | - | $22.50 |
+| gpt-5.4-mini | $0.75 | $0.075 | - | $4.50 | - | - | - | - |
+| gpt-5.4-nano | $0.20 | $0.02 | - | $1.25 | - | - | - | - |
+| gpt-5.4-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
 
 Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS and may differ from direct OpenAI pricing.
 
@@ -22,9 +25,12 @@ Prices per 1M tokens unless noted.
 
 | Model | Modality | Input | Cached input | Output / cost |
 |---|---|---|---|---|
-| gpt-realtime-2 | Audio | $32.00 | $0.40 | $64.00 |
+| gpt-realtime-2.1 | Audio | $32.00 | $0.40 | $64.00 |
 | Text | $4.00 | $0.40 | $24.00 |  |
 | Image | $5.00 | $0.50 | - |  |
+| gpt-realtime-2.1-mini | Audio | $10.00 | $0.30 | $20.00 |
+| Text | $0.60 | $0.06 | $2.40 |  |
+| Image | $0.80 | $0.08 | - |  |
 | gpt-realtime-translate | Audio | - | - | $0.034 / minute |
 | gpt-realtime-whisper | Audio | - | - | $0.017 / minute |
 
