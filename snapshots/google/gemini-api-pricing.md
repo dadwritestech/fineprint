@@ -276,7 +276,7 @@ Designed for speed and efficiency, the Gemini 3.1 Flash Image generation model i
 
 ** A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed. Retrieved context (text or images) provided by Grounding with Google Search is not charged as input tokens.
 
-## Gemini 3.1 Flash Lite Image 🍌
+## Gemini 3.1 Flash Lite Image (Nano Banana 2 Lite) 🍌
 
 `gemini-3.1-flash-lite-image`
 
@@ -998,4 +998,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-06-30 UTC.
+Last updated 2026-07-09 UTC.
