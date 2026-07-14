@@ -25,6 +25,7 @@ ProPro+Ultra
 Everything in Hobby, plus:
 
 - ✓ Extended limits on Agent
+- ✓ Generous limits for Grok & Composer
 - ✓ Access to frontier models
 - ✓ MCPs, skills, and hooks
 - ✓ Cloud agents
@@ -76,6 +77,8 @@ We recommend Pro+ for daily agent users, and Ultra for agent power users. The Te
 Self-serve plans support all major credit and debit cards. For invoice-based billing and wire transfers, please contact us to discuss the Enterprise plan.
 
 Every plan includes a set amount of model usage. On-demand usage allows you to continue using models after your included amount is consumed, billed in arrears. See our docs for more details.
+
+All prices are exclusive of any applicable taxes. See our Terms of Service for more information.
 
 Admins can access usage information and key metrics through the Admin Dashboard.
 
