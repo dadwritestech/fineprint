@@ -27,8 +27,6 @@ $10USDper user / month
 
 Get started
 
-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
-
 #### Everything in Free and:
 
 - Access to Cloud agent and code review
@@ -45,8 +43,6 @@ $39USDper user / month
 
 Get started
 
-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
-
 #### Everything in Pro and:
 
 - Access to premium models, including Opus
@@ -61,8 +57,6 @@ For sustained, high-volume agent workflows with GitHub Copilot.
 $100USDper user / month
 
 Get started
-
-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
 
 #### Everything in Pro+ and:
 
@@ -449,6 +443,9 @@ Free
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
+- OpenAI GPT-5.6 Sol
+- OpenAI GPT-5.6 Terra
+- OpenAI GPT-5.6 Luna
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
@@ -476,6 +473,9 @@ Pro
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
+- OpenAI GPT-5.6 Sol
+- OpenAI GPT-5.6 Terra
+- OpenAI GPT-5.6 Luna
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
@@ -503,6 +503,9 @@ Pro+
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
+- OpenAI GPT-5.6 Sol
+- OpenAI GPT-5.6 Terra
+- OpenAI GPT-5.6 Luna
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
@@ -530,6 +533,9 @@ Max
 - OpenAI GPT-5.4
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
+- OpenAI GPT-5.6 Sol
+- OpenAI GPT-5.6 Terra
+- OpenAI GPT-5.6 Luna
 - Google Gemini 2.5 Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
