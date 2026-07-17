@@ -1,9 +1,5 @@
 <!-- fineprint snapshot: google/genai-use-policy | source: https://policies.google.com/terms/generative-ai/use-policy -->
 
-Privacy & Terms
-
-Privacy & Terms
-
 ## Privacy & Terms
 
 # Generative AI Prohibited Use Policy
@@ -40,11 +36,3 @@ Generative AI models can help you explore, learn, and create. We expect you to e
 We may make exceptions to these policies based on educational, documentary, scientific, or artistic considerations, or where harms are outweighed by substantial benefits to the public.
 
 Opens in a new tab(opens a footnote)
-
-- Google
-- About Google
-- Privacy
-- Terms
-- Transparency Center
-
-English
