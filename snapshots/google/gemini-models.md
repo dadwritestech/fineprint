@@ -2,6 +2,8 @@
 
 # Models
 
+This guide introduces all the models available through the Gemini API.
+
 ## Gemini 3
 
 ### Stable
@@ -170,4 +172,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-09 UTC.
+Last updated 2026-07-16 UTC.
