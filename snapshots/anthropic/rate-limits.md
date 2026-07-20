@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
 
-Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS. Billing and spend limits differ: spend limits are not available, and billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS.
+Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Spend limits are set in Settings > Billing rather than Settings > Limits. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
 
 There are two types of limits:
 
@@ -21,13 +21,15 @@ The API enforces service-configured limits at the organization level, but you ma
 
 ## Spend limits
 
+Claude Platform on AWS: Spend limits work differently on Claude Platform on AWS. Set spend limits in Settings > Billing instead of Settings > Limits. See Spend limits on Claude Platform on AWS for how spend caps and self-set spend limits apply to your organization.
+
 Each of the Start, Build, and Scale tiers carries a monthly spend cap, which is the maximum your organization can spend on the API each calendar month. Once you reach your tier's spend cap, API usage pauses until the next month unless you request a higher limit. You can view your organization's monthly spend cap on the Limits page.
 
 | Usage tier | Monthly spend cap |
 |---|---|
-| Start | $500 |
-| Build | $1,000 |
-| Scale | $200,000 |
+| Start | $500 USD |
+| Build | $1,000 USD |
+| Scale | $200,000 USD |
 
 Organizations on the Custom tier have no monthly spend cap; limits are arranged with their account team.
 
@@ -48,15 +50,15 @@ You might also encounter 429 errors because of acceleration limits on the API if
 
 ### Cache-aware ITPM
 
-Many API providers use a combined "tokens per minute" (TPM) limit that may include all tokens, both cached and uncached, input and output. For most Claude models, only uncached input tokens count towards your ITPM rate limits. This is a key advantage that makes the rate limits effectively higher than they might initially appear.
+Many API providers use a combined "tokens per minute" (TPM) limit that may include all tokens, both cached and uncached, input and output. For most Claude models, only uncached input tokens count toward your ITPM rate limits. This is a key advantage that makes the rate limits effectively higher than they might initially appear.
 
 ITPM rate limits are estimated at the beginning of each request, and the estimate is adjusted during the request to reflect the actual number of input tokens used.
 
-Here's what counts towards ITPM:
+Here's what counts toward ITPM:
 
-- `input_tokens` (tokens after the last cache breakpoint) ✓ Count towards ITPM
-- `cache_creation_input_tokens` (tokens being written to cache) ✓ Count towards ITPM
-- `cache_read_input_tokens` (tokens read from cache) ✗ Do NOT count towards ITPM for most models
+- `input_tokens` (tokens after the last cache breakpoint) ✓ Count toward ITPM
+- `cache_creation_input_tokens` (tokens being written to cache) ✓ Count toward ITPM
+- `cache_read_input_tokens` (tokens read from cache) ✗ Do NOT count toward ITPM for most models
 
 The `input_tokens` field only represents tokens that appear after your last cache breakpoint, not all input tokens in your request. To calculate total input tokens:
 
@@ -68,15 +70,15 @@ This means when you have cached content, `input_tokens` will typically be much s
 
 For rate limit purposes on most models, only `input_tokens` + `cache_creation_input_tokens` count toward your ITPM limit, making prompt caching an effective way to increase your effective throughput.
 
-Example: With a 2,000,000 ITPM limit and an 80% cache hit rate, you could effectively process 10,000,000 total input tokens per minute (2M uncached + 8M cached), because cached tokens don't count towards your rate limit.
+Example: With a 2,000,000 ITPM limit and an 80% cache hit rate, you could effectively process 10,000,000 total input tokens per minute (2M uncached + 8M cached), because cached tokens don't count toward your rate limit.
 
 Claude Haiku 3.5 (marked with † in the following rate limit tables) also counts `cache_read_input_tokens` toward ITPM rate limits.
 
-For all models without the † marker, cached input tokens do not count towards rate limits and are billed at a reduced rate (10% of base input token price). This means you can achieve significantly higher effective throughput by using prompt caching.
+For all models without the † marker, cached input tokens do not count toward rate limits and are billed at a reduced rate (10% of base input token price). This means you can achieve significantly higher effective throughput by using prompt caching.
 
 Maximize your rate limits with prompt caching
 
-To get the most out of your rate limits, use prompt caching for repeated content like:
+See prompt caching for guidance on increasing effective throughput by caching repeated content such as:
 
 - System instructions and prompts
 - Large context documents
@@ -87,19 +89,32 @@ With effective caching, you can dramatically increase your actual throughput wit
 
 OTPM rate limits are evaluated in real time as output tokens are produced, counting only the actual tokens generated. The `max_tokens` parameter does not factor into OTPM rate limit calculations, so there is no rate limit downside to setting a higher `max_tokens` value.
 
-Rate limits are applied separately for each model; therefore you can use different models up to their respective limits simultaneously. You can check your current rate limits and behavior in the Claude Console, or read the configured limits programmatically with the Rate Limits API.
+Rate limits are applied separately for each model; therefore you can use different models up to their respective limits simultaneously. You can check your current rate limits and behavior on the Limits page in the Claude Console, or read the configured limits programmatically with the Rate Limits API.
 
 Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
+
+| Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+|---|---|---|---|
+| Claude Fable 5 | 1,000 | 500,000 | 100,000 |
+| Claude Opus 4.x* | 1,000 | 2,000,000 | 400,000 |
+| Claude Sonnet 5 | 1,000 | 2,000,000 | 400,000 |
+| Claude Sonnet 4.x** | 1,000 | 2,000,000 | 400,000 |
+| Claude Haiku 4.5 | 1,000 | 2,000,000 | 400,000 |
+| Claude Haiku 3.5 (retired, except on Bedrock and Google Cloud) | 1,000 | 100,000† | 20,000 |
 
 * - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5.
 
 ** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5 has a separate rate limit and is not part of this combined bucket.
 
-† - Limit counts `cache_read_input_tokens` towards ITPM usage.
+† - Limit counts `cache_read_input_tokens` toward ITPM usage.
 
 ### Message Batches API
 
-The Message Batches API has its own set of rate limits which are shared across all models. These include a requests per minute (RPM) limit to all API endpoints and a limit on the number of batch requests that can be in the processing queue at the same time. A "batch request" here refers to part of a Message Batch. You may create a Message Batch containing thousands of batch requests, each of which count towards this limit. A batch request is considered part of the processing queue when it has yet to be successfully processed by the model.
+The Message Batches API has its own set of rate limits which are shared across all models. These include a requests per minute (RPM) limit to all API endpoints and a limit on the number of batch requests that can be in the processing queue at the same time. A "batch request" here refers to part of a Message Batch. You may create a Message Batch containing thousands of batch requests, each of which count toward this limit. A batch request is considered part of the processing queue when it has yet to be successfully processed by the model.
+
+| Maximum requests per minute (RPM) | Maximum batch requests in processing queue | Maximum batch requests per batch |
+|---|---|---|
+| 1,000 | 200,000 | 100,000 |
 
 ### Managed Agents
 
@@ -114,13 +129,13 @@ Claude Managed Agents endpoints are rate-limited per organization. These limits 
 
 When using fast mode (research preview) with `speed: "fast"` on Claude Opus 4.8 or Opus 4.7, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.6: requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed. See Fast mode.
 
-The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode for details on these headers.
+The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode rate limits for details on these headers.
 
 ### Monitoring your rate limits in the Console
 
 You can monitor your rate limit usage on the Usage page of the Claude Console.
 
-In addition to providing token and request charts, the Usage page provides two separate rate limit charts. Use these charts to see what headroom you have to grow, when you may be hitting peak use, better understand what rate limits to request, or how you can improve your caching rates. The charts visualize a number of metrics for a given rate limit (for example, per model):
+In addition to providing token and request charts, the Usage page provides two separate rate limit charts. Use these charts to see what headroom you have to grow, identify when you may be hitting peak use, understand what rate limits to request, and learn how to improve your caching rates. The charts visualize a number of metrics for a given rate limit (for example, per model):
 
 - The Rate Limit - Input Tokens chart includes:
   - Hourly maximum uncached input tokens per minute
@@ -134,7 +149,9 @@ In addition to providing token and request charts, the Usage page provides two s
 
 To request higher rate limits or a higher monthly spend cap, use Request rate limit increase on the Limits page.
 
-Support can also raise limits. For urgent needs, contact support.
+Support can also raise limits. For urgent needs, contact Anthropic support.
+
+Claude Platform on AWS: The Request rate limit increase flow is not available. Contact your Anthropic account representative or Anthropic support, and include the models you need raised, your peak input and output tokens per minute for each model, and roughly what share of your input is cached or repeated context. See Rate limits and quotas on Claude Platform on AWS.
 
 ## Setting lower limits for Workspaces
 
