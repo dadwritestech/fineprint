@@ -6,6 +6,8 @@ MonthlyYearly
 
 ### Hobby
 
+For the tinkerer
+
 Free
 
 Includes:
@@ -14,9 +16,11 @@ Includes:
 - ✓ Limited Agent requests
 - ✓ Limited Tab completions
 
-Download
+Try Cursor
 
 ### Individual
+
+For the agent-curious
 
 $20 / mo.
 
@@ -34,6 +38,8 @@ Everything in Hobby, plus:
 Get Pro
 
 ### Teams
+
+For teams that ship together
 
 $40 / user / mo.
 
@@ -53,6 +59,8 @@ Get Teams
 
 ### Enterprise
 
+For scaled organizations
+
 Custom
 
 Everything on Teams, plus:
@@ -66,7 +74,7 @@ Everything on Teams, plus:
 - ✓ AI code tracking API
 - ✓ Priority support and account management
 
-Contact Sales
+Contact sales
 
 ## Trusted every day by teams that build world-class software.
 
