@@ -40,8 +40,6 @@ Excluding taxes
 
 Including taxes
 
-* Subject to fair usage limits and Mistral's Terms of Service.
-
 - More access and usage.
 - More messages and web searches.
 - Get more complex tasks done.
@@ -62,8 +60,6 @@ $24.99
 Excluding taxes
 
 Including taxes
-
-* Subject to fair usage limits and Mistral's Terms of Service.
 
 - Up to 30GB of storage /user.
 - Domain name verification.
@@ -100,52 +96,48 @@ Excluding taxes
 
 Including taxes
 
-Valid for a maximum of 12 months for verified students at accredited higher institutions and if you haven't used Vibe (or Le Chat) before.
-
-* Subject to fair usage limits and Mistral's Terms of Service.
-
 Start now
 
-|  | Free        Start now | Pro        Start now | Team        Start now | Enterprise        Contact us |
+|  | Free Start now | Pro Start now | Team Start now | Enterprise Contact us |
 |---|---|---|---|---|
 | Interfaces. |  |  |  |  |
-| Vibe on web      Vibe in your browser: run long-horizon work and code tasks from a chat interface. |  |  |  |  |
-| Vibe CLI      Terminal-native coding agent powered by Devstral for autonomous software engineering tasks. |  |  |  |  |
-| Vibe for IDE      VS Code and JetBrains plugin powered by Devstral—tab completion, natural language code editing, and context-aware chat. |  |  |  |  |
+| Vibe on web |  |  |  |  |
+| Vibe CLI |  |  |  |  |
+| Vibe for IDE |  |  |  |  |
 | Vibe on mobile (iOS and Android) |  |  |  |  |
 | Features and tools. |  |  |  |  |
-| Messages      Chat with our most powerful, SOTA models. |  | Up to 6x free | Up to 6x free |  |
-| Voice mode      Record or upload audio, get transcriptions, ask questions, or generate summaries. |  |  |  |  |
-| Skills      Create and load instructions, tools, and scripts for specialized, repeatable tasks. |  |  |  |  |
+| Messages |  | Up to 6x free | Up to 6x free |  |
+| Voice mode |  |  |  |  |
+| Skills |  |  |  |  |
 | Web searches |  | Up to 5x free | Up to 5x free |  |
-| Libraries and document upload      Organize and include information for your chats. Supported file formats: PDF, images, CSV, all text files (.json...), Office Suite (ppt, xls, docx). | Limited | Up to 15GB | Up to 30GB / user |  |
-| Task scheduling      Schedule prompts, agents, or workflows to run automatically at set times. | Up to 5 | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) |  |
-| Workflows      Run multi-step automations orchestrated from Mistral Studio. |  |  |  |  |
-| Connectors (beta)      Search, summarize, and act across your stack with the widest enterprise-ready connector directory. |  |  |  |  |
-| Custom MCP connectors (beta)      Connect to any remote MCP server of choice. |  |  |  |  |
-| Canvas      Create documents, presentations, code, mockups, and more. |  |  |  |  |
-| Project folders      Group chats into organized, context-rich workspaces. |  | Up to 1,000 | Up to 1,000 |  |
-| Image generation      Generate and edit high-quality AI images, turning ideas into visuals with just a few words. |  | Up to 40x free | Up to 40x free |  |
-| Code interpreter (Chat mode)      Execute code in a sandbox, run scientific analysis, generate visualizations, and perform simulations. |  |  |  |  |
-| Verified news      Fetch reliable and verified news content in responses. |  |  |  |  |
+| Libraries and document upload | Limited | Up to 15GB | Up to 30GB / user |  |
+| Task scheduling | Up to 5 | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) |  |
+| Workflows |  |  |  |  |
+| Connectors (beta) |  |  |  |  |
+| Custom MCP connectors (beta) |  |  |  |  |
+| Canvas |  |  |  |  |
+| Project folders |  | Up to 1,000 | Up to 1,000 |  |
+| Image generation |  | Up to 40x free | Up to 40x free |  |
+| Code interpreter (Chat mode) |  |  |  |  |
+| Verified news |  |  |  |  |
 | Coding features. |  |  |  |  |
 | Use Vibe in the CLI, IDE, and remotely. |  |  |  |  |
-| Connectors      Pull context from your tools like Notion, Slack, Linear, and Drive directly into Vibe CLI while it codes. |  |  |  |  |
-| Hooks      Run custom shell commands before and after each agent turn to enforce conventions, block patterns, or trigger your own automations. |  |  |  |  |
-| Remote coding agents      Remote coding agent in isolated sandboxes for parallel task execution. |  |  |  |  |
-| Teleport      Hand off a Vibe CLI session from your local machine to a remote coding agent , then pick it back up locally when needed. |  |  |  |  |
-| Remote agent observability      Monitor remote coding sessions with run history, tool calls, code changes, logs, and audit trails. |  |  |  |  |
+| Connectors |  |  |  |  |
+| Hooks |  |  |  |  |
+| Remote coding agents |  |  |  |  |
+| Teleport |  |  |  |  |
+| Remote agent observability |  |  |  |  |
 | Domain name verification |  |  |  |  |
 | Team and enterprise features. |  |  |  |  |
-| Knowledge connectors      Connect external knowledge sources to Vibe for real-time, accurate answers. |  |  |  |  |
-| Custom deployments      Deploy self-hosted, in your private cloud, or on-premises; your data stays in your environment. |  |  |  |  |
-| Admin API      Programmatically manage users, teams, and permissions. |  |  |  |  |
+| Knowledge connectors |  |  |  |  |
+| Custom deployments |  |  |  |  |
+| Admin API |  |  |  |  |
 | Data export |  |  |  |  |
-| Audit logs      Detailed logs for tracking usage, changes, and ensuring compliance. |  |  |  |  |
+| Audit logs |  |  |  |  |
 | SAML SSO |  |  |  |  |
-| White label      Dedicated hostname, your logo. |  |  |  |  |
+| White label |  |  |  |  |
 | Usage and data. |  |  |  |  |
-| Extend usage with PAYG credits      Keep going past your plan limit by paying only for what you use beyond it at API rate. |  |  |  |  |
+| Extend usage with PAYG credits |  |  |  |  |
 | Model training |  | Opt-out | Opt-out | Opt-out |
 | Customer service. |  |  |  |  |
 | Help center |  |  |  |  |
