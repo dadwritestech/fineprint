@@ -72,139 +72,77 @@ Max 20x
 
 ### Features and capabilities
 
-#### Chat on web, iOS, Android and Desktop
-
-#### Claude Code
-
-#### Claude Cowork
-
-#### Claude Design
-
-#### Claude Science
-
-#### @Claude
-
-#### Ability to search the web
-
-#### Desktop extensions
-
-#### Voice mode
-
-#### Incognito chats
-
-#### User preferences
-
-#### Artifacts
-
-#### Projects
-
-#### Project sharing and collaboration
-
-#### Create and edit files with code execution
-
-#### Research
-
-#### Memory
-
-#### Skills
-
-#### Connectors
-
-#### Web search
-
-#### Enterprise search
-
-#### Claude for Chrome
-
-#### Claude for Microsoft 365
-
-#### Claude for Microsoft Outlook
+| Features | Free | Pro | Max 5x | Max 20x |
+|---|---|---|---|---|
+| Chat on web, iOS, Android and Desktop |  |  |  |  |
+| Claude Code |  |  |  |  |
+| Claude Cowork |  |  |  |  |
+| Claude Design |  |  |  |  |
+| Claude Science |  |  |  |  |
+| @Claude |  |  |  |  |
+| Ability to search the web |  |  |  |  |
+| Desktop extensions |  |  |  |  |
+| Voice mode |  |  |  |  |
+| Incognito chats |  |  |  |  |
+| User preferences |  |  |  |  |
+| Artifacts |  |  |  |  |
+| Projects |  |  |  |  |
+| Project sharing and collaboration |  |  |  |  |
+| Create and edit files with code execution |  |  |  |  |
+| Research |  |  |  |  |
+| Memory |  |  |  |  |
+| Skills |  |  |  |  |
+| Connectors |  |  |  |  |
+| Web search |  |  |  |  |
+| Enterprise search |  |  |  |  |
+| Claude for Chrome |  |  |  |  |
+| Claude for Microsoft 365 |  |  |  |  |
+| Claude for Microsoft Outlook |  |  |  |  |
 
 ### Security and administration
 
-#### Single sign-on (SSO) and domain capture
-
-#### Central billing and administration
-
-#### Admin controls for remote and local connectors
-
-#### Enterprise deployment for the Claude desktop app
-
-#### Role-based access
-
-#### System for Cross-domain Identity Management (SCIM)
-
-#### Audit logs
-
-#### Usage analytics
-
-#### Compliance API
-
-#### HIPAA-ready offering
-
-#### Custom data retention controls
-
-#### Organization wide skills deployment
+| Features | Free | Pro | Max 5x | Max 20x |
+|---|---|---|---|---|
+| Single sign-on (SSO) and domain capture |  |  |  |  |
+| Central billing and administration |  |  |  |  |
+| Admin controls for remote and local connectors |  |  |  |  |
+| Enterprise deployment for the Claude desktop app |  |  |  |  |
+| Role-based access |  |  |  |  |
+| System for Cross-domain Identity Management (SCIM) |  |  |  |  |
+| Audit logs |  |  |  |  |
+| Usage analytics |  |  |  |  |
+| Compliance API |  |  |  |  |
+| HIPAA-ready offering |  |  |  |  |
+| Custom data retention controls |  |  |  |  |
+| Organization wide skills deployment |  |  |  |  |
 
 ### Payment options
 
-#### Credit card
-
-n/a
-
-#### ACH
-
-#### Invoicing / net terms
-
-#### Billing cycle
-
-n/a
-
-Monthly and annual
-
-Monthly and annual
-
-Monthly and annual
-
-#### Adding seats midterm
-
-n/a
-
-n/a
-
-n/a
-
-n/a
+| Features | Free | Pro | Max 5x | Max 20x |
+|---|---|---|---|---|
+| Credit card | n/a |  |  |  |
+| ACH |  |  |  |  |
+| Invoicing / net terms |  |  |  |  |
+| Billing cycle | n/a | Monthly and annual | Monthly and annual | Monthly and annual |
+| Adding seats midterm | n/a | n/a | n/a | n/a |
 
 ### Models and usage
 
-#### Fable
-
-#### Opus
-
-#### Sonnet
-
-#### Haiku
-
-#### Usage credits
-
-#### Priority access at high traffic times
-
-#### User and organizational level spend controls
-
-#### Model training
-
-Opt-out
-
-Opt-out
-
-Opt-out
-
-Opt-out
+| Features | Free | Pro | Max 5x | Max 20x |
+|---|---|---|---|---|
+| Fable |  | Usage credits | 50% of weekly limits* | 50% of weekly limits* |
+| Opus |  |  |  |  |
+| Sonnet |  |  |  |  |
+| Haiku |  |  |  |  |
+| Context window | 200k | 200k | 200k | 200k |
+| Usage credits |  |  |  |  |
+| Priority access at high traffic times |  |  |  |  |
+| User and organizational level spend controls |  |  |  |  |
+| Model training | Opt-out | Opt-out | Opt-out | Opt-out |
 
 ### Team
 
-For teams of 5 to 150
+For teams of 2 to 150
 
 Standard seat
 
@@ -255,12 +193,6 @@ All Team plan features, plus:
 - HIPAA-ready offering available
 - Claude Security (beta)
 
-Questions
-
-Chat with our buying agent and get started in minutes.
-
-Chat now
-
 Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
 
 Usage limits apply. Price and plans are subject to change at Anthropic's discretion.
@@ -291,153 +223,91 @@ Enterprise (sales-assisted)
 
 ### Features and capabilities
 
-#### Chat on web, iOS, Android and Desktop
-
-#### Claude Code
-
-#### Claude Cowork
-
-#### Claude Design
-
-#### Claude Science
-
-#### @Claude
-
-#### Claude Security
-
-#### Ability to search the web
-
-#### Desktop extensions
-
-#### Voice mode
-
-#### Incognito chats
-
-#### User preferences
-
-#### Artifacts
-
-#### Projects
-
-#### Project sharing and collaboration
-
-#### Create and edit files with code execution
-
-#### Research
-
-#### Memory
-
-#### Skills
-
-#### Connectors
-
-#### Web search
-
-#### Enterprise search
-
-#### Claude for Chrome
-
-#### Claude for Microsoft 365
-
-#### Claude for Microsoft Outlook
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| Chat on web, iOS, Android and Desktop |  |  |  |
+| Claude Code |  |  |  |
+| Claude Cowork |  |  |  |
+| Claude Design |  |  |  |
+| Claude Science |  |  |  |
+| @Claude |  |  |  |
+| Claude Security |  |  |  |
+| Ability to search the web |  |  |  |
+| Desktop extensions |  |  |  |
+| Voice mode |  |  |  |
+| Incognito chats |  |  |  |
+| User preferences |  |  |  |
+| Artifacts |  |  |  |
+| Projects |  |  |  |
+| Project sharing and collaboration |  |  |  |
+| Create and edit files with code execution |  |  |  |
+| Research |  |  |  |
+| Memory |  |  |  |
+| Skills |  |  |  |
+| Connectors |  |  |  |
+| Web search |  |  |  |
+| Enterprise search |  |  |  |
+| Claude for Chrome |  |  |  |
+| Claude for Microsoft 365 |  |  |  |
+| Claude for Microsoft Outlook |  |  |  |
 
 ### Security and administration
 
-#### Single sign-on (SSO)
-
-#### Domain verification
-
-#### Restrict org creation
-
-#### Migrate accounts using your domains
-
-#### Central billing and administration
-
-#### Admin controls for remote and local connectors
-
-#### Enterprise deployment for the Claude desktop app
-
-#### Usage analytics
-
-#### Organization wide skills deployment
-
-#### Domain capture
-
-#### Role-based access
-
-#### System for Cross-domain Identity Management (SCIM)
-
-#### Audit logs
-
-#### Compliance API
-
-#### Custom data retention controls
-
-#### Set org instructions
-
-#### HIPAA-ready offering
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| Single sign-on (SSO) |  |  |  |
+| Domain verification |  |  |  |
+| Restrict org creation |  |  |  |
+| Migrate accounts using your domains |  |  |  |
+| Central billing and administration |  |  |  |
+| Admin controls for remote and local connectors |  |  |  |
+| Enterprise deployment for the Claude desktop app |  |  |  |
+| Usage analytics |  |  |  |
+| Organization wide skills deployment |  |  |  |
+| Domain capture |  |  |  |
+| Role-based access |  |  |  |
+| System for Cross-domain Identity Management (SCIM) |  |  |  |
+| Audit logs |  |  |  |
+| Compliance API |  |  |  |
+| Custom data retention controls |  |  |  |
+| Set org instructions |  |  |  |
+| HIPAA-ready offering |  |  |  |
 
 ### Payment options
 
-#### Credit card
-
-#### ACH
-
-#### Invoicing / net terms
-
-#### Billing cycle
-
-Monthly and annual
-
-Annual
-
-Annual
-
-#### Adding seats midterm
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| Credit card |  |  |  |
+| ACH |  |  |  |
+| Invoicing / net terms |  |  |  |
+| Billing cycle | Monthly and annual | Annual | Annual |
+| Adding seats midterm |  |  |  |
 
 ### Partnership
 
-#### AWS Marketplace availability
-
-#### Consultation
-
-#### Tiered incentives on committed spend
-
-#### Trials
-
-#### Non-standard terms
-
-#### Customer success support at certain spend thresholds
-
-#### MSA
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| AWS Marketplace availability |  |  |  |
+| Consultation |  |  |  |
+| Tiered incentives on committed spend |  |  |  |
+| Trials |  |  |  |
+| Non-standard terms |  |  |  |
+| Customer success support at certain spend thresholds |  |  |  |
+| MSA |  |  |  |
 
 ### Models and usage
 
-#### Fable
-
-#### Opus
-
-#### Sonnet
-
-#### Haiku
-
-#### Extra usage
-
-n/a
-
-n/a
-
-#### Priority access at high traffic times
-
-#### User and organizational level spend controls
-
-#### Model training
-
-None by default
-
-None by default
-
-None by default
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| Fable |  |  |  |
+| Opus |  |  |  |
+| Sonnet |  |  |  |
+| Haiku |  |  |  |
+| Context window | 200k | 500kon default model | 500kon default model |
+| Extra usage |  | n/a | n/a |
+| Priority access at high traffic times |  |  |  |
+| User and organizational level spend controls |  |  |  |
+| Model training | None by default | None by default | None by default |
 
 Latest models
 
@@ -728,6 +598,8 @@ The Max plan is built for people who work with Claude throughout the day and wan
 Every plan has usage limits that reset on a rolling five-hour session window, and paid plans add weekly limits on top. Your activity across Claude on web, desktop, mobile, and Claude Code all draws from the same pool. How much you can do depends on the length and complexity of your conversations, the model you choose, and the features you use, so there's no fixed message count. Free covers everyday questions. Pro gives you at least 5x more usage per 5-hour session than Free. Max gives you 5x or 20x more usage per 5-hour session than Pro. On Team plans, Standard seats give more than Pro and Premium seats give 5x more than Standard. To manage capacity and make sure all users have fair access, we may limit your usage in other ways, such as weekly and monthly caps or model and feature usage, at our discretion. When you reach a limit, you can wait for it to reset, move to a higher plan, or, on paid plans, turn on usage credits to keep working at standard API rates. You can see where you stand anytime in Settings > Usage.
 
 Claude Code is included in all paid plans. It shares the same usage limits as the rest of your plan, so your work in the terminal and your chats draw from one pool. For heavy coding sessions, you can also switch to pay-as-you-go API credits through a Console account.
+
+The Claude Enterprise plan is built for large businesses operating at scale. Pricing is $20 per seat per month plus usage billed at API rates, so cost scales with the models and tasks your team runs. Enterprise is billed annually and includes everything in Team plus advanced security and admin controls, including SCIM, audit logs, custom data retention, and role-based access. You can get started self-serve or contact sales for a tailored quote.
 
 ### Billing and payments
 
