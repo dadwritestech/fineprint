@@ -1,8 +1,27 @@
 <!-- fineprint snapshot: anthropic/api-release-notes | source: https://platform.claude.com/docs/en/release-notes/overview -->
 
+Subscribe
+
 For release notes on Claude Apps, see the Release notes for Claude Apps in the Claude Help Center.
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
+
+### July 22, 2026
+
+- You can now set an `effort` level on a Claude Managed Agents agent's model configuration. Pass `effort` inside the `model` object when you create the agent. See Effort levels for what each level does.
+- Webhooks for Claude Managed Agents now cover the environment and memory store lifecycle: four `environment.*` event types and three `memory_store.*` event types. You can react to environment and memory store lifecycle changes without polling. See the Environment events and Memory store events tabs in Subscribe to webhooks.
+- When creating a Claude Managed Agents session, you can now seed it with initial events. Pass `initial_events` on `POST /v1/sessions` with up to 50 `user.message` and `user.define_outcome` events. A non-empty list starts the agent loop in the same call, so you don't need a separate send-events request to start work.
+- The `version` field is now optional when updating a Claude Managed Agents agent. Supply it for optimistic concurrency (a mismatch returns a 409 error), or omit it to apply the update unconditionally. See Update semantics.
+- Claude Managed Agents session thread event streams now support event deltas. `GET /v1/sessions/{session_id}/threads/{thread_id}/stream` accepts the same `event_deltas[]` query parameter as the session-level stream, so you can preview a subagent's text as the model generates it. A connection previews only the thread it's reading. See Preview session thread events.
+
+### July 17, 2026
+
+- The legacy Workbench (platform.claude.com/workbench) in the Claude Console is being sunset with access ending on August 17, 2026. Saved prompts, variables, and evals are not supported in the updated Workbench. You can export any data you want to keep from the banner and under your Organizational Settings. For more, see How do I use the Workbench? in the Claude Help Center.
+- The experimental prompt tools APIs for generating, improving, and templatizing prompts (`/v1/experimental/generate_prompt`, `/v1/experimental/improve_prompt`, and `/v1/experimental/templatize_prompt`) are being retired along with the Workbench on August 17, 2026. After removal, requests to these endpoints will return an error.
+
+### July 15, 2026
+
+- Mid-conversation system messages are available on Claude Fable 5, Claude Mythos 5, and Claude Opus 4.8, on the Claude API, Claude in Amazon Bedrock, and Google Cloud. No beta header is required. This corrects earlier availability notes.
 
 ### July 14, 2026
 
@@ -124,7 +143,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - MCP tunnels is now available as a research preview, so you can connect to MCP servers in your private network.
 - Self-hosted sandboxes are now available for Claude Managed Agents, as an alternative to running tool execution in Anthropic's infrastructure. See Self-hosted sandboxes.
 - With Claude Managed Agents, you can now update the agent's MCP server and tool configurations associated with an active session.
-- With Claude Managed Agents, large outputs from `agent_toolset` and MCP tools exceeding 100K tokens are now automatically spilled to a file in the sandbox. The model receives a truncated preview with the file path and can read the full content from there.
+- With Claude Managed Agents, large outputs from `agent_toolset` and MCP tools exceeding 100K characters (about 25K tokens) are now automatically spilled to a file in the sandbox. The model receives a truncated preview with the file path and can read the full content from there.
 
 ### May 18, 2026
 
@@ -148,7 +167,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - Claude Managed Agents vault credential background refresh is now supported for `mcp_oauth` credentials. See Authenticate with vaults.
 - Webhooks for Claude Managed Agents are now supported. Webhook event types include session and vault lifecycle events. See Subscribe to webhooks.
 - Additional filtering and sorting options are now supported for Claude Managed Agents. Sessions can be filtered by status, and events can be filtered by type. Events can now be filtered by creation time.
-- Dreams for Claude Managed Agents are now available as a research preview. A dream reads an existing memory store alongside past session transcripts and produces a reorganized output memory store with duplicates merged, stale entries replaced, and new insights surfaced. Dreams require the `dreaming-2026-04-21` beta header in addition to the standard `managed-agents-2026-04-01` header. Request access to try it.
+- Dreams for Claude Managed Agents are now available as a research preview. A dream reads an existing memory store alongside past session transcripts and produces a reorganized output memory store with duplicates merged, stale entries replaced, and new insights surfaced. Dream endpoints are gated by the `dreaming-2026-04-21` beta header. Request access to try it.
 
 ### May 4, 2026
 
