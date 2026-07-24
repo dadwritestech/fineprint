@@ -450,6 +450,7 @@ Free
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
+- Google Gemini 3.6 Flash
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -480,6 +481,7 @@ Pro
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
+- Google Gemini 3.6 Flash
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -510,6 +512,7 @@ Pro+
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
+- Google Gemini 3.6 Flash
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -540,6 +543,7 @@ Max
 - Google Gemini 3 Flash (Preview)
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
+- Google Gemini 3.6 Flash
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
