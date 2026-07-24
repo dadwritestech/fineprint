@@ -4,6 +4,14 @@
 
 This page documents updates to the Gemini API.
 
+## July 21, 2026
+
+- Gemini 3.6 Flash and Gemini 3.5 Flash-Lite generally available (GA): Released stable, production-ready versions of our latest 3.x Flash models:
+  - Gemini 3.6 Flash (`gemini-3.6-flash`): Features improved token efficiency and code/agentic planning capabilities at a lower price point than 3.5 Flash, resolving developer feedback around output verbosity.
+  - Gemini 3.5 Flash-Lite (`gemini-3.5-flash-lite`): Offers a low-latency, highly cost-effective subagent option designed for high-volume automation.
+  To learn more, see the Latest Gemini model guide.
+- Deprecated parameters: The sampling parameters `temperature`, `top_p` and `top_k` are now deprecated. See the Latest Gemini Model for details.
+
 ## July 6, 2026
 
 - Developer logs support for the Interactions API: logs for supported Interactions API calls are now viewable in the AI Studio dashboard.
@@ -814,4 +822,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-09 UTC.
+Last updated 2026-07-21 UTC.
