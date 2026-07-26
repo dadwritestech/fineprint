@@ -8,7 +8,15 @@ This guide introduces all the models available through the Gemini API.
 
 ### Stable
 
+Our latest model that balances speed with intelligence to deliver strong performance in agentic and multimodal tasks.
+
+Stable
+
 Most intelligent model for sustained frontier performance on agentic and coding tasks.
+
+Stable
+
+Our fastest, most cost-effective 3.5 model for high-throughput execution.
 
 Stable
 
@@ -152,13 +160,13 @@ Gemini models are available in either stable, preview, latest, or experimental v
 
 Points to a specific stable model. Stable models usually don't change. Most production apps should use a specific stable model.
 
-For example: `gemini-3.5-flash`.
+For example: `gemini-3.6-flash`.
 
 Points to a preview model which may be used for production. Preview models will typically have billing enabled, might come with more restrictive rate limits and will be deprecated with at least 2 weeks notice.
 
 For example: `gemini-2.5-flash-preview-09-2025`.
 
-Points to the latest release for a specific model variation. This can be a stable, preview or experimental release. This alias will get hot-swapped with every new release of a specific model variation. A 2-week notice will be provided through email before the version behind latest is changed.
+Points to the latest release for a specific model variation. This can be a stable, preview or experimental release. This alias will get hot-swapped with every new release of a specific model variation. For breaking changes, a 2-week notice will be provided through email before the version behind latest is changed.
 
 For example: `gemini-flash-latest`.
 
@@ -172,4 +180,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-16 UTC.
+Last updated 2026-07-21 UTC.
