@@ -16,7 +16,7 @@ grok-4.5
 
 Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
 
-View model
+View modelTry in playground
 
 Context500k tokens
 
