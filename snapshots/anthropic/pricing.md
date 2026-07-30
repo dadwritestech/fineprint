@@ -339,7 +339,7 @@ Read
 
 $1 / MTok
 
-### Opus 4.8
+### Opus 5
 
 Ideal for complex agentic coding and enterprise work
 
@@ -409,7 +409,7 @@ $0.10 / MTok
 
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
-Get up to 2.5x faster speeds with fast mode for Opus 4.8 at 2x standard pricing. Learn more.
+Get up to 2.5x faster speeds with fast mode for Opus 5 at 2x standard pricing. Learn more.
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
@@ -445,10 +445,6 @@ Service tiers
 
 Balance availability, performance, and predictable costs based on your needs.
 
-Priority
-
-When time, availability, and predictable pricing are most important
-
 Standard
 
 Default tier for both piloting and scaling everyday use cases
@@ -458,6 +454,26 @@ Batch
 For asynchronous workloads that can be processed together for better efficiency
 
 Legacy models
+
+### Opus 4.8
+
+Input
+
+$5 / MTok
+
+Output
+
+$25 / MTok
+
+Prompt caching
+
+Write
+
+$6.25 / MTok
+
+Read
+
+$0.50 / MTok
 
 Save 50% with batch processing.
 
