@@ -12,7 +12,8 @@ The API enforces service-configured limits at the organization level, but you ma
 ## About rate limits
 
 - Limits are designed to prevent API abuse, while minimizing impact on common customer usage patterns.
-- Limits are defined by usage tier. Your organization is placed on a tier automatically and can move to a higher tier over time as you use the API.
+- Limits are defined by usage tier. Organizations are placed on a tier automatically based on usage history and account standing and can move to a higher tier over time as they use the API.
+- New organizations and organizations with limited usage history may start with limits below the standard limits shown on this page while account history is established. These starting limits are part of how Anthropic prevents fraud and abuse, and they increase automatically as your organization builds usage history.
 - Limits are set at the organization level. You can see your organization's tier and current limits on the Limits page in the Claude Console.
 - You might hit rate limits over shorter time intervals. For instance, a rate of 60 requests per minute (RPM) might be enforced as 1 request per second. Short bursts of requests can exceed the limit and trigger rate limit errors.
 - The following limits are the standard limits for each tier. If you need higher limits, see Requesting higher limits.
@@ -96,17 +97,18 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
 | Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
 |---|---|---|---|
 | Claude Fable 5 | 1,000 | 500,000 | 100,000 |
+| Claude Opus 5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Opus 4.x* | 1,000 | 2,000,000 | 400,000 |
 | Claude Sonnet 5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Sonnet 4.x** | 1,000 | 2,000,000 | 400,000 |
 | Claude Haiku 4.5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Haiku 3.5 (retired, except on Bedrock and Google Cloud) | 1,000 | 100,000† | 20,000 |
 
-* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5.
+* Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5 has a separate rate limit and is not part of this combined bucket.
 
-** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5 has a separate rate limit and is not part of this combined bucket.
+** Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5 has a separate rate limit and is not part of this combined bucket.
 
-† - Limit counts `cache_read_input_tokens` toward ITPM usage.
+† Limit counts `cache_read_input_tokens` toward ITPM usage.
 
 ### Message Batches API
 
@@ -127,7 +129,7 @@ Claude Managed Agents endpoints are rate-limited per organization. These limits 
 
 ### Fast mode rate limits
 
-When using fast mode (research preview) with `speed: "fast"` on Claude Opus 4.8 or Opus 4.7, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.6: requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed. See Fast mode.
+When using fast mode (research preview) with `speed: "fast"` on Claude Opus 5 or Opus 4.8, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.7 (requests return an error) or Claude Opus 4.6 (requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed). See Fast mode.
 
 The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode rate limits for details on these headers.
 
