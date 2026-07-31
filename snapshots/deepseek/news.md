@@ -2,6 +2,24 @@
 
 # Change Log
 
+The official release of the DeepSeek-V4-Flash API is now in public beta.
+
+Significantly enhanced agent capabilities, with benchmark results far exceeding V4-Pro-Preview:
+
+- Terminal Bench 2.1: 82.7
+- NL2Repo: 54.2
+- Cybergym: 76.7
+- DeepSWE: 54.4
+- Toolathlon verified: 70.3
+- Agent Last Exam: 25.2
+- Automation Bench (Public): 25.1
+- DSBench-FullStack: 68.7
+- DSBench-Hard: 59.6
+
+Note 1: For the Code Agent tasks in the public benchmark sets, the official DeepSeek-V4-Flash was tested using the DeepSeek Harness minimal mode (to be released soon) as the framework, with the max effort level, topp=0.95, and temperature=1.0  Note 2: DSBench-FullStack is an internal full-stack development test set, and DSBench-Hard is an internal Coding Agent hard-problem test set
+
+The official V4-Flash natively supports the Responses API format and is specifically adapted for Codex. For the specific configuration, please refer to the documentation.     DeepSeek-V4-Flash-0731 keeps the same model architecture and size as DeepSeek-V4-Flash-preview, and was only re-post-trained.     Note: This update only upgrades the DeepSeek-V4-Flash API. The DeepSeek-V4-Pro API and the APP/WEB models are unchanged.   The official release of DeepSeek-V4-Pro will follow soon.
+
 The DeepSeek API now supports V4-Pro and V4-Flash, available via both the OpenAI ChatCompletions interface and the Anthropic interface. To access the new models, the base_url remains unchanged, and the model parameter should be set to `deepseek-v4-pro` or `deepseek-v4-flash`.
 
 The two legacy API model names, `deepseek-chat` and `deepseek-reasoner`, will be discontinued in three months (2026-07-24). During the current period, these two model names point to the non-thinking mode and thinking mode of `deepseek-v4-flash`, respectively.
