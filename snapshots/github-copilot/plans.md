@@ -436,6 +436,7 @@ Free
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
+- Anthropic Claude Opus 5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -451,6 +452,7 @@ Free
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -467,6 +469,7 @@ Pro
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
+- Anthropic Claude Opus 5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -482,6 +485,7 @@ Pro
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -498,6 +502,7 @@ Pro+
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
+- Anthropic Claude Opus 5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -513,6 +518,7 @@ Pro+
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
@@ -529,6 +535,7 @@ Max
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
+- Anthropic Claude Opus 5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -544,6 +551,7 @@ Max
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 
