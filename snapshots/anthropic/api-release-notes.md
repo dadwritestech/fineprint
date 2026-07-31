@@ -6,6 +6,15 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### July 24, 2026
+
+- We've launched Claude Opus 5 (`claude-opus-5`), a step-change improvement over Claude Opus 4.8. Claude Opus 5 supports a 1M token context window (both the default and the maximum), 128k max output tokens, and thinking on by default, at $5 / $25 per MTok, the same pricing as Claude Opus 4.8. It's available on the Claude API, Claude in Amazon Bedrock, Claude on Google Cloud, and Claude in Microsoft Foundry. See What's new in Claude Opus 5 for new features, behavior changes, and migration guidance, and the models overview for complete specs.
+- On Claude Opus 5, disabling thinking is allowed only at effort `high` or below: `thinking: {"type": "disabled"}` with effort `xhigh` or `max` returns a 400 error, a breaking change from Claude Opus 4.8. See What's new in Claude Opus 5.
+- Effort is the primary control for steering Claude Opus 5: the model supports the full ladder (`low`, `medium`, `high`, `xhigh`, `max`), with `max` for capability-critical work.
+- Mid-conversation tool changes are now in beta on Claude Fable 5, Claude Mythos 5, Claude Opus 4.8, and Claude Opus 5: add or remove tools between turns of a conversation while preserving the prompt cache. Include the `mid-conversation-tool-changes-2026-07-01` beta header in your requests.
+- The `fallbacks` parameter now supports a `"default"` mode, which applies Anthropic's recommended fallback models by refusal category. Server-side fallback is in beta, and the `"default"` mode requires the `server-side-fallback-2026-07-01` beta header. See Refusals and fallback.
+- We've removed fast mode for Claude Opus 4.7. Requests to `claude-opus-4-7` with `speed: "fast"` now return an error; unlike Claude Opus 4.6, they do not fall back to standard speed. Claude Opus 4.7 itself remains available at standard speed. To continue using fast mode, migrate to Claude Opus 5 or Claude Opus 4.8. Read more in Fast mode.
+
 ### July 22, 2026
 
 - You can now set an `effort` level on a Claude Managed Agents agent's model configuration. Pass `effort` inside the `model` object when you create the agent. See Effort levels for what each level does.
@@ -116,7 +125,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### May 28, 2026
 
-- We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, Google Cloud, and Microsoft Foundry, 128k max output tokens, and the same set of tools and platform features as Claude Opus 4.7. See What's new in Claude Opus 4.8 for capability improvements, new features, and migration guidance.
+- We've launched Claude Opus 4.8 (claude-opus-4-8), our most capable generally available model. Claude Opus 4.8 supports a 1M token context window by default on the Claude API, Amazon Bedrock, Google Cloud, and Microsoft Foundry, 128k max output tokens, and the same set of tools and platform features as Claude Opus 4.7. See the migration guide for baseline settings, features, and migration guidance.
 - We've launched mid-conversation system messages. On Claude Opus 4.8, you can send `role: "system"` messages after a user turn (subject to placement rules) in the `messages` array, preserving prompt cache hits when instructions change during a long-running session. No beta header is required.
 - The `stop_details` field on refusal responses is now publicly documented; it returns a `category` (`cyber`, `bio`, or `null`) and a human-readable `explanation`, so your application can route different classes of refusal to the right next step. No beta header is required.
 - On Claude Opus 4.8, the effort parameter defaults to `high` across all surfaces, including Claude Code and the Messages API.
@@ -195,7 +204,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### April 16, 2026
 
-- We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus 4.7 for capability improvements, new features, and the updated tokenizer. Opus 4.7 includes API breaking changes versus Opus 4.6; see Migrating to Claude Opus 4.7 before upgrading.
+- We've launched Claude Opus 4.7, our most capable generally available model for complex reasoning and agentic coding, at the same $5 / $25 per MTok pricing as Opus 4.6. See What's new in Claude Opus 4.7 for capability improvements, new features, and the updated tokenizer. Opus 4.7 includes API breaking changes versus Opus 4.6; see the migration guide before upgrading.
 - Claude in Amazon Bedrock is now open to all Amazon Bedrock customers. Claude Opus 4.7 and Claude Haiku 4.5 are available self-serve from the Bedrock console through the Messages API endpoint at `/anthropic/v1/messages`, in 27 AWS regions with global and regional endpoints.
 - We've launched task budgets in beta on Claude Opus 4.7. Give Claude an advisory token budget for a full agentic loop (thinking, tool calls, tool results, and output) and the model sees a running countdown, using it to prioritize work and finish gracefully as the budget is consumed. Include the `task-budgets-2026-03-13` beta header in your requests.
 - Claude Opus 4.7 supports high-resolution image input, raising the maximum image resolution from 1568 to 2576 pixels on the long edge for improved performance on computer use, screenshot understanding, and document analysis. High-resolution support is automatic and requires no beta header; images may use up to approximately 3x more image tokens than on prior models.
@@ -406,7 +415,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 - We've launched Claude Opus 4.1, an incremental update to Claude Opus 4 with enhanced capabilities and performance improvements.* Learn more in Models overview.
 
-* - Opus 4.1 does not allow both `temperature` and `top_p` parameters to be specified. Please use only one.
+*Opus 4.1 does not allow both `temperature` and `top_p` parameters to be specified. Please use only one.
 
 ### July 28, 2025
 
