@@ -4,6 +4,14 @@
 
 This page documents updates to the Gemini API.
 
+## July 30, 2026
+
+- Gemini Robotics ER 2 in public preview: Released two new embodied reasoning model endpoints for robotics:
+  - `gemini-robotics-er-2-preview`: Advanced spatial reasoning, agentic code execution, multi-step tool orchestration, video moment finding, progress classification, and multi-robot coordination.
+  - `gemini-robotics-er-2-streaming-preview`: Optimized for real-time text streaming using the Live API, enabling low-latency robot agents with bidirectional audio and video input.
+  Both model endpoints accept text, image, video, and audio inputs and support function calling with blocking behavior for physical robot actions. To get started, see the Gemini Robotics ER overview. For real-time streaming use cases, see Robotics with streaming.
+- Deprecation announcement: The `gemini-robotics-er-1.6-preview` model will be shut down on August 31, 2026.
+
 ## July 21, 2026
 
 - Gemini 3.6 Flash and Gemini 3.5 Flash-Lite generally available (GA): Released stable, production-ready versions of our latest 3.x Flash models:
@@ -107,7 +115,7 @@ This page documents updates to the Gemini API.
 
 ## April 14, 2026
 
-- Released `gemini-robotics-er-1.6-preview`, our updated robotics model. It now has new capabilities like instrument reading, improved spatial and physical reasoning capabilities. To learn more, see Gemini Robotics-ER page and the blog.
+- Released `gemini-robotics-er-1.6-preview`, our updated robotics model. It now has new capabilities like instrument reading, improved spatial and physical reasoning capabilities. To learn more, see Gemini Robotics ER page and the blog.
 - Deprecation announcement: The `gemini-robotics-er-1.5-preview` model will be shut down on April 30, 2026 at 9AM PST.
 
 ## April 2, 2026
@@ -358,7 +366,7 @@ This page documents updates to the Gemini API.
 
 ## September 25, 2025
 
-- Released Gemini Robotics-ER 1.5 model in preview. See the Robotics overview to learn about how to use the model for your robotics application.
+- Released Gemini Robotics ER 1.5 model in preview. See the Robotics overview to learn about how to use the model for your robotics application.
 - Launched following preview models:
   - `gemini-2.5-flash-preview-09-2025`
   - `gemini-2.5-flash-lite-preview-09-2025`
@@ -822,4 +830,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-21 UTC.
+Last updated 2026-07-30 UTC.
