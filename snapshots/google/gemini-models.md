@@ -142,6 +142,8 @@ Our first multimodal embedding model, mapping text, images, video, audio, and PD
 
 High-dimensional vector representations for advanced semantic search, text classification, and RAG systems.
 
+Embodied reasoning model delivering advanced video understanding, spatial reasoning, multi-step tool orchestration, and multi-robot collaboration for robotics tasks.
+
 Advanced embodied reasoning model that understands physical spaces and plans multi-step tasks for robotic agents with new capabilities like instrument reading, improved spatial and physical reasoning.
 
 ## Previous models
@@ -180,4 +182,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-21 UTC.
+Last updated 2026-07-30 UTC.
