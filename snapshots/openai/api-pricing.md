@@ -10,8 +10,8 @@ Standard
 |---|---|---|---|---|---|---|---|---|
 | Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
 | gpt-5.6-sol | $5.00 | $0.50 | $6.25 | $30.00 | $10.00 | $1.00 | $12.50 | $45.00 |
-| gpt-5.6-terra | $2.50 | $0.25 | $3.125 | $15.00 | $5.00 | $0.50 | $6.25 | $22.50 |
-| gpt-5.6-luna | $1.00 | $0.10 | $1.25 | $6.00 | $2.00 | $0.20 | $2.50 | $9.00 |
+| gpt-5.6-terra | $2.00 | $0.20 | $2.50 | $12.00 | $4.00 | $0.40 | $5.00 | $18.00 |
+| gpt-5.6-luna | $0.20 | $0.02 | $0.25 | $1.20 | $0.40 | $0.04 | $0.50 | $1.80 |
 | gpt-5.5 | $5.00 | $0.50 | - | $30.00 | $10.00 | $1.00 | - | $45.00 |
 | gpt-5.5-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
 | gpt-5.4 | $2.50 | $0.25 | - | $15.00 | $5.00 | $0.50 | - | $22.50 |
@@ -19,7 +19,7 @@ Standard
 | gpt-5.4-nano | $0.20 | $0.02 | - | $1.25 | - | - | - | - |
 | gpt-5.4-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
 
-Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS and may differ from direct OpenAI pricing.
+Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS and may differ from direct OpenAI pricing.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.
 
 Prices per 1M tokens unless noted.
 
@@ -32,6 +32,7 @@ Prices per 1M tokens unless noted.
 | Text | $0.60 | $0.06 | $2.40 |  |
 | Image | $0.80 | $0.08 | - |  |
 | gpt-realtime-translate | Audio | - | - | $0.034 / minute |
+| gpt-live-transcribe | Audio | - | - | $0.017 / minute |
 | gpt-realtime-whisper | Audio | - | - | $0.017 / minute |
 
 Prices per 1M tokens.
@@ -64,6 +65,8 @@ Prices per 1M tokens unless noted.
 
 | Model | Use case | Input | Output | Estimated cost |
 |---|---|---|---|---|
+| gpt-transcribe | Transcription | - | - | $0.0045 / minute |
+| gpt-live-transcribe | Live transcription | - | - | $0.017 / minute |
 | gpt-4o-transcribe | Transcription | $2.50 | $10.00 | $0.006 / minute |
 | gpt-4o-mini-transcribe | Transcription | $1.25 | $5.00 | $0.003 / minute |
 
