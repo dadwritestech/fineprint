@@ -30,7 +30,7 @@ ReasoningConfigurable
 
 Real-time conversations, speech-to-text, and text-to-speech.
 
-Agent$3.00 / hour
+AgentStarting at $0.05 / min
 
 TTS$15.00 / 1M chars
 
@@ -48,9 +48,9 @@ ModesGeneration & editing
 
 SpeedIndustry-leading
 
-Image · 1K / 2K$0.02 / image
+Image · 1K / 2KStarting at $0.02 / image
 
-Video · 480p / 720p / 1080p$0.05 / sec
+Video · 480p / 720p / 1080pStarting at $0.05 / sec
 
 Read docsTry in playground
 
