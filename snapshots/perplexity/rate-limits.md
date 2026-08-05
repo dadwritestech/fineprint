@@ -4,7 +4,7 @@
 
 Usage tiers determine your rate limits and access to beta features based on your cumulative API spending. As you spend more on API credits over time, you automatically advance to higher tiers with increased rate limits. Higher tiers unlock significantly more requests per minute, and once you reach a tier, you keep it permanently with no downgrade.
 
-You can check your current usage tier by visiting the API Platform console.
+You can check your current usage tier on the Pricing page in the API Console.
 
 ## Tier Progression
 
@@ -18,6 +18,12 @@ You can check your current usage tier by visiting the API Platform console.
 | Tier 5 | $5,000+ | Enterprise usage |
 
 Tiers are based on cumulative purchases across your account lifetime, not current balance.
+
+## Gateway API Rate Limits
+
+Gateway API requests are rate limited. When a request is rate limited, or an upstream model is overloaded, the API returns a `429` with a `Retry-After` header — retry after the indicated interval.
+
+Requests rejected with a `429` are not billed.
 
 ## Agent API Rate Limits
 
@@ -38,14 +44,16 @@ The Search API has separate rate limits that apply to all usage tiers:
 
 | Endpoint | Rate Limit | Burst Capacity |
 |---|---|---|
-| POST `/search` | 50 requests per second | 50 requests |
+| POST `/search` | 50 query units per second | 50 query units |
 
 Search Rate Limiter Behavior:
 
-- Burst: Can handle 50 requests instantly
-- Sustained: Exactly 50 QPS average over time
+- Single-query request: Consumes 1 query unit
+- Multi-query request: Consumes 1 query unit for each query in the array
+- Burst: Can consume 50 query units instantly
+- Sustained: 50 query units per second on average
 
-Search rate limits are independent of your usage tier and apply consistently across all accounts using the same leaky bucket algorithm.
+Billing and rate limiting use different units. A successful request containing five queries is one billable Search API request, but it consumes five rate-limit units. Search rate limits are independent of your usage tier and apply consistently across all accounts using the same leaky bucket algorithm. See Search API pricing for billing details.
 
 ## Sonar API Rate Limits
 
@@ -224,7 +232,7 @@ Best Practices:
 
 Check Current Tier
 
-Visit the API Platform console to see your current tier and total spending.
+Open Usage tiers in the API Console to see your current tier and the purchase threshold for each tier.
 
 2
 
