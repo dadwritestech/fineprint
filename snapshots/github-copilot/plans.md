@@ -455,6 +455,7 @@ Free
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
+- Kimi K3
 
 Pro
 
@@ -488,6 +489,7 @@ Pro
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
+- Kimi K3
 
 Pro+
 
@@ -521,6 +523,7 @@ Pro+
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
+- Kimi K3
 
 Max
 
@@ -554,6 +557,7 @@ Max
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
+- Kimi K3
 
 Additional features
 
@@ -576,16 +580,6 @@ Max
 Unlimited
 
 Copilot Spaces
-
-Free
-
-Pro
-
-Pro+
-
-Max
-
-GitHub Spark (Preview)
 
 Free
 
