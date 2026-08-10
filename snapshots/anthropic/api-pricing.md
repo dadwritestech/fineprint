@@ -17,7 +17,7 @@ The following table shows pricing for all Claude models:
 | Claude Opus 4.7 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
 | Claude Opus 4.6 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
 | Claude Opus 4.5 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
-| Claude Opus 4.1 (deprecated) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
+| Claude Opus 4.1 (retired, except on Bedrock and Google Cloud) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
 | Claude Opus 4 (retired, except on Google Cloud) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
 | Claude Sonnet 5 through August 31, 2026 | $2 / MTok | $2.50 / MTok | $4 / MTok | $0.20 / MTok | $10 / MTok |
 | Claude Sonnet 5 starting September 1, 2026 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
@@ -53,7 +53,7 @@ Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5:
 
 Regional and multi-region endpoints include a 10% premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing.
 
-Scope: This pricing structure applies to Claude Sonnet 4.5, Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 (deprecated) and prior releases) retain their existing pricing.
+Scope: This pricing structure applies to Claude Sonnet 4.5, Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 and prior releases) retain their existing pricing.
 
 For implementation details and code examples:
 
@@ -127,7 +127,7 @@ Prompt caching uses the following pricing multipliers relative to base input tok
 | 1-hour cache write | 2x base input price | Cache valid for 1 hour |
 | Cache read (hit) | 0.1x base input price | Same duration as the preceding write |
 
-Cache write tokens are charged when content is first stored. Cache read tokens are charged when a subsequent request retrieves the cached content. A cache hit costs 10% of the standard input price, which means caching pays off after just one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write).
+Cache write tokens are charged when content is first stored. Cache read tokens are charged when a subsequent request retrieves the cached content. A cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write).
 
 These multipliers stack with other pricing modifiers, including the Batch API discount and data residency.
 
@@ -173,7 +173,7 @@ The Batch API allows asynchronous processing of large volumes of requests with a
 | Claude Opus 4.7 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.6 | $2.50 / MTok | $12.50 / MTok |
 | Claude Opus 4.5 | $2.50 / MTok | $12.50 / MTok |
-| Claude Opus 4.1 (deprecated) | $7.50 / MTok | $37.50 / MTok |
+| Claude Opus 4.1 (retired, except on Bedrock and Google Cloud) | $7.50 / MTok | $37.50 / MTok |
 | Claude Opus 4 (retired, except on Google Cloud) | $7.50 / MTok | $37.50 / MTok |
 | Claude Sonnet 5 through August 31, 2026 | $1 / MTok | $5 / MTok |
 | Claude Sonnet 5 starting September 1, 2026 | $1.50 / MTok | $7.50 / MTok |
@@ -195,9 +195,9 @@ Tool use requests are priced based on:
 
 1. The total number of input tokens sent to the model (including in the `tools` parameter)
 2. The number of output tokens generated
-3. For server-side tools, additional usage-based pricing (e.g., web search charges per search performed)
+3. For server-side tools, additional usage-based pricing (for example, web search charges per search performed)
 
-Client-side tools are priced the same as any other Claude API request, while server-side tools may incur additional charges based on their specific usage.
+Client-side tools are priced the same as any other Claude API request, although server-side tools can incur additional charges based on their specific usage.
 
 The additional tokens from tool use come from:
 
@@ -205,7 +205,7 @@ The additional tokens from tool use come from:
 - `tool_use` content blocks in API requests and responses
 - `tool_result` content blocks in API requests
 
-When you use `tools`, the API also automatically includes a special system prompt for the model which enables tool use. The number of tool use tokens required for each model are listed below (excluding the additional tokens listed above). Note that the table assumes at least 1 tool is provided. If no `tools` are provided, then a tool choice of `none` uses 0 additional system prompt tokens.
+When you use `tools`, the API also automatically includes a special system prompt for the model that enables tool use. The number of tool use tokens required for each model is listed in the following table (excluding the additional tokens listed earlier). Note that the table assumes at least 1 tool is provided. If no `tools` are provided, then a tool choice of `none` uses 0 additional system prompt tokens.
 
 | Model | Tool choice | Tool use system prompt token count |
 |---|---|---|
@@ -214,7 +214,7 @@ When you use `tools`, the API also automatically includes a special system promp
 | Claude Opus 4.7 | `auto`, `none``any`, `tool` | 675 tokens804 tokens |
 | Claude Opus 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
 | Claude Opus 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
-| Claude Opus 4.1 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
+| Claude Opus 4.1 (retired, except on Bedrock and Google Cloud) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
 | Claude Opus 4 (retired, except on Google Cloud) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
 | Claude Sonnet 5 | `auto`, `none``any`, `tool` | 354 tokens474 tokens |
 | Claude Sonnet 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
@@ -360,15 +360,15 @@ Claude Managed Agents is billed on two dimensions: tokens and session runtime.
 
 ### Tokens
 
-All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing. Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 per 1,000 searches. On Claude Platform on AWS, session token and runtime charges convert to Claude Consumption Units at the standard rate.
+All tokens consumed by a Claude Managed Agents session are billed at the rates shown in Model pricing. Prompt caching multipliers apply identically. Web search triggered inside a session incurs the standard $10 per 1,000 searches. On Claude Platform on AWS, session token and runtime charges convert to Claude Consumption Units at the standard rate. Fast mode premium pricing applies when an agent's `model.speed` is set to `"fast"`.
+
+The data residency multiplier also applies: when an agent's `model.inference_geo` is pinned to `"us"`, tokens consumed by sessions running that agent are billed at 1.1x the standard rates, the same multiplier that applies to US-only inference on the Messages API.
 
 The following Messages API modifiers do not apply to Claude Managed Agents sessions:
 
 | Modifier | Why it doesn't apply |
 |---|---|
 | Batch API discount | Sessions are stateful and interactive. There is no batch mode. |
-| Fast mode premium | Inference speed is managed by the runtime. |
-| Data residency multiplier | `inference_geo` is a Messages API request field. |
 | Cloud platform pricing | Not available on partner-operated cloud platforms. |
 
 ### Session runtime
@@ -379,7 +379,7 @@ The following Messages API modifiers do not apply to Claude Managed Agents sessi
 
 Runtime is measured to the millisecond and accrues only while the session's status is `running`. Time spent `idle` (waiting for your next message or a tool confirmation), `rescheduling`, or `terminated` does not count toward runtime.
 
-Session runtime replaces the Code Execution container-hour billing model when using Claude Managed Agents. You are not separately billed for container hours on top of session runtime.
+Session runtime replaces the code execution container-hour billing model when using Claude Managed Agents. You are not separately billed for container hours on top of session runtime.
 
 ### Worked example
 
