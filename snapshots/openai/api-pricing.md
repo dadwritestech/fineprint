@@ -12,14 +12,18 @@ Standard
 | gpt-5.6-sol | $5.00 | $0.50 | $6.25 | $30.00 | $10.00 | $1.00 | $12.50 | $45.00 |
 | gpt-5.6-terra | $2.00 | $0.20 | $2.50 | $12.00 | $4.00 | $0.40 | $5.00 | $18.00 |
 | gpt-5.6-luna | $0.20 | $0.02 | $0.25 | $1.20 | $0.40 | $0.04 | $0.50 | $1.80 |
-| gpt-5.5 | $5.00 | $0.50 | - | $30.00 | $10.00 | $1.00 | - | $45.00 |
-| gpt-5.5-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
-| gpt-5.4 | $2.50 | $0.25 | - | $15.00 | $5.00 | $0.50 | - | $22.50 |
-| gpt-5.4-mini | $0.75 | $0.075 | - | $4.50 | - | - | - | - |
-| gpt-5.4-nano | $0.20 | $0.02 | - | $1.25 | - | - | - | - |
-| gpt-5.4-pro | $30.00 | - | - | $180.00 | $60.00 | - | - | $270.00 |
 
 Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS and may differ from direct OpenAI pricing.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.
+
+Our latest Daybreak models.
+
+Prices per 1M tokens.
+
+|  | Short context | Long context |  |  |  |  |  |  |
+|---|---|---|---|---|---|---|---|---|
+| Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+| gpt-5.6-sol | $5.00 | $0.50 | $6.25 | $30.00 | $10.00 | $1.00 | $12.50 | $45.00 |
+| gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
 
 Prices per 1M tokens unless noted.
 
@@ -31,9 +35,6 @@ Prices per 1M tokens unless noted.
 | gpt-realtime-2.1-mini | Audio | $10.00 | $0.30 | $20.00 |
 | Text | $0.60 | $0.06 | $2.40 |  |
 | Image | $0.80 | $0.08 | - |  |
-| gpt-realtime-translate | Audio | - | - | $0.034 / minute |
-| gpt-live-transcribe | Audio | - | - | $0.017 / minute |
-| gpt-realtime-whisper | Audio | - | - | $0.017 / minute |
 
 Prices per 1M tokens.
 
@@ -45,10 +46,6 @@ For image generation cost estimates, use the calculator in the image generation 
 |---|---|---|---|---|
 | gpt-image-2 | Image | $8.00 | $2.00 | $30.00 |
 | Text | $5.00 | $1.25 | - |  |
-| gpt-image-1.5 | Image | $8.00 | $2.00 | $32.00 |
-| Text | $5.00 | $1.25 | $10.00 |  |
-| gpt-image-1-mini | Image | $2.50 | $0.25 | $8.00 |
-| Text | $2.00 | $0.20 | - |  |
 
 Prices per second.
 
@@ -65,8 +62,10 @@ Prices per 1M tokens unless noted.
 
 | Model | Use case | Input | Output | Estimated cost |
 |---|---|---|---|---|
-| gpt-transcribe | Transcription | - | - | $0.0045 / minute |
+| gpt-realtime-translate | Live translation | - | - | $0.034 / minute |
 | gpt-live-transcribe | Live transcription | - | - | $0.017 / minute |
+| gpt-realtime-whisper | Live transcription | - | - | $0.017 / minute |
+| gpt-transcribe | Transcription | - | - | $0.0045 / minute |
 | gpt-4o-transcribe | Transcription | $2.50 | $10.00 | $0.006 / minute |
 | gpt-4o-mini-transcribe | Transcription | $1.25 | $5.00 | $0.003 / minute |
 
@@ -91,7 +90,6 @@ Standard
 |---|---|---|---|---|
 | ChatGPT | chat-latest | $5.00 | $0.50 | $30.00 |
 | Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
-| Cyber | gpt-5.4-cyber | - | - | - |
 
 Prices per 1M tokens.
 
