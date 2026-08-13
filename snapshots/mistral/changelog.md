@@ -4,6 +4,13 @@
 
 Find out about all the latest changes to our tool. You may filter by date and type of release.
 
+### Jul 26
+
+## July 16
+
+- We released OCR 4.1 (`mistral-ocr-4-1`). `mistral-ocr-latest` and `mistral-ocr-4` now point to it. MODEL RELEASED
+- The OCR API `confidence_scores_granularity` parameter now supports `"block"` granularity. `"page"` returns page-level scores only, `"block"` returns page-level and block-level scores, and `"word"` returns page-level and word-level scores. API UPDATED
+
 ### Jun 26
 
 ## June 30
