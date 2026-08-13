@@ -4,6 +4,12 @@
 
 This page documents updates to the Gemini API.
 
+## August 13, 2026
+
+- Gemini 3.7 Flash generally available (GA): Released our most intelligent workhorse model yet for coding and agents:
+  - Gemini 3.7 Flash (`gemini-3.7-flash`): Substantial improvements across software engineering, web development, and agentic workflows, available at an introductory price through December 31, 2026.
+  To get started, see the Gemini 3.7 Flash model page and the Latest model guide.
+
 ## July 30, 2026
 
 - Gemini Robotics ER 2 in public preview: Released two new embodied reasoning model endpoints for robotics:
@@ -246,7 +252,7 @@ This page documents updates to the Gemini API.
 ## December 11, 2025
 
 - Launched the Interactions API. This API provides a unified interface for interacting with Gemini models and agents. To learn more, see the Interactions API guide.
-- Launched the Gemini Deep Research Agent in preview. It can autonomously plan, execute, and synthesize results for multi-step research tasks. See the Deep Research guide for details.
+- Launched the Gemini Deep Research agent in preview. It can autonomously plan, execute, and synthesize results for multi-step research tasks. See the Deep Research guide for details.
 
 ## December 10, 2025
 
@@ -830,4 +836,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-30 UTC.
+Last updated 2026-08-13 UTC.
