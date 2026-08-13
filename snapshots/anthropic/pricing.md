@@ -366,25 +366,23 @@ $0.50 / MTok
 
 High-performance model for coding and agents
 
-Input*
+Input
 
 $2 / MTok
 
-Output*
+Output
 
 $10 / MTok
 
 Prompt caching
 
-Write*
+Write
 
 $2.50 / MTok
 
-Read*
+Read
 
 $0.20 / MTok
-
-*Introductory pricing of $2/$10 per million input/output tokens through August 31, 2026; $3/$15 standard pricing thereafter.
 
 ### Haiku 4.5
 
