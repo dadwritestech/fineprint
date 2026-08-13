@@ -25,7 +25,7 @@ ProPro+Ultra
 Everything in Hobby, plus:
 
 - ✓ Extended limits on Agent
-- ✓ Generous limits for Grok & Composer
+- ✓ Generous limits for Grok
 - ✓ Access to frontier models
 - ✓ MCPs, skills, and hooks
 - ✓ Cloud agents
