@@ -1,9 +1,5 @@
 <!-- fineprint snapshot: openai/terms-of-use | source: https://openai.com/policies/terms-of-use/ -->
 
-Published: January 1, 2026
-
-# Terms of Use
-
 Effective: January 1, 2026 (Previous version)
 
 Thank you for using OpenAI!
