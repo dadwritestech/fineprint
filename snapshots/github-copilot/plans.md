@@ -447,11 +447,11 @@ Free
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
+- Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- Google Gemini 3.7 Flash
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
@@ -481,11 +481,11 @@ Pro
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
+- Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- Google Gemini 3.7 Flash
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
@@ -515,11 +515,11 @@ Pro+
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
+- Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- Google Gemini 3.7 Flash
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
@@ -549,11 +549,11 @@ Max
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
-- Google Gemini 2.5 Pro
-- Google Gemini 3 Flash (Preview)
+- Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
+- Google Gemini 3.7 Flash
 - xAI Grok 4.5
 - Raptor mini (Preview)
 - Kimi K2.7 Code
