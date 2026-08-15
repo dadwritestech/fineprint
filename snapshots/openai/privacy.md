@@ -1,9 +1,5 @@
 <!-- fineprint snapshot: openai/privacy | source: https://openai.com/policies/privacy-policy/ -->
 
-Updated: May 18, 2026
-
-# US privacy policy
-
 (Previous version)  For individuals in the European Economic Area, United Kingdom, and Switzerland, you can read this version of our Privacy Policy.
 
 At OpenAI, our mission is to ensure that artificial general intelligence benefits everyone. We build tools like ChatGPT and Sora to help people learn, create, and solve problems. We at OpenAI (together with our affiliates, "OpenAI", "we", "our" or "us") are committed to respecting your privacy and are strongly committed to keeping secure any information we obtain from you or about you. This Privacy Policy describes our practices with respect to personal data that we collect from or about you, and how we use it when you use our website, applications, and services (collectively, "Services").
