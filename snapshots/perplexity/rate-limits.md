@@ -19,9 +19,9 @@ You can check your current usage tier on the Pricing page in the API Console.
 
 Tiers are based on cumulative purchases across your account lifetime, not current balance.
 
-## Gateway API Rate Limits
+## Router API Rate Limits
 
-Gateway API requests are rate limited. When a request is rate limited, or an upstream model is overloaded, the API returns a `429` with a `Retry-After` header — retry after the indicated interval.
+Router API requests are rate limited. When a request is rate limited, or an upstream model is overloaded, the API returns a `429` with a `Retry-After` header — retry after the indicated interval.
 
 Requests rejected with a `429` are not billed.
 
