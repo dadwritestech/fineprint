@@ -72,11 +72,11 @@ Grok 4.6
 
 Images
 
-Grok Imagine API
+Grok Imagine Image 2.0
 
 Videos
 
-Grok Imagine API
+Grok Imagine Video 1.5
 
 Voice
 
