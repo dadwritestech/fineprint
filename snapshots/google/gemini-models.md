@@ -8,11 +8,15 @@ This guide introduces all the models available through the Gemini API.
 
 ### Stable
 
-Our latest model that balances speed with intelligence to deliver strong performance in agentic and multimodal tasks.
+Our latest and most capable Flash model, built for complex coding, agentic workflows, and reliable multi-step execution.
+
+New Stable
+
+Our previous-generation Flash model, balancing speed and multimodal capabilities across general agentic and everyday tasks.
 
 Stable
 
-Most intelligent model for sustained frontier performance on agentic and coding tasks.
+Our legacy Flash model, providing baseline speed and foundational performance for routine, high-throughput workloads.
 
 Stable
 
@@ -66,6 +70,7 @@ New Preview
 
 | Model | Endpoint |
 |---|---|
+| Gemini 3.7 Flash | gemini-3.7-flash |
 | Gemini 3.6 Flash | gemini-3.6-flash |
 | Gemini 3.5 Flash | gemini-3.5-flash |
 | Gemini 3.5 Flash-Lite | gemini-3.5-flash-lite |
@@ -192,4 +197,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-08-05 UTC.
+Last updated 2026-08-14 UTC.
