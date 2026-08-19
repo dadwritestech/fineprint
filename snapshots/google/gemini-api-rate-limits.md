@@ -32,7 +32,7 @@ The following table shows the spend-based rate limits for each usage tier. These
 |---|---|
 | Free | N/A |
 | Tier 1 | $10 |
-| Tier 2 | $200 |
+| Tier 2 | $50 |
 | Tier 3 | $200 |
 
 If you hit a spend-based rate limit, the API returns a `429 RESOURCE_EXHAUSTED` error. To resolve this:
@@ -86,6 +86,7 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Text-out models |  |
 | Gemini 3.1 Pro Preview | 5,000,000 |
 | Gemini 3.5 Flash-Lite | 10,000,000 |
+| Gemini 3.7 Flash | 3,000,000 |
 | Gemini 3.1 Flash Lite | 10,000,000 |
 | Gemini 3.1 Flash Lite Preview | 10,000,000 |
 | Gemini 3.6 Flash | 3,000,000 |
@@ -182,4 +183,4 @@ We offer no guarantees about increasing your rate limit, but we'll do our best t
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-07-21 UTC.
+Last updated 2026-08-18 UTC.
