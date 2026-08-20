@@ -23,7 +23,7 @@ Other important things worth noting:
 - Rate limits are defined at the organization level and at the project level, not user level.
 - Rate limits vary by the model being used.
 - For long context models like GPT-5.5, there is a separate rate limit for long context requests. You can view these rate limits in developer console.
-- Limits are also placed on the total amount an organization can spend on the API each month. These are also known as "usage limits".
+- OpenAI sets an approved monthly usage limit for each organization. This is separate from the spend limits that you can configure for an organization or project.
 - Some model families have shared rate limits. Any models listed under a "shared limit" in your organizations limit page share a rate limit between them. For example, if the listed shared TPM is 3.5M, all calls to any model in the given "shared limit" list will count towards that 3.5M.
 - Vector store ingestion is also rate limited per vector store ID. `/vector_stores/{vector_store_id}/files` and `/vector_stores/{vector_store_id}/file_batches` share a limit of 300 requests per minute for each vector store. For larger ingests, prefer `/vector_stores/{vector_store_id}/file_batches`.
 
@@ -46,10 +46,11 @@ To view a high-level summary of rate limits per model, visit the models page.
 
 In addition to seeing your rate limit on your account page, you can also view important information about your rate limits such as the remaining requests, tokens, and other metadata in the headers of the HTTP response.
 
-You can expect to see the following header fields:
+Responses can include the following header fields:
 
 | Field | Sample Value | Description |
 |---|---|---|
+| Retry-After | 56 | The minimum number of seconds to wait before retrying a temporary rate-limit error, when present. |
 | x-ratelimit-limit-requests | 60 | The maximum number of requests that are permitted before exhausting the rate limit. |
 | x-ratelimit-limit-tokens | 150000 | The maximum number of tokens that are permitted before exhausting the rate limit. |
 | x-ratelimit-remaining-requests | 59 | The remaining number of requests that are permitted before exhausting the rate limit. |
@@ -60,7 +61,7 @@ You can expect to see the following header fields:
 | x-ratelimit-remaining-project-tokens | 57000 | The remaining number of tokens permitted before exhausting the project-scoped token rate limit. |
 | x-ratelimit-reset-project-tokens | 3s | The time until the project-scoped token rate limit resets to its initial state. |
 
-Project-token headers may be present when a project-scoped token limit applies.
+Project-token headers may be present when a project-scoped token limit applies. `Retry-After` may be present on `429` responses caused by a temporary rate limit. It does not mean that quota, billing, or other errors that require user action can be resolved by retrying.
 
 ### Fine-tuning rate limits
 
@@ -83,7 +84,15 @@ To protect against automated and high-volume misuse, set a usage limit for indiv
 
 #### Retrying with exponential backoff
 
-One easy way to avoid rate limit errors is to automatically retry requests with a random exponential backoff. Retrying with exponential backoff means performing a short sleep when a rate limit error is hit, then retrying the unsuccessful request. If the request is still unsuccessful, the sleep length is increased and the process is repeated. This continues until the request is successful or until a maximum number of retries is reached. This approach has many benefits:
+When a request exceeds a temporary rate limit, the API returns a `429` error. The response can include a `Retry-After` header that tells you how many seconds to wait before trying again. Treat this value as a minimum: wait at least that long and add a small random delay so multiple clients don't retry at the same time.
+
+Each official OpenAI SDK automatically retries eligible rate-limit errors and honors `Retry-After` when it's present. You don't need to parse the header or add another retry loop for standard API calls.
+
+If you're using your own HTTP client, follow `Retry-After` when the header is present and contains a valid value. If it's missing or invalid, fall back to exponential backoff with jitter. Limit both the number of attempts and the total time spent retrying. If you add application-level retries, account for the retries your SDK already performs. Don't retry quota, billing, or other errors that require you to take action.
+
+Exponential backoff means waiting briefly after an unsuccessful request, then increasing the delay after each unsuccessful retry. This continues until the request succeeds or reaches a configured retry limit.
+
+This approach has many benefits:
 
 - Automatic retries means you can recover from rate limit errors without crashes or missing data
 - Exponential backoff means that your first retries can be tried quickly, while still benefiting from longer delays if your first few retries fail
@@ -98,8 +107,6 @@ Example 1: Using the Tenacity library
 Tenacity is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything. To add exponential backoff to your requests, you can use the `tenacity.retry` decorator. The below example uses the `tenacity.wait_random_exponential` function to add random exponential backoff to a request.
 
 Using the Tenacity library
-
-python
 
 ```
 1
@@ -116,20 +123,27 @@ python
 12
 13
 14
-from openai import OpenAI
-client = OpenAI()
-
+15
+16
+17
+18
+19from openai import OpenAI
 from tenacity import (
-retry,
-stop_after_attempt,
-wait_random_exponential,
-) # for exponential backoff
+    retry,
+    stop_after_attempt,
+    wait_random_exponential,
+)  # for exponential backoff
+
+client = OpenAI()
 
 @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
 def completion_with_backoff(**kwargs):
-return client.completions.create(**kwargs)
+    return client.completions.create(**kwargs)
 
-completion_with_backoff(model="gpt-3.5-turbo-instruct", prompt="Once upon a time,")
+completion_with_backoff(
+    model="gpt-3.5-turbo-instruct",
+    prompt="Once upon a time,",
+)
 ```
 
 Note that the Tenacity library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
@@ -139,8 +153,6 @@ Example 2: Using the backoff library
 Another python library that provides function decorators for backoff and retry is backoff:
 
 Using the Tenacity library
-
-python
 
 ```
 1
@@ -153,16 +165,25 @@ python
 8
 9
 10
-import backoff
+11
+12
+13
+14
+15
+16import backoff
 import openai
 from openai import OpenAI
+
 client = OpenAI()
 
 @backoff.on_exception(backoff.expo, openai.RateLimitError)
 def completions_with_backoff(**kwargs):
-return client.completions.create(**kwargs)
+    return client.completions.create(**kwargs)
 
-completions_with_backoff(model="gpt-3.5-turbo-instruct", prompt="Once upon a time,")
+completions_with_backoff(
+    model="gpt-3.5-turbo-instruct",
+    prompt="Once upon a time,",
+)
 ```
 
 Like Tenacity, the backoff library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
@@ -172,8 +193,6 @@ Example 3: Manual backoff implementation
 If you don't want to use third-party libraries, you can implement your own backoff logic following this example:
 
 Using manual backoff implementation
-
-python
 
 ```
 1
@@ -232,25 +251,28 @@ python
 54
 55
 56
-# imports
+57
+58
+59# imports
 import random
 import time
 
 import openai
 from openai import OpenAI
+
 client = OpenAI()
 
 # define a retry decorator
 
 def retry_with_exponential_backoff(
-func,
-initial_delay: float = 1,
-exponential_base: float = 2,
-jitter: bool = True,
-max_retries: int = 10,
-errors: tuple = (openai.RateLimitError,),
+    func,
+    initial_delay: float = 1,
+    exponential_base: float = 2,
+    jitter: bool = True,
+    max_retries: int = 10,
+    errors: tuple = (openai.RateLimitError,),
 ):
-"""Retry a function with exponential backoff."""
+    """Retry a function with exponential backoff."""
 
     def wrapper(*args, **kwargs):
         # Initialize variables
@@ -263,7 +285,7 @@ errors: tuple = (openai.RateLimitError,),
                 return func(*args, **kwargs)
 
             # Retry on specific errors
-            except errors as e:
+            except errors:
                 # Increment retries
                 num_retries += 1
 
@@ -280,14 +302,14 @@ errors: tuple = (openai.RateLimitError,),
                 time.sleep(delay)
 
             # Raise exceptions for any errors not specified
-            except Exception as e:
-                raise e
+            except Exception:
+                raise
 
     return wrapper
 
 @retry_with_exponential_backoff
 def completions_with_backoff(**kwargs):
-return client.completions.create(**kwargs)
+    return client.completions.create(**kwargs)
 ```
 
 Again, OpenAI makes no guarantees on the security or efficiency of this solution but it can be a good starting place for your own solution.
