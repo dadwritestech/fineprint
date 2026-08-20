@@ -25,6 +25,8 @@ Prices per 1M tokens.
 | gpt-5.6-sol | $5.00 | $0.50 | $6.25 | $30.00 | $10.00 | $1.00 | $12.50 | $45.00 |
 | gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
 
+`daybreak-blue-latest` and `daybreak-red-latest` are aliases that currently point to `gpt-5.6-sol` and `gpt-5.6-cyber`, respectively. As new frontier models are released through the Daybreak program, these aliases will be updated to point to the latest models, with pricing adjusted to match each underlying model.
+
 Prices per 1M tokens unless noted.
 
 | Model | Modality | Input | Cached input | Output / cost |
