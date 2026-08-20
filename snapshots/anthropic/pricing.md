@@ -95,7 +95,7 @@ Max 20x
 | Connectors |  |  |  |  |
 | Web search |  |  |  |  |
 | Enterprise search |  |  |  |  |
-| Claude for Chrome |  |  |  |  |
+| Claude in Chrome |  |  |  |  |
 | Claude for Microsoft 365 |  |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |  |
 
@@ -247,7 +247,7 @@ Enterprise (sales-assisted)
 | Connectors |  |  |  |
 | Web search |  |  |  |
 | Enterprise search |  |  |  |
-| Claude for Chrome |  |  |  |
+| Claude in Chrome |  |  |  |
 | Claude for Microsoft 365 |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |
 
@@ -292,9 +292,7 @@ Enterprise (sales-assisted)
 | Consultation |  |  |  |
 | Tiered incentives on committed spend |  |  |  |
 | Trials |  |  |  |
-| Non-standard terms |  |  |  |
 | Customer success support at certain spend thresholds |  |  |  |
-| MSA |  |  |  |
 
 ### Models and usage
 
