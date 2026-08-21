@@ -453,6 +453,7 @@ Free
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - xAI Grok 4.5
+- xAI Grok 4.6
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
@@ -487,6 +488,7 @@ Pro
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - xAI Grok 4.5
+- xAI Grok 4.6
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
@@ -521,6 +523,7 @@ Pro+
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - xAI Grok 4.5
+- xAI Grok 4.6
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
@@ -555,6 +558,7 @@ Max
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - xAI Grok 4.5
+- xAI Grok 4.6
 - Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
