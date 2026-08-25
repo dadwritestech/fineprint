@@ -39,8 +39,6 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
 | canopylabs/orpheus-v1-english | 10 | 100 | 1.2K | 3.6K | - | - |
 | groq/compound | 30 | 250 | 70K | - | - | - |
 | groq/compound-mini | 30 | 250 | 70K | - | - | - |
-| llama-3.1-8b-instant | 30 | 14.4K | 6K | 500K | - | - |
-| llama-3.3-70b-versatile | 30 | 1K | 12K | 100K | - | - |
 | meta-llama/llama-prompt-guard-2-22m | 30 | 14.4K | 15K | 500K | - | - |
 | meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K | - | - |
 | openai/gpt-oss-120b | 30 | 1K | 8K | 200K | - | - |
