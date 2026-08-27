@@ -1,5 +1,7 @@
 <!-- fineprint snapshot: openai/usage-policies | source: https://openai.com/policies/usage-policies/ -->
 
+Effective: October 29, 2025
+
 We aim for our tools to be used safely and responsibly, while maximizing your control over how you use them. In building our Usage Policies, we keep a few important things in mind.
 
 We empower users to innovate with AI. We build AI products that maximize helpfulness and freedom, while ensuring safety. Usage Policies are just one way we set clear expectations for the use of our products within a broader safety ecosystem that sets responsible guardrails across our services. You can learn more about our safety approach and our commitment to customizability, transparency, and intellectual freedom to explore, debate, and create with AI.
