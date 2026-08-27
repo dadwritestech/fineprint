@@ -88,7 +88,7 @@ Our most capable Flash model for agentic workflows and multimodal reasoning.
 
 Try it in Google AI Studio
 
-Our most intelligent model built for speed, combining frontier intelligence with superior search and grounding.
+A Flash model built for speed, combining frontier intelligence with superior search and grounding.
 
 ### Standard
 
@@ -144,7 +144,7 @@ Our most intelligent model built for speed, combining frontier intelligence with
 
 Try it in Google AI Studio
 
-Our most intelligent model built for speed, combining frontier intelligence with superior search and grounding.
+A Flash model built for speed, combining frontier intelligence with superior search and grounding.
 
 ### Standard
 
@@ -212,13 +212,51 @@ Our low-latency, real-time speech to speech translation model that supports 70+ 
 
 * Billing is based on total input and output audio token consumption, calculated at a rate of 25 tokens per second of audio, equating to an effective price of approximately $0.0368 per minute.
 
+## Gemini 3.5 Transcribe Live
+
+`gemini-3.5-transcribe-live`
+
+Try it in Google AI Studio
+
+Our low-latency, real-time speech-to-text model for bidirectional streaming audio transcription over WebSockets.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $3.50 or $0.005/min* (audio) |
+| Output price (including thinking tokens) | Free of charge | $21.00 or $0.004/min* (text) |
+| Grounding with Google Search | Not Supported |  |
+| Used to improve our products | Yes | No |
+
+* Estimated pricing is based on 25 audio tokens per second for input and 175 text tokens per minute for output, for an effective blended rate of ~$0.009 per min for Live Transcribe.
+
+## Gemini 3.5 Transcribe
+
+`gemini-3.5-transcribe`
+
+Try it in Google AI Studio
+
+Our speech-to-text model with automatic language detection, speaker diarization, word-level timestamps, and custom vocabulary biasing.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $2.00 or $0.003/min* (audio) |
+| Output price (including thinking tokens) | Free of charge | $12.00 or $0.002/min* (text) |
+| Grounding with Google Search | Not Supported |  |
+| Used to improve our products | Yes | No |
+
+* Estimated pricing is based on 25 audio tokens per second for input and 175 text tokens per minute for output, for an effective blended rate of ~$0.005 per min for Transcribe.
+
 ## Gemini 3.5 Flash-Lite
 
 `gemini-3.5-flash-lite`
 
 Try it in Google AI Studio
 
-Our most cost-efficient GA model, optimized for high-volume agentic tasks, translation, and simple data processing.
+A cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing.
 
 ### Standard
 
@@ -276,7 +314,7 @@ Our most cost-efficient GA model, optimized for high-volume agentic tasks, trans
 
 Try it in Google AI Studio
 
-Our most cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing.
+A cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing.
 
 ### Standard
 
@@ -332,7 +370,7 @@ Our most cost-efficient model, optimized for high-volume agentic tasks, translat
 
 Try it in Google AI Studio
 
-Our next-generation video generation and editing model, available to developers on the paid tier of the Gemini API.
+Our next-generation video generation and editing model.
 
 ### Standard
 
@@ -350,7 +388,7 @@ Our next-generation video generation and editing model, available to developers 
 
 Try it in Google AI Studio
 
-The latest performance, intelligence, and usability improvements to the best model family in the world for multimodal understanding, agentic capabilities, and vibe-coding.
+Our 3rd generation Pro model, built for multimodal understanding, agentic capabilities, and vibe-coding.
 
 ### Standard
 
@@ -482,8 +520,6 @@ Try it in Google AI Studio
 
 Our 3.1 Flash Text-to-Speech audio model optimized for price-performant, low-latency, controllable speech generation.
 
-Preview models may change before becoming stable and have more restrictive rate limits.
-
 ### Standard
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
@@ -508,7 +544,7 @@ Preview models may change before becoming stable and have more restrictive rate 
 
 Try it in Google AI Studio
 
-Our most intelligent model built for speed, combining frontier intelligence with superior search and grounding.
+An intelligent model built for speed, combining intelligence with search and grounding.
 
 ### Standard
 
@@ -614,7 +650,7 @@ Our native image generation model, optimized for speed, flexibility, and context
 
 Try it in Google AI Studio
 
-Our state-of-the-art multipurpose model, which excels at coding and complex reasoning tasks.
+A Pro model which excels at coding and complex reasoning tasks.
 
 ### Standard
 
@@ -718,7 +754,7 @@ Our first hybrid reasoning model which supports a 1M token context window and ha
 
 Try it in Google AI Studio
 
-Our smallest and most cost effective model, built for at scale usage.
+A small and cost effective model, built for at scale usage.
 
 ### Standard
 
@@ -764,34 +800,6 @@ Our smallest and most cost effective model, built for at scale usage.
 | Grounding with Google Maps | 500 RPD | 1,500 RPD (free), then $25 / 1,000 grounded prompts |
 | Used to improve our products | Yes | No |
 
-## Gemini 2.5 Flash-Lite Preview
-
-`gemini-2.5-flash-lite-preview-09-2025`
-
-Try it in Google AI Studio
-
-The latest model based on Gemini 2.5 Flash lite optimized for cost-efficiency, high throughput and high quality.
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price (text, image, video) | Free of charge | $0.10 (text / image / video) $0.30 (audio) |
-| Output price (including thinking tokens) | Free of charge | $0.40 |
-| Context caching price | Not available | $0.01 (text / image / video) $0.03 (audio) $1.00 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search | Free of charge, up to 500 RPD (limit shared with Flash RPD) | 1,500 RPD (free, limit shared with Flash RPD), then $35 / 1,000 grounded prompts |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price (text, image, video) | Not available | $0.05 (text / image / video) $0.15 (audio) |
-| Output price (including thinking tokens) | Not available | $0.20 |
-| Context caching price | Not available | $0.01 (text / image / video) $0.03 (audio) $1.00 / 1,000,000 tokens per hour (storage price) |
-| Grounding with Google Search | Not available | 1,500 RPD (free, limit shared with Flash RPD), then $35 / 1,000 grounded prompts |
-| Used to improve our products | Yes | No |
-
 ## Gemini 2.5 Flash Native Audio (Live API)
 
 `gemini-2.5-flash-native-audio-preview-12-2025`
@@ -799,8 +807,6 @@ The latest model based on Gemini 2.5 Flash lite optimized for cost-efficiency, h
 Try it in Google AI Studio
 
 Our Live API native audio models optimized for higher quality audio outputs with better pacing, voice naturalness, verbosity, and mood.
-
-Preview models may change before becoming stable and have more restrictive rate limits.
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
 |---|---|---|
@@ -814,9 +820,7 @@ Preview models may change before becoming stable and have more restrictive rate 
 
 Try it in Google AI Studio
 
-Our native image generation model, optimized for speed, flexibility, and contextual understanding. Text input and output is priced the same as 2.5 Flash.
-
-Preview models may change before becoming stable and have more restrictive rate limits.
+A native image generation model, optimized for speed, flexibility, and contextual understanding. Text input and output is priced the same as 2.5 Flash.
 
 ### Standard
 
@@ -860,8 +864,6 @@ Try it in Google AI Studio
 
 Our 2.5 Flash text-to-speech audio model optimized for price-performant, low-latency, controllable speech generation.
 
-Preview models may change before becoming stable and have more restrictive rate limits.
-
 ### Standard
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
@@ -886,8 +888,6 @@ Try it in Google AI Studio
 
 Our 2.5 Pro text-to-speech audio model optimized for powerful, low-latency speech generation for more natural outputs and easier to steer prompts.
 
-Preview models may change before becoming stable and have more restrictive rate limits.
-
 ### Standard
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
@@ -904,94 +904,13 @@ Preview models may change before becoming stable and have more restrictive rate 
 | Output price | Not available | $10.00 (audio) |
 | Used to improve our products | Yes | No |
 
-## Gemini 2.0 Flash
-
-`gemini-2.0-flash`
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $0.10 (text / image / video) $0.70 (audio) |
-| Output price | Free of charge | $0.40 |
-| Context caching price | Free of charge | $0.025 / 1,000,000 tokens (text/image/video) $0.175 / 1,000,000 tokens (audio) |
-| Context caching (storage) | Not available | $1.00 / 1,000,000 tokens per hour |
-| Image generation pricing | Not available (shut down) | Not available (shut down) |
-| Tuning price | Not available | Not available |
-| Grounding with Google Search | Free of charge, up to 500 RPD | 1,500 RPD (free), then $35 / 1,000 grounded prompts |
-| Grounding with Google Maps | 500 RPD | 1,500 RPD (free), then $25 / 1,000 grounded prompts |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $0.05 (text / image / video) $0.35 (audio) |
-| Output price | Not available | $0.20 |
-| Context caching price | Not available | $0.025 / 1,000,000 tokens (text/image/video) $0.175 / 1,000,000 tokens (audio) |
-| Context caching (storage) | Not available | $1.00 / 1,000,000 tokens per hour |
-| Image generation pricing | Not available (shut down) | Not available (shut down) |
-| Tuning price | Not available | Not available |
-| Grounding with Google Search | Not available | 1,500 RPD (free), then $35 / 1,000 grounded prompts |
-| Grounding with Google Maps | Not available | Not available |
-| Used to improve our products | Yes | No |
-
-[*] Image output is priced at $30 per 1,000,000 tokens. Output images up to 1024x1024px consume 1290 tokens and are equivalent to $0.039 per image.
-
-## Gemini 2.0 Flash-Lite
-
-`gemini-2.0-flash-lite`
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $0.075 |
-| Output price | Free of charge | $0.30 |
-| Context caching price | Not available | Not available |
-| Context caching (storage) | Not available | Not available |
-| Tuning price | Not available | Not available |
-| Grounding with Google Search | Not available | Not available |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $0.0375 |
-| Output price | Not available | $0.15 |
-| Context caching price | Not available | Not available |
-| Context caching (storage) | Not available | Not available |
-| Tuning price | Not available | Not available |
-| Grounding with Google Search | Not available | Not available |
-| Used to improve our products | Yes | No |
-
-## Imagen 4
-
-`imagen-4.0-generate-001`, `imagen-4.0-ultra-generate-001`, `imagen-4.0-fast-generate-001`
-
-Try it in Google AI Studio
-
-Our latest image generation model, with significantly better text rendering and better overall image quality.
-
-Preview models may change before becoming stable and have more restrictive rate limits.
-
-|  | Free Tier | Paid Tier, per Image in USD |
-|---|---|---|
-| Imagen 4 Fast image price | Not available | $0.02 |
-| Imagen 4 Standard image price | Not available | $0.04 |
-| Imagen 4 Ultra image price | Not available | $0.06 |
-| Used to improve our products | Yes | No |
-
 ## Veo 3.1
 
 `veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`, `veo-3.1-lite-generate-preview`
 
 Try Veo 3.1
 
-Our latest video generation model, available to developers on the paid tier of the Gemini API.
-
-Preview models may change before becoming stable and have more restrictive rate limits.
+A fast video generation model.
 
 |  | Free Tier | Paid Tier, per second in USD |
 |---|---|---|
@@ -1000,38 +919,11 @@ Preview models may change before becoming stable and have more restrictive rate 
 | Veo 3.1 Lite video with audio price (default) | Not available | $0.05 (720p) $0.08 (1080p) (4k output not supported) |
 | Used to improve our products | Yes | No |
 
-## Veo 3
-
-`veo-3.0-generate-001`, `veo-3.0-fast-generate-001`
-
-Try Veo 3
-
-Our stable video generation model, available to developers on the paid tier of the Gemini API.
-
-|  | Free Tier | Paid Tier, per second in USD |
-|---|---|---|
-| Veo 3 Standard video with audio price (default) | Not available | $0.40 |
-| Veo 3 Fast video with audio price (default) | Not available | $0.10 (720p) $0.12 (1080p) $0.30 (4k) |
-| Used to improve our products | Yes | No |
-
-## Veo 2
-
-`veo-2.0-generate-001`
-
-Try the API
-
-Our state-of-the-art video generation model, available to developers on the paid tier of the Gemini API.
-
-|  | Free Tier | Paid Tier, per second in USD |
-|---|---|---|
-| Video price | Not available | $0.35 |
-| Used to improve our products | Yes | No |
-
 ## Lyria 3
 
 `lyria-3-clip-preview` and `lyria-3-pro-preview`
 
-Google's family of music generation models. Preview models may change before becoming stable and have more restrictive rate limits.
+Google's family of music generation models.
 
 |  | Free Tier | Paid Tier, per request in USD |
 |---|---|---|
@@ -1073,7 +965,7 @@ Our first multimodal embedding model, mapping text, images, video, audio, and PD
 
 Try the API
 
-Our Gemini Embeddings model for text-only use cases, available to developers on the free and paid tiers of the Gemini API.
+Our first Gemini Embeddings model for text-only use cases.
 
 ### Standard
 
@@ -1219,4 +1111,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-08-13 UTC.
+Last updated 2026-08-26 UTC.
