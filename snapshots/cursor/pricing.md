@@ -27,6 +27,7 @@ Everything in Hobby, plus:
 - ✓ Extended limits on Agent
 - ✓ Generous limits for Grok
 - ✓ Access to frontier models
+- ✓ Grok Bot access
 - ✓ MCPs, skills, and hooks
 - ✓ Cloud agents
 - ✓ Bugbot on usage-based billing
@@ -43,8 +44,9 @@ Everything on Individual, plus:
 
 - ✓ Centralized team billing and administration
 - ✓ Team marketplace for internal rules, skills, and plugins
-- ✓ Agentic code reviews with Bugbot
 - ✓ Cloud agents and automations with shared team context
+- ✓ Grok Bot access
+- ✓ Agentic code reviews with Bugbot
 - ✓ Usage analytics to understand team behavior
 - ✓ Team-wide privacy mode
 - ✓ SAML/OIDC SSO
