@@ -95,6 +95,8 @@ Grok Voice API
   - Maximum number of images: No limit
   - Supported image file types: `jpg/jpeg` or `png`.
   - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
+- Batch API
+  - Not every model accepts Batch API requests. See Details on each model page.
 
 The knowledge cut-off date of Grok 4.6 is February 1, 2026.
 
@@ -108,4 +110,4 @@ Some models have aliases to help users automatically migrate to the next version
 
 For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
 
-Last updated: August 12, 2026
+Last updated: August 21, 2026
