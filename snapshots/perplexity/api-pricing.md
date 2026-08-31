@@ -4,9 +4,9 @@ This page shows pricing information to help you understand API costs.For billing
 
 ## Estimate your cost
 
-## Gateway API Pricing
+## Router API Pricing
 
-Gateway API usage is billed per token at each model's published rates — there are no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's discounted cache-read rate and reasoning tokens billed at the output rate. You are always billed at the requested model's rates, regardless of how the request is served. See Gateway Models & Pricing for the full per-model rate card, including cache-write rates and long-context pricing.
+Router API usage is billed per token at each model's published rates — there are no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's discounted cache-read rate and reasoning tokens billed at the output rate. You are always billed at the requested model's rates, regardless of how the request is served. See Router Models & Pricing for the full per-model rate card, including cache-write rates and long-context pricing.
 
 ## Agent API Pricing
 
@@ -27,7 +27,7 @@ When using tools with the Agent API:
 | Tool | Price | Description |
 |---|---|---|
 | `web_search` | $0.0025 per invocation | Performs web searches to retrieve current information |
-| `fetch_url` | $0.00025 per invocation | Fetches and extracts content from specific URLs |
+| `fetch_url` | $0.0005 per invocation | Fetches and extracts content from specific URLs |
 | `people_search` | $0.005 per invocation | Looks up professionals, employees, and people. $5 per 1,000 tool invocations |
 | `finance_search` | $0.005 per invocation | Retrieves financial data and market information. $5 per 1,000 tool invocations |
 | `sandbox` | $0.03 per session | Isolated container for executing code during an Agent API request. A session covers up to 20 minutes of active use for billing purposes — this is the billing window, not a runtime cap. SDK search queries made from inside the sandbox are billed at $0.0025 per request (same as `web_search`). |
@@ -185,8 +185,8 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 | Model input tokens | $0.001 |
 | Model output tokens | $0.003 |
 | `web_search` | $0.0025 |
-| `fetch_url` | $0.00025 |
-| Total | $0.00675 |
+| `fetch_url` | $0.0005 |
+| Total | $0.007 |
 
 Actual preset costs vary with the selected model, token usage, and tool invocations. When present on a completed response, `usage.cost.total_cost` reports the calculated request cost.
 
