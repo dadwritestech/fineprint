@@ -8,9 +8,13 @@ This guide introduces all the models available through the Gemini API.
 
 ### Stable
 
-Our latest and most capable Flash model, built for complex coding, agentic workflows, and reliable multi-step execution.
+Our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.
 
 New Stable
+
+Our previous-generation Flash model for complex coding, agentic workflows, and reliable multi-step execution.
+
+Stable
 
 Our previous-generation Flash model, balancing speed and multimodal capabilities across general agentic and everyday tasks.
 
@@ -40,6 +44,10 @@ State-of-the-art image generation and editing models for highly contextual nativ
 
 Stable
 
+Low-latency speech-to-text model with utterance-based language detection, speaker diarization, and word timestamps.
+
+New Stable
+
 ### Preview
 
 Advanced intelligence, complex problem-solving skills, and powerful agentic and vibe coding capabilities.
@@ -52,24 +60,25 @@ Preview
 
 Low-latency, real-time speech to speech translation model that supports 70+ languages.
 
-New Preview
+New
 
 High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications.
 
-New Preview
+New
 
 Powerful, low-latency speech generation.
 
-New Preview
+New
 
-Fast, conversational video generation and editing. Turn text and images into video, and refine results through natural language.
+Fast video generation, editing, keyframe interpolation, and extension with native audio.
 
-New Preview
+New
 
 ### All Gemini 3 models
 
 | Model | Endpoint |
 |---|---|
+| Gemini 3.8 Flash | gemini-3.8-flash |
 | Gemini 3.7 Flash | gemini-3.7-flash |
 | Gemini 3.6 Flash | gemini-3.6-flash |
 | Gemini 3.5 Flash | gemini-3.5-flash |
@@ -83,7 +92,8 @@ New Preview
 | Gemini 3.5 Live Translate | gemini-3.5-live-translate-preview |
 | Gemini 3.1 Flash Live | gemini-3.1-flash-live-preview |
 | Gemini 3.1 Flash TTS | gemini-3.1-flash-tts-preview |
-| Gemini Omni Flash | gemini-omni-flash |
+| Gemini Omni Flash | gemini-omni-1.1-flash |
+| Gemini 3.5 Transcribe | gemini-3.5-transcribe gemini-3.5-transcribe-live |
 
 ## Gemini 2.5 Flash
 
@@ -115,6 +125,7 @@ This section contains all audio models, including ones that may already be liste
 |---|---|---|
 | Gemini 3.1 Flash Live | Our high-quality, low-latency audio-to-audio (A2A) model designed for real-time dialogue and voice-first AI applications. | gemini-3.1-flash-live-preview |
 | Gemini 3.1 Flash TTS | Powerful, low-latency speech generation, with natural outputs, steerable prompts, and new expressive audio tags for precise narration control. | gemini-3.1-flash-tts-preview |
+| Gemini 3.5 Transcribe | Low-latency speech-to-text model with utterance-based language detection, speaker diarization, word-level timestamps, and custom vocabulary biasing. | gemini-3.5-transcribe gemini-3.5-transcribe-live |
 | Gemini 2.5 Flash Live | Our flagship Live API model for low-latency, bidirectional voice and video agents with native audio reasoning. | gemini-2.5-flash-native-audio-preview-12-2025 |
 | Gemini 2.5 Flash TTS | Fast and controllable text-to-speech for low-latency, cost-efficient applications and real-time assistants. | gemini-2.5-flash-preview-tts |
 | Gemini 2.5 Pro TTS | High-fidelity speech synthesis optimized for quality in structured workflows like podcasts and audiobooks. | gemini-2.5-pro-preview-tts |
@@ -130,7 +141,7 @@ This section contains all generative media models, including ones that may alrea
 | Veo 3.1 | State-of-the-art cinematic video generation with advanced creative controls and natively synchronized audio. | veo-3.1-generate-preview |
 | Nano Banana Pro | A professional design engine with a reasoning core for studio-quality 4K visuals, complex layouts, and precise text rendering. | gemini-3-pro-image |
 | Veo 3.1 Lite | High-efficiency, low-cost, developer-first video generation, editing, and cinematic control from the Veo 3.1 family. | veo-3.1-lite-generate-preview |
-| Gemini Omni Flash | Fast, conversational video generation and editing. Turn text and images into video, and refine results through natural language. | gemini-omni-flash |
+| Gemini Omni Flash | Fast video generation, editing, keyframe interpolation, and extension with native audio. | gemini-omni-1.1-flash |
 | Nano Banana | State-of-the-art native image generation and editing designed for fast, creative workflows. | gemini-2.5-flash-image |
 | Imagen 4 (Deprecated) | Text-to-image model featuring fast and ultra-fast generation and exceptional clarity up to 2K resolution. | imagen-4.0-generate |
 
@@ -197,4 +208,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-08-14 UTC.
+Last updated 2026-09-02 UTC.
