@@ -1,5 +1,7 @@
 <!-- fineprint snapshot: mistral/terms | source: https://legal.mistral.ai/terms/commercial-terms-of-service -->
 
+TermsAI ModelsAI Systems
+
 These Terms of Service for Commercial Users ("Terms"), together with the additional terms and policies referenced herein ("Additional Terms"), govern the use of Mistral AI Studio, Vibe, and the other websites, products, software, services, and technologies we offer (collectively, the "Mistral AI Products") by the organization, company, or other entity that you represent ("Customer"). The Mistral AI Products are provided by Mistral AI, a French limited joint-stock corporation, incorporated in Paris, under number 952 418 325, having its registered offices at 15 rue des Halles, 75001 Paris, France, or its affiliate as specified in an Order Form ("Mistral AI"). Customer and Mistral AI are individually referred to herein as a "Party", and collectively as the "Parties".
 
 If you are an individual consumer, please reference the Terms of Service (EU Consumer) or Terms of Service (Consumers Outside of the EU) (based on where you reside), for the general terms applicable to your personal use of the Mistral AI Products.
