@@ -316,7 +316,7 @@ Learn more
 
 Batch processing
 
-### Fable 5
+### Fable 5.1
 
 Next generation intelligence for long-running agents
 
@@ -330,13 +330,13 @@ $50 / MTok
 
 Prompt caching
 
+Read
+
+$0.25 / MTok
+
 Write
 
 $12.50 / MTok
-
-Read
-
-$1 / MTok
 
 ### Opus 5
 
@@ -352,13 +352,13 @@ $25 / MTok
 
 Prompt caching
 
-Write
-
-$6.25 / MTok
-
 Read
 
 $0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 ### Sonnet 5
 
@@ -374,13 +374,13 @@ $10 / MTok
 
 Prompt caching
 
-Write
-
-$2.50 / MTok
-
 Read
 
 $0.20 / MTok
+
+Write
+
+$2.50 / MTok
 
 ### Haiku 4.5
 
@@ -396,13 +396,13 @@ $5 / MTok
 
 Prompt caching
 
-Write
-
-$1.25 / MTok
-
 Read
 
 $0.10 / MTok
+
+Write
+
+$1.25 / MTok
 
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
@@ -452,6 +452,26 @@ For asynchronous workloads that can be processed together for better efficiency
 
 Legacy models
 
+### Fable 5
+
+Input
+
+$10 / MTok
+
+Output
+
+$50 / MTok
+
+Prompt caching
+
+Read
+
+$1 / MTok
+
+Write
+
+$12.50 / MTok
+
 ### Opus 4.8
 
 Input
@@ -464,13 +484,13 @@ $25 / MTok
 
 Prompt caching
 
-Write
-
-$6.25 / MTok
-
 Read
 
 $0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 Save 50% with batch processing.
 
@@ -490,13 +510,13 @@ $15 / MTok
 
 Prompt caching
 
-Write
-
-$3.75 / MTok
-
 Read
 
 $0.30 / MTok
+
+Write
+
+$3.75 / MTok
 
 ### Opus 4.7
 
@@ -510,13 +530,13 @@ $25 / MTok
 
 Prompt caching
 
-Write
-
-$6.25 / MTok
-
 Read
 
 $0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 ### Opus 4.6
 
@@ -530,13 +550,13 @@ $25 / MTok
 
 Prompt caching
 
-Write
-
-$6.25 / MTok
-
 Read
 
 $0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 ### Sonnet 4.5
 
@@ -550,13 +570,13 @@ $15 / MTok
 
 Prompt caching
 
-Write
-
-$3.75 / MTok
-
 Read
 
 $0.30 / MTok
+
+Write
+
+$3.75 / MTok
 
 ### Opus 4.5
 
@@ -570,13 +590,13 @@ $25 / MTok
 
 Prompt caching
 
-Write
-
-$6.25 / MTok
-
 Read
 
 $0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 ### Opus 4.1
 
@@ -590,13 +610,13 @@ $75 / MTok
 
 Prompt caching
 
-Write
-
-$18.75 / MTok
-
 Read
 
 $1.50 / MTok
+
+Write
+
+$18.75 / MTok
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
