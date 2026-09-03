@@ -34,13 +34,61 @@ For large-scale deployments with custom needs for security, support, and complia
 
 Contact Sales
 
+## Gemini 3.8 Flash
+
+`gemini-3.8-flash`
+
+Try it in Google AI Studio
+
+Our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.75 through December 31, 2026. $1.50 starting January 1, 2027. |
+| Output price (including thinking tokens) | Free of charge | $3.75 through December 31, 2026. $7.50 starting January 1, 2027. |
+| Context caching price | Free of charge | $0.075 through December 31, 2026. $0.15 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
+| Grounding with Google Search* | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
+| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
+### Batch
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $0.375 through December 31, 2026. $0.75 starting January 1, 2027. |
+| Output price (including thinking tokens) | Not available | $1.875 through December 31, 2026. $3.75 starting January 1, 2027. |
+| Context caching price | Not available | $0.0375 through December 31, 2026. $0.075 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
+| Used to improve our products | Yes | No |
+
+### Flex
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $0.375 through December 31, 2026. $0.75 starting January 1, 2027. |
+| Output price (including thinking tokens) | Not available | $1.875 through December 31, 2026. $3.75 starting January 1, 2027. |
+| Context caching price | Not available | $0.0375 through December 31, 2026. $0.075 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
+| Used to improve our products | Yes | No |
+
+### Priority
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $1.35 through December 31, 2026. $2.70 starting January 1, 2027. |
+| Output price (including thinking tokens) | Free of charge | $6.75 through December 31, 2026. $13.50 starting January 1, 2027. |
+| Context caching price | Free of charge | $0.135 through December 31, 2026. $0.27 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
+| Grounding with Google Search* | Not available** | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
+| Grounding with Google Maps | Not available** | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+| Used to improve our products | Yes | No |
+
 ## Gemini 3.7 Flash
 
 `gemini-3.7-flash`
 
 Try it in Google AI Studio
 
-Our most capable Flash model for agentic workflows and multimodal reasoning.
+Our high-speed, efficient Flash model built for everyday coding, agentic tool use, and reliable multi-step execution.
 
 ### Standard
 
@@ -88,7 +136,7 @@ Our most capable Flash model for agentic workflows and multimodal reasoning.
 
 Try it in Google AI Studio
 
-A Flash model built for speed, combining frontier intelligence with superior search and grounding.
+Our previous generation Flash model, balancing speed and multimodal capabilities across general agentic and everyday tasks.
 
 ### Standard
 
@@ -144,7 +192,7 @@ A Flash model built for speed, combining frontier intelligence with superior sea
 
 Try it in Google AI Studio
 
-A Flash model built for speed, combining frontier intelligence with superior search and grounding.
+Our earlier Flash model, built for speed and foundational performance across routine, high-throughput workloads.
 
 ### Standard
 
@@ -364,6 +412,24 @@ A cost-efficient model, optimized for high-volume agentic tasks, translation, an
 
 ** Can be tested in Google AI Studio.
 
+## Gemini Omni Flash
+
+`gemini-omni-1.1-flash`
+
+Try it in Google AI Studio
+
+Our next-generation video generation and editing model, now generally available to developers on the paid tier of the Gemini API.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Not available | $1.50 (text / image / video / audio) |
+| Output price (including thinking tokens) | Not available | $9.00 (text) $17.50 (video)* |
+| Used to improve our products | Yes | No |
+
+* Billing is based on total output token consumption, calculated at a rate of 5,792 tokens per second of 720p video. Under Standard pricing, this equates to an effective price of approximately $0.10 per second.
+
 ## Gemini Omni Flash Preview
 
 `gemini-omni-flash-preview`
@@ -544,7 +610,7 @@ Our 3.1 Flash Text-to-Speech audio model optimized for price-performant, low-lat
 
 Try it in Google AI Studio
 
-An intelligent model built for speed, combining intelligence with search and grounding.
+Our legacy Flash model, providing baseline speed and intelligence.
 
 ### Standard
 
@@ -919,11 +985,23 @@ A fast video generation model.
 | Veo 3.1 Lite video with audio price (default) | Not available | $0.05 (720p) $0.08 (1080p) (4k output not supported) |
 | Used to improve our products | Yes | No |
 
+## Lyria 3.5
+
+`lyria-3.5-clip-preview` and `lyria-3.5-pro-preview`
+
+Google's family of music generation models. Preview models may change before becoming stable and have more restrictive rate limits.
+
+|  | Free Tier | Paid Tier, per request in USD |
+|---|---|---|
+| Lyria 3.5 Clip Preview (30s) | Not available | $0.04 per song |
+| Lyria 3.5 Pro Preview (Full Song) | Not available | $0.08 per song |
+| Used to improve our products | Yes | No |
+
 ## Lyria 3
 
 `lyria-3-clip-preview` and `lyria-3-pro-preview`
 
-Google's family of music generation models.
+Google's family of legacy music generation models.
 
 |  | Free Tier | Paid Tier, per request in USD |
 |---|---|---|
@@ -1104,6 +1182,7 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 ## Notes
 
+- Agentic video understanding: When using agentic video understanding, token usage is variable based on the content loaded by the model rather than full video length. This typically results in up to 88% fewer input tokens for long-form video, though token counts depend on query complexity and dynamic sampling depth (which may exceed 1 FPS for detailed visual segments). See Agentic video understanding.
 - Document token billing: Tokens for the `DOCUMENT` modality (for example, PDFs) are billed at the image token rate. In API responses, these tokens appear under the `DOCUMENT` modality within `promptTokensDetails`.
 - Google AI Studio usage is free of charge in all available regions. See Billing FAQs for details.
 - Prices may differ from the prices listed here and the prices offered on Gemini Enterprise Agent Platform. For Gemini Enterprise Agent Platform prices, see the Gemini Enterprise Agent Platform pricing page.
@@ -1111,4 +1190,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-08-26 UTC.
+Last updated 2026-09-03 UTC.
