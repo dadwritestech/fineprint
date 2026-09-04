@@ -426,13 +426,11 @@ Agent mode, code review, coding agent, Copilot CLI, and Copilot Chat use AI Cred
 Free
 
 - Anthropic Claude Fable 5
+- Anthropic Claude Fable 5.1
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
-- Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
-- Anthropic Claude Opus 4.5
-- Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -448,26 +446,23 @@ Free
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - Microsoft MAI-Code-1.1-Flash
-- Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
+- Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
-- Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
 
 Pro
 
 - Anthropic Claude Fable 5
+- Anthropic Claude Fable 5.1
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
-- Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
-- Anthropic Claude Opus 4.5
-- Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -483,26 +478,23 @@ Pro
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - Microsoft MAI-Code-1.1-Flash
-- Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
+- Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
-- Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
 
 Pro+
 
 - Anthropic Claude Fable 5
+- Anthropic Claude Fable 5.1
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
-- Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
-- Anthropic Claude Opus 4.5
-- Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -518,26 +510,23 @@ Pro+
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - Microsoft MAI-Code-1.1-Flash
-- Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
+- Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
-- Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
 
 Max
 
 - Anthropic Claude Fable 5
+- Anthropic Claude Fable 5.1
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Sonnet 4
-- Anthropic Claude Sonnet 4.5
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
-- Anthropic Claude Opus 4.5
-- Anthropic Claude Opus 4.6
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -553,13 +542,12 @@ Max
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - Microsoft MAI-Code-1.1-Flash
-- Google Gemini 3.1 Pro (Preview)
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
+- Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
-- Raptor mini (Preview)
 - Kimi K2.7 Code
 - Kimi K3
 
