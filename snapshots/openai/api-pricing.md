@@ -1,5 +1,7 @@
 <!-- fineprint snapshot: openai/api-pricing | source: https://developers.openai.com/api/docs/pricing -->
 
+GPT‑6 Astra is rolling out today for enterprises in our Trusted Access Program, with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
+
 Our latest models
 
 Prices per 1M tokens.
@@ -9,6 +11,7 @@ Standard
 |  | Short context | Long context |  |  |  |  |  |  |
 |---|---|---|---|---|---|---|---|---|
 | Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+| gpt-6-astra | $10.00 | $1.00 | $12.50 | $50.00 | $20.00 | $2.00 | $25.00 | $75.00 |
 | gpt-5.6-sol | $4.00 | $0.40 | $5.00 | $20.00 | $8.00 | $0.80 | $10.00 | $30.00 |
 | gpt-5.6-terra | $2.00 | $0.20 | $2.50 | $12.00 | $4.00 | $0.40 | $5.00 | $18.00 |
 | gpt-5.6-luna | $0.20 | $0.02 | $0.25 | $1.20 | $0.40 | $0.04 | $0.50 | $1.80 |
@@ -25,7 +28,7 @@ Prices per 1M tokens.
 | gpt-5.6-sol | $4.00 | $0.40 | $5.00 | $20.00 | $8.00 | $0.80 | $10.00 | $30.00 |
 | gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
 
-`daybreak-blue-latest` and `daybreak-red-latest` are aliases that currently point to `gpt-5.6-sol` and `gpt-5.6-cyber`, respectively. As new frontier models are released through the Daybreak program, these aliases will be updated to point to the latest models, with pricing adjusted to match each underlying model.
+`gpt-daybreak-blue-latest` and `gpt-daybreak-red-latest` are aliases that currently point to `gpt-5.6-sol` and `gpt-5.6-cyber`, respectively. As new models are released through the Daybreak program, these aliases will be updated to point to the latest models, with pricing adjusted to match each underlying model.
 
 To estimate vision model input costs, use the image input cost calculator.
 
