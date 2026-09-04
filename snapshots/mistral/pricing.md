@@ -51,6 +51,14 @@ I'm a student
 - $30 /mo in API credits.
 - Chat and email support.
 
+- More access and usage.
+- More messages and web searches.
+- Get more complex tasks done.
+- All-day coding in the CLI, IDE, or on web.
+- More image generations.
+- $15 /mo in API credits.
+- Chat and email support.
+
 Start now
 
 Team
