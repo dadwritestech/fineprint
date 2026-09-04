@@ -74,6 +74,23 @@ curl https://api.openai.com/v1/fine_tuning/model_limits \
 
 ## Error mitigation
 
+### Handle rapid traffic increases and model overload
+
+The API can return `slow_down` when your request rate increases too quickly, or `server_is_overloaded` when the requested model is temporarily overloaded. Check the HTTP status and `error.code` to tell these conditions apart:
+
+| HTTP status | Error type | Error code | What it means | What to do |
+|---|---|---|---|---|
+| `429` | `rate_limit_error` | `slow_down` | Your request rate increased too quickly. | Follow `Retry-After` when it's present, reduce your request rate, and then increase it gradually. |
+| `503` | `service_unavailable_error` | `server_is_overloaded` | The requested model is temporarily overloaded. | Follow `Retry-After` when it's present, then retry. If the error continues, increase the delay between retry attempts. |
+
+If `Retry-After` is missing, increase the delay between retries and add a small random delay.
+
+A `slow_down` error can occur even when your traffic is within its requests-per-minute and tokens-per-minute limits. It reflects how quickly traffic increased, not whether you exhausted those limits.
+
+As a rule of thumb, once your traffic reaches 1 million input tokens per minute (TPM), increase it by no more than 50% every 15 minutes. The exact point at which the ramp-rate limit applies can vary by model and traffic conditions.
+
+Enterprise customers whose pay-as-you-go traffic routinely hits ramp-rate limits can consider Scale Tier for more predictable capacity on eligible models. For GPT-5.6 and later models, see Reserved Tier. Capacity tiers don't change how you should handle a `slow_down` response: follow `Retry-After` when it's present, reduce traffic, and ramp gradually.
+
 ### What are some steps I can take to mitigate this?
 
 The OpenAI Cookbook has a Python notebook that explains how to avoid rate limit errors, as well an example Python script for staying under rate limits while batch processing API requests.
@@ -101,8 +118,6 @@ This approach has many benefits:
 Note that unsuccessful requests contribute to your per-minute limit, so continuously resending a request won't work.
 
 Below are a few example solutions for Python that use exponential backoff.
-
-Example 1: Using the Tenacity library
 
 Tenacity is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything. To add exponential backoff to your requests, you can use the `tenacity.retry` decorator. The below example uses the `tenacity.wait_random_exponential` function to add random exponential backoff to a request.
 
@@ -148,8 +163,6 @@ completion_with_backoff(
 
 Note that the Tenacity library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
 
-Example 2: Using the backoff library
-
 Another python library that provides function decorators for backoff and retry is backoff:
 
 Using the Tenacity library
@@ -187,8 +200,6 @@ completions_with_backoff(
 ```
 
 Like Tenacity, the backoff library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
-
-Example 3: Manual backoff implementation
 
 If you don't want to use third-party libraries, you can implement your own backoff logic following this example:
 
