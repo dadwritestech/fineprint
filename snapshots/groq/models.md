@@ -36,6 +36,8 @@ Note: Production models are intended for use in your production environments. Th
 
 | MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE |
 |---|---|---|---|---|---|---|
+| Llama 3.1 8BEnterprisellama-3.1-8b-instant | 560 | ContactSales | ContactSales | 131,072 | 131,072 | - |
+| Llama 3.3 70BEnterprisellama-3.3-70b-versatile | 280 | ContactSales | ContactSales | 131,072 | 32,768 | - |
 | GPT OSS 120Bopenai/gpt-oss-120b | 500 | $0.15 input$0.60 output | 250K TPM1K RPM | 131,072 | 65,536 | - |
 | GPT OSS 20Bopenai/gpt-oss-20b | 1000 | $0.075 input$0.30 output | 250K TPM1K RPM | 131,072 | 65,536 | - |
 | Whisperwhisper-large-v3 | - | $0.111 per hour | 200K ASH300 RPM | - | - | 100 MB |
@@ -63,6 +65,7 @@ Note: Preview models are intended for evaluation purposes only and should not be
 | MiniMax M2.7Enterpriseminimaxai/minimax-m2.7 | 260 | ContactSales | ContactSales | 196,608 | 131,072 | - |
 | Safety GPT OSS 20Bopenai/gpt-oss-safeguard-20b | 1000 | $0.075 input$0.30 output | 150K TPM1K RPM | 131,072 | 65,536 | - |
 | Qwen/Qwen3.6-27Bqwen/qwen3.6-27b | 500 | $0.60 input$3.00 output | 250K TPM1K RPM | 131,072 | 16,384 | 20 MB |
+| Qwen/Qwen3.8-27Bqwen/qwen3.8-27b | 450 | $0.80 input$4.00 output | 250K TPM1K RPM | 131,042 | 16,384 | 20 MB |
 
 Deprecated models are models that are no longer supported or will no longer be supported in the future. See our deprecation guidelines and deprecated models here.
 
