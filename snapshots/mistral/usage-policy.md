@@ -1,5 +1,7 @@
 <!-- fineprint snapshot: mistral/usage-policy | source: https://legal.mistral.ai/terms/usage-policy -->
 
+TermsAI ModelsAI Systems
+
 ## Scope
 
 Our usage policy (the "Usage Policy") applies to:
