@@ -86,6 +86,7 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Text-out models |  |
 | Gemini 3.1 Pro Preview | 5,000,000 |
 | Gemini 3.5 Flash-Lite | 10,000,000 |
+| Gemini 3.8 Flash | 3,000,000 |
 | Gemini 3.7 Flash | 3,000,000 |
 | Gemini 3.1 Flash Lite | 10,000,000 |
 | Gemini 3.1 Flash Lite Preview | 10,000,000 |
@@ -118,6 +119,8 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Gemini 3.5 Flash-Lite | 500,000,000 |
 | Gemini 3.1 Flash Lite | 500,000,000 |
 | Gemini 3.1 Flash Lite Preview | 500,000,000 |
+| Gemini 3.8 Flash | 400,000,000 |
+| Gemini 3.7 Flash | 400,000,000 |
 | Gemini 3.6 Flash | 400,000,000 |
 | Gemini 3.5 Flash | 400,000,000 |
 | Gemini 2.5 Pro | 500,000,000 |
@@ -147,6 +150,8 @@ Batch API requests are subject to their own rate limits, separate from the non-b
 | Gemini 3.5 Flash-Lite | 1,000,000,000 |
 | Gemini 3.1 Flash Lite | 1,000,000,000 |
 | Gemini 3.1 Flash Lite Preview | 1,000,000,000 |
+| Gemini 3.8 Flash | 1,000,000,000 |
+| Gemini 3.7 Flash | 1,000,000,000 |
 | Gemini 3.6 Flash | 1,000,000,000 |
 | Gemini 3.5 Flash | 1,000,000,000 |
 | Gemini 2.5 Pro | 1,000,000,000 |
@@ -183,4 +188,4 @@ We offer no guarantees about increasing your rate limit, but we'll do our best t
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-08-18 UTC.
+Last updated 2026-09-02 UTC.
