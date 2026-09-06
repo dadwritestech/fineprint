@@ -66,6 +66,7 @@ Everything on Teams, plus:
 - ✓ Auto-run, browser, and network controls
 - ✓ Audit logs and service accounts
 - ✓ AI code tracking API
+- ✓ Access, network, and audit controls for Grok Bot
 - ✓ Priority support and account management
 
 Contact Sales
