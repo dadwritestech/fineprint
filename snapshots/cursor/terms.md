@@ -11,6 +11,8 @@ Please also carefully read the sections below regarding Limitation of Liability 
 
 If you are using the Service as part of your work for a company or organization that has a Master Services Agreement ("MSA") with Anysphere, your use of the Service is governed by that MSA.
 
+If you enable or access Grok Bot, your use of Grok Bot is also subject to the Grok Bot Terms.
+
 If you are entering into these Terms on behalf of an entity, you represent that you have the legal authority to bind that entity.
 
 1. Access and Use
