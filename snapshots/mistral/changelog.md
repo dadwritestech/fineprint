@@ -4,6 +4,12 @@
 
 Find out about all the latest changes to our tool. You may filter by date and type of release.
 
+### Aug 26
+
+## August 31
+
+- OCR 4.1 (`mistral-ocr-4-1`) is now Generally Available. MODEL RELEASED
+
 ### Jul 26
 
 ## July 16
