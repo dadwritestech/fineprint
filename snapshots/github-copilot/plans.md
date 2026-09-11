@@ -445,6 +445,7 @@ Free
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
+- OpenAI GPT-6 Astra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -477,6 +478,7 @@ Pro
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
+- OpenAI GPT-6 Astra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -509,6 +511,7 @@ Pro+
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
+- OpenAI GPT-6 Astra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -541,6 +544,7 @@ Max
 - OpenAI GPT-5.6 Sol
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
+- OpenAI GPT-6 Astra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
