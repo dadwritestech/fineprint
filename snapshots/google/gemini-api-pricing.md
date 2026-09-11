@@ -987,14 +987,13 @@ A fast video generation model.
 
 ## Lyria 3.5
 
-`lyria-3.5-clip-preview` and `lyria-3.5-pro-preview`
+`lyria-3.5`
 
-Google's family of music generation models. Preview models may change before becoming stable and have more restrictive rate limits.
+Google's music generation model.
 
 |  | Free Tier | Paid Tier, per request in USD |
 |---|---|---|
-| Lyria 3.5 Clip Preview (30s) | Not available | $0.04 per song |
-| Lyria 3.5 Pro Preview (Full Song) | Not available | $0.08 per song |
+| Lyria 3.5 (Full Song) | Not available | $0.08 per song |
 | Used to improve our products | Yes | No |
 
 ## Lyria 3
@@ -1071,9 +1070,9 @@ Gemini Robotics ER 2, short for Gemini Robotics Embodied Reasoning 2, is a visio
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
 |---|---|---|
-| Input price | Free of charge | $2.00 (text / image / video / audio) |
-| Output price (including thinking tokens) | Free of charge | $10.00 |
-| Context caching price | Not available | $0.20 $1.00 / 1,000,000 tokens per hour (storage price) |
+| Input price | Free of charge | $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027. |
+| Output price (including thinking tokens) | Free of charge | $5.00 through December 31, 2026. $10.00 starting January 1, 2027. |
+| Context caching price | Not available | $0.10 through December 31, 2026. $0.20 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
 | Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
 | Used to improve our products | Yes | No |
 
@@ -1081,9 +1080,9 @@ Gemini Robotics ER 2, short for Gemini Robotics Embodied Reasoning 2, is a visio
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
 |---|---|---|
-| Input price | Not available | $1.00 (text / image / video / audio) |
-| Output price (including thinking tokens) | Not available | $5.00 |
-| Context caching price | Not available | $0.10 $1.00 / 1,000,000 tokens per hour (storage price) |
+| Input price | Not available | $0.50 (text / image / video / audio) through December 31, 2026. $1.00 (text / image / video / audio) starting January 1, 2027. |
+| Output price (including thinking tokens) | Not available | $2.50 through December 31, 2026. $5.00 starting January 1, 2027. |
+| Context caching price | Not available | $0.05 through December 31, 2026. $0.10 starting January 1, 2027. $0.50 / 1,000,000 tokens per hour (storage price) through December 31, 2026. $1.00 / 1,000,000 tokens per hour (storage price) starting January 1, 2027. |
 | Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
 | Used to improve our products | Yes | No |
 
@@ -1099,8 +1098,8 @@ Gemini Robotics ER 2 Streaming is a vision-language model endpoint for robotics 
 
 |  | Free Tier | Paid Tier, per 1M tokens in USD |
 |---|---|---|
-| Input price | Free of charge | $2.00 (text / image / video / audio) |
-| Output price | Free of charge | $10.00 |
+| Input price | Free of charge | $1.00 (text / image / video / audio) through December 31, 2026. $2.00 (text / image / video / audio) starting January 1, 2027. |
+| Output price | Free of charge | $5.00 through December 31, 2026. $10.00 starting January 1, 2027. |
 | Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
 | Used to improve our products | Yes | No |
 
@@ -1190,4 +1189,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-03 UTC.
+Last updated 2026-09-08 UTC.
