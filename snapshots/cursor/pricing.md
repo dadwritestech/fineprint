@@ -2,7 +2,7 @@
 
 # Pricing
 
-MonthlyYearly
+IndividualTeams & Enterprise
 
 ### Hobby
 
@@ -14,13 +14,11 @@ Includes:
 - ✓ Limited Agent requests
 - ✓ Access to Composer
 
-Download
+Try Cursor
 
-### Individual
+### Pro
 
 $20 / mo.
-
-ProPro+Ultra
 
 Everything in Hobby, plus:
 
@@ -34,42 +32,38 @@ Everything in Hobby, plus:
 
 Get Pro
 
-### Teams
+### Pro+
 
-$40 / user / mo.
+$60 / mo.
 
-StandardPremium
+Everything in Pro, plus:
 
-Everything on Individual, plus:
+- ✓ 3x Pro limits on Agent
+- ✓ Generous limits for Grok
+- ✓ Access to frontier models
+- ✓ Higher Grok Bot usage limits
+- ✓ MCPs, skills, and hooks
+- ✓ Cloud agents
+- ✓ Bugbot on usage-based billing
 
-- ✓ Centralized team billing and administration
-- ✓ Team marketplace for internal rules, skills, and plugins
-- ✓ Cloud agents and automations with shared team context
-- ✓ Grok Bot access
-- ✓ Agentic code reviews with Bugbot
-- ✓ Usage analytics to understand team behavior
-- ✓ Team-wide privacy mode
-- ✓ SAML/OIDC SSO
+Get Pro+
 
-Get Teams
+### Ultra
 
-### Enterprise
+$200 / mo.
 
-Custom
+Everything in Pro, plus:
 
-Everything on Teams, plus:
+- ✓ 20x Pro limits on Agent
+- ✓ Generous limits for Grok
+- ✓ Access to frontier models
+- ✓ Highest Grok Bot usage limits
+- ✓ MCPs, skills, and hooks
+- ✓ Cloud agents
+- ✓ Bugbot on usage-based billing
+- ✓ Priority access to new features
 
-- ✓ Pooled usage
-- ✓ Invoice/PO billing
-- ✓ SCIM seat management
-- ✓ Repository, model, and MCP access controls
-- ✓ Auto-run, browser, and network controls
-- ✓ Audit logs and service accounts
-- ✓ AI code tracking API
-- ✓ Access, network, and audit controls for Grok Bot
-- ✓ Priority support and account management
-
-Contact Sales
+Get Ultra
 
 ## Trusted every day by teams that build world-class software.
 
