@@ -30,7 +30,7 @@ ReasoningConfigurable
 
 Real-time conversations, speech-to-text, and text-to-speech.
 
-AgentStarting at $0.05 / min
+AgentStarting at $0.08 / min
 
 TTS$15.00 / 1M chars
 
