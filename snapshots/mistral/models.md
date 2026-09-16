@@ -20,7 +20,7 @@ Our frontier-class multimodal model optimized for agentic and coding use cases.
 
 Our latest OCR service with paragraph-level bounding boxes, structural block labels, and block-level confidence scores.
 
-### Z.ai GLM 5.2
+### Z.ai GLM 5.3
 
 A third-party open source text model from Z.ai with a 1M-token context window.
 
@@ -43,6 +43,12 @@ A list of all available models, helping you explore their capabilities, performa
 Generalist models
 
 Text and multimodal models for broad reasoning, coding, tool use, and agentic tasks.
+
+### Z.ai GLM 5.3
+
+A third-party open source text model from Z.ai with a 1M-token context window.
+
+v5.3
 
 ### Z.ai GLM 5.2
 
