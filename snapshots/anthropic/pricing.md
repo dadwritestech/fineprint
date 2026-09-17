@@ -10,20 +10,15 @@ Free for everyone
 
 Try Claude
 
-- Chat on web, iOS, Android, and on your desktop
-- Generate code and visualize data
-- Write, edit, and create content
-- Ability to search the web
+- Chat on web, desktop, and mobile
+- Search the web, create files, and run code
 - Memory across conversations
-- Create files and execute code
-- Unlock more from Claude with desktop extensions
-- Connect Slack and Google Workspace services
-- Integrate any context or tool through connectors with remote MCP
-- Extended thinking for complex work
+- Connect your apps and tools
+- Create Artifacts
 
 ### Pro
 
-For everyday productivity
+For everyday work
 
 $17
 
@@ -34,18 +29,17 @@ Try Claude
 Everything in Free, plus:
 
 - More usage*
-- Includes Claude Code
-- Includes Claude Cowork
-- Includes Claude Design
-- Includes Claude Science
-- Access to unlimited projects to organize chats and documents
-- Access to Research
-- Ability to use more Claude models
-- Claude for Microsoft 365
+- Hand off and schedule tasks
+- Claude Design, Slides, Docs
+- Claude Code
+- Claude Science
+- Projects
+- More Claude models
+- Claude in Chrome and Microsoft 365
 
 ### Max
 
-Get the most out of Claude
+For people who work with Claude all day
 
 From $100
 
@@ -82,19 +76,21 @@ Try Claude
 
 | Features | Free | Pro | Max 5x | Max 20x |
 |---|---|---|---|---|
-| Chat on web, iOS, Android and Desktop |  |  |  |  |
-| Claude Code |  |  |  |  |
-| Claude Cowork |  |  |  |  |
-| Claude Design |  |  |  |  |
-| Claude Science |  |  |  |  |
 | @Claude |  |  |  |  |
+| Claude Code |  |  |  |  |
+| Claude Science |  |  |  |  |
+| Claude in Chrome |  |  |  |  |
+| Claude for Microsoft 365 |  |  |  |  |
+| Claude for Microsoft Outlook |  |  |  |  |
+| Chat on web, iOS, Android and Desktop |  |  |  |  |
+| Claude Design, Slides, Docs |  |  |  |  |
 | Ability to search the web |  |  |  |  |
+| Create Artifacts |  |  |  |  |
 | Desktop extensions |  |  |  |  |
 | Voice mode |  |  |  |  |
 | Incognito chats |  |  |  |  |
 | User preferences |  |  |  |  |
-| Artifacts |  |  |  |  |
-| Projects |  |  |  |  |
+| Projects | Up to 5 |  |  |  |
 | Project sharing and collaboration |  |  |  |  |
 | Create and edit files with code execution |  |  |  |  |
 | Research |  |  |  |  |
@@ -103,9 +99,6 @@ Try Claude
 | Connectors |  |  |  |  |
 | Web search |  |  |  |  |
 | Enterprise search |  |  |  |  |
-| Claude in Chrome |  |  |  |  |
-| Claude for Microsoft 365 |  |  |  |  |
-| Claude for Microsoft Outlook |  |  |  |  |
 
 ### Security and administration
 
@@ -131,7 +124,7 @@ Try Claude
 | Credit card | n/a |  |  |  |
 | ACH |  |  |  |  |
 | Invoicing / net terms |  |  |  |  |
-| Billing cycle | n/a | Monthly and annual | Monthly and annual | Monthly and annual |
+| Billing cycle | n/a | Monthly and annual | Monthly | Monthly |
 | Adding seats midterm | n/a | n/a | n/a | n/a |
 
 ### Models and usage
@@ -142,7 +135,7 @@ Try Claude
 | Opus |  |  |  |  |
 | Sonnet |  |  |  |  |
 | Haiku |  |  |  |  |
-| Context window | 200k | 200k | 200k | 200k |
+| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
 | Usage credits |  |  |  |  |
 | Priority access at high traffic times |  |  |  |  |
 | User and organizational level spend controls |  |  |  |  |
@@ -170,10 +163,10 @@ $100
 
 Per seat / month if billed annually. $125 if billed monthly.
 
-- Includes Claude Code and Claude Cowork
-- Includes Claude Design
-- Includes Claude Science
-- Connect Microsoft 365, @Claude, and more
+- Claude Code and Claude Cowork
+- Claude Design, Slides, and Docs
+- Claude Science
+- Microsoft 365, @Claude, and more
 - Enterprise search across your organization
 - Central billing and administration
 - Single sign-on (SSO)
@@ -190,7 +183,7 @@ Get Enterprise planChat with buying specialist
 
 Seat price + usage at API rates
 
-$20/seat. Usage cost scales with model and task.
+US$20/seat/month, billed annually. Usage cost scales with model and task.
 
 All Team plan features, plus:
 
@@ -236,19 +229,21 @@ Contact sales
 
 | Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
 |---|---|---|---|
-| Chat on web, iOS, Android and Desktop |  |  |  |
-| Claude Code |  |  |  |
-| Claude Cowork |  |  |  |
-| Claude Design |  |  |  |
-| Claude Science |  |  |  |
 | @Claude |  |  |  |
+| Claude Code |  |  |  |
+| Claude Science |  |  |  |
 | Claude Security |  |  |  |
+| Claude in Chrome |  |  |  |
+| Claude for Microsoft 365 |  |  |  |
+| Claude for Microsoft Outlook |  |  |  |
+| Chat on web, iOS, Android and Desktop |  |  |  |
+| Claude Design, Slides, Docs |  |  |  |
 | Ability to search the web |  |  |  |
+| Create Artifacts |  |  |  |
 | Desktop extensions |  |  |  |
 | Voice mode |  |  |  |
 | Incognito chats |  |  |  |
 | User preferences |  |  |  |
-| Artifacts |  |  |  |
 | Projects |  |  |  |
 | Project sharing and collaboration |  |  |  |
 | Create and edit files with code execution |  |  |  |
@@ -258,9 +253,6 @@ Contact sales
 | Connectors |  |  |  |
 | Web search |  |  |  |
 | Enterprise search |  |  |  |
-| Claude in Chrome |  |  |  |
-| Claude for Microsoft 365 |  |  |  |
-| Claude for Microsoft Outlook |  |  |  |
 
 ### Security and administration
 
@@ -309,11 +301,11 @@ Contact sales
 
 | Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
 |---|---|---|---|
-| Fable |  |  |  |
+| Fable | 50% of weekly limits*on premium seats |  |  |
 | Opus |  |  |  |
 | Sonnet |  |  |  |
 | Haiku |  |  |  |
-| Context window | 200k | 500kon default model | 500kon default model |
+| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
 | Extra usage |  | n/a | n/a |
 | Priority access at high traffic times |  |  |  |
 | User and organizational level spend controls |  |  |  |
@@ -611,26 +603,6 @@ $0.50 / MTok
 Write
 
 $6.25 / MTok
-
-### Opus 4.1
-
-Input
-
-$15 / MTok
-
-Output
-
-$75 / MTok
-
-Prompt caching
-
-Read
-
-$1.50 / MTok
-
-Write
-
-$18.75 / MTok
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
