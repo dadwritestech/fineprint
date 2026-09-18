@@ -103,6 +103,9 @@ Standard
 |---|---|---|---|---|
 | ChatGPT | chat-latest | $5.00 | $0.50 | $30.00 |
 | Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
+| Life Sciences | gpt-rosalind-research | $5.00 | $0.50 | $25.00 |
+
+Billing for `gpt-rosalind-research` begins on October 5, 2026. Cache-write pricing does not apply to this model. Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
 
 Prices per 1M tokens.
 
