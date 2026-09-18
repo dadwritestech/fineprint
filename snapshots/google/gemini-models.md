@@ -12,6 +12,14 @@ Our most intelligent Flash model, engineered for long-horizon software engineeri
 
 New Stable
 
+Default Live API model for most low-latency voice agent experiences without reasoning delays.
+
+New Stable
+
+High-reasoning Live API model for voice interactions, recommended when higher background reasoning is required.
+
+New Stable
+
 Our previous-generation Flash model for complex coding, agentic workflows, and reliable multi-step execution.
 
 Stable
@@ -62,7 +70,7 @@ Low-latency, real-time speech to speech translation model that supports 70+ lang
 
 New
 
-High-quality, low-latency Live API model for real-time dialogue and voice-first AI applications.
+Legacy Live API preview model. We recommend updating to Gemini 3.8 Live.
 
 New
 
@@ -79,6 +87,8 @@ New
 | Model | Endpoint |
 |---|---|
 | Gemini 3.8 Flash | gemini-3.8-flash |
+| Gemini 3.8 Live | gemini-3.8-live |
+| Gemini 3.8 Live Extended Thinking | gemini-3.8-live-extended-thinking |
 | Gemini 3.7 Flash | gemini-3.7-flash |
 | Gemini 3.6 Flash | gemini-3.6-flash |
 | Gemini 3.5 Flash | gemini-3.5-flash |
@@ -123,7 +133,9 @@ This section contains all audio models, including ones that may already be liste
 
 | Model | Description | Endpoint |
 |---|---|---|
-| Gemini 3.1 Flash Live | Our high-quality, low-latency audio-to-audio (A2A) model designed for real-time dialogue and voice-first AI applications. | gemini-3.1-flash-live-preview |
+| Gemini 3.8 Live | The default option for most low-latency voice agent experiences and real-time dialogue without reasoning delays. | gemini-3.8-live |
+| Gemini 3.8 Live Extended Thinking | Our high-reasoning audio-to-audio model, recommended when higher background reasoning is required during live interactions. | gemini-3.8-live-extended-thinking |
+| Gemini 3.1 Flash Live | Legacy audio-to-audio preview model. We recommend updating to Gemini 3.8 Live. | gemini-3.1-flash-live-preview |
 | Gemini 3.1 Flash TTS | Powerful, low-latency speech generation, with natural outputs, steerable prompts, and new expressive audio tags for precise narration control. | gemini-3.1-flash-tts-preview |
 | Gemini 3.5 Transcribe | Low-latency speech-to-text model with utterance-based language detection, speaker diarization, word-level timestamps, and custom vocabulary biasing. | gemini-3.5-transcribe gemini-3.5-transcribe-live |
 | Gemini 2.5 Flash Live | Our flagship Live API model for low-latency, bidirectional voice and video agents with native audio reasoning. | gemini-2.5-flash-native-audio-preview-12-2025 |
@@ -143,7 +155,7 @@ This section contains all generative media models, including ones that may alrea
 | Veo 3.1 Lite | High-efficiency, low-cost, developer-first video generation, editing, and cinematic control from the Veo 3.1 family. | veo-3.1-lite-generate-preview |
 | Gemini Omni Flash | Fast video generation, editing, keyframe interpolation, and extension with native audio. | gemini-omni-1.1-flash |
 | Nano Banana | State-of-the-art native image generation and editing designed for fast, creative workflows. | gemini-2.5-flash-image |
-| Imagen 4 (Deprecated) | Text-to-image model featuring fast and ultra-fast generation and exceptional clarity up to 2K resolution. | imagen-4.0-generate |
+| Imagen 4 (Shut down) | Text-to-image model featuring fast and ultra-fast generation (shut down). | imagen-4.0-generate |
 
 ## Music generation models
 
@@ -209,4 +221,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-04 UTC.
+Last updated 2026-09-17 UTC.
