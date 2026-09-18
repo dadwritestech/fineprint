@@ -23,7 +23,7 @@ For production applications that require higher volumes and advanced features.
 
 Upgrade to Paid
 
-For large-scale deployments with custom needs for security, support, and compliance, powered by Gemini Enterprise Agent Platform.
+For enterprise deployments, powered by Gemini Enterprise Agent Platform.
 
 - check_circleAll features in Paid, plus optional access to:
 - check_circleDedicated support channels
@@ -241,6 +241,25 @@ Our earlier Flash model, built for speed and foundational performance across rou
 * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
 ** Can be tested in Google AI Studio.
+
+## Gemini 3.8 Live, Gemini 3.8 Live Extended Thinking, and Gemini 3.1 Flash Live Preview
+
+`gemini-3.8-live`, `gemini-3.8-live-extended-thinking`, and `gemini-3.1-flash-live-preview`
+
+Try it in Google AI Studio
+
+Our low-latency, audio-to-audio models optimized for real-time voice agents and live dialogue, including background reasoning support with Extended Thinking.
+
+### Standard
+
+|  | Free Tier | Paid Tier, per 1M tokens in USD |
+|---|---|---|
+| Input price | Free of charge | $0.75 (text) $3.00 or $0.005/min (audio) $1.00 or $0.002/min (image/video) |
+| Output price (including thinking tokens) | Free of charge | $4.50 (text) $12.00 or $0.018/min (audio) |
+| Grounding with Google Search* | Supported | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
+| Used to improve our products | Yes | No |
+
+* A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
 ## Gemini 3.5 Live Translate
 
@@ -503,23 +522,6 @@ Our 3rd generation Pro model, built for multimodal understanding, agentic capabi
 * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
 ** Can be tested in Google AI Studio.
-
-## Gemini 3.1 Flash Live Preview
-
-`gemini-3.1-flash-live-preview`
-
-Try it in Google AI Studio
-
-Our low-latency, audio-to-audio model optimized for real-time dialogue with acoustic nuance detection, numeric precision, and multimodal awareness.
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $0.75 (text) $3.00 or $0.005/min (audio) $1.00 or $0.002/min (image/video) |
-| Output price (including thinking tokens) | Free of charge | $4.50 (text) $12.00 or $0.018/min (audio) |
-| Grounding with Google Search* | Supported | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
-| Used to improve our products | Yes | No |
-
-* A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
 
 ## Gemini 3.1 Flash Image (Nano Banana 2) 🍌
 
@@ -1036,28 +1038,6 @@ Our first multimodal embedding model, mapping text, images, video, audio, and PD
 | Video input price | Not available | $6.00 ($0.000395 per frame) |
 | Used to improve our products | Yes | No |
 
-## Gemini Embedding
-
-`gemini-embedding-001`
-
-Try the API
-
-Our first Gemini Embeddings model for text-only use cases.
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $0.15 |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $0.075 |
-| Used to improve our products | Yes | No |
-
 ## Gemini Robotics ER 2 Preview
 
 `gemini-robotics-er-2-preview`
@@ -1102,91 +1082,3 @@ Gemini Robotics ER 2 Streaming is a vision-language model endpoint for robotics 
 | Output price | Free of charge | $5.00 through December 31, 2026. $10.00 starting January 1, 2027. |
 | Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
 | Used to improve our products | Yes | No |
-
-## Gemini Robotics ER 1.6 Preview
-
-`gemini-robotics-er-1.6-preview`
-
-Try it in Google AI Studio
-
-Gemini Robotics ER, short for Gemini Robotics-Embodied Reasoning, is a thinking model that enhances robots' abilities to understand and interact with the physical world.
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | $1.00 (text / image / video) $2.00 (audio) |
-| Output price (including thinking tokens) | Free of charge | $5.00 |
-| Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
-| Used to improve our products | Yes | No |
-
-### Batch
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $0.50 (text / image / video) $1.00 (audio) |
-| Output price (including thinking tokens) | Not available | $2.50 |
-| Grounding with Google Search | Not available | 5,000 free search requests per month (shared across all Gemini 3.x models), then $14 per 1,000 requests. |
-| Used to improve our products | Yes | No |
-
-## Gemini 2.5 Computer Use Preview
-
-`gemini-2.5-computer-use-preview-10-2025`
-
-Our Computer Use model optimized for building browser control agents that automate tasks.
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $1.25, prompts <= 200k tokens $2.50, prompts > 200k token |
-| Output price | Not available | $10.00, prompts <= 200k tokens $15.00, prompts > 200k |
-| Used to improve our products | Yes | No |
-
-## Gemma 4
-
-Our lightweight, state-of the art, open model built from the same technology that powers our Gemini models.
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Free of charge | Not available |
-| Output price | Free of charge | Not available |
-| Context caching price | Free of charge | Not available |
-| Context caching (storage) | Free of charge | Not available |
-| Tuning price | Not available | Not available |
-| Grounding with Google Search | Not available | Not available |
-| Used to improve our products | Yes | No |
-
-## Pricing for tools
-
-Tools are priced at their own rates, applied to the model using them. Check the Models page for which tools are available to each model.
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Google Search | 500 RPD free (limit shared for Flash and Flash-Lite). Not available for Pro. | Gemini 2.5 models:  1,500 RPD free (limit shared for Flash and Flash-Lite). Then $35 / 1,000 grounded prompts   Gemini 3 models:  5,000 free search requests per month (shared across all Gemini models), then $14 per 1,000 requests. |
-| Google Maps | 500 RPD Not available for Pro. | 1,500 RPD free (limit shared for Flash and Flash-Lite) 10,000 RPD free for Pro. Then $25 / 1,000 grounded prompts |
-| Code execution | Free of charge | Code execution is billed at the standard token rates for the selected model. Costs are determined solely by the tool's usage, no charges are accrued for the session runtime. The generated code and execution results are billed as Output tokens when created, and as Input tokens when the model uses them as part of its iterative reasoning process. |
-| URL context | Free of charge | Charged as input tokens per model pricing. |
-| Computer use | Not available | Charged as regular tokens per model pricing (e.g., standard Gemini 3.5 Flash pricing). See the Gemini 2.5 Computer Use Preview pricing table for legacy model rates. |
-| File search | Free of charge | Charged for embeddings at $0.15 / 1M tokens. Retrieved document tokens charged as regular tokens per model pricing. |
-| Custom Tools endpoint (Gemini 3.1 Pro Preview) | Not available | Same as Gemini 3.1 Pro Preview pricing |
-
-## Pricing for agents
-
-Agent usage costs are calculated based on the underlying token consumption and usage of the tools.
-
-|  | Model | Tools |
-|---|---|---|
-| Gemini Deep Research agent | All model inference is charged at standard Gemini list rates, including input, output, and intermediate input / reasoning tokens generated during agentic loops. | Tool usage fees apply per existing pricing structure, maintaining standard distinctions for Search Grounding (retrieved tokens excluded) versus Url_context / File Search (retrieved tokens included in all other tools). |
-| Managed agents in Gemini API | All model inference is charged at standard Gemini list rates, including input, output, and intermediate input / reasoning tokens generated during agentic loops. (See pricing details). | Environment compute (CPU, memory, sandbox execution) is not billed during the preview period. |
-| Antigravity Agent | All model inference is charged at standard Gemini list rates, including input, output, and intermediate input / reasoning tokens generated during agentic loops. (See pricing details). | Environment compute (CPU, memory, sandbox execution) is not billed during the preview period. |
-
-## Notes
-
-- Agentic video understanding: When using agentic video understanding, token usage is variable based on the content loaded by the model rather than full video length. This typically results in up to 88% fewer input tokens for long-form video, though token counts depend on query complexity and dynamic sampling depth (which may exceed 1 FPS for detailed visual segments). See Agentic video understanding.
-- Document token billing: Tokens for the `DOCUMENT` modality (for example, PDFs) are billed at the image token rate. In API responses, these tokens appear under the `DOCUMENT` modality within `promptTokensDetails`.
-- Google AI Studio usage is free of charge in all available regions. See Billing FAQs for details.
-- Prices may differ from the prices listed here and the prices offered on Gemini Enterprise Agent Platform. For Gemini Enterprise Agent Platform prices, see the Gemini Enterprise Agent Platform pricing page.
-- If you are using dynamic retrieval to optimize costs, only requests that contain at least one grounding support URL from the web in their response are charged for Grounding with Google Search. Costs for Gemini always apply. Rate limits are subject to change.
-
-Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
-
-Last updated 2026-09-08 UTC.
