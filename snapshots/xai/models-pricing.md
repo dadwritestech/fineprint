@@ -16,27 +16,43 @@ grok-4.6
 
 Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
 
+Context
+
+500k tokens
+
+Input
+
+$2.00 / 1M tokens
+
+Output
+
+$6.00 / 1M tokens
+
+Reasoning
+
+Configurable
+
 View modelTry in playground
-
-Context500k tokens
-
-Input$2.00 / 1M tokens
-
-Output$6.00 / 1M tokens
-
-ReasoningConfigurable
 
 ### Voice API
 
 Real-time conversations, speech-to-text, and text-to-speech.
 
-AgentStarting at $0.08 / min
+Agent
 
-TTS$15.00 / 1M chars
+$0.08 / min
 
-STT (Batch)$0.10 / hour
+TTS
 
-STT (Streaming)$0.20 / hour
+$15.00 / 1M chars
+
+STT (Batch)
+
+$0.10 / hour
+
+STT (Streaming)
+
+$0.20 / hour
 
 Read docsTry in playground
 
@@ -44,13 +60,21 @@ Read docsTry in playground
 
 Turn ideas into reality with image and video generation.
 
-ModesGeneration & editing
+Modes
 
-SpeedIndustry-leading
+Generation & editing
 
-Image · 1K / 2KStarting at $0.02 / image
+Speed
 
-Video · 480p / 720p / 1080pStarting at $0.05 / sec
+Industry-leading
+
+Image · 1K / 2K
+
+Starting at $0.02 / image
+
+Video · 480p / 720p / 1080p
+
+Starting at $0.05 / sec
 
 Read docsTry in playground
 
