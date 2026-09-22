@@ -4,7 +4,7 @@
 
 The prices listed below are in units of per 1M tokens. A token, the smallest unit of text that the model recognizes, can be a word, a number, or even a punctuation mark. We will bill based on the total number of input and output tokens by the model.
 
-| MODEL | deepseek-flash(1) | deepseek-v4-pro(2) |  |  |
+| MODEL | deepseek-flash(1) | deepseek-v4-pro |  |  |
 |---|---|---|---|---|
 | BASE URL (OpenAI Format) | https://api.deepseek.com |  |  |  |
 | BASE URL (Anthropic Format) | https://api.deepseek.com/anthropic |  |  |  |
@@ -19,21 +19,19 @@ The prices listed below are in units of per 1M tokens. A token, the smallest uni
 | Chat Prefix Completion（Beta） | ✓ | ✓ |  |  |
 | FIM Completion（Beta） | Non-thinking mode only | Non-thinking mode only |  |  |
 | Vision | ✓ | Not supported |  |  |
-| PRICING(3) | 1M INPUT TOKENS (CACHE HIT) | OFF-PEAK | $0.003 | $0.022 |
+| PRICING(2) | 1M INPUT TOKENS (CACHE HIT) | OFF-PEAK | $0.003 | $0.022 |
 | PEAK | $0.006 | $0.044 |  |  |
 | 1M INPUT TOKENS (CACHE MISS) | OFF-PEAK | $0.15 | $0.66 |  |
 | PEAK | $0.3 | $1.32 |  |  |
 | 1M OUTPUT TOKENS | OFF-PEAK | $0.6 | $1.98 |  |
 | PEAK | $1.2 | $3.96 |  |  |
-| Concurrency Limit(4) | 2500 | 500 |  |  |
+| Concurrency Limit(3) | 2500 | 500 |  |  |
 
 (1) Use `deepseek-flash` as the model name. The legacy names `deepseek-v4-flash` and `deepseek-v4-flash-vision-exp` are still accepted, but the corresponding models have been retired, their requests are served by the DeepSeek-V4.1-Flash model and billed at the Flash price.
 
-(2) In response to user demand, we have decided to continue providing API services for DeepSeek V4 Pro after September 14, 2026, with the billing method remaining unchanged. We will provide further notice should there be any changes. Thank you for your understanding and support!
+(2) Off-peak rates are half of the peak rates. Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday, excluding Chinese public holidays. All other hours are off-peak, including weekends and Chinese public holidays in full.
 
-(3) Off-peak rates are half of the peak rates. Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday (all other hours are off-peak).
-
-(4) For more details on concurrency limits, please refer to Rate Limit & Isolation.
+(3) For more details on concurrency limits, please refer to Rate Limit & Isolation.
 
 The expense = number of tokens × price. The corresponding fees will be directly deducted from your topped-up balance or granted balance, with a preference for using the granted balance first when both balances are available.
 
