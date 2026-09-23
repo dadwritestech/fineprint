@@ -4,6 +4,26 @@
 
 This page documents updates to the Gemini API.
 
+## September 18, 2026
+
+- Gemini 2.5 models access update: To ensure reliable performance for everyone, we are limiting access to the 2.5 models to users who have actively used them in the past. These models are not deprecated and will continue to be served until further notice through the API. For any new projects, use our latest models: 3.5 Flash-Lite or 3.8 Flash. This helps us maintain sufficient capacity for both ongoing legacy workflows and new applications.
+
+## September 17, 2026
+
+- Antigravity Agent 09-2026: Released `antigravity-preview-09-2026`, which replaces and deprecates `antigravity-preview-05-2026`.
+  If you run on a remote sandbox (`environment: "remote"`) and read only `output_text` or `model_output` steps, update the agent string and nothing else changes.
+  If you run tools locally (`local_environment`) or parse `function_call` steps, the built-in tools changed. Parameters use PascalCase instead of snake_case, and file edits use line-range replacements instead of full rewrites.
+  | Capability | 05-2026 | 09-2026 |
+|---|---|---|
+| File creation | `write_file(path, content)` | `write_to_file(TargetFile, CodeContent, Overwrite, Description)` |
+| File editing | `write_file(path, content)`, full rewrite | `replace_file_content(TargetFile, StartLine, EndLine, TargetContent, ReplacementContent)` |
+| File reading | `read_file(path, offset, limit)`, byte offsets | `view_file(AbsolutePath, StartLine, EndLine, ContentOffset)` |
+| Directory listing | `list_files(path)` | `list_dir(DirectoryPath)` |
+| File and code search | None, agents used shell commands | `find_by_name(SearchDirectory, Pattern, MaxDepth)` and `grep_search(SearchPath, Query, IsRegex)` |
+| Shell execution | `code_execution(command, timeout_seconds)` | Unchanged |
+| Web search | `google_search(queries)` | Unchanged |
+  See the Antigravity Agent guide. `antigravity-preview-05-2026` shuts down on October 5, 2026, tracked on the deprecations page.
+
 ## September 15, 2026
 
 - Gemini 3.8 Live and Gemini 3.8 Live Extended Thinking generally available (GA): Released two new audio-to-audio models for real-time voice applications using the Live API:
@@ -874,4 +894,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-15 UTC.
+Last updated 2026-09-22 UTC.
