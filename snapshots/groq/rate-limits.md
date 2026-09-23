@@ -37,8 +37,6 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
 | canopylabs/orpheus-arabic-saudi | 10 | 100 | 1.2K | 3.6K | - | - |
 |---|---|---|---|---|---|---|
 | canopylabs/orpheus-v1-english | 10 | 100 | 1.2K | 3.6K | - | - |
-| groq/compound | 30 | 250 | 70K | - | - | - |
-| groq/compound-mini | 30 | 250 | 70K | - | - | - |
 | meta-llama/llama-prompt-guard-2-22m | 30 | 14.4K | 15K | 500K | - | - |
 | meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K | - | - |
 | openai/gpt-oss-120b | 30 | 1K | 8K | 200K | - | - |
