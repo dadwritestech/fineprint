@@ -323,14 +323,6 @@ Batch processing
 
 Next generation intelligence for long-running agents
 
-Input
-
-$10 / MTok
-
-Output
-
-$50 / MTok
-
 Prompt caching
 
 Read
@@ -341,39 +333,39 @@ Write
 
 $12.50 / MTok
 
-### Opus 5
-
-Ideal for complex agentic coding and enterprise work
-
 Input
 
-$5 / MTok
+$10 / MTok
 
 Output
 
-$25 / MTok
+$50 / MTok
+
+### Opus 5.5
+
+Daily driver for agentic coding and enterprise work
 
 Prompt caching
 
 Read
 
-$0.50 / MTok
+$0.20 / MTok
 
 Write
 
-$6.25 / MTok
+$5 / MTok
+
+Input
+
+$4 / MTok
+
+Output
+
+$20 / MTok
 
 ### Sonnet 5
 
 High-performance model for coding and agents
-
-Input
-
-$2 / MTok
-
-Output
-
-$10 / MTok
 
 Prompt caching
 
@@ -385,17 +377,17 @@ Write
 
 $2.50 / MTok
 
-### Haiku 4.5
-
-Fastest, most cost-efficient model
-
 Input
 
-$1 / MTok
+$2 / MTok
 
 Output
 
-$5 / MTok
+$10 / MTok
+
+### Haiku 4.5
+
+Fastest, most cost-efficient model
 
 Prompt caching
 
@@ -407,9 +399,17 @@ Write
 
 $1.25 / MTok
 
+Input
+
+$1 / MTok
+
+Output
+
+$5 / MTok
+
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
-Get up to 2.5x faster speeds with fast mode for Opus 5 at 2x standard pricing. Learn more.
+Get up to 2.5x faster speeds with fast mode for Opus 5.5 at 2x standard pricing. Learn more.
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
@@ -460,15 +460,29 @@ Learn moreContact sales
 
 Learn moreExplore detailed pricing
 
-### Fable 5
+### Opus 5
+
+Ideal for complex agentic coding and enterprise work
+
+Prompt caching
+
+Read
+
+$0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 Input
 
-$10 / MTok
+$5 / MTok
 
 Output
 
-$50 / MTok
+$25 / MTok
+
+### Fable 5
 
 Prompt caching
 
@@ -480,39 +494,39 @@ Write
 
 $12.50 / MTok
 
-### Opus 4.8
-
 Input
 
-$5 / MTok
+$10 / MTok
 
 Output
 
-$25 / MTok
-
-Prompt caching
-
-Read
-
-$0.50 / MTok
-
-Write
-
-$6.25 / MTok
+$50 / MTok
 
 Save 50% with batch processing. Learn more
 
 Batch processing
 
-### Sonnet 4.6
+### Opus 4.8
+
+Prompt caching
+
+Read
+
+$0.50 / MTok
+
+Write
+
+$6.25 / MTok
 
 Input
 
-$3 / MTok
+$5 / MTok
 
 Output
 
-$15 / MTok
+$25 / MTok
+
+### Sonnet 4.6
 
 Prompt caching
 
@@ -523,17 +537,17 @@ $0.30 / MTok
 Write
 
 $3.75 / MTok
+
+Input
+
+$3 / MTok
+
+Output
+
+$15 / MTok
 
 ### Opus 4.7
 
-Input
-
-$5 / MTok
-
-Output
-
-$25 / MTok
-
 Prompt caching
 
 Read
@@ -543,17 +557,17 @@ $0.50 / MTok
 Write
 
 $6.25 / MTok
+
+Input
+
+$5 / MTok
+
+Output
+
+$25 / MTok
 
 ### Opus 4.6
 
-Input
-
-$5 / MTok
-
-Output
-
-$25 / MTok
-
 Prompt caching
 
 Read
@@ -564,15 +578,15 @@ Write
 
 $6.25 / MTok
 
-### Sonnet 4.5
-
 Input
 
-$3 / MTok
+$5 / MTok
 
 Output
 
-$15 / MTok
+$25 / MTok
+
+### Sonnet 4.5
 
 Prompt caching
 
@@ -584,15 +598,15 @@ Write
 
 $3.75 / MTok
 
-### Opus 4.5
-
 Input
 
-$5 / MTok
+$3 / MTok
 
 Output
 
-$25 / MTok
+$15 / MTok
+
+### Opus 4.5
 
 Prompt caching
 
@@ -603,6 +617,14 @@ $0.50 / MTok
 Write
 
 $6.25 / MTok
+
+Input
+
+$5 / MTok
+
+Output
+
+$25 / MTok
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
