@@ -22,7 +22,7 @@ Our latest OCR service with paragraph-level bounding boxes, structural block lab
 
 ### Z.ai GLM 5.3
 
-A third-party open source text model from Z.ai with a 1M-token context window.
+A third-party open weight text model from Z.ai with a 1M-token context window.
 
 ### Mistral Small 4
 
@@ -46,13 +46,13 @@ Text and multimodal models for broad reasoning, coding, tool use, and agentic ta
 
 ### Z.ai GLM 5.3
 
-A third-party open source text model from Z.ai with a 1M-token context window.
+A third-party open weight text model from Z.ai with a 1M-token context window.
 
 v5.3
 
 ### Z.ai GLM 5.2
 
-A third-party open source text model from Z.ai with a 1M-token context window.
+A third-party open weight text model from Z.ai with a 1M-token context window.
 
 v5.2
 
