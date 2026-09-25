@@ -1,84 +1,5 @@
 <!-- fineprint snapshot: github-copilot/plans | source: https://github.com/features/copilot/plans -->
 
-# Take flight with GitHub Copilot
-
-### Free
-
-For getting started with GitHub Copilot.
-
-$0USD
-
-Get startedOpen in VS Code
-
-#### What's included:
-
-- 2,000 completions per month
-- Access to Haiku 4.5, GPT-5 mini, and more
-- Copilot CLI
-- Community Support
-
-No credit card required. Verified students have access to the GitHub Copilot Student plan. Learn more
-
-### Pro
-
-For everyday coding with agents in GitHub Copilot.
-
-$10USDper user / month
-
-Get started
-
-#### Everything in Free and:
-
-- Access to Cloud agent and code review
-- Unlimited code completion and next edit suggestions
-- Access to 3rd party agents (Claude Code and Codex)
-- Model selection
-- $15 monthly total credits for Pro
-
-### Pro+
-
-For more complex development with premium models.
-
-$39USDper user / month
-
-Get started
-
-#### Everything in Pro and:
-
-- Access to premium models, including Opus
-- Audit logs
-- 4x+ included usage than Pro
-- $70 monthly total credits for Pro+
-
-### Max
-
-For sustained, high-volume agent workflows with GitHub Copilot.
-
-$100USDper user / month
-
-Get started
-
-#### Everything in Pro+ and:
-
-- Priority access to new models and features
-- 2.9x+ included usage than Pro+
-- $200 monthly total credits for Max
-
-Best value
-
-GitHub Copilot is available on your favorite platforms:
-
-- GitHub
-- VS Code
-- Visual Studio
-- Xcode
-- JetBrains IDEs
-- Neovim
-- Eclipse
-- Raycast
-- SQL Server Management Studio
-- Zed
-
 Compare features
 
 Free
@@ -435,6 +356,7 @@ Free
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - Anthropic Claude Opus 5
+- Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -446,6 +368,8 @@ Free
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
+- OpenAI GPT-6 Luna
+- OpenAI GPT-6 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -453,6 +377,7 @@ Free
 - Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
+- xAI Grok 4.7
 - Kimi K2.7 Code
 - Kimi K3
 
@@ -468,6 +393,7 @@ Pro
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - Anthropic Claude Opus 5
+- Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -479,6 +405,8 @@ Pro
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
+- OpenAI GPT-6 Luna
+- OpenAI GPT-6 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -486,6 +414,7 @@ Pro
 - Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
+- xAI Grok 4.7
 - Kimi K2.7 Code
 - Kimi K3
 
@@ -501,6 +430,7 @@ Pro+
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - Anthropic Claude Opus 5
+- Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -512,6 +442,8 @@ Pro+
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
+- OpenAI GPT-6 Luna
+- OpenAI GPT-6 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -519,6 +451,7 @@ Pro+
 - Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
+- xAI Grok 4.7
 - Kimi K2.7 Code
 - Kimi K3
 
@@ -534,6 +467,7 @@ Max
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
 - Anthropic Claude Opus 5
+- Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
 - OpenAI GPT-5.2-Codex
@@ -545,6 +479,8 @@ Max
 - OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
+- OpenAI GPT-6 Luna
+- OpenAI GPT-6 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -552,6 +488,7 @@ Max
 - Google Gemini 3.8 Flash
 - xAI Grok 4.5
 - xAI Grok 4.6
+- xAI Grok 4.7
 - Kimi K2.7 Code
 - Kimi K3
 
@@ -697,7 +634,7 @@ No, GitHub Copilot generates suggestions using probabilistic determination.
 
 GitHub Copilot has multiple offerings for organizations and an offering for individual developers. All the offerings include both inline suggestion and chat assistance. The primary differences between the organization offerings and the individual offering are license management, policy management, and IP indemnity.
 
-Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with GitHub Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions and will offer customers access to fine-tuned custom, private models for inline suggestions.
+Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with GitHub Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions. For more details, refer to the documentation.
 
 GitHub Copilot Individual is designed for individual developers, freelancers, students, educators, and open source maintainers. The plan includes all the features of GitHub Copilot Business except organizational license management, policy management, and IP indemnity.
 
@@ -954,7 +891,7 @@ No, GitHub Copilot generates suggestions using probabilistic determination.
 
 GitHub Copilot has multiple offerings for organizations and an offering for individual developers. All the offerings include both inline suggestion and chat assistance. The primary differences between the organization offerings and the individual offering are license management, policy management, and IP indemnity.
 
-Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with GitHub Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions and will offer customers access to fine-tuned custom, private models for inline suggestions.
+Organizations can choose between GitHub Copilot Business and GitHub Copilot Enterprise. GitHub Copilot Business primarily features GitHub Copilot in the coding environment - that is the IDE, CLI and GitHub Mobile. GitHub Copilot Enterprise includes everything in GitHub Copilot Business. It also adds an additional layer of customization for organizations and integrates into GitHub.com as a chat interface to allow developers to converse with GitHub Copilot throughout the platform. GitHub Copilot Enterprise can index an organization's codebase for a deeper understanding of the customer's knowledge for more tailored suggestions. For more details, refer to the documentation.
 
 GitHub Copilot Individual is designed for individual developers, freelancers, students, educators, and open source maintainers. The plan includes all the features of GitHub Copilot Business except organizational license management, policy management, and IP indemnity.
 
