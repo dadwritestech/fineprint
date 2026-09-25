@@ -144,9 +144,9 @@ Payment Disputes. In the event of a good-faith dispute as to an invoice, Custome
 
 13.2. Customer Notification. Mistral AI will notify Customer of any material updates to the Terms either via email or a Customer Account notification.
 
-13.3. Update Effective Date. Material updates to the Terms become effective thirty (30) days after notice is provided to Customer. Any updates that are not material become effective immediately upon being posted at https://legal.mistral.ai/terms.
+13.3. Update Effective Date. Material updates to the Terms become effective thirty (30) days after notice is provided to Customer. Any updates (i) that are not material or (ii) made for compliance with applicable law or to address a material security risk become effective immediately upon being posted at https://legal.mistral.ai/terms.
 
-13.4. Objection to Updates. If any update has a material adverse effect on Customer, then Customer may object to the update by notifying Mistral AI within thirty (30) days after Mistral AI provides notice or otherwise posts such updated Terms at https://legal.mistral.ai/terms. If Customer notifies Mistral AI as described in this Section 13.4 (Objection to Updates), then Customer (i) shall not use any new features, functionalities, or Mistral AI Products introduced after the effective date of the modifications and (ii) will remain governed by the Terms in effect immediately prior to the update until the earlier of (a) the end of the then-current term specified in an Order Form, or (b) for twelve (12) months after Customer provides such objection notice to Mistral AI.
+13.4. Objection to Updates. If Customer does not agree to an update to the Terms, Customer's sole and exclusive remedy is to stop using the Mistral AI Products and terminate the Terms at any time before the update becomes effective. Such termination will take effect on the date the update becomes effective. Customer's continued use of the Mistral AI Products on or after the effective date of the update constitutes Customer's acceptance of the updated Terms.
 
 ## 14. General Terms
 
