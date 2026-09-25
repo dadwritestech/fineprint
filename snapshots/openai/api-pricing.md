@@ -10,11 +10,10 @@ Standard
 |---|---|---|---|---|---|---|---|---|
 | Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
 | gpt-6-astra | $10.00 | $1.00 | $12.50 | $50.00 | $20.00 | $2.00 | $25.00 | $75.00 |
-| gpt-5.6-sol | $4.00 | $0.40 | $5.00 | $20.00 | $8.00 | $0.80 | $10.00 | $30.00 |
-| gpt-5.6-terra | $2.00 | $0.20 | $2.50 | $12.00 | $4.00 | $0.40 | $5.00 | $18.00 |
-| gpt-5.6-luna | $0.20 | $0.02 | $0.25 | $1.20 | $0.40 | $0.04 | $0.50 | $1.80 |
+| gpt-6-sol | $2.00 | $0.20 | $2.50 | $10.00 | $4.00 | $0.40 | $5.00 | $15.00 |
+| gpt-6-luna | $0.10 | $0.01 | $0.125 | $0.50 | $0.20 | $0.02 | $0.25 | $0.75 |
 
-Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS. Bedrock pricing in commercial regions matches OpenAI direct pricing for equivalent services.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.  GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
+Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. For GPT-6 Sol and Luna, EU data residency is available only with Standard processing. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS. Bedrock pricing in commercial regions matches OpenAI direct pricing for equivalent services.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.  GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
 
 Our latest Daybreak models.
 
@@ -59,17 +58,6 @@ For image generation cost estimates, use the calculator in the image generation 
 | Text | $5.00 | $1.25 | - |  |
 | gpt-image-2.5-flare | Image | $8.00 | $2.00 | $30.00 |
 | Text | $5.00 | $1.25 | - |  |
-
-Prices per second.
-
-Standard
-
-| Model | Size | Portrait | Landscape | Price per second |
-|---|---|---|---|---|
-| sora-2 | 720p | 720x1280 | 1280x720 | $0.10 |
-| sora-2-pro | 720p | 720x1280 | 1280x720 | $0.30 |
-| 1024p | 1024x1792 | 1792x1024 | $0.50 |  |
-| 1080p | 1080x1920 | 1920x1080 | $0.70 |  |
 
 Prices per 1M tokens unless noted.
 
