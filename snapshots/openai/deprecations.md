@@ -175,12 +175,12 @@ On March 24th, 2026, we notified developers using the Videos API and Sora 2 vide
 
 | Shutdown date | Model / system | Recommended replacement |
 |---|---|---|
-| 2026-09-24 | Videos API | --- |
-| 2026-09-24 | `sora-2` | --- |
-| 2026-09-24 | `sora-2-pro` | --- |
-| 2026-09-24 | `sora-2-2025-10-06` | --- |
-| 2026-09-24 | `sora-2-2025-12-08` | --- |
-| 2026-09-24 | `sora-2-pro-2025-10-06` | --- |
+| 2026-09-24 | Videos API | — |
+| 2026-09-24 | `sora-2` | — |
+| 2026-09-24 | `sora-2-pro` | — |
+| 2026-09-24 | `sora-2-2025-10-06` | — |
+| 2026-09-24 | `sora-2-2025-12-08` | — |
+| 2026-09-24 | `sora-2-pro-2025-10-06` | — |
 
 ### 2025-09-26: Legacy GPT model snapshots
 
@@ -421,7 +421,7 @@ Pricing for the replacement `gpt-3.5-turbo-instruct` model can be found on the p
 | 2024-01-04 | `babbage` | $0.50 / 1M tokens | `babbage-002` |
 | 2024-01-04 | `curie` | $2.00 / 1M tokens | `davinci-002` |
 | 2024-01-04 | `davinci` | $20.00 / 1M tokens | `davinci-002` |
-| 2024-01-04 | `code-davinci-002` | --- | `gpt-3.5-turbo-instruct` |
+| 2024-01-04 | `code-davinci-002` | — | `gpt-3.5-turbo-instruct` |
 
 Pricing for the replacement `babbage-002` and `davinci-002` models can be found on the pricing page.
 
