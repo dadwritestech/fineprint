@@ -4,6 +4,14 @@
 
 This page documents updates to the Gemini API.
 
+## September 22, 2026
+
+- Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS generally available (GA): Released our next-generation text-to-speech (TTS) audio models and the Gemini API Voices endpoint (`/v1beta/voices`):
+  - Gemini 3.8 Flash TTS (`gemini-3.8-flash-tts`): Flagship creative TTS model engineered for studio-grade voice fidelity, nuanced acting, regional dialects, and long-form multi-turn stability.
+  - Gemini 3.8 Flash-Lite TTS (`gemini-3.8-flash-lite-tts`): Fast, cost-efficient TTS model built to replace `gemini-3.1-flash-tts-preview` for high-throughput production and real-time voice agent cascades.
+  - Voice design, Voice replication, and the Extended Voice Library: Create persistent custom vocal personas from text prompts, replicate voices with consent verification, and query 150+ prebuilt and custom voices.
+  See the Text-to-speech guide to get started.
+
 ## September 18, 2026
 
 - Gemini 2.5 models access update: To ensure reliable performance for everyone, we are limiting access to the 2.5 models to users who have actively used them in the past. These models are not deprecated and will continue to be served until further notice through the API. For any new projects, use our latest models: 3.5 Flash-Lite or 3.8 Flash. This helps us maintain sufficient capacity for both ongoing legacy workflows and new applications.
@@ -894,4 +902,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-22 UTC.
+Last updated 2026-09-23 UTC.
