@@ -363,7 +363,7 @@ Output
 
 $20 / MTok
 
-### Sonnet 5
+### Sonnet 5.5
 
 High-performance model for coding and agents
 
@@ -460,6 +460,28 @@ Learn moreContact sales
 
 Learn moreExplore detailed pricing
 
+### Sonnet 5
+
+High-performance model for coding and agents
+
+Prompt caching
+
+Read
+
+$0.20 / MTok
+
+Write
+
+$2.50 / MTok
+
+Input
+
+$2 / MTok
+
+Output
+
+$10 / MTok
+
 ### Opus 5
 
 Ideal for complex agentic coding and enterprise work
@@ -482,6 +504,10 @@ Output
 
 $25 / MTok
 
+Save 50% with batch processing. Learn more
+
+Batch processing
+
 ### Fable 5
 
 Prompt caching
@@ -501,10 +527,6 @@ $10 / MTok
 Output
 
 $50 / MTok
-
-Save 50% with batch processing. Learn more
-
-Batch processing
 
 ### Opus 4.8
 
