@@ -352,6 +352,7 @@ Free
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
+- Anthropic Claude Sonnet 5.5
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -370,6 +371,7 @@ Free
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
+- OpenAI GPT-6.1 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -389,6 +391,7 @@ Pro
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
+- Anthropic Claude Sonnet 5.5
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -407,6 +410,7 @@ Pro
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
+- OpenAI GPT-6.1 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -426,6 +430,7 @@ Pro+
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
+- Anthropic Claude Sonnet 5.5
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -444,6 +449,7 @@ Pro+
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
+- OpenAI GPT-6.1 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
@@ -463,6 +469,7 @@ Max
 - Anthropic Claude Sonnet 4
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
+- Anthropic Claude Sonnet 5.5
 - Anthropic Claude Opus 4.7
 - Anthropic Claude Opus 4.8
 - Anthropic Claude Opus 4.8 (fast mode) (Preview)
@@ -481,6 +488,7 @@ Max
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
+- OpenAI GPT-6.1 Sol
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.5 Flash
 - Google Gemini 3.6 Flash
