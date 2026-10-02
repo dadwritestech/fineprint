@@ -6,13 +6,13 @@
 
 View as Markdown
 
-Create API keyMeet grok-4.6
+Create API keyMeet grok-4.7
 
-### Grok 4.6
+### Grok 4.7
 
 New
 
-grok-4.6
+grok-4.7
 
 Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
 
@@ -74,13 +74,13 @@ Starting at $0.02 / image
 
 Video · 480p / 720p / 1080p
 
-Starting at $0.05 / sec
+Starting at $0.02 / sec
 
 Read docsTry in playground
 
 ## Which model should I choose?
 
-Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we've built.
+Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.7. It is the most capable model we've built.
 
 Use case
 
@@ -88,11 +88,11 @@ Model
 
 Code
 
-Grok 4.6
+Grok 4.7
 
 Chat
 
-Grok 4.6
+Grok 4.7
 
 Images
 
@@ -121,8 +121,10 @@ Grok Voice API
   - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
 - Batch API
   - Not every model accepts Batch API requests. See Details on each model page.
+- Encrypted reasoning
+  - On the Responses API, `grok-4.7` always returns `reasoning.encrypted_content`, even when `include` does not list it. See Encrypted reasoning content.
 
-The knowledge cut-off date of Grok 4.6 is February 1, 2026.
+The knowledge cut-off date of Grok 4.7 is May 2026.
 
 ## Model Aliases
 
@@ -134,4 +136,4 @@ Some models have aliases to help users automatically migrate to the next version
 
 For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
 
-Last updated: August 21, 2026
+Last updated: September 21, 2026
