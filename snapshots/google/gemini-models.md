@@ -184,7 +184,6 @@ This section contains all music generation models, including ones that may alrea
 
 | Model | Description | Endpoint |
 |---|---|---|
-| Computer Use | A specialized model that can "see" a digital screen and perform UI actions like clicking, typing, and navigating to automate complex browser tasks. | gemini-2.5-computer-use-preview-10-2025 |
 | Gemini Deep Research | An agentic model that autonomously plans and executes multi-step research across hundreds of sources to produce cited, interactive reports. | deep-research-preview-04-2026 |
 | Gemini Deep Research Max | Maximum comprehensiveness for automated context gathering and synthesis across hundreds of sources. | deep-research-max-preview-04-2026 |
 | Antigravity Agent | A general-purpose managed agent that autonomously plans, reasons, runs code, manages files, and browses the web inside a secure, isolated Linux sandbox. | antigravity-preview-09-2026 |
@@ -202,6 +201,7 @@ This section contains all music generation models, including ones that may alrea
 
 | Model | Description | Endpoint |
 |---|---|---|
+| Computer Use (Shut down) | A specialized model that can "see" a digital screen and perform UI actions like clicking, typing, and navigating to automate complex browser tasks. | gemini-2.5-computer-use-preview-10-2025 |
 | Gemini 2.0 Flash (Shut down) | Our second generation workhorse model, with next-gen features and improved capabilities, including superior speed, native tool use, and a 1M token context window. | gemini-2.0-flash |
 | Gemini 2.0 Flash-Lite (Shut down) | Our fastest second generation model, optimized for cost efficiency and low latency. | gemini-2.0-flash-lite |
 | Gemini 3.1 Flash-Lite Preview (Shut down) | Our most cost-efficient multimodal model, offering the fastest performance for high-frequency, lightweight tasks. | gemini-3.1-flash-lite-preview |
@@ -233,4 +233,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-24 UTC.
+Last updated 2026-10-01 UTC.
