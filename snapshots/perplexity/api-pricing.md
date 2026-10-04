@@ -10,7 +10,7 @@ Router API usage is billed per token at each model's published rates — there a
 
 ## Agent API Pricing
 
-The Agent API provides access to third-party models from providers including OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA with transparent, token-based pricing at direct provider rates with no markup.
+The Agent API provides access to third-party models from providers including OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA with transparent, token-based pricing at each model's published rates.
 
 ### Model Pricing
 
@@ -26,7 +26,9 @@ When using tools with the Agent API:
 
 | Tool | Price | Description |
 |---|---|---|
-| `web_search` | $0.0025 per invocation | Performs web searches to retrieve current information |
+| `web_search` (standard) | $0.0025 per invocation | Standard web search with `search_type: "web"`. $2.50 per 1,000 invocations |
+| `web_search` (Fast Search) | $0.001 per invocation | The same tool with `search_type: "fast"`. $1.00 per 1,000 invocations. See Fast Search |
+| `image_search` | $0.0025 per successful invocation | Finds structured image results with domain, format, and safe-search filters. $2.50 per 1,000 successful invocations |
 | `fetch_url` | $0.0005 per invocation | Fetches and extracts content from specific URLs |
 | `people_search` | $0.005 per invocation | Looks up professionals, employees, and people. $5 per 1,000 tool invocations |
 | `finance_search` | $0.005 per invocation | Retrieves financial data and market information. $5 per 1,000 tool invocations |
@@ -39,59 +41,9 @@ Most tool costs are per invocation. `sandbox` is billed per container session �
 | API | Price per 1K requests | Description |
 |---|---|---|
 | Search API | $5.00 | Raw web search results with advanced filtering |
+| Search API with Fast Search | $1.00 | Lower-latency web search results. Set `search_type: "fast"` |
 
 Billing unit: Search API charges for each successful `POST /search` request, not for each query in the request. A successful request containing an array of up to five queries is one billing unit. Invalid requests, rate-limited requests, and upstream failures are not billed. A successful response is billed even when it returns no results. There are no additional token-based charges.
-
-## Sonar API Pricing
-
-Total cost per query = Token costs + Request fee (varies by search context size, applies to Sonar, Sonar Pro, and Sonar Reasoning Pro models only)
-
-- Token Pricing
-- Request Pricing
-- Pro Search Pricing
-
-## Token Pricing
-
-Token pricing is based on the number of tokens in your request and response.
-
-| Model | Input Tokens ($/1M) | Output Tokens ($/1M) | Citation Tokens ($/1M) | Search Queries ($/1K) | Reasoning Tokens ($/1M) |
-|---|---|---|---|---|---|
-| Sonar | $1 | $1 | - | - | - |
-| Sonar Pro | $3 | $15 | - | - | - |
-| Sonar Reasoning Pro | $2 | $8 | - | - | - |
-| Sonar Deep Research | $2 | $8 | $2 | $5 | $3 |
-
-## Request Pricing by Search Context Size
-
-Search context determines how much web information is retrieved. Higher context = more comprehensive results. The following table shows the request fee for each model for every 1000 requests.
-
-| Model | Low Context Size | Medium Context Size | High Context Size |
-|---|---|---|---|
-| Sonar | $5 | $8 | $12 |
-| Sonar Pro | $6 | $10 | $14 |
-| Sonar Reasoning Pro | $6 | $10 | $14 |
-
-- Low: (default) fastest, cheapest
-- Medium: Balanced cost/quality
-- High: Maximum search depth, best for research
-
-Learn more about search context →
-
-## Pro Search Pricing (Pro Search for Sonar Pro)
-
-Pro Search enhances Sonar Pro with automated tool usage and multi-step reasoning. When enabled, the model can perform multiple web searches and fetch URL content to answer complex queries. Learn more about Pro Search here.
-
-Pro Search requires `stream: true` and is enabled via the `search_type` parameter in `web_search_options`.
-
-### Search Type Options
-
-| Search Type | Description | Request Fee (per 1K) |
-|---|---|---|
-| `fast` | (default) Standard Sonar Pro behavior | $6 / $10 / $14 |
-| `pro` | Multi-step tool usage for complex queries | $14 / $18 / $22 |
-| `auto` | Automatic classification based on query complexity | Varies by classification |
-
-Request fees vary by search context size (Low / Medium / High). Token pricing remains the same as standard Sonar Pro ($3 per 1M input, $15 per 1M output).
 
 ## Embeddings API Pricing
 
@@ -115,6 +67,20 @@ Generate high-quality text embeddings for semantic search, retrieval-augmented g
 
 Learn how to use the Embeddings API for semantic search, RAG, and more.
 
+## Decisions API Pricing
+
+The Decisions API answers yes/no, multiple-choice, and scored questions about text and images with calibrated probabilities.
+
+| Model | Price ($/1M input tokens) | Output tokens | Per-request fee |
+|---|---|---|---|
+| `pplx-decider-v1-27b` | $0.04 | Free | None |
+
+Billing unit: you pay for input tokens only. The `state`, every question, and any images count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the cost of a request from the response you already receive. A request with 600 input tokens costs $0.000024.
+
+## View Decisions API Documentation
+
+Learn how to ask structured questions and read the probabilities the Decisions API returns.
+
 Token and Cost Glossary
 
 ### Input Tokens
@@ -137,29 +103,12 @@ The number of tokens in the API's response. This includes:
 
 Example: "The weather in New York is currently sunny with a temperature of 72°F." = ~15 output tokens
 
-### Citation Tokens
-
-Tokens used specifically for generating search results and references in responses. Only applies to Sonar Deep Research model.Example: Including source links, reference numbers, and bibliographic information
-
 ### Search Context Size vs Context Window
 
 Search context size is not the same as the context window.
 
-- Search context size: How much web information is retrieved during search (affects request pricing)
+- Search context size: How much web information is retrieved during search
 - Context window: Maximum tokens the model can process in one request (affects token limits)
-
-### Search Queries
-
-The number of individual searches conducted by Sonar Deep Research during query processing. This is separate from your initial user query.
-
-- The model automatically determines how many searches are needed
-- You cannot control the exact number of search queries
-- The `reasoning_effort` parameter influences the number of searches performed
-- Only applies to Sonar Deep Research model
-
-### Reasoning Tokens
-
-Tokens used for step-by-step logical reasoning and problem-solving. Only applies to Sonar Deep Research model.Example: Breaking down a complex math problem into sequential steps with explanations
 
 Token Calculation: 1 token ≈ 4 characters in English text. The exact count may vary based on language and content complexity.
 
@@ -167,14 +116,14 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 
 ## Agent API Web Search
 
-`openai/gpt-5.2` • 500 input + 200 output tokens • 1 web search
+`openai/gpt-5.6-terra` • 500 input + 200 output tokens • 1 web search
 
 | Component | Cost |
 |---|---|
-| Input tokens | $0.000875 |
-| Output tokens | $0.0028 |
+| Input tokens | $0.001 |
+| Output tokens | $0.0024 |
 | `web_search` | $0.0025 |
-| Total | $0.006175 |
+| Total | $0.0059 |
 
 ## Agent API Research Preset
 
