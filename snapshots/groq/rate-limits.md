@@ -41,7 +41,7 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
 | meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K | - | - |
 | openai/gpt-oss-120b | 30 | 1K | 8K | 200K | - | - |
 | openai/gpt-oss-20b | 30 | 1K | 8K | 200K | - | - |
-| openai/gpt-oss-safeguard-20b | 30 | 1K | 8K | 200K | - | - |
+| openai/gpt-oss-safeguard-20b | 3 | 1K | 2K | 200K | - | - |
 | qwen/qwen3.8-27b | 30 | 1K | 8K | 200K | - | - |
 | whisper-large-v3 | 20 | 2K | - | - | 7.2K | 28.8K |
 | whisper-large-v3-turbo | 20 | 2K | - | - | 7.2K | 28.8K |
