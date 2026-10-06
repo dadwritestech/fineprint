@@ -50,12 +50,6 @@ A third-party open weight text model from Z.ai with a 1M-token context window.
 
 v5.3
 
-### Z.ai GLM 5.2
-
-A third-party open weight text model from Z.ai with a 1M-token context window.
-
-v5.2
-
 ### Mistral Medium 3.5
 
 Our frontier-class multimodal model optimized for agentic and coding use cases.
@@ -101,12 +95,6 @@ Models for document understanding, text extraction, and structured OCR outputs.
 Our latest OCR service with paragraph-level bounding boxes, structural block labels, and block-level confidence scores.
 
 v4.1
-
-### OCR 4.0
-
-Our latest OCR service with paragraph-level bounding boxes and structural block labels.
-
-v4.0
 
 ### OCR 3
 
@@ -184,16 +172,6 @@ Our latest moderation model with 128k context window and jailbreaking detection.
 
 v26.03
 
-Other specialist models
-
-Specialized models for focused domains and task-specific workloads.
-
-### Leanstral 1.5
-
-Updated code agent for Lean 4 formal proof engineering and automated theorem proving.
-
-v1.5
-
 Deprecated
 
 ### Deprecated & retired models
@@ -203,10 +181,13 @@ Older models that have been deprecated or retired.
 | Model | Version | API | DeprecationRetirement | Alternative |
 |---|---|---|---|---|
 
-| Leanstral ↗ | `26.03` | labs-leanstral-2603 | 5/22/20266/30/2026 | Leanstral 1.5 |
+| Z.ai GLM 5.2 ↗ | `5.2` | zai-glm-5-2 | 9/29/202610/31/2026 | Z.ai GLM 5.3 |
 |---|---|---|---|---|
+| Leanstral 1.5 ↗ | `1.5` | labs-leanstral-1-5 | 9/29/20269/30/2026 |  |
+| Leanstral ↗ | `26.03` | labs-leanstral-2603 | 5/22/20266/30/2026 | Leanstral 1.5 |
 | Mistral Medium 3.1 ↗ | `25.08` | mistral-medium-2508 | 5/22/20268/31/2026 | Mistral Medium 3.5 |
 | Mistral Small 3.2 ↗ | `25.06` | mistral-small-2506 | 4/30/20267/31/2026 | Mistral Small 4 |
+| OCR 4.0 ↗ | `4.0` | mistral-ocr-4-0 | 9/29/20269/30/2026 | OCR 4.1 |
 | Voxtral Mini Transcribe ↗ | `25.07` | voxtral-mini-2507 | 2/27/20265/31/2026 | Voxtral Mini Transcribe 2 |
 | Devstral 2 ↗ | `25.12` | devstral-2512 | 5/22/20267/31/2026 | Mistral Medium 3.5 |
 | Magistral Medium 1.1 ↗ | `25.07` | magistral-medium-2507 | 10/31/202511/30/2025 | Mistral Medium 3.5 |
