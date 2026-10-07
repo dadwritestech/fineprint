@@ -4,6 +4,12 @@
 
 This page documents updates to the Gemini API.
 
+## October 6, 2026
+
+- Gemini Nano Banana 2.1 generally available (GA): Released Gemini Nano Banana 2.1 (`gemini-nano-banana-2.1`), the latest high-efficiency image generation and conversational editing model. An update to Nano Banana 2 (`gemini-3.1-flash-image`), it maintains Flash-level speed and cost efficiency while delivering significant improvements in visual quality, prompt adherence, multi-turn character consistency, text rendering, and wide and panoramic aspect ratio generation (`1:4`, `4:1`, `1:8`, `8:1`) across `1K`, `2K`, and `4K` resolutions.
+  See the Image generation guide to get started.
+- Deprecation announcement: The `gemini-3.1-flash-image` model is deprecated (no shutdown date announced). Migrate to `gemini-nano-banana-2.1`.
+
 ## September 22, 2026
 
 - Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS generally available (GA): Released our next-generation text-to-speech (TTS) audio models and the Gemini API Voices endpoint (`/v1beta/voices`):
@@ -902,4 +908,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-09-23 UTC.
+Last updated 2026-10-07 UTC.
