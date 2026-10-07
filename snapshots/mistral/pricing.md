@@ -2,10 +2,6 @@
 
 # Pricing
 
-Plans
-
-API
-
 # Pricing
 
 France
