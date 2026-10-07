@@ -4,6 +4,27 @@
 
 Find out about all the latest changes to our tool. You may filter by date and type of release.
 
+### Oct 26
+
+## October 6
+
+- Mistral Large 4 (`mistral-large-4`) is now available in Public Preview. For details, see the Mistral Large 4 model card. MODEL RELEASED
+  - Mistral Large 4 is an open-weight, general-purpose multimodal model with a Mixture-of-Experts architecture and a 1M context window.
+  - Open weights are coming soon.
+  - Launch pricing: 50% off for 2 weeks.
+
+### Sep 26
+
+## September 29
+
+- OCR 4.0 (`mistral-ocr-4-0`) is deprecated and retires on September 30, 2026. Use OCR 4.1 (`mistral-ocr-4-1` or `mistral-ocr-latest`) instead, at the same price. DEPRECATED
+- Leanstral 1.5 (`labs-leanstral-1-5`), an experimental Labs model, is deprecated and retires on September 30, 2026. DEPRECATED
+- Z.ai GLM 5.2 (`zai-glm-5-2`) is deprecated and retires on October 31, 2026. Use Z.ai GLM 5.3 (`zai-glm-5-3`) instead, at the same price. DEPRECATED
+
+## September 28
+
+- Z.ai GLM 5.3 (`zai-glm-5-3`) is now Generally Available. MODEL RELEASED
+
 ### Aug 26
 
 ## August 31
