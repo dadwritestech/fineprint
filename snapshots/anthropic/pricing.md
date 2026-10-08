@@ -371,7 +371,7 @@ Prompt caching
 
 Read
 
-$0.20 / MTok
+$0.10 / MTok
 
 Write
 
@@ -385,27 +385,51 @@ Output
 
 $10 / MTok
 
-### Haiku 4.5
+### Haiku 5.5
 
 Fastest, most cost-efficient model
 
 Prompt caching
 
+Prompts ≤ 100K tokens
+
 Read
 
-$0.10 / MTok
+$0.01 / MTok
 
 Write
 
-$1.25 / MTok
+$0.125 / MTok
+
+Prompts > 100K tokens
+
+Read
+
+$0.05 / MTok
+
+Write
+
+$0.625 / MTok
 
 Input
 
-$1 / MTok
+Prompts ≤ 100K tokens
+
+$0.10 / MTok
+
+Prompts > 100K tokens
+
+$0.50 / MTok
 
 Output
 
-$5 / MTok
+Prompts ≤ 100K tokens
+
+$0.50 / MTok
+
+Prompts > 100K tokens
+
+$2.50 / MTok
 
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
@@ -460,9 +484,27 @@ Learn moreContact sales
 
 Learn moreExplore detailed pricing
 
-### Sonnet 5
+### Haiku 4.5
 
-High-performance model for coding and agents
+Prompt caching
+
+Read
+
+$0.10 / MTok
+
+Write
+
+$1.25 / MTok
+
+Input
+
+$1 / MTok
+
+Output
+
+$5 / MTok
+
+### Sonnet 5
 
 Prompt caching
 
@@ -482,9 +524,11 @@ Output
 
 $10 / MTok
 
-### Opus 5
+Save 50% with batch processing. Learn more
 
-Ideal for complex agentic coding and enterprise work
+Batch processing
+
+### Opus 5
 
 Prompt caching
 
@@ -503,10 +547,6 @@ $5 / MTok
 Output
 
 $25 / MTok
-
-Save 50% with batch processing. Learn more
-
-Batch processing
 
 ### Fable 5
 
