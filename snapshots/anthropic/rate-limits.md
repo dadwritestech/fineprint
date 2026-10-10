@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
 
-Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and can move to a higher tier automatically as they build a history of paid AWS Marketplace invoices. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
+Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and can move to a higher tier automatically as they build a history of paid AWS Marketplace invoices. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request tier increase flow is not available. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
 
 There are two types of limits:
 
@@ -111,6 +111,8 @@ Rate limits are applied separately for each model; therefore you can use differe
 
 Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
 
+Start tier
+
 | Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
 |---|---|---|---|
 | Claude Fable 5.x1 | 1,000 | 500,000 | 100,000 |
@@ -120,14 +122,49 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
 | Claude Sonnet 5.5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Sonnet 5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Sonnet 4.x3 | 1,000 | 2,000,000 | 400,000 |
+| Claude Haiku 5.5 | 1,000 | 2,000,000 | 400,000 |
 | Claude Haiku 4.5 | 1,000 | 2,000,000 | 400,000 |
-| Claude Haiku 3.5 (retired, except on Bedrock and Google Cloud) | 1,000 | 100,0004 | 20,000 |
+| Claude Haiku 3.5 (retired, except on Google Cloud) | 1,000 | 100,0004 | 20,000 |
+
+Build tier
+
+| Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+|---|---|---|---|
+| Claude Fable 5.x1 | 2,000 | 1,500,000 | 300,000 |
+| Claude Opus 5.5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Opus 5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Opus 4.x2 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Sonnet 5.5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Sonnet 5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Sonnet 4.x3 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Haiku 5.5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Haiku 4.5 | 5,000 | 5,000,000 | 1,000,000 |
+| Claude Haiku 3.5 (retired, except on Google Cloud) | 2,000 | 200,0004 | 40,000 |
+
+Scale tier
+
+| Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+|---|---|---|---|
+| Claude Fable 5.x1 | 4,000 | 4,000,000 | 800,000 |
+| Claude Opus 5.5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Opus 5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Opus 4.x2 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Sonnet 5.5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Sonnet 5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Sonnet 4.x3 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Haiku 5.5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Haiku 4.5 | 10,000 | 10,000,000 | 2,000,000 |
+| Claude Haiku 3.5 (retired, except on Google Cloud) | 4,000 | 400,0004 | 80,000 |
+
+Custom tier
+
+If you need limits higher than the Scale tier, contact sales through the Rate limits page in the Claude Console.
 
 1 Fable rate limit is a total limit that applies to combined traffic across Claude Fable 5.1 and Claude Fable 5. Claude Mythos 5.1 and Claude Mythos 5 share a separate combined limit on the same terms.
 
 2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5.5 and Claude Opus 5 each have a separate rate limit and are not part of this combined bucket.
 
-3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.
+3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5 (deprecated). Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.
 
 4 Limit counts `cache_read_input_tokens` toward ITPM usage.
 
@@ -135,9 +172,27 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
 
 The Message Batches API has its own set of rate limits which are shared across all models. These include a requests per minute (RPM) limit to all API endpoints and a limit on the number of batch requests that can be in the processing queue at the same time. A "batch request" here refers to part of a Message Batch. You may create a Message Batch containing thousands of batch requests, each of which count toward this limit. A batch request is considered part of the processing queue when it has yet to be successfully processed by the model.
 
+Start tier
+
 | Maximum requests per minute (RPM) | Maximum batch requests in processing queue | Maximum batch requests per batch |
 |---|---|---|
 | 1,000 | 200,000 | 100,000 |
+
+Build tier
+
+| Maximum requests per minute (RPM) | Maximum batch requests in processing queue | Maximum batch requests per batch |
+|---|---|---|
+| 2,000 | 300,000 | 100,000 |
+
+Scale tier
+
+| Maximum requests per minute (RPM) | Maximum batch requests in processing queue | Maximum batch requests per batch |
+|---|---|---|
+| 4,000 | 500,000 | 100,000 |
+
+Custom tier
+
+If you need limits higher than the Scale tier, contact sales through the Rate limits page in the Claude Console.
 
 ### Managed Agents
 
@@ -174,9 +229,9 @@ In addition to providing token and request charts, the Usage page provides two s
 
 ## Requesting higher limits
 
-To request higher rate limits or a higher monthly spend cap, use Request rate limit increase on the Rate limits page. Anthropic support can also raise limits; for urgent needs, contact Anthropic support.
+To request higher rate limits or a higher monthly spend cap, use Request tier increase on the Rate limits page. Anthropic support can also raise limits; for urgent needs, contact Anthropic support.
 
-Claude Platform on AWS: The Request rate limit increase flow is not available. Contact your Anthropic account representative or Anthropic support, and include the models you need raised, your peak input and output tokens per minute for each model, and roughly what share of your input is cached or repeated context. See Rate limits and quotas on Claude Platform on AWS.
+Claude Platform on AWS: The Request tier increase flow is not available. Contact your Anthropic account representative or Anthropic support, and include the models you need raised, your peak input and output tokens per minute for each model, and roughly what share of your input is cached or repeated context. See Rate limits and quotas on Claude Platform on AWS.
 
 ## Setting lower limits for Workspaces
 
