@@ -28,15 +28,7 @@ Fast, cost-efficient text-to-speech model for high-volume production, real-time 
 
 New Stable
 
-Our previous-generation Flash model for complex coding, agentic workflows, and reliable multi-step execution.
-
-Stable
-
 Our previous-generation Flash model, balancing speed and multimodal capabilities across general agentic and everyday tasks.
-
-Stable
-
-Our legacy Flash model, providing baseline speed and foundational performance for routine, high-throughput workloads.
 
 Stable
 
@@ -47,6 +39,10 @@ Stable
 Frontier-class performance rivaling larger models at a fraction of the cost.
 
 Stable
+
+High-efficiency image generation and editing model with improved visual quality, typography, and multi-turn consistency.
+
+New Stable
 
 Powerful, high-efficiency image generation and editing, optimized for speed and high-volume use cases.
 
@@ -99,11 +95,10 @@ New
 | Gemini 3.8 Live Extended Thinking | gemini-3.8-live-extended-thinking |
 | Gemini 3.8 Flash TTS | gemini-3.8-flash-tts |
 | Gemini 3.8 Flash-Lite TTS | gemini-3.8-flash-lite-tts |
-| Gemini 3.7 Flash | gemini-3.7-flash |
 | Gemini 3.6 Flash | gemini-3.6-flash |
-| Gemini 3.5 Flash | gemini-3.5-flash |
 | Gemini 3.5 Flash-Lite | gemini-3.5-flash-lite |
 | Gemini 3.1 Flash-Lite | gemini-3.1-flash-lite |
+| Nano Banana 2.1 | gemini-nano-banana-2.1 |
 | Nano Banana 2 | gemini-3.1-flash-image |
 | Nano Banana 2 Lite | gemini-3.1-flash-lite-image |
 | Nano Banana Pro | gemini-3-pro-image |
@@ -160,6 +155,7 @@ This section contains all generative media models, including ones that may alrea
 
 | Model | Description | Endpoint |
 |---|---|---|
+| Nano Banana 2.1 | High-efficiency image generation and editing model with improved visual quality, typography, and multi-turn consistency. | gemini-nano-banana-2.1 |
 | Nano Banana 2 | High-efficiency production-scale visual creation, combining the intelligence of the Gemini 3 series with lightning-fast generation speeds. | gemini-3.1-flash-image |
 | Nano Banana 2 Lite | Designed as the efficiency specialist of the image generation family, offering ultra-low latency and cost-effective image generation and editing. | gemini-3.1-flash-lite-image |
 | Veo 3.1 | State-of-the-art cinematic video generation with advanced creative controls and natively synchronized audio. | veo-3.1-generate-preview |
@@ -233,4 +229,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-10-01 UTC.
+Last updated 2026-10-09 UTC.
