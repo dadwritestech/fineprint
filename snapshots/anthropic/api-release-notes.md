@@ -8,8 +8,41 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### October 9, 2026
+
+- You can now let a Claude Managed Agents agent use dynamic workflows, in beta with the `managed-agents-2026-04-01` beta header. For work with many pieces, such as reviewing hundreds of documents, the agent can write a workflow. A workflow is a program that runs many agents in phases and combines their results. The server runs it in the background as a workflow run. To turn dynamic workflows on, set the agent's `multiagent` field to `{"type": "multiagent_20261001", "workflows": {"type": "enabled"}}`. To guide the agent, tell it in its system prompt when to start a run. Follow each run through `workflow_run.*` events on the session's event stream. See Workflow runs.
+
+### October 8, 2026
+
+- The Compliance API chat endpoints now also return chats from the unified Claude experience, in beta for Claude Enterprise organizations, with your existing Compliance Access Key. See Retrieve and delete chats, files, and projects.
+
+### October 7, 2026
+
+- We've lowered the price of prompt cache reads on Claude Sonnet 5.5 from $0.20 USD to $0.10 USD per million tokens: 0.05x the base input price instead of 0.1x. Cache writes and all other prices are unchanged. See Prompt caching pricing.
+- We've launched Claude Haiku 5.5 (`claude-haiku-5-5`), our most capable model tuned for high-volume and latency-sensitive work. It has a 1M token context window, 128k max output tokens, and adaptive thinking with the effort parameter. It's available on the Claude API, Claude in Amazon Bedrock, Claude Platform on AWS, Claude on Google Cloud, and Claude in Microsoft Foundry. See What's new in Claude Haiku 5.5.
+- Code written for Claude Haiku 4.5 can break on Claude Haiku 5.5. Manual extended thinking (`budget_tokens`), the sampling parameters `temperature`, `top_p`, and `top_k`, and assistant message prefill can each return a 400 error. `computer_20250124` also returns a 400 error: use the `computer_toolset_20260801` toolset on the Claude API and Google Cloud, or `computer_20251124` on Amazon Bedrock. A request that sends thinking blocks back after a change to `system`, `tools`, or earlier turns can also return a 400 error. On Amazon Bedrock, structured outputs aren't available for Claude Haiku 5.5. Adaptive thinking is on by default, so a response can begin with `thinking` blocks, and their text is omitted unless you set `thinking.display` to `"summarized"`. The same text also counts as more tokens. See the migration guide for each change. For model-specific prompting patterns, see Prompting Claude Haiku 5.5.
+- The Python and TypeScript SDKs now include classes, in beta, for the browser use tool and the computer use tool. You subclass one and write one method per tool against your own browser or desktop automation. The SDK runs the tool loop, the URL and file policies you set for the browser, and your approval callback. See Browser and computer use with the SDK toolsets.
+- Claude Max and Team plans now include monthly API credits. To learn how to claim them, see API credits for Max and Team plans.
+- In Claude Managed Agents, a cloud environment with `limited` networking now also applies its `allowed_hosts` to the `web_search` and `web_fetch` tools. A `web_fetch` call for a URL on a host that `allowed_hosts` does not match returns a `url_not_allowed` error result to the agent. `web_search` omits results from such hosts. When `allowed_hosts` lists no hosts, neither tool returns a page or a search result. `allow_package_managers` and `allow_mcp_servers` add no hosts for these tools. To let the tools reach a host, add it to `allowed_hosts`, which also opens it to the sandbox. `unrestricted` networking and self-hosted environments do not limit these tools. See Environment networking.
+- With `limited` networking, creating a session fails with a 400 error when an enabled web tool's `allowed_domains` has an entry not within `allowed_hosts`. So does a session update that adds such an entry. An `allowed_hosts` entry matches one exact host unless it starts with `*.`, so `docs.example.com` is not within `["example.com"]`. To fix the error, add the host to `allowed_hosts` or remove the entry from `allowed_domains`. See Restrict web search and web fetch domains.
+- In Claude Managed Agents, the `web_fetch` tool now fetches only URLs that have already appeared in the session, for example in the text of a user message, in a `web_search` result, or in a page that `web_fetch` returned earlier. This reduces the risk of data exfiltration. A URL that appears only in Claude's own output, the agent's system prompt, an attached document, or the output of a tool such as `bash`, `read`, or an MCP tool does not count: a `web_fetch` call for it returns a `url_not_in_prior_context` error result to the agent. To let the agent fetch a URL, send it in the text of a `user.message` event.
+
+### October 6, 2026
+
+- We've added `capabilities.server_tools` to the Models API. `GET /v1/models` and `GET /v1/models/{model_id}` now report whether each model accepts the web search and code execution tools. To check whether a model accepts the code execution tool, read `capabilities.server_tools.code_execution`. The top-level `capabilities.code_execution` reports whether code can call your request's other tools. See Using the Models API.
+
+### October 5, 2026
+
+- We've added `capabilities.thinking.types.disabled` to the Models API. `GET /v1/models` and `GET /v1/models/{model_id}` now report whether each model accepts `thinking: {type: "disabled"}`, which turns thinking off. See Using the Models API.
+
+### October 1, 2026
+
+- We've added a `line` field to the Models API. `GET /v1/models` and `GET /v1/models/{model_id}` now return the model line each model belongs to. Claude Opus 4.5 and Claude Opus 4.6 both report `opus`, for example. Use `line` to group models without parsing their IDs. `line` is `null` for a model that belongs to no line. See Using the Models API.
+- Dreams (research preview) now supports Claude Opus 5.5, Claude Fable 5.1, and Claude Sonnet 5.5. See Supported models.
+
 ### September 30, 2026
 
+- In Python SDK 1.10.0, TypeScript SDK 0.130.0, C# SDK 12.52.0, Go SDK 1.77.0, Java SDK 2.67.0, PHP SDK 0.53.0, Ruby SDK 1.75.0, and version 1.37.0 of the `ant` CLI, the Admin API methods for organization info, members, invites, workspaces, API keys, rate limits, service accounts, workload identity federation, customer-managed encryption keys, and compliance settings are out of beta: call them under `client.organization` and `ant organization`. These releases also keep `client.beta.organization` and `ant beta:organization`.
 - We announced the deprecation of the Claude Sonnet 4.5 model (`claude-sonnet-4-5-20250929`), with retirement on the Claude API scheduled for November 30, 2026. We recommend migrating to Claude Sonnet 5.5. Read more in Model deprecations.
 
 ### September 28, 2026
@@ -99,7 +132,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - The Admin API user-management endpoints for Claude Enterprise (claude.ai) organizations (members, invites, groups, and custom roles) are out of beta. The `anthropic-beta: ce-user-management-2026-07-13` header is no longer required on group and custom-role requests; requests that still send it are accepted unchanged. See User management.
 - You can now restrict which sites a Claude Managed Agents agent's `web_search` and `web_fetch` tools can reach. Set `allowed_domains` or `blocked_domains` on the tool's entry in the `agent_toolset_20260401` `configs` array; `web_fetch` also accepts `max_content_tokens` and `web_search` accepts `user_location`. Each `configs` entry is identified by its `name` and typed by an optional `type`, and requests that pass only `name`, `enabled`, and `permission_policy` continue to work; in the typed SDKs, `configs` entries become per-tool types. See Restrict web search and web fetch domains.
 - Claude Managed Agents sessions that run in a self-hosted sandbox can now attach memory stores. The Python, TypeScript, and Go SDK workers download each attached store into the sandbox at its `mount_path` and sync the agent's changes back to the store. See Memory stores in self-hosted sandboxes.
-- The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool statistics, mounted resources, and per-thread activity. See Console observability.
+- The session viewer in the Claude Console has been redesigned with a timeline minimap, a transcript grouped by model request, and an Inspector panel for session details and cost, raw events, per-tool statistics, mounted resources, and per-thread activity. See Inspect a session in the Console.
 
 ### August 18, 2026
 
