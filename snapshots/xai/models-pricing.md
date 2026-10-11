@@ -38,7 +38,7 @@ View modelTry in playground
 
 Real-time conversations, speech-to-text, and text-to-speech.
 
-Agent
+STS
 
 $0.08 / min
 
