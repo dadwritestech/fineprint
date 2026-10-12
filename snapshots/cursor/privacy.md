@@ -16,7 +16,7 @@ A. Personal data you provide to us directly
 We collect personal data if you create an account to use our Service or communicate with us. This includes:
 
 - Account Information: Anysphere collects identifiers, such as your name and email address, when you sign up for an Anysphere account or to receive information about our Service.
-- Payment Information: We collect your payment information if you seek to access any paid Anysphere products and services.
+- Payment Information: We collect your payment information if you seek to access any paid products and services, or initiate payment for products and services.
 - Inputs and Suggestions: The Service allows you to submit content ("Inputs"), which generate responses ("Suggestions") based on your Inputs. If you include personal data or reference external content in your Inputs, we will collect that information and it may be reproduced in the Suggestions we provide.
 - Communication Information: If you communicate with us, we collect your name, contact information, and the contents of any messages you send.
 - Feedback: While using the Service, you may provide feedback, including ideas and suggestions for improvement or rating a Suggestion in response to an Input ("Feedback"). If you provide Feedback on the Service, we may store the entire exchange as part of your Feedback.
