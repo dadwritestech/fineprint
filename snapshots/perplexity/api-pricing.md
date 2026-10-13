@@ -4,9 +4,9 @@ This page shows pricing information to help you understand API costs.For billing
 
 ## Estimate your cost
 
-## Router API Pricing
+## Orchestrator API Pricing
 
-Router API usage is billed per token at each model's published rates — there are no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's discounted cache-read rate and reasoning tokens billed at the output rate. You are always billed at the requested model's rates, regardless of how the request is served. See Router Models & Pricing for the full per-model rate card, including cache-write rates and long-context pricing.
+Orchestrator API usage is billed per token at each model's published rates — there are no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's discounted cache-read rate and reasoning tokens billed at the output rate. You are always billed at the requested model's rates, regardless of how the request is served. See Orchestrator Models & Pricing for the full per-model rate card, including cache-write rates and long-context pricing.
 
 ## Agent API Pricing
 
@@ -73,9 +73,10 @@ The Decisions API answers yes/no, multiple-choice, and scored questions about te
 
 | Model | Price ($/1M input tokens) | Output tokens | Per-request fee |
 |---|---|---|---|
-| `pplx-decider-v1-27b` | $0.04 | Free | None |
+| `pplx-decider-v1.1-27b` | $0.02 | Free | None |
+| `pplx-decider-v1-27b` | $0.02 | Free | None |
 
-Billing unit: you pay for input tokens only. The `state`, every question, and any images count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the cost of a request from the response you already receive. A request with 600 input tokens costs $0.000024.
+Billing unit: you pay for input tokens only. The `state`, every question, and any images count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the cost of a request from the response you already receive. A request with 600 input tokens costs $0.000012.
 
 ## View Decisions API Documentation
 
@@ -107,7 +108,7 @@ Example: "The weather in New York is currently sunny with a temperature of 72°F
 
 Search context size is not the same as the context window.
 
-- Search context size: How much web information is retrieved during search
+- Search context size (Sonar only): How much web information is retrieved during search, set with `web_search_options.search_context_size`
 - Context window: Maximum tokens the model can process in one request (affects token limits)
 
 Token Calculation: 1 token ≈ 4 characters in English text. The exact count may vary based on language and content complexity.
@@ -133,9 +134,9 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 |---|---|
 | Model input tokens | $0.001 |
 | Model output tokens | $0.003 |
-| `web_search` | $0.0025 |
+| `web_search` (Fast Search) | $0.001 |
 | `fetch_url` | $0.0005 |
-| Total | $0.007 |
+| Total | $0.0055 |
 
 Actual preset costs vary with the selected model, token usage, and tool invocations. When present on a completed response, `usage.cost.total_cost` reports the calculated request cost.
 
