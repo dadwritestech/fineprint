@@ -29,18 +29,29 @@ Other important things worth noting:
 
 ## Usage tiers
 
-You can view the rate and usage limits for your organization under the limits section of your account settings. As your spend on our API goes up, we automatically graduate you to the next usage tier. This usually results in an increase in rate limits across most models.
+The three paid usage tiers are Build, Launch, and Grow. Your organization's usage tier upgrades automatically as its total credit purchases reach each threshold. Higher tiers generally provide higher rate limits across models.
 
 | Tier | Qualification | Usage limits |
 |---|---|---|
 | Free | User must be in an allowed geography | $100 / month |
-| Tier 1 | $5 paid | $100 / month |
-| Tier 2 | $50 paid | $500 / month |
-| Tier 3 | $100 paid | $1,000 / month |
-| Tier 4 | $250 paid | $5,000 / month |
-| Tier 5 | $1,000 paid | $200,000 / month |
+| Build | $5 in total credit purchases | $500 / month |
+| Launch | $100 in total credit purchases | $5,000 / month |
+| Grow | $500 in total credit purchases | $200,000 / month |
 
-To view a high-level summary of rate limits per model, visit the models page.
+### Standard rate limits
+
+To view the limits for each model at your usage tier, go to Settings > Organization > Limits and review Rate limits. To upgrade your usage tier, select Upgrade tier in the Usage Tiers section.
+
+These Standard rate limits differ from Ultrafast rate limits.
+
+| Tier | Model | RPM | TPM |
+|---|---|---|---|
+| Build | Astra, Sol, Terra | 5,000 | 1,000,000 |
+| Luna | 5,000 | 2,000,000 |  |
+| Launch | Astra, Sol, Terra | 10,000 | 4,000,000 |
+| Luna | 10,000 | 10,000,000 |  |
+| Grow | Astra, Sol, Terra | 15,000 | 40,000,000 |
+| Luna | 30,000 | 180,000,000 |  |
 
 ### Spend limits
 
