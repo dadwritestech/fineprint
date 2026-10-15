@@ -15,8 +15,11 @@ Try Claude
 - Memory across conversations
 - Connect your apps and tools
 - Create Artifacts
+- Claude Design, Slides, Docs
 
 ### Pro
+
+Claude Code included
 
 For everyday work
 
@@ -30,14 +33,15 @@ Everything in Free, plus:
 
 - More usage*
 - Hand off and schedule tasks
-- Claude Design, Slides, Docs
-- Claude Code
+- Claude Dashboards (beta)
 - Claude Science
 - Projects
 - More Claude models
 - Claude in Chrome and Microsoft 365
 
 ### Max
+
+Claude Code included
 
 For people who work with Claude all day
 
@@ -53,6 +57,7 @@ Everything in Pro, plus:
 - Higher output limits for all tasks
 - Early access to advanced Claude features
 - Priority access at high traffic times
+- $100 to $200/month in API credits to build on the Claude Platform†
 
 Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
 
@@ -83,7 +88,11 @@ Try Claude
 | Claude for Microsoft 365 |  |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |  |
 | Chat on web, iOS, Android and Desktop |  |  |  |  |
-| Claude Design, Slides, Docs |  |  |  |  |
+| Claude Design |  |  |  |  |
+| Claude Slides |  |  |  |  |
+| Claude Docs |  |  |  |  |
+| Claude Dashboards (beta) |  |  |  |  |
+| Claude Motion (beta) |  |  |  |  |
 | Ability to search the web |  |  |  |  |
 | Create Artifacts |  |  |  |  |
 | Desktop extensions |  |  |  |  |
@@ -137,6 +146,7 @@ Try Claude
 | Haiku |  |  |  |  |
 | Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
 | Usage credits |  |  |  |  |
+| New Monthly API credits† |  |  | $100/month | $200/month |
 | Priority access at high traffic times |  |  |  |  |
 | User and organizational level spend controls |  |  |  |  |
 | Model training | Opt-out | Opt-out | Opt-out | Opt-out |
@@ -165,6 +175,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 
 - Claude Code and Claude Cowork
 - Claude Design, Slides, and Docs
+- Claude Motion and Dashboards (beta)
 - Claude Science
 - Microsoft 365, @Claude, and more
 - Enterprise search across your organization
@@ -174,6 +185,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 - Enterprise deployment for the Claude desktop app
 - No model training on your content by default
 - Mix and match seat types
+- Up to $500 per month in pooled API credits†
 
 ### Enterprise
 
@@ -183,7 +195,7 @@ Get Enterprise planChat with buying specialist
 
 Seat price + usage at API rates
 
-US$20/seat/month, billed annually. Usage cost scales with model and task.
+US$20/seat/month, billed annually, 20 seat minimum. Usage cost scales with model and task.
 
 All Team plan features, plus:
 
@@ -237,7 +249,11 @@ Contact sales
 | Claude for Microsoft 365 |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |
 | Chat on web, iOS, Android and Desktop |  |  |  |
-| Claude Design, Slides, Docs |  |  |  |
+| Claude Design |  |  |  |
+| Claude Slides |  |  |  |
+| Claude Docs |  |  |  |
+| Claude Dashboards (beta) |  |  |  |
+| Claude Motion (beta) |  |  |  |
 | Ability to search the web |  |  |  |
 | Create Artifacts |  |  |  |
 | Desktop extensions |  |  |  |
@@ -307,6 +323,7 @@ Contact sales
 | Haiku |  |  |  |
 | Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
 | Extra usage |  | n/a | n/a |
+| New Monthly API credits† | Up to $500/month |  |  |
 | Priority access at high traffic times |  |  |  |
 | User and organizational level spend controls |  |  |  |
 | Model training | None by default | None by default | None by default |
