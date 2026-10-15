@@ -14,9 +14,7 @@ Your personal AI agent for everyday tasks.
 - Access on web and mobile.
 - Limited messages and web searches.
 - Limited coding sessions.
-- State-of-the-art image generation.
-- Test Mistral models in Studio.
-- $10 /mo in API credits.
+- Basic image generation and editing.
 - 100+ connectors.
 
 Start now
@@ -41,10 +39,11 @@ I'm a student
 
 - More access and usage.
 - More messages and web searches.
-- Get more complex tasks done.
+- Faster responses.
 - All-day coding in the CLI, IDE, or on web.
-- More image generations.
-- $30 /mo in API credits.
+- Generate spreadsheets and slides.
+- Better image generation and editing.
+- $25.5 /mo in API credits.
 - Chat and email support.
 
 - More access and usage.
@@ -69,6 +68,8 @@ Excluding taxes
 
 Including taxes
 
+- Even higher limits.
+- Even faster responses.
 - Up to 30GB of storage /user.
 - Domain name verification.
 - Data export.
@@ -108,6 +109,8 @@ Contact us
 | Web searches |  | Up to 5x free | Up to 5x free |  |
 | Libraries and document upload | Limited | Up to 15GB | Up to 30GB / user |  |
 | Task scheduling | Up to 5 | Unlimited | Unlimited |  |
+| Spreadsheets |  |  |  |  |
+| Slides |  |  |  |  |
 | Workflows |  |  |  |  |
 | Connectors (beta) |  |  |  |  |
 | Custom MCP connectors (beta) |  |  |  |  |
