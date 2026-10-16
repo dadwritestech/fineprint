@@ -25,6 +25,17 @@ Prices per 1M tokens.
 | gpt-5.6-sol | $4.00 | $0.40 | $5.00 | $20.00 | $8.00 | $0.80 | $10.00 | $30.00 |
 | gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
 
+Our latest Rosalind models.
+
+Prices per 1M tokens.
+
+| Model | Input | Cached input | Output |
+|---|---|---|---|
+| gpt-rosalind-research | $5.00 | $0.50 | $25.00 |
+| gpt-rosalind-discovery | $5.00 | $0.50 | $25.00 |
+
+Billing for `gpt-rosalind-research` begins on October 5, 2026. Cache-write pricing does not apply to this model. Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+
 GPT-Live 1 voice sessions are billed per second, without rounding up to a whole minute. Backend model and tool usage is charged separately.
 
 | Model | Price per minute |
@@ -87,9 +98,8 @@ Standard
 |---|---|---|---|---|
 | ChatGPT | chat-latest | $5.00 | $0.50 | $30.00 |
 | Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
-| Life Sciences | gpt-rosalind-research | $5.00 | $0.50 | $25.00 |
 
-Billing for `gpt-rosalind-research` begins on October 5, 2026. Cache-write pricing does not apply to this model. Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
 
 Prices per 1M tokens.
 
