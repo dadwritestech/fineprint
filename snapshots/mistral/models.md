@@ -12,9 +12,9 @@ Compare models
 
 Featured Models
 
-### Mistral Medium 3.5
+### Mistral Large 4
 
-Our frontier-class multimodal model optimized for agentic and coding use cases.
+A state-of-the-art, open-weight, general-purpose multimodal model.
 
 ### OCR 4.1
 
@@ -61,6 +61,12 @@ v26.04
 Hybrid model unifying instruct, reasoning, and coding in a single efficient model.
 
 v26.03
+
+### Mistral Large 4
+
+A state-of-the-art, open-weight, general-purpose multimodal model.
+
+v26.10
 
 ### Mistral Large 3
 
@@ -171,6 +177,38 @@ v1.0
 Our latest moderation model with 128k context window and jailbreaking detection.
 
 v26.03
+
+Time series models
+
+Models for zero-shot time series forecasting with covariate support and probabilistic outputs.
+
+### Timestral 1.0 123M
+
+A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+
+v1.0
+
+### Timestral 1.0 28M
+
+A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+
+v1.0
+
+### Timestral 1.0 5M
+
+A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+
+v1.0
+
+Other specialist models
+
+Specialized models for focused domains and task-specific workloads.
+
+### Timestral 1.0 209M
+
+A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+
+v1.0
 
 Deprecated
 
