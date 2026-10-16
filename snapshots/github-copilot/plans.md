@@ -378,6 +378,7 @@ Free
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
+- Google Gemini 4 Argon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -418,6 +419,7 @@ Pro
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
+- Google Gemini 4 Argon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -458,6 +460,7 @@ Pro+
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
+- Google Gemini 4 Argon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -498,6 +501,7 @@ Max
 - Google Gemini 3.6 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
+- Google Gemini 4 Argon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
