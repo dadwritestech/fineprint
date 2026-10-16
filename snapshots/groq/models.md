@@ -39,6 +39,7 @@ Note: Preview models are intended for evaluation purposes only and should not be
 | Canopy Labs Orpheus V1 Englishcanopylabs/orpheus-v1-english | - | $22.00 per 1M characters | 50K TPM250 RPM | 4,000 | 50,000 | - |
 | Llama Prompt Guard 2 22Mmeta-llama/llama-prompt-guard-2-22m | - | $0.03 input$0.03 output | 30K TPM100 RPM | 512 | 512 | - |
 | Prompt Guard 2 86Mmeta-llama/llama-prompt-guard-2-86m | - | $0.04 input$0.04 output | 30K TPM100 RPM | 512 | 512 | - |
+| Muse Spark OpenEnterprisemeta-models/muse-spark-open | 350 | ContactSales | ContactSales | 131,072 | 131,072 | - |
 | MiniMax M2.7Enterpriseminimaxai/minimax-m2.7 | 260 | ContactSales | ContactSales | 196,608 | 131,072 | - |
 | Safety GPT OSS 20Bopenai/gpt-oss-safeguard-20b | 1000 | $0.075 input$0.30 output | 150K TPM1K RPM | 131,072 | 65,536 | - |
 | Qwen/Qwen3.8-27Bqwen/qwen3.8-27b | 450 | $0.80 input$4.00 output | 250K TPM1K RPM | 131,072 | 16,384 | 20 MB |
