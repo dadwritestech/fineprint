@@ -8,6 +8,18 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### October 15, 2026
+
+- The Compliance API now returns the text each organization member saved as Instructions for Claude in claude.ai and as Global instructions in Cowork, in beta for Claude Enterprise organizations. Call `GET /v1/compliance/organizations/{org_uuid}/user_preferences` with your existing Compliance Access Key and the `read:compliance_user_data` scope. See List user preferences.
+- Fast mode is out of research preview for Claude Opus 5.5, and you no longer need to request access. Requests to Claude Opus 5.5 no longer require the `fast-mode-2026-02-01` beta header, and requests that still send it keep working. Claude Opus 5.5 now has a default fast mode rate limit in the Start, Build, and Scale usage tiers. Fast mode for Claude Opus 5 and Claude Opus 4.8 remains in research preview. Keep sending the beta header with fast mode requests to those models.
+- Fast mode for Claude Opus 5.5 is now available on Claude in Microsoft Foundry for deployments hosted on Azure.
+
+### October 14, 2026
+
+- We've launched OpenTelemetry export in beta, so you can trace Messages API requests and Claude Managed Agents sessions in your observability backend. The Claude SDK emits spans in Python, TypeScript, C#, Go, Java, PHP, and Ruby. To get spans from the API, add an OpenTelemetry destination in the Claude Console.
+
+- Claude Managed Agents scheduled deployments are now available on Claude Platform on AWS.
+
 ### October 9, 2026
 
 - You can now let a Claude Managed Agents agent use dynamic workflows, in beta with the `managed-agents-2026-04-01` beta header. For work with many pieces, such as reviewing hundreds of documents, the agent can write a workflow. A workflow is a program that runs many agents in phases and combines their results. The server runs it in the background as a workflow run. To turn dynamic workflows on, set the agent's `multiagent` field to `{"type": "multiagent_20261001", "workflows": {"type": "enabled"}}`. To guide the agent, tell it in its system prompt when to start a run. Follow each run through `workflow_run.*` events on the session's event stream. See Workflow runs.
@@ -15,6 +27,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 ### October 8, 2026
 
 - The Compliance API chat endpoints now also return chats from the unified Claude experience, in beta for Claude Enterprise organizations, with your existing Compliance Access Key. See Retrieve and delete chats, files, and projects.
+- The Compliance API can now download Claude Docs documents as Word files, in beta. See Retrieve files and artifacts.
 
 ### October 7, 2026
 
@@ -259,11 +272,11 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### June 9, 2026
 
-- We've launched Claude Fable 5 (`claude-fable-5`), our most capable model open to all customers, alongside Claude Mythos 5 (`claude-mythos-5`) for Project Glasswing participants. Both models support a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking. See Introducing Claude Fable 5 and Claude Mythos 5 for capabilities, API changes, and availability.
+- We've launched Claude Fable 5 (`claude-fable-5`), our most capable model open to all customers, alongside Claude Mythos 5 (`claude-mythos-5`) for Project Glasswing participants. Both models support a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking. See Claude Fable 5 for specifications, pricing, and availability.
 - Claude Fable 5 and Claude Mythos 5 use the tokenizer introduced with Claude Opus 4.7. Compared to models before Claude Opus 4.7, the same text produces roughly 30% more tokens. The exact increase depends on the content and workload shape. Use the token counting API with `model: "claude-fable-5"` to measure your prompts under the new tokenizer.
 - Claude Fable 5 runs safety classifiers on requests and during response generation. When a classifier declines a request, the Messages API returns `stop_reason: "refusal"`. You are not billed for a request refused before any output is generated. An opt-in `fallbacks` parameter (in beta on the Claude API and Claude Platform on AWS; not supported on the Message Batches API) re-runs refused requests on another model, billed at the fallback model's rates. See Handling stop reasons.
 - The `stop_details.category` field on refusal responses now includes `"reasoning_extraction"` on Claude Fable 5, returned when a request is blocked under Anthropic's Terms of Service restrictions on reverse engineering or duplicating model outputs. The existing `"cyber"` and `"bio"` categories are unchanged. No beta header is required.
-- On Claude Fable 5 and Claude Mythos 5, adaptive thinking is the only thinking mode: `thinking: {"type": "disabled"}` is not supported, and manual extended thinking budgets and assistant prefill are not supported (both return a 400 error). See Migrating from Claude Mythos Preview to Claude Mythos 5.
+- On Claude Fable 5 and Claude Mythos 5, adaptive thinking is the only thinking mode: `thinking: {"type": "disabled"}` is not supported, and manual extended thinking budgets and assistant prefill are not supported (both return a 400 error).
 - On Claude Fable 5 and Claude Mythos 5, `thinking.display` defaults to `"omitted"`, the same as Claude Opus 4.8, Claude Opus 4.7, and Claude Mythos Preview; set `display: "summarized"` to receive readable thinking summaries. The raw chain of thought is never returned; pass thinking blocks back unchanged in multi-turn conversations on the same model. See Thinking output on Claude Fable 5 and Claude Mythos 5.
 - Claude Fable 5 requires 30-day data retention and is not available under zero data retention. See Model-specific data retention requirements.
 - Claude Managed Agents now supports scheduled deployments, letting you run sessions on a cron schedule without managing your own scheduler.
