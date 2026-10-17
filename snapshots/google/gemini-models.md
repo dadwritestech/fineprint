@@ -4,6 +4,20 @@
 
 This guide introduces all the models available through the Gemini API.
 
+## Gemini 4
+
+### Stable
+
+Our flagship reasoning model with a unified 1M context window and long decodes up to 1M tokens.
+
+New Stable
+
+### All Gemini 4 models
+
+| Model | Endpoint |
+|---|---|
+| Gemini 4 Argon | gemini-4-argon |
+
 ## Gemini 3
 
 ### Stable
@@ -61,10 +75,6 @@ Low-latency speech-to-text model with utterance-based language detection, speake
 New Stable
 
 ### Preview
-
-Advanced intelligence, complex problem-solving skills, and powerful agentic and vibe coding capabilities.
-
-Preview
 
 Frontier-class performance rivaling larger models at a fraction of the cost.
 
@@ -229,4 +239,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-10-09 UTC.
+Last updated 2026-10-13 UTC.
