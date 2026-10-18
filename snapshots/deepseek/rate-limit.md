@@ -29,25 +29,25 @@ You can set the `user_id` parameter in the following ways:
 HTTP request body:
 
 ```
-{    "model": "deepseek-flash",    "messages": {"role": "user", "content": "Hello!"},    "user_id": "your_user_id"}
+{    "model": "deepseek-flash",    "messages": [{"role": "user", "content": "Hello!"}],    "user_id": "your_user_id"}
 ```
 
 If you are using the OpenAI SDK, you need to place the `user_id` parameter under the `extra_body` parameter:
 
 ```
-response = client.chat.completions.create(    model="deepseek-flash",    messages=[{"role": "user", "content": "Hello!"}],    extra_body={"user_id": "your_user_id"})
+response = client.chat.completions.create(    model="deepseek-flash",    messages=[{"role": "user", "content": "Hello!"}],    extra_body={"user_id": "your_user_id"},)
 ```
 
 HTTP request body:
 
 ```
-{    "model": "deepseek-flash",    "messages": {"role": "user", "content": "Hello!"},    "metadata": {"user_id": "your_user_id"},    "max_tokens": 1024}
+{    "model": "deepseek-flash",    "messages": [{"role": "user", "content": "Hello!"}],    "metadata": {"user_id": "your_user_id"},    "max_tokens": 1024}
 ```
 
 If you are using the Anthropic SDK, the calling method is as follows:
 
 ```
-message = client.messages.create(    model="deepseek-flash",    messages=[{"role": "user", "type": "text", "content": "Hello!"}],    metadata={"user_id": "your_user_id"},    max_tokens=1024)
+message = client.messages.create(    model="deepseek-flash",    messages=[{"role": "user", "type": "text", "content": "Hello!"}],    metadata={"user_id": "your_user_id"},    max_tokens=1024,)
 ```
 
 After your request is sent, it may sometimes take a while to receive a response from the server. During this period, your HTTP request will remain connected, and you may continuously receive contents in the following formats:
