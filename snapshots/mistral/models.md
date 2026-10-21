@@ -28,13 +28,13 @@ A third-party open weight text model from Z.ai with a 1M-token context window.
 
 Hybrid model unifying instruct, reasoning, and coding in a single efficient model.
 
-### Voxtral Mini Transcribe 2
+### Voxtral Mini Transcribe 3
 
-An efficient audio input model, pre-trained and optimized for transcription purposes.
+Strong transcription and diarization at a competitive price point.
 
-### Voxtral Mini Transcribe Realtime
+### Voxtral TTS 3
 
-An efficient audio input model, pre-trained and optimized for live transcription purposes.
+State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
 
 All models
 
@@ -118,6 +118,30 @@ State-of-the-art TTS with zero-shot voice cloning and multilingual support.
 
 v26.03
 
+### Voxtral Mini Transcribe 3
+
+Strong transcription and diarization at a competitive price point.
+
+v3.0
+
+### Voxtral Small Transcribe 3
+
+Flagship transcription and diarization model with SOTA accuracy.
+
+v3.0
+
+### Voxtral Mini Transcribe Realtime 3
+
+Realtime transcription model for agentic use-cases with configurable latency and turn detection.
+
+v3.0
+
+### Voxtral TTS 3
+
+State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
+
+v3.0
+
 ### Voxtral Mini Transcribe 2
 
 An efficient audio input model, pre-trained and optimized for transcription purposes.
@@ -182,6 +206,12 @@ Time series models
 
 Models for zero-shot time series forecasting with covariate support and probabilistic outputs.
 
+### Timestral 1.0 209M
+
+A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+
+v1.0
+
 ### Timestral 1.0 123M
 
 A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
@@ -195,16 +225,6 @@ A time series foundation model for zero-shot forecasting with covariate support 
 v1.0
 
 ### Timestral 1.0 5M
-
-A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
-
-v1.0
-
-Other specialist models
-
-Specialized models for focused domains and task-specific workloads.
-
-### Timestral 1.0 209M
 
 A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
 
