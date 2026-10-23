@@ -422,24 +422,6 @@ Our next-generation video generation and editing model, now generally available 
 
 * Billing is based on total output token consumption, calculated at a rate of 5,792 tokens per second of 720p video. Under Standard pricing, this equates to an effective price of approximately $0.10 per second.
 
-## Gemini Omni Flash Preview
-
-`gemini-omni-flash-preview`
-
-Try it in Google AI Studio
-
-Our next-generation video generation and editing model.
-
-### Standard
-
-|  | Free Tier | Paid Tier, per 1M tokens in USD |
-|---|---|---|
-| Input price | Not available | $1.50 (text / image / video / audio) |
-| Output price (including thinking tokens) | Not available | $9.00 (text) $17.50 (video)* |
-| Used to improve our products | Yes | No |
-
-* Billing is based on total output token consumption, calculated at a rate of 5,792 tokens per second of 720p video. Under Standard pricing, this equates to an effective price of approximately $0.10 per second.
-
 ## Gemini 3.1 Pro Preview
 
 `gemini-3.1-pro-preview` and `gemini-3.1-pro-preview-customtools`
@@ -1067,21 +1049,6 @@ Our 2.5 Pro text-to-speech audio model optimized for powerful, low-latency speec
 | Output price | Not available | $10.00 (audio) |
 | Used to improve our products | Yes | No |
 
-## Veo 3.1
-
-`veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`, `veo-3.1-lite-generate-preview`
-
-Try Veo 3.1
-
-A fast video generation model.
-
-|  | Free Tier | Paid Tier, per second in USD |
-|---|---|---|
-| Veo 3.1 Standard video with audio price (default) | Not available | $0.40 (720p and 1080p) $0.60 (4k) |
-| Veo 3.1 Fast video with audio price (default) | Not available | $0.10 (720p) $0.12 (1080p) $0.30 (4k) |
-| Veo 3.1 Lite video with audio price (default) | Not available | $0.05 (720p) $0.08 (1080p) (4k output not supported) |
-| Used to improve our products | Yes | No |
-
 ## Lyria 3.5
 
 `lyria-3.5`
@@ -1226,4 +1193,4 @@ Agent usage costs are calculated based on the underlying token consumption and u
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-10-15 UTC.
+Last updated 2026-10-22 UTC.
