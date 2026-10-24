@@ -8,11 +8,11 @@ Please read our Privacy Policy, which describes how we collect and use personal 
 
 Please note: Our Commercial Terms of Service govern your use of any Anthropic API key, the Anthropic Console, or any other Anthropic offerings that reference the Commercial Terms of Service. For clarity, this does not include Claude.ai or Claude Pro use for individuals or entities.
 
-## 1. Who we are.
+### 1. Who we are.
 
 Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems. We conduct frontier research, develop and apply a variety of safety techniques, and deploy the resulting systems via a set of partnerships and products.
 
-## 2. Account creation and access.
+### 2. Account creation and access.
 
 Minimum age. You must be at least 18 years old or the minimum age required to consent to use the Services in your location, whichever is higher.
 
@@ -28,7 +28,7 @@ Evaluation and Additional Services. In some cases, we may permit you to evaluate
 
 You may need to accept additional terms to use certain Services. These additional terms will supplement our Terms for those Services and may change your rights or obligations for those Services, including your obligations to pay fees.
 
-## 3. Use of our Services.
+### 3. Use of our Services.
 
 You may access and use our Services only in compliance with our Terms, including our Acceptable Use Policy, the policy governing the countries and regions Anthropic currently supports ("Supported Regions Policy"), and any guidelines or supplemental terms we may post on the Services (the "Permitted Use"). You are responsible for all activity under the account through which you access the Services.
 
@@ -46,7 +46,7 @@ You may not access or use, or help another person to access or use, our Services
 
 You also must not abuse, harm, interfere with, or disrupt our Services, including, for example, introducing viruses or malware, spamming or DDoSing Services, or bypassing any of our systems or protective measures.
 
-## 4. Inputs, Outputs, Actions, and Materials.
+### 4. Inputs, Outputs, Actions, and Materials.
 
 Generally. You may be allowed to interact with our Services in a variety of formats (we call these "Inputs"). Our Services may generate responses (we call these "Outputs"), or enable the Services to take actions on your behalf, such as software manipulation, data processing, and system interactions (we call these "Actions"), based on your Inputs. Inputs and Outputs collectively are "Materials."
 
@@ -64,7 +64,7 @@ Our use of Materials. We may use Materials to provide, maintain, and improve the
 
 We appreciate feedback, including ideas and suggestions for improvement or rating an Output in response to an Input ("Feedback"). If you rate an Output in response to an Input—for example, by using the thumbs up/thumbs down icon—we will store the related conversation as part of your Feedback. You have no obligation to give us Feedback, but if you do, you agree that we may use the Feedback however we choose without any obligation or other payment to you.
 
-## 6. Subscriptions, fees and payment.
+### 6. Subscriptions, fees and payment.
 
 Fees and billing. You may be required to pay us fees to access or use our Services or certain features of our Services. You are responsible for paying any applicable fees listed for the Services on the Model Pricing Page unless otherwise communicated to you by Anthropic in writing.
 
@@ -88,11 +88,11 @@ Subscriptions. To access Claude Pro and other subscription services we may make 
   4. The 7-day cancellation period will not reset if you change subscription tiers or cancel and then resubscribe, as you have already had an opportunity to test the Services.
 5. Subscription fees. You will pay the fees, either to us or to the App Distributor, for the Initial Term and each subsequent Renewal Term up front, at the start of that Initial Term or Renewal Term, as applicable. We have the right to make changes to the fees applicable to your Subscription from time to time, although we will not make any change to the fees applicable to your Subscription during the current Initial Term or Renewal Term, as applicable. If these changes result in an increase in the fees payable by you, we will inform you at least 30 days in advance of the change. You agree to the increase in fees payable by you unless you cancel the Subscription, as described in the paragraph (Subscription cancellation) immediately above, before the Renewal Term to which the increase in fees will apply.
 
-## 7. Third-party services and links
+### 7. Third-party services and links
 
 Our Services may use or be used in connection with third-party content ("Third-Party Content"), services, or integrations. We do not control or accept responsibility for any loss or damage that may arise from your use of any Third-Party Content, services, and integrations, for which we make no representations or warranties. Your use of any Third-Party Content, services, and integrations is at your own risk and subject to any terms, conditions, or policies (including privacy policies) applicable to such third-party content, services, and integrations.
 
-## 8. Content Moderation
+### 8. Content Moderation
 
 Third-Party Content is the responsibility of the person or entity that provides it to our Services. Anthropic is under no obligation to host or serve Third-Party Content. Third-Party Content may appear in Inputs or Outputs and become part of Materials. If you see any Third-Party Content you believe does not comply with these Terms, including by violating the Acceptable Use Policy or the law, you can report it to us.
 
@@ -100,15 +100,15 @@ If we become aware that any Third-Party Content (1) infringes another's copyrigh
 
 You can learn more about our monitoring and enforcement, including how to appeal an account suspension or termination, in our T&S Support Center.
 
-## 9. Software
+### 9. Software
 
 We may offer manual or automatic updates to our software including our apps ("Anthropic Software"), without advance notice to you. Anthropic Software may include open source software. In the event of any conflict between these Terms and any other Anthropic or third-party terms applicable to any portion of Anthropic Software, such as open-source license terms, such other terms will control as to that portion of the Anthropic Software and to the extent of the conflict.
 
-## 10. Ownership of the Services
+### 10. Ownership of the Services
 
 The Services are owned, operated, and provided by us and our affiliates, licensors, distributors, and service providers (collectively "Providers"). We and our Providers retain all of our respective rights, title, and interest, including intellectual property rights, in and to the Services. Other than the rights of access and use expressly granted in our Terms, our Terms do not grant you any right, title, or interest in or to our Services.
 
-## 11. Disclaimer of warranties, limitations of liability, and indemnity
+### 11. Disclaimer of warranties, limitations of liability, and indemnity
 
 Our team works hard to provide great services, and we're continuously working on improvements. However, there are certain aspects we can't guarantee. We are using ALL CAPS to explain this, to make sure that you see it.
 
@@ -124,7 +124,7 @@ THE LAWS OF SOME JURISDICTIONS DO NOT ALLOW THE DISCLAIMER OF IMPLIED WARRANTIES
 
 OUR PROVIDERS ARE INTENDED THIRD PARTY BENEFICIARIES OF THE WARRANTY DISCLAIMERS AND LIMITATIONS OF LIABILITY CONTAINED IN THIS SECTION 11.
 
-## 12. General terms
+### 12. General terms
 
 Changes to the Services. Our Services are novel and will change. We may sometimes add or remove features, increase or decrease capacity limits, offer new Services, or stop offering certain Services.
 
@@ -156,7 +156,7 @@ Legal Compliance. We may comply with governmental, court, and law enforcement re
 
 U.S. Government Use. The Services were developed solely at private expense and are commercial computer software and commercial computer software documentation within the meaning of the applicable Federal Acquisition Regulations and their agency supplements. Accordingly, U.S. Government users of the Services will have only those rights that are granted to all other end users of the Services pursuant to these Terms.
 
-## 13. In case of disputes
+### 13. In case of disputes
 
 Equitable relief. You agree that (a) no adequate remedy exists at law if you breach Section 3 (Use of Our Services); (b) it would be difficult to determine the damages resulting from such breach, and any such breach would cause irreparable harm; and (c) a grant of injunctive relief provides the best remedy for any such breach. You waive any opposition to such injunctive relief, as well as any demand that we prove actual damage or post a bond or other security in connection with such injunctive relief.
 
