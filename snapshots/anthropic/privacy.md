@@ -166,20 +166,162 @@ Please note that under many countries' laws, you have the right to lodge a compl
 
 ## 10. Legal Bases for Processing
 
-| Purpose | Type of Data | Legal Basis |
-|---|---|---|
-| To provide, maintain and facilitate any products and services offered to you with respect to your Anthropic account, which are governed by our Terms of Service | Identity and Contact DataPayment InformationFeedbackInputs and OutputsTechnical Information | Contract |
-| To provide, maintain and facilitate optional services and features that enhance platform functionality and user experience | Identity and Contact DataFeedbackStudy Participation DataInputs and OutputsTechnical Information | Consent (for example for precise device location or for health app integrations)Legitimate interestsIt is in our and our users' legitimate interests to expand our product features and deliver additional services that enhance platform functionality and user experience. |
-| To provide you with service updates, communications, and to provide tailored recommendations about our Services that may be of interest to you. | Identity and Contact DataCommunication InformationTechnical InformationStudy Participation Data | Where necessary to perform a contract with you, such as processing your contact information to send you a technical announcement about the Services.Your consent when we ask for it to process your personal data for a specific purpose that we communicate to you, such as processing your contact information to send you certain forms of marketing communications.Legitimate InterestsIt is in our legitimate interests to promote our Services that may be of interest to you, including sending direct marketing. |
-| To create and administer your Anthropic account | Identity and Contact DataPayment InformationFeedbackVerification Data | Contract |
-| To facilitate payments for products and services provided by Anthropic | Identity and Contact DataPayment Information | Contract |
-| To prevent and investigate fraud, abuse, and violations of our Usage Policy, unlawful or criminal activity, unauthorized access to or use of personal data or Anthropic systems and networks, to protect our rights and the rights of others, to protect your safety or that of any other person, and to meet legal, governmental and institutional policy obligations | Identity and Contact DataPayment InformationInputs and OutputsTechnical InformationVerification DataStudy Participation Data | Consent (for example where you choose to verify your identity using biometric data)Legitimate interestsLegal obligationVital InterestsIt is in our legitimate interests to protect our business, employees and users from illegal activities, inappropriate behavior or violations of terms that would be detrimental. We also have a duty to cooperate with authorities. |
-| To investigate and resolve disputes | Identity and Contact DataPayment InformationInputs and OutputsFeedbackTechnical InformationStudy Participation DataCommunication Information | Legitimate interestsLegal obligationIt is in our legitimate interests to fully understand and make reasonable efforts to resolve customer complaints in order to improve user satisfaction. We also have a legal obligation in some cases. |
-| To investigate and resolve security issues | Identity and Contact DataPayment InformationFeedbackTechnical InformationInputs and OutputsStudy Participation DataCommunication InformationVerification Data | Legal obligationLegitimate interestsIt is in our legitimate interests to protect user data and our systems from intrusion or compromise through monitoring and swift response. We also have a legal obligation to provide adequate security safeguards. |
-| To debug and to identify and repair errors that impair existing functionality | Identity and Contact DataFeedbackTechnical InformationInputs and Outputs | Legitimate interestsIt is in our legitimate interests to maintain continuous functioning of our services and rapid correction of problems to ensure a positive user experience that encourages engagement. |
-| To improve the Services and conduct research (excluding model training) | Identity and Contact DataFeedbackStudy Participation DataTechnical InformationInputs and Outputs | Scientific ResearchLegitimate interestsIt is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable. |
-| To improve the Services and conduct research (including model training). See our Non-User Privacy Policy for more details on the data used to train our models, and the different stages of development. | FeedbackStudy Participation DataInputs and OutputsData provided through the Development Partner Program | Scientific ResearchConsentLegitimate interestsIt is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable. |
-| To enforce our Terms of Service and similar terms and agreements, including our Usage Policy. | Identity and Contact DataInputs and OutputsTechnical InformationStudy Participation DataVerification Data | ContractLegitimate interestsIn certain circumstances outside of the performance of our contract with you, we may rely on legitimate interests. It is in our legitimate interests to enforce the rules and policies governing use of our services, to maintain intended functionality and value for users. We aim to provide a safe, useful platform. |
+Purpose
+
+Type of Data
+
+Legal Basis
+
+To provide, maintain and facilitate any products and services offered to you with respect to your Anthropic account, which are governed by our Terms of Service
+
+- Identity and Contact Data
+- Payment Information
+- Feedback
+- Inputs and Outputs
+- Technical Information
+
+- Contract
+
+To provide, maintain and facilitate optional services and features that enhance platform functionality and user experience
+
+- Identity and Contact Data
+- Feedback
+- Study Participation Data
+- Inputs and Outputs
+- Technical Information
+
+- Consent (for example for precise device location or for health app integrations)
+- Legitimate interests
+
+It is in our and our users' legitimate interests to expand our product features and deliver additional services that enhance platform functionality and user experience.
+
+To provide you with service updates, communications, and to provide tailored recommendations about our Services that may be of interest to you.
+
+- Identity and Contact Data
+- Communication Information
+- Technical Information
+- Study Participation Data
+
+- Where necessary to perform a contract with you, such as processing your contact information to send you a technical announcement about the Services.
+- Your consent when we ask for it to process your personal data for a specific purpose that we communicate to you, such as processing your contact information to send you certain forms of marketing communications.
+- Legitimate Interests
+
+It is in our legitimate interests to promote our Services that may be of interest to you, including sending direct marketing.
+
+To create and administer your Anthropic account
+
+- Identity and Contact Data
+- Payment Information
+- Feedback
+- Verification Data
+
+- Contract
+
+To facilitate payments for products and services provided by Anthropic
+
+- Identity and Contact Data
+- Payment Information
+
+- Contract
+
+To prevent and investigate fraud, abuse, and violations of our Usage Policy, unlawful or criminal activity, unauthorized access to or use of personal data or Anthropic systems and networks, to protect our rights and the rights of others, to protect your safety or that of any other person, and to meet legal, governmental and institutional policy obligations
+
+- Identity and Contact Data
+- Payment Information
+- Inputs and Outputs
+- Technical Information
+- Verification Data
+- Study Participation Data
+
+- Consent (for example where you choose to verify your identity using biometric data)
+- Legitimate interests
+- Legal obligation
+- Vital Interests
+
+It is in our legitimate interests to protect our business, employees and users from illegal activities, inappropriate behavior or violations of terms that would be detrimental. We also have a duty to cooperate with authorities.
+
+To investigate and resolve disputes
+
+- Identity and Contact Data
+- Payment Information
+- Inputs and Outputs
+- Feedback
+- Technical Information
+- Study Participation Data
+- Communication Information
+
+- Legitimate interests
+- Legal obligation
+
+It is in our legitimate interests to fully understand and make reasonable efforts to resolve customer complaints in order to improve user satisfaction. We also have a legal obligation in some cases.
+
+To investigate and resolve security issues
+
+- Identity and Contact Data
+- Payment Information
+- Feedback
+- Technical Information
+- Inputs and Outputs
+- Study Participation Data
+- Communication Information
+- Verification Data
+
+- Legal obligation
+- Legitimate interests
+
+It is in our legitimate interests to protect user data and our systems from intrusion or compromise through monitoring and swift response. We also have a legal obligation to provide adequate security safeguards.
+
+To debug and to identify and repair errors that impair existing functionality
+
+- Identity and Contact Data
+- Feedback
+- Technical Information
+- Inputs and Outputs
+
+- Legitimate interests
+
+It is in our legitimate interests to maintain continuous functioning of our services and rapid correction of problems to ensure a positive user experience that encourages engagement.
+
+To improve the Services and conduct research (excluding model training)
+
+- Identity and Contact Data
+- Feedback
+- Study Participation Data
+- Technical Information
+- Inputs and Outputs
+
+- Scientific Research
+- Legitimate interests
+
+It is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable.
+
+To improve the Services and conduct research (including model training).
+
+See our Non-User Privacy Policy for more details on the data used to train our models, and the different stages of development.
+
+- Feedback
+- Study Participation Data
+- Inputs and Outputs
+- Data provided through the Development Partner Program
+
+- Scientific Research
+- Consent
+- Legitimate interests
+
+It is in our legitimate interests and in the interest of Anthropic users to evaluate the use of the Services and adoption of new features to inform the development of future features and improve direction and development of the Services. Our research also benefits the AI industry and society: it investigates the safety, inner workings, and societal impact of AI models so that artificial intelligence has a positive impact on society as it becomes increasingly advanced and capable.
+
+To enforce our Terms of Service and similar terms and agreements, including our Usage Policy.
+
+- Identity and Contact Data
+- Inputs and Outputs
+- Technical Information
+- Study Participation Data
+- Verification Data
+
+- Contract
+- Legitimate interests
+
+In certain circumstances outside of the performance of our contract with you, we may rely on legitimate interests. It is in our legitimate interests to enforce the rules and policies governing use of our services, to maintain intended functionality and value for users. We aim to provide a safe, useful platform.
 
 Use of personal data
 
