@@ -40,10 +40,21 @@ Most tool costs are per invocation. `sandbox` is billed per container session �
 
 | API | Price per 1K requests | Description |
 |---|---|---|
-| Search API | $5.00 | Raw web search results with advanced filtering |
-| Search API with Fast Search | $1.00 | Lower-latency web search results. Set `search_type: "fast"` |
+| Search API | $5.00 | Ranked web results as JSON, with page text extracted into each result's `snippet`. No model, no generated answer, no token billing. Filter by domain, language, and date, and bias results by country. |
+| Search API with Fast Search | $1.00 | Lower-latency results in the same response format. Set `search_type: "fast"` |
 
 Billing unit: Search API charges for each successful `POST /search` request, not for each query in the request. A successful request containing an array of up to five queries is one billing unit. Invalid requests, rate-limited requests, and upstream failures are not billed. A successful response is billed even when it returns no results. There are no additional token-based charges.
+
+Search API cost = successful requests ÷ 1,000 × the price per 1K requests. The amount of extracted text (`max_tokens`, `max_tokens_per_page`) does not change the price.
+
+| Request | Billing units | Cost |
+|---|---|---|
+| One `POST /search` with one query, up to 20 results | 1 | $5.00 ÷ 1,000 = $0.005 |
+| One `POST /search` with one query and `search_type: "fast"` | 1 | $1.00 ÷ 1,000 = $0.001 |
+| One `POST /search` with a `query` array of five queries | 1 | $0.005 (standard) or $0.001 (Fast Search) |
+| 10,000 successful standard requests in a month | 10,000 | 10 × $5.00 = $50.00 |
+
+What a result contains, the request controls, and the limits on queries, results, and extracted text are in the Search API overview.
 
 ## Embeddings API Pricing
 
@@ -121,9 +132,9 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 | `web_search` | $0.0025 |
 | Total | $0.0059 |
 
-## Agent API Research Preset
+## Agent API Research Effort Level
 
-`low` preset representative run • `openai/gpt-6-luna` • 2,000 input + 1,000 output tokens • 1 web search + 1 fetch
+`low` effort level representative run • `openai/gpt-6-luna` • 2,000 input + 1,000 output tokens • 1 web search + 1 fetch
 
 | Component | Cost |
 |---|---|
@@ -133,7 +144,7 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 | `fetch_url` | $0.0005 |
 | Total | $0.0022 |
 
-Actual preset costs vary with the selected model, token usage, and tool invocations. When present on a completed response, `usage.cost.total_cost` reports the calculated request cost.
+Actual effort level costs vary with the selected model, token usage, and tool invocations. When present on a completed response, `usage.cost.total_cost` reports the calculated request cost.
 
 ## Purchase Options
 
