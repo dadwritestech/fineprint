@@ -4,6 +4,14 @@
 
 This page documents updates to the Gemini API.
 
+## October 27, 2026
+
+- Gemini API CLI (`gemini-api`) beta: Released the Gemini API CLI (`gemini-api`), a stateless, zero-dependency command-line client for AI coding agents, scripts, and CI pipelines. Use `gemini-api` on the Interactions API to generate text and media, analyze files, and run Gemini managed agents. See the Gemini API CLI guide to get started.
+
+## October 26, 2026
+
+- Generate Content API storage on by default: New projects using the Generate Content API (`generateContent`, `streamGenerateContent`, and `batchGenerateContent`) on the paid tier now store requests by default (`store=true`), matching the Interactions API. Existing projects keep their current setting. To opt out, set `store=false` on individual requests or turn off Generate Content API logging in the Settings panel of the Logs and Datasets dashboard. See Logs and datasets for details.
+
 ## October 13, 2026
 
 - Gemini 4 Argon (`gemini-4-argon`) generally available (GA): Released Gemini 4 Argon (`gemini-4-argon`), our most capable model built for complex coding, agentic, math, and science tasks.
@@ -923,4 +931,4 @@ API updates:
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-10-14 UTC.
+Last updated 2026-10-28 UTC.
