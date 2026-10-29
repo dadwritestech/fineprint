@@ -319,7 +319,7 @@ Contact sales
 | Sonnet |  |  |  |
 | Haiku |  |  |  |
 | Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
-| Extra usage |  | n/a | n/a |
+| Usage credits |  | n/a | n/a |
 | New Monthly API credits† | Up to $500/month |  |  |
 | Priority access at high traffic times |  |  |  |
 | User and organizational level spend controls |  |  |  |
