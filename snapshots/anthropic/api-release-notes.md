@@ -8,6 +8,10 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### October 23, 2026
+
+- The Claude Tag API is available in beta for Claude Enterprise organizations with the `experimental-claude-tag-2026-10-21` beta header. Its `/v1/organizations/claude_tag/` endpoints read and change Claude Tag settings on Slack channels and Slack workspaces, show which settings apply in a channel and where each comes from, and attach Access bundles. Call it with an Admin API key that your primary owner creates in claude.ai with the `read:claude_tag` or `write:claude_tag` scope. It is not available to Claude Platform (Claude Console) organizations.
+
 ### October 22, 2026
 
 - We've launched Claude Models on Google Cloud (Anthropic managed), the Claude API operated by Anthropic and reached through your Google Cloud project. Google Cloud IAM controls access. Google Cloud Marketplace handles billing.
@@ -19,10 +23,6 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - We've released new versions of the client SDKs and the `ant` CLI that send API version `2026-10-21` by default: Python SDK 2.0.0, TypeScript SDK 1.0.0, C# SDK 13.0.0, Go SDK 2.0.0, Java SDK 3.0.0, PHP SDK 1.0.0, Ruby SDK 2.0.0, and `ant` CLI 2.0.0. See Switch to 2026-10-21.
 - The new SDK and CLI versions also have breaking changes that don't depend on the API version, and they are licensed under Apache 2.0 instead of the MIT License. See SDK and CLI changes.
 - We've added the `enforcement_status` and `enforcement_actions` fields to user profiles, so you can see whether Anthropic has restricted or banned one of your end customers. To find the profiles that have an open restriction or ban, list your profiles with the new `enforcement_status[]` filter. See Check whether Anthropic has restricted or banned a profile.
-
-### October 20, 2026
-
-- The Claude Tag API is available in beta for Claude Enterprise organizations with the `experimental-claude-tag-2026-10-21` beta header. Its `/v1/organizations/claude_tag/` endpoints read and change Claude Tag settings on Slack channels and Slack workspaces, show which settings apply in a channel and where each comes from, and attach Access bundles. Call it with an Admin API key that your primary owner creates in claude.ai with the `read:claude_tag` or `write:claude_tag` scope. It is not available to Claude Platform (Claude Console) organizations.
 
 ### October 20, 2026
 
@@ -280,7 +280,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 
 ### June 18, 2026
 
-- The Python, TypeScript, Go, Java, Ruby, PHP, and C# SDKs now include support for `code_execution_20260120`, the code execution tool version that adds REPL state persistence and is the minimum version for programmatic tool calling. To adopt it, set the tool's `type` to `code_execution_20260120`; no beta header is required. It's available on Claude Fable 5, Claude Mythos 5, Claude Opus 4.5 and newer, and Claude Sonnet 4.5 and newer; see the code execution tool's Compatibility section.
+- The Python, TypeScript, Go, Java, Ruby, PHP, and C# SDKs now include support for `code_execution_20260120`, the code execution tool version that adds REPL state persistence and is the minimum version for programmatic tool calling. To adopt it, set the tool's `type` to `code_execution_20260120`; no beta header is required. It's available on Claude Fable 5, Claude Mythos 5, Claude Opus 4.5 and newer, and Claude Sonnet 4.5 and newer; see the code execution tool's API support section.
 
 ### June 15, 2026
 
@@ -697,7 +697,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
 - We've released updated versions of our tools that decouple the text edit and bash tools from the computer use system prompt:
   - `bash_20250124`: Same functionality as previous version but is independent from computer use. Does not require a beta header.
   - `text_editor_20250124`: Same functionality as previous version but is independent from computer use. Does not require a beta header.
-  - `computer_20250124`: Updated computer use tool with new command options including "hold_key", "left_mouse_down", "left_mouse_up", "scroll", "triple_click", and "wait". This tool requires the "computer-use-2025-01-24" anthropic-beta header. Learn more in Tool use with Claude.
+  - `computer_20250124`: Updated computer use tool with new command options including `hold_key`, `left_mouse_down`, `left_mouse_up`, `scroll`, `triple_click`, and `wait`. This tool requires the `computer-use-2025-01-24` anthropic-beta header. Learn more in Tool use with Claude.
 
 ### February 10th, 2025
 
