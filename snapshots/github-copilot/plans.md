@@ -224,7 +224,7 @@ Pro+
 
 Max
 
-Cloud agent
+Copilot in the cloud
 
 Assign work to Copilot to research, plan, and write code — with or without a pull request
 
@@ -372,6 +372,7 @@ Free
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
+- OpenAI GPT-6.1 Terra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
@@ -409,6 +410,7 @@ Pro
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
+- OpenAI GPT-6.1 Terra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
@@ -446,6 +448,7 @@ Pro+
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
+- OpenAI GPT-6.1 Terra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
@@ -483,6 +486,7 @@ Max
 - OpenAI GPT-6 Luna
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
+- OpenAI GPT-6.1 Terra
 - Microsoft MAI-Code-1.1-Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
