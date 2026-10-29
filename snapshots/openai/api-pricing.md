@@ -1,7 +1,5 @@
 <!-- fineprint snapshot: openai/api-pricing | source: https://developers.openai.com/api/docs/pricing -->
 
-Our latest models
-
 Speed
 
 Context length
@@ -15,6 +13,7 @@ Standard
 | Model | Input | Output | Cached input | 30m write | 12h write |
 | gpt-6-astra | $10.00 | $50.00 | $1.00 | $12.50 | $25.00 |
 | gpt-6.1-sol | $2.00 | $10.00 | $0.10 | $2.50 | $5.00 |
+| gpt-6.1-terra | $1.00 | $5.00 | $0.05 | $1.25 | $2.50 |
 | gpt-6-luna | $0.10 | $0.50 | $0.01 | $0.125 | $0.25 |
 
 Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026. FedRAMP endpoints are also charged a 10% uplift. Priority processing was renamed Fast mode on July 30, 2026. GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
