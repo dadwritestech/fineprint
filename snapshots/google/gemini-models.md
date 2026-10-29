@@ -74,6 +74,10 @@ Low-latency speech-to-text model with utterance-based language detection, speake
 
 New Stable
 
+Fast video generation, editing, keyframe interpolation, and extension with native audio.
+
+Stable
+
 ### Preview
 
 Frontier-class performance rivaling larger models at a fraction of the cost.
@@ -92,10 +96,6 @@ Legacy TTS preview model. We recommend updating to Gemini 3.8 Flash TTS or Gemin
 
 Preview
 
-Fast video generation, editing, keyframe interpolation, and extension with native audio.
-
-New
-
 ### All Gemini 3 models
 
 | Model | Endpoint |
@@ -112,13 +112,13 @@ New
 | Nano Banana 2 | gemini-3.1-flash-image |
 | Nano Banana 2 Lite | gemini-3.1-flash-lite-image |
 | Nano Banana Pro | gemini-3-pro-image |
+| Gemini 3.5 Transcribe | gemini-3.5-transcribe gemini-3.5-transcribe-live |
+| Gemini Omni Flash | gemini-omni-1.1-flash |
 | Gemini 3.1 Pro | gemini-3.1-pro-preview |
 | Gemini 3 Flash | gemini-3-flash-preview |
 | Gemini 3.5 Live Translate | gemini-3.5-live-translate-preview |
 | Gemini 3.1 Flash Live | gemini-3.1-flash-live-preview |
 | Gemini 3.1 Flash TTS | gemini-3.1-flash-tts-preview |
-| Gemini Omni Flash | gemini-omni-1.1-flash |
-| Gemini 3.5 Transcribe | gemini-3.5-transcribe gemini-3.5-transcribe-live |
 
 ## Gemini 2.5 Flash
 
@@ -168,9 +168,7 @@ This section contains all generative media models, including ones that may alrea
 | Nano Banana 2.1 | High-efficiency image generation and editing model with improved visual quality, typography, and multi-turn consistency. | gemini-nano-banana-2.1 |
 | Nano Banana 2 | High-efficiency production-scale visual creation, combining the intelligence of the Gemini 3 series with lightning-fast generation speeds. | gemini-3.1-flash-image |
 | Nano Banana 2 Lite | Designed as the efficiency specialist of the image generation family, offering ultra-low latency and cost-effective image generation and editing. | gemini-3.1-flash-lite-image |
-| Veo 3.1 | State-of-the-art cinematic video generation with advanced creative controls and natively synchronized audio. | veo-3.1-generate-preview |
 | Nano Banana Pro | A professional design engine with a reasoning core for studio-quality 4K visuals, complex layouts, and precise text rendering. | gemini-3-pro-image |
-| Veo 3.1 Lite | High-efficiency, low-cost, developer-first video generation, editing, and cinematic control from the Veo 3.1 family. | veo-3.1-lite-generate-preview |
 | Gemini Omni Flash | Fast video generation, editing, keyframe interpolation, and extension with native audio. | gemini-omni-1.1-flash |
 | Nano Banana | State-of-the-art native image generation and editing designed for fast, creative workflows. | gemini-2.5-flash-image |
 | Imagen 4 (Shut down) | Text-to-image model featuring fast and ultra-fast generation (shut down). | imagen-4.0-generate |
@@ -198,15 +196,15 @@ This section contains all music generation models, including ones that may alrea
 
 | Model | Description | Endpoint |
 |---|---|---|
-| Gemini Embedding 2 | Our first multimodal embedding model, mapping text, images, video, audio, and PDFs into a unified embedding space for advanced semantic search and RAG systems. | gemini-embedding-2-preview |
+| Gemini Embedding 2 | Our first multimodal embedding model, mapping text, images, video, audio, and PDFs into a unified embedding space for advanced semantic search and RAG systems. | gemini-embedding-2 |
 | Gemini Embedding | High-dimensional vector representations for advanced semantic search, text classification, and RAG systems. | gemini-embedding-001 |
 | Gemini Robotics ER 2 | Embodied reasoning model delivering advanced video understanding, spatial reasoning, multi-step tool orchestration, and multi-robot collaboration for robotics tasks. | gemini-robotics-er-2-preview |
-| Gemini Robotics ER 1.6 | Advanced embodied reasoning model that understands physical spaces and plans multi-step tasks for robotic agents with new capabilities like instrument reading, improved spatial and physical reasoning. | gemini-robotics-er-1.6-preview |
 
 ## Previous models
 
 | Model | Description | Endpoint |
 |---|---|---|
+| Gemini Robotics ER 1.6 (Shut down) | Advanced embodied reasoning model that understands physical spaces and plans multi-step tasks for robotic agents with new capabilities like instrument reading, improved spatial and physical reasoning. | gemini-robotics-er-1.6-preview |
 | Computer Use (Shut down) | A specialized model that can "see" a digital screen and perform UI actions like clicking, typing, and navigating to automate complex browser tasks. | gemini-2.5-computer-use-preview-10-2025 |
 | Gemini 2.0 Flash (Shut down) | Our second generation workhorse model, with next-gen features and improved capabilities, including superior speed, native tool use, and a 1M token context window. | gemini-2.0-flash |
 | Gemini 2.0 Flash-Lite (Shut down) | Our fastest second generation model, optimized for cost efficiency and low latency. | gemini-2.0-flash-lite |
@@ -229,7 +227,7 @@ Points to the latest release for a specific model variation. This can be a stabl
 
 For example: `gemini-flash-latest`.
 
-Points to an experimental model which will typically be not be suitable for production use and come with more restrictive rate limits. We release experimental models to gather feedback and get our latest updates into the hands of developers quickly.
+Points to an experimental model which will typically not be suitable for production use and come with more restrictive rate limits. We release experimental models to gather feedback and get our latest updates into the hands of developers quickly.
 
 Experimental models are not stable and availability of model endpoints is subject to change.
 
@@ -239,4 +237,4 @@ For information about model deprecations, visit the Gemini deprecations page.
 
 Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
 
-Last updated 2026-10-13 UTC.
+Last updated 2026-10-28 UTC.
