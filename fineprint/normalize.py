@@ -99,9 +99,15 @@ def _decode_cfemail(hexstr: str) -> str:
 
 
 def _is_noise(el: Tag) -> bool:
+    attrs = el.attrs or {}
+    # Docs callouts are <aside role="note"> ("Sonnet 5 introductory pricing ends ...").
+    if el.name == "aside" and attrs.get("role") == "note":
+        return False
+    # Copy-to-clipboard buttons in tables hold the data itself (the model ID column).
+    if el.name == "button" and el.find_parent(["td", "th"]) is not None:
+        return False
     if el.name in DROP_TAGS:
         return True
-    attrs = el.attrs or {}
     if attrs.get("role") in DROP_ROLES:
         return True
     # Inactive tab panels are hidden but still published content (e.g. pricing tabs).
@@ -285,12 +291,15 @@ def _post(md_blocks: list[str]) -> str:
 
 def _inline_react_segments(soup: BeautifulSoup) -> None:
     """React streaming SSR ships Suspense content as <div hidden id="S:n"> at the end of
-    the body; a script then swaps it into <template id="B:n">. Do that swap here."""
-    for seg in soup.find_all("div", id=re.compile(r"^S:\d+$")):
+    the body; a script then swaps it into <template id="B:n"> ($RC, a Suspense boundary)
+    or <template id="P:n"> ($RS, a postponed segment). Do that swap here. Ids are hex
+    (S:f, S:10, S:1a), and segments nest, so slots are looked up after earlier swaps."""
+    for seg in soup.find_all("div", id=re.compile(r"^S:[0-9a-f]+$")):
         if "hidden" not in seg.attrs:
             continue
         del seg["hidden"]
-        slot = soup.find("template", id="B:" + seg["id"][2:])
+        n = seg["id"][2:]
+        slot = soup.find("template", id="B:" + n) or soup.find("template", id="P:" + n)
         if slot is not None:
             slot.replace_with(seg.extract())
 

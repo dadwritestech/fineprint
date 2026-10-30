@@ -182,3 +182,29 @@ def test_react_streaming_segments_are_inlined_in_place():
             '<div hidden id="S:0"><p>' + 'Opus costs $5 per MTok. ' * 10 + '</p></div></body>')
     out = html_to_markdown(html)
     assert out.index("# Pricing") < out.index("Opus costs") < out.index("Footer note")
+
+
+def test_react_segments_with_hex_ids_and_postponed_slots_are_inlined():
+    # Real pages stream >10 segments: ids are hex, and $RS fills <template id="P:n">,
+    # nested inside an earlier segment. Missing any of them silently drops a price table.
+    html = ('<body><main><h1>Pricing</h1><template id="B:1"></template><p>Footer note</p></main>'
+            '<div hidden id="S:1"><h2>Models</h2><template id="P:1a"></template></div>'
+            '<div hidden id="S:1a"><table><tr><td>Opus 4.7</td><td>$5 / MTok</td></tr></table></div>'
+            '</body>')
+    out = html_to_markdown(html)
+    assert out.index("## Models") < out.index("Opus 4.7") < out.index("Footer note")
+
+
+def test_table_cell_buttons_keep_their_text_but_other_buttons_drop():
+    html = ('<main><button>Copy page</button><table><tr><th>API model name</th><th>State</th></tr>'
+            '<tr><td><button aria-label="Copy model ID"><svg></svg>claude-fable-5-1</button></td>'
+            '<td>Active</td></tr></table></main>')
+    out = html_to_markdown(html)
+    assert "claude-fable-5-1 | Active" in out and "Copy page" not in out
+
+
+def test_callout_asides_are_content_but_sidebars_are_not():
+    html = ('<main><aside class="sidebar-nav">Models Pricing Limits</aside><h1>Pricing</h1>'
+            '<aside role="note"><p>Sonnet 5 introductory pricing ends August 31, 2026.</p></aside></main>')
+    out = html_to_markdown(html)
+    assert "introductory pricing ends" in out and "Models Pricing Limits" not in out
