@@ -86,8 +86,8 @@ def _entry(r: dict, up: str, show_vendor: bool) -> str:
     return (f'<li class="{"minor" if r["minor"] else ""}"><span class="date">{d:%b %d}</span>'
             f'<span class="what">{_e(r["summary"])}</span>'
             f'<span class="meta"><span class="chip">{who}{_e(r["slug"])}</span>'
-            f'<span class="chip">{_e(r["kind"])}</span>'
-            f'<span><span class="plus">+{r["added"]}</span> <span class="minus">&minus;{r["removed"]}</span></span>'
+            + (f'<span class="chip">{_e(r["kind"])}</span>' if r["kind"] != r["slug"] else "")
+            + f'<span><span class="plus">+{r["added"]}</span> <span class="minus">&minus;{r["removed"]}</span></span>'
             f'<a href="{up}{_e(r["diff"][:-5])}.html">raw diff</a>'
             f'<a href="{_e(r["url"])}">live page</a></span></li>')
 
