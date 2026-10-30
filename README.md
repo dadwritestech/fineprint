@@ -45,8 +45,11 @@ model marks `Minor:` are faded on the site and left out of RSS.
 **Backfill** (`python -m fineprint backfill 20260430 20261030`) rebuilds history from the
 Wayback Machine. It uses the CDX API, about one capture per week per page, `id_` raw
 captures, 3 s between archive.org requests, and backoff on 429/5xx. Captures that are bot
-walls, JS shells, undecodable bytes, or under half the page's median size are dropped and
-listed in `data/backfill-report.json`. Backfilled dates mean "first seen in a weekly
+walls, JS shells, undecodable bytes, or under half the size of both neighbouring captures
+are dropped. So are one-capture "blips" (A, B, A): a stale CDN copy would otherwise make two
+false headlines. Every drop is listed in `data/backfill-report.json`. Live runs get the same
+protection differently: a change must be seen on two consecutive fetches before it is
+committed, dated to when it was first seen (`data/pending.json`). Backfilled dates mean "first seen in a weekly
 sample", not the exact change time.
 
 ## Run it

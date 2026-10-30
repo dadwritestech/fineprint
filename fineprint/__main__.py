@@ -9,12 +9,16 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import sys
 import time
 
 from . import fetch, store
 from .normalize import html_to_markdown, snapshot_text
+
+
+PENDING = fetch.ROOT / "data" / "pending.json"
 
 
 def log(*a) -> None:
@@ -31,6 +35,7 @@ def cmd_fetch(args) -> int:
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
     stamp = "live-" + now.strftime("%Y%m%d%H%M%S")
     changed, problems = 0, []
+    pending = json.loads(PENDING.read_text(encoding="utf-8")) if PENDING.exists() else {}
     for page in _select(fetch.load_pages(), args.only):
         pid = f"{page['vendor']}/{page['slug']}"
         ok, why = fetch.robots_allows(page["url"])
@@ -51,10 +56,29 @@ def cmd_fetch(args) -> int:
         if bad:
             problems.append((pid, bad))
             continue
-        sha = store.commit_snapshot(page, text, now.isoformat(), f"live fetch {stamp[5:]}")
+        path = store.snapshot_path(page)
+        current = path.read_text(encoding="utf-8") if path.exists() else None
+        digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        if text == current:
+            pending.pop(pid, None)
+            continue
+        when, source = now.isoformat(), f"live fetch {stamp[5:]}"
+        if current is not None and not args.no_confirm:
+            # A change must be seen on two consecutive fetches before it is committed;
+            # one-off stale CDN copies and A/B variants otherwise become false headlines.
+            seen = pending.get(pid)
+            if not seen or seen["sha256"] != digest:
+                pending[pid] = {"sha256": digest, "first_seen": now.isoformat()}
+                log(f"pending  {pid}  (confirm on next fetch)")
+                continue
+            when = seen["first_seen"]
+            source = f"live fetch, first seen {seen['first_seen']}, confirmed {now.isoformat()}"
+        pending.pop(pid, None)
+        sha = store.commit_snapshot(page, text, when, source)
         if sha:
             changed += 1
             log(f"changed  {pid}  {sha[:8]}")
+    PENDING.write_text(json.dumps(pending, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     for pid, why in problems:
         log(f"skipped  {pid}: {why}")
     log(f"{changed} page(s) changed, {len(problems)} skipped")
@@ -72,6 +96,47 @@ def _weekly(caps: list[dict], every_days: int) -> list[dict]:
     if caps and caps[-1] is not picked[-1]:
         picked.append(caps[-1])
     return picked
+
+
+def filter_captures(rows: list[tuple[str, str, str]]) -> tuple[list, list]:
+    """rows: (timestamp, markdown body, snapshot text), oldest first.
+
+    Returns (kept [(ts, text)], dropped [(ts, reason)]). Dropped:
+    - bot walls, JS shells, undecodable bytes;
+    - transient dips: under half the size of BOTH neighbours (a persistent shrink is kept);
+    - blips: A, B, A where B is a single capture. A stale CDN copy or an A/B variant
+      would otherwise become two false headlines ("X removed", then "X restored").
+    """
+    ok, dropped = [], []
+    sizes = [len(r[1]) for r in rows]
+    for i, (ts, body, text) in enumerate(rows):
+        bad = store.looks_broken(body)
+        if (not bad and 0 < i < len(rows) - 1
+                and sizes[i] < 0.5 * sizes[i - 1] and sizes[i] < 0.5 * sizes[i + 1]):
+            bad = "transient dip: under half the size of both neighbouring captures"
+        if bad:
+            dropped.append((ts, bad))
+        else:
+            ok.append((ts, text))
+    # collapse into runs of identical text, then remove single-capture runs between equal runs
+    runs: list[list[tuple[str, str]]] = []
+    for ts, text in ok:
+        if runs and runs[-1][0][1] == text:
+            runs[-1].append((ts, text))
+        else:
+            runs.append([(ts, text)])
+    changed = True
+    while changed:
+        changed = False
+        for j in range(1, len(runs) - 1):
+            if len(runs[j]) == 1 and runs[j - 1][0][1] == runs[j + 1][0][1]:
+                dropped.append((runs[j][0][0], "blip: differs from both neighbours, which agree"))
+                runs[j - 1].extend(runs[j + 1])
+                del runs[j:j + 2]
+                changed = True
+                break
+    kept = sorted((r for run in runs for r in run), key=lambda r: r[0])
+    return kept, sorted(dropped)
 
 
 def cmd_backfill(args) -> int:
@@ -112,19 +177,11 @@ def cmd_backfill(args) -> int:
             prev_digest, prev_html = c["digest"], html
             body = html_to_markdown(html, page.get("select"))
             rows.append((c["timestamp"], body, snapshot_text(page, html)))
-        # Drop bot walls, JS shells, and transient dips: a capture under half the size of
-        # BOTH neighbours is a broken capture, not a change. A shrink that persists is kept.
-        good, dropped = [], []
-        sizes = [len(r[1]) for r in rows]
-        for i, (ts, body, text) in enumerate(rows):
-            bad = store.looks_broken(body)
-            if not bad and 0 < i < len(rows) - 1 and                     sizes[i] < 0.5 * sizes[i - 1] and sizes[i] < 0.5 * sizes[i + 1]:
-                bad = "transient dip: under half the size of both neighbouring captures"
-            (dropped if bad else good).append((ts, bad))
-            if not bad:
-                events.append((ts, page, text, f"wayback {ts}"))
+        kept, dropped = filter_captures(rows)
+        for ts, text in kept:
+            events.append((ts, page, text, f"wayback {ts}"))
         report[pid] = {"captures_in_window": len(caps), "sampled": len(picks),
-                       "used": len(good), "dropped": [d for d in dropped]}
+                       "used": len(kept), "dropped": dropped}
         log(f"{pid}: {len(caps)} daily captures, sampled {len(picks)}, used {len(good)}, "
             f"dropped {len(dropped)}")
 
@@ -149,6 +206,8 @@ def main(argv: list[str] | None = None) -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     f = sub.add_parser("fetch")
     f.add_argument("--only", nargs="*")
+    f.add_argument("--no-confirm", action="store_true",
+                   help="commit a change on first sight instead of waiting for a second fetch")
     b = sub.add_parser("backfill")
     b.add_argument("since")
     b.add_argument("until")
