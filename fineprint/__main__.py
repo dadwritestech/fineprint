@@ -10,7 +10,6 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
-import statistics
 import sys
 import time
 
@@ -113,13 +112,14 @@ def cmd_backfill(args) -> int:
             prev_digest, prev_html = c["digest"], html
             body = html_to_markdown(html, page.get("select"))
             rows.append((c["timestamp"], body, snapshot_text(page, html)))
-        # Drop captures that are bot walls, JS shells or a fraction of the usual size;
-        # otherwise one bad capture shows up as "page gutted" then "page restored".
+        # Drop bot walls, JS shells, and transient dips: a capture under half the size of
+        # BOTH neighbours is a broken capture, not a change. A shrink that persists is kept.
         good, dropped = [], []
-        med = statistics.median([len(r[1]) for r in rows]) if rows else 0
-        for ts, body, text in rows:
-            bad = store.looks_broken(body) or (
-                "under half the page's median size" if len(body) < 0.5 * med else None)
+        sizes = [len(r[1]) for r in rows]
+        for i, (ts, body, text) in enumerate(rows):
+            bad = store.looks_broken(body)
+            if not bad and 0 < i < len(rows) - 1 and                     sizes[i] < 0.5 * sizes[i - 1] and sizes[i] < 0.5 * sizes[i + 1]:
+                bad = "transient dip: under half the size of both neighbouring captures"
             (dropped if bad else good).append((ts, bad))
             if not bad:
                 events.append((ts, page, text, f"wayback {ts}"))

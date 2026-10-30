@@ -163,3 +163,22 @@ def test_broken_captures_are_detected():
     assert looks_broken("tiny")
     assert looks_broken("ok text " * 50 + "�" * 300)
     assert looks_broken(md()) is None
+
+
+def test_hidden_tab_panels_are_kept_but_hidden_junk_is_not():
+    html = ('<main><div role="tablist"><span>Team</span></div>'
+            '<div role="tabpanel"><p>Team plan $25 per seat</p></div>'
+            '<div role="tabpanel" hidden><p>API: Opus $5 / MTok</p></div>'
+            '<div hidden><p>secret modal text</p></div>'
+            '<span aria-hidden="true">decorative</span></main>')
+    out = html_to_markdown(html)
+    assert "Team plan $25 per seat" in out and "Opus $5 / MTok" in out
+    assert "secret modal" not in out and "decorative" not in out
+
+
+def test_react_streaming_segments_are_inlined_in_place():
+    html = ('<body><main><h1>Pricing</h1><!--$?--><template id="B:0"></template>'
+            '<div class="skeleton"></div><!--/$--><p>Footer note</p></main>'
+            '<div hidden id="S:0"><p>' + 'Opus costs $5 per MTok. ' * 10 + '</p></div></body>')
+    out = html_to_markdown(html)
+    assert out.index("# Pricing") < out.index("Opus costs") < out.index("Footer note")

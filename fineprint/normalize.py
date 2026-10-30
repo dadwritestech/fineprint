@@ -104,11 +104,13 @@ def _is_noise(el: Tag) -> bool:
     attrs = el.attrs or {}
     if attrs.get("role") in DROP_ROLES:
         return True
-    if attrs.get("aria-hidden") == "true" or "hidden" in attrs:
-        return True
-    style = str(attrs.get("style", "")).replace(" ", "").lower()
-    if "display:none" in style or "visibility:hidden" in style:
-        return True
+    # Inactive tab panels are hidden but still published content (e.g. pricing tabs).
+    if attrs.get("role") != "tabpanel":
+        if attrs.get("aria-hidden") == "true" or "hidden" in attrs:
+            return True
+        style = str(attrs.get("style", "")).replace(" ", "").lower()
+        if "display:none" in style or "visibility:hidden" in style:
+            return True
     names = list(attrs.get("class") or []) + [str(attrs.get("id", ""))]
     for name in names:
         low = name.lower()
@@ -281,11 +283,24 @@ def _post(md_blocks: list[str]) -> str:
     return text + "\n" if text else ""
 
 
+def _inline_react_segments(soup: BeautifulSoup) -> None:
+    """React streaming SSR ships Suspense content as <div hidden id="S:n"> at the end of
+    the body; a script then swaps it into <template id="B:n">. Do that swap here."""
+    for seg in soup.find_all("div", id=re.compile(r"^S:\d+$")):
+        if "hidden" not in seg.attrs:
+            continue
+        del seg["hidden"]
+        slot = soup.find("template", id="B:" + seg["id"][2:])
+        if slot is not None:
+            slot.replace_with(seg.extract())
+
+
 def html_to_markdown(html: str, select: str | None = None) -> str:
     html = WAYBACK_TOOLBAR.sub("", html)
     soup = BeautifulSoup(html, "html.parser")
     for c in soup.find_all(string=lambda s: isinstance(s, Comment)):
         c.extract()
+    _inline_react_segments(soup)
     root = _pick_root(soup, select)
     md = _MD()
     md.walk(root)
