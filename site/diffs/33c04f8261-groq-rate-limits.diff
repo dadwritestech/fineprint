@@ -1,0 +1,11 @@
+diff --git a/snapshots/groq/rate-limits.md b/snapshots/groq/rate-limits.md
+index 2c85e8c..c984a51 100644
+--- a/snapshots/groq/rate-limits.md
++++ b/snapshots/groq/rate-limits.md
+@@ -42,5 +42,5 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
+ | openai/gpt-oss-120b | 30 | 1K | 8K | 200K | - | - |
+ | openai/gpt-oss-20b | 30 | 1K | 8K | 200K | - | - |
+-| openai/gpt-oss-safeguard-20b | 30 | 1K | 8K | 200K | - | - |
++| openai/gpt-oss-safeguard-20b | 3 | 1K | 2K | 200K | - | - |
+ | qwen/qwen3.8-27b | 30 | 1K | 8K | 200K | - | - |
+ | whisper-large-v3 | 20 | 2K | - | - | 7.2K | 28.8K |

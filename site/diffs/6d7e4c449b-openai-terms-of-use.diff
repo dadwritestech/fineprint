@@ -1,0 +1,13 @@
+diff --git a/snapshots/openai/terms-of-use.md b/snapshots/openai/terms-of-use.md
+index e9077d9..ef8bfcb 100644
+--- a/snapshots/openai/terms-of-use.md
++++ b/snapshots/openai/terms-of-use.md
+@@ -1,8 +1,4 @@
+ <!-- fineprint snapshot: openai/terms-of-use | source: https://openai.com/policies/terms-of-use/ -->
+ 
+-Published: January 1, 2026
+-
+-# Terms of Use
+-
+ Effective: January 1, 2026 (Previous version)
+ 

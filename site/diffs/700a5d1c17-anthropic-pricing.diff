@@ -1,0 +1,11 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 3b061ac..8072b5c 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -320,5 +320,5 @@ Contact sales
+ | Haiku |  |  |  |
+ | Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
+-| Extra usage |  | n/a | n/a |
++| Usage credits |  | n/a | n/a |
+ | New Monthly API credits† | Up to $500/month |  |  |
+ | Priority access at high traffic times |  |  |  |

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
+<link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
+<lastBuildDate>Fri, 30 Oct 2026 12:02:15 +0000</lastBuildDate>
+<item><title>xAI terms-of-service: Updated the last updated date to October 27, 2026, and changed the company name from SpaceXAI LLC to SpaceX Super Intelligence LLC.</title><link>https://dadwritestech.github.io/fineprint/diffs/da72ba96eb-xai-terms-of-service.html</link>
+<guid isPermaLink="false">da72ba96eb-xai-terms-of-service</guid><pubDate>Fri, 30 Oct 2026 07:00:33 +0000</pubDate>
+<category>xai</category><category>terms</category>
+<description>Updated the last updated date to October 27, 2026, and changed the company name from SpaceXAI LLC to SpaceX Super Intelligence LLC. (+3/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/da72ba96eb-xai-terms-of-service.diff . Page: https://x.ai/legal/terms-of-service</description></item>
+<item><title>Google Gemini gemini-api-pricing: Grounding with Google Search now includes a daily cap of 1,500 requests per day in addition to the monthly free tier and per-request pricing.</title><link>https://dadwritestech.github.io/fineprint/diffs/4d0a53de65-google-gemini-api-pricing.html</link>
+<guid isPermaLink="false">4d0a53de65-google-gemini-api-pricing</guid><pubDate>Fri, 30 Oct 2026 00:22:28 +0000</pubDate>
+<category>google</category><category>pricing</category>
+<description>Grounding with Google Search now includes a daily cap of 1,500 requests per day in addition to the monthly free tier and per-request pricing. (+50/-35 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/4d0a53de65-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
+<item><title>GitHub Copilot plans: Added OpenAI GPT-6.1 Terra to the Free, Pro, Pro+, and Max plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/2c611340dd-github-copilot-plans.html</link>
+<guid isPermaLink="false">2c611340dd-github-copilot-plans</guid><pubDate>Thu, 29 Oct 2026 10:34:43 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>Added OpenAI GPT-6.1 Terra to the Free, Pro, Pro+, and Max plans. (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/2c611340dd-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>OpenAI api-pricing: Added gpt-6.1-terra to the pricing table with costs of $1.00 per 1M input tokens and $5.00 per 1M output tokens.</title><link>https://dadwritestech.github.io/fineprint/diffs/ec3e512cbc-openai-api-pricing.html</link>
+<guid isPermaLink="false">ec3e512cbc-openai-api-pricing</guid><pubDate>Thu, 29 Oct 2026 08:49:40 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>Added gpt-6.1-terra to the pricing table with costs of $1.00 per 1M input tokens and $5.00 per 1M output tokens. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ec3e512cbc-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
+<item><title>Anthropic pricing: Renamed Extra usage to Usage credits in the pricing table.</title><link>https://dadwritestech.github.io/fineprint/diffs/700a5d1c17-anthropic-pricing.html</link>
+<guid isPermaLink="false">700a5d1c17-anthropic-pricing</guid><pubDate>Thu, 29 Oct 2026 07:42:20 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Renamed Extra usage to Usage credits in the pricing table. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/700a5d1c17-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>Anthropic api-release-notes: Removed the announcement that inference hooks are out of beta for Claude Enterprise organizations.</title><link>https://dadwritestech.github.io/fineprint/diffs/b6d72d8c67-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">b6d72d8c67-anthropic-api-release-notes</guid><pubDate>Thu, 29 Oct 2026 05:35:32 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>Removed the announcement that inference hooks are out of beta for Claude Enterprise organizations. (+4/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/b6d72d8c67-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Google Gemini gemini-models: Removed Veo 3.1, Veo 3.1 Lite, and Gemini Robotics ER 1.6 from active models and moved them to the shut down section.</title><link>https://dadwritestech.github.io/fineprint/diffs/24bd93e2e0-google-gemini-models.html</link>
+<guid isPermaLink="false">24bd93e2e0-google-gemini-models</guid><pubDate>Thu, 29 Oct 2026 00:39:24 +0000</pubDate>
+<category>google</category><category>deprecations</category>
+<description>Removed Veo 3.1, Veo 3.1 Lite, and Gemini Robotics ER 1.6 from active models and moved them to the shut down section. (+8/-10 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/24bd93e2e0-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
+<item><title>OpenAI usage-policies: The usage policies effective date is updated to November 20, 2026, with new restrictions on model training, law enforcement use, and child safety.</title><link>https://dadwritestech.github.io/fineprint/diffs/7c1b97fa8d-openai-usage-policies.html</link>
+<guid isPermaLink="false">7c1b97fa8d-openai-usage-policies</guid><pubDate>Wed, 28 Oct 2026 15:35:46 +0000</pubDate>
+<category>openai</category><category>policy</category>
+<description>The usage policies effective date is updated to November 20, 2026, with new restrictions on model training, law enforcement use, and child safety. (+30/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/7c1b97fa8d-openai-usage-policies.diff . Page: https://openai.com/policies/usage-policies/</description></item>
+<item><title>Anthropic api-pricing: Added Claude Models on Google Cloud (Google managed) to the pricing page and updated CCU conversion rates to $0.01 USD per CCU.</title><link>https://dadwritestech.github.io/fineprint/diffs/72e5056cad-anthropic-api-pricing.html</link>
+<guid isPermaLink="false">72e5056cad-anthropic-api-pricing</guid><pubDate>Wed, 28 Oct 2026 13:12:53 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Added Claude Models on Google Cloud (Google managed) to the pricing page and updated CCU conversion rates to $0.01 USD per CCU. (+48/-48 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/72e5056cad-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
+<item><title>Google Gemini gemini-api-changelog: New projects using the paid Generate Content API now store requests by default, matching the Interactions API.</title><link>https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.html</link>
+<guid isPermaLink="false">e426025c2c-google-gemini-api-changelog</guid><pubDate>Wed, 28 Oct 2026 10:31:14 +0000</pubDate>
+<category>google</category><category>changelog</category>
+<description>New projects using the paid Generate Content API now store requests by default, matching the Interactions API. (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
+<item><title>Perplexity api-pricing: Clarified Search API pricing to confirm that costs are per successful request regardless of the number of queries or extracted text tokens.</title><link>https://dadwritestech.github.io/fineprint/diffs/8222507d25-perplexity-api-pricing.html</link>
+<guid isPermaLink="false">8222507d25-perplexity-api-pricing</guid><pubDate>Wed, 28 Oct 2026 10:24:43 +0000</pubDate>
+<category>perplexity</category><category>pricing</category>
+<description>Clarified Search API pricing to confirm that costs are per successful request regardless of the number of queries or extracted text tokens. (+13/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8222507d25-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
+<item><title>Anthropic usage-policy: Added High-risk Use Case Requirements requiring human accountability and disclosure for AI-driven decisions affecting health, legal rights, finances, or essential services.</title><link>https://dadwritestech.github.io/fineprint/diffs/d01d83b017-anthropic-usage-policy.html</link>
+<guid isPermaLink="false">d01d83b017-anthropic-usage-policy</guid><pubDate>Wed, 28 Oct 2026 01:37:03 +0000</pubDate>
+<category>anthropic</category><category>policy</category>
+<description>Added High-risk Use Case Requirements requiring human accountability and disclosure for AI-driven decisions affecting health, legal rights, finances, or essential services. (+25/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/d01d83b017-anthropic-usage-policy.diff . Page: https://www.anthropic.com/legal/aup</description></item>
+<item><title>OpenAI deprecations: Updated deprecation schedules to include specific model snapshots and moved several legacy models to the past deprecations section.</title><link>https://dadwritestech.github.io/fineprint/diffs/a229ca0bb9-openai-deprecations.html</link>
+<guid isPermaLink="false">a229ca0bb9-openai-deprecations</guid><pubDate>Tue, 27 Oct 2026 07:51:44 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>Updated deprecation schedules to include specific model snapshots and moved several legacy models to the past deprecations section. (+34/-41 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a229ca0bb9-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
+<item><title>DeepSeek news: DeepSeek Harness is now in developer preview and the DeepSeek API now supports OpenAI and Anthropic compatible formats.</title><link>https://dadwritestech.github.io/fineprint/diffs/94fdb47dcc-deepseek-news.html</link>
+<guid isPermaLink="false">94fdb47dcc-deepseek-news</guid><pubDate>Mon, 26 Oct 2026 04:27:47 +0000</pubDate>
+<category>deepseek</category><category>changelog</category>
+<description>DeepSeek Harness is now in developer preview and the DeepSeek API now supports OpenAI and Anthropic compatible formats. (+26/-194 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/94fdb47dcc-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
+<item><title>Anthropic privacy: Converted the Legal Bases for Processing table from a markdown table format to a nested list format.</title><link>https://dadwritestech.github.io/fineprint/diffs/253af2a14c-anthropic-privacy.html</link>
+<guid isPermaLink="false">253af2a14c-anthropic-privacy</guid><pubDate>Sun, 25 Oct 2026 07:51:22 +0000</pubDate>
+<category>anthropic</category><category>privacy</category>
+<description>Converted the Legal Bases for Processing table from a markdown table format to a nested list format. (+108/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/253af2a14c-anthropic-privacy.diff . Page: https://www.anthropic.com/legal/privacy</description></item>
+<item><title>Anthropic api-release-notes: Anthropic launched Claude Models on Google Cloud, released API version 2026-10-21, and updated SDK licenses to Apache 2.0.</title><link>https://dadwritestech.github.io/fineprint/diffs/ca2d813403-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">ca2d813403-anthropic-api-release-notes</guid><pubDate>Sat, 24 Oct 2026 09:06:43 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>Anthropic launched Claude Models on Google Cloud, released API version 2026-10-21, and updated SDK licenses to Apache 2.0. (+64/-46 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ca2d813403-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Google Gemini gemini-api-pricing: Removed Gemini Omni Flash Preview and Veo 3.1 models from the pricing page and updated the last updated date to 2026-10-22 UTC.</title><link>https://dadwritestech.github.io/fineprint/diffs/585a3a9e69-google-gemini-api-pricing.html</link>
+<guid isPermaLink="false">585a3a9e69-google-gemini-api-pricing</guid><pubDate>Fri, 23 Oct 2026 09:23:48 +0000</pubDate>
+<category>google</category><category>pricing</category>
+<description>Removed Gemini Omni Flash Preview and Veo 3.1 models from the pricing page and updated the last updated date to 2026-10-22 UTC. (+1/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/585a3a9e69-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
+<item><title>GitHub Copilot plans: Removed Anthropic Claude Opus 4.7, Google Gemini 3.5 Flash, Google Gemini 3.6 Flash, and Kimi K2.7 Code from all Copilot plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/c81a861a6b-github-copilot-plans.html</link>
+<guid isPermaLink="false">c81a861a6b-github-copilot-plans</guid><pubDate>Fri, 23 Oct 2026 03:06:44 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>Removed Anthropic Claude Opus 4.7, Google Gemini 3.5 Flash, Google Gemini 3.6 Flash, and Kimi K2.7 Code from all Copilot plans. (+53/-189 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c81a861a6b-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>OpenAI api-pricing: Updated pricing tables to reorder columns, moving cached input costs to the final position for all models.</title><link>https://dadwritestech.github.io/fineprint/diffs/2436a611d9-openai-api-pricing.html</link>
+<guid isPermaLink="false">2436a611d9-openai-api-pricing</guid><pubDate>Fri, 23 Oct 2026 01:33:09 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>Updated pricing tables to reorder columns, moving cached input costs to the final position for all models. (+35/-32 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/2436a611d9-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
+<item><title>Anthropic pricing: Claude Code is no longer included in the Pro plan but is now added to the Max plan.</title><link>https://dadwritestech.github.io/fineprint/diffs/edc351e7eb-anthropic-pricing.html</link>
+<guid isPermaLink="false">edc351e7eb-anthropic-pricing</guid><pubDate>Thu, 22 Oct 2026 07:51:26 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Claude Code is no longer included in the Pro plan but is now added to the Max plan. (+1/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/edc351e7eb-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>Perplexity api-pricing: Added pplx-decider-v1.2 and pplx-decider-flash-v1.2 models, updated Agent API Research Preset costs to $0.0022, and added Embeddings API cost formula.</title><link>https://dadwritestech.github.io/fineprint/diffs/15934463a0-perplexity-api-pricing.html</link>
+<guid isPermaLink="false">15934463a0-perplexity-api-pricing</guid><pubDate>Wed, 21 Oct 2026 04:53:55 +0000</pubDate>
+<category>perplexity</category><category>pricing</category>
+<description>Added pplx-decider-v1.2 and pplx-decider-flash-v1.2 models, updated Agent API Research Preset costs to $0.0022, and added Embeddings API cost formula. (+9/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/15934463a0-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
+<item><title>Perplexity rate-limits: Agent API now enforces separate QPS and token limits (TPM/TPH) per organization and model, with specific error types and retry behaviors.</title><link>https://dadwritestech.github.io/fineprint/diffs/0501f15dfc-perplexity-rate-limits.html</link>
+<guid isPermaLink="false">0501f15dfc-perplexity-rate-limits</guid><pubDate>Wed, 21 Oct 2026 04:53:10 +0000</pubDate>
+<category>perplexity</category><category>limits</category>
+<description>Agent API now enforces separate QPS and token limits (TPM/TPH) per organization and model, with specific error types and retry behaviors. (+57/-8 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/0501f15dfc-perplexity-rate-limits.diff . Page: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers</description></item>
+<item><title>Mistral models: Added Voxtral Mini Transcribe 3, Voxtral Small Transcribe 3, Voxtral Mini Transcribe Realtime 3, and Voxtral TTS 3 models while removing Voxtral Mini Transcribe 2.</title><link>https://dadwritestech.github.io/fineprint/diffs/ba22633078-mistral-models.html</link>
+<guid isPermaLink="false">ba22633078-mistral-models</guid><pubDate>Wed, 21 Oct 2026 00:54:45 +0000</pubDate>
+<category>mistral</category><category>deprecations</category>
+<description>Added Voxtral Mini Transcribe 3, Voxtral Small Transcribe 3, Voxtral Mini Transcribe Realtime 3, and Voxtral TTS 3 models while removing Voxtral Mini Transcribe 2. (+20/-10 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ba22633078-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
+<item><title>OpenAI deprecations: Added GPT-4 series model deprecations for January 14, 2027, and introduced the shutdown_date field to the List models endpoint.</title><link>https://dadwritestech.github.io/fineprint/diffs/424f4fa96c-openai-deprecations.html</link>
+<guid isPermaLink="false">424f4fa96c-openai-deprecations</guid><pubDate>Tue, 20 Oct 2026 11:09:34 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>Added GPT-4 series model deprecations for January 14, 2027, and introduced the shutdown_date field to the List models endpoint. (+24/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/424f4fa96c-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
+<item><title>Anthropic api-pricing: Reduced Claude Opus 5.5 input costs to $4 USD / MTok and output costs to $20 USD / MTok, and added Fast mode to Microsoft Foundry.</title><link>https://dadwritestech.github.io/fineprint/diffs/45aca4f8d0-anthropic-api-pricing.html</link>
+<guid isPermaLink="false">45aca4f8d0-anthropic-api-pricing</guid><pubDate>Tue, 20 Oct 2026 08:47:14 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Reduced Claude Opus 5.5 input costs to $4 USD / MTok and output costs to $20 USD / MTok, and added Fast mode to Microsoft Foundry. (+12/-13 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/45aca4f8d0-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
+<item><title>xAI terms-of-service: Updated the last updated date to October 12, 2026, and added a section for new bundled subscription plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/16490364c6-xai-terms-of-service.html</link>
+<guid isPermaLink="false">16490364c6-xai-terms-of-service</guid><pubDate>Mon, 19 Oct 2026 19:23:17 +0000</pubDate>
+<category>xai</category><category>terms</category>
+<description>Updated the last updated date to October 12, 2026, and added a section for new bundled subscription plans. (+3/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/16490364c6-xai-terms-of-service.diff . Page: https://x.ai/legal/terms-of-service</description></item>
+<item><title>DeepSeek news: DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017 with improved performance and reduced runtime while maintaining existing API pricing.</title><link>https://dadwritestech.github.io/fineprint/diffs/b3685d4c66-deepseek-news.html</link>
+<guid isPermaLink="false">b3685d4c66-deepseek-news</guid><pubDate>Mon, 19 Oct 2026 11:28:03 +0000</pubDate>
+<category>deepseek</category><category>changelog</category>
+<description>DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017 with improved performance and reduced runtime while maintaining existing API pricing. (+17/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/b3685d4c66-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
+<item><title>Google Gemini gemini-api-rate-limits: Added Gemini 4 Argon to the rate limits table and updated the last updated date to 2026-10-15 UTC.</title><link>https://dadwritestech.github.io/fineprint/diffs/31b18d6b7c-google-gemini-api-rate-limits.html</link>
+<guid isPermaLink="false">31b18d6b7c-google-gemini-api-rate-limits</guid><pubDate>Sun, 18 Oct 2026 10:32:56 +0000</pubDate>
+<category>google</category><category>limits</category>
+<description>Added Gemini 4 Argon to the rate limits table and updated the last updated date to 2026-10-15 UTC. (+4/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/31b18d6b7c-google-gemini-api-rate-limits.diff . Page: https://ai.google.dev/gemini-api/docs/rate-limits</description></item>
+<item><title>Google Gemini gemini-models: Added Gemini 4 models including Gemini 4 Argon with a 1M context window and updated the last updated date to 2026-10-13 UTC.</title><link>https://dadwritestech.github.io/fineprint/diffs/3da15efda0-google-gemini-models.html</link>
+<guid isPermaLink="false">3da15efda0-google-gemini-models</guid><pubDate>Sat, 17 Oct 2026 20:30:30 +0000</pubDate>
+<category>google</category><category>deprecations</category>
+<description>Added Gemini 4 models including Gemini 4 Argon with a 1M context window and updated the last updated date to 2026-10-13 UTC. (+9/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3da15efda0-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
+<item><title>Anthropic api-release-notes: Claude Opus 5.5 fast mode is out of research preview with default rate limits, and OpenTelemetry export is now in beta.</title><link>https://dadwritestech.github.io/fineprint/diffs/6c7d68cc02-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">6c7d68cc02-anthropic-api-release-notes</guid><pubDate>Sat, 17 Oct 2026 08:51:06 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>Claude Opus 5.5 fast mode is out of research preview with default rate limits, and OpenTelemetry export is now in beta. (+10/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6c7d68cc02-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>DeepSeek api-pricing: Added Search and Fetch standalone APIs billed at $0.75 per 1,000 successful requests and updated DeepSeek-V4.1-Flash to version 1017.</title><link>https://dadwritestech.github.io/fineprint/diffs/c513952d88-deepseek-api-pricing.html</link>
+<guid isPermaLink="false">c513952d88-deepseek-api-pricing</guid><pubDate>Sat, 17 Oct 2026 08:40:21 +0000</pubDate>
+<category>deepseek</category><category>pricing</category>
+<description>Added Search and Fetch standalone APIs billed at $0.75 per 1,000 successful requests and updated DeepSeek-V4.1-Flash to version 1017. (+11/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c513952d88-deepseek-api-pricing.diff . Page: https://api-docs.deepseek.com/quick_start/pricing</description></item>
+<item><title>Mistral models: Added Mistral Large 4 and Timestral 1.0 models in various sizes for time series forecasting and general-purpose multimodal tasks.</title><link>https://dadwritestech.github.io/fineprint/diffs/41875755d0-mistral-models.html</link>
+<guid isPermaLink="false">41875755d0-mistral-models</guid><pubDate>Fri, 16 Oct 2026 20:27:16 +0000</pubDate>
+<category>mistral</category><category>deprecations</category>
+<description>Added Mistral Large 4 and Timestral 1.0 models in various sizes for time series forecasting and general-purpose multimodal tasks. (+21/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/41875755d0-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
+<item><title>Groq models: Added Muse Spark Open model with a 350 input price and ContactSales output pricing.</title><link>https://dadwritestech.github.io/fineprint/diffs/19a155e378-groq-models.html</link>
+<guid isPermaLink="false">19a155e378-groq-models</guid><pubDate>Fri, 16 Oct 2026 13:20:59 +0000</pubDate>
+<category>groq</category><category>pricing</category>
+<description>Added Muse Spark Open model with a 350 input price and ContactSales output pricing. (+1/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/19a155e378-groq-models.diff . Page: https://console.groq.com/docs/models</description></item>
+<item><title>Google Gemini gemini-api-pricing: Added Gemini 4 Argon with tiered pricing and introduced Contributor tiers for Gemini 4 Argon, 3.8 Flash, 3.6 Flash, and Pro models.</title><link>https://dadwritestech.github.io/fineprint/diffs/410cb7fd56-google-gemini-api-pricing.html</link>
+<guid isPermaLink="false">410cb7fd56-google-gemini-api-pricing</guid><pubDate>Fri, 16 Oct 2026 10:26:57 +0000</pubDate>
+<category>google</category><category>pricing</category>
+<description>Added Gemini 4 Argon with tiered pricing and introduced Contributor tiers for Gemini 4 Argon, 3.8 Flash, 3.6 Flash, and Pro models. (+73/-8 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/410cb7fd56-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
+<item><title>OpenAI api-pricing: Added gpt-rosalind-research and gpt-rosalind-discovery models and introduced a 10% uplift for regional processing on eligible models released on or after March 5, 2026.</title><link>https://dadwritestech.github.io/fineprint/diffs/e5f9025f43-openai-api-pricing.html</link>
+<guid isPermaLink="false">e5f9025f43-openai-api-pricing</guid><pubDate>Fri, 16 Oct 2026 00:16:49 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>Added gpt-rosalind-research and gpt-rosalind-discovery models and introduced a 10% uplift for regional processing on eligible models released on or after March 5, 2026. (+8/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e5f9025f43-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
+<item><title>GitHub Copilot plans: Added Google Gemini 4 Argon to the Free, Pro, Pro+, and Max plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/432dc4d37e-github-copilot-plans.html</link>
+<guid isPermaLink="false">432dc4d37e-github-copilot-plans</guid><pubDate>Fri, 16 Oct 2026 00:01:31 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>Added Google Gemini 4 Argon to the Free, Pro, Pro+, and Max plans. (+4/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/432dc4d37e-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>Google Gemini gemini-api-changelog: Released Gemini 4 Argon, deprecated Gemini 3.7 Flash and 3.5 Flash, and announced the shutdown of deep-research-pro-preview-12-2025 on October 23, 2026.</title><link>https://dadwritestech.github.io/fineprint/diffs/3cf786e6e0-google-gemini-api-changelog.html</link>
+<guid isPermaLink="false">3cf786e6e0-google-gemini-api-changelog</guid><pubDate>Thu, 15 Oct 2026 10:03:06 +0000</pubDate>
+<category>google</category><category>changelog</category>
+<description>Released Gemini 4 Argon, deprecated Gemini 3.7 Flash and 3.5 Flash, and announced the shutdown of deep-research-pro-preview-12-2025 on October 23, 2026. (+15/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3cf786e6e0-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
+<item><title>Anthropic pricing: Added monthly API credits to Max ($100–$200) and Team ($500) plans, included Claude Code in Pro and Max, and updated Enterprise seat minimums.</title><link>https://dadwritestech.github.io/fineprint/diffs/572b15b67e-anthropic-pricing.html</link>
+<guid isPermaLink="false">572b15b67e-anthropic-pricing</guid><pubDate>Thu, 15 Oct 2026 03:05:07 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Added monthly API credits to Max ($100–$200) and Team ($500) plans, included Claude Code in Pro and Max, and updated Enterprise seat minimums. (+20/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/572b15b67e-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>Mistral pricing: The Pro plan now includes $25.50/mo in API credits, faster responses, and spreadsheet and slide generation.</title><link>https://dadwritestech.github.io/fineprint/diffs/b21a7c07fa-mistral-pricing.html</link>
+<guid isPermaLink="false">b21a7c07fa-mistral-pricing</guid><pubDate>Thu, 15 Oct 2026 02:11:40 +0000</pubDate>
+<category>mistral</category><category>pricing</category>
+<description>The Pro plan now includes $25.50/mo in API credits, faster responses, and spreadsheet and slide generation. (+9/-6 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/b21a7c07fa-mistral-pricing.diff . Page: https://mistral.ai/pricing</description></item>
+<item><title>OpenAI rate-limits: Replaced the five previous usage tiers with Build, Launch, and Grow tiers and added specific standard rate limits for Astra, Sol, Terra, and Luna models.</title><link>https://dadwritestech.github.io/fineprint/diffs/5bbef322f5-openai-rate-limits.html</link>
+<guid isPermaLink="false">5bbef322f5-openai-rate-limits</guid><pubDate>Wed, 14 Oct 2026 20:41:37 +0000</pubDate>
+<category>openai</category><category>limits</category>
+<description>Replaced the five previous usage tiers with Build, Launch, and Grow tiers and added specific standard rate limits for Astra, Sol, Terra, and Luna models. (+15/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/5bbef322f5-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
+<item><title>Cursor pricing: Restructured pricing tiers to include Plus at $8/month, Premium at $30/month, Super at $100/month, and Ultra at $200/month.</title><link>https://dadwritestech.github.io/fineprint/diffs/2971459a57-cursor-pricing.html</link>
+<guid isPermaLink="false">2971459a57-cursor-pricing</guid><pubDate>Wed, 14 Oct 2026 06:30:37 +0000</pubDate>
+<category>cursor</category><category>pricing</category>
+<description>Restructured pricing tiers to include Plus at $8/month, Premium at $30/month, Super at $100/month, and Ultra at $200/month. (+132/-56 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/2971459a57-cursor-pricing.diff . Page: https://cursor.com/pricing</description></item>
+<item><title>Anthropic usage-policy: Updated the Usage Policy to include specific categories for high-risk use cases, agentic use, and verification programs for cyber and life sciences.</title><link>https://dadwritestech.github.io/fineprint/diffs/c8ccfe6583-anthropic-usage-policy.html</link>
+<guid isPermaLink="false">c8ccfe6583-anthropic-usage-policy</guid><pubDate>Tue, 13 Oct 2026 15:54:47 +0000</pubDate>
+<category>anthropic</category><category>policy</category>
+<description>Updated the Usage Policy to include specific categories for high-risk use cases, agentic use, and verification programs for cyber and life sciences. (+146/-75 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c8ccfe6583-anthropic-usage-policy.diff . Page: https://www.anthropic.com/legal/aup</description></item>
+<item><title>Perplexity api-pricing: Reduced pplx-decider-v1-27b input token price to $0.02 per 1M tokens and lowered Fast Search costs from $0.0025 to $0.001.</title><link>https://dadwritestech.github.io/fineprint/diffs/04e423353c-perplexity-api-pricing.html</link>
+<guid isPermaLink="false">04e423353c-perplexity-api-pricing</guid><pubDate>Tue, 13 Oct 2026 13:07:16 +0000</pubDate>
+<category>perplexity</category><category>pricing</category>
+<description>Reduced pplx-decider-v1-27b input token price to $0.02 per 1M tokens and lowered Fast Search costs from $0.0025 to $0.001. (+8/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/04e423353c-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
+<item><title>Anthropic api-pricing: Added Claude Haiku 5.5 with tiered pricing for prompts over 100,000 tokens and updated cache read costs for Claude Sonnet 5.5.</title><link>https://dadwritestech.github.io/fineprint/diffs/d23041911f-anthropic-api-pricing.html</link>
+<guid isPermaLink="false">d23041911f-anthropic-api-pricing</guid><pubDate>Tue, 13 Oct 2026 10:21:48 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Added Claude Haiku 5.5 with tiered pricing for prompts over 100,000 tokens and updated cache read costs for Claude Sonnet 5.5. (+25/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/d23041911f-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
+<item><title>Cursor privacy: Updated the payment information section to include the collection of data when initiating payments for products and services.</title><link>https://dadwritestech.github.io/fineprint/diffs/5363a8e318-cursor-privacy.html</link>
+<guid isPermaLink="false">5363a8e318-cursor-privacy</guid><pubDate>Mon, 12 Oct 2026 15:44:21 +0000</pubDate>
+<category>cursor</category><category>privacy</category>
+<description>Updated the payment information section to include the collection of data when initiating payments for products and services. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/5363a8e318-cursor-privacy.diff . Page: https://cursor.com/privacy</description></item>
+<item><title>Anthropic model-deprecations: Updated recommended replacements for several deprecated models to claude-sonnet-5-5 and added claude-haiku-5-5 to the model list.</title><link>https://dadwritestech.github.io/fineprint/diffs/0f6544d92b-anthropic-model-deprecations.html</link>
+<guid isPermaLink="false">0f6544d92b-anthropic-model-deprecations</guid><pubDate>Mon, 12 Oct 2026 04:22:08 +0000</pubDate>
+<category>anthropic</category><category>deprecations</category>
+<description>Updated recommended replacements for several deprecated models to claude-sonnet-5-5 and added claude-haiku-5-5 to the model list. (+7/-6 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/0f6544d92b-anthropic-model-deprecations.diff . Page: https://platform.claude.com/docs/en/about-claude/model-deprecations</description></item>
+<item><title>xAI models-pricing: Changed the Agent model name to STS while maintaining the $0.08 per minute price.</title><link>https://dadwritestech.github.io/fineprint/diffs/eecbb1dadd-xai-models-pricing.html</link>
+<guid isPermaLink="false">eecbb1dadd-xai-models-pricing</guid><pubDate>Sun, 11 Oct 2026 11:59:12 +0000</pubDate>
+<category>xai</category><category>pricing</category>
+<description>Changed the Agent model name to STS while maintaining the $0.08 per minute price. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/eecbb1dadd-xai-models-pricing.diff . Page: https://docs.x.ai/developers/models</description></item>
+<item><title>Google Gemini gemini-models: Removed Gemini 3.7 Flash and Gemini 3.5 Flash models and added Nano Banana 2.1 to the model list.</title><link>https://dadwritestech.github.io/fineprint/diffs/8a168cab54-google-gemini-models.html</link>
+<guid isPermaLink="false">8a168cab54-google-gemini-models</guid><pubDate>Sat, 10 Oct 2026 23:33:50 +0000</pubDate>
+<category>google</category><category>deprecations</category>
+<description>Removed Gemini 3.7 Flash and Gemini 3.5 Flash models and added Nano Banana 2.1 to the model list. (+5/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8a168cab54-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
+<item><title>Anthropic rate-limits: Added Start, Build, Scale, and Custom tiers with specific RPM, ITPM, and OTPM limits for various Claude models and Message Batches.</title><link>https://dadwritestech.github.io/fineprint/diffs/ba6e74bfce-anthropic-rate-limits.html</link>
+<guid isPermaLink="false">ba6e74bfce-anthropic-rate-limits</guid><pubDate>Sat, 10 Oct 2026 09:36:45 +0000</pubDate>
+<category>anthropic</category><category>limits</category>
+<description>Added Start, Build, Scale, and Custom tiers with specific RPM, ITPM, and OTPM limits for various Claude models and Message Batches. (+46/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ba6e74bfce-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
+<item><title>Anthropic api-release-notes: Claude Haiku 5.5 is launched, prompt cache reads for Claude Sonnet 5.5 are reduced to $0.10 per million tokens, and Claude Max and Team plans now include monthly API credits.</title><link>https://dadwritestech.github.io/fineprint/diffs/be1be168ec-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">be1be168ec-anthropic-api-release-notes</guid><pubDate>Sat, 10 Oct 2026 00:45:01 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>Claude Haiku 5.5 is launched, prompt cache reads for Claude Sonnet 5.5 are reduced to $0.10 per million tokens, and Claude Max and Team plans now include monthly API credits. (+22/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/be1be168ec-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Google Gemini gemini-api-pricing: Removed Gemini 3.7 Flash pricing and updated grounding limits to include all Gemini 3 and newer models.</title><link>https://dadwritestech.github.io/fineprint/diffs/8f1a52efcd-google-gemini-api-pricing.html</link>
+<guid isPermaLink="false">8f1a52efcd-google-gemini-api-pricing</guid><pubDate>Fri, 09 Oct 2026 22:33:30 +0000</pubDate>
+<category>google</category><category>pricing</category>
+<description>Removed Gemini 3.7 Flash pricing and updated grounding limits to include all Gemini 3 and newer models. (+73/-140 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8f1a52efcd-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
+<item><title>GitHub Copilot plans: Added Anthropic Claude Haiku 5.5 and removed Claude Fable 5.1, Haiku 4.5, Sonnet 4, and Sonnet 4.6 from all plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/c6cd6ad5cd-github-copilot-plans.html</link>
+<guid isPermaLink="false">c6cd6ad5cd-github-copilot-plans</guid><pubDate>Fri, 09 Oct 2026 02:46:23 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>Added Anthropic Claude Haiku 5.5 and removed Claude Fable 5.1, Haiku 4.5, Sonnet 4, and Sonnet 4.6 from all plans. (+4/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c6cd6ad5cd-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>Anthropic pricing: Added Haiku 5.5 with tiered pricing for prompts under and over 100K tokens and updated Sonnet prompt caching rates.</title><link>https://dadwritestech.github.io/fineprint/diffs/ac52d4bc59-anthropic-pricing.html</link>
+<guid isPermaLink="false">ac52d4bc59-anthropic-pricing</guid><pubDate>Thu, 08 Oct 2026 03:46:26 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>Added Haiku 5.5 with tiered pricing for prompts under and over 100K tokens and updated Sonnet prompt caching rates. (+32/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ac52d4bc59-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>Mistral changelog: Mistral Large 4 is now available in Public Preview with a 1M context window and 50% off launch pricing for two weeks.</title><link>https://dadwritestech.github.io/fineprint/diffs/3aa02d0bd9-mistral-changelog.html</link>
+<guid isPermaLink="false">3aa02d0bd9-mistral-changelog</guid><pubDate>Wed, 07 Oct 2026 20:20:23 +0000</pubDate>
+<category>mistral</category><category>changelog</category>
+<description>Mistral Large 4 is now available in Public Preview with a 1M context window and 50% off launch pricing for two weeks. (+13/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3aa02d0bd9-mistral-changelog.diff . Page: https://docs.mistral.ai/resources/changelogs</description></item>
+<item><title>Google Gemini gemini-api-changelog: Released Gemini Nano Banana 2.1 and deprecated the gemini-3.1-flash-image model on October 6, 2026.</title><link>https://dadwritestech.github.io/fineprint/diffs/24e83b8f07-google-gemini-api-changelog.html</link>
+<guid isPermaLink="false">24e83b8f07-google-gemini-api-changelog</guid><pubDate>Wed, 07 Oct 2026 12:10:03 +0000</pubDate>
+<category>google</category><category>changelog</category>
+<description>Released Gemini Nano Banana 2.1 and deprecated the gemini-3.1-flash-image model on October 6, 2026. (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/24e83b8f07-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
+<item><title>OpenAI deprecations: Added deprecation schedules for GPT-5.3-Codex, GPT-5.1, GPT-5.4-Nano, and text-to-speech models, and updated recommended replacements for image models.</title><link>https://dadwritestech.github.io/fineprint/diffs/6a4f3c8767-openai-deprecations.html</link>
+<guid isPermaLink="false">6a4f3c8767-openai-deprecations</guid><pubDate>Tue, 06 Oct 2026 16:10:55 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>Added deprecation schedules for GPT-5.3-Codex, GPT-5.1, GPT-5.4-Nano, and text-to-speech models, and updated recommended replacements for image models. (+47/-32 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6a4f3c8767-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
+<item><title>Groq rate-limits: Reduced the requests per minute for openai/gpt-oss-safeguard-20b from 30 to 3 and the tokens per minute from 8K to 2K.</title><link>https://dadwritestech.github.io/fineprint/diffs/33c04f8261-groq-rate-limits.html</link>
+<guid isPermaLink="false">33c04f8261-groq-rate-limits</guid><pubDate>Tue, 06 Oct 2026 07:42:50 +0000</pubDate>
+<category>groq</category><category>limits</category>
+<description>Reduced the requests per minute for openai/gpt-oss-safeguard-20b from 30 to 3 and the tokens per minute from 8K to 2K. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/33c04f8261-groq-rate-limits.diff . Page: https://console.groq.com/docs/rate-limits</description></item>
+<item><title>Mistral models: Z.ai GLM 5.2, OCR 4.0, and Leanstral 1.5 have been moved to the deprecated models list.</title><link>https://dadwritestech.github.io/fineprint/diffs/35caf9f7fd-mistral-models.html</link>
+<guid isPermaLink="false">35caf9f7fd-mistral-models</guid><pubDate>Tue, 06 Oct 2026 01:30:39 +0000</pubDate>
+<category>mistral</category><category>deprecations</category>
+<description>Z.ai GLM 5.2, OCR 4.0, and Leanstral 1.5 have been moved to the deprecated models list. (+4/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/35caf9f7fd-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
+<item><title>Cursor privacy: Removed the specific prohibition against selling or sharing personal data for targeted advertising from the list of user rights.</title><link>https://dadwritestech.github.io/fineprint/diffs/3cdd5227d2-cursor-privacy.html</link>
+<guid isPermaLink="false">3cdd5227d2-cursor-privacy</guid><pubDate>Mon, 05 Oct 2026 09:58:00 +0000</pubDate>
+<category>cursor</category><category>privacy</category>
+<description>Removed the specific prohibition against selling or sharing personal data for targeted advertising from the list of user rights. (+1/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3cdd5227d2-cursor-privacy.diff . Page: https://cursor.com/privacy</description></item>
+<item><title>Perplexity rate-limits: Removed Sonar API rate limits and updated Agent API to use a shared organization-wide rolling one-second window instead of per-model RPM limits.</title><link>https://dadwritestech.github.io/fineprint/diffs/bfb9145bcf-perplexity-rate-limits.html</link>
+<guid isPermaLink="false">bfb9145bcf-perplexity-rate-limits</guid><pubDate>Mon, 05 Oct 2026 00:10:09 +0000</pubDate>
+<category>perplexity</category><category>limits</category>
+<description>Removed Sonar API rate limits and updated Agent API to use a shared organization-wide rolling one-second window instead of per-model RPM limits. (+20/-121 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/bfb9145bcf-perplexity-rate-limits.diff . Page: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers</description></item>
+</channel></rss>

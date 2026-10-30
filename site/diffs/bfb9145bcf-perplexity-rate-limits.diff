@@ -1,0 +1,204 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index 50cd845..8bbdae6 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -28,14 +28,16 @@ Requests rejected with a `429` are not billed.
+ ## Agent API Rate Limits
+ 
+-The Agent API applies two independent limits to each request: the API-wide QPS limit and the Agent model's requests-per-minute (RPM) limit. A request must be within both limits. The RPM value is not derived from the QPS value.
++The standard Agent API request-count limit applies per API organization. Requests to the Responses API share this limit across models and API keys in the organization. There is no separate per-model requests-per-minute limit.
+ 
+-| Tier | QPS (Queries per Second) | Requests per Minute |
+-|---|---|---|
+-| Tier 0 | 1 QPS | 50/min |
+-| Tier 1 | 3 QPS | 150/min |
+-| Tier 2 | 8 QPS | 500/min |
+-| Tier 3 | 17 QPS | 1,000/min |
+-| Tier 4 | 33 QPS | 4,000/min |
+-| Tier 5 | 33 QPS | 8,000/min |
++| Tier | QPS (Queries per Second) |
++|---|---|
++| Tier 0 | 1 QPS |
++| Tier 1 | 3 QPS |
++| Tier 2 | 8 QPS |
++| Tier 3 | 17 QPS |
++| Tier 4 | 33 QPS |
++| Tier 5 | 33 QPS |
++
++The limit uses a rolling one-second window. Each accepted request counts against the organization's shared Responses limit for one second, regardless of the model selected.
+ 
+ ## Search API Rate Limits
+@@ -56,75 +58,4 @@ Search Rate Limiter Behavior:
+ Billing and rate limiting use different units. A successful request containing five queries is one billable Search API request, but it consumes five rate-limit units. Search rate limits are independent of your usage tier and apply consistently across all accounts using the same leaky bucket algorithm. See Search API pricing for billing details.
+ 
+-## Sonar API Rate Limits
+-
+-The Sonar API uses tier-based rate limits that scale with your usage tier:
+-
+-- Tier 0
+-- Tier 1
+-- Tier 2
+-- Tier 3
+-- Tier 4
+-- Tier 5
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 5 |
+-| `sonar-reasoning-pro` | 50 |
+-| `sonar-pro` | 50 |
+-| `sonar` | 50 |
+-| POST `/v1/async/sonar` | 5 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 10 |
+-| `sonar-reasoning-pro` | 150 |
+-| `sonar-pro` | 150 |
+-| `sonar` | 150 |
+-| POST `/v1/async/sonar` | 10 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 20 |
+-| `sonar-reasoning-pro` | 500 |
+-| `sonar-pro` | 500 |
+-| `sonar` | 500 |
+-| POST `/v1/async/sonar` | 20 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 40 |
+-| `sonar-reasoning-pro` | 1,000 |
+-| `sonar-pro` | 1,000 |
+-| `sonar` | 1,000 |
+-| POST `/v1/async/sonar` | 40 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 60 |
+-| `sonar-reasoning-pro` | 4,000 |
+-| `sonar-pro` | 4,000 |
+-| `sonar` | 4,000 |
+-| POST `/v1/async/sonar` | 60 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+-| Model | Requests per minute (RPM) |
+-|---|---|
+-| `sonar-deep-research` | 100 |
+-| `sonar-reasoning-pro` | 4,000 |
+-| `sonar-pro` | 4,000 |
+-| `sonar` | 4,000 |
+-| POST `/v1/async/sonar` | 100 |
+-| GET `/v1/async/sonar` | 3000 |
+-| GET `/v1/async/sonar/{request_id}` | 6000 |
+-
+ ## Embeddings API Rate Limits
+ 
+@@ -141,67 +72,19 @@ The Embeddings API uses tier-based rate limits that scale with your usage tier.
+ Contextualized embeddings have separate, higher limits (5× the standard embeddings tiers):
+ 
+-| Tier | QPS (Queries per Second) |
++| Tier | Chunks per second |
+ |---|---|
+-| Tier 0 | 415 QPS |
+-| Tiers 1–3 | 835 QPS |
+-| Tiers 4–5 | 1,670 QPS |
++| Tier 0 | 415 chunks/s |
++| Tiers 1–3 | 835 chunks/s |
++| Tiers 4–5 | 1,670 chunks/s |
+ 
+-Contextualized embeddings are rate limited by total chunks, not by request count.
++Contextualized embeddings are rate limited by total chunks, not by request count. The 16,000-chunk request limit is a structural ceiling. With an otherwise empty rate-limit window, the effective maximum is the lower of 16,000 chunks and your organization's one-second chunk allowance. Earlier requests in the window reduce the number of chunks currently available.
+ 
+ ## How Rate Limiting Works
+ 
+-Our rate limiting system uses a leaky bucket algorithm that allows for burst traffic while maintaining strict long-term rate control.
+-
+-### Technical Implementation
++Rate limiter behavior differs by API; one algorithm does not apply across the platform. Refer to each API section above for the applicable limits.
+ 
+-Leaky Bucket Algorithm Explained
++### Agent API Rolling Window
+ 
+-The leaky bucket algorithm works like a bucket with a small hole in the bottom:
+-
+-- Bucket Capacity: Maximum number of requests you can make instantly (burst capacity)
+-- Leak Rate: How quickly tokens leak out of the bucket (your rate limit)
+-- Token Refill: Tokens refill continuously at regular intervals based on your rate limit
+-
+-This design allows legitimate burst traffic when you need it, prevents sustained abuse, and ensures predictable and fair rate enforcement across all users.
+-
+-Rate Limiter Behavior Example
+-
+-Let's examine how 50 requests per second works in practice. With a capacity of 50 tokens and a leak rate of 50 tokens per second, one token refills every 20ms.Scenario 1: Burst Traffic
+-
+-```
+-Time 0.0s: Bucket full (50 tokens)
+-→ Send 50 requests instantly → ALL ALLOWED
+-→ Send 51st request → REJECTED (bucket empty)
+-
+-Time 0.020s: 1 token refilled
+-→ Send 1 request → ALLOWED
+-→ Send 2nd request → REJECTED
+-
+-Time 0.040s: 1 more token refilled
+-→ Send 1 request → ALLOWED
+-```
+-
+-Scenario 2: Steady 50 QPS
+-
+-```
+-Request every 20ms:
+-Time 0.0s: Request → ALLOWED (50→49 tokens)
+-Time 0.020s: Request → ALLOWED (49+1-1=49 tokens)
+-Time 0.040s: Request → ALLOWED (49+1-1=49 tokens)
+-... maintains 49-50 tokens, all requests pass
+-```
+-
+-Scenario 3: Slightly Over 50 QPS
+-
+-```
+-Request every 19ms (≈52.6 QPS):
+-→ Eventually tokens deplete faster than refill
+-→ Some requests start getting rejected
+-→ Achieves exactly 50 QPS on average
+-```
+-
+-Real-World Implications
+-
+-The leaky bucket design means you can handle your full rate limit instantly, making it perfect for batch operations or sudden traffic spikes. There's no need to artificially spread requests when you have available burst capacity.The system enforces strict average rate limits over time while allowing quick recovery after burst usage. This provides consistent performance across different usage patterns and prevents sustained over-limit usage while maintaining fair resource allocation.When building your application, take advantage of burst capacity for batch operations, monitor your usage patterns to optimize request timing, and implement proper error handling for 429 responses.
++Agent API requests use a rolling one-second window rather than continuous token refill. When the window is empty, requests can arrive together up to your tier's QPS limit. Additional requests are rejected until earlier requests become more than one second old and leave the window. For example, an organization with a 33 QPS limit can make up to 33 Agent API requests in any rolling one-second period.
+ 
+ ## What Happens When You Hit Rate Limits?
+@@ -210,12 +93,5 @@ When you exceed your rate limits:
+ 
+ 1. 429 Error - Your request gets rejected with "Too Many Requests"
+-2. Continuous Refill - Tokens refill continuously based on your rate limit
+-3. Immediate Recovery - New requests become available as soon as tokens refill
+-
+-Example Recovery Times:
+-
+-- 50 QPS limit: 1 token refills every 20ms
+-- 500 QPS limit: 1 token refills every 2ms
+-- 1,000 QPS limit: 1 token refills every 1ms
++2. Recovery Timing - Capacity returns according to the applicable API's limiter. For the Agent API, each accepted request leaves the rolling window after one second.
+ 
+ Best Practices:
+@@ -224,6 +100,5 @@ Best Practices:
+ - Consider upgrading your tier proactively for production applications
+ - Implement exponential backoff with jitter in your code
+-- Take advantage of burst capacity for batch operations
+-- Don't artificially spread requests if you have available burst capacity
++- Pace Agent API traffic to stay within your tier's rolling one-second limit
+ 
+ ## Upgrading Your Tier

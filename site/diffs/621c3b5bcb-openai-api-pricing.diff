@@ -1,0 +1,38 @@
+diff --git a/snapshots/openai/api-pricing.md b/snapshots/openai/api-pricing.md
+index 770446d..967c77a 100644
+--- a/snapshots/openai/api-pricing.md
++++ b/snapshots/openai/api-pricing.md
+@@ -1,6 +1,4 @@
+ <!-- fineprint snapshot: openai/api-pricing | source: https://developers.openai.com/api/docs/pricing -->
+ 
+-GPT‑6 Astra is rolling out today for enterprises in our Trusted Access Program, with access through API and our Plus, Pro, Business and Enterprise plans coming in the coming days.
+-
+ Our latest models
+ 
+@@ -17,5 +15,5 @@ Standard
+ | gpt-5.6-luna | $0.20 | $0.02 | $0.25 | $1.20 | $0.40 | $0.04 | $0.50 | $1.80 |
+ 
+-Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS and may differ from direct OpenAI pricing.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.  GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
++Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS. Bedrock pricing in commercial regions matches OpenAI direct pricing for equivalent services.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.  GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
+ 
+ Our latest Daybreak models.
+@@ -33,4 +31,10 @@ Prices per 1M tokens.
+ To estimate vision model input costs, use the image input cost calculator.
+ 
++GPT-Live 1 voice sessions are billed per second, without rounding up to a whole minute. Backend model and tool usage is charged separately.
++
++| Model | Price per minute |
++|---|---|
++| gpt-live-1 | $0.05 |
++
+ Prices per 1M tokens unless noted.
+ 
+@@ -52,5 +56,7 @@ For image generation cost estimates, use the calculator in the image generation
+ | Model | Modality | Input | Cached input | Output |
+ |---|---|---|---|---|
+-| gpt-image-2 | Image | $8.00 | $2.00 | $30.00 |
++| gpt-image-2.5-sunburst | Image | $8.00 | $2.00 | $30.00 |
++| Text | $5.00 | $1.25 | - |  |
++| gpt-image-2.5-flare | Image | $8.00 | $2.00 | $30.00 |
+ | Text | $5.00 | $1.25 | - |  |
+ 

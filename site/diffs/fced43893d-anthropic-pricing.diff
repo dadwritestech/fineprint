@@ -1,0 +1,63 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index bb4576d..99d051a 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -14,5 +14,4 @@ Free for everyone
+ - Generate code and visualize data
+ - Write, edit, and create content
+-- Analyze text and images
+ - Ability to search the web
+ - Memory across conversations
+@@ -39,7 +38,6 @@ Everything in Free, plus:
+ - Access to Research
+ - Ability to use more Claude models
+-- Claude for Excel
+-- Claude for PowerPoint
+-- Claude for Word (beta)
++- Claude for Microsoft 365
++- Claude for Microsoft Outlook
+ 
+ ### Max
+@@ -78,6 +76,4 @@ Max 20x
+ #### Claude Cowork
+ 
+-#### Analyze text and images
+-
+ #### Ability to search the web
+ 
+@@ -114,9 +110,7 @@ Max 20x
+ #### Claude for Slack
+ 
+-#### Claude for Excel
+-
+-#### Claude for PowerPoint
++#### Claude for Microsoft 365
+ 
+-#### Claude for Word
++#### Claude for Microsoft Outlook
+ 
+ ### Security and administration
+@@ -294,6 +288,4 @@ Enterprise (sales-assisted)
+ #### Claude Security
+ 
+-#### Analyze text and images
+-
+ #### Ability to search the web
+ 
+@@ -326,7 +318,7 @@ Enterprise (sales-assisted)
+ #### Enterprise search
+ 
+-#### Claude for Excel
++#### Claude for Microsoft 365
+ 
+-#### Claude for PowerPoint
++#### Claude for Microsoft Outlook
+ 
+ #### Claude for Chrome
+@@ -368,4 +360,6 @@ Enterprise (sales-assisted)
+ #### Google Docs cataloging
+ 
++#### Set org instructions
++
+ #### HIPAA-ready offering
+ 

@@ -1,0 +1,11 @@
+diff --git a/snapshots/mistral/usage-policy.md b/snapshots/mistral/usage-policy.md
+index fd3a95d..74c184b 100644
+--- a/snapshots/mistral/usage-policy.md
++++ b/snapshots/mistral/usage-policy.md
+@@ -1,4 +1,6 @@
+ <!-- fineprint snapshot: mistral/usage-policy | source: https://legal.mistral.ai/terms/usage-policy -->
+ 
++TermsAI ModelsAI Systems
++
+ ## Scope
+ 

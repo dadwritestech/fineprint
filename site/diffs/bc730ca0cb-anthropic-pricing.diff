@@ -1,0 +1,56 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index e629a1b..3acef3a 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -364,5 +364,5 @@ Output
+ $20 / MTok
+ 
+-### Sonnet 5
++### Sonnet 5.5
+ 
+ High-performance model for coding and agents
+@@ -461,4 +461,26 @@ Learn moreContact sales
+ Learn moreExplore detailed pricing
+ 
++### Sonnet 5
++
++High-performance model for coding and agents
++
++Prompt caching
++
++Read
++
++$0.20 / MTok
++
++Write
++
++$2.50 / MTok
++
++Input
++
++$2 / MTok
++
++Output
++
++$10 / MTok
++
+ ### Opus 5
+ 
+@@ -483,4 +505,8 @@ Output
+ $25 / MTok
+ 
++Save 50% with batch processing. Learn more
++
++Batch processing
++
+ ### Fable 5
+ 
+@@ -503,8 +529,4 @@ Output
+ $50 / MTok
+ 
+-Save 50% with batch processing. Learn more
+-
+-Batch processing
+-
+ ### Opus 4.8
+ 

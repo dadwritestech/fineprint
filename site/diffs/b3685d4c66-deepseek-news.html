@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>deepseek/news: DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017 with improved performance and reduced runtime while maintaining existing API pricing.</title><link rel="alternate" type="application/rss+xml" title="fineprint" href="../feed.xml">
+<style>
+:root{--paper:#f6f3ec;--ink:#1d1b17;--muted:#6f685c;--rule:#d9d2c3;--red:#b3261e;--add:#e3f1e0;--del:#f7e1de;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d9;--muted:#9a917f;--rule:#38332a;--red:#ff7a6e;--add:#1d3320;--del:#3d1f1b;--card:#1d1a14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit;text-decoration-color:var(--red);text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 80px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:700;letter-spacing:-.5px;text-decoration:none}
+.brand span{color:var(--red)}
+.tag{font:13px/1.4 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.8px}
+.lede{color:var(--muted);margin:0 0 30px;max-width:640px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:13px}
+.vendors{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 40px}
+.vendors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px 16px;text-decoration:none}
+.vendors a:hover{border-color:var(--ink)}
+.vendors b{display:block;font-size:18px}
+.month{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:34px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+ol.tl li.minor{opacity:.55}
+.date{font:13px/1.9 ui-monospace,Consolas,monospace;color:var(--muted)}
+.what{font-size:17px}
+.meta{grid-column:2;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);padding:0 6px;border-radius:2px}
+.plus{color:#2e7d32}.minus{color:var(--red)}
+.note{border-left:3px solid var(--red);padding:8px 14px;background:var(--card);color:var(--muted);font-size:14px;margin:0 0 26px}
+pre.diff{background:var(--card);border:1px solid var(--rule);padding:12px 0;overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+pre.diff span{display:block;padding:0 14px}
+pre.diff .a{background:var(--add)}pre.diff .d{background:var(--del)}pre.diff .h{color:var(--muted)}
+footer{margin-top:50px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:14px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../index.html">fine<span>print</span></a>
+<span class="tag">what AI companies quietly changed &middot; <a href="../feed.xml">RSS</a></span></header>
+<p class="mono">2026-10-19 11:28 UTC &middot; deepseek/news &middot; <a href="https://api-docs.deepseek.com/updates">live page</a></p>
+<h1 style="font-size:28px">DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017 with improved performance and reduced runtime while maintaining existing API pricing.</h1>
+<p class="note">Summary by gemma-4-12b. It may be wrong; the diff below is what actually changed.
+Raw: <a href="b3685d4c66-deepseek-news.diff">b3685d4c66-deepseek-news.diff</a> &middot;
+commit <a href="https://github.com/dadwritestech/fineprint/commit/b3685d4c66d51318bfcf64aafdee8fdb6b00b401">b3685d4c66</a></p>
+<pre class="diff"><span class="h">diff --git a/snapshots/deepseek/news.md b/snapshots/deepseek/news.md</span><span class="h">index cad80a1..3f871aa 100644</span><span class="h">--- a/snapshots/deepseek/news.md</span><span class="h">+++ b/snapshots/deepseek/news.md</span><span class="h">@@ -3,4 +3,28 @@</span><span class=""> # Change Log</span><span class=""> </span><span class="a">+DeepSeek&#x27;s web and API search capabilities are powered by our in-house DeepSeek search engine, which reliably handles hundreds of millions of search requests from around the world every day. DeepSeek Search is an AI-native general-purpose search engine that indexes hundreds of billions of web pages, supports multilingual search, and returns highly relevant, authoritative, and timely results in real time. It filters SEO spam, GEO manipulation, and low-quality AIGC through strict detection mechanisms, ensuring authoritative and trustworthy information for users and LLMs. For usage details, see the Search &amp; Fetch guide.</span><span class="a">+</span><span class="a">+DeepSeek V4.1 Flash has been upgraded to DeepSeek-V4.1-Flash-1017. The official web and APP models have also been updated to the new version. The API calling method and pricing remain unchanged — simply use `deepseek-flash` to access the latest model.</span><span class="a">+</span><span class="a">+Performance–cost Pareto improvement</span><span class="a">+</span><span class="a">+Compared with the previous DeepSeek V4.1, the new model delivers substantial improvements across benchmarks:</span><span class="a">+</span><span class="a">+- HLE (w/o tools): 42.6 (44.0*)</span><span class="a">+- Terminal-Bench 4.0: 42.3</span><span class="a">+- DeepSWE v1.1: 77.0</span><span class="a">+- ProgramBench: 29.1</span><span class="a">+- NL2Repo-Bench: 68.2</span><span class="a">+- Automation-Bench v1.0.6: 60.5</span><span class="a">+- Agents&#x27; Last Exam: 35.4</span><span class="a">+- Apex Bench v1.1: 72.1</span><span class="a">+- Chartography (w/tools): 83.0</span><span class="a">+- BabyVision (w/tools): 92.5</span><span class="a">+- ZeroBench-main (w/tools): 51.0</span><span class="a">+</span><span class="a">+* Tested only on the pure-text subset of the HLE benchmark set. Terminal-Bench 4.0 was tested with the Claude Code framework, and DeepSWE with the Mini-SWE-V2 framework. ZeroBench-main was evaluated with Pass@5.</span><span class="a">+</span><span class="a">+While improving performance, we also reduced the model&#x27;s task runtime and output length, enabling users to complete tasks at lower cost and higher speed and achieving a new performance–cost Pareto optimum across multiple harnesses. We specifically optimized for DeepSeek Harness, Tencent CodeBuddy, WorkBuddy, and other platforms. Please upgrade to DeepSeek Harness 0.2.1-rc.1 or later for the best experience with the new model.</span><span class="a">+</span><span class=""> Today, we officially release the DeepSeek-V4.1-Flash model. It is the smallest model in our new architecture family, with native multimodal visual understanding. The new architecture is designed for a higher capability ceiling, faster inference, higher throughput, and scaling to larger models.</span><span class=""> </span></pre>
+<p><a href="../deepseek.html">&larr; DeepSeek timeline</a></p>
+<footer>Snapshots of public, logged-out pages, normalized to markdown and committed to git.
+One-line summaries are written by a local LLM and can be wrong: every entry links the raw diff, which is the source of truth.
+History before the first live fetch is reconstructed from Wayback Machine captures sampled about weekly, so dates are "first seen in a capture", not exact change times.</footer>
+</div></body></html>

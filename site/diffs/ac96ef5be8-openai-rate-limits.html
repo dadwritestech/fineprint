@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>openai/rate-limits: Added documentation for handling slow_down and server_is_overloaded errors, including a 50% ramp-rate limit for traffic exceeding 1 million TPM.</title><link rel="alternate" type="application/rss+xml" title="fineprint" href="../feed.xml">
+<style>
+:root{--paper:#f6f3ec;--ink:#1d1b17;--muted:#6f685c;--rule:#d9d2c3;--red:#b3261e;--add:#e3f1e0;--del:#f7e1de;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d9;--muted:#9a917f;--rule:#38332a;--red:#ff7a6e;--add:#1d3320;--del:#3d1f1b;--card:#1d1a14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit;text-decoration-color:var(--red);text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 80px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:700;letter-spacing:-.5px;text-decoration:none}
+.brand span{color:var(--red)}
+.tag{font:13px/1.4 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.8px}
+.lede{color:var(--muted);margin:0 0 30px;max-width:640px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:13px}
+.vendors{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 40px}
+.vendors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px 16px;text-decoration:none}
+.vendors a:hover{border-color:var(--ink)}
+.vendors b{display:block;font-size:18px}
+.month{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:34px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+ol.tl li.minor{opacity:.55}
+.date{font:13px/1.9 ui-monospace,Consolas,monospace;color:var(--muted)}
+.what{font-size:17px}
+.meta{grid-column:2;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);padding:0 6px;border-radius:2px}
+.plus{color:#2e7d32}.minus{color:var(--red)}
+.note{border-left:3px solid var(--red);padding:8px 14px;background:var(--card);color:var(--muted);font-size:14px;margin:0 0 26px}
+pre.diff{background:var(--card);border:1px solid var(--rule);padding:12px 0;overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+pre.diff span{display:block;padding:0 14px}
+pre.diff .a{background:var(--add)}pre.diff .d{background:var(--del)}pre.diff .h{color:var(--muted)}
+footer{margin-top:50px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:14px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../index.html">fine<span>print</span></a>
+<span class="tag">what AI companies quietly changed &middot; <a href="../feed.xml">RSS</a></span></header>
+<p class="mono">2026-09-04 03:49 UTC &middot; openai/rate-limits &middot; <a href="https://developers.openai.com/api/docs/guides/rate-limits">live page</a></p>
+<h1 style="font-size:28px">Added documentation for handling slow_down and server_is_overloaded errors, including a 50% ramp-rate limit for traffic exceeding 1 million TPM.</h1>
+<p class="note">Summary by gemma-4-12b. It may be wrong; the diff below is what actually changed.
+Raw: <a href="ac96ef5be8-openai-rate-limits.diff">ac96ef5be8-openai-rate-limits.diff</a> &middot;
+commit <a href="https://github.com/dadwritestech/fineprint/commit/ac96ef5be8f90b8006f9698c1fe91b7bfff5d7e9">ac96ef5be8</a></p>
+<pre class="diff"><span class="h">diff --git a/snapshots/openai/rate-limits.md b/snapshots/openai/rate-limits.md</span><span class="h">index 35af520..52f3c19 100644</span><span class="h">--- a/snapshots/openai/rate-limits.md</span><span class="h">+++ b/snapshots/openai/rate-limits.md</span><span class="h">@@ -75,4 +75,21 @@ curl https://api.openai.com/v1/fine_tuning/model_limits \</span><span class=""> ## Error mitigation</span><span class=""> </span><span class="a">+### Handle rapid traffic increases and model overload</span><span class="a">+</span><span class="a">+The API can return `slow_down` when your request rate increases too quickly, or `server_is_overloaded` when the requested model is temporarily overloaded. Check the HTTP status and `error.code` to tell these conditions apart:</span><span class="a">+</span><span class="a">+| HTTP status | Error type | Error code | What it means | What to do |</span><span class="a">+|---|---|---|---|---|</span><span class="a">+| `429` | `rate_limit_error` | `slow_down` | Your request rate increased too quickly. | Follow `Retry-After` when it&#x27;s present, reduce your request rate, and then increase it gradually. |</span><span class="a">+| `503` | `service_unavailable_error` | `server_is_overloaded` | The requested model is temporarily overloaded. | Follow `Retry-After` when it&#x27;s present, then retry. If the error continues, increase the delay between retry attempts. |</span><span class="a">+</span><span class="a">+If `Retry-After` is missing, increase the delay between retries and add a small random delay.</span><span class="a">+</span><span class="a">+A `slow_down` error can occur even when your traffic is within its requests-per-minute and tokens-per-minute limits. It reflects how quickly traffic increased, not whether you exhausted those limits.</span><span class="a">+</span><span class="a">+As a rule of thumb, once your traffic reaches 1 million input tokens per minute (TPM), increase it by no more than 50% every 15 minutes. The exact point at which the ramp-rate limit applies can vary by model and traffic conditions.</span><span class="a">+</span><span class="a">+Enterprise customers whose pay-as-you-go traffic routinely hits ramp-rate limits can consider Scale Tier for more predictable capacity on eligible models. For GPT-5.6 and later models, see Reserved Tier. Capacity tiers don&#x27;t change how you should handle a `slow_down` response: follow `Retry-After` when it&#x27;s present, reduce traffic, and ramp gradually.</span><span class="a">+</span><span class=""> ### What are some steps I can take to mitigate this?</span><span class=""> </span><span class="h">@@ -103,6 +120,4 @@ Note that unsuccessful requests contribute to your per-minute limit, so continuo</span><span class=""> Below are a few example solutions for Python that use exponential backoff.</span><span class=""> </span><span class="d">-Example 1: Using the Tenacity library</span><span class="d">-</span><span class=""> Tenacity is an Apache 2.0 licensed general-purpose retrying library, written in Python, to simplify the task of adding retry behavior to just about anything. To add exponential backoff to your requests, you can use the `tenacity.retry` decorator. The below example uses the `tenacity.wait_random_exponential` function to add random exponential backoff to a request.</span><span class=""> </span><span class="h">@@ -149,6 +164,4 @@ completion_with_backoff(</span><span class=""> Note that the Tenacity library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.</span><span class=""> </span><span class="d">-Example 2: Using the backoff library</span><span class="d">-</span><span class=""> Another python library that provides function decorators for backoff and retry is backoff:</span><span class=""> </span><span class="h">@@ -189,6 +202,4 @@ completions_with_backoff(</span><span class=""> Like Tenacity, the backoff library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.</span><span class=""> </span><span class="d">-Example 3: Manual backoff implementation</span><span class="d">-</span><span class=""> If you don&#x27;t want to use third-party libraries, you can implement your own backoff logic following this example:</span><span class=""> </span></pre>
+<p><a href="../openai.html">&larr; OpenAI timeline</a></p>
+<footer>Snapshots of public, logged-out pages, normalized to markdown and committed to git.
+One-line summaries are written by a local LLM and can be wrong: every entry links the raw diff, which is the source of truth.
+History before the first live fetch is reconstructed from Wayback Machine captures sampled about weekly, so dates are "first seen in a capture", not exact change times.</footer>
+</div></body></html>

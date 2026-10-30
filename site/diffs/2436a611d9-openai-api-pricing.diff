@@ -1,0 +1,120 @@
+diff --git a/snapshots/openai/api-pricing.md b/snapshots/openai/api-pricing.md
+index ba4aaa3..d2f458e 100644
+--- a/snapshots/openai/api-pricing.md
++++ b/snapshots/openai/api-pricing.md
+@@ -3,14 +3,18 @@
+ Our latest models
+ 
++Speed
++
++Context length
++
+ Prices per 1M tokens.
+ 
+ Standard
+ 
+-|  | Short context | Long context |  |  |  |  |  |  |
+-|---|---|---|---|---|---|---|---|---|
+-| Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+-| gpt-6-astra | $10.00 | $1.00 | $12.50 | $50.00 | $20.00 | $2.00 | $25.00 | $75.00 |
+-| gpt-6.1-sol | $2.00 | $0.10 | $2.50 | $10.00 | $4.00 | $0.20 | $5.00 | $15.00 |
+-| gpt-6-luna | $0.10 | $0.01 | $0.125 | $0.50 | $0.20 | $0.02 | $0.25 | $0.75 |
++|  | Prompt caching |  |  |  |  |
++|---|---|---|---|---|---|
++| Model | Input | Output | Cached input | 30m write | 12h write |
++| gpt-6-astra | $10.00 | $50.00 | $1.00 | $12.50 | $25.00 |
++| gpt-6.1-sol | $2.00 | $10.00 | $0.10 | $2.50 | $5.00 |
++| gpt-6-luna | $0.10 | $0.50 | $0.01 | $0.125 | $0.25 |
+ 
+ Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026. FedRAMP endpoints are also charged a 10% uplift. Priority processing was renamed Fast mode on July 30, 2026. GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
+@@ -18,11 +22,13 @@ Regional processing (data residency) endpoints are charged a 10% uplift for mode
+ Our latest Daybreak models.
+ 
++Context length
++
+ Prices per 1M tokens.
+ 
+-|  | Short context | Long context |  |  |  |  |  |  |
+-|---|---|---|---|---|---|---|---|---|
+-| Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+-| gpt-5.6-sol | $4.00 | $0.40 | $5.00 | $20.00 | $8.00 | $0.80 | $10.00 | $30.00 |
+-| gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
++|  | Prompt caching |  |  |  |  |
++|---|---|---|---|---|---|
++| Model | Input | Output | Cached input | 30m write | 12h write |
++| gpt-5.6-sol | $4.00 | $20.00 | $0.40 | $5.00 | $10.00 |
++| gpt-5.6-cyber | $12.50 | $75.00 | $1.25 | $15.625 | $31.25 |
+ 
+ Our latest Rosalind models.
+@@ -30,8 +36,8 @@ Our latest Rosalind models.
+ Prices per 1M tokens.
+ 
+-| Model | Input | Cached input | Output |
++| Model | Input | Output | Cached input |
+ |---|---|---|---|
+-| gpt-rosalind-research | $5.00 | $0.50 | $25.00 |
+-| gpt-rosalind-discovery | $5.00 | $0.50 | $25.00 |
++| gpt-rosalind-research | $5.00 | $25.00 | $0.50 |
++| gpt-rosalind-discovery | $5.00 | $25.00 | $0.50 |
+ 
+ Billing for `gpt-rosalind-research` begins on October 5, 2026. Cache-write pricing does not apply to this model. Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+@@ -45,12 +51,12 @@ GPT-Live 1 voice sessions are billed per second, without rounding up to a whole
+ Prices per 1M tokens unless noted.
+ 
+-| Model | Modality | Input | Cached input | Output / cost |
++| Model | Modality | Input | Output / cost | Cached input |
+ |---|---|---|---|---|
+-| gpt-realtime-2.1 | Audio | $32.00 | $0.40 | $64.00 |
+-| Text | $4.00 | $0.40 | $24.00 |  |
+-| Image | $5.00 | $0.50 | - |  |
+-| gpt-realtime-2.1-mini | Audio | $10.00 | $0.30 | $20.00 |
+-| Text | $0.60 | $0.06 | $2.40 |  |
+-| Image | $0.80 | $0.08 | - |  |
++| gpt-realtime-2.1 | Audio | $32.00 | $64.00 | $0.40 |
++| Text | $4.00 | $24.00 | $0.40 |  |
++| Image | $5.00 | - | $0.50 |  |
++| gpt-realtime-2.1-mini | Audio | $10.00 | $20.00 | $0.30 |
++| Text | $0.60 | $2.40 | $0.06 |  |
++| Image | $0.80 | - | $0.08 |  |
+ 
+ Prices per 1M tokens.
+@@ -60,10 +66,10 @@ Standard
+ For image generation cost estimates, use the calculator in the image generation guide.
+ 
+-| Model | Modality | Input | Cached input | Output |
++| Model | Modality | Input | Output | Cached input |
+ |---|---|---|---|---|
+-| gpt-image-2.5-sunburst | Image | $8.00 | $2.00 | $30.00 |
+-| Text | $5.00 | $1.25 | - |  |
+-| gpt-image-2.5-flare | Image | $8.00 | $2.00 | $30.00 |
+-| Text | $5.00 | $1.25 | - |  |
++| gpt-image-2.5-sunburst | Image | $8.00 | $30.00 | $2.00 |
++| Text | $5.00 | - | $1.25 |  |
++| gpt-image-2.5-flare | Image | $8.00 | $30.00 | $2.00 |
++| Text | $5.00 | - | $1.25 |  |
+ 
+ Prices per 1M tokens unless noted.
+@@ -95,8 +101,8 @@ Prices per 1M tokens.
+ Standard
+ 
+-| Category | Model | Input | Cached input | Output |
++| Category | Model | Input | Output | Cached input |
+ |---|---|---|---|---|
+-| ChatGPT | chat-latest | $5.00 | $0.50 | $30.00 |
+-| Codex | gpt-5.3-codex | $1.75 | $0.175 | $14.00 |
++| ChatGPT | chat-latest | $5.00 | $30.00 | $0.50 |
++| Codex | gpt-5.3-codex | $1.75 | $14.00 | $0.175 |
+ 
+ Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+@@ -110,8 +116,8 @@ All fine-tuned models will remain available for inference until their base model
+ Standard
+ 
+-| Model | Training | Input | Cached input | Output |
++| Model | Training | Input | Output | Cached input |
+ |---|---|---|---|---|
+-| o4-mini-2025-04-16 | $100.00 / hour | $4.00 | $1.00 | $16.00 |
+-| o4-mini-2025-04-16 with data sharing | $100.00 / hour | $2.00 | $0.50 | $8.00 |
++| o4-mini-2025-04-16 | $100.00 / hour | $4.00 | $16.00 | $1.00 |
++| o4-mini-2025-04-16 with data sharing | $100.00 / hour | $2.00 | $8.00 | $0.50 |
+ 
+ Tokens used for model grading in reinforcement fine-tuning are billed at that model's per-token rate. Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.

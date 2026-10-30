@@ -1,0 +1,16 @@
+diff --git a/snapshots/cursor/privacy.md b/snapshots/cursor/privacy.md
+index e3982db..c3c33f4 100644
+--- a/snapshots/cursor/privacy.md
++++ b/snapshots/cursor/privacy.md
+@@ -86,10 +86,8 @@ The rights available to you may include:
+ - Withdrawal of consent, where the legal basis for our processing is based on your consent. Withdrawal does not affect the lawfulness of prior processing.
+ - No automated decisions: Anysphere does not make decisions based solely on automated processing that impact your legal rights or has similarly significant effects (e.g. your healthcare or financial circumstances).
+-- No sale or targeted advertising: We do not "sell" or "share" personal data for cross-contextual behavioral advertising, and we do not process personal data for "targeted advertising" purposes (as those terms are defined under applicable US state privacy laws). We also do not process sensitive personal data for the purposes of inferring characteristics about a consumer.
++- We do not process sensitive personal data for the purposes of inferring characteristics about a consumer.
+ 
+ Anysphere processes your personal data for the purposes described in this Privacy Policy on servers located in various jurisdictions, including in the United States. While data protection laws vary by country, we apply the protections outlined in this policy to your personal data regardless of where it is processed, and we only transfer data in accordance with legally valid transfer mechanisms. For users in the European Economic Area, ("EEA"), when you access our Service, your personal data may be transferred to our United States servers to other countries outside the EEA and the UK. Where information is transferred outside the EEA or the UK, we require an adequate level of data protection.
+ 
+-Some jurisdictions require specific disclosures regarding how we handle your personal data. The table below supplements this Privacy Policy by providing additional details about the purpose of data collection, type of data collected, and legal basis. For more information, see "Personal data we collect," "How we use personal data," and "Retention" above.
+-
+ We may update this Privacy Policy from time to time. When we do, we will publish an updated version and effective date at the top of this page, unless another type of notice is legally required. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.
+ 

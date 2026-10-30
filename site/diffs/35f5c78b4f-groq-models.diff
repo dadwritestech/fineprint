@@ -1,0 +1,11 @@
+diff --git a/snapshots/groq/models.md b/snapshots/groq/models.md
+index 1e148d0..6123e63 100644
+--- a/snapshots/groq/models.md
++++ b/snapshots/groq/models.md
+@@ -37,6 +37,4 @@ Note: Production models are intended for use in your production environments. Th
+ | MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE |
+ |---|---|---|---|---|---|---|
+-| Llama 3.1 8Bllama-3.1-8b-instant | 560 | $0.05 input$0.08 output | 250K TPM1K RPM | 131,072 | 131,072 | - |
+-| Llama 3.3 70Bllama-3.3-70b-versatile | 280 | $0.59 input$0.79 output | 300K TPM1K RPM | 131,072 | 32,768 | - |
+ | GPT OSS 120Bopenai/gpt-oss-120b | 500 | $0.15 input$0.60 output | 250K TPM1K RPM | 131,072 | 65,536 | - |
+ | GPT OSS 20Bopenai/gpt-oss-20b | 1000 | $0.075 input$0.30 output | 250K TPM1K RPM | 131,072 | 65,536 | - |

@@ -1,0 +1,11 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index e165603..ee70b13 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -23,5 +23,5 @@ $20 / mo.
+ ProPro+Ultra
+ 
+-Everything on Hobby, plus:
++Everything in Hobby, plus:
+ 
+ - ✓ Extended limits on Agent

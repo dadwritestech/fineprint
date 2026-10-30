@@ -1,0 +1,41 @@
+diff --git a/snapshots/groq/models.md b/snapshots/groq/models.md
+index 0154ab3..7cdc755 100644
+--- a/snapshots/groq/models.md
++++ b/snapshots/groq/models.md
+@@ -35,19 +35,9 @@ Capabilities
+ Note: Production models are intended for use in your production environments. They meet or exceed our high standards for speed, quality, and reliability. Read more here.
+ 
+-| MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE |
+-|---|---|---|---|---|---|---|
+-| Llama 3.1 8Bllama-3.1-8b-instant | 560 | $0.05 input$0.08 output | 250K TPM1K RPM | 131,072 | 131,072 | - |
+-| Llama 3.3 70Bllama-3.3-70b-versatile | 280 | $0.59 input$0.79 output | 300K TPM1K RPM | 131,072 | 32,768 | - |
+-| GPT OSS 120Bopenai/gpt-oss-120b | 500 | $0.15 input$0.60 output | 250K TPM1K RPM | 131,072 | 65,536 | - |
+-| GPT OSS 20Bopenai/gpt-oss-20b | 1000 | $0.075 input$0.30 output | 250K TPM1K RPM | 131,072 | 65,536 | - |
+-| Whisperwhisper-large-v3 | - | $0.111 per hour | 200K ASH300 RPM | - | - | 100 MB |
+-| Whisper Large V3 Turbowhisper-large-v3-turbo | - | $0.04 per hour | 400K ASH400 RPM | - | - | - |
++No models found for the specified criteria.
+ 
+ Systems are a collection of models and tools that work together to answer a user query.
+ 
+-| MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE |
+-|---|---|---|---|---|---|---|
+-| Compoundgroq/compound | 450 | - | 200K TPM200 RPM | 131,072 | 8,192 | - |
+-| Compound Minigroq/compound-mini | 450 | - | 200K TPM200 RPM | 131,072 | 8,192 | - |
++No models found for the specified criteria.
+ 
+ Learn More About Agentic Tooling
+@@ -57,13 +47,5 @@ Discover how to build powerful applications with real-time web search and code e
+ Note: Preview models are intended for evaluation purposes only and should not be used in production environments as they may be discontinued at short notice. Read more about deprecations here.
+ 
+-| MODEL ID | SPEED (T/SEC) | PRICE PER 1M TOKENS | RATE LIMITS (DEVELOPER PLAN) | CONTEXT WINDOW (TOKENS) | MAX COMPLETION TOKENS | MAX FILE SIZE |
+-|---|---|---|---|---|---|---|
+-| Canopy Labs Orpheus Arabic Saudicanopylabs/orpheus-arabic-saudi | - | $40.00 per 1M characters | 50K TPM250 RPM | 4,000 | 50,000 | - |
+-| Canopy Labs Orpheus V1 Englishcanopylabs/orpheus-v1-english | - | $22.00 per 1M characters | 50K TPM250 RPM | 4,000 | 50,000 | - |
+-| Llama 4 Scout 17B 16Emeta-llama/llama-4-scout-17b-16e-instruct | 750 | $0.11 input$0.34 output | 300K TPM1K RPM | 131,072 | 8,192 | 20 MB |
+-| Llama Prompt Guard 2 22Mmeta-llama/llama-prompt-guard-2-22m | - | $0.03 input$0.03 output | 30K TPM100 RPM | 512 | 512 | - |
+-| Prompt Guard 2 86Mmeta-llama/llama-prompt-guard-2-86m | - | $0.04 input$0.04 output | 30K TPM100 RPM | 512 | 512 | - |
+-| Safety GPT OSS 20Bopenai/gpt-oss-safeguard-20b | 1000 | $0.075 input$0.30 output | 150K TPM1K RPM | 131,072 | 65,536 | - |
+-| Qwen3-32Bqwen/qwen3-32b | 400 | $0.29 input$0.59 output | 300K TPM1K RPM | 131,072 | 40,960 | - |
++No models found for the specified criteria.
+ 
+ Deprecated models are models that are no longer supported or will no longer be supported in the future. See our deprecation guidelines and deprecated models here.

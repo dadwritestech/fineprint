@@ -1,0 +1,10 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index 177e2c5..ba8c688 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -67,4 +67,5 @@ Everything on Teams, plus:
+ - ✓ Audit logs and service accounts
+ - ✓ AI code tracking API
++- ✓ Access, network, and audit controls for Grok Bot
+ - ✓ Priority support and account management
+ 

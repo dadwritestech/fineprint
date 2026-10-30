@@ -1,0 +1,50 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index a26f4e3..5ec42d5 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -196,4 +196,6 @@ Opt-out
+ Opt-out
+ 
++Get $1,000 in Claude Code and Claude Cowork credits for every seat that activates by July 2.
++
+ ### Team
+ 
+@@ -431,5 +433,5 @@ Learn more
+ Batch processing
+ 
+-### Opus 4.7
++### Opus 4.8
+ 
+ Most intelligent model for agents and coding
+@@ -499,4 +501,6 @@ $0.10 / MTok
+ For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
+ 
++Get up to 2.5x faster speeds with fast mode for Opus 4.8 at 2x standard pricing. Learn more.
++
+ Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
+ 
+@@ -553,4 +557,24 @@ Learn more
+ Batch processing
+ 
++### Opus 4.7
++
++Input
++
++$5 / MTok
++
++Output
++
++$25 / MTok
++
++Prompt caching
++
++Write
++
++$6.25 / MTok
++
++Read
++
++$0.50 / MTok
++
+ ### Opus 4.6
+ 

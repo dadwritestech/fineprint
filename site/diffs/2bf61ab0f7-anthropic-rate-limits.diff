@@ -1,0 +1,31 @@
+diff --git a/snapshots/anthropic/rate-limits.md b/snapshots/anthropic/rate-limits.md
+index a09cb1c..815e1d1 100644
+--- a/snapshots/anthropic/rate-limits.md
++++ b/snapshots/anthropic/rate-limits.md
+@@ -1,5 +1,5 @@
+ <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
+ 
+-Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
++Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and can move to a higher tier automatically as they build a history of paid AWS Marketplace invoices. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
+ 
+ There are two types of limits:
+@@ -115,4 +115,5 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
+ |---|---|---|---|
+ | Claude Fable 5.x1 | 1,000 | 500,000 | 100,000 |
++| Claude Opus 5.5 | 1,000 | 2,000,000 | 400,000 |
+ | Claude Opus 5 | 1,000 | 2,000,000 | 400,000 |
+ | Claude Opus 4.x2 | 1,000 | 2,000,000 | 400,000 |
+@@ -124,5 +125,5 @@ Rate limits are currently shared across all `inference_geo` values. Requests wit
+ 1 Fable rate limit is a total limit that applies to combined traffic across Claude Fable 5.1 and Claude Fable 5. Claude Mythos 5.1 and Claude Mythos 5 share a separate combined limit on the same terms.
+ 
+-2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5 has a separate rate limit and is not part of this combined bucket.
++2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5.5 and Claude Opus 5 each have a separate rate limit and are not part of this combined bucket.
+ 
+ 3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 5 has a separate rate limit and is not part of this combined bucket.
+@@ -153,5 +154,5 @@ Files API requests have their own per-organization limit, shared across upload,
+ ### Fast mode rate limits
+ 
+-When using fast mode (research preview) with `speed: "fast"` on Claude Opus 5 or Opus 4.8, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.7 (requests return an error) or Claude Opus 4.6 (requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed). See Fast mode.
++When using fast mode (research preview) with `speed: "fast"` on Claude Opus 5.5, Claude Opus 5, or Opus 4.8, dedicated rate limits apply that are separate from standard Opus rate limits. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header. Fast mode is not available on Claude Opus 4.7 (requests return an error) or Claude Opus 4.6 (requests to `claude-opus-4-6` with `speed: "fast"` run at standard speed). See Fast mode.
+ 
+ The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode rate limits for details on these headers.

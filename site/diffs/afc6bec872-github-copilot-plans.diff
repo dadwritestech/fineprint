@@ -1,0 +1,43 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 4af388e..4eba02a 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -456,4 +456,5 @@ Free
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
++- Kimi K3
+ 
+ Pro
+@@ -489,4 +490,5 @@ Pro
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
++- Kimi K3
+ 
+ Pro+
+@@ -522,4 +524,5 @@ Pro+
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
++- Kimi K3
+ 
+ Max
+@@ -555,4 +558,5 @@ Max
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
++- Kimi K3
+ 
+ Additional features
+@@ -586,14 +590,4 @@ Pro+
+ Max
+ 
+-GitHub Spark (Preview)
+-
+-Free
+-
+-Pro
+-
+-Pro+
+-
+-Max
+-
+ Policies and management
+ 

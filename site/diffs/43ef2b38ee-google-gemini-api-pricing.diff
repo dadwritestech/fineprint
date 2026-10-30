@@ -1,0 +1,117 @@
+diff --git a/snapshots/google/gemini-api-pricing.md b/snapshots/google/gemini-api-pricing.md
+index 4e35e29..9b28674 100644
+--- a/snapshots/google/gemini-api-pricing.md
++++ b/snapshots/google/gemini-api-pricing.md
+@@ -197,60 +197,4 @@ The latest performance, intelligence, and usability improvements to the best mod
+ * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
+ 
+-## Gemini 3.1 Flash-Lite Preview
+-
+-`gemini-3.1-flash-lite-preview`
+-
+-Try it in Google AI Studio
+-
+-Our most cost-efficient model, optimized for high-volume agentic tasks, translation, and simple data processing.
+-
+-Preview models may change before becoming stable and have more restrictive rate limits.
+-
+-### Standard
+-
+-|  | Free Tier | Paid Tier, per 1M tokens in USD |
+-|---|---|---|
+-| Input price | Free of charge | $0.25 (text / image / video) $0.50 (audio) |
+-| Output price (including thinking tokens) | Free of charge | $1.50 |
+-| Context caching price | Not available | $0.025 (text / image / video) $0.05 (audio) $1.00 / 1,000,000 tokens per hour (storage price) |
+-| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Used to improve our products | Yes | No |
+-
+-### Batch
+-
+-|  | Free Tier | Paid Tier, per 1M tokens in USD |
+-|---|---|---|
+-| Input price | Free of charge | $0.125 (text / image / video) $0.25 (audio) |
+-| Output price (including thinking tokens) | Free of charge | $0.75 |
+-| Context caching price | Not available | $0.0125 (text / image / video) $0.025 (audio) $0.50 / 1,000,000 tokens per hour (storage price) |
+-| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Used to improve our products | Yes | No |
+-
+-### Flex
+-
+-|  | Free Tier | Paid Tier, per 1M tokens in USD |
+-|---|---|---|
+-| Input price | Free of charge | $0.125 (text / image / video) $0.25 (audio) |
+-| Output price (including thinking tokens) | Free of charge | $0.75 |
+-| Context caching price | Not available | $0.0125 (text / image / video) $0.025 (audio) $0.50 / 1,000,000 tokens per hour (storage price) |
+-| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Used to improve our products | Yes | No |
+-
+-### Priority
+-
+-|  | Free Tier | Paid Tier, per 1M tokens in USD |
+-|---|---|---|
+-| Input price | Free of charge | $0.45 (text / image / video) $0.90 (audio) |
+-| Output price (including thinking tokens) | Free of charge | $2.70 |
+-| Context caching price | Not available | $0.045 (text / image / video) $0.09 (audio) $1.80 / 1,000,000 tokens per hour (storage price) |
+-| Grounding with Google Search* | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Grounding with Google Maps | Not available | 5,000 prompts per month (free, shared across Gemini 3), then $14 / 1,000 search queries |
+-| Used to improve our products | Yes | No |
+-
+-* A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
+-
+ ## Gemini 3.1 Flash Live Preview
+ 
+@@ -270,7 +214,7 @@ Our low-latency, audio-to-audio model optimized for real-time dialogue with acou
+ * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
+ 
+-## Gemini 3.1 Flash Image Preview 🍌
++## Gemini 3.1 Flash Image 🍌
+ 
+-`gemini-3.1-flash-image-preview`
++`gemini-3.1-flash-image`
+ 
+ Try it in Google AI Studio
+@@ -278,6 +222,4 @@ Try it in Google AI Studio
+ Designed for speed and efficiency, the Gemini 3.1 Flash Image generation model is effective for quick, interactive responses and high throughput.
+ 
+-Preview models may change before becoming stable and have more restrictive rate limits.
+-
+ ### Standard
+ 
+@@ -383,7 +325,7 @@ Our most intelligent model built for speed, combining frontier intelligence with
+ * A customer-submitted request to Gemini may result in one or more queries to Google Search. You will be charged for each individual search query performed.
+ 
+-## Gemini 3 Pro Image Preview 🍌
++## Gemini 3 Pro Image 🍌
+ 
+-`gemini-3-pro-image-preview`
++`gemini-3-pro-image`
+ 
+ Try it in Google AI Studio
+@@ -391,6 +333,4 @@ Try it in Google AI Studio
+ Our native image generation model, optimized for speed, flexibility, and contextual understanding. Text input and output is priced the same as Gemini 3.1 Pro.
+ 
+-Preview models may change before becoming stable and have more restrictive rate limits.
+-
+ ### Standard
+ 
+@@ -886,8 +826,8 @@ Our first multimodal embedding model, mapping text, images, video, audio, and PD
+ |  | Free Tier | Paid Tier, per 1M tokens in USD |
+ |---|---|---|
+-| Text input price | Not available | Not available |
+-| Image input price | Not available | Not available |
+-| Audio input price | Not available | Not available |
+-| Video input price | Not available | Not available |
++| Text input price | Not available | $0.10 |
++| Image input price | Not available | $0.225 ($0.00006 per image) |
++| Audio input price | Not available | $3.25 ($0.00008 per second) |
++| Video input price | Not available | $6.00 ($0.000395 per frame) |
+ | Used to improve our products | Yes | No |
+ 
+@@ -999,3 +939,3 @@ Agent usage costs are calculated based on the underlying token consumption and u
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-05-19 UTC.
++Last updated 2026-05-29 UTC.

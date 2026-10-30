@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>anthropic/api-pricing: Reduced Claude Opus 5.5 input costs to $4 USD / MTok and output costs to $20 USD / MTok, and added Fast mode to Microsoft Foundry.</title><link rel="alternate" type="application/rss+xml" title="fineprint" href="../feed.xml">
+<style>
+:root{--paper:#f6f3ec;--ink:#1d1b17;--muted:#6f685c;--rule:#d9d2c3;--red:#b3261e;--add:#e3f1e0;--del:#f7e1de;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d9;--muted:#9a917f;--rule:#38332a;--red:#ff7a6e;--add:#1d3320;--del:#3d1f1b;--card:#1d1a14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit;text-decoration-color:var(--red);text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 80px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:700;letter-spacing:-.5px;text-decoration:none}
+.brand span{color:var(--red)}
+.tag{font:13px/1.4 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.8px}
+.lede{color:var(--muted);margin:0 0 30px;max-width:640px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:13px}
+.vendors{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 40px}
+.vendors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px 16px;text-decoration:none}
+.vendors a:hover{border-color:var(--ink)}
+.vendors b{display:block;font-size:18px}
+.month{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:34px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+ol.tl li.minor{opacity:.55}
+.date{font:13px/1.9 ui-monospace,Consolas,monospace;color:var(--muted)}
+.what{font-size:17px}
+.meta{grid-column:2;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);padding:0 6px;border-radius:2px}
+.plus{color:#2e7d32}.minus{color:var(--red)}
+.note{border-left:3px solid var(--red);padding:8px 14px;background:var(--card);color:var(--muted);font-size:14px;margin:0 0 26px}
+pre.diff{background:var(--card);border:1px solid var(--rule);padding:12px 0;overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+pre.diff span{display:block;padding:0 14px}
+pre.diff .a{background:var(--add)}pre.diff .d{background:var(--del)}pre.diff .h{color:var(--muted)}
+footer{margin-top:50px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:14px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../index.html">fine<span>print</span></a>
+<span class="tag">what AI companies quietly changed &middot; <a href="../feed.xml">RSS</a></span></header>
+<p class="mono">2026-10-20 08:47 UTC &middot; anthropic/api-pricing &middot; <a href="https://platform.claude.com/docs/en/about-claude/pricing">live page</a></p>
+<h1 style="font-size:28px">Reduced Claude Opus 5.5 input costs to $4 USD / MTok and output costs to $20 USD / MTok, and added Fast mode to Microsoft Foundry.</h1>
+<p class="note">Summary by gemma-4-12b. It may be wrong; the diff below is what actually changed.
+Raw: <a href="45aca4f8d0-anthropic-api-pricing.diff">45aca4f8d0-anthropic-api-pricing.diff</a> &middot;
+commit <a href="https://github.com/dadwritestech/fineprint/commit/45aca4f8d04b19513f09a1af03522f93d25eedce">45aca4f8d0</a></p>
+<pre class="diff"><span class="h">diff --git a/snapshots/anthropic/api-pricing.md b/snapshots/anthropic/api-pricing.md</span><span class="h">index 85ba5d4..49c47ea 100644</span><span class="h">--- a/snapshots/anthropic/api-pricing.md</span><span class="h">+++ b/snapshots/anthropic/api-pricing.md</span><span class="h">@@ -145,12 +145,10 @@ For more information, see Data residency.</span><span class=""> ### Fast mode pricing</span><span class=""> </span><span class="d">-Fast mode, in research preview, provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) only; it is not available on Claude Platform on AWS or partner-operated cloud platforms.</span><span class="a">+Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude in Microsoft Foundry for deployments hosted on Azure; it is not available on Claude Platform on AWS or partner-operated cloud platforms.</span><span class=""> </span><span class=""> | Model | Input | Output |</span><span class=""> |---|---|---|</span><span class="d">-| Claude Opus 5.5 | $8 / MTok | $40 / MTok |</span><span class="d">-| Claude Opus 5 / Claude Opus 4.8 | $10 / MTok | $50 / MTok |</span><span class="d">-</span><span class="d">-Fast mode is not available on Claude Opus 4.7 (requests with `speed: &quot;fast&quot;` return an error) or Claude Opus 4.6 (requests run at standard speed and are billed at standard rates). See Fast mode.</span><span class="a">+| Claude Opus 5.5 | $8 USD / MTok | $40 USD / MTok |</span><span class="a">+| Claude Opus 5 / Claude Opus 4.8 | $10 USD / MTok | $50 USD / MTok |</span><span class=""> </span><span class=""> Fast mode pricing stacks with other pricing modifiers:</span><span class="h">@@ -427,12 +425,12 @@ Session runtime replaces the code execution container-hour billing model when us</span><span class=""> ### Worked example</span><span class=""> </span><span class="d">-A one-hour coding session using Claude Opus 5 that consumes 50,000 input tokens and 15,000 output tokens:</span><span class="a">+A one-hour coding session using Claude Opus 5.5 that consumes 50,000 input tokens and 15,000 output tokens:</span><span class=""> </span><span class=""> | Line item | Calculation | Cost |</span><span class=""> |---|---|---|</span><span class="d">-| Input tokens | 50,000 × $5 / 1,000,000 | $0.25 |</span><span class="d">-| Output tokens | 15,000 × $25 / 1,000,000 | $0.375 |</span><span class="a">+| Input tokens | 50,000 × $4 / 1,000,000 | $0.20 |</span><span class="a">+| Output tokens | 15,000 × $20 / 1,000,000 | $0.30 |</span><span class=""> | Session runtime | 1.0 hour × $0.08 | $0.08 |</span><span class="d">-| Total |  | $0.705 |</span><span class="a">+| Total |  | $0.58 |</span><span class=""> </span><span class=""> If prompt caching is active and 40,000 of the input tokens are cache reads:</span><span class="h">@@ -440,9 +438,9 @@ If prompt caching is active and 40,000 of the input tokens are cache reads:</span><span class=""> | Line item | Calculation | Cost |</span><span class=""> |---|---|---|</span><span class="d">-| Uncached input tokens | 10,000 × $5 / 1,000,000 | $0.05 |</span><span class="d">-| Cache read tokens | 40,000 × $5 × 0.1 / 1,000,000 | $0.02 |</span><span class="d">-| Output tokens | 15,000 × $25 / 1,000,000 | $0.375 |</span><span class="a">+| Uncached input tokens | 10,000 × $4 / 1,000,000 | $0.04 |</span><span class="a">+| Cache read tokens | 40,000 × $4 × 0.05 / 1,000,000 | $0.008 |</span><span class="a">+| Output tokens | 15,000 × $20 / 1,000,000 | $0.30 |</span><span class=""> | Session runtime | 1.0 hour × $0.08 | $0.08 |</span><span class="d">-| Total |  | $0.525 |</span><span class="a">+| Total |  | $0.428 |</span><span class=""> </span><span class=""> ## Additional pricing considerations</span><span class="h">@@ -513,5 +511,5 @@ Batch API and prompt caching discounts can be combined. For example, using both</span><span class=""> ### What payment methods are accepted?</span><span class=""> </span><span class="d">-Major credit cards are accepted for standard accounts. Enterprise customers can arrange invoicing and other payment methods.</span><span class="a">+Major credit cards are accepted for standard accounts. To buy credits or manage your payment methods, go to the Billing page (`platform.claude.com/settings/billing`) in the Claude Console. Enterprise customers can arrange invoicing and other payment methods.</span><span class=""> </span><span class=""> For additional questions about pricing, contact support@anthropic.com.</span></pre>
+<p><a href="../anthropic.html">&larr; Anthropic timeline</a></p>
+<footer>Snapshots of public, logged-out pages, normalized to markdown and committed to git.
+One-line summaries are written by a local LLM and can be wrong: every entry links the raw diff, which is the source of truth.
+History before the first live fetch is reconstructed from Wayback Machine captures sampled about weekly, so dates are "first seen in a capture", not exact change times.</footer>
+</div></body></html>

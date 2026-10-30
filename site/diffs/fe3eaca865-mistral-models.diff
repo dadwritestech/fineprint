@@ -1,0 +1,84 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 30dcb26..2f39ee5 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -5,49 +5,55 @@
+ Mistral develops open-weight and commercial large language models. Explore the full lineup, compare benchmarks, and find the right model for your use case.
+ 
+-Latest models
++Explore
+ 
+-### Mistral Medium 3.5
++Compare specifications and benchmarks, find the right model for your task, and learn how to deploy across cloud providers.
+ 
+-Our frontier-class multimodal model optimized for agentic and coding use cases.
++### Overview
+ 
+-v3.5
++View all models with specifications, benchmarks, and feature comparison.
+ 
+-### OCR 3
++### Model selection guide
+ 
+-Our OCR service powering our Document AI stack.
++Choose the right model based on task requirements, latency constraints, and cost targets.
+ 
+-v25.12
++### Deployment
+ 
+-### Voxtral Mini Transcribe Realtime
++Deploy models to cloud providers and Mistral Compute.
+ 
+-An efficient audio input model, fine-tuned and optimized for live transcription purposes.
++### Best practices
+ 
+-v26.02
++Prompt engineering, sampling parameter tuning, and evaluation methods.
+ 
+-### Devstral 2
++Latest models
+ 
+-Our frontier code agents model for solving software engineering tasks.
++### Mistral Medium 3.5
+ 
+-v25.12
++Our frontier-class multimodal model optimized for agentic and coding use cases.
+ 
+-View all models
++v26.04
+ 
+-Explore
++### Mistral Small 4
+ 
+-Compare specifications and benchmarks, find the right model for your task, and learn how to deploy across cloud providers.
++Hybrid model unifying instruct, reasoning, and coding in a single efficient model.
+ 
+-### Overview
++v26.03
+ 
+-View all models with specifications, benchmarks, and feature comparison.
++### Voxtral Mini Transcribe Realtime
+ 
+-### Model selection guide
++An efficient audio input model, fine-tuned and optimized for live transcription purposes.
+ 
+-Choose the right model based on task requirements, latency constraints, and cost targets.
++v26.02
+ 
+-### Deployment
++### Voxtral TTS
+ 
+-Deploy models to cloud providers and Mistral Compute.
++State-of-the-art TTS with zero-shot voice cloning and multilingual support.
+ 
+-### Best practices
++v26.03
++
++### OCR 3
+ 
+-Prompt engineering, sampling parameter tuning, evaluation methods, and fine-tuning workflows.
++Our OCR service powering our Document AI stack.
++
++v25.12
++
++View all models

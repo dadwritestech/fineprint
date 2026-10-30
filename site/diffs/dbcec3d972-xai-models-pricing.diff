@@ -1,0 +1,50 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 3b13802..93da717 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -7,11 +7,11 @@
+ View as Markdown
+ 
+-Create API keyMeet grok-4.5
++Create API keyMeet grok-4.6
+ 
+-### Grok 4.5
++### Grok 4.6
+ 
+ New
+ 
+-grok-4.5
++grok-4.6
+ 
+ Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
+@@ -57,5 +57,5 @@ Read docsTry in playground
+ ## Which model should I choose?
+ 
+-Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.5. It is the most intelligent and fastest model we've built.
++Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.6. It is the most intelligent and fastest model we've built.
+ 
+ Use case
+@@ -65,9 +65,9 @@ Model
+ Code
+ 
+-Grok 4.5
++Grok 4.6
+ 
+ Chat
+ 
+-Grok 4.5
++Grok 4.6
+ 
+ Images
+@@ -97,5 +97,5 @@ Grok Voice API
+   - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
+ 
+-The knowledge cut-off date of Grok 4.5 is February 1, 2026.
++The knowledge cut-off date of Grok 4.6 is February 1, 2026.
+ 
+ ## Model Aliases
+@@ -109,3 +109,3 @@ Some models have aliases to help users automatically migrate to the next version
+ For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
+ 
+-Last updated: July 9, 2026
++Last updated: August 12, 2026

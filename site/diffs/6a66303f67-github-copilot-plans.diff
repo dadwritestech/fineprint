@@ -1,0 +1,28 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index d789f60..c22c451 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -454,4 +454,5 @@ Free
+ - Google Gemini 3.7 Flash
+ - xAI Grok 4.5
++- xAI Grok 4.6
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -488,4 +489,5 @@ Pro
+ - Google Gemini 3.7 Flash
+ - xAI Grok 4.5
++- xAI Grok 4.6
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -522,4 +524,5 @@ Pro+
+ - Google Gemini 3.7 Flash
+ - xAI Grok 4.5
++- xAI Grok 4.6
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -556,4 +559,5 @@ Max
+ - Google Gemini 3.7 Flash
+ - xAI Grok 4.5
++- xAI Grok 4.6
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code

@@ -1,0 +1,84 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 599729f..fcf97ad 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -9,35 +9,33 @@ View as Markdown
+ Create API key
+ 
+-### Grok 4.3
++### Grok Build 0.1
+ 
+ New
+ 
+-grok-4.3
+-
+-Agentic tool calling, minimal hallucinations, non-reasoning mode.
++grok-build-0.1
+ 
+-Context1 million tokens
++Our coding model — trained specifically for agentic coding workflows. Use Grok Build for code.
+ 
+-Input$1.25 / 1M tokens
++View model
+ 
+-Output$2.50 / 1M tokens
++Context256k tokens
+ 
+-ReasoningConfigurable
++Input$1.00 / 1M tokens
+ 
+-View model
++Output$2.00 / 1M tokens
+ 
+-### Grok Build 0.1
++### Grok 4.3
+ 
+-New
++grok-4.3
+ 
+-grok-build-0.1
++For everything except code, audio, image, and video. The most intelligent and fastest model we've built.
+ 
+-Fast coding model trained specifically for agentic coding workflows.
++Context1 million tokens
+ 
+-Context256k tokens
++Input$1.25 / 1M tokens
+ 
+-Input$1.00 / 1M tokens
++Output$2.50 / 1M tokens
+ 
+-Output$2.00 / 1M tokens
++ReasoningConfigurable
+ 
+ View model
+@@ -67,5 +65,5 @@ SpeedIndustry-leading
+ Image · 1K / 2K$0.02 / image
+ 
+-Video · 480p / 720p$0.05 / sec
++Video · 480p / 720p / 1080p$0.05 / sec
+ 
+ Read docsTry in playground
+@@ -73,5 +71,5 @@ Read docsTry in playground
+ ## Which model should I choose?
+ 
+-Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
++Your choice depends on your use case. We have dedicated models and APIs for code, audio, image, and video capabilities. For code, use Grok Build — it is our coding model. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
+ 
+ Use case
+@@ -79,11 +77,11 @@ Use case
+ Model
+ 
+-Chat
++Code
+ 
+-Grok 4.3
++Grok Build
+ 
+-Coding
++Chat
+ 
+-Grok Build 0.1
++Grok 4.3
+ 
+ Images

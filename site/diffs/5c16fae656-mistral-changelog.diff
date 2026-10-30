@@ -1,0 +1,15 @@
+diff --git a/snapshots/mistral/changelog.md b/snapshots/mistral/changelog.md
+index 6ad8203..89e5069 100644
+--- a/snapshots/mistral/changelog.md
++++ b/snapshots/mistral/changelog.md
+@@ -5,4 +5,10 @@
+ Find out about all the latest changes to our tool. You may filter by date and type of release.
+ 
++### Aug 26
++
++## August 31
++
++- OCR 4.1 (`mistral-ocr-4-1`) is now Generally Available. MODEL RELEASED
++
+ ### Jul 26
+ 

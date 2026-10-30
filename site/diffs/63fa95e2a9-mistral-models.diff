@@ -1,0 +1,14 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 0f6f627..8168912 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -57,9 +57,3 @@ Our OCR service powering our Document AI stack.
+ v25.12
+ 
+-### Devstral 2
+-
+-Our frontier code agents model for solving software engineering tasks.
+-
+-v25.12
+-
+ View all models

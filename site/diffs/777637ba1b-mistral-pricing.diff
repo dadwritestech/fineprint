@@ -1,0 +1,17 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index aacad58..96caab5 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -52,4 +52,12 @@ I'm a student
+ - Chat and email support.
+ 
++- More access and usage.
++- More messages and web searches.
++- Get more complex tasks done.
++- All-day coding in the CLI, IDE, or on web.
++- More image generations.
++- $15 /mo in API credits.
++- Chat and email support.
++
+ Start now
+ 

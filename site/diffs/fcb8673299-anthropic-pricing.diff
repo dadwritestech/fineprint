@@ -1,0 +1,17 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 21e5e31..bb4576d 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -252,4 +252,5 @@ All Team plan features, plus:
+ - IP allowlisting
+ - HIPAA-ready offering available
++- Claude Security (beta)
+ 
+ Quiz
+@@ -291,4 +292,6 @@ Enterprise (sales-assisted)
+ #### Claude Cowork
+ 
++#### Claude Security
++
+ #### Analyze text and images
+ 

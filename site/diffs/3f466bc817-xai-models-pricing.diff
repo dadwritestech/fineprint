@@ -1,0 +1,11 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 32f8e98..b9eb157 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -31,5 +31,5 @@ ReasoningConfigurable
+ Real-time conversations, speech-to-text, and text-to-speech.
+ 
+-AgentStarting at $0.05 / min
++AgentStarting at $0.08 / min
+ 
+ TTS$15.00 / 1M chars

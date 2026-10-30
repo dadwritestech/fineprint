@@ -1,0 +1,16 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 63cef58..32f8e98 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -96,4 +96,6 @@ Grok Voice API
+   - Supported image file types: `jpg/jpeg` or `png`.
+   - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
++- Batch API
++  - Not every model accepts Batch API requests. See Details on each model page.
+ 
+ The knowledge cut-off date of Grok 4.6 is February 1, 2026.
+@@ -109,3 +111,3 @@ Some models have aliases to help users automatically migrate to the next version
+ For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
+ 
+-Last updated: August 12, 2026
++Last updated: August 21, 2026

@@ -1,0 +1,79 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index b9eb157..fe03df8 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -17,13 +17,21 @@ grok-4.6
+ Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
+ 
+-View modelTry in playground
++Context
++
++500k tokens
++
++Input
++
++$2.00 / 1M tokens
+ 
+-Context500k tokens
++Output
+ 
+-Input$2.00 / 1M tokens
++$6.00 / 1M tokens
+ 
+-Output$6.00 / 1M tokens
++Reasoning
+ 
+-ReasoningConfigurable
++Configurable
++
++View modelTry in playground
+ 
+ ### Voice API
+@@ -31,11 +39,19 @@ ReasoningConfigurable
+ Real-time conversations, speech-to-text, and text-to-speech.
+ 
+-AgentStarting at $0.08 / min
++Agent
++
++$0.08 / min
+ 
+-TTS$15.00 / 1M chars
++TTS
+ 
+-STT (Batch)$0.10 / hour
++$15.00 / 1M chars
+ 
+-STT (Streaming)$0.20 / hour
++STT (Batch)
++
++$0.10 / hour
++
++STT (Streaming)
++
++$0.20 / hour
+ 
+ Read docsTry in playground
+@@ -45,11 +61,19 @@ Read docsTry in playground
+ Turn ideas into reality with image and video generation.
+ 
+-ModesGeneration & editing
++Modes
++
++Generation & editing
++
++Speed
++
++Industry-leading
++
++Image · 1K / 2K
+ 
+-SpeedIndustry-leading
++Starting at $0.02 / image
+ 
+-Image · 1K / 2KStarting at $0.02 / image
++Video · 480p / 720p / 1080p
+ 
+-Video · 480p / 720p / 1080pStarting at $0.05 / sec
++Starting at $0.05 / sec
+ 
+ Read docsTry in playground

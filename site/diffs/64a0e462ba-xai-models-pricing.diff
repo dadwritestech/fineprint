@@ -1,0 +1,18 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index b22c1d6..599729f 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -13,4 +13,6 @@ Create API key
+ New
+ 
++grok-4.3
++
+ Agentic tool calling, minimal hallucinations, non-reasoning mode.
+ 
+@@ -29,4 +31,6 @@ View model
+ New
+ 
++grok-build-0.1
++
+ Fast coding model trained specifically for agentic coding workflows.
+ 

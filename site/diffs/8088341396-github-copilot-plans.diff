@@ -1,0 +1,52 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index cfd5090..6a9dee4 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -25,5 +25,7 @@ For everyday coding with agents in GitHub Copilot.
+ $10USDper user / month
+ 
+-New plan sign-ups are temporarily paused as we ensure a high-quality experience. We appreciate your patience. Learn more
++Get started
++
++We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+ 
+ #### Everything in Free and:
+@@ -41,5 +43,7 @@ For more complex development with premium models.
+ $39USDper user / month
+ 
+-New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student and Pro customers can upgrade to Pro+. We appreciate your patience. Learn more
++Get started
++
++We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+ 
+ #### Everything in Pro and:
+@@ -56,5 +60,7 @@ For sustained, high-volume agent workflows with GitHub Copilot.
+ $100USDper user / month
+ 
+-New plan sign-ups are temporarily paused as we ensure a high-quality experience. Existing Student, Pro, and Pro+ customers can upgrade to Max. We appreciate your patience. Learn more
++Get started
++
++We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+ 
+ #### Everything in Pro+ and:
+@@ -91,5 +97,5 @@ Pro
+ $10 per month
+ 
+-Learn more
++Get started
+ 
+ Pro+
+@@ -97,5 +103,5 @@ Pro+
+ $39 per month
+ 
+-Upgrade now
++Get started
+ 
+ Max
+@@ -103,5 +109,5 @@ Max
+ $100 per month
+ 
+-Upgrade now
++Get started
+ 
+ GitHub AI Credits

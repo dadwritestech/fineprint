@@ -1,0 +1,98 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index b42ae4e..aacad58 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -3,10 +3,8 @@
+ # Pricing
+ 
+-Pricing
++Plans
+ 
+ API
+ 
+-Enterprise deployments
+-
+ # Pricing
+ 
+@@ -19,8 +17,9 @@ Your personal AI agent for everyday tasks.
+ - Test out Vibe's capabilities.
+ - Access on web and mobile.
+-- Access to Mistral's SOTA models.
+ - Limited messages and web searches.
+ - Limited coding sessions.
+ - State-of-the-art image generation.
++- Test Mistral models in Studio.
++- $10 /mo in API credits.
+ - 100+ connectors.
+ 
+@@ -31,5 +30,7 @@ Popular
+ Pro
+ 
+-Full access to Vibe for long-running tasks plus all-day coding.
++Education plan
++
++Full access to Vibe for all-day coding and long-running tasks.
+ 
+ $14.99
+@@ -41,9 +42,12 @@ Excluding taxes
+ Including taxes
+ 
++I'm a student
++
+ - More access and usage.
+ - More messages and web searches.
+ - Get more complex tasks done.
+-- All-day coding in the CLI, IDE, and on web.
++- All-day coding in the CLI, IDE, or on web.
+ - More image generations.
++- $30 /mo in API credits.
+ - Chat and email support.
+ 
+@@ -87,16 +91,4 @@ Private deployments powered by custom models, UI, and tools.
+ Contact us
+ 
+-Education plan
+-
+-For students.
+-
+-$5.99
+-
+-Excluding taxes
+-
+-Including taxes
+-
+-Start now
+-
+ |  | Free Start now | Pro Start now | Team Start now | Enterprise Contact us |
+ |---|---|---|---|---|
+@@ -112,5 +104,5 @@ Start now
+ | Web searches |  | Up to 5x free | Up to 5x free |  |
+ | Libraries and document upload | Limited | Up to 15GB | Up to 30GB / user |  |
+-| Task scheduling | Up to 5 | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) | Unlimited (Subject to fair usage limits and Mistral's Terms of Service.) |  |
++| Task scheduling | Up to 5 | Unlimited | Unlimited |  |
+ | Workflows |  |  |  |  |
+ | Connectors (beta) |  |  |  |  |
+@@ -119,5 +111,4 @@ Start now
+ | Project folders |  | Up to 1,000 | Up to 1,000 |  |
+ | Image generation |  | Up to 40x free | Up to 40x free |  |
+-| Code interpreter (Chat mode) |  |  |  |  |
+ | Verified news |  |  |  |  |
+ | Coding features. |  |  |  |  |
+@@ -146,13 +137,13 @@ Start now
+ Frequently asked questions.
+ 
+-Yes. Mistral Free provides limited access to Vibe, including our latest models, chat, search, creation, and Vibe for code for agentic coding in your terminal.
++Yes, Mistral's Free plan provides limited access to Vibe, including our latest models, chat, search, creation, and Vibe for code for agentic coding in your terminal. On the Free plan, you also get access to Mistral Studio.
+ 
+-For most tasks: Mistral Large (best overall performance). For coding: Mistral Medium 3.5. For document extraction: OCR. For cost-sensitive projects: Mistral Small. For more information, see the Models overview documentation.
++For most tasks and coding: Mistral Medium. For document AI: OCR. For audio and speech intelligence: Voxtral. For cost-sensitive projects: Mistral Small. See the Models overview for more information.
+ 
+-We charge per million tokens processed - both input (your prompts) and output (responses) count. For example, Mistral Large costs $2 /M tokens in and $6 /M tokens out. Batch processing gets a 50% discount.
++Most models are priced per million tokens, with both input (your prompts) and output (responses) counted separately. For example, Mistral Large costs $0.5 /M tokens in and $1.5 /M tokens out. Batch processing, for high-volume work, reduces the price by 50%, and cached input tokens reduce input cost by up to 90% for repeated prompts. A few APIs are priced differently: OCR is per 1,000 pages, speech models are per minute, and tool APIs are priced per call.
+ 
+ The Mistral Studio dashboard offers detailed tracking of API usage, including metrics for calls, endpoints, and user activity. It breaks down costs for services like completion, OCR, and fine-tuning, helping you monitor and optimize API consumption efficiently.
+ 
+-The Free plan is ideal for getting started with the AI assistant. Mistral Pro offers higher limits across chat plus access to coding with Mistral Vibe. You get more messages and web searches, more extended thinking and deep research reports, expanded Mistral Vibe capacity, and chat and email support.
++The Free plan is ideal for getting started with the Vibe or Studio. Mistral Pro offers higher limits across chat plus full access to coding with Mistral Vibe. You get more messages and web searches, more extended thinking and deep research reports, expanded Mistral Vibe capacity, and chat and email support.
+ 
+ Pro has higher ceilings compared to Free (e.g. up to 40x more image generations). Team and Enterprise plans have even higher allowances on certain features. For example, Flash answers: 200 / day on Team vs. 150 / day on Pro.

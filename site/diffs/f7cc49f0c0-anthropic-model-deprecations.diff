@@ -1,0 +1,55 @@
+diff --git a/snapshots/anthropic/model-deprecations.md b/snapshots/anthropic/model-deprecations.md
+index 4876393..b1946b3 100644
+--- a/snapshots/anthropic/model-deprecations.md
++++ b/snapshots/anthropic/model-deprecations.md
+@@ -16,5 +16,5 @@ Anthropic uses the following terms to describe the model lifecycle:
+ Deprecated models are likely to be less reliable than active models. Move workloads to active models to maintain the highest level of support and reliability.
+ 
+-The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, and Microsoft Foundry. Partner-operated platforms (Amazon Bedrock and Google Cloud) set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (legacy), and Google Cloud model tables.
++The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, and Microsoft Foundry. Partner-operated platforms (Amazon Bedrock and Google Cloud) set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (Opus 4.6 and earlier), and Google Cloud model tables.
+ 
+ ## Migrating to replacements
+@@ -28,5 +28,5 @@ For specific instructions on migrating to the latest Claude models, see the Migr
+ ## Notifications
+ 
+-Anthropic notifies customers with active deployments for models with upcoming retirements, providing at least 60 days notice before model retirement for publicly released models.
++Anthropic notifies customers with active deployments for models with upcoming retirements, providing at least 60 days' notice before model retirement for publicly released models.
+ 
+ ## Auditing model usage
+@@ -34,7 +34,7 @@ Anthropic notifies customers with active deployments for models with upcoming re
+ To help identify usage of deprecated models, customers can access an audit of their API usage. Follow these steps:
+ 
+-1. Go to the Usage page in Claude Console
+-2. Click the "Export" button
+-3. Review the downloaded CSV to see usage broken down by API key and model
++1. Go to the Usage page in Claude Console.
++2. Click Export.
++3. Review the downloaded CSV to see usage broken down by API key and model.
+ 
+ This audit will help you locate any instances where your application is still using deprecated models, allowing you to prioritize updates to newer models before the retirement date.
+@@ -59,5 +59,5 @@ At some point, Anthropic hopes to make past models publicly available again. In
+ ## Model status
+ 
+-Claude Mythos Preview (`claude-mythos-preview`) will be retired on June 30, 2026. To migrate to Claude Mythos 5 (`claude-mythos-5`), see the migration guide.
++Claude Mythos Preview (`claude-mythos-preview`) will be retired on July 21, 2026. To migrate to Claude Mythos 5 (`claude-mythos-5`), see the migration guide.
+ 
+ Current and recently retired models are listed in the following table with their status:
+@@ -65,4 +65,5 @@ Current and recently retired models are listed in the following table with their
+ | API model name | Current state | Deprecated | Tentative retirement date |
+ |---|---|---|---|
++| claude-fable-5 | Active | N/A | Not sooner than June 9, 2027 |
+ | claude-opus-4-8 | Active | N/A | Not sooner than May 28, 2027 |
+ | claude-opus-4-7 | Active | N/A | Not sooner than April 16, 2027 |
+@@ -71,4 +72,5 @@ Current and recently retired models are listed in the following table with their
+ | claude-opus-4-1-20250805 | Deprecated | June 5, 2026 | August 5, 2026 |
+ | claude-opus-4-20250514 | Retired | April 14, 2026 | June 15, 2026 |
++| claude-sonnet-5 | Active | N/A | Not sooner than June 30, 2027 |
+ | claude-sonnet-4-6 | Active | N/A | Not sooner than February 17, 2027 |
+ | claude-sonnet-4-5-20250929 | Active | N/A | Not sooner than September 29, 2026 |
+@@ -81,5 +83,5 @@ Current and recently retired models are listed in the following table with their
+ ## Deprecation history
+ 
+-All deprecations are listed below, with the most recent announcements at the top.
++All deprecations are listed in the following sections, with the most recent announcements first.
+ 
+ ### 2026-06-05: Claude Opus 4.1 model

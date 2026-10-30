@@ -1,0 +1,22 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 57ee31b..4deb93e 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -21,5 +21,5 @@ Our frontier-class multimodal model optimized for agentic and coding use cases.
+ Our latest OCR service with paragraph-level bounding boxes, structural block labels, and block-level confidence scores.
+ 
+-### Z.ai GLM 5.2
++### Z.ai GLM 5.3
+ 
+ A third-party open source text model from Z.ai with a 1M-token context window.
+@@ -45,4 +45,10 @@ Generalist models
+ Text and multimodal models for broad reasoning, coding, tool use, and agentic tasks.
+ 
++### Z.ai GLM 5.3
++
++A third-party open source text model from Z.ai with a 1M-token context window.
++
++v5.3
++
+ ### Z.ai GLM 5.2
+ 

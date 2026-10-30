@@ -1,0 +1,14 @@
+diff --git a/snapshots/openai/rate-limits.md b/snapshots/openai/rate-limits.md
+index ffb8328..f9178a2 100644
+--- a/snapshots/openai/rate-limits.md
++++ b/snapshots/openai/rate-limits.md
+@@ -57,4 +57,9 @@ You can expect to see the following header fields:
+ | x-ratelimit-reset-requests | 1s | The time until the rate limit (based on requests) resets to its initial state. |
+ | x-ratelimit-reset-tokens | 6m0s | The time until the rate limit (based on tokens) resets to its initial state. |
++| x-ratelimit-limit-project-tokens | 60000 | The token limit for the project. |
++| x-ratelimit-remaining-project-tokens | 57000 | The remaining number of tokens permitted before exhausting the project-scoped token rate limit. |
++| x-ratelimit-reset-project-tokens | 3s | The time until the project-scoped token rate limit resets to its initial state. |
++
++Project-token headers may be present when a project-scoped token limit applies.
+ 
+ ### Fine-tuning rate limits

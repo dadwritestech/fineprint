@@ -1,0 +1,56 @@
+diff --git a/snapshots/anthropic/rate-limits.md b/snapshots/anthropic/rate-limits.md
+index 8e82c04..aaf9dfb 100644
+--- a/snapshots/anthropic/rate-limits.md
++++ b/snapshots/anthropic/rate-limits.md
+@@ -1,5 +1,5 @@
+ <!-- fineprint snapshot: anthropic/rate-limits | source: https://platform.claude.com/docs/en/api/rate-limits -->
+ 
+-Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Spend limits are set in Settings > Billing rather than Settings > Limits. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
++Claude Platform on AWS: The rate limits on this page apply to Claude Platform on AWS, but billing and limit management differ. Billing is through AWS Marketplace (not Anthropic credit purchases). Organizations on Claude Platform on AWS are placed on the Start tier and do not move between usage tiers automatically. To request higher limits, contact your Anthropic account representative or Anthropic support; the Request rate limit increase flow is not available. Per-workspace rate limit configuration and fast mode are not available on Claude Platform on AWS. For details, see Rate limits and quotas on Claude Platform on AWS.
+ 
+ There are two types of limits:
+@@ -14,6 +14,6 @@ The API enforces service-configured limits at the organization level, but you ma
+ - Limits are designed to prevent API abuse, while minimizing impact on common customer usage patterns.
+ - Limits are defined by usage tier. Organizations are placed on a tier automatically based on usage history and account standing and can move to a higher tier over time as they use the API.
+-- New organizations and organizations with limited usage history may start with limits below the standard limits shown on this page while account history is established. These starting limits are part of how Anthropic prevents fraud and abuse, and they increase automatically as your organization builds usage history.
+-- Limits are set at the organization level. You can see your organization's tier and current limits on the Limits page in the Claude Console.
++- New organizations and organizations with limited usage history may start in the Evaluation tier, with limits below the standard limits shown on this page while account history is established. These starting limits are part of how Anthropic prevents fraud and abuse, and they increase automatically as your organization builds usage history.
++- Limits are set at the organization level. You can see your organization's tier and current limits on the Rate limits page in the Claude Console.
+ - You might hit rate limits over shorter time intervals. For instance, a rate of 60 requests per minute (RPM) might be enforced as 1 request per second. Short bursts of requests can exceed the limit and trigger rate limit errors.
+ - The following limits are the standard limits for each tier. If you need higher limits, see Requesting higher limits.
+@@ -23,7 +23,7 @@ The API enforces service-configured limits at the organization level, but you ma
+ ## Spend limits
+ 
+-Claude Platform on AWS: Spend limits work differently on Claude Platform on AWS. Set spend limits in Settings > Billing instead of Settings > Limits. See Spend limits on Claude Platform on AWS for how spend caps and self-set spend limits apply to your organization.
++Claude Platform on AWS: Spend limits work differently on Claude Platform on AWS. See Spend limits on Claude Platform on AWS for how spend caps and self-set spend limits apply to your organization.
+ 
+-Each of the Start, Build, and Scale tiers carries a monthly spend cap, which is the maximum your organization can spend on the API each calendar month. Once you reach your tier's spend cap, API usage pauses until the next month unless you request a higher limit. You can view your organization's monthly spend cap on the Limits page.
++Each of the Start, Build, and Scale tiers carries a monthly spend cap, which is the maximum your organization can spend on the API each calendar month. Once you reach your tier's spend cap, API usage pauses until the next month unless you request a higher limit. You can view your organization's monthly spend cap and set your own limit on the Billing page.
+ 
+ | Usage tier | Monthly spend cap |
+@@ -37,8 +37,8 @@ Organizations on the Custom tier have no monthly spend cap; limits are arranged
+ You can also set your own spend limit below your tier's cap to control costs:
+ 
+-1. Navigate to the Limits page
+-  Go to Settings > Limits in the Claude Console.
++1. Navigate to the Billing page
++  Go to Settings > Billing in the Claude Console.
+ 2. Open the spend limit editor
+-  In the Spend limits section, click Change Limit (or Set spend limit if no limit is currently set).
++  In the Spend limits section, click Adjust limit (or Set limit if no limit is currently set).
+ 3. Adjust your spend limit
+   Enter a new value. Your spend limit cannot exceed your current tier's cap.
+@@ -91,5 +91,5 @@ With effective caching, you can dramatically increase your actual throughput wit
+ OTPM rate limits are evaluated in real time as output tokens are produced, counting only the actual tokens generated. The `max_tokens` parameter does not factor into OTPM rate limit calculations, so there is no rate limit downside to setting a higher `max_tokens` value.
+ 
+-Rate limits are applied separately for each model; therefore you can use different models up to their respective limits simultaneously. You can check your current rate limits and behavior on the Limits page in the Claude Console, or read the configured limits programmatically with the Rate Limits API.
++Rate limits are applied separately for each model; therefore you can use different models up to their respective limits simultaneously. You can check your current rate limits and behavior on the Rate limits page in the Claude Console, or read the configured limits programmatically with the Rate Limits API.
+ 
+ Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
+@@ -150,5 +150,5 @@ In addition to providing token and request charts, the Usage page provides two s
+ ## Requesting higher limits
+ 
+-To request higher rate limits or a higher monthly spend cap, use Request rate limit increase on the Limits page.
++To request higher rate limits or a higher monthly spend cap, use Request rate limit increase on the Rate limits page.
+ 
+ Support can also raise limits. For urgent needs, contact Anthropic support.

@@ -1,0 +1,57 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index aeed73e..ea43aef 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -28,6 +28,4 @@ $10USDper user / month
+ Get started
+ 
+-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+-
+ #### Everything in Free and:
+ 
+@@ -46,6 +44,4 @@ $39USDper user / month
+ Get started
+ 
+-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+-
+ #### Everything in Pro and:
+ 
+@@ -63,6 +59,4 @@ $100USDper user / month
+ Get started
+ 
+-We're gradually enabling new sign-ups. If you're unable to sign up right now, please check back soon.
+-
+ #### Everything in Pro+ and:
+ 
+@@ -450,4 +444,7 @@ Free
+ - OpenAI GPT-5.4 mini
+ - OpenAI GPT-5.5
++- OpenAI GPT-5.6 Sol
++- OpenAI GPT-5.6 Terra
++- OpenAI GPT-5.6 Luna
+ - Google Gemini 2.5 Pro
+ - Google Gemini 3 Flash (Preview)
+@@ -477,4 +474,7 @@ Pro
+ - OpenAI GPT-5.4 mini
+ - OpenAI GPT-5.5
++- OpenAI GPT-5.6 Sol
++- OpenAI GPT-5.6 Terra
++- OpenAI GPT-5.6 Luna
+ - Google Gemini 2.5 Pro
+ - Google Gemini 3 Flash (Preview)
+@@ -504,4 +504,7 @@ Pro+
+ - OpenAI GPT-5.4 mini
+ - OpenAI GPT-5.5
++- OpenAI GPT-5.6 Sol
++- OpenAI GPT-5.6 Terra
++- OpenAI GPT-5.6 Luna
+ - Google Gemini 2.5 Pro
+ - Google Gemini 3 Flash (Preview)
+@@ -531,4 +534,7 @@ Max
+ - OpenAI GPT-5.4 mini
+ - OpenAI GPT-5.5
++- OpenAI GPT-5.6 Sol
++- OpenAI GPT-5.6 Terra
++- OpenAI GPT-5.6 Luna
+ - Google Gemini 2.5 Pro
+ - Google Gemini 3 Flash (Preview)

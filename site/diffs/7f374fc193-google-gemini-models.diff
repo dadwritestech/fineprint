@@ -1,0 +1,18 @@
+diff --git a/snapshots/google/gemini-models.md b/snapshots/google/gemini-models.md
+index ae953e3..f85277b 100644
+--- a/snapshots/google/gemini-models.md
++++ b/snapshots/google/gemini-models.md
+@@ -152,6 +152,7 @@ This section contains all music generation models, including ones that may alrea
+ | Model | Description | Endpoint |
+ |---|---|---|
+-| Lyria 3 Pro | Our flagship music generation model, optimized for full-length songs with complex structural coherence. | lyria-3-pro-preview |
++| Lyria 3.5 | Our flagship music generation model, optimized for full-length songs with complex structural coherence. | lyria-3.5 |
+ | Lyria 3 Clip | Optimized for generating short musical clips, loops, and previews up to 30 seconds. | lyria-3-clip-preview |
++| Lyria 3 Pro | Previous generation music generation model for full-length songs. | lyria-3-pro-preview |
+ | Lyria RealTime | High-fidelity music generation model providing granular creative control and real-time streaming capabilities. | lyria-realtime-exp |
+ 
+@@ -209,3 +210,3 @@ For information about model deprecations, visit the Gemini deprecations page.
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-09-02 UTC.
++Last updated 2026-09-04 UTC.

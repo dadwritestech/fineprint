@@ -1,0 +1,11 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 04c0b00..f018f78 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -39,5 +39,5 @@ View modelTry in playground
+ Real-time conversations, speech-to-text, and text-to-speech.
+ 
+-Agent
++STS
+ 
+ $0.08 / min

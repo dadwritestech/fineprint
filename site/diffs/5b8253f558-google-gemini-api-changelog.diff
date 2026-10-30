@@ -1,0 +1,26 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index adbd021..a3a9b15 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,9 @@
+ This page documents updates to the Gemini API.
+ 
++## June 30, 2026
++
++- Gemini Omni Flash in public preview: Released `gemini-omni-flash-preview`, a high-performance multimodal model designed for high-speed video generation and conversational video editing. Using the Interactions API, you can generate 3–10 second videos at 720p from text descriptions or animate still images, and then conversationally edit and refine the outputs. To get started, see the Gemini Omni Flash guide and the Gemini Omni Flash model card.
++- Released `gemini-3.1-flash-lite-image` (Nano Banana Lite) to general availability (GA), our built-in multimodal model optimized for ultra-low latency and cost-effective image generation and editing. See the Gemini 3.1 Flash Lite Image model card and the Image generation guide.
++
+ ## June 24, 2026
+ 
+@@ -50,5 +55,5 @@ This page documents updates to the Gemini API.
+ ## May 19, 2026
+ 
+-- Released `gemini-3.5-flash`, the generally available (GA) version of Gemini 3.5 Flash, our most intelligent model for sustained frontier performance on agentic and coding tasks.
++- Released `gemini-3.5-flash`, the generally available (GA) version of Gemini 3.5 Flash, our most intelligent model for sustained frontier performance on agentic and coding tasks. This is now the model behind `gemini-flash-latest`.
+ - Launched the Managed Agents in the Gemini API in public preview. This enables developers to build and deploy autonomous, stateful agents that run in secure, isolated Google-hosted Linux sandbox environments. To learn more, see the Agents overview page and the Quickstart.
+ - Released the general-purpose Antigravity Agent managed agent, `antigravity-preview-05-2026`, in public preview. The Antigravity agent can autonomously plan, reason, write and execute code, manage files, and browse the web inside its sandbox container. See the Antigravity Agent guide for code samples and specifications.
+@@ -806,3 +811,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-06-24 UTC.
++Last updated 2026-06-30 UTC.

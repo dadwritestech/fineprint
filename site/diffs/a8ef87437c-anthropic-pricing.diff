@@ -1,0 +1,24 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index a1d6c19..a26f4e3 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -142,6 +142,4 @@ Max 20x
+ #### Organization wide skills deployment
+ 
+-#### Google Docs cataloging
+-
+ ### Payment options
+ 
+@@ -239,5 +237,4 @@ All Team plan features, plus:
+ 
+ - Admins set user and org spend limits
+-- Google Docs cataloging
+ - Role-based access with fine grained permissioning
+ - System for Cross-domain Identity Management (SCIM)
+@@ -362,6 +359,4 @@ Enterprise (sales-assisted)
+ #### Custom data retention controls
+ 
+-#### Google Docs cataloging
+-
+ #### Set org instructions
+ 

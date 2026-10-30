@@ -1,0 +1,19 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index ef42e9b..177e2c5 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -28,4 +28,5 @@ Everything in Hobby, plus:
+ - ✓ Generous limits for Grok
+ - ✓ Access to frontier models
++- ✓ Grok Bot access
+ - ✓ MCPs, skills, and hooks
+ - ✓ Cloud agents
+@@ -44,6 +45,7 @@ Everything on Individual, plus:
+ - ✓ Centralized team billing and administration
+ - ✓ Team marketplace for internal rules, skills, and plugins
+-- ✓ Agentic code reviews with Bugbot
+ - ✓ Cloud agents and automations with shared team context
++- ✓ Grok Bot access
++- ✓ Agentic code reviews with Bugbot
+ - ✓ Usage analytics to understand team behavior
+ - ✓ Team-wide privacy mode

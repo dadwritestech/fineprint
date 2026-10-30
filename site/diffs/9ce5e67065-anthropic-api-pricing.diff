@@ -1,0 +1,62 @@
+diff --git a/snapshots/anthropic/api-pricing.md b/snapshots/anthropic/api-pricing.md
+index 849c87f..892aa53 100644
+--- a/snapshots/anthropic/api-pricing.md
++++ b/snapshots/anthropic/api-pricing.md
+@@ -13,15 +13,5 @@ The following table shows pricing for all Claude models:
+ | Claude Fable 5 | $10 / MTok | $12.50 / MTok | $20 / MTok | $1 / MTok | $50 / MTok |
+ | Claude Mythos 5 (limited availability) | $10 / MTok | $12.50 / MTok | $20 / MTok | $1 / MTok | $50 / MTok |
+-| Claude Opus 4.8 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
+-| Claude Opus 4.7 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
+-| Claude Opus 4.6 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
+-| Claude Opus 4.5 | $5 / MTok | $6.25 / MTok | $10 / MTok | $0.50 / MTok | $25 / MTok |
+-| Claude Opus 4.1 (deprecated) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
+-| Claude Opus 4 (deprecated) | $15 / MTok | $18.75 / MTok | $30 / MTok | $1.50 / MTok | $75 / MTok |
+-| Claude Sonnet 4.6 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
+-| Claude Sonnet 4.5 | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
+-| Claude Sonnet 4 (deprecated) | $3 / MTok | $3.75 / MTok | $6 / MTok | $0.30 / MTok | $15 / MTok |
+-| Claude Haiku 4.5 | $1 / MTok | $1.25 / MTok | $2 / MTok | $0.10 / MTok | $5 / MTok |
+-| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | $0.80 / MTok | $1 / MTok | $1.60 / MTok | $0.08 / MTok | $4 / MTok |
++| Claude Opus 4.8 | $5 / MTok | $6.25 / MTok | $10 / MTok |  |  |
+ 
+ MTok = Million tokens. The "Base Input Tokens" column shows standard input pricing, the "5m Cache Writes", "1h Cache Writes", and "Cache Hits & Refreshes" columns are specific to prompt caching, and "Output Tokens" shows output pricing. See prompt caching pricing for an explanation of the cache columns and pricing multipliers.
+@@ -49,5 +39,5 @@ Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5:
+ Regional and multi-region endpoints include a 10% premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing.
+ 
+-Scope: This pricing structure applies to Claude Sonnet 4.5, Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Sonnet 4 (deprecated), Opus 4 (deprecated), and prior releases) retain their existing pricing.
++Scope: This pricing structure applies to Claude Sonnet 4.5, Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 (deprecated) and prior releases) retain their existing pricing.
+ 
+ For implementation details and code examples:
+@@ -147,5 +137,10 @@ The Batch API allows asynchronous processing of large volumes of requests with a
+ | Claude Opus 4.5 | $2.50 / MTok | $12.50 / MTok |
+ | Claude Opus 4.1 (deprecated) | $7.50 / MTok | $37.50 / MTok |
+-| Claude Opus 4 (deprecated) | $7.50 / MTok |  |
++| Claude Opus 4 (retired, except on Vertex AI) | $7.50 / MTok | $37.50 / MTok |
++| Claude Sonnet 4.6 | $1.50 / MTok | $7.50 / MTok |
++| Claude Sonnet 4.5 | $1.50 / MTok | $7.50 / MTok |
++| Claude Sonnet 4 (retired, except on Bedrock and Vertex AI) | $1.50 / MTok | $7.50 / MTok |
++| Claude Haiku 4.5 | $0.50 / MTok | $2.50 / MTok |
++| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | $0.40 / MTok | $2 / MTok |
+ 
+ For more information about batch processing, see Batch processing.
+@@ -177,5 +172,13 @@ When you use `tools`, the API also automatically includes a special system promp
+ | Claude Opus 4.8 | `auto`, `none``any`, `tool` | 290 tokens410 tokens |
+ | Claude Opus 4.7 | `auto`, `none``any`, `tool` | 675 tokens804 tokens |
+-| Claude Opus 4.6 | `auto`, `none``any`, `tool` |  |
++| Claude Opus 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
++| Claude Opus 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
++| Claude Opus 4.1 (deprecated) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
++| Claude Opus 4 (retired, except on Vertex AI) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
++| Claude Sonnet 4.6 | `auto`, `none``any`, `tool` | 497 tokens589 tokens |
++| Claude Sonnet 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
++| Claude Sonnet 4 (retired, except on Bedrock and Vertex AI) | `auto`, `none``any`, `tool` | 313 tokens315 tokens |
++| Claude Haiku 4.5 | `auto`, `none``any`, `tool` | 496 tokens588 tokens |
++| Claude Haiku 3.5 (retired, except on Bedrock and Vertex AI) | `auto`, `none``any`, `tool` | 264 tokens355 tokens |
+ 
+ These token counts are added to your normal input and output tokens to calculate the total cost of a request.
+@@ -201,5 +204,5 @@ See tool use pricing for complete pricing details.
+ #### Code execution tool
+ 
+-Code execution is free when used with web search or web fetch. When `web_search_20260209` or `web_fetch_20260209` is included in your API request, there are no additional charges for code execution tool calls beyond the standard input and output token costs.
++Code execution is free when used with web search or web fetch. When `web_search_20260209` (or later) or `web_fetch_20260209` (or later) is included in your API request, there are no additional charges for code execution tool calls beyond the standard input and output token costs.
+ 
+ When used without these tools, code execution is billed by execution time, tracked separately from token usage:

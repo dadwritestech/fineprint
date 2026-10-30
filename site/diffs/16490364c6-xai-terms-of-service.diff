@@ -1,0 +1,21 @@
+diff --git a/snapshots/xai/terms-of-service.md b/snapshots/xai/terms-of-service.md
+index 599a21a..e100e17 100644
+--- a/snapshots/xai/terms-of-service.md
++++ b/snapshots/xai/terms-of-service.md
+@@ -1,7 +1,7 @@
+ <!-- fineprint snapshot: xai/terms-of-service | source: https://x.ai/legal/terms-of-service -->
+ 
+-Last Updated: September 11, 2026 (previous version)
++Last Updated: October 12, 2026 (previous version)
+ 
+-These Terms of Service ("Terms") apply to your or others' access, interactions and/or use of Grok, Grokipedia, and SpaceXSI's other services for individuals, including associated applications, features, tools, software and websites (collectively, the "Service"). These Terms form an agreement between you and SpaceXAI LLC ("SpaceXSI," "we," "our," or "us") when you accept these Terms or when you otherwise access, interact with, and/or use the platform. SpaceXAI LLC is a Nevada company, with its registered offices at 800 W Cesar Chavez St., Austin, TX 78701, USA. By accessing and using our Service, you acknowledge and agree to these Terms and any other applicable terms and policies, including our Acceptable Use Policy.
++These Terms of Service ("Terms") apply to your or others' access, interactions and/or use of Grok, Grokipedia, and SpaceXSI's other services for individuals, including associated applications, features, tools, software and websites (collectively, the "Service"). These Terms form an agreement between you and SpaceXAI LLC ("SpaceXSI," "we," "our," or "us") when you accept these Terms or when you otherwise access, interact with, and/or use the platform. SpaceXAI LLC is a Nevada company, with its principal place of business at 800 W Cesar Chavez St., Austin, TX 78701, USA. By accessing and using our Service, you acknowledge and agree to these Terms and any other applicable terms and policies, including our Acceptable Use Policy.
+ 
+ Please note:
+@@ -88,4 +88,6 @@ Fees; Payments; Cancellation. If you purchase any aspect of the Service, you mus
+ Price Changes. We may adjust subscription prices periodically. Subject to applicable law, if prices increase, we will provide you with reasonable notice, and the new price will apply at your next renewal, allowing you to cancel your subscription if you disagree with the change. Notice may be provided in-app, by email, or other reasonable means.
+ 
++New Bundled Subscription Plans. For more information about the new bundled plans, please visit the Bundled Subscription Terms and the Paid Services Help Center.
++
+ Grok on X. Use of Grok on the X platform is not governed by these Terms. To access Grok on X, you must agree to the X Terms of Service.
+ 

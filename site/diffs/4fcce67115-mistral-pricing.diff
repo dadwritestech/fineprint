@@ -1,0 +1,13 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index 96caab5..ae7852d 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -3,8 +3,4 @@
+ # Pricing
+ 
+-Plans
+-
+-API
+-
+ # Pricing
+ 

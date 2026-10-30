@@ -1,0 +1,24 @@
+diff --git a/snapshots/google/genai-use-policy.md b/snapshots/google/genai-use-policy.md
+index 614d578..21ce21a 100644
+--- a/snapshots/google/genai-use-policy.md
++++ b/snapshots/google/genai-use-policy.md
+@@ -1,8 +1,4 @@
+ <!-- fineprint snapshot: google/genai-use-policy | source: https://policies.google.com/terms/generative-ai/use-policy -->
+ 
+-Privacy & Terms
+-
+-Privacy & Terms
+-
+ ## Privacy & Terms
+ 
+@@ -41,10 +37,2 @@ We may make exceptions to these policies based on educational, documentary, scie
+ 
+ Opens in a new tab(opens a footnote)
+-
+-- Google
+-- About Google
+-- Privacy
+-- Terms
+-- Transparency Center
+-
+-English

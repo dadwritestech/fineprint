@@ -1,0 +1,22 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 723efb5..0a034cd 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -340,4 +340,5 @@ Free
+ - Google Gemini 3 Flash (Preview)
+ - Google Gemini 3.1 Pro (Preview)
++- Google Gemini 3.5 Flash
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -363,4 +364,5 @@ Pro
+ - Google Gemini 3 Flash (Preview)
+ - Google Gemini 3.1 Pro (Preview)
++- Google Gemini 3.5 Flash
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -386,4 +388,5 @@ Pro+
+ - Google Gemini 3 Flash (Preview)
+ - Google Gemini 3.1 Pro (Preview)
++- Google Gemini 3.5 Flash
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2

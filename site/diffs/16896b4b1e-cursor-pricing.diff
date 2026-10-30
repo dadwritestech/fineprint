@@ -1,0 +1,90 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index ba8c688..c6c1432 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -3,5 +3,5 @@
+ # Pricing
+ 
+-MonthlyYearly
++IndividualTeams & Enterprise
+ 
+ ### Hobby
+@@ -15,12 +15,10 @@ Includes:
+ - ✓ Access to Composer
+ 
+-Download
++Try Cursor
+ 
+-### Individual
++### Pro
+ 
+ $20 / mo.
+ 
+-ProPro+Ultra
+-
+ Everything in Hobby, plus:
+ 
+@@ -35,40 +33,36 @@ Everything in Hobby, plus:
+ Get Pro
+ 
+-### Teams
++### Pro+
+ 
+-$40 / user / mo.
++$60 / mo.
+ 
+-StandardPremium
++Everything in Pro, plus:
+ 
+-Everything on Individual, plus:
+-
+-- ✓ Centralized team billing and administration
+-- ✓ Team marketplace for internal rules, skills, and plugins
+-- ✓ Cloud agents and automations with shared team context
+-- ✓ Grok Bot access
+-- ✓ Agentic code reviews with Bugbot
+-- ✓ Usage analytics to understand team behavior
+-- ✓ Team-wide privacy mode
+-- ✓ SAML/OIDC SSO
++- ✓ 3x Pro limits on Agent
++- ✓ Generous limits for Grok
++- ✓ Access to frontier models
++- ✓ Higher Grok Bot usage limits
++- ✓ MCPs, skills, and hooks
++- ✓ Cloud agents
++- ✓ Bugbot on usage-based billing
+ 
+-Get Teams
++Get Pro+
+ 
+-### Enterprise
++### Ultra
+ 
+-Custom
++$200 / mo.
+ 
+-Everything on Teams, plus:
++Everything in Pro, plus:
+ 
+-- ✓ Pooled usage
+-- ✓ Invoice/PO billing
+-- ✓ SCIM seat management
+-- ✓ Repository, model, and MCP access controls
+-- ✓ Auto-run, browser, and network controls
+-- ✓ Audit logs and service accounts
+-- ✓ AI code tracking API
+-- ✓ Access, network, and audit controls for Grok Bot
+-- ✓ Priority support and account management
++- ✓ 20x Pro limits on Agent
++- ✓ Generous limits for Grok
++- ✓ Access to frontier models
++- ✓ Highest Grok Bot usage limits
++- ✓ MCPs, skills, and hooks
++- ✓ Cloud agents
++- ✓ Bugbot on usage-based billing
++- ✓ Priority access to new features
+ 
+-Contact Sales
++Get Ultra
+ 
+ ## Trusted every day by teams that build world-class software.

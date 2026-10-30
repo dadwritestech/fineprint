@@ -1,0 +1,52 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 37e71fb..4af388e 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -437,4 +437,5 @@ Free
+ - Anthropic Claude Opus 4.8
+ - Anthropic Claude Opus 4.8 (fast mode) (Preview)
++- Anthropic Claude Opus 5
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -452,4 +453,5 @@ Free
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- xAI Grok 4.5
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -468,4 +470,5 @@ Pro
+ - Anthropic Claude Opus 4.8
+ - Anthropic Claude Opus 4.8 (fast mode) (Preview)
++- Anthropic Claude Opus 5
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -483,4 +486,5 @@ Pro
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- xAI Grok 4.5
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -499,4 +503,5 @@ Pro+
+ - Anthropic Claude Opus 4.8
+ - Anthropic Claude Opus 4.8 (fast mode) (Preview)
++- Anthropic Claude Opus 5
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -514,4 +519,5 @@ Pro+
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- xAI Grok 4.5
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -530,4 +536,5 @@ Max
+ - Anthropic Claude Opus 4.8
+ - Anthropic Claude Opus 4.8 (fast mode) (Preview)
++- Anthropic Claude Opus 5
+ - OpenAI GPT-5 mini
+ - OpenAI GPT-5.2
+@@ -545,4 +552,5 @@ Max
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- xAI Grok 4.5
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code

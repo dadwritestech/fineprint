@@ -1,0 +1,81 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index fcf97ad..329ea22 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -7,38 +7,24 @@
+ View as Markdown
+ 
+-Create API key
++Create API keyMeet grok-4.5
+ 
+-### Grok Build 0.1
++### Grok 4.5
+ 
+ New
+ 
+-grok-build-0.1
++grok-4.5
+ 
+-Our coding model — trained specifically for agentic coding workflows. Use Grok Build for code.
++Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
+ 
+ View model
+ 
+-Context256k tokens
++Context500k tokens
+ 
+-Input$1.00 / 1M tokens
++Input$2.00 / 1M tokens
+ 
+-Output$2.00 / 1M tokens
+-
+-### Grok 4.3
+-
+-grok-4.3
+-
+-For everything except code, audio, image, and video. The most intelligent and fastest model we've built.
+-
+-Context1 million tokens
+-
+-Input$1.25 / 1M tokens
+-
+-Output$2.50 / 1M tokens
++Output$6.00 / 1M tokens
+ 
+ ReasoningConfigurable
+ 
+-View model
+-
+ ### Voice API
+ 
+@@ -71,5 +57,5 @@ Read docsTry in playground
+ ## Which model should I choose?
+ 
+-Your choice depends on your use case. We have dedicated models and APIs for code, audio, image, and video capabilities. For code, use Grok Build — it is our coding model. For everything else, use Grok 4.3. It is the most intelligent and fastest model we've built.
++Your choice depends on your use case. We have dedicated models and APIs for audio, image, and video capabilities. For everything else, including code, use Grok 4.5. It is the most intelligent and fastest model we've built.
+ 
+ Use case
+@@ -79,9 +65,9 @@ Model
+ Code
+ 
+-Grok Build
++Grok 4.5
+ 
+ Chat
+ 
+-Grok 4.3
++Grok 4.5
+ 
+ Images
+@@ -111,5 +97,5 @@ Grok Voice API
+   - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
+ 
+-The knowledge cut-off date of Grok 3 and Grok 4 is November, 2024.
++The knowledge cut-off date of Grok 4.5 is February 1, 2026.
+ 
+ ## Model Aliases
+@@ -123,3 +109,3 @@ Some models have aliases to help users automatically migrate to the next version
+ For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
+ 
+-Last updated: May 29, 2026
++Last updated: July 9, 2026

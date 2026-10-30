@@ -1,0 +1,17 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index f82542b..646b14f 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -26,4 +26,5 @@ Everything in Hobby, plus:
+ 
+ - ✓ Extended limits on Agent
++- ✓ Generous limits for Grok & Composer
+ - ✓ Access to frontier models
+ - ✓ MCPs, skills, and hooks
+@@ -78,4 +79,6 @@ Self-serve plans support all major credit and debit cards. For invoice-based bil
+ Every plan includes a set amount of model usage. On-demand usage allows you to continue using models after your included amount is consumed, billed in arrears. See our docs for more details.
+ 
++All prices are exclusive of any applicable taxes. See our Terms of Service for more information.
++
+ Admins can access usage information and key metrics through the Admin Dashboard.
+ 

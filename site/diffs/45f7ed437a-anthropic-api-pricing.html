@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>anthropic/api-pricing: Updated computer use and browser use toolset overhead to 4,500 and 6,600 input tokens respectively, and added browser use tool pricing.</title><link rel="alternate" type="application/rss+xml" title="fineprint" href="../feed.xml">
+<style>
+:root{--paper:#f6f3ec;--ink:#1d1b17;--muted:#6f685c;--rule:#d9d2c3;--red:#b3261e;--add:#e3f1e0;--del:#f7e1de;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d9;--muted:#9a917f;--rule:#38332a;--red:#ff7a6e;--add:#1d3320;--del:#3d1f1b;--card:#1d1a14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit;text-decoration-color:var(--red);text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 80px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:700;letter-spacing:-.5px;text-decoration:none}
+.brand span{color:var(--red)}
+.tag{font:13px/1.4 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.8px}
+.lede{color:var(--muted);margin:0 0 30px;max-width:640px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:13px}
+.vendors{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 40px}
+.vendors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px 16px;text-decoration:none}
+.vendors a:hover{border-color:var(--ink)}
+.vendors b{display:block;font-size:18px}
+.month{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:34px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+ol.tl li.minor{opacity:.55}
+.date{font:13px/1.9 ui-monospace,Consolas,monospace;color:var(--muted)}
+.what{font-size:17px}
+.meta{grid-column:2;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);padding:0 6px;border-radius:2px}
+.plus{color:#2e7d32}.minus{color:var(--red)}
+.note{border-left:3px solid var(--red);padding:8px 14px;background:var(--card);color:var(--muted);font-size:14px;margin:0 0 26px}
+pre.diff{background:var(--card);border:1px solid var(--rule);padding:12px 0;overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+pre.diff span{display:block;padding:0 14px}
+pre.diff .a{background:var(--add)}pre.diff .d{background:var(--del)}pre.diff .h{color:var(--muted)}
+footer{margin-top:50px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:14px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../index.html">fine<span>print</span></a>
+<span class="tag">what AI companies quietly changed &middot; <a href="../feed.xml">RSS</a></span></header>
+<p class="mono">2026-08-25 10:31 UTC &middot; anthropic/api-pricing &middot; <a href="https://platform.claude.com/docs/en/about-claude/pricing">live page</a></p>
+<h1 style="font-size:28px">Updated computer use and browser use toolset overhead to 4,500 and 6,600 input tokens respectively, and added browser use tool pricing.</h1>
+<p class="note">Summary by gemma-4-12b. It may be wrong; the diff below is what actually changed.
+Raw: <a href="45f7ed437a-anthropic-api-pricing.diff">45f7ed437a-anthropic-api-pricing.diff</a> &middot;
+commit <a href="https://github.com/dadwritestech/fineprint/commit/45f7ed437a9edd4916bebe55a964d0a232337c5c">45f7ed437a</a></p>
+<pre class="diff"><span class="h">diff --git a/snapshots/anthropic/api-pricing.md b/snapshots/anthropic/api-pricing.md</span><span class="h">index 8726d8d..e5fbd7a 100644</span><span class="h">--- a/snapshots/anthropic/api-pricing.md</span><span class="h">+++ b/snapshots/anthropic/api-pricing.md</span><span class="h">@@ -338,19 +338,31 @@ Example token usage for typical content:</span><span class=""> Computer use follows the standard tool use pricing. When using the computer use tool:</span><span class=""> </span><span class="d">-System prompt overhead: The computer use beta adds 466–499 tokens to the system prompt</span><span class="a">+Toolset definition overhead: Declaring `computer_toolset_20260801` with its default members adds about 4,500 input tokens to a request (about 4,520 on Claude Fable 5, Claude Mythos 5, Claude Opus 5, and Claude Opus 4.8, and about 4,590 on Claude Sonnet 5), which covers the member tool definitions and the tool use system prompt. Disabling `zoom` with `configs` removes about 410 of those tokens. The exact count for a request is reported in the response `usage`, and you can estimate it in advance with the token counting endpoint.</span><span class=""> </span><span class="d">-Computer use tool token usage:</span><span class="a">+Earlier tool versions: The following figures apply to the `computer_20251124` and `computer_20250124` tool versions, not to `computer_toolset_20260801`:</span><span class=""> </span><span class="d">-| Model | Input tokens per tool definition |</span><span class="d">-|---|---|</span><span class="d">-| Claude 4.x models | 735 tokens |</span><span class="a">+- System prompt overhead: 466–499 tokens added to the system prompt</span><span class="a">+- Tool definition: about 735 input tokens per tool definition (measured with `computer_20250124`)</span><span class=""> </span><span class=""> Additional token consumption:</span><span class=""> </span><span class="d">-- Screenshot images (see Vision pricing)</span><span class="a">+- Screenshot and zoom images returned in tool results, billed as image input (see Vision pricing)</span><span class=""> - Tool execution results returned to Claude</span><span class=""> </span><span class=""> If you&#x27;re also using bash or text editor tools alongside computer use, those tools have their own token costs as documented in their respective pages.</span><span class=""> </span><span class="a">+#### Browser use tool</span><span class="a">+</span><span class="a">+Browser use follows the standard tool use pricing. When using the browser use tool:</span><span class="a">+</span><span class="a">+Toolset definition overhead: Declaring `browser_toolset_20260801` with its default members adds about 6,600 input tokens to a request (about 6,610 on Claude Fable 5, Claude Mythos 5, Claude Opus 5, and Claude Opus 4.8, and about 6,670 on Claude Sonnet 5), which covers the member tool definitions and the tool use system prompt. Enabling all four optional members adds about 880 tokens, and disabling members with `configs` reduces the count. The exact count for a request is reported in the response `usage`, and you can estimate it in advance with the token counting endpoint.</span><span class="a">+</span><span class="a">+Additional token consumption:</span><span class="a">+</span><span class="a">+- Screenshot and zoom images returned in tool results, billed as image input (see Vision pricing)</span><span class="a">+- Text tool results returned to Claude, such as accessibility trees, page text, and console or network entries</span><span class="a">+</span><span class="a">+If you also use the computer use tool, bash tool, text editor tool, or your own tools alongside browser use, those tools have their own token costs as documented on their respective pages.</span><span class="a">+</span><span class=""> ## Claude Managed Agents pricing</span><span class=""> </span></pre>
+<p><a href="../anthropic.html">&larr; Anthropic timeline</a></p>
+<footer>Snapshots of public, logged-out pages, normalized to markdown and committed to git.
+One-line summaries are written by a local LLM and can be wrong: every entry links the raw diff, which is the source of truth.
+History before the first live fetch is reconstructed from Wayback Machine captures sampled about weekly, so dates are "first seen in a capture", not exact change times.</footer>
+</div></body></html>

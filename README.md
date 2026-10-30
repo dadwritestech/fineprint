@@ -8,6 +8,10 @@ markdown, and commits it. The git history *is* the archive: every commit is a da
 reviewable diff. A local LLM writes one plain-English line per diff, and every line
 links the raw diff, so you never have to trust the model.
 
+![Anthropic timeline](docs/timeline.jpg)
+
+Summary accuracy, hand-checked on a seeded sample: **27/30**. There were no invented numbers in the sample, but one known price misreading exists outside it. See [docs/spotcheck.md](docs/spotcheck.md).
+
 - `snapshots/<vendor>/<page>.md`: the current text of each page
 - `git log -p -- snapshots/openai/usage-policies.md`: its full history
 - `site/`: a static timeline per vendor, plus `site/feed.xml` (RSS)

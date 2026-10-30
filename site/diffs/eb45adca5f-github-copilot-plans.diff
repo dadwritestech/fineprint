@@ -1,0 +1,52 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 4eba02a..d789f60 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -448,9 +448,9 @@ Free
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+-- Google Gemini 2.5 Pro
+-- Google Gemini 3 Flash (Preview)
++- Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- Google Gemini 3.7 Flash
+ - xAI Grok 4.5
+ - Raptor mini (Preview)
+@@ -482,9 +482,9 @@ Pro
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+-- Google Gemini 2.5 Pro
+-- Google Gemini 3 Flash (Preview)
++- Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- Google Gemini 3.7 Flash
+ - xAI Grok 4.5
+ - Raptor mini (Preview)
+@@ -516,9 +516,9 @@ Pro+
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+-- Google Gemini 2.5 Pro
+-- Google Gemini 3 Flash (Preview)
++- Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- Google Gemini 3.7 Flash
+ - xAI Grok 4.5
+ - Raptor mini (Preview)
+@@ -550,9 +550,9 @@ Max
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+-- Google Gemini 2.5 Pro
+-- Google Gemini 3 Flash (Preview)
++- Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
+ - Google Gemini 3.6 Flash
++- Google Gemini 3.7 Flash
+ - xAI Grok 4.5
+ - Raptor mini (Preview)

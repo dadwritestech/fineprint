@@ -1,0 +1,25 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 4deb93e..c4a8639 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -23,5 +23,5 @@ Our latest OCR service with paragraph-level bounding boxes, structural block lab
+ ### Z.ai GLM 5.3
+ 
+-A third-party open source text model from Z.ai with a 1M-token context window.
++A third-party open weight text model from Z.ai with a 1M-token context window.
+ 
+ ### Mistral Small 4
+@@ -47,5 +47,5 @@ Text and multimodal models for broad reasoning, coding, tool use, and agentic ta
+ ### Z.ai GLM 5.3
+ 
+-A third-party open source text model from Z.ai with a 1M-token context window.
++A third-party open weight text model from Z.ai with a 1M-token context window.
+ 
+ v5.3
+@@ -53,5 +53,5 @@ v5.3
+ ### Z.ai GLM 5.2
+ 
+-A third-party open source text model from Z.ai with a 1M-token context window.
++A third-party open weight text model from Z.ai with a 1M-token context window.
+ 
+ v5.2

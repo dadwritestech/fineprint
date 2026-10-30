@@ -1,0 +1,32 @@
+diff --git a/snapshots/openai/api-pricing.md b/snapshots/openai/api-pricing.md
+index ad969f5..ffc5843 100644
+--- a/snapshots/openai/api-pricing.md
++++ b/snapshots/openai/api-pricing.md
+@@ -11,8 +11,8 @@ Standard
+ | Model | Input | Cached input | Cache writes | Output | Input | Cached input | Cache writes | Output |
+ | gpt-6-astra | $10.00 | $1.00 | $12.50 | $50.00 | $20.00 | $2.00 | $25.00 | $75.00 |
+-| gpt-6-sol | $2.00 | $0.20 | $2.50 | $10.00 | $4.00 | $0.40 | $5.00 | $15.00 |
++| gpt-6.1-sol | $2.00 | $0.10 | $2.50 | $10.00 | $4.00 | $0.20 | $5.00 | $15.00 |
+ | gpt-6-luna | $0.10 | $0.01 | $0.125 | $0.50 | $0.20 | $0.02 | $0.25 | $0.75 |
+ 
+-Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. For GPT-6 Sol and Luna, EU data residency is available only with Standard processing. See our Your data guide for supported regions and processing details. OpenAI models in Amazon Bedrock are billed through AWS. Bedrock pricing in commercial regions matches OpenAI direct pricing for equivalent services.  Priority processing was renamed Fast mode on July 30, 2026. You can use either `service_tier: "priority"` or `service_tier: "fast"` in your API requests. Learn more about Fast mode.  GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
++Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026. FedRAMP endpoints are also charged a 10% uplift. Priority processing was renamed Fast mode on July 30, 2026. GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
+ 
+ Our latest Daybreak models.
+@@ -26,8 +26,4 @@ Prices per 1M tokens.
+ | gpt-5.6-cyber | $12.50 | $1.25 | $15.625 | $75.00 | - | - | - | - |
+ 
+-`gpt-daybreak-blue-latest` and `gpt-daybreak-red-latest` are aliases that currently point to `gpt-5.6-sol` and `gpt-5.6-cyber`, respectively. As new models are released through the Daybreak program, these aliases will be updated to point to the latest models, with pricing adjusted to match each underlying model.
+-
+-To estimate vision model input costs, use the image input cost calculator.
+-
+ GPT-Live 1 voice sessions are billed per second, without rounding up to a whole minute. Backend model and tool usage is charged separately.
+ 
+@@ -110,2 +106,7 @@ Standard
+ 
+ Tokens used for model grading in reinforcement fine-tuning are billed at that model's per-token rate. Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.
++
++OpenAI models on Amazon Bedrock and Microsoft Azure are billed through those services.
++
++- See Amazon Bedrock pricing.
++- See Microsoft Azure pricing.

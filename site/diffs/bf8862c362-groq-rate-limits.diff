@@ -1,0 +1,11 @@
+diff --git a/snapshots/groq/rate-limits.md b/snapshots/groq/rate-limits.md
+index 2900832..2647649 100644
+--- a/snapshots/groq/rate-limits.md
++++ b/snapshots/groq/rate-limits.md
+@@ -40,6 +40,4 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
+ | groq/compound | 30 | 250 | 70K | - | - | - |
+ | groq/compound-mini | 30 | 250 | 70K | - | - | - |
+-| llama-3.1-8b-instant | 30 | 14.4K | 6K | 500K | - | - |
+-| llama-3.3-70b-versatile | 30 | 1K | 12K | 100K | - | - |
+ | meta-llama/llama-prompt-guard-2-22m | 30 | 14.4K | 15K | 500K | - | - |
+ | meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K | - | - |

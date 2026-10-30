@@ -1,0 +1,27 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index 9548fae..37e4b7b 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,10 @@
+ This page documents updates to the Gemini API.
+ 
++## August 13, 2026
++
++- Gemini 3.7 Flash generally available (GA): Released our most intelligent workhorse model yet for coding and agents:
++  - Gemini 3.7 Flash (`gemini-3.7-flash`): Substantial improvements across software engineering, web development, and agentic workflows, available at an introductory price through December 31, 2026.
++  To get started, see the Gemini 3.7 Flash model page and the Latest model guide.
++
+ ## July 30, 2026
+ 
+@@ -247,5 +253,5 @@ This page documents updates to the Gemini API.
+ 
+ - Launched the Interactions API. This API provides a unified interface for interacting with Gemini models and agents. To learn more, see the Interactions API guide.
+-- Launched the Gemini Deep Research Agent in preview. It can autonomously plan, execute, and synthesize results for multi-step research tasks. See the Deep Research guide for details.
++- Launched the Gemini Deep Research agent in preview. It can autonomously plan, execute, and synthesize results for multi-step research tasks. See the Deep Research guide for details.
+ 
+ ## December 10, 2025
+@@ -831,3 +837,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-07-30 UTC.
++Last updated 2026-08-13 UTC.

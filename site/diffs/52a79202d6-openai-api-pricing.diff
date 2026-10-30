@@ -1,0 +1,10 @@
+diff --git a/snapshots/openai/api-pricing.md b/snapshots/openai/api-pricing.md
+index e9e348a..c708ef9 100644
+--- a/snapshots/openai/api-pricing.md
++++ b/snapshots/openai/api-pricing.md
+@@ -65,4 +65,5 @@ Prices per 1M tokens unless noted.
+ |---|---|---|
+ | Web search | Web search (all models) | $10.00 / 1k calls + Search content tokens billed at model rates. |
++| Image Web search (all models) | $10.00 / 1k calls + Search content tokens billed at model rates. |  |
+ | Web search preview (reasoning models, including `gpt-5`, `o-series`) | $10.00 / 1k calls + Search content tokens billed at model rates. |  |
+ | Web search preview (non-reasoning models) | $25.00 / 1k calls + Search content tokens are free. |  |
