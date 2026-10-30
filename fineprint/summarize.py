@@ -12,6 +12,7 @@ import json
 import os
 import re
 import time
+from collections import Counter
 from pathlib import Path
 
 import requests
@@ -50,6 +51,45 @@ def _changed_lines(diff: str) -> tuple[list[str], list[str]]:
     return add, rem
 
 
+def _norm(line: str) -> str:
+    line = re.sub(r"^(\s*([#>*\-|]|\d+\.)\s*)+", "", line)
+    return re.sub(r"[\s|]+", " ", line).strip().lower()
+
+
+def condense(diff: str) -> tuple[str, int]:
+    """Drop removed/added pairs that differ only in markup (heading level, list marker,
+    indentation, table pipes). Returns (condensed diff, number of such pairs)."""
+    lines = diff.splitlines()
+    rem = Counter(_norm(l[1:]) for l in lines if l.startswith("-") and not l.startswith("---"))
+    add = Counter(_norm(l[1:]) for l in lines if l.startswith("+") and not l.startswith("+++"))
+    both = rem & add
+    pairs = sum(both.values())
+    budget_r, budget_a = Counter(both), Counter(both)
+    out, hunk, keep = [], [], False
+
+    def close():
+        if keep:
+            out.extend(hunk)
+
+    for l in lines:
+        if l.startswith("@@"):
+            close()
+            hunk, keep = [l], False
+            continue
+        if l.startswith(("---", "+++", "diff ", "index ")):
+            continue
+        if l.startswith("-") or l.startswith("+"):
+            key, budget = _norm(l[1:]), (budget_r if l[0] == "-" else budget_a)
+            if not key or budget[key] > 0:
+                if key:
+                    budget[key] -= 1
+                continue
+            keep = True
+        hunk.append(l)
+    close()
+    return "\n".join(out), pairs
+
+
 def fallback_summary(diff: str) -> str:
     add, rem = _changed_lines(diff)
     heads = [ln.lstrip("# ") for ln in add + rem if ln.startswith("#")]
@@ -58,8 +98,11 @@ def fallback_summary(diff: str) -> str:
 
 
 def llm_summary(page: dict, diff: str) -> str:
-    body = diff if len(diff) <= MAX_DIFF_CHARS else (
-        diff[:MAX_DIFF_CHARS] + f"\n[... diff truncated, {len(diff) - MAX_DIFF_CHARS} more chars]")
+    diff, reformatted = condense(diff)
+    note = (f"(Also: {reformatted} line(s) changed only in markup/heading level; omitted.)\n"
+            if reformatted else "")
+    body = note + (diff if len(diff) <= MAX_DIFF_CHARS else (
+        diff[:MAX_DIFF_CHARS] + f"\n[... diff truncated, {len(diff) - MAX_DIFF_CHARS} more chars]"))
     user = (f"Vendor: {page['vendor']}\nPage: {page['slug']} ({page['kind']} page)\n"
             f"URL: {page['url']}\n\nUnified diff:\n{body}\n\nWrite the one-line entry.")
     payload = {
@@ -127,7 +170,9 @@ def run(limit: int = 0, use_llm: bool = True) -> int:
         (DIFFS / f"{rid}.diff").write_text(diff, encoding="utf-8", newline="\n")
         add, rem = _changed_lines(diff)
         summary, by = None, "fallback"
-        if use_llm:
+        if not condense(diff)[0].strip():
+            summary, by = "Minor: formatting or layout only, no wording changed.", "rule"
+        elif use_llm:
             try:
                 t0 = time.time()
                 summary, by = llm_summary(page, diff), os.environ.get("FINEPRINT_LLM_MODEL", "gemma-4-12b")
