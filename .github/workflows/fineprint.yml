@@ -1,0 +1,59 @@
+name: fineprint snapshot
+
+# Every 6 hours: fetch every page, commit what changed, summarize, rebuild the site.
+# Inert until the repository variable FINEPRINT_ENABLED is set to "true".
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fineprint
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    if: vars.FINEPRINT_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests==2.32.3 beautifulsoup4==4.12.3 pytest
+
+      - name: Normalizer tests (noise must not create diffs)
+        run: python -m pytest -q tests
+
+      - name: Fetch pages and commit changed snapshots
+        run: python -m fineprint fetch
+
+      - name: Summarize new diffs
+        # Optional OpenAI-compatible endpoint. Without it, summaries fall back to
+        # a deterministic "+N/-M lines around <heading>" line.
+        env:
+          FINEPRINT_LLM_URL: ${{ secrets.FINEPRINT_LLM_URL }}
+          FINEPRINT_LLM_KEY: ${{ secrets.FINEPRINT_LLM_KEY }}
+          FINEPRINT_LLM_MODEL: ${{ vars.FINEPRINT_LLM_MODEL }}
+        run: |
+          if [ -n "$FINEPRINT_LLM_URL" ]; then python -m fineprint summarize
+          else python -m fineprint summarize --no-llm; fi
+
+      - name: Build site and RSS
+        run: python -m fineprint build
+
+      - name: Commit summaries and site
+        run: |
+          git config user.name "fineprint-bot"
+          git config user.email "fineprint-bot@users.noreply.github.com"
+          git add data/changes.jsonl site/
+          git diff --cached --quiet || git commit -m "summaries + site"
+          git push

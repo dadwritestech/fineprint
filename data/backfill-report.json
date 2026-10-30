@@ -1,0 +1,13 @@
+{
+ "anthropic/usage-policy": {
+  "captures_in_window": 140,
+  "sampled": 26,
+  "used": 25,
+  "dropped": [
+   [
+    "20260608174931",
+    "undecodable bytes (compressed or wrong charset)"
+   ]
+  ]
+ }
+}

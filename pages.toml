@@ -1,0 +1,293 @@
+# Every page fineprint watches. Public, logged-out URLs only.
+# kind: pricing | limits | policy | terms | privacy | deprecations | changelog
+# aliases (optional): older URLs of the same page, used only for Wayback backfill.
+# select (optional): CSS selector for the content root when <main> is wrong.
+
+[[page]]
+vendor = "anthropic"
+slug = "pricing"
+kind = "pricing"
+url = "https://claude.com/pricing"
+aliases = ["https://www.anthropic.com/pricing"]
+
+[[page]]
+vendor = "anthropic"
+slug = "api-pricing"
+kind = "pricing"
+url = "https://platform.claude.com/docs/en/about-claude/pricing"
+aliases = ["https://docs.anthropic.com/en/docs/about-claude/pricing"]
+
+[[page]]
+vendor = "anthropic"
+slug = "rate-limits"
+kind = "limits"
+url = "https://platform.claude.com/docs/en/api/rate-limits"
+aliases = ["https://docs.anthropic.com/en/api/rate-limits"]
+
+[[page]]
+vendor = "anthropic"
+slug = "usage-policy"
+kind = "policy"
+url = "https://www.anthropic.com/legal/aup"
+
+[[page]]
+vendor = "anthropic"
+slug = "consumer-terms"
+kind = "terms"
+url = "https://www.anthropic.com/legal/consumer-terms"
+
+[[page]]
+vendor = "anthropic"
+slug = "privacy"
+kind = "privacy"
+url = "https://www.anthropic.com/legal/privacy"
+
+[[page]]
+vendor = "anthropic"
+slug = "model-deprecations"
+kind = "deprecations"
+url = "https://platform.claude.com/docs/en/about-claude/model-deprecations"
+aliases = ["https://docs.anthropic.com/en/docs/about-claude/model-deprecations"]
+
+[[page]]
+vendor = "anthropic"
+slug = "api-release-notes"
+kind = "changelog"
+url = "https://platform.claude.com/docs/en/release-notes/overview"
+aliases = ["https://docs.anthropic.com/en/release-notes/api"]
+
+[[page]]
+vendor = "openai"
+slug = "api-pricing"
+kind = "pricing"
+url = "https://developers.openai.com/api/docs/pricing"
+aliases = ["https://platform.openai.com/docs/pricing"]
+
+[[page]]
+vendor = "openai"
+slug = "chatgpt-pricing"
+kind = "pricing"
+url = "https://openai.com/chatgpt/pricing/"
+
+[[page]]
+vendor = "openai"
+slug = "usage-policies"
+kind = "policy"
+url = "https://openai.com/policies/usage-policies/"
+
+[[page]]
+vendor = "openai"
+slug = "terms-of-use"
+kind = "terms"
+url = "https://openai.com/policies/terms-of-use/"
+
+[[page]]
+vendor = "openai"
+slug = "privacy"
+kind = "privacy"
+url = "https://openai.com/policies/privacy-policy/"
+
+[[page]]
+vendor = "openai"
+slug = "deprecations"
+kind = "deprecations"
+url = "https://developers.openai.com/api/docs/deprecations"
+aliases = ["https://platform.openai.com/docs/deprecations"]
+
+[[page]]
+vendor = "openai"
+slug = "rate-limits"
+kind = "limits"
+url = "https://developers.openai.com/api/docs/guides/rate-limits"
+aliases = ["https://platform.openai.com/docs/guides/rate-limits"]
+
+[[page]]
+vendor = "google"
+slug = "gemini-api-pricing"
+kind = "pricing"
+url = "https://ai.google.dev/gemini-api/docs/pricing"
+
+[[page]]
+vendor = "google"
+slug = "gemini-api-rate-limits"
+kind = "limits"
+url = "https://ai.google.dev/gemini-api/docs/rate-limits"
+
+[[page]]
+vendor = "google"
+slug = "gemini-api-terms"
+kind = "terms"
+url = "https://ai.google.dev/gemini-api/terms"
+
+[[page]]
+vendor = "google"
+slug = "genai-use-policy"
+kind = "policy"
+url = "https://policies.google.com/terms/generative-ai/use-policy"
+
+[[page]]
+vendor = "google"
+slug = "gemini-api-changelog"
+kind = "changelog"
+url = "https://ai.google.dev/gemini-api/docs/changelog"
+
+[[page]]
+vendor = "google"
+slug = "gemini-models"
+kind = "deprecations"
+url = "https://ai.google.dev/gemini-api/docs/models"
+
+[[page]]
+vendor = "xai"
+slug = "terms-of-service"
+kind = "terms"
+url = "https://x.ai/legal/terms-of-service"
+
+[[page]]
+vendor = "xai"
+slug = "acceptable-use"
+kind = "policy"
+url = "https://x.ai/legal/acceptable-use-policy"
+
+[[page]]
+vendor = "xai"
+slug = "privacy"
+kind = "privacy"
+url = "https://x.ai/legal/privacy-policy"
+
+[[page]]
+vendor = "xai"
+slug = "models-pricing"
+kind = "pricing"
+url = "https://docs.x.ai/developers/models"
+aliases = ["https://docs.x.ai/docs/models"]
+
+[[page]]
+vendor = "mistral"
+slug = "pricing"
+kind = "pricing"
+url = "https://mistral.ai/pricing"
+
+[[page]]
+vendor = "mistral"
+slug = "terms"
+kind = "terms"
+url = "https://legal.mistral.ai/terms/commercial-terms-of-service"
+
+[[page]]
+vendor = "mistral"
+slug = "models"
+kind = "deprecations"
+url = "https://docs.mistral.ai/models"
+aliases = ["https://docs.mistral.ai/getting-started/models/models_overview/"]
+
+[[page]]
+vendor = "mistral"
+slug = "changelog"
+kind = "changelog"
+url = "https://docs.mistral.ai/resources/changelogs"
+aliases = ["https://docs.mistral.ai/getting-started/changelog/"]
+
+[[page]]
+vendor = "mistral"
+slug = "usage-policy"
+kind = "policy"
+url = "https://legal.mistral.ai/terms/usage-policy"
+
+[[page]]
+vendor = "cursor"
+slug = "pricing"
+kind = "pricing"
+url = "https://cursor.com/pricing"
+
+[[page]]
+vendor = "cursor"
+slug = "terms"
+kind = "terms"
+url = "https://cursor.com/terms-of-service"
+
+[[page]]
+vendor = "cursor"
+slug = "privacy"
+kind = "privacy"
+url = "https://cursor.com/privacy"
+
+[[page]]
+vendor = "github-copilot"
+slug = "plans"
+kind = "pricing"
+url = "https://github.com/features/copilot/plans"
+
+[[page]]
+vendor = "github-copilot"
+slug = "premium-requests"
+kind = "limits"
+url = "https://docs.github.com/en/copilot/concepts/billing/copilot-requests"
+
+[[page]]
+vendor = "github-copilot"
+slug = "product-terms"
+kind = "terms"
+url = "https://docs.github.com/en/site-policy/github-terms/github-terms-for-additional-products-and-features"
+
+[[page]]
+vendor = "perplexity"
+slug = "terms"
+kind = "terms"
+url = "https://www.perplexity.ai/hub/legal/terms-of-service"
+
+[[page]]
+vendor = "perplexity"
+slug = "privacy"
+kind = "privacy"
+url = "https://www.perplexity.ai/hub/legal/privacy-policy"
+
+[[page]]
+vendor = "perplexity"
+slug = "api-pricing"
+kind = "pricing"
+url = "https://docs.perplexity.ai/docs/getting-started/pricing"
+aliases = ["https://docs.perplexity.ai/guides/pricing"]
+
+[[page]]
+vendor = "perplexity"
+slug = "rate-limits"
+kind = "limits"
+url = "https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers"
+aliases = ["https://docs.perplexity.ai/guides/usage-tiers"]
+
+[[page]]
+vendor = "deepseek"
+slug = "api-pricing"
+kind = "pricing"
+url = "https://api-docs.deepseek.com/quick_start/pricing"
+
+[[page]]
+vendor = "deepseek"
+slug = "rate-limit"
+kind = "limits"
+url = "https://api-docs.deepseek.com/quick_start/rate_limit"
+
+[[page]]
+vendor = "deepseek"
+slug = "news"
+kind = "changelog"
+url = "https://api-docs.deepseek.com/updates"
+
+[[page]]
+vendor = "groq"
+slug = "models"
+kind = "pricing"
+url = "https://console.groq.com/docs/models"
+
+[[page]]
+vendor = "groq"
+slug = "rate-limits"
+kind = "limits"
+url = "https://console.groq.com/docs/rate-limits"
+
+[[page]]
+vendor = "groq"
+slug = "deprecations"
+kind = "deprecations"
+url = "https://console.groq.com/docs/deprecations"
