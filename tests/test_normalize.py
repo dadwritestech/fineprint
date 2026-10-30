@@ -208,3 +208,9 @@ def test_callout_asides_are_content_but_sidebars_are_not():
             '<aside role="note"><p>Sonnet 5 introductory pricing ends August 31, 2026.</p></aside></main>')
     out = html_to_markdown(html)
     assert "introductory pricing ends" in out and "Models Pricing Limits" not in out
+
+
+def test_language_picker_listbox_is_dropped():
+    langs = "".join(f'<li role="option"><span>{l}</span></li>' for l in ["Afrikaans", "Dansk", "తెలుగు"])
+    html = f'<main><h1>Use policy</h1><p>Do not misuse.</p><ul role="listbox">{langs}</ul></main>'
+    assert "Afrikaans" not in html_to_markdown(html)

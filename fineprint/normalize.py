@@ -28,7 +28,8 @@ DROP_TAGS = {
     "audio", "picture", "img", "source", "head", "title",
 }
 DROP_ROLES = {"navigation", "banner", "contentinfo", "dialog", "search",
-              "alertdialog", "complementary", "menu", "menubar", "toolbar"}
+              "alertdialog", "complementary", "menu", "menubar", "toolbar",
+              "listbox"}   # listbox: language pickers and other select widgets
 # Matched against each class/id token, split on - and _ .
 NOISE_WORDS = {
     "cookie", "cookies", "consent", "onetrust", "gdpr", "newsletter",
