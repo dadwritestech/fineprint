@@ -1,4 +1,22 @@
 {
+ "anthropic/pricing": {
+  "captures_in_window": 178,
+  "sampled": 28,
+  "used": 28,
+  "dropped": []
+ },
+ "anthropic/api-pricing": {
+  "captures_in_window": 157,
+  "sampled": 27,
+  "used": 27,
+  "dropped": []
+ },
+ "anthropic/rate-limits": {
+  "captures_in_window": 121,
+  "sampled": 25,
+  "used": 25,
+  "dropped": []
+ },
  "anthropic/usage-policy": {
   "captures_in_window": 140,
   "sampled": 26,
@@ -9,5 +27,290 @@
     "undecodable bytes (compressed or wrong charset)"
    ]
   ]
+ },
+ "anthropic/consumer-terms": {
+  "captures_in_window": 138,
+  "sampled": 26,
+  "used": 23,
+  "dropped": [
+   [
+    "20260627125747",
+    "undecodable bytes (compressed or wrong charset)"
+   ],
+   [
+    "20260724004057",
+    "blip: differs from both neighbours, which agree"
+   ],
+   [
+    "20260807013159",
+    "undecodable bytes (compressed or wrong charset)"
+   ]
+  ]
+ },
+ "anthropic/privacy": {
+  "captures_in_window": 155,
+  "sampled": 27,
+  "used": 27,
+  "dropped": []
+ },
+ "anthropic/model-deprecations": {
+  "captures_in_window": 44,
+  "sampled": 19,
+  "used": 19,
+  "dropped": []
+ },
+ "anthropic/api-release-notes": {
+  "captures_in_window": 139,
+  "sampled": 26,
+  "used": 26,
+  "dropped": []
+ },
+ "openai/api-pricing": {
+  "captures_in_window": 124,
+  "sampled": 25,
+  "used": 25,
+  "dropped": []
+ },
+ "openai/chatgpt-pricing": {
+  "captures_in_window": 1,
+  "sampled": 1,
+  "used": 0,
+  "dropped": []
+ },
+ "openai/usage-policies": {
+  "captures_in_window": 83,
+  "sampled": 22,
+  "used": 20,
+  "dropped": []
+ },
+ "openai/terms-of-use": {
+  "captures_in_window": 130,
+  "sampled": 26,
+  "used": 25,
+  "dropped": [
+   [
+    "20260508224847",
+    "blip: differs from both neighbours, which agree"
+   ]
+  ]
+ },
+ "openai/privacy": {
+  "captures_in_window": 152,
+  "sampled": 26,
+  "used": 25,
+  "dropped": [
+   [
+    "20260711002634",
+    "blip: differs from both neighbours, which agree"
+   ]
+  ]
+ },
+ "openai/deprecations": {
+  "captures_in_window": 63,
+  "sampled": 19,
+  "used": 19,
+  "dropped": []
+ },
+ "openai/rate-limits": {
+  "captures_in_window": 23,
+  "sampled": 12,
+  "used": 12,
+  "dropped": []
+ },
+ "google/gemini-api-pricing": {
+  "captures_in_window": 130,
+  "sampled": 26,
+  "used": 26,
+  "dropped": []
+ },
+ "google/gemini-api-rate-limits": {
+  "captures_in_window": 55,
+  "sampled": 21,
+  "used": 21,
+  "dropped": []
+ },
+ "google/gemini-api-terms": {
+  "captures_in_window": 89,
+  "sampled": 24,
+  "used": 24,
+  "dropped": []
+ },
+ "google/genai-use-policy": {
+  "captures_in_window": 163,
+  "sampled": 27,
+  "used": 27,
+  "dropped": []
+ },
+ "google/gemini-api-changelog": {
+  "captures_in_window": 55,
+  "sampled": 21,
+  "used": 21,
+  "dropped": []
+ },
+ "google/gemini-models": {
+  "captures_in_window": 97,
+  "sampled": 24,
+  "used": 24,
+  "dropped": []
+ },
+ "xai/terms-of-service": {
+  "captures_in_window": 80,
+  "sampled": 24,
+  "used": 22,
+  "dropped": []
+ },
+ "xai/acceptable-use": {
+  "captures_in_window": 63,
+  "sampled": 20,
+  "used": 17,
+  "dropped": []
+ },
+ "xai/privacy": {
+  "captures_in_window": 77,
+  "sampled": 21,
+  "used": 21,
+  "dropped": []
+ },
+ "xai/models-pricing": {
+  "captures_in_window": 51,
+  "sampled": 20,
+  "used": 20,
+  "dropped": []
+ },
+ "mistral/pricing": {
+  "captures_in_window": 52,
+  "sampled": 21,
+  "used": 21,
+  "dropped": []
+ },
+ "mistral/terms": {
+  "captures_in_window": 37,
+  "sampled": 16,
+  "used": 16,
+  "dropped": []
+ },
+ "mistral/models": {
+  "captures_in_window": 28,
+  "sampled": 14,
+  "used": 14,
+  "dropped": []
+ },
+ "mistral/changelog": {
+  "captures_in_window": 17,
+  "sampled": 12,
+  "used": 12,
+  "dropped": []
+ },
+ "mistral/usage-policy": {
+  "captures_in_window": 37,
+  "sampled": 15,
+  "used": 15,
+  "dropped": []
+ },
+ "cursor/pricing": {
+  "captures_in_window": 150,
+  "sampled": 26,
+  "used": 26,
+  "dropped": []
+ },
+ "cursor/terms": {
+  "captures_in_window": 32,
+  "sampled": 15,
+  "used": 14,
+  "dropped": [
+   [
+    "20260726102625",
+    "undecodable bytes (compressed or wrong charset)"
+   ]
+  ]
+ },
+ "cursor/privacy": {
+  "captures_in_window": 43,
+  "sampled": 17,
+  "used": 17,
+  "dropped": []
+ },
+ "github-copilot/plans": {
+  "captures_in_window": 179,
+  "sampled": 27,
+  "used": 27,
+  "dropped": []
+ },
+ "github-copilot/premium-requests": {
+  "captures_in_window": 27,
+  "sampled": 6,
+  "used": 6,
+  "dropped": []
+ },
+ "github-copilot/product-terms": {
+  "captures_in_window": 65,
+  "sampled": 22,
+  "used": 22,
+  "dropped": []
+ },
+ "perplexity/terms": {
+  "captures_in_window": 17,
+  "sampled": 11,
+  "used": 10,
+  "dropped": []
+ },
+ "perplexity/privacy": {
+  "captures_in_window": 11,
+  "sampled": 5,
+  "used": 5,
+  "dropped": []
+ },
+ "perplexity/api-pricing": {
+  "captures_in_window": 28,
+  "sampled": 15,
+  "used": 15,
+  "dropped": []
+ },
+ "perplexity/rate-limits": {
+  "captures_in_window": 10,
+  "sampled": 9,
+  "used": 9,
+  "dropped": []
+ },
+ "deepseek/api-pricing": {
+  "captures_in_window": 76,
+  "sampled": 22,
+  "used": 21,
+  "dropped": [
+   [
+    "20261026044137",
+    "blip: differs from both neighbours, which agree"
+   ]
+  ]
+ },
+ "deepseek/rate-limit": {
+  "captures_in_window": 23,
+  "sampled": 13,
+  "used": 13,
+  "dropped": []
+ },
+ "deepseek/news": {
+  "captures_in_window": 54,
+  "sampled": 19,
+  "used": 19,
+  "dropped": []
+ },
+ "groq/models": {
+  "captures_in_window": 49,
+  "sampled": 19,
+  "used": 19,
+  "dropped": []
+ },
+ "groq/rate-limits": {
+  "captures_in_window": 24,
+  "sampled": 16,
+  "used": 16,
+  "dropped": []
+ },
+ "groq/deprecations": {
+  "captures_in_window": 13,
+  "sampled": 9,
+  "used": 9,
+  "dropped": []
  }
 }

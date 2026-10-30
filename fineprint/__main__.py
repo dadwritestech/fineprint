@@ -161,6 +161,11 @@ def cmd_backfill(args) -> int:
         for c in picks:
             stamp = "wb-" + c["timestamp"]
             html = fetch.cached(page, stamp)
+            # Captures archive.org refused once are not asked for again (each costs ~5 min
+            # of backoff); --retry-failed clears that.
+            failed = fetch.cache_path(page, stamp).with_suffix(".failed")
+            if html is None and failed.exists() and not args.retry_failed:
+                continue
             if html is None:
                 if c["digest"] == prev_digest and prev_html is not None:
                     html = prev_html
@@ -169,6 +174,8 @@ def cmd_backfill(args) -> int:
                         status, html = fetch.fetch_wayback(c["timestamp"], c["original"])
                     except Exception as e:  # noqa: BLE001
                         log(f"  {pid} {c['timestamp']}: {e!r}"[:200])
+                        failed.parent.mkdir(parents=True, exist_ok=True)
+                        failed.write_text(repr(e)[:300], encoding="utf-8")
                         continue
                     if status != 200:
                         log(f"  {pid} {c['timestamp']}: HTTP {status}")
@@ -182,7 +189,7 @@ def cmd_backfill(args) -> int:
             events.append((ts, page, text, f"wayback {ts}"))
         report[pid] = {"captures_in_window": len(caps), "sampled": len(picks),
                        "used": len(kept), "dropped": dropped}
-        log(f"{pid}: {len(caps)} daily captures, sampled {len(picks)}, used {len(good)}, "
+        log(f"{pid}: {len(caps)} daily captures, sampled {len(picks)}, used {len(kept)}, "
             f"dropped {len(dropped)}")
 
     events.sort(key=lambda e: e[0])
@@ -214,6 +221,8 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("--every-days", type=int, default=7)
     b.add_argument("--only", nargs="*")
     b.add_argument("--dry-run", action="store_true")
+    b.add_argument("--retry-failed", action="store_true",
+                   help="ask archive.org again for captures that failed on an earlier run")
     s = sub.add_parser("summarize")
     s.add_argument("--limit", type=int, default=0)
     s.add_argument("--no-llm", action="store_true")
