@@ -10,6 +10,7 @@ Free for everyone
 
 Try Claude
 
+- Limited usage every 5 hours and every week*
 - Chat on web, desktop, and mobile
 - Search the web, create files, and run code
 - Memory across conversations
@@ -18,6 +19,8 @@ Try Claude
 - Claude Design, Slides, Docs
 
 ### Pro
+
+Claude Code included
 
 For everyday work
 
@@ -29,10 +32,10 @@ Try Claude
 
 Everything in Free, plus:
 
-- More usage*
+- More usage than Free, every 5 hours and every week*
+- Fable, paid with usage credits New
 - Hand off and schedule tasks
 - Claude Dashboards (beta)
-- Claude Code
 - Claude Science
 - Projects
 - More Claude models
@@ -40,9 +43,11 @@ Everything in Free, plus:
 
 ### Max
 
-For people who work with Claude all day
+Claude Code included
 
-From $100
+For all-day work
+
+$100
 
 Per month
 
@@ -50,13 +55,35 @@ Try Claude
 
 Everything in Pro, plus:
 
-- Choose 5x or 20x more usage than Pro*
-- Higher output limits for all tasks
+- 5x Pro usage every 5 hours and every week*
+- Fable included, up to half your weekly limit New
+- $100 a month in API credits to build on the Claude Platform† New
 - Early access to advanced Claude features
 - Priority access at high traffic times
-- $100 to $200/month in API credits to build on the Claude Platform†
 
-Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+### Ultra
+
+Claude Code included
+
+For your longest tasks
+
+$200
+
+Per month
+
+Try Claude
+
+Everything in Max, plus:
+
+- No 5-hour limit‡
+- 10x Pro usage every week*
+- $200 a month in API credits, up from $100 on Max† New
+
+*Usage limits apply. How fast you reach a limit depends on the model you use, how long your chats are, and how large your files are.
+
+‡No 5-hour limit for verified accounts.
+
+Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
 
 Free
 
@@ -66,49 +93,66 @@ Pro
 
 Try Claude
 
-Max 5x
+Max
 
 Try Claude
 
-Max 20x
+Ultra
 
 Try Claude
 
 ### Features and capabilities
 
-| Features | Free | Pro | Max 5x | Max 20x |
+| Features | Free | Pro | Max | Ultra |
 |---|---|---|---|---|
-| @Claude |  |  |  |  |
+| Chat on web, iOS, Android and Desktop |  |  |  |  |
+| Hand off and schedule tasks |  |  |  |  |
+| Create Artifacts |  |  |  |  |
+| Claude Dashboards (beta) |  |  |  |  |
+| Claude Design |  |  |  |  |
+| Claude Docs |  |  |  |  |
+| Claude Motion (beta) |  |  |  |  |
+| Claude Slides |  |  |  |  |
 | Claude Code |  |  |  |  |
-| Claude Science |  |  |  |  |
-| Claude in Chrome |  |  |  |  |
 | Claude for Microsoft 365 |  |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |  |
-| Chat on web, iOS, Android and Desktop |  |  |  |  |
-| Claude Design |  |  |  |  |
-| Claude Slides |  |  |  |  |
-| Claude Docs |  |  |  |  |
-| Claude Dashboards (beta) |  |  |  |  |
-| Claude Motion (beta) |  |  |  |  |
-| Ability to search the web |  |  |  |  |
-| Create Artifacts |  |  |  |  |
-| Desktop extensions |  |  |  |  |
-| Voice mode |  |  |  |  |
-| Incognito chats |  |  |  |  |
-| User preferences |  |  |  |  |
-| Projects | Up to 5 |  |  |  |
-| Project sharing and collaboration |  |  |  |  |
-| Create and edit files with code execution |  |  |  |  |
-| Research |  |  |  |  |
-| Memory |  |  |  |  |
-| Skills |  |  |  |  |
+| Claude in Chrome |  |  |  |  |
+| Claude Science |  |  |  |  |
+| Claude Tag |  |  |  |  |
 | Connectors |  |  |  |  |
-| Web search |  |  |  |  |
+| Create and edit files with code execution |  |  |  |  |
+| Desktop extensions |  |  |  |  |
 | Enterprise search |  |  |  |  |
+| Incognito chats |  |  |  |  |
+| Memory |  |  |  |  |
+| Project sharing and collaboration |  |  |  |  |
+| Projects | Up to 5 |  |  |  |
+| Research |  |  |  |  |
+| Skills |  |  |  |  |
+| User preferences |  |  |  |  |
+| Voice mode |  |  |  |  |
+| Web search |  |  |  |  |
+
+### Models and usage
+
+| Features | Free | Pro | Max | Ultra |
+|---|---|---|---|---|
+| Limit every 5 hours | Limited | 1x | 5x | No 5-hour limit‡ |
+| Limit every week | Limited | 1x | 5x | 10x |
+| Fable |  | Usage credits | 50% of weekly limits* | 50% of weekly limits* |
+| Opus |  |  |  |  |
+| Sonnet |  |  |  |  |
+| Haiku |  |  |  |  |
+| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
+| Usage credits |  |  |  |  |
+| New Monthly API credits† |  |  | $100/month | $200/month |
+| Priority access at high traffic times |  |  |  |  |
+| User and organizational level spend controls |  |  |  |  |
+| Model training | Opt-out | Opt-out | Opt-out | Opt-out |
 
 ### Security and administration
 
-| Features | Free | Pro | Max 5x | Max 20x |
+| Features | Free | Pro | Max | Ultra |
 |---|---|---|---|---|
 | Single sign-on (SSO) and domain capture |  |  |  |  |
 | Central billing and administration |  |  |  |  |
@@ -125,28 +169,13 @@ Try Claude
 
 ### Payment options
 
-| Features | Free | Pro | Max 5x | Max 20x |
+| Features | Free | Pro | Max | Ultra |
 |---|---|---|---|---|
 | Credit card | n/a |  |  |  |
 | ACH |  |  |  |  |
 | Invoicing / net terms |  |  |  |  |
 | Billing cycle | n/a | Monthly and annual | Monthly | Monthly |
 | Adding seats midterm | n/a | n/a | n/a | n/a |
-
-### Models and usage
-
-| Features | Free | Pro | Max 5x | Max 20x |
-|---|---|---|---|---|
-| Fable |  | Usage credits | 50% of weekly limits* | 50% of weekly limits* |
-| Opus |  |  |  |  |
-| Sonnet |  |  |  |  |
-| Haiku |  |  |  |  |
-| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
-| Usage credits |  |  |  |  |
-| New Monthly API credits† |  |  | $100/month | $200/month |
-| Priority access at high traffic times |  |  |  |  |
-| User and organizational level spend controls |  |  |  |  |
-| Model training | Opt-out | Opt-out | Opt-out | Opt-out |
 
 ### Team
 
@@ -174,7 +203,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 - Claude Design, Slides, and Docs
 - Claude Motion and Dashboards (beta)
 - Claude Science
-- Microsoft 365, @Claude, and more
+- Microsoft 365, Claude Tag, and more
 - Enterprise search across your organization
 - Central billing and administration
 - Single sign-on (SSO)
@@ -238,34 +267,48 @@ Contact sales
 
 | Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
 |---|---|---|---|
-| @Claude |  |  |  |
+| Chat on web, iOS, Android and Desktop |  |  |  |
+| Create Artifacts |  |  |  |
+| Claude Dashboards (beta) |  |  |  |
+| Claude Design |  |  |  |
+| Claude Docs |  |  |  |
+| Claude Motion (beta) |  |  |  |
+| Claude Slides |  |  |  |
 | Claude Code |  |  |  |
-| Claude Science |  |  |  |
-| Claude Security |  |  |  |
-| Claude in Chrome |  |  |  |
 | Claude for Microsoft 365 |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |
-| Chat on web, iOS, Android and Desktop |  |  |  |
-| Claude Design |  |  |  |
-| Claude Slides |  |  |  |
-| Claude Docs |  |  |  |
-| Claude Dashboards (beta) |  |  |  |
-| Claude Motion (beta) |  |  |  |
-| Ability to search the web |  |  |  |
-| Create Artifacts |  |  |  |
-| Desktop extensions |  |  |  |
-| Voice mode |  |  |  |
-| Incognito chats |  |  |  |
-| User preferences |  |  |  |
-| Projects |  |  |  |
-| Project sharing and collaboration |  |  |  |
-| Create and edit files with code execution |  |  |  |
-| Research |  |  |  |
-| Memory |  |  |  |
-| Skills |  |  |  |
+| Claude in Chrome |  |  |  |
+| Claude Science |  |  |  |
+| Claude Security |  |  |  |
+| Claude Tag |  |  |  |
 | Connectors |  |  |  |
-| Web search |  |  |  |
+| Create and edit files with code execution |  |  |  |
+| Desktop extensions |  |  |  |
 | Enterprise search |  |  |  |
+| Incognito chats |  |  |  |
+| Memory |  |  |  |
+| Project sharing and collaboration |  |  |  |
+| Projects |  |  |  |
+| Research |  |  |  |
+| Skills |  |  |  |
+| User preferences |  |  |  |
+| Voice mode |  |  |  |
+| Web search |  |  |  |
+
+### Models and usage
+
+| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
+|---|---|---|---|
+| Fable | 50% of weekly limits*on premium seats |  |  |
+| Opus |  |  |  |
+| Sonnet |  |  |  |
+| Haiku |  |  |  |
+| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
+| Usage credits |  | n/a | n/a |
+| New Monthly API credits† | Up to $500/month |  |  |
+| Priority access at high traffic times |  |  |  |
+| User and organizational level spend controls |  |  |  |
+| Model training | None by default | None by default | None by default |
 
 ### Security and administration
 
@@ -290,16 +333,6 @@ Contact sales
 | HIPAA-ready offering |  |  |  |
 | Inference hooks |  |  |  |
 
-### Payment options
-
-| Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
-|---|---|---|---|
-| Credit card |  |  |  |
-| ACH |  |  |  |
-| Invoicing / net terms |  |  |  |
-| Billing cycle | Monthly and annual | Annual | Annual |
-| Adding seats midterm |  |  |  |
-
 ### Partnership
 
 | Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
@@ -310,20 +343,15 @@ Contact sales
 | Trials |  |  |  |
 | Customer success support at certain spend thresholds |  |  |  |
 
-### Models and usage
+### Payment options
 
 | Features | Team | Enterprise (self-serve) | Enterprise (sales-assisted) |
 |---|---|---|---|
-| Fable | 50% of weekly limits*on premium seats |  |  |
-| Opus |  |  |  |
-| Sonnet |  |  |  |
-| Haiku |  |  |  |
-| Context window | Up to 1Mvaries by model | Up to 1Mvaries by model | Up to 1Mvaries by model |
-| Usage credits |  | n/a | n/a |
-| New Monthly API credits† | Up to $500/month |  |  |
-| Priority access at high traffic times |  |  |  |
-| User and organizational level spend controls |  |  |  |
-| Model training | None by default | None by default | None by default |
+| Credit card |  |  |  |
+| ACH |  |  |  |
+| Invoicing / net terms |  |  |  |
+| Billing cycle | Monthly and annual | Annual | Annual |
+| Adding seats midterm |  |  |  |
 
 ## Latest models
 
