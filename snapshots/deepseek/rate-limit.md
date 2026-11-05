@@ -22,7 +22,7 @@ You can pass the `user_id` parameter to the API to achieve fine-grained manageme
   - For regular API users, all `user_id` values are combined for concurrency limit calculation
   - For API users with increased concurrency quotas, we will limit the total concurrency under your account, and we will also impose concurrency limits on each `user_id` you pass (an empty id is treated as a special `user_id`). For each `user_id`, the concurrency limit for `deepseek-flash` is 2500, and for `deepseek-v4-pro` it is 500. If a `user_id` exceeds its limit, requests with that `user_id` under your account will receive an HTTP 429 error code
 
-The `user_id` parameter must be a string matching the regex `[a-zA-Z0-9\-_]+`, with a maximum length of 512. Do not include user privacy information in `user_id`.
+The `user_id` parameter is a string. We recommend using only ASCII letters, digits, underscores (`_`), and hyphens (`-`). The UTF-8 encoded value must not exceed 512 bytes. Do not include user privacy information in `user_id`.
 
 You can set the `user_id` parameter in the following ways:
 
