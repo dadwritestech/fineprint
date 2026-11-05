@@ -1,8 +1,8 @@
 <!-- fineprint snapshot: xai/privacy | source: https://x.ai/legal/privacy-policy -->
 
-Last Updated: October 11, 2026 (previous version)
+Last Updated: October 27, 2026 (previous version)
 
-At SpaceXAI LLC ("SpaceXSI", "our", "us" or "we"), we value your privacy and are committed to being fair, accountable, and transparent in how we handle your personal information. Our Privacy Policy outlines how we collect, use, and disclose your personal information when you use our websites and applications (the Grok mobile app (iOS or Android) or the Grok.com website), and other SpaceXSI services (our "Service"). It also describes your privacy rights.
+At SpaceX Super Intelligence LLC ("SpaceXSI", "our", "us" or "we"), we value your privacy and are committed to being fair, accountable, and transparent in how we handle your personal information. Our Privacy Policy outlines how we collect, use, and disclose your personal information when you use our websites and applications (the Grok mobile app (iOS or Android) or the Grok.com website), and other SpaceXSI services (our "Service"). It also describes your privacy rights.
 
 This Privacy Policy does not apply to data that we process on behalf of customers of our business offerings, such as the SpaceXSI API, or to any employment-related personal information processed in consideration of employment with SpaceXSI. This Privacy Policy also does not apply if you access our Service through a third-party's service. In that case, the third-party's privacy policy would apply. For example, your use of X (previously Twitter), including use of Grok on the X platform, is governed by the X Privacy Policy and X Terms, not this SpaceXSI Privacy Policy.
 
@@ -127,7 +127,7 @@ To report child safety issues to us, please contact us here. Residents of Austra
 
 If you have any queries or complaints about our collection, use, or storage of your personal information, or if you wish to exercise any of your rights in relation to your personal information, please contact us at https://x.ai/privacy-portal/ or by the following contact details:
 
-- For the fastest response for world-wide requests and in the USA: x.AI LLC, https://x.ai/privacy-portal/
+- For the fastest response for world-wide requests and in the USA: SpaceX Super Intelligence LLC, https://x.ai/privacy-portal/
 - Information about our handling of California Consumer Privacy Act (CCPA) requests is available here
 
 Other contacts for privacy requests:
