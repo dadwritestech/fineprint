@@ -20,7 +20,7 @@ A few from the archive:
 • Mistral: the right to object to new terms became "sole and exclusive remedy is to stop using"
 
 4/
-Google, Oct 26: new paid Gemini API projects now "store requests by default (store=true)".
+Google, Oct 28: new paid Gemini API projects now "store requests by default (store=true)".
 
 Each change gets a one-line summary from a small local model, and the line always links the raw diff. The model is sometimes wrong. The diff never is.
 
