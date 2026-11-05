@@ -31,6 +31,8 @@ Other important things worth noting:
 
 The three paid usage tiers are Build, Launch, and Grow. Your organization's usage tier upgrades automatically as its total credit purchases reach each threshold. Higher tiers generally provide higher rate limits across models.
 
+Usage tiers describe rate limits. A model's rate-limit entry does not confirm access for your organization, project, or API key. If a model is missing, check model availability.
+
 | Tier | Qualification | Usage limits |
 |---|---|---|
 | Free | User must be in an allowed geography | $100 / month |
@@ -92,6 +94,15 @@ curl https://api.openai.com/v1/fine_tuning/model_limits \
   -H "Authorization: Bearer $OPENAI_API_KEY"
 ```
 
+## Model availability
+
+Model access and rate limits are separate. Meeting a usage-tier threshold doesn't grant access to every model. If a documented model is missing from Playground or `GET /v1/models`, or a request returns `model_not_found`:
+
+1. Check the model ID and endpoint. Use the exact ID from the model documentation, confirm that it supports your endpoint, and check for retirement or availability notices.
+2. Compare the organization, project, and credentials. Select the intended organization and project in Playground. Call List models with the same API key and any `OpenAI-Organization` and `OpenAI-Project` headers used by the failed request. A model visible in your dashboard session may still be unavailable to a different API key.
+3. Review project restrictions and model requirements. Ask someone who can manage the project to check its model permissions and data-retention settings. Follow any model-specific access requirements and review any rollout notices in the model documentation. A missing model alone does not identify the cause.
+4. Refresh and check again. After changing access settings, refresh the model list or Playground. If the model is still unavailable, contact support with the model ID, organization and project IDs, request time, error message, and the `x-request-id` response header, if available. Don't share your API key.
+
 ## Error mitigation
 
 ### Handle rapid traffic increases and model overload
@@ -150,7 +161,7 @@ This approach has many benefits:
 
 Note that unsuccessful requests contribute to your per-minute limit, so continuously resending a request won't work.
 
-The legacy Completions examples below use `gpt-3.5-turbo-instruct`, which was shut down on September 28, 2026. You can use the same retry pattern with current models by migrating to Responses or Chat Completions.
+The following examples retry a `gpt-6-luna` request to the Responses API. Each wrapper limits attempts and disables the SDK's built-in retries.
 
 The Python examples below demonstrate fallback backoff. They don't inspect `Retry-After`: before using them, add handling for valid server hints so the wrappers don't retry sooner than requested. Disable SDK retries or account for them in your application's retry limits.
 
@@ -177,30 +188,48 @@ Using the Tenacity library
 16
 17
 18
-19from openai import OpenAI
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28from openai import OpenAI, RateLimitError
 from tenacity import (
     retry,
+    retry_if_exception_type,
     stop_after_attempt,
     wait_random_exponential,
 )  # for exponential backoff
 
-client = OpenAI()
+client = OpenAI(max_retries=0)
 
-@retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-def completion_with_backoff(**kwargs):
-    return client.completions.create(**kwargs)
-
-completion_with_backoff(
-    model="gpt-3.5-turbo-instruct",
-    prompt="Once upon a time,",
+@retry(
+    retry=retry_if_exception_type(RateLimitError),
+    wait=wait_random_exponential(min=1, max=60),
+    stop=stop_after_attempt(6),
+    reraise=True,
 )
+def response_with_backoff(**kwargs):
+    return client.responses.create(**kwargs)
+
+response = response_with_backoff(
+    model="gpt-6-luna",
+    input="Say hello in one sentence.",
+    reasoning={"effort": "none"},
+    max_output_tokens=64,
+)
+print(response.output_text)
 ```
 
 Note that the Tenacity library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
 
 Another python library that provides function decorators for backoff and retry is backoff:
 
-Using the Tenacity library
+Using the backoff library
 
 ```
 1
@@ -218,20 +247,26 @@ Using the Tenacity library
 13
 14
 15
-16import backoff
+16
+17
+18
+19import backoff
 import openai
 from openai import OpenAI
 
-client = OpenAI()
+client = OpenAI(max_retries=0)
 
-@backoff.on_exception(backoff.expo, openai.RateLimitError)
-def completions_with_backoff(**kwargs):
-    return client.completions.create(**kwargs)
+@backoff.on_exception(backoff.expo, openai.RateLimitError, max_tries=6)
+def response_with_backoff(**kwargs):
+    return client.responses.create(**kwargs)
 
-completions_with_backoff(
-    model="gpt-3.5-turbo-instruct",
-    prompt="Once upon a time,",
+response = response_with_backoff(
+    model="gpt-6-luna",
+    input="Say hello in one sentence.",
+    reasoning={"effort": "none"},
+    max_output_tokens=64,
 )
+print(response.output_text)
 ```
 
 Like Tenacity, the backoff library is a third-party tool, and OpenAI makes no guarantees about its reliability or security.
@@ -299,14 +334,23 @@ Using manual backoff implementation
 56
 57
 58
-59# imports
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68# imports
 import random
 import time
 
 import openai
 from openai import OpenAI
 
-client = OpenAI()
+client = OpenAI(max_retries=0)
 
 # define a retry decorator
 
@@ -354,8 +398,16 @@ def retry_with_exponential_backoff(
     return wrapper
 
 @retry_with_exponential_backoff
-def completions_with_backoff(**kwargs):
-    return client.completions.create(**kwargs)
+def response_with_backoff(**kwargs):
+    return client.responses.create(**kwargs)
+
+response = response_with_backoff(
+    model="gpt-6-luna",
+    input="Say hello in one sentence.",
+    reasoning={"effort": "none"},
+    max_output_tokens=64,
+)
+print(response.output_text)
 ```
 
 Again, OpenAI makes no guarantees on the security or efficiency of this solution but it can be a good starting place for your own solution.
