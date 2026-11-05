@@ -1,6 +1,6 @@
 <!-- fineprint snapshot: github-copilot/premium-requests | source: https://docs.github.com/en/copilot/concepts/billing/copilot-requests -->
 
-# Requests in GitHub Copilot
+# Requests in GitHub Copilot (legacy)
 
 Learn about requests in Copilot, including premium requests, how they work, and how to manage your usage effectively.
 
@@ -8,7 +8,7 @@ Learn about requests in Copilot, including premium requests, how they work, and 
 
 Important
 
-Starting June 1, 2026, GitHub is moving Copilot from request-based billing to usage-based billing. See Usage-based billing for organizations and enterprises and Usage-based billing for individuals.
+This article only applies to Copilot Pro and Copilot Pro+ subscribers on an existing annual plan who remained on legacy premium request-based billing after June 1, 2026.
 
 ## What is a request?
 
@@ -30,12 +30,11 @@ Starting June 1, 2026, Copilot code review will have a model multiplier of 13. T
 |---|---|---|
 | Copilot Chat | Copilot Chat uses one premium request per user prompt, multiplied by the model's rate. This includes ask, edit, agent, and plan modes in Copilot Chat in an IDE. | Copilot premium requests |
 | Copilot CLI | Each prompt to Copilot CLI uses one premium request with the default model. For other models, this is multiplied by the model's rate. | Copilot premium requests |
-| Copilot code review | Each time Copilot reviews a pull request (when assigned as a reviewer) or reviews code in your IDE, one premium request is consumed. | Copilot premium requests |
+| Copilot code review | Each time Copilot reviews a pull request (when assigned as a reviewer) or reviews code in your IDE, 13 premium requests are consumed. | Copilot premium requests |
 | Copilot cloud agent | Copilot cloud agent uses one premium request per session, multiplied by the model's rate. A session begins when you prompt Copilot to undertake a task. In addition, each real-time steering comment made during an active session uses one premium request per session, multiplied by the model's rate. | Copilot cloud agent premium requests |
 | Copilot Spaces | Copilot Spaces uses one premium request per user prompt, multiplied by the model's rate. | Copilot premium requests |
-| Spark | Each prompt to Spark uses a fixed rate of four premium requests. | Spark premium requests |
 | OpenAI Codex Visual Studio Code integration | While in preview, each prompt to OpenAI Codex uses one premium request multiplied by the model multiplier rates. | Copilot premium requests |
-| Third-party coding agents | While in preview, each prompt to a third-party coding agent uses one premium request. | Copilot premium requests |
+| Third-party coding agents | While in preview, each prompt to a third-party coding agent uses one premium request, multiplied by the model's rate. | Copilot premium requests |
 
 Note
 
@@ -43,7 +42,7 @@ Premium requests for Spark and Copilot cloud agent are tracked in dedicated SKUs
 
 Tip
 
-For instructions on viewing how many premium requests you have used and advice on how to optimize usage, see Monitoring your GitHub Copilot usage and entitlements.
+For instructions on viewing how many premium requests you have used and advice on how to optimize usage, see Monitoring your GitHub Copilot usage and entitlements (legacy).
 
 ## How do request allowances work per plan?
 
@@ -51,19 +50,19 @@ Note
 
 Billing for premium requests began on June 18, 2025, for all paid Copilot plans on GitHub.com, and on August 1, 2025, on GHE.com. The request counters were only set to zero for paid plans.
 
-If you use Copilot Free, your plan comes with up to 2,000 inline suggestion requests and up to 50 premium requests per month. All chat interactions count as premium requests.
+If you're on a paid plan, you get unlimited inline suggestions. Rate limiting is in place to accommodate for high demand. See Usage limits for GitHub Copilot.
 
-If you're on a paid plan or Copilot Student, you get unlimited inline suggestions and unlimited chat interactions using the included models (GPT-5 mini, GPT-4.1 and GPT-4o). Rate limiting is in place to accommodate for high demand. See Usage limits for GitHub Copilot.
+Paid plans also receive a monthly allowance of premium requests, which can be used for advanced chat interactions, inline suggestions using premium models, and other premium features.
 
-Paid plans and Copilot Student also receive a monthly allowance of premium requests, which can be used for advanced chat interactions, inline suggestions using premium models, and other premium features. For an overview of the amount of premium requests included in each plan, see Plans for GitHub Copilot.
-
-Note
-
-If a user has licenses from multiple enterprises, or standalone organizations, they must make a selection using the "Usage billed to" drop down in order to utilize premium requests. The billing entity selected will be billed for any premium requests they make. If no billing entity is selected, premium requests will be blocked. See Monitoring your GitHub Copilot usage and entitlements.
+|  | Copilot Pro | Copilot Pro+ |
+|---|---|---|
+| Pricing | $10 USD per month (free for some users) | $39 USD per month |
+| Premium requests | 300 per month | 1500 per month |
+| Purchase additional premium requests at $0.04/request |  |  |
 
 ## What happens to unused requests at the end of the month?
 
-Unused requests for the previous month do not carry over to the following month. Premium request counters reset on the 1st of each month at 00:00:00 UTC. See Monitoring your GitHub Copilot usage and entitlements.
+Unused requests for the previous month do not carry over to the following month. Premium request counters reset on the 1st of each month at 00:00:00 UTC. See Monitoring your GitHub Copilot usage and entitlements (legacy).
 
 ## What if I run out of premium requests?
 
@@ -71,65 +70,14 @@ Note
 
 Additional premium requests are not available to:
 
-- Users on Copilot Free. To access more premium requests, upgrade to a paid plan.
 - Users who subscribe, or have subscribed, to Copilot Pro or Copilot Pro+ through GitHub Mobile on iOS or Android.
 
-If you're on a paid plan and use all of your premium requests, you can still use Copilot with one of the included models for the rest of the month. This is subject to change. Response times for the included models may vary during periods of high usage. Requests to the included models may be subject to rate limiting. See Usage limits for GitHub Copilot.
+If you use all of your premium requests, you can still use Copilot with one of the included models for the rest of the month. This is subject to change. Response times for the included models may vary during periods of high usage. Requests to the included models may be subject to rate limiting. See Usage limits for GitHub Copilot.
 
-If you need more premium requests beyond your monthly allowance:
-
-- For an individual subscription, set a budget for additional premium requests or upgrade to a higher plan. See Setting up budgets to control spending on metered products.
-- If you're an enterprise or organization owner, ensure that the "Premium request paid usage" policy is enabled and that extra spending is not prevented by a budget. See Managing the premium request allowance for your organization or enterprise.
+If you need more premium requests beyond your monthly allowance set a budget for additional premium requests or upgrade to a higher plan. See Setting up budgets to control spending on metered products.
 
 ## Model multipliers
 
-The available models vary depending on your Copilot plan. See Plans for GitHub Copilot.
+Each model has a premium request multiplier, based on its complexity and resource usage. Your premium request allowance is deducted according to this multiplier.
 
-Note
-
-- The models included with Copilot plans are subject to change.
-- Model multipliers and costs are subject to change.
-- Discounted multipliers are available for using Copilot auto model selection. See About Copilot auto model selection.
-  - If you are on a paid Copilot plan and use auto model selection in Copilot Chat, Copilot CLI, or Copilot cloud agent, models qualify for a 10% multiplier discount. For example, Sonnet 4 would be billed at .9x rather than 1x when using auto model selection.
-  - Discounted multipliers are not available for Copilot Free.
-
-Each model has a premium request multiplier, based on its complexity and resource usage. If you are on a paid Copilot plan, your premium request allowance is deducted according to this multiplier.
-
-GPT-5 mini, GPT-4.1 and GPT-4o are the included models, and do not consume any premium requests if you are on a paid plan.
-
-If you use Copilot Free, you have access to a limited number of models, and each model will consume one premium request when used.
-
-| Model | Multiplier for paid plans | Multiplier for Copilot Free |
-|---|---|---|
-| Claude Haiku 4.5 | 0.33 | 1 |
-| Claude Opus 4.5 | 3 | Not applicable |
-| Claude Opus 4.6 | 3 | Not applicable |
-| Claude Opus 4.6 (fast mode) (preview) | 30 | Not applicable |
-| Claude Opus 4.7 | 15 | Not applicable |
-| Claude Opus 4.8 | 15 | Not applicable |
-| Claude Sonnet 4.5 | 1 | Not applicable |
-| Claude Sonnet 4.6 | 1 | Not applicable |
-| Gemini 2.5 Pro | 1 | Not applicable |
-| Gemini 3 Flash | 0.33 | Not applicable |
-| Gemini 3.1 Pro | 1 | Not applicable |
-| Gemini 3.5 Flash | 14 | Not applicable |
-| GPT-4.1 | 0 | 1 |
-| GPT-4o | 0 | 1 |
-| GPT-5 mini | 0 | 1 |
-| GPT-5.2 | 1 | Not applicable |
-| GPT-5.2-Codex | 1 | Not applicable |
-| GPT-5.3-Codex | 1 | Not applicable |
-| GPT-5.4 | 1 | Not applicable |
-| GPT-5.4 mini | 0.33 | Not applicable |
-| GPT-5.4 nano | 0.25 | Not applicable |
-| GPT-5.5 | 7.5 | Not applicable |
-| Raptor mini | 0 | 1 |
-
-For GitHub Enterprise Cloud, requests processed with data residency or FedRAMP enforcement include an additional 10% multiplier. See GitHub Copilot with data residency.
-
-## Examples of premium request usage
-
-Premium request usage is based on the model's multiplier and the feature you're using. For example:
-
-- Using GPT-5 mini on Copilot Free: Each interaction counts as 1 premium request.
-- Using GPT-5 mini on a paid plan: No premium requests are consumed.
+See Model multipliers for annual plans on request-based billing (legacy).
