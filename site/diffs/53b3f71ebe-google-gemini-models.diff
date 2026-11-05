@@ -1,0 +1,9 @@
+diff --git a/snapshots/google/gemini-models.md b/snapshots/google/gemini-models.md
+index bc4a2f5..0baf210 100644
+--- a/snapshots/google/gemini-models.md
++++ b/snapshots/google/gemini-models.md
+@@ -155,3 +155,3 @@ For information about model deprecations, visit the Gemini deprecations page.
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-06-09 UTC.
++Last updated 2026-06-15 UTC.

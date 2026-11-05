@@ -1,0 +1,52 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 73a08ae..9ac6672 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -353,4 +353,5 @@ Free
+ - Anthropic Claude Sonnet 4.6
+ - Anthropic Claude Sonnet 5
++- Anthropic Claude Sonnet 5.5
+ - Anthropic Claude Opus 4.7
+ - Anthropic Claude Opus 4.8
+@@ -371,4 +372,5 @@ Free
+ - OpenAI GPT-6 Luna
+ - OpenAI GPT-6 Sol
++- OpenAI GPT-6.1 Sol
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -390,4 +392,5 @@ Pro
+ - Anthropic Claude Sonnet 4.6
+ - Anthropic Claude Sonnet 5
++- Anthropic Claude Sonnet 5.5
+ - Anthropic Claude Opus 4.7
+ - Anthropic Claude Opus 4.8
+@@ -408,4 +411,5 @@ Pro
+ - OpenAI GPT-6 Luna
+ - OpenAI GPT-6 Sol
++- OpenAI GPT-6.1 Sol
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -427,4 +431,5 @@ Pro+
+ - Anthropic Claude Sonnet 4.6
+ - Anthropic Claude Sonnet 5
++- Anthropic Claude Sonnet 5.5
+ - Anthropic Claude Opus 4.7
+ - Anthropic Claude Opus 4.8
+@@ -445,4 +450,5 @@ Pro+
+ - OpenAI GPT-6 Luna
+ - OpenAI GPT-6 Sol
++- OpenAI GPT-6.1 Sol
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -464,4 +470,5 @@ Max
+ - Anthropic Claude Sonnet 4.6
+ - Anthropic Claude Sonnet 5
++- Anthropic Claude Sonnet 5.5
+ - Anthropic Claude Opus 4.7
+ - Anthropic Claude Opus 4.8
+@@ -482,4 +489,5 @@ Max
+ - OpenAI GPT-6 Luna
+ - OpenAI GPT-6 Sol
++- OpenAI GPT-6.1 Sol
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash

@@ -1,0 +1,13 @@
+diff --git a/snapshots/openai/privacy.md b/snapshots/openai/privacy.md
+index e0e4158..24c6adf 100644
+--- a/snapshots/openai/privacy.md
++++ b/snapshots/openai/privacy.md
+@@ -1,8 +1,4 @@
+ <!-- fineprint snapshot: openai/privacy | source: https://openai.com/policies/privacy-policy/ -->
+ 
+-Updated: May 18, 2026
+-
+-# US privacy policy
+-
+ (Previous version)  For individuals in the European Economic Area, United Kingdom, and Switzerland, you can read this version of our Privacy Policy.
+ 

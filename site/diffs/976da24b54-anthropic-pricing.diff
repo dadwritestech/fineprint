@@ -1,0 +1,78 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 5ec42d5..67f1961 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -174,4 +174,14 @@ n/a
+ ### Models and usage
+ 
++#### Fable
++
++Promo
++
++Promo
++
++Promo
++
++Promo
++
+ #### Opus
+ 
+@@ -196,6 +206,4 @@ Opt-out
+ Opt-out
+ 
+-Get $1,000 in Claude Code and Claude Cowork credits for every seat that activates by July 2.
+-
+ ### Team
+ 
+@@ -249,7 +257,9 @@ All Team plan features, plus:
+ - Claude Security (beta)
+ 
+-Quiz
++Questions
++
++Chat with our buying agent and get started in minutes.
+ 
+-Which plan is right for you?
++Chat now
+ 
+ Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+@@ -401,4 +411,8 @@ Annual
+ ### Models and usage
+ 
++#### Fable
++
++Promo
++
+ #### Opus
+ 
+@@ -433,7 +447,29 @@ Learn more
+ Batch processing
+ 
++### Fable 5
++
++Next generation intelligence for long-running agents
++
++Input
++
++$10 / MTok
++
++Output
++
++$50 / MTok
++
++Prompt caching
++
++Write
++
++$12.50 / MTok
++
++Read
++
++$1 / MTok
++
+ ### Opus 4.8
+ 
+-Most intelligent model for agents and coding
++Ideal for complex agentic coding and enterprise work
+ 
+ Input

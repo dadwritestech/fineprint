@@ -1,0 +1,263 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index 764888e..503dea1 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -5,4 +5,6 @@
+ # Pricing
+ 
++France
++
+ Free
+ 
+@@ -158,17 +160,5 @@ Our most powerful models and APIs.
+ Mistral Medium 3.5
+ 
+-Open
+-
+-Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
+-
+-Text-to-text
+-
+-Reasoning
+-
+-Coding
+-
+-Agentic
+-
+-Multimodal
++State-of-the-art performance. Simplified enterprise deployments. Cost-efficient.
+ 
+ Input (/M tokens)
+@@ -180,14 +170,10 @@ Output (/M tokens)
+ $7.5
+ 
+-mistral-medium-latest
++Documentation
+ 
+ Voxtral TTS
+ 
+-Open
+-
+ State-of-the-art text-to-speech generation and voice cloning.
+ 
+-Voice
+-
+ Audio generation
+ 
+@@ -198,20 +184,12 @@ Available on
+ `/v1/audio/speech`
+ 
+-voxtral-mini-tts-latest
++Documentation
+ 
+ OCR 3
+ 
+-Premier
+-
+ The world's best document extraction and understanding model.
+ 
+ OCR
+ 
+-Multimodal
+-
+-Text-to-text
+-
+-OCR
+-
+ $2 / 1000 pages
+ 
+@@ -220,5 +198,5 @@ Annotations
+ $3 / 1000 pages
+ 
+-mistral-ocr-latest
++Documentation
+ 
+ Enterprise APIs
+@@ -259,5 +237,5 @@ Mistral Medium 3.5
+ Open
+ 
+-Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
++State-of-the-art performance. Simplified enterprise deployments. Cost-efficient.
+ 
+ Text-to-text
+@@ -279,5 +257,5 @@ Output (/M tokens)
+ $7.5
+ 
+-mistral-medium-latest
++Documentation
+ 
+ Mistral Small 4
+@@ -303,5 +281,5 @@ Output (/M tokens)
+ $0.3
+ 
+-mistral-small-latest
++Documentation
+ 
+ OCR 3
+@@ -325,5 +303,5 @@ Annotations
+ $3 / 1000 pages
+ 
+-mistral-ocr-latest
++Documentation
+ 
+ Mistral Large 3
+@@ -345,5 +323,5 @@ Output (/M tokens)
+ $1.5
+ 
+-mistral-large-latest
++Documentation
+ 
+ Voxtral TTS
+@@ -363,5 +341,5 @@ Available on
+ `/v1/audio/speech`
+ 
+-voxtral-mini-tts-latest
++Documentation
+ 
+ Voxtral Mini Transcribe 2
+@@ -383,6 +361,4 @@ Available on
+ `/v1/audio/transcriptions`
+ 
+-voxtral-mini-latest
+-
+ Voxtral Mini Transcribe Realtime
+ 
+@@ -399,5 +375,5 @@ Available on
+ `/v1/audio/transcriptions`
+ 
+-voxtral-mini-transcribe-realtime-2602
++Documentation
+ 
+ Voxtral Small
+@@ -423,6 +399,4 @@ Available on
+ `/v1/chat/completions`
+ 
+-voxtral-small-latest
+-
+ Devstral 2
+ 
+@@ -445,6 +419,4 @@ Output (/M tokens)
+ $2
+ 
+-devstral-medium-latest
+-
+ Devstral Small 2
+ 
+@@ -471,6 +443,4 @@ Output (/M tokens)
+ $0.3
+ 
+-devstral-small-latest
+-
+ Codestral
+ 
+@@ -491,6 +461,4 @@ Output (/M tokens)
+ $0.9
+ 
+-codestral-latest
+-
+ Leanstral
+ 
+@@ -505,6 +473,4 @@ API endpoint
+ Free
+ 
+-labs-leanstral-2603
+-
+ Magistral Medium
+ 
+@@ -527,6 +493,4 @@ Output (/M tokens)
+ $5
+ 
+-magistral-medium-latest
+-
+ Magistral Small
+ 
+@@ -551,6 +515,4 @@ Output (/M tokens)
+ $1.5
+ 
+-magistral-small-latest
+-
+ Ministral 3 - 3B
+ 
+@@ -573,5 +535,5 @@ Output (/M tokens)
+ $0.1
+ 
+-ministral-3b-latest
++Documentation
+ 
+ Ministral 3 - 8B
+@@ -595,5 +557,5 @@ Output (/M tokens)
+ $0.15
+ 
+-ministral-8b-latest
++Documentation
+ 
+ Ministral 3 - 14B
+@@ -617,6 +579,4 @@ Output (/M tokens)
+ $0.2
+ 
+-ministral-14b-latest
+-
+ Classifier API model 3B
+ 
+@@ -641,6 +601,4 @@ Output (/M tokens)
+ $0.1
+ 
+-Classifier API model 3B
+-
+ Classifier API model 8B
+ 
+@@ -665,6 +623,4 @@ Output (/M tokens)
+ $0.04
+ 
+-Classifier API model 8B
+-
+ Mistral Moderation
+ 
+@@ -677,6 +633,4 @@ Input (/M tokens)
+ $0.1
+ 
+-mistral-moderation-2603
+-
+ Codestral Embed
+ 
+@@ -693,6 +647,4 @@ Input (/M tokens)
+ $0.15
+ 
+-codestral-embed
+-
+ Mistral Embed
+ 
+@@ -707,6 +659,4 @@ Input (/M tokens)
+ $0.1
+ 
+-mistral-embed
+-
+ Agent API
+ 
+@@ -805,6 +755,4 @@ Output (/M tokens)
+ $0.15
+ 
+-open-mistral-nemo
+-
+ Mixtral 8x7B
+ 
+@@ -825,6 +773,4 @@ Output (/M tokens)
+ $0.7
+ 
+-open-mixtral-8x7b
+-
+ Mixtral 8x22B
+ 
+@@ -843,9 +789,9 @@ Output (/M tokens)
+ $6
+ 
+-open-mixtral-8x22b
+-
+ ### Let's build your AI advantage together.
+ 
+-Our sales experts are here to provide all the details you need. Fill out the form, and we'll reach out to discuss how Mistral can meet your needs.
++### Our sales experts are here to provide all the details you need.
++
++Fill out the form, and we'll reach out to discuss how Mistral can meet your needs.
+ 
+ Thank you for your submission.

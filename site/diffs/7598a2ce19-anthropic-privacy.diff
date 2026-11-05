@@ -1,0 +1,11 @@
+diff --git a/snapshots/anthropic/privacy.md b/snapshots/anthropic/privacy.md
+index b417d4b..56168fc 100644
+--- a/snapshots/anthropic/privacy.md
++++ b/snapshots/anthropic/privacy.md
+@@ -1,6 +1,4 @@
+ <!-- fineprint snapshot: anthropic/privacy | source: https://www.anthropic.com/legal/privacy -->
+ 
+-This policy was published on June 8, 2026 with an effective date of July 8, 2026.
+-
+ Anthropic is an AI safety and research company working to build reliable, interpretable, and steerable AI systems.
+ 

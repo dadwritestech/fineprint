@@ -1,0 +1,28 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 1e0f5c5..a481e5e 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -446,4 +446,5 @@ Free
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
++- OpenAI GPT-6 Astra
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -478,4 +479,5 @@ Pro
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
++- OpenAI GPT-6 Astra
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -510,4 +512,5 @@ Pro+
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
++- OpenAI GPT-6 Astra
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash
+@@ -542,4 +545,5 @@ Max
+ - OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
++- OpenAI GPT-6 Astra
+ - Microsoft MAI-Code-1.1-Flash
+ - Google Gemini 3.5 Flash

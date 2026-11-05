@@ -1,0 +1,56 @@
+diff --git a/snapshots/google/gemini-models.md b/snapshots/google/gemini-models.md
+index a08dcf6..f8065c5 100644
+--- a/snapshots/google/gemini-models.md
++++ b/snapshots/google/gemini-models.md
+@@ -21,4 +21,12 @@ High-reasoning Live API model for voice interactions, recommended when higher ba
+ New Stable
+ 
++Flagship creative text-to-speech model for studio-grade voice fidelity, expressive acting, Voice design, and Voice replication.
++
++New Stable
++
++Fast, cost-efficient text-to-speech model for high-volume production, real-time voice agent cascades, and Voice replication.
++
++New Stable
++
+ Our previous-generation Flash model for complex coding, agentic workflows, and reliable multi-step execution.
+ 
+@@ -75,7 +83,7 @@ Legacy Live API preview model. We recommend updating to Gemini 3.8 Live.
+ New
+ 
+-Powerful, low-latency speech generation.
++Legacy TTS preview model. We recommend updating to Gemini 3.8 Flash TTS or Gemini 3.8 Flash-Lite TTS.
+ 
+-New
++Preview
+ 
+ Fast video generation, editing, keyframe interpolation, and extension with native audio.
+@@ -90,4 +98,6 @@ New
+ | Gemini 3.8 Live | gemini-3.8-live |
+ | Gemini 3.8 Live Extended Thinking | gemini-3.8-live-extended-thinking |
++| Gemini 3.8 Flash TTS | gemini-3.8-flash-tts |
++| Gemini 3.8 Flash-Lite TTS | gemini-3.8-flash-lite-tts |
+ | Gemini 3.7 Flash | gemini-3.7-flash |
+ | Gemini 3.6 Flash | gemini-3.6-flash |
+@@ -136,6 +146,8 @@ This section contains all audio models, including ones that may already be liste
+ | Gemini 3.8 Live | The default option for most low-latency voice agent experiences and real-time dialogue without reasoning delays. | gemini-3.8-live |
+ | Gemini 3.8 Live Extended Thinking | Our high-reasoning audio-to-audio model, recommended when higher background reasoning is required during live interactions. | gemini-3.8-live-extended-thinking |
++| Gemini 3.8 Flash TTS | Flagship creative text-to-speech model for studio-grade voice fidelity, expressive acting, and regional dialects across 130 languages. | gemini-3.8-flash-tts |
++| Gemini 3.8 Flash-Lite TTS | Fast, cost-efficient text-to-speech model built for high-throughput production workloads across 101 languages. | gemini-3.8-flash-lite-tts |
+ | Gemini 3.1 Flash Live | Legacy audio-to-audio preview model. We recommend updating to Gemini 3.8 Live. | gemini-3.1-flash-live-preview |
+-| Gemini 3.1 Flash TTS | Powerful, low-latency speech generation, with natural outputs, steerable prompts, and new expressive audio tags for precise narration control. | gemini-3.1-flash-tts-preview |
++| Gemini 3.1 Flash TTS | Legacy text-to-speech preview model. We recommend updating to Gemini 3.8 Flash TTS or Gemini 3.8 Flash-Lite TTS. | gemini-3.1-flash-tts-preview |
+ | Gemini 3.5 Transcribe | Low-latency speech-to-text model with utterance-based language detection, speaker diarization, word-level timestamps, and custom vocabulary biasing. | gemini-3.5-transcribe gemini-3.5-transcribe-live |
+ | Gemini 2.5 Flash Live | Our flagship Live API model for low-latency, bidirectional voice and video agents with native audio reasoning. | gemini-2.5-flash-native-audio-preview-12-2025 |
+@@ -176,5 +188,5 @@ This section contains all music generation models, including ones that may alrea
+ | Gemini Deep Research | An agentic model that autonomously plans and executes multi-step research across hundreds of sources to produce cited, interactive reports. | deep-research-preview-04-2026 |
+ | Gemini Deep Research Max | Maximum comprehensiveness for automated context gathering and synthesis across hundreds of sources. | deep-research-max-preview-04-2026 |
+-| Antigravity Agent | A general-purpose managed agent that autonomously plans, reasons, runs code, manages files, and browses the web inside a secure, isolated Linux sandbox. | antigravity-preview-05-2026 |
++| Antigravity Agent | A general-purpose managed agent that autonomously plans, reasons, runs code, manages files, and browses the web inside a secure, isolated Linux sandbox. | antigravity-preview-09-2026 |
+ 
+ ## Specialized task models
+@@ -222,3 +234,3 @@ For information about model deprecations, visit the Gemini deprecations page.
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-09-17 UTC.
++Last updated 2026-09-24 UTC.

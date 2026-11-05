@@ -1,0 +1,70 @@
+{
+ "anthropic/api-pricing": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "f7c8e66c649886e817de468f739ade08f194483549ad37170a4626834561a136"
+ },
+ "anthropic/api-release-notes": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "a5a468b97c24f8f05761a277f23a7a5e4a0938f552bd088f5211a247d333bc90"
+ },
+ "anthropic/model-deprecations": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "a36cc2b8af503b38003e6472aa69492d20a1cd5185d40cb8b7973e2a7794546e"
+ },
+ "anthropic/pricing": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "e5ae914cbba5a45e744456dfc75486fcf343d1f8c2bb34d8fd74cbb00dc907df"
+ },
+ "anthropic/rate-limits": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "787f30755cc6701c379de80507b8bf4bc7a582fe2693b75281cbabe620b40af5"
+ },
+ "deepseek/api-pricing": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "31a6be2276383acdfe91684fa1c87bcd5e72cd822f832b09ed17a816e70b4f7a"
+ },
+ "deepseek/news": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "06844f018d7d177a5bc1d662f9ec3ca208746ad536177361971b01ae175fc032"
+ },
+ "deepseek/rate-limit": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "d9f2233ee830ca796840f02a724348f631acdc1aa196cac0d6d300c9f9fbebaf"
+ },
+ "github-copilot/plans": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "a0ca532a07a07cc76abbf9ee7320adb84f7df14ee3d324237c4f013c62af2eaf"
+ },
+ "github-copilot/premium-requests": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "88fac93fc97599720aa78590f11e6e49e4e1c7fbffbb0c48a0b17fcd9f037b03"
+ },
+ "mistral/changelog": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "ca820b9c102edc6302a82465bcbb1c881d56b81025729e3825d34f8216d9d38b"
+ },
+ "mistral/models": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "82b6bf1ca86c4904f5dd2ef384f5d3a45f141beadfc026a9d553a369e1f64184"
+ },
+ "openai/api-pricing": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "b813c9411921fd42c72846eec0994d4b685672c612fdfc396aa2b565d1e9b739"
+ },
+ "openai/rate-limits": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "0baeac276979963916a472d1931a254b7ccac584c97b4b437897b0d1a8158208"
+ },
+ "perplexity/api-pricing": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "33719c534116acdeb0c2679aa0be0f7ec7148f0aada67b3e0efe0d592bb89f0a"
+ },
+ "perplexity/rate-limits": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "e3cfdb5ce7cc989b9fecb777302d8271168f6dcf6c2ab83852f9edbf59adaf1b"
+ },
+ "xai/privacy": {
+  "first_seen": "2026-11-05T18:17:17+00:00",
+  "sha256": "e72c104aa8f8efd4e5f211a658207cdd00660d26f3e57ad5973d4ea80205f063"
+ }
+}

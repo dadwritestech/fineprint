@@ -1,0 +1,38 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index 99c8023..adbd021 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,8 @@
+ This page documents updates to the Gemini API.
+ 
++## June 24, 2026
++
++- Computer Use: Launched public preview support for the Computer Use tool in Gemini 3.5 Flash. This release includes simplified actions with intents, built-in support for browser, mobile, and desktop environments, configurable safety policies, and advanced prompt injection detection.
++
+ ## June 17, 2026
+ 
+@@ -23,4 +27,5 @@ This page documents updates to the Gemini API.
+     - `veo-3.0-fast-generate-001`
+     Update your integration to either use the Veo 3.1 preview model IDs (`veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid service interruptions.
++- Deprecation announcement: The experimental GMP Contextual View tool (a fixed interface for Grounding with Google Maps outputs) will shut down on June 15, 2026:
+ 
+ ## June 1, 2026
+@@ -202,5 +207,5 @@ This page documents updates to the Gemini API.
+ ## December 19, 2025
+ 
+-- Introduced a breaking change to the Interactions API public preview in v1beta. The `total_reasoning_tokens` field has been renamed to `total_thought_tokens` to better align with the concept of "thoughts" in thinking models.
++- Introduced a breaking change to the Interactions API in v1beta. The `total_reasoning_tokens` field has been renamed to `total_thought_tokens` to better align with the concept of "thoughts" in thinking models.
+ 
+ ## December 17, 2025
+@@ -216,5 +221,5 @@ This page documents updates to the Gemini API.
+ ## December 11, 2025
+ 
+-- Launched the Interactions API in Beta. This API provides a unified interface for interacting with Gemini models and agents. To learn more, see the Interactions API guide.
++- Launched the Interactions API. This API provides a unified interface for interacting with Gemini models and agents. To learn more, see the Interactions API guide.
+ - Launched the Gemini Deep Research Agent in preview. It can autonomously plan, execute, and synthesize results for multi-step research tasks. See the Deep Research guide for details.
+ 
+@@ -801,3 +806,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-06-17 UTC.
++Last updated 2026-06-24 UTC.

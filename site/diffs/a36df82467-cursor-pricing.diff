@@ -1,0 +1,128 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index 37aab02..e165603 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -5,6 +5,4 @@
+ MonthlyYearly
+ 
+-## Individual Plans
+-
+ ### Hobby
+ 
+@@ -19,9 +17,11 @@ Includes:
+ Download
+ 
+-### Pro
++### Individual
+ 
+ $20 / mo.
+ 
+-Everything in Hobby, plus:
++ProPro+Ultra
++
++Everything on Hobby, plus:
+ 
+ - ✓ Extended limits on Agent
+@@ -29,44 +29,21 @@ Everything in Hobby, plus:
+ - ✓ MCPs, skills, and hooks
+ - ✓ Cloud agents
++- ✓ Bugbot on usage-based billing
+ 
+ Get Pro
+ 
+-### Pro+
+-
+-Recommended
+-
+-$60 / mo.
+-
+-Everything in Pro, plus:
+-
+-- ✓ 3x usage on all OpenAI, Claude, Gemini models
+-
+-Get Pro+
+-
+-### Ultra
+-
+-$200 / mo.
+-
+-Everything in Pro, plus:
+-
+-- ✓ 20x usage on all OpenAI, Claude, Gemini models
+-- ✓ Priority access to new features
+-
+-Get Ultra
+-
+-## Business Plans
+-
+ ### Teams
+ 
+ $40 / user / mo.
+ 
+-Everything in Pro, plus:
++Everything on Individual, plus:
+ 
+-- ✓ Shared chats, commands, and rules
++- ✓ Cloud agents with shared team context
++- ✓ Team-wide rules, skills, and automations
++- ✓ Security review agent
++- ✓ SAML/OIDC SSO + enforced team-level privacy mode
++- ✓ Team plugin marketplace
++- ✓ Usage analytics
+ - ✓ Centralized team billing
+-- ✓ Usage analytics and reporting
+-- ✓ Org-wide privacy mode controls
+-- ✓ Role-based access control
+-- ✓ SAML/OIDC SSO
+ 
+ Get Teams
+@@ -84,4 +61,5 @@ Everything in Teams, plus:
+ - ✓ Granular admin and model controls
+ - ✓ Priority support and account management
++- ✓ Bugbot on custom plan
+ 
+ Contact Sales
+@@ -89,43 +67,4 @@ Contact Sales
+ ## Trusted every day by teams that build world-class software.
+ 
+-## Bugbot
+-
+-### Pro
+-
+-$40 / user / mo.
+-
+-Includes:
+-
+-- ✓ 14 day individual trial
+-- ✓ Reviews on up to 200 PRs/mo
+-- ✓ Access to Bugbot rules
+-
+-Get Bugbot Pro
+-
+-### Teams
+-
+-$40 / user / mo.
+-
+-Everything in Pro, plus:
+-
+-- ✓ 14-day team trial
+-- ✓ Code reviews on all PRs
+-- ✓ Analytics and reporting dashboard
+-- ✓ Advanced rules and settings
+-
+-Get Bugbot Teams
+-
+-### Enterprise
+-
+-Custom
+-
+-Includes:
+-
+-- ✓ 30-day org-wide trial
+-- ✓ Advanced analytics and reporting
+-- ✓ Priority support and account management
+-
+-Contact Sales
+-
+ ## Questions & Answers
+ 

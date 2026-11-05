@@ -1,0 +1,11 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 5afc328..b22c1d6 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -13,5 +13,5 @@ Create API key
+ New
+ 
+-Strong agentic tool calling with minimal hallucinations. Supports non-reasoning mode.
++Agentic tool calling, minimal hallucinations, non-reasoning mode.
+ 
+ Context1 million tokens

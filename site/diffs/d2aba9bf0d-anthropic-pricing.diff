@@ -1,0 +1,120 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 28f5a3b..f2c991c 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -1,5 +1,5 @@
+ <!-- fineprint snapshot: anthropic/pricing | source: https://claude.com/pricing -->
+ 
+-Pricing
++# Pricing
+ 
+ ### Free
+@@ -81,4 +81,6 @@ Max 20x
+ #### Claude Design
+ 
++#### @Claude
++
+ #### Ability to search the web
+ 
+@@ -113,6 +115,4 @@ Max 20x
+ #### Claude for Chrome
+ 
+-#### Claude for Slack
+-
+ #### Claude for Microsoft 365
+ 
+@@ -179,12 +179,4 @@ n/a
+ #### Fable
+ 
+-Promo
+-
+-Promo
+-
+-Promo
+-
+-Promo
+-
+ #### Opus
+ 
+@@ -231,5 +223,5 @@ Per seat / month if billed annually. $125 if billed monthly.
+ - Includes Claude Code and Claude Cowork
+ - Includes Claude Design
+-- Connect Microsoft 365, Slack, and more
++- Connect Microsoft 365, @Claude, and more
+ - Enterprise search across your organization
+ - Central billing and administration
+@@ -303,4 +295,8 @@ Enterprise (sales-assisted)
+ #### Claude Cowork
+ 
++#### Claude Design
++
++#### @Claude
++
+ #### Claude Security
+ 
+@@ -335,12 +331,10 @@ Enterprise (sales-assisted)
+ #### Enterprise search
+ 
++#### Claude for Chrome
++
+ #### Claude for Microsoft 365
+ 
+ #### Claude for Microsoft Outlook
+ 
+-#### Claude for Chrome
+-
+-#### Claude for Slack
+-
+ ### Security and administration
+ 
+@@ -417,6 +411,4 @@ Annual
+ #### Fable
+ 
+-Promo
+-
+ #### Opus
+ 
+@@ -699,43 +691,3 @@ Read
+ $1.50 / MTok
+ 
+-### Sonnet 4
+-
+-Input
+-
+-$3 / MTok
+-
+-Output
+-
+-$15 / MTok
+-
+-Prompt caching
+-
+-Write
+-
+-$3.75 / MTok
+-
+-Read
+-
+-$0.30 / MTok
+-
+-### Opus 4
+-
+-Input
+-
+-$15 / MTok
+-
+-Output
+-
+-$75 / MTok
+-
+-Prompt caching
+-
+-Write
+-
+-$18.75 / MTok
+-
+-Read
+-
+-$1.50 / MTok
+-
+ Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.

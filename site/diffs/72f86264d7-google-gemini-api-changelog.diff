@@ -1,0 +1,33 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index bbbc467..99c8023 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,23 @@
+ This page documents updates to the Gemini API.
+ 
++## June 17, 2026
++
++- Streaming support for speech generation: Streaming via `streamGenerateContent` (and `stream: true` in the Interactions API) is now supported for the `gemini-3.1-flash-tts-preview` model. To learn more, see the Text-to-Speech guide.
++
++## June 15, 2026
++
++- Deprecation announcement: The following image generation models are being deprecated and will be shut down on August 17, 2026:
++  - Imagen 4 and Gemini 3 Image models:
++    - `imagen-4.0-generate-001`
++    - `imagen-4.0-ultra-generate-001`
++    - `imagen-4.0-fast-generate-001`
++    To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page.
++- Deprecation announcement: The following video generation models are being deprecated and will be shut down on June 30, 2026:
++  - Veo models:
++    - `veo-2.0-generate-001`
++    - `veo-3.0-generate-001`
++    - `veo-3.0-fast-generate-001`
++    Update your integration to either use the Veo 3.1 preview model IDs (`veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid service interruptions.
++
+ ## June 1, 2026
+ 
+@@ -782,3 +801,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-06-01 UTC.
++Last updated 2026-06-17 UTC.

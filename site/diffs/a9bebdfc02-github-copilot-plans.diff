@@ -1,0 +1,11 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 6a9dee4..345bea4 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -381,5 +381,5 @@ Pro+
+ Max
+ 
+-Copilot CLI (preview)
++Copilot CLI
+ 
+ Use Copilot from your terminal

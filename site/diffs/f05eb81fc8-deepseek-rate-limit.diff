@@ -1,0 +1,32 @@
+diff --git a/snapshots/deepseek/rate-limit.md b/snapshots/deepseek/rate-limit.md
+index a3b5d42..2a4b0ed 100644
+--- a/snapshots/deepseek/rate-limit.md
++++ b/snapshots/deepseek/rate-limit.md
+@@ -30,5 +30,5 @@ HTTP request body:
+ 
+ ```
+-{    "model": "deepseek-flash",    "messages": {"role": "user", "content": "Hello!"},    "user_id": "your_user_id"}
++{    "model": "deepseek-flash",    "messages": [{"role": "user", "content": "Hello!"}],    "user_id": "your_user_id"}
+ ```
+ 
+@@ -36,5 +36,5 @@ If you are using the OpenAI SDK, you need to place the `user_id` parameter under
+ 
+ ```
+-response = client.chat.completions.create(    model="deepseek-flash",    messages=[{"role": "user", "content": "Hello!"}],    extra_body={"user_id": "your_user_id"})
++response = client.chat.completions.create(    model="deepseek-flash",    messages=[{"role": "user", "content": "Hello!"}],    extra_body={"user_id": "your_user_id"},)
+ ```
+ 
+@@ -42,5 +42,5 @@ HTTP request body:
+ 
+ ```
+-{    "model": "deepseek-flash",    "messages": {"role": "user", "content": "Hello!"},    "metadata": {"user_id": "your_user_id"},    "max_tokens": 1024}
++{    "model": "deepseek-flash",    "messages": [{"role": "user", "content": "Hello!"}],    "metadata": {"user_id": "your_user_id"},    "max_tokens": 1024}
+ ```
+ 
+@@ -48,5 +48,5 @@ If you are using the Anthropic SDK, the calling method is as follows:
+ 
+ ```
+-message = client.messages.create(    model="deepseek-flash",    messages=[{"role": "user", "type": "text", "content": "Hello!"}],    metadata={"user_id": "your_user_id"},    max_tokens=1024)
++message = client.messages.create(    model="deepseek-flash",    messages=[{"role": "user", "type": "text", "content": "Hello!"}],    metadata={"user_id": "your_user_id"},    max_tokens=1024,)
+ ```
+ 

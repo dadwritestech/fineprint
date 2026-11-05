@@ -1,0 +1,25 @@
+diff --git a/snapshots/groq/rate-limits.md b/snapshots/groq/rate-limits.md
+index d9c9262..2900832 100644
+--- a/snapshots/groq/rate-limits.md
++++ b/snapshots/groq/rate-limits.md
+@@ -35,7 +35,6 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
+ |---|---|---|---|---|---|---|
+ 
+-| allam-2-7b | 30 | 7K | 6K | 500K | - | - |
+-|---|---|---|---|---|---|---|
+ | canopylabs/orpheus-arabic-saudi | 10 | 100 | 1.2K | 3.6K | - | - |
++|---|---|---|---|---|---|---|
+ | canopylabs/orpheus-v1-english | 10 | 100 | 1.2K | 3.6K | - | - |
+ | groq/compound | 30 | 250 | 70K | - | - | - |
+@@ -43,5 +42,4 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
+ | llama-3.1-8b-instant | 30 | 14.4K | 6K | 500K | - | - |
+ | llama-3.3-70b-versatile | 30 | 1K | 12K | 100K | - | - |
+-| meta-llama/llama-4-scout-17b-16e-instruct | 30 | 1K | 30K | 500K | - | - |
+ | meta-llama/llama-prompt-guard-2-22m | 30 | 14.4K | 15K | 500K | - | - |
+ | meta-llama/llama-prompt-guard-2-86m | 30 | 14.4K | 15K | 500K | - | - |
+@@ -49,5 +47,4 @@ Need higher rate limits? Upgrade to Developer plan to access higher limits, Batc
+ | openai/gpt-oss-20b | 30 | 1K | 8K | 200K | - | - |
+ | openai/gpt-oss-safeguard-20b | 30 | 1K | 8K | 200K | - | - |
+-| qwen/qwen3-32b | 60 | 1K | 6K | 500K | - | - |
+ | qwen/qwen3.6-27b | 30 | 1K | 8K | 200K | - | - |
+ | whisper-large-v3 | 20 | 2K | - | - | 7.2K | 28.8K |

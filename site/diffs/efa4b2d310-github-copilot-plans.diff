@@ -1,0 +1,33 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index eb7d66d..cfd5090 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -421,8 +421,9 @@ Models in Copilot
+ Available models
+ 
+-Agent mode, code review, coding agent, Copilot CLI, and Copilot Chat use premium requests, with usage varying by model. Model options may vary by feature. Learn more about premium requests
++Agent mode, code review, coding agent, Copilot CLI, and Copilot Chat use AI Credits, with usage varying by model. Model options may vary by feature. Learn more about AI Credits
+ 
+ Free
+ 
++- Anthropic Claude Fable 5
+ - Anthropic Claude Haiku 4.5
+ - Anthropic Claude Sonnet 4
+@@ -449,4 +450,5 @@ Free
+ Pro
+ 
++- Anthropic Claude Fable 5
+ - Anthropic Claude Haiku 4.5
+ - Anthropic Claude Sonnet 4
+@@ -473,4 +475,5 @@ Pro
+ Pro+
+ 
++- Anthropic Claude Fable 5
+ - Anthropic Claude Haiku 4.5
+ - Anthropic Claude Sonnet 4
+@@ -497,4 +500,5 @@ Pro+
+ Max
+ 
++- Anthropic Claude Fable 5
+ - Anthropic Claude Haiku 4.5
+ - Anthropic Claude Sonnet 4

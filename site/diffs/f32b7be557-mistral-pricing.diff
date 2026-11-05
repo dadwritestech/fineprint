@@ -1,0 +1,647 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index a4cadd7..764888e 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -91,5 +91,5 @@ Start now
+ |  | Free        Start now | Pro        Start now | Team        Start now | Enterprise        Contact us |
+ |---|---|---|---|---|
+-| Interfaces |  |  |  |  |
++| Interfaces. |  |  |  |  |
+ | Vibe on web     Vibe in your browser: run long-horizon work and code tasks from a chat interface. |  |  |  |  |
+ | Vibe CLI     Terminal-native coding agent powered by Devstral for autonomous software engineering tasks. |  |  |  |  |
+@@ -156,19 +156,19 @@ Yes, the Mistral Enterprise plan includes custom SLAs, dedicated support, and pr
+ Our most powerful models and APIs.
+ 
+-Open
+-
+ Mistral Medium 3.5
+ 
++Open
++
+ Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
+ 
+ Text-to-text
+ 
+-Agentic
+-
+-Multimodal
++Reasoning
+ 
+ Coding
+ 
+-Reasoning
++Agentic
++
++Multimodal
+ 
+ Input (/M tokens)
+@@ -180,10 +180,10 @@ Output (/M tokens)
+ $7.5
+ 
+-Learn more
+-
+-Open
++mistral-medium-latest
+ 
+ Voxtral TTS
+ 
++Open
++
+ State-of-the-art text-to-speech generation and voice cloning.
+ 
+@@ -194,8 +194,14 @@ Audio generation
+ $0.016 per 1k characters
+ 
+-Premier
++Available on
++
++`/v1/audio/speech`
++
++voxtral-mini-tts-latest
+ 
+ OCR 3
+ 
++Premier
++
+ The world's best document extraction and understanding model.
+ 
+@@ -212,5 +218,5 @@ $2 / 1000 pages
+ Annotations
+ 
+-$3 / 1,000 pages
++$3 / 1000 pages
+ 
+ mistral-ocr-latest
+@@ -228,15 +234,15 @@ Cutting-edge AI models across text, reasoning, vision, and more—ready to integ
+ Capabilities
+ 
+-33 results
++32 results
+ 
+ - Text-to-text
+-- Multimodal
+-- Agentic
+-- Coding
+ - Reasoning
+-- OCR
++- Coding
++- Agentic
++- Multimodal
+ - Lightweight
+-- Transcription
++- OCR
+ - Voice
++- Transcription
+ - Classifier APIs
+ - Embedding
+@@ -249,29 +255,35 @@ Licenses
+ - Labs
+ 
+-Open
++Mistral Medium 3.5
+ 
+-Mistral Large 3
++Open
+ 
+-Open-weight, general-purpose, flagship multimodal and multilingual model.
++Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
+ 
+ Text-to-text
+ 
++Reasoning
++
++Coding
++
++Agentic
++
+ Multimodal
+ 
+ Input (/M tokens)
+ 
+-$0.5
++$1.5
+ 
+ Output (/M tokens)
+ 
+-$1.5
++$7.5
+ 
+-mistral-large-latest
++mistral-medium-latest
+ 
+-Open
++Mistral Small 4
+ 
+-Mistral Medium 3.5
++Open
+ 
+-Our flagship model that merges instruction-following, reasoning, and coding into a single 128B dense model. Released as open weights, under a modified MIT license.
++SOTA. Multimodal. Multilingual. Apache 2.0.
+ 
+ Text-to-text
+@@ -281,22 +293,20 @@ Agentic
+ Multimodal
+ 
+-Coding
+-
+-Reasoning
++Lightweight
+ 
+ Input (/M tokens)
+ 
+-$1.5
++$0.1
+ 
+ Output (/M tokens)
+ 
+-$7.5
+-
+-Learn more
++$0.3
+ 
+-Premier
++mistral-small-latest
+ 
+ OCR 3
+ 
++Premier
++
+ The world's best document extraction and understanding model.
+ 
+@@ -313,116 +323,144 @@ $2 / 1000 pages
+ Annotations
+ 
+-$3 / 1,000 pages
++$3 / 1000 pages
+ 
+ mistral-ocr-latest
+ 
+-Open
+-
+-Devstral 2
+-
+-Open-weights agentic coding model for autonomous software engineering.
++Mistral Large 3
+ 
+-Coding
++Open
+ 
+-Agentic
++Open-weight, general-purpose, flagship multimodal and multilingual model.
+ 
+ Text-to-text
+ 
++Multimodal
++
+ Input (/M tokens)
+ 
+-$0.4
++$0.5
+ 
+ Output (/M tokens)
+ 
+-$2
++$1.5
+ 
+-devstral-medium-latest
++mistral-large-latest
+ 
+-Labs
++Voxtral TTS
+ 
+-Devstral Small 2
++Open
+ 
+-The best lightweight, open model for coding agents.
++State-of-the-art text-to-speech generation and voice cloning.
+ 
+-Coding
++Voice
+ 
+-Agentic
++Audio generation
+ 
+-Text-to-text
++$0.016 per 1k characters
++
++Available on
++
++`/v1/audio/speech`
++
++voxtral-mini-tts-latest
++
++Voxtral Mini Transcribe 2
++
++Premier
++
++State-of-the-art transcription model
++
++Transcription
+ 
+ Lightweight
+ 
+-Multimodal
++Audio Input/min
+ 
+-Input (/M tokens)
++$0.003
+ 
+-$0.1
++Available on
+ 
+-Output (/M tokens)
++`/v1/audio/transcriptions`
+ 
+-$0.3
++voxtral-mini-latest
+ 
+-devstral-small-latest
++Voxtral Mini Transcribe Realtime
+ 
+-Premier
++Open
+ 
+-Codestral
++Open model fine-tuned and optimized for transcription.
+ 
+-Low-latency coding model optimized for high-frequency completion, fill-in-the-middle, and code generation tasks.
++Audio Input/min
+ 
+-Coding
++$0.006
+ 
+-Text-to-text
++Available on
+ 
+-Input (/M tokens)
++`/v1/audio/transcriptions`
+ 
+-$0.3
++voxtral-mini-transcribe-realtime-2602
+ 
+-Output (/M tokens)
++Voxtral Small
+ 
+-$0.9
++Open
+ 
+-Training Cost (/M tokens)
++State-of-the-art performance on speech and audio understanding.
+ 
+-$3
++Transcription
+ 
+-Storage Cost
++Text-to-text
+ 
+-Input (/M tokens)
++Input (per min / per M tok)
+ 
+-$0.2
++$0.004 (audio) / $0.1 (text)
+ 
+ Output (/M tokens)
+ 
+-$0.6
++$0.4
+ 
+-codestral-latest
++Available on
+ 
+-Labs
++`/v1/chat/completions`
+ 
+-Leanstral
++voxtral-small-latest
+ 
+-First open-source code agent for Lean 4.
++Devstral 2
++
++Open
++
++Open-weights agentic coding model for autonomous software engineering.
+ 
+ Coding
+ 
+-API endpoint
++Agentic
+ 
+-labs-leanstral-2603
++Text-to-text
+ 
+-Open
++Input (/M tokens)
+ 
+-Mistral Small 4
++$0.4
+ 
+-SOTA. Multimodal. Multilingual. Apache 2.0.
++Output (/M tokens)
+ 
+-Text-to-text
++$2
++
++devstral-medium-latest
++
++Devstral Small 2
++
++Labs
++
++The best lightweight, open model for coding agents.
++
++Coding
+ 
+ Agentic
+ 
+-Multimodal
++Text-to-text
+ 
+ Lightweight
+ 
++Multimodal
++
+ Input (/M tokens)
+ 
+@@ -433,32 +471,44 @@ Output (/M tokens)
+ $0.3
+ 
+-mistral-small-latest
+-
+-Labs
++devstral-small-latest
+ 
+-Mistral Small Creative
++Codestral
+ 
+-A fine-tuned small model for creative writing, roleplay, and chat—trained on curated data.
++Premier
+ 
+-Text-to-text
++Low-latency coding model optimized for high-frequency completion, fill-in-the-middle, and code generation tasks.
+ 
+-Multimodal
++Coding
+ 
+-Lightweight
++Text-to-text
+ 
+ Input (/M tokens)
+ 
+-$0.1
++$0.3
+ 
+ Output (/M tokens)
+ 
+-$0.3
++$0.9
+ 
+-labs-mistral-small-creative
++codestral-latest
+ 
+-Premier
++Leanstral
++
++Labs
++
++First open-source code agent for Lean 4.
++
++Coding
++
++API endpoint
++
++Free
++
++labs-leanstral-2603
+ 
+ Magistral Medium
+ 
++Premier
++
+ Thinking model excelling in domain-specific, transparent, and multilingual reasoning.
+ 
+@@ -479,8 +529,8 @@ $5
+ magistral-medium-latest
+ 
+-Premier
+-
+ Magistral Small
+ 
++Premier
++
+ Thinking model excelling in domain-specific, transparent, and multilingual reasoning.
+ 
+@@ -503,8 +553,8 @@ $1.5
+ magistral-small-latest
+ 
+-Open
+-
+ Ministral 3 - 3B
+ 
++Open
++
+ Best-in-class frontier AI to the edge.
+ 
+@@ -525,8 +575,8 @@ $0.1
+ ministral-3b-latest
+ 
+-Open
+-
+ Ministral 3 - 8B
+ 
++Open
++
+ Best-in-class frontier AI to the edge.
+ 
+@@ -547,8 +597,8 @@ $0.15
+ ministral-8b-latest
+ 
+-Open
+-
+ Ministral 3 - 14B
+ 
++Open
++
+ Best-in-class frontier AI to the edge.
+ 
+@@ -569,78 +619,4 @@ $0.2
+ ministral-14b-latest
+ 
+-Open
+-
+-Voxtral Small
+-
+-State-of-the-art performance on speech and audio understanding.
+-
+-Transcription
+-
+-Text-to-text
+-
+-Input (per min / per M tok)
+-
+-$0.004 (audio) / $0.1 (text)
+-
+-Output (/M tokens)
+-
+-$0.4
+-
+-Available on
+-
+-voxtral-small-latest
+-
+-Open
+-
+-Voxtral Mini
+-
+-Low-latency speech recognition for edge and devices.
+-
+-Voice
+-
+-Text-to-text
+-
+-Lightweight
+-
+-Input (per min / per M tok)
+-
+-$0.001 (audio) / $0.04 (text)
+-
+-Output (/M tokens)
+-
+-$0.04
+-
+-Available on
+-
+-voxtral-mini-latest
+-
+-Premier
+-
+-Voxtral Mini Transcribe
+-
+-State-of-the-art transcription model.
+-
+-Voice
+-
+-Text-to-text
+-
+-Price
+-
+-$0.002 per min
+-
+-voxtral-mini-latest
+-
+-Open
+-
+-Voxtral TTS
+-
+-State-of-the-art text-to-speech generation and voice cloning.
+-
+-Voice
+-
+-Audio generation
+-
+-$0.016 per 1k characters
+-
+ Classifier API model 3B
+ 
+@@ -703,8 +679,8 @@ $0.1
+ mistral-moderation-2603
+ 
+-Premier
+-
+ Codestral Embed
+ 
++Premier
++
+ State-of-the-art embeddings for code and natural language queries.
+ 
+@@ -741,5 +717,5 @@ Tools
+ Price
+ 
+-Agent API
++Model cost per M token + tool call
+ 
+ Libraries
+@@ -771,6 +747,4 @@ Price (per 1K calls)
+ $30
+ 
+-Code execution
+-
+ Web search
+ 
+@@ -783,6 +757,4 @@ Price (per 1K calls)
+ $30
+ 
+-Web search
+-
+ Images
+ 
+@@ -795,6 +767,4 @@ Price (per 1K images)
+ $100
+ 
+-Images
+-
+ Premium news
+ 
+@@ -807,6 +777,4 @@ Price (per 1K calls)
+ $50
+ 
+-Premium news
+-
+ Data capture
+ 
+@@ -819,10 +787,8 @@ Price (per M tokens)
+ $0.04
+ 
+-Data capture
++Mistral NeMo
+ 
+ Open
+ 
+-Mistral NeMo
+-
+ State-of-the-art Mistral model trained specifically for code tasks.
+ 
+@@ -839,24 +805,10 @@ Output (/M tokens)
+ $0.15
+ 
+-Training Cost (/M tokens)
+-
+-$1
+-
+-Storage Cost
+-
+-Input (/M tokens)
+-
+-$0.15
+-
+-Output (/M tokens)
+-
+-$0.15
+-
+ open-mistral-nemo
+ 
+-Open
+-
+ Mixtral 8x7B
+ 
++Open
++
+ A 7B sparse Mixture-of-Experts (SMoE). Uses 12.9B active parameters out of 45B total.
+ 
+@@ -875,8 +827,8 @@ $0.7
+ open-mixtral-8x7b
+ 
+-Open
+-
+ Mixtral 8x22B
+ 
++Open
++
+ Mixtral 8x22B is currently the most performant open model. A performant, 22B sparse Mixture-of-Experts (SMoE). Uses only 39B active parameters out of 141B.
+ 
+@@ -899,6 +851,4 @@ Our sales experts are here to provide all the details you need. Fill out the for
+ Thank you for your submission.
+ 
+-France
+-
+ Build your own AI future.
+ 

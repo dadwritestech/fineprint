@@ -1,0 +1,13 @@
+diff --git a/snapshots/openai/usage-policies.md b/snapshots/openai/usage-policies.md
+index aacb3c1..8cf640d 100644
+--- a/snapshots/openai/usage-policies.md
++++ b/snapshots/openai/usage-policies.md
+@@ -1,8 +1,4 @@
+ <!-- fineprint snapshot: openai/usage-policies | source: https://openai.com/policies/usage-policies/ -->
+ 
+-Effective: October 29, 2025
+-
+-# Usage policies
+-
+ We aim for our tools to be used safely and responsibly, while maximizing your control over how you use them. In building our Usage Policies, we keep a few important things in mind.
+ 

@@ -1,0 +1,45 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index 650393d..406bd14 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,19 @@
+ This page documents updates to the Gemini API.
+ 
++## October 13, 2026
++
++- Gemini 4 Argon (`gemini-4-argon`) generally available (GA): Released Gemini 4 Argon (`gemini-4-argon`), our most capable model built for complex coding, agentic, math, and science tasks.
++  For API changes, pricing, and migration guidance, see What's new in Gemini 4 Argon.
++
++## October 8, 2026
++
++- Gemini 3.7 Flash deprecation: `gemini-3.7-flash` is deprecated and has been replaced by `gemini-3.8-flash`. It is no longer available to select in Google AI Studio, and API requests to `gemini-3.7-flash` are automatically routed to `gemini-3.8-flash`. Update your model string to `gemini-3.8-flash` and review the Gemini 3.8 Flash guide.
++- Gemini 3.5 Flash deprecation: `gemini-3.5-flash` is deprecated and has been replaced by `gemini-3.6-flash`. It is no longer available to select in Google AI Studio, and API requests to `gemini-3.5-flash` are automatically routed to `gemini-3.6-flash`. Update your model string to `gemini-3.6-flash` (or `gemini-3.8-flash`) and review the Gemini 3.6 Flash guide.
++- Deep Research Agent `deep-research-pro-preview-12-2025` deprecation: The `deep-research-pro-preview-12-2025` agent is deprecated and will be shut down on October 23, 2026.
++  Migrate your requests to one of the newer Deep Research agent versions:
++  - `deep-research-preview-04-2026`: Designed for speed and efficiency, ideal to be streamed back to a client UI.
++  - `deep-research-max-preview-04-2026`: Maximum comprehensiveness for automated context gathering and synthesis.
++  To migrate, update the `agent` parameter in your `interactions.create` requests from `deep-research-pro-preview-12-2025` to `deep-research-preview-04-2026` (or `deep-research-max-preview-04-2026`).
++
+ ## October 6, 2026
+ 
+@@ -55,5 +70,5 @@ This page documents updates to the Gemini API.
+ 
+ - Gemini 3.8 Flash generally available (GA): Released `gemini-3.8-flash`, our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.
+-  To get started, see the Gemini 3.8 Flash model page and the Latest model guide.
++  To get started, see the Gemini 3.8 Flash model page and the Gemini 3.8 Flash guide.
+ 
+ ## September 1, 2026
+@@ -97,6 +112,6 @@ This page documents updates to the Gemini API.
+   - Gemini 3.6 Flash (`gemini-3.6-flash`): Features improved token efficiency and code/agentic planning capabilities at a lower price point than 3.5 Flash, resolving developer feedback around output verbosity.
+   - Gemini 3.5 Flash-Lite (`gemini-3.5-flash-lite`): Offers a low-latency, highly cost-effective subagent option designed for high-volume automation.
+-  To learn more, see the Latest Gemini model guide.
+-- Deprecated parameters: The sampling parameters `temperature`, `top_p` and `top_k` are now deprecated. See the Latest Gemini Model for details.
++  To learn more, see the Gemini 3.6 Flash guide.
++- Deprecated parameters: The sampling parameters `temperature`, `top_p` and `top_k` are now deprecated. See the Gemini 3.6 Flash guide for details.
+ 
+ ## July 6, 2026
+@@ -909,3 +924,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-10-07 UTC.
++Last updated 2026-10-14 UTC.

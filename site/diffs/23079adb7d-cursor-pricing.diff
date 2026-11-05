@@ -1,0 +1,11 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index 71eb92e..f4387f0 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -37,4 +37,6 @@ Get Pro
+ $40 / user / mo.
+ 
++StandardPremium
++
+ Everything on Individual, plus:
+ 

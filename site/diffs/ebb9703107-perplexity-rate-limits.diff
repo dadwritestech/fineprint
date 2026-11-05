@@ -1,0 +1,20 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index f12100f..50cd845 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -28,5 +28,5 @@ Requests rejected with a `429` are not billed.
+ ## Agent API Rate Limits
+ 
+-The Agent API uses tier-based rate limits that scale with your usage tier:
++The Agent API applies two independent limits to each request: the API-wide QPS limit and the Agent model's requests-per-minute (RPM) limit. A request must be within both limits. The RPM value is not derived from the QPS value.
+ 
+ | Tier | QPS (Queries per Second) | Requests per Minute |
+@@ -36,6 +36,6 @@ The Agent API uses tier-based rate limits that scale with your usage tier:
+ | Tier 2 | 8 QPS | 500/min |
+ | Tier 3 | 17 QPS | 1,000/min |
+-| Tier 4 | 33 QPS | 2,000/min |
+-| Tier 5 | 33 QPS | 2,000/min |
++| Tier 4 | 33 QPS | 4,000/min |
++| Tier 5 | 33 QPS | 8,000/min |
+ 
+ ## Search API Rate Limits

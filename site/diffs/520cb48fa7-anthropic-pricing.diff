@@ -1,0 +1,30 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 67f1961..28f5a3b 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -35,4 +35,5 @@ Everything in Free, plus:
+ - Includes Claude Code
+ - Includes Claude Cowork
++- Includes Claude Design
+ - Access to unlimited projects to organize chats and documents
+ - Access to Research
+@@ -78,4 +79,6 @@ Max 20x
+ #### Claude Cowork
+ 
++#### Claude Design
++
+ #### Ability to search the web
+ 
+@@ -227,4 +230,5 @@ Per seat / month if billed annually. $125 if billed monthly.
+ 
+ - Includes Claude Code and Claude Cowork
++- Includes Claude Design
+ - Connect Microsoft 365, Slack, and more
+ - Enterprise search across your organization
+@@ -451,4 +455,6 @@ Batch processing
+ Next generation intelligence for long-running agents
+ 
++Claude Fable 5 is unavailable. Learn more
++
+ Input
+ 

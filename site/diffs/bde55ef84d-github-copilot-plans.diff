@@ -1,0 +1,28 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index ea43aef..37e71fb 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -451,4 +451,5 @@ Free
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
++- Google Gemini 3.6 Flash
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -481,4 +482,5 @@ Pro
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
++- Google Gemini 3.6 Flash
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -511,4 +513,5 @@ Pro+
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
++- Google Gemini 3.6 Flash
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code
+@@ -541,4 +544,5 @@ Max
+ - Google Gemini 3.1 Pro (Preview)
+ - Google Gemini 3.5 Flash
++- Google Gemini 3.6 Flash
+ - Raptor mini (Preview)
+ - Kimi K2.7 Code

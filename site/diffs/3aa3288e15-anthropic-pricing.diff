@@ -1,0 +1,25 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 99d051a..a1d6c19 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -58,4 +58,6 @@ Everything in Pro, plus:
+ Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+ 
++Usage limits apply. Price and plans are subject to change at Anthropic's discretion.
++
+ ## Compare features across plans
+ 
+@@ -180,5 +182,5 @@ n/a
+ #### Haiku
+ 
+-#### Extra usage
++#### Usage credits
+ 
+ #### Priority access at high traffic times
+@@ -254,4 +256,6 @@ Which plan is right for you?
+ Usage limits apply. Prices shown don't include applicable tax. Price and plans are subject to change at Anthropic's discretion.
+ 
++Usage limits apply. Price and plans are subject to change at Anthropic's discretion.
++
+ Education plan
+ 

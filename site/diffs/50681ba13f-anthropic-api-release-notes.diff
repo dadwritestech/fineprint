@@ -1,0 +1,97 @@
+diff --git a/snapshots/anthropic/api-release-notes.md b/snapshots/anthropic/api-release-notes.md
+index bdf8f44..20fcb74 100644
+--- a/snapshots/anthropic/api-release-notes.md
++++ b/snapshots/anthropic/api-release-notes.md
+@@ -5,4 +5,21 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
+ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
+ 
++### June 10, 2026
++
++- The `GET /v1/environments/{id}/work` endpoint, which lists pending work for a self-hosted sandbox, is now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the `GetEnvironment` action that authorizes it.
++
++### June 9, 2026
++
++- We've launched Claude Fable 5 (`claude-fable-5`), our most capable widely released model, alongside Claude Mythos 5 (`claude-mythos-5`) for Project Glasswing participants. Both models support a 1M token context window by default, 128k max output tokens, and always-on adaptive thinking. See Introducing Claude Fable 5 and Claude Mythos 5 for capabilities, API changes, and availability.
++- Claude Fable 5 and Claude Mythos 5 use the tokenizer introduced with Claude Opus 4.7. Compared to models before Claude Opus 4.7, the same text produces roughly 30% more tokens. Use the token counting API with `model: "claude-fable-5"` to measure your prompts under the new tokenizer.
++- Claude Fable 5 runs safety classifiers on requests and during response generation. When a classifier declines a request, the Messages API returns `stop_reason: "refusal"`. You are not billed for a request refused before any output is generated. An opt-in `fallbacks` parameter (in beta on the Claude API and Claude Platform on AWS; not supported on the Message Batches API) re-runs refused requests on another model, billed at the fallback model's rates. See Handling stop reasons.
++- The `stop_details.category` field on refusal responses now includes `"reasoning_extraction"` on Claude Fable 5, returned when a request is blocked under Anthropic's Terms of Service restrictions on reverse engineering or duplicating model outputs. The existing `"cyber"` and `"bio"` categories are unchanged. No beta header is required.
++- On Claude Fable 5 and Claude Mythos 5, adaptive thinking is the only thinking mode: `thinking: {"type": "disabled"}` is not supported, and manual extended thinking budgets and assistant prefill are not supported (both return a 400 error). See Migrating from Claude Mythos Preview to Claude Mythos 5.
++- On Claude Fable 5 and Claude Mythos 5, `thinking.display` defaults to `"omitted"`, the same as Claude Opus 4.8, Claude Opus 4.7, and Claude Mythos Preview; set `display: "summarized"` to receive readable thinking summaries. The raw chain of thought is never returned; pass thinking blocks back unchanged in multi-turn conversations on the same model. See Thinking output on Claude Fable 5 and Claude Mythos 5.
++- Claude Fable 5 requires 30-day data retention on the Claude API and is not available under zero data retention. See Model-specific data retention requirements.
++- Claude Managed Agents now supports scheduled deployments, letting you run sessions on a cron schedule without managing your own scheduler.
++- Claude Managed Agents vaults now support environment variable credentials, so you can securely inject secrets into the agent's sandbox for CLIs, SDKs, and other services that authenticate through environment variables.
++- The `session.thread_*` webhook events now include a `session_thread_id` field identifying the multi-agent thread that triggered the event.
++
+ ### June 5, 2026
+ 
+@@ -16,5 +33,5 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ ### May 29, 2026
+ 
+-- Claude Managed Agents webhooks, multiagent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and the `AnthropicSelfHostedEnvironmentAccess` managed policy.
++- Claude Managed Agents webhooks, multi-agent orchestration, and self-hosted sandboxes are now available on Claude Platform on AWS. See IAM actions for Claude Platform on AWS for the new IAM actions and the `AnthropicSelfHostedEnvironmentAccess` managed policy.
+ 
+ ### May 28, 2026
+@@ -23,18 +40,4 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ - We've launched mid-conversation system messages. On Claude Opus 4.8, you can send `role: "system"` messages after a user turn (subject to placement rules) in the `messages` array, preserving prompt cache hits when instructions change during a long-running session. No beta header is required.
+ - The `stop_details` field on refusal responses is now publicly documented; it returns a `category` (`cyber`, `bio`, or `null`) and a human-readable `explanation`, so your application can route different classes of refusal to the right next step. No beta header is required.
+-- On Claude Opus 4.8, the effort parameter defaults to `high` across all surfaces, including Claude Code and the Messages API.
+-- On Claude Opus 4.8, the minimum cacheable prompt length for prompt caching is 1,024 tokens, lower than on Claude Opus 4.7.
+-- With adaptive thinking enabled, Claude Opus 4.8 triggers reasoning only when a turn needs it, reducing wasted thinking tokens compared to Claude Opus 4.7 at the same effort level.
+-- Claude Opus 4.8 supports high-resolution image input (up to 2576 pixels on the long edge), same as Claude Opus 4.7.
+-- Task budgets now support Claude Opus 4.8.
+-- The advisor tool now supports Claude Opus 4.8.
+-- Computer use now supports Claude Opus 4.8.
+-- Fast mode for Claude Opus 4.8 is available as a research preview on the Claude API only.
+-- Setting the sampling parameters `temperature`, `top_p`, or `top_k` to a non-default value returns a 400 error on Claude Opus 4.8, same as on Claude Opus 4.7. See the migration guide for details.
+-- In Claude Code, we've expanded Auto mode to more users for long-running tasks. See the Claude Code documentation.
+-- In Claude Code, Max plan users now default to fast mode on Claude Opus 4.8. See the Claude Code documentation.
+-- In Claude Code, Workflows are available as a research preview, letting you define and run multi-step agentic plans. See the Claude Code documentation.
+-- We've deprecated fast mode for Claude Opus 4.6, with removal approximately 30 days after launch. Migrate to fast mode for Claude Opus 4.8 or Claude Opus 4.7. Read more in Fast mode.
+-- For updates to claude.ai, Cowork, Claude for Microsoft 365, and other Claude apps in this release, see the release notes for Claude Apps.
+ 
+ ### May 27, 2026
+@@ -44,5 +47,5 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ ### May 19, 2026
+ 
+-- MCP tunnels is now available as a Research Preview, so you can connect to MCP servers in your private network.
++- MCP tunnels is now available as a research preview, so you can connect to MCP servers in your private network.
+ - Self-hosted sandboxes are now available for Claude Managed Agents, as an alternative to running tool execution in Anthropic's infrastructure. See Self-hosted sandboxes.
+ - With Claude Managed Agents, you can now update the agent's MCP server and tool configurations associated with an active session.
+@@ -67,5 +70,5 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ ### May 6, 2026
+ 
+-- Multiagent sessions and Outcomes are now in public beta under the standard `managed-agents-2026-04-01` beta header.
++- Multi-agent sessions and Outcomes are now in public beta under the standard `managed-agents-2026-04-01` beta header.
+ - Claude Managed Agents vault credential background refresh is now supported for `mcp_oauth` credentials. See Authenticate with vaults.
+ - Webhooks for Claude Managed Agents are now supported. Webhook event types include session and vault lifecycle events. See Subscribe to webhooks.
+@@ -104,5 +107,5 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ 
+ - We've launched Claude Managed Agents in public beta, a fully managed agent harness for running Claude as an autonomous agent with secure sandboxing, built-in tools, and server-sent event streaming. Create agents, configure containers, and run sessions through the API. All endpoints require the `managed-agents-2026-04-01` beta header. Learn more in Claude Managed Agents overview.
+-- We've launched the `ant` CLI, a command-line client for the Claude API that enables faster interaction with the Claude API, native integration with Claude Code, and versioning of API resources in YAML files. Learn more in the CLI reference.
++- We've launched the `ant` CLI, a command-line client for the Claude API that enables faster interaction with the Claude API, native integration with Claude Code, and versioning of API resources in YAML files. Learn more in the CLI quickstart.
+ 
+ ### April 7, 2026
+@@ -153,6 +156,7 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ - We've launched the compaction API in beta, providing server-side context summarization for effectively infinite conversations. Available on Opus 4.6.
+ - We've introduced data residency controls, allowing you to specify where model inference runs with the `inference_geo` parameter. US-only inference is available at 1.1x pricing for models released after February 1, 2026.
+-- The 1M token context window is now available in beta for Claude Opus 4.6, in addition to Sonnet 4.5 and Sonnet 4. Long context pricing applies to requests exceeding 200k input tokens.
+-- Fine-grained tool streaming is now generally available on all models and platforms (no beta header required).
++- The 1M token context window is now available in beta for Claude Opus 4.6, in addition to Sonnet 4.5 and Sonnet 4.
++  Long context pricing
++  applies to requests exceeding 200k input tokens.
+ 
+ ### January 29, 2026
+@@ -340,7 +344,4 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+ - We've launched the Code execution tool in public beta, a tool that enables Claude to execute Python code in a secure, sandboxed environment.
+ - We've launched the MCP connector in public beta, a feature that allows you to connect to remote MCP servers directly from the Messages API.
+-- To increase answer quality and decrease tool errors, we've changed the default value for the `top_p` nucleus sampling parameter in the Messages API from 0.999 to 0.99 for all models. To revert this change, set `top_p` to 0.999. Additionally, when extended thinking is enabled, you can now set `top_p` to values between 0.95 and 1.
+-- We've moved our Go SDK from beta to GA.
+-- We've included minute and hour level granularity to the Usage page of Console alongside 429 error rates on the Usage page.
+ 
+ ### May 21, 2025
+@@ -380,5 +381,4 @@ For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` r
+   - `bash_20250124`: Same functionality as previous version but is independent from computer use. Does not require a beta header.
+   - `text_editor_20250124`: Same functionality as previous version but is independent from computer use. Does not require a beta header.
+-  - `computer_20250124`: Updated computer use tool with new command options including "hold_key", "left_mouse_down", "left_mouse_up", "scroll", "triple_click", and "wait". This tool requires the "computer-use-2025-01-24" anthropic-beta header. Learn more in Tool use with Claude.
+ 
+ ### February 10th, 2025

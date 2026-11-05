@@ -1,0 +1,16 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 93da717..63cef58 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -73,9 +73,9 @@ Grok 4.6
+ Images
+ 
+-Grok Imagine API
++Grok Imagine Image 2.0
+ 
+ Videos
+ 
+-Grok Imagine API
++Grok Imagine Video 1.5
+ 
+ Voice

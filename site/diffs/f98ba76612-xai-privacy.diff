@@ -1,0 +1,10 @@
+diff --git a/snapshots/xai/privacy.md b/snapshots/xai/privacy.md
+index 7f8acf4..8926b19 100644
+--- a/snapshots/xai/privacy.md
++++ b/snapshots/xai/privacy.md
+@@ -130,4 +130,5 @@ If you have any queries or complaints about our collection, use, or storage of y
+ 
+ - For the fastest response for world-wide requests and in the USA: x.AI LLC, https://x.ai/privacy-portal/
++- Information about our handling of California Consumer Privacy Act (CCPA) requests is available here
+ 
+ Other contacts for privacy requests:

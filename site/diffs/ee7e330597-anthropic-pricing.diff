@@ -1,0 +1,26 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 9d1b006..6e64eb9 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -96,5 +96,5 @@ Max 20x
+ | Web search |  |  |  |  |
+ | Enterprise search |  |  |  |  |
+-| Claude for Chrome |  |  |  |  |
++| Claude in Chrome |  |  |  |  |
+ | Claude for Microsoft 365 |  |  |  |  |
+ | Claude for Microsoft Outlook |  |  |  |  |
+@@ -248,5 +248,5 @@ Enterprise (sales-assisted)
+ | Web search |  |  |  |
+ | Enterprise search |  |  |  |
+-| Claude for Chrome |  |  |  |
++| Claude in Chrome |  |  |  |
+ | Claude for Microsoft 365 |  |  |  |
+ | Claude for Microsoft Outlook |  |  |  |
+@@ -293,7 +293,5 @@ Enterprise (sales-assisted)
+ | Tiered incentives on committed spend |  |  |  |
+ | Trials |  |  |  |
+-| Non-standard terms |  |  |  |
+ | Customer success support at certain spend thresholds |  |  |  |
+-| MSA |  |  |  |
+ 
+ ### Models and usage

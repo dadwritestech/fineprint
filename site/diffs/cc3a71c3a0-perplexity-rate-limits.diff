@@ -1,0 +1,17 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index 9d02955..f3a51c8 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -1,12 +1,4 @@
+ <!-- fineprint snapshot: perplexity/rate-limits | source: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers -->
+ 
+-For AI agents: see the complete llms.txt documentation index.
+-
+-Docs
+-
+-Cookbook
+-
+-API Reference
+-
+ ## What are Usage Tiers?
+ 

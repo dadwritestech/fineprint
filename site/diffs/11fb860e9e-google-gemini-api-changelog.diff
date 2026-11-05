@@ -1,0 +1,66 @@
+diff --git a/snapshots/google/gemini-api-changelog.md b/snapshots/google/gemini-api-changelog.md
+index 37e4b7b..867fc3b 100644
+--- a/snapshots/google/gemini-api-changelog.md
++++ b/snapshots/google/gemini-api-changelog.md
+@@ -5,4 +5,36 @@
+ This page documents updates to the Gemini API.
+ 
++## September 3, 2026
++
++- Lyria 3.5 in public preview: Released the next generation of Google's music generation model:
++  - `lyria-3.5`: Full-length song generation with improved musical coherence, natural vocals, and fine-grained duration and structural control.
++  The model supports text and image inputs and generates high-fidelity 44.1 kHz stereo audio. See the Music generation guide for details and code samples.
++
++## September 2, 2026
++
++- Gemini 3.8 Flash generally available (GA): Released `gemini-3.8-flash`, our most intelligent Flash model, engineered for long-horizon software engineering, autonomous agents, and complex enterprise workflows.
++  To get started, see the Gemini 3.8 Flash model page and the Latest model guide.
++
++## September 1, 2026
++
++- Agentic video understanding: Released agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite across the Interactions and GenerateContent APIs. The model dynamically navigates video timelines, requesting transcripts, frames, or audio tracks on demand. This approach uses up to 88% fewer tokens for long-form content compared to static processing.
++  To get started, see the Agentic video understanding guide.
++
++## August 27, 2026
++
++- Gemini Omni Flash generally available (GA): Released `gemini-omni-1.1-flash`, the GA version of our fast, conversational video generation and editing model. This release includes significant new capabilities:
++  - Video extension: Seamlessly extend existing videos by generating continuations at the end of a clip using the `extend` task or directly with a prompt.
++  - Interpolation (first + last frame): Generate a video transitioning between two images using the `image_to_video` task with up to 2 images.
++  - Resolution control: New `resolution` parameter in `video_config` supports `360p`, `720p` (default), `1080p`, and `4k` outputs. 1080p and 4K outputs are generated using upscaling.
++  The existing `gemini-omni-flash-preview` endpoint will be deprecated on September 30, 2026.
++  To get started, see the Gemini Omni Flash model page and the omni guide.
++
++## August 26, 2026
++
++- Gemini 3.5 Transcribe generally available (GA): Released two dedicated speech-to-text models based on Gemini's audio understanding:
++  - Gemini 3.5 Transcribe (`gemini-3.5-transcribe`): High-accuracy, low-latency non-streaming speech-to-text with utterance-based language detection across 85+ languages, speaker diarization, word-level timestamps, and custom vocabulary biasing (up to 1,000 terms).
++  - Gemini 3.5 Transcribe Live (`gemini-3.5-transcribe-live`): Low-latency, bidirectional streaming speech-to-text over WebSockets using the Live API, supporting interim and finalized transcription events, Smart transcription mode, and multiple Voice Activity Detection (VAD) strategies.
++  To get started, see the Audio transcription guide, the Live transcription guide, and the Gemini 3.5 Transcribe model page.
++
+ ## August 13, 2026
+ 
+@@ -51,5 +83,5 @@ This page documents updates to the Gemini API.
+     - `imagen-4.0-ultra-generate-001`
+     - `imagen-4.0-fast-generate-001`
+-    To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page.
++  To migrate your code to newer stable or preview endpoints, refer to the Gemini deprecations page.
+ - Deprecation announcement: The following video generation models are being deprecated and will be shut down on June 30, 2026:
+   - Veo models:
+@@ -57,5 +89,5 @@ This page documents updates to the Gemini API.
+     - `veo-3.0-generate-001`
+     - `veo-3.0-fast-generate-001`
+-    Update your integration to either use the Veo 3.1 preview model IDs (`veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid service interruptions.
++  Update your integration to either use the Veo 3.1 preview model IDs (`veo-3.1-generate-preview`, `veo-3.1-fast-generate-preview`) or the 3.1 GA models available through the Gemini Enterprise Agent Platform to avoid service interruptions.
+ - Deprecation announcement: The experimental GMP Contextual View tool (a fixed interface for Grounding with Google Maps outputs) will shut down on June 15, 2026:
+ 
+@@ -829,5 +861,4 @@ API updates:
+ - New beta features:
+   - Function Calling
+-  - Semantic Retriever
+   - Attributed Question Answering (AQA)
+ - Updated candidate count: Gemini models only return 1 candidate.
+@@ -837,3 +868,3 @@ API updates:
+ Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+ 
+-Last updated 2026-08-13 UTC.
++Last updated 2026-09-04 UTC.

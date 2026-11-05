@@ -1,0 +1,47 @@
+diff --git a/snapshots/cursor/pricing.md b/snapshots/cursor/pricing.md
+index 0d2ad06..cec04cb 100644
+--- a/snapshots/cursor/pricing.md
++++ b/snapshots/cursor/pricing.md
+@@ -7,6 +7,4 @@ MonthlyYearly
+ ### Hobby
+ 
+-For the tinkerer
+-
+ Free
+ 
+@@ -15,12 +13,10 @@ Includes:
+ - ✓ No credit card required
+ - ✓ Limited Agent requests
+-- ✓ Limited Tab completions
++- ✓ Access to Composer
+ 
+-Try Cursor
++Download
+ 
+ ### Individual
+ 
+-For the agent-curious
+-
+ $20 / mo.
+ 
+@@ -40,6 +36,4 @@ Get Pro
+ ### Teams
+ 
+-For teams that ship together
+-
+ $40 / user / mo.
+ 
+@@ -60,6 +54,4 @@ Get Teams
+ ### Enterprise
+ 
+-For scaled organizations
+-
+ Custom
+ 
+@@ -75,5 +67,5 @@ Everything on Teams, plus:
+ - ✓ Priority support and account management
+ 
+-Contact sales
++Contact Sales
+ 
+ ## Trusted every day by teams that build world-class software.

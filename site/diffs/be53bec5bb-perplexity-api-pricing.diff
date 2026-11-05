@@ -1,0 +1,11 @@
+diff --git a/snapshots/perplexity/api-pricing.md b/snapshots/perplexity/api-pricing.md
+index 252d5be..73501ad 100644
+--- a/snapshots/perplexity/api-pricing.md
++++ b/snapshots/perplexity/api-pricing.md
+@@ -3,4 +3,6 @@
+ This page shows pricing information to help you understand API costs.For billing setup, payment methods, and usage monitoring, visit the Admin section. For rate limits, see the Rate Limits & Usage Tiers page.
+ 
++## Estimate your cost
++
+ ## Agent API Pricing
+ 

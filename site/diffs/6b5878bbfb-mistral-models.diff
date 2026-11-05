@@ -1,0 +1,21 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 2f39ee5..0f6f627 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -41,5 +41,5 @@ v26.03
+ ### Voxtral Mini Transcribe Realtime
+ 
+-An efficient audio input model, fine-tuned and optimized for live transcription purposes.
++An efficient audio input model, pre-trained and optimized for live transcription purposes.
+ 
+ v26.02
+@@ -57,3 +57,9 @@ Our OCR service powering our Document AI stack.
+ v25.12
+ 
++### Devstral 2
++
++Our frontier code agents model for solving software engineering tasks.
++
++v25.12
++
+ View all models

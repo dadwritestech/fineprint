@@ -1,0 +1,14 @@
+diff --git a/snapshots/anthropic/rate-limits.md b/snapshots/anthropic/rate-limits.md
+index 98d6ad5..2a3ef86 100644
+--- a/snapshots/anthropic/rate-limits.md
++++ b/snapshots/anthropic/rate-limits.md
+@@ -118,7 +118,7 @@ Rate limits are applied separately for each model; therefore you can use differe
+ Rate limits are currently shared across all `inference_geo` values. Requests with `inference_geo: "us"` and `inference_geo: "global"` draw from the same rate limit pool.
+ 
+-* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, Opus 4.5, Opus 4.1, and Opus 4.
++* - Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, Opus 4.5, Opus 4.1 (deprecated), and Opus 4 (deprecated).
+ 
+-** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6, Sonnet 4.5, and Sonnet 4.
++** - Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6, Sonnet 4.5, and Sonnet 4 (deprecated).
+ 
+ † - Limit counts `cache_read_input_tokens` towards ITPM usage.

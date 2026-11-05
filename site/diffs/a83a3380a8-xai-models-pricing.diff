@@ -1,0 +1,11 @@
+diff --git a/snapshots/xai/models-pricing.md b/snapshots/xai/models-pricing.md
+index 329ea22..f06461e 100644
+--- a/snapshots/xai/models-pricing.md
++++ b/snapshots/xai/models-pricing.md
+@@ -17,5 +17,5 @@ grok-4.5
+ Our flagship model for code and everything else: agentic tool calling, minimal hallucinations, configurable reasoning.
+ 
+-View model
++View modelTry in playground
+ 
+ Context500k tokens

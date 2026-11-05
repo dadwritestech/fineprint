@@ -1,0 +1,81 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 6b6b0a3..032088d 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -29,11 +29,11 @@ A third-party open weight text model from Z.ai with a 1M-token context window.
+ Hybrid model unifying instruct, reasoning, and coding in a single efficient model.
+ 
+-### Voxtral Mini Transcribe 2
++### Voxtral Mini Transcribe 3
+ 
+-An efficient audio input model, pre-trained and optimized for transcription purposes.
++Strong transcription and diarization at a competitive price point.
+ 
+-### Voxtral Mini Transcribe Realtime
++### Voxtral TTS 3
+ 
+-An efficient audio input model, pre-trained and optimized for live transcription purposes.
++State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
+ 
+ All models
+@@ -119,4 +119,28 @@ State-of-the-art TTS with zero-shot voice cloning and multilingual support.
+ v26.03
+ 
++### Voxtral Mini Transcribe 3
++
++Strong transcription and diarization at a competitive price point.
++
++v3.0
++
++### Voxtral Small Transcribe 3
++
++Flagship transcription and diarization model with SOTA accuracy.
++
++v3.0
++
++### Voxtral Mini Transcribe Realtime 3
++
++Realtime transcription model for agentic use-cases with configurable latency and turn detection.
++
++v3.0
++
++### Voxtral TTS 3
++
++State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
++
++v3.0
++
+ ### Voxtral Mini Transcribe 2
+ 
+@@ -183,5 +207,5 @@ Time series models
+ Models for zero-shot time series forecasting with covariate support and probabilistic outputs.
+ 
+-### Timestral 1.0 123M
++### Timestral 1.0 209M
+ 
+ A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+@@ -189,5 +213,5 @@ A time series foundation model for zero-shot forecasting with covariate support
+ v1.0
+ 
+-### Timestral 1.0 28M
++### Timestral 1.0 123M
+ 
+ A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+@@ -195,5 +219,5 @@ A time series foundation model for zero-shot forecasting with covariate support
+ v1.0
+ 
+-### Timestral 1.0 5M
++### Timestral 1.0 28M
+ 
+ A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.
+@@ -201,9 +225,5 @@ A time series foundation model for zero-shot forecasting with covariate support
+ v1.0
+ 
+-Other specialist models
+-
+-Specialized models for focused domains and task-specific workloads.
+-
+-### Timestral 1.0 209M
++### Timestral 1.0 5M
+ 
+ A time series foundation model for zero-shot forecasting with covariate support and probabilistic outputs.

@@ -1,0 +1,13 @@
+diff --git a/snapshots/github-copilot/product-terms.md b/snapshots/github-copilot/product-terms.md
+index c9dc0ca..b48d7d8 100644
+--- a/snapshots/github-copilot/product-terms.md
++++ b/snapshots/github-copilot/product-terms.md
+@@ -141,8 +141,2 @@ GitHub Sponsors allows the developer community to financially support the people
+ 
+ You may download Microsoft SQL Server Standard Edition container image for Linux files ("SQL Server Images"). You must uninstall the SQL Server Images when your right to use the Software ends. Microsoft Corporation may disable SQL Server Images at any time.
+-
+-## GitHub Models
+-
+-GitHub Models is a feature that allows you to learn, try, and test artificial intelligence models on GitHub.com. You can access GitHub Models via the GitHub Marketplace. Learn more about GitHub Models by visiting Prototyping with AI models.
+-
+-Your use of this feature is subject to the terms of the company hosting the model and the model license.

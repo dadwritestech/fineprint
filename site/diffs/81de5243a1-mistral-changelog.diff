@@ -1,0 +1,21 @@
+diff --git a/snapshots/mistral/changelog.md b/snapshots/mistral/changelog.md
+index 49c348f..48906ea 100644
+--- a/snapshots/mistral/changelog.md
++++ b/snapshots/mistral/changelog.md
+@@ -5,4 +5,16 @@
+ Find out about all the latest changes to our tool. You may filter by date and type of release.
+ 
++### Jun 26
++
++## June 30
++
++- We released Leanstral 1.5 (`labs-leanstral-1-5`), an updated Lean 4 formal proof engineering model with improved SFT mixture quality and extended long-context reasoning. This model will be retired on September 30, 2026. MODEL RELEASED
++
++## June 23
++
++- We released OCR 4 (`mistral-ocr-4-0`). `mistral-ocr-latest` now points to it. MODEL RELEASED
++  - Introducing `include_blocks` in our OCR API. When set to `true`, each page returns a `blocks` array with paragraph-level bounding boxes and a structural label (`text`, `title`, `list`, `table`, `image`, `equation`, `caption`, `code`, `references`, `aside_text`, `header`, `footer`, `signature`) in reading order. Learn more in our OCR documentation. API UPDATED
++  - The `pages` parameter in our OCR API now also accepts a string of comma-separated digits and ranges (e.g. `"0,1,2"`, `"0-5"`, or `"0,2-4"`) in addition to a list of integers. API UPDATED
++
+ ### May 26
+ 

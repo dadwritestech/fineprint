@@ -1,0 +1,10 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index db1c684..a2b71c5 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -273,4 +273,5 @@ Enterprise (sales-assisted)
+ | Set org instructions |  |  |  |
+ | HIPAA-ready offering |  |  |  |
++| Inference hooks |  |  |  |
+ 
+ ### Payment options
