@@ -1,0 +1,16 @@
+name: A summary is wrong
+description: A change summary that does not match its diff.
+labels: [summary]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Diff link
+      placeholder: "https://dadwritestech.github.io/fineprint/diffs/....html"
+    validations: {required: true}
+  - type: textarea
+    id: correct
+    attributes:
+      label: What the diff actually says
+      description: Quote the changed lines. The diff is the source of truth.
+    validations: {required: true}

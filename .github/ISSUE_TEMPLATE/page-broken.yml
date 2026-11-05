@@ -1,0 +1,15 @@
+name: A page stopped updating
+description: A watched page moved, now shows a bot wall, or stopped changing on the site.
+labels: [fetch]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page id
+      placeholder: "openai/api-pricing"
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What you see
+      description: New URL, error, or the date it last changed on the timeline.

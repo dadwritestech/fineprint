@@ -1,0 +1,21 @@
+name: Watch a new page
+description: Suggest a public pricing, limits, terms, privacy or deprecation page to track.
+labels: [new-page]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Must be public and work logged out.
+    validations: {required: true}
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [pricing, limits, policy, terms, privacy, deprecations, changelog]
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Has this page changed quietly before? Links welcome.

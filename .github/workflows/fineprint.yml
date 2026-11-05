@@ -54,6 +54,6 @@ jobs:
         run: |
           git config user.name "fineprint-bot"
           git config user.email "fineprint-bot@users.noreply.github.com"
-          git add data/changes.jsonl site/
+          git add data/changes.jsonl data/pending.json site/
           git diff --cached --quiet || git commit -m "summaries + site"
-          git push
+          git pull --rebase -q && git push

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you report on these changes or reuse the data, please cite fineprint."
+title: "fineprint: a dated, diffable archive of AI vendor pricing, limits and terms"
+abstract: >-
+  Snapshots of 46 public pricing, rate-limit, usage-policy, terms, privacy,
+  deprecation and changelog pages from 10 AI vendors, committed to git on
+  every change. History from May 2026 is rebuilt from weekly Wayback Machine
+  captures. Each change has a one-line summary that links to the raw diff.
+type: dataset
+authors:
+  - alias: dadwritestech
+repository-code: "https://github.com/dadwritestech/fineprint"
+url: "https://dadwritestech.github.io/fineprint/"
+license: CC-BY-4.0
+version: "0.1.0"
+date-released: "2026-11-05"
+keywords:
+  - terms of service
+  - pricing
+  - LLM
+  - AI policy
+  - web archive

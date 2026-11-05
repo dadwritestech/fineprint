@@ -1,0 +1,62 @@
+{
+ "last_post_at": null,
+ "posted": {
+  "fineprint/2436a611d9-openai-api-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/24bd93e2e0-google-gemini-models": {
+   "at": "baseline"
+  },
+  "fineprint/253af2a14c-anthropic-privacy": {
+   "at": "baseline"
+  },
+  "fineprint/2c611340dd-github-copilot-plans": {
+   "at": "baseline"
+  },
+  "fineprint/4d0a53de65-google-gemini-api-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/585a3a9e69-google-gemini-api-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/700a5d1c17-anthropic-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/72e5056cad-anthropic-api-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/7c1b97fa8d-openai-usage-policies": {
+   "at": "baseline"
+  },
+  "fineprint/8222507d25-perplexity-api-pricing": {
+   "at": "baseline"
+  },
+  "fineprint/94fdb47dcc-deepseek-news": {
+   "at": "baseline"
+  },
+  "fineprint/a229ca0bb9-openai-deprecations": {
+   "at": "baseline"
+  },
+  "fineprint/b6d72d8c67-anthropic-api-release-notes": {
+   "at": "baseline"
+  },
+  "fineprint/c81a861a6b-github-copilot-plans": {
+   "at": "baseline"
+  },
+  "fineprint/ca2d813403-anthropic-api-release-notes": {
+   "at": "baseline"
+  },
+  "fineprint/d01d83b017-anthropic-usage-policy": {
+   "at": "baseline"
+  },
+  "fineprint/da72ba96eb-xai-terms-of-service": {
+   "at": "baseline"
+  },
+  "fineprint/e426025c2c-google-gemini-api-changelog": {
+   "at": "baseline"
+  },
+  "fineprint/ec3e512cbc-openai-api-pricing": {
+   "at": "baseline"
+  }
+ }
+}
