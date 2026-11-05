@@ -24,6 +24,14 @@ Our latest OCR service with paragraph-level bounding boxes, structural block lab
 
 A third-party open weight text model from Z.ai with a 1M-token context window.
 
+### Z.ai GLM 5.3 Flash
+
+A third-party multimodal model from Z.ai with a 1M-token context window, optimized for agentic workflows and visual coding.
+
+### DeepSeek V4.1 Flash 1017
+
+A third-party open weight model from DeepSeek with text and image inputs and a 1M-token context window, optimized for long-context coding and agentic workflows.
+
 ### Mistral Small 4
 
 Hybrid model unifying instruct, reasoning, and coding in a single efficient model.
@@ -34,7 +42,7 @@ Strong transcription and diarization at a competitive price point.
 
 ### Voxtral TTS 3
 
-State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
+State-of-the-art TTS with zero-shot and professional voice cloning, 35+ languages and 50+ dialects, and streaming.
 
 All models
 
@@ -44,17 +52,23 @@ Generalist models
 
 Text and multimodal models for broad reasoning, coding, tool use, and agentic tasks.
 
+### Z.ai GLM 5.3 Flash
+
+A third-party multimodal model from Z.ai with a 1M-token context window, optimized for agentic workflows and visual coding.
+
+v5.3-flash
+
+### DeepSeek V4.1 Flash 1017
+
+A third-party open weight model from DeepSeek with text and image inputs and a 1M-token context window, optimized for long-context coding and agentic workflows.
+
+vv4.1-flash-1017
+
 ### Z.ai GLM 5.3
 
 A third-party open weight text model from Z.ai with a 1M-token context window.
 
 v5.3
-
-### Mistral Medium 3.5
-
-Our frontier-class multimodal model optimized for agentic and coding use cases.
-
-v26.04
 
 ### Mistral Small 4
 
@@ -67,12 +81,6 @@ v26.03
 A state-of-the-art, open-weight, general-purpose multimodal model.
 
 v26.10
-
-### Mistral Large 3
-
-A state-of-the-art, open-weight, general-purpose multimodal model.
-
-v25.12
 
 ### Ministral 3 14B
 
@@ -112,12 +120,6 @@ Audio models
 
 Models for speech transcription, realtime transcription, and speech generation.
 
-### Voxtral TTS
-
-State-of-the-art TTS with zero-shot voice cloning and multilingual support.
-
-v26.03
-
 ### Voxtral Mini Transcribe 3
 
 Strong transcription and diarization at a competitive price point.
@@ -138,21 +140,9 @@ v3.0
 
 ### Voxtral TTS 3
 
-State-of-the-art TTS with zero-shot and professional voice cloning, 9 languages, and streaming.
+State-of-the-art TTS with zero-shot and professional voice cloning, 35+ languages and 50+ dialects, and streaming.
 
 v3.0
-
-### Voxtral Mini Transcribe 2
-
-An efficient audio input model, pre-trained and optimized for transcription purposes.
-
-v26.02
-
-### Voxtral Mini Transcribe Realtime
-
-An efficient audio input model, pre-trained and optimized for live transcription purposes.
-
-v26.02
 
 ### Voxtral Small
 
@@ -182,7 +172,7 @@ v25.05
 
 ### Mistral Embed
 
-Our state-of-the-art semantic for extracting representation of code extracts
+A general-purpose text embedding model for retrieval and similarity search.
 
 v23.12
 
@@ -241,12 +231,17 @@ Older models that have been deprecated or retired.
 
 | Z.ai GLM 5.2 ↗ | `5.2` | zai-glm-5-2 | 9/29/202610/31/2026 | Z.ai GLM 5.3 |
 |---|---|---|---|---|
+| Mistral Medium 3.5 ↗ | `26.04` | mistral-medium-3-5 | 10/31/20264/30/2027 | Mistral Large 4 |
+| Voxtral TTS ↗ | `26.03` | voxtral-mini-tts-2603 | 10/31/20264/30/2027 | Voxtral TTS 3 |
 | Leanstral 1.5 ↗ | `1.5` | labs-leanstral-1-5 | 9/29/20269/30/2026 |  |
 | Leanstral ↗ | `26.03` | labs-leanstral-2603 | 5/22/20266/30/2026 | Leanstral 1.5 |
+| Mistral Large 3 ↗ | `25.12` | mistral-large-2512 | 10/31/20264/30/2027 | Mistral Large 4 |
 | Mistral Medium 3.1 ↗ | `25.08` | mistral-medium-2508 | 5/22/20268/31/2026 | Mistral Medium 3.5 |
 | Mistral Small 3.2 ↗ | `25.06` | mistral-small-2506 | 4/30/20267/31/2026 | Mistral Small 4 |
 | OCR 4.0 ↗ | `4.0` | mistral-ocr-4-0 | 9/29/20269/30/2026 | OCR 4.1 |
 | Voxtral Mini Transcribe ↗ | `25.07` | voxtral-mini-2507 | 2/27/20265/31/2026 | Voxtral Mini Transcribe 2 |
+| Voxtral Mini Transcribe 2 ↗ | `26.02` | voxtral-mini-2602 | 10/31/20264/30/2027 | Voxtral Mini Transcribe 3 |
+| Voxtral Mini Transcribe Realtime ↗ | `26.02` | voxtral-mini-transcribe-realtime-2602 | 10/31/20264/30/2027 | Voxtral Mini Transcribe Realtime 3 |
 | Devstral 2 ↗ | `25.12` | devstral-2512 | 5/22/20267/31/2026 | Mistral Medium 3.5 |
 | Magistral Medium 1.1 ↗ | `25.07` | magistral-medium-2507 | 10/31/202511/30/2025 | Mistral Medium 3.5 |
 | Mistral Small Creative ↗ | `25.12` | labs-mistral-small-creative | 3/31/20264/30/2026 | Ministral 3 8B |
