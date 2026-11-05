@@ -40,8 +40,6 @@ Search and Fetch are standalone APIs billed per request.
 | Search | Per 1,000 successful requests | $0.75 |
 | Fetch | Per 1,000 successful requests | $0.75 |
 
-Note: when you use the DeepSeek API through DeepSeek Harness, Claude Code, or Codex, server-side tool calls already hit the Search and Fetch APIs. These calls are currently free of charge; per-request billing starts at 00:00 Beijing time on November 1, 2026.
-
 See the Search & Fetch guide for API usage and complete billing rules.
 
 For model usage, the expense = number of tokens × price. Search and Fetch are charged per successful request at the rates above. The corresponding fees will be directly deducted from your topped-up balance or granted balance, with a preference for using the granted balance first when both balances are available.
