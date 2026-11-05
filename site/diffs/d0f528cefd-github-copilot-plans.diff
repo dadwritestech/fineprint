@@ -1,0 +1,88 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 19e0b60..8e9ecf2 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -1,4 +1,83 @@
+ <!-- fineprint snapshot: github-copilot/plans | source: https://github.com/features/copilot/plans -->
+ 
++# Take flight with GitHub Copilot
++
++### Free
++
++For getting started with GitHub Copilot.
++
++$0USD
++
++Get startedOpen in VS Code
++
++#### What's included:
++
++- 2,000 completions per month
++- Access to Haiku 4.5, GPT-5 mini, and more
++- Copilot CLI
++- Community Support
++
++No credit card required. Verified students have access to the GitHub Copilot Student plan. Learn more
++
++### Pro
++
++For everyday coding with agents in GitHub Copilot.
++
++$10USDper user / month
++
++Get started
++
++#### Everything in Free and:
++
++- Access to Copilot in the cloud and code review
++- Unlimited code completion and next edit suggestions
++- Access to 3rd party agents (Claude Code and Codex)
++- Model selection
++- $15 monthly total credits for Pro
++
++### Pro+
++
++For more complex development with premium models.
++
++$39USDper user / month
++
++Get started
++
++#### Everything in Pro and:
++
++- Access to premium models, including Opus
++- Audit logs
++- 4x+ included usage than Pro
++- $70 monthly total credits for Pro+
++
++### Max
++
++For sustained, high-volume agent workflows with GitHub Copilot.
++
++$100USDper user / month
++
++Get started
++
++#### Everything in Pro+ and:
++
++- Priority access to new models and features
++- 2.9x+ included usage than Pro+
++- $200 monthly total credits for Max
++
++Best value
++
++GitHub Copilot is available on your favorite platforms:
++
++- GitHub
++- VS Code
++- Visual Studio
++- Xcode
++- JetBrains IDEs
++- Neovim
++- Eclipse
++- Raycast
++- SQL Server Management Studio
++- Zed
++
+ Compare features
+ 
