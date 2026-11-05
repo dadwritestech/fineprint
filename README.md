@@ -10,18 +10,19 @@ links the raw diff, so you never have to trust the model.
 
 **Browse it:** [dadwritestech.github.io/fineprint](https://dadwritestech.github.io/fineprint/), with a timeline per vendor and an [RSS feed](https://dadwritestech.github.io/fineprint/feed.xml). It is refreshed every 6 hours.
 
-## Six quiet changes from the last six months
+## Five quiet changes from the last six months
 
-None of these had a blog post. Each date is the first weekly sample that showed the change, and each link opens the raw diff.
+None of these came with a blog post. Each date is the first weekly sample that showed the change, and each link opens the raw diff.
 
 | Seen | Vendor | What changed |
 |---|---|---|
-| 2026-05-15 | Google | Grounding with Google Search: the free tier went from *"Free of charge, up to 1500 RPD"* to *"Not available"*. The paid allowance went from 5,000 per **day** to 5,000 per **month**. [diff](https://dadwritestech.github.io/fineprint/diffs/083c89d8d0-google-gemini-api-pricing.html) |
-| 2026-05-20 | xAI | Text-to-speech went from $4.20 to $15.00 per 1M characters (3.6×). [diff](https://dadwritestech.github.io/fineprint/diffs/47028293d0-xai-models-pricing.html) |
-| 2026-07-02 | GitHub Copilot | The *"Data excluded from training by default"* row disappeared from the plan comparison. [diff](https://dadwritestech.github.io/fineprint/diffs/a0b093fb59-github-copilot-plans.html) |
+| 2026-05-20 | xAI | Text-to-speech went from $4.20 to $15.00 per 1M characters (3.6×), in the same edit that renamed "Models and Pricing" to "Models". [diff](https://dadwritestech.github.io/fineprint/diffs/47028293d0-xai-models-pricing.html) |
+| 2026-08-01 | DeepSeek | A footnote: *"During peak hours, prices will be 2x the regular prices, applicable to all billing items."* [diff](https://dadwritestech.github.io/fineprint/diffs/10428190a3-deepseek-api-pricing.html) |
 | 2026-09-25 | Mistral | Commercial terms: the right to object to an update was replaced by *"sole and exclusive remedy is to stop using"* the products. [diff](https://dadwritestech.github.io/fineprint/diffs/2b9186f701-mistral-terms.html) |
 | 2026-10-05 | Cursor | Privacy policy: the line *"We do not 'sell' or 'share' personal data for cross-contextual behavioral advertising"* was removed. [diff](https://dadwritestech.github.io/fineprint/diffs/3cdd5227d2-cursor-privacy.html) |
 | 2026-10-28 | Google | Gemini API, paid tier: new projects now *"store requests by default (`store=true`)"*. [diff](https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.html) |
+
+I checked each one against the snapshot before and after it. The one-line summaries are written by a small model, which can over-generalize: one summary says Google dropped free Search grounding, but the diff shows that only one model's row changed. That is why every line links to its diff.
 
 ![Anthropic timeline](docs/timeline.jpg)
 
