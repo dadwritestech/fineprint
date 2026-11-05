@@ -16,7 +16,7 @@ Standard
 | gpt-6.1-terra | $1.00 | $5.00 | $0.05 | $1.25 | $2.50 |
 | gpt-6-luna | $0.10 | $0.50 | $0.01 | $0.125 | $0.25 |
 
-Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026. FedRAMP endpoints are also charged a 10% uplift. Priority processing was renamed Fast mode on July 30, 2026. GPT-5.6 Sol's promotional pricing is available at least through November 21, 2026.
+Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026. FedRAMP endpoints are also charged a 10% uplift. Priority processing was renamed Fast mode on July 30, 2026. GPT-5.6 Sol's promotional pricing is available until November 30, 2026.
 
 Our latest Daybreak models.
 
@@ -27,19 +27,33 @@ Prices per 1M tokens.
 |  | Prompt caching |  |  |  |  |
 |---|---|---|---|---|---|
 | Model | Input | Output | Cached input | 30m write | 12h write |
+| gpt-6-cyber | $20.00 | $100.00 | $2.00 | $25.00 | $50.00 |
 | gpt-5.6-sol | $4.00 | $20.00 | $0.40 | $5.00 | $10.00 |
-| gpt-5.6-cyber | $12.50 | $75.00 | $1.25 | $15.625 | $31.25 |
 
 Our latest Rosalind models.
 
+Context length
+
 Prices per 1M tokens.
 
-| Model | Input | Output | Cached input |
-|---|---|---|---|
-| gpt-rosalind-research | $5.00 | $25.00 | $0.50 |
-| gpt-rosalind-discovery | $5.00 | $25.00 | $0.50 |
+|  | Prompt caching |  |  |  |  |
+|---|---|---|---|---|---|
+| Model | Input | Output | Cached input | 30m write | 12h write |
+| gpt-6-rosalind | $15.00 | $75.00 | $1.50 | $18.75 | $37.50 |
+| gpt-rosalind-research | $5.00 | $25.00 | $0.50 | - | - |
+| gpt-rosalind-discovery | $5.00 | $25.00 | $0.50 | - | - |
 
-Billing for `gpt-rosalind-research` begins on October 5, 2026. Cache-write pricing does not apply to this model. Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+Access is limited to approved internal research through the trusted-access program. All eligible organizations will continue to get access to the latest GPT-Rosalind models as they're released.  Regional processing (data residency) endpoints are charged a 10% uplift for models released on or after March 5, 2026, that are eligible for data residency. See our Your data guide for supported regions and processing details.
+
+Our latest legal model configurations.
+
+Prices per 1M tokens.
+
+| Model configuration | Input | Output | Cached input |
+|---|---|---|---|
+| gpt-6-astra-law | $10.00 | $50.00 | $1.00 |
+
+GPT-6 Astra for Law promotional pricing is available at least through December 31, 2026.
 
 GPT-Live 1 voice sessions are billed per second, without rounding up to a whole minute. Backend model and tool usage is charged separately.
 
@@ -66,6 +80,10 @@ For image generation cost estimates, use the calculator in the image generation 
 
 | Model | Modality | Input | Output | Cached input |
 |---|---|---|---|---|
+| gpt-image-2.6-sunburst | Image | $8.00 | $30.00 | $2.00 |
+| Text | $5.00 | - | $1.25 |  |
+| gpt-image-2.6-flare | Image | $8.00 | $30.00 | $2.00 |
+| Text | $5.00 | - | $1.25 |  |
 | gpt-image-2.5-sunburst | Image | $8.00 | $30.00 | $2.00 |
 | Text | $5.00 | - | $1.25 |  |
 | gpt-image-2.5-flare | Image | $8.00 | $30.00 | $2.00 |
@@ -116,8 +134,8 @@ Standard
 
 | Model | Training | Input | Output | Cached input |
 |---|---|---|---|---|
-| o4-mini-2025-04-16 | $100.00 / hour | $4.00 | $16.00 | $1.00 |
-| o4-mini-2025-04-16 with data sharing | $100.00 / hour | $2.00 | $8.00 | $0.50 |
+| gpt-4.1-2025-04-14 | $25.00 | $3.00 | $12.00 | $0.75 |
+| gpt-4.1-mini-2025-04-14 | $5.00 | $0.80 | $3.20 | $0.20 |
 
 Tokens used for model grading in reinforcement fine-tuning are billed at that model's per-token rate. Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.
 
