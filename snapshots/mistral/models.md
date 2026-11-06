@@ -224,6 +224,8 @@ Deprecated
 
 ### Deprecated & retired models
 
+Serverless-only
+
 Older models that have been deprecated or retired.
 
 | Model | Version | API | DeprecationRetirement | Alternative |
