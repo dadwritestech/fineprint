@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Thu, 05 Nov 2026 23:47:45 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 06:59:22 +0000</lastBuildDate>
+<item><title>Anthropic api-pricing: 3 line(s) added, 7 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/6ee83e075b-anthropic-api-pricing.html</link>
+<guid isPermaLink="false">6ee83e075b-anthropic-api-pricing</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>3 line(s) added, 7 removed. (+3/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6ee83e075b-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
+<item><title>Anthropic rate-limits: 38 line(s) added, 44 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/f2947051af-anthropic-rate-limits.html</link>
+<guid isPermaLink="false">f2947051af-anthropic-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
+<category>anthropic</category><category>limits</category>
+<description>38 line(s) added, 44 removed. (+38/-44 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/f2947051af-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
+<item><title>OpenAI deprecations: 9 line(s) added, 3 removed (around &quot;2026-11-05: GPT-5.5-Cyber&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/808b6387d7-openai-deprecations.html</link>
+<guid isPermaLink="false">808b6387d7-openai-deprecations</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>9 line(s) added, 3 removed (around &quot;2026-11-05: GPT-5.5-Cyber&quot;). (+9/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/808b6387d7-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
+<item><title>OpenAI rate-limits: 69 line(s) added, 22 removed (around &quot;Model availability&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/cee9da298d-openai-rate-limits.html</link>
+<guid isPermaLink="false">cee9da298d-openai-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
+<category>openai</category><category>limits</category>
+<description>69 line(s) added, 22 removed (around &quot;Model availability&quot;). (+69/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/cee9da298d-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
 <item><title>Anthropic api-release-notes: 39 line(s) added, 25 removed (around &quot;November 5, 2026&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/bb0d910477-anthropic-api-release-notes.html</link>
 <guid isPermaLink="false">bb0d910477-anthropic-api-release-notes</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
 <category>anthropic</category><category>changelog</category>
@@ -226,20 +242,4 @@
 <guid isPermaLink="false">59c67953c5-openai-api-pricing</guid><pubDate>Fri, 23 Oct 2026 01:33:09 +0000</pubDate>
 <category>openai</category><category>pricing</category>
 <description>35 line(s) added, 32 removed. (+35/-32 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/59c67953c5-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
-<item><title>Anthropic pricing: Claude Code is no longer included in the Pro plan but is now added to the Max plan.</title><link>https://dadwritestech.github.io/fineprint/diffs/edc351e7eb-anthropic-pricing.html</link>
-<guid isPermaLink="false">edc351e7eb-anthropic-pricing</guid><pubDate>Thu, 22 Oct 2026 07:51:26 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>Claude Code is no longer included in the Pro plan but is now added to the Max plan. (+1/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/edc351e7eb-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
-<item><title>Anthropic pricing: 1 line(s) added, 2 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/5dfcdc102d-anthropic-pricing.html</link>
-<guid isPermaLink="false">5dfcdc102d-anthropic-pricing</guid><pubDate>Thu, 22 Oct 2026 07:51:26 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>1 line(s) added, 2 removed. (+1/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/5dfcdc102d-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
-<item><title>Perplexity api-pricing: Added pplx-decider-v1.2 and pplx-decider-flash-v1.2 models, updated Agent API Research Preset costs to $0.0022, and added Embeddings API cost formula.</title><link>https://dadwritestech.github.io/fineprint/diffs/15934463a0-perplexity-api-pricing.html</link>
-<guid isPermaLink="false">15934463a0-perplexity-api-pricing</guid><pubDate>Wed, 21 Oct 2026 04:53:55 +0000</pubDate>
-<category>perplexity</category><category>pricing</category>
-<description>Added pplx-decider-v1.2 and pplx-decider-flash-v1.2 models, updated Agent API Research Preset costs to $0.0022, and added Embeddings API cost formula. (+9/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/15934463a0-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
-<item><title>Perplexity api-pricing: 9 line(s) added, 12 removed (around &quot;Search Context Size vs Context Window&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/e1b3dede91-perplexity-api-pricing.html</link>
-<guid isPermaLink="false">e1b3dede91-perplexity-api-pricing</guid><pubDate>Wed, 21 Oct 2026 04:53:55 +0000</pubDate>
-<category>perplexity</category><category>pricing</category>
-<description>9 line(s) added, 12 removed (around &quot;Search Context Size vs Context Window&quot;). (+9/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e1b3dede91-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
 </channel></rss>
