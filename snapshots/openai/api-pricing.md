@@ -137,7 +137,7 @@ Standard
 | gpt-4.1-2025-04-14 | $25.00 | $3.00 | $12.00 | $0.75 |
 | gpt-4.1-mini-2025-04-14 | $5.00 | $0.80 | $3.20 | $0.20 |
 
-Tokens used for model grading in reinforcement fine-tuning are billed at that model's per-token rate. Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.
+Inference discounts are available if you enable data sharing when creating the fine-tune job. Learn more.
 
 OpenAI models on Amazon Bedrock and Microsoft Azure are billed through those services.
 
