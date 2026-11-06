@@ -13802,5 +13802,22 @@
   "added": 69,
   "removed": 22,
   "diff": "diffs/cee9da298d-openai-rate-limits.diff"
+ },
+ {
+  "id": "f4362d7332-deepseek-api-pricing",
+  "v": 2,
+  "date": "2026-11-06T06:55:00Z",
+  "sha": "f4362d7332b250af05f23bc0ab3d1924ecb2e6dc",
+  "page": "deepseek/api-pricing",
+  "vendor": "deepseek",
+  "slug": "api-pricing",
+  "kind": "pricing",
+  "url": "https://api-docs.deepseek.com/quick_start/pricing",
+  "summary": "27 line(s) added, 35 removed (around \"Your First API Call\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 27,
+  "removed": 35,
+  "diff": "diffs/f4362d7332-deepseek-api-pricing.diff"
  }
 ]
