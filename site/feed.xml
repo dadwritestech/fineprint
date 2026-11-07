@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Fri, 06 Nov 2026 19:32:42 +0000</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 06:10:34 +0000</lastBuildDate>
+<item><title>Anthropic api-release-notes: 44 line(s) added, 45 removed (around &quot;April 9, 2025&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/6d21385c88-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">6d21385c88-anthropic-api-release-notes</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>44 line(s) added, 45 removed (around &quot;April 9, 2025&quot;). (+44/-45 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6d21385c88-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Mistral models: 1 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/1115dd8802-mistral-models.html</link>
+<guid isPermaLink="false">1115dd8802-mistral-models</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
+<category>mistral</category><category>deprecations</category>
+<description>1 line(s) added, 0 removed. (+1/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1115dd8802-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
+<item><title>OpenAI api-pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ef6267d5a2-openai-api-pricing.html</link>
+<guid isPermaLink="false">ef6267d5a2-openai-api-pricing</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ef6267d5a2-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
 <item><title>DeepSeek api-pricing: 27 line(s) added, 35 removed (around &quot;Your First API Call&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/f4362d7332-deepseek-api-pricing.html</link>
 <guid isPermaLink="false">f4362d7332-deepseek-api-pricing</guid><pubDate>Fri, 06 Nov 2026 06:55:00 +0000</pubDate>
 <category>deepseek</category><category>pricing</category>
@@ -230,16 +242,4 @@
 <guid isPermaLink="false">efdffcdcf8-google-gemini-api-pricing</guid><pubDate>Fri, 23 Oct 2026 09:23:48 +0000</pubDate>
 <category>google</category><category>pricing</category>
 <description>1 line(s) added, 22 removed (around &quot;Gemini Omni Flash Preview&quot;). (+1/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/efdffcdcf8-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
-<item><title>GitHub Copilot plans: Removed Anthropic Claude Opus 4.7, Google Gemini 3.5 Flash, Google Gemini 3.6 Flash, and Kimi K2.7 Code from all Copilot plans.</title><link>https://dadwritestech.github.io/fineprint/diffs/c81a861a6b-github-copilot-plans.html</link>
-<guid isPermaLink="false">c81a861a6b-github-copilot-plans</guid><pubDate>Fri, 23 Oct 2026 03:06:44 +0000</pubDate>
-<category>github-copilot</category><category>pricing</category>
-<description>Removed Anthropic Claude Opus 4.7, Google Gemini 3.5 Flash, Google Gemini 3.6 Flash, and Kimi K2.7 Code from all Copilot plans. (+53/-189 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c81a861a6b-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
-<item><title>GitHub Copilot plans: 53 line(s) added, 189 removed (around &quot;What languages, IDEs, and surfaces does GitHub Copilot suppo&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/5d54cdd6d0-github-copilot-plans.html</link>
-<guid isPermaLink="false">5d54cdd6d0-github-copilot-plans</guid><pubDate>Fri, 23 Oct 2026 03:06:44 +0000</pubDate>
-<category>github-copilot</category><category>pricing</category>
-<description>53 line(s) added, 189 removed (around &quot;What languages, IDEs, and surfaces does GitHub Copilot suppo&quot;). (+53/-189 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/5d54cdd6d0-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
-<item><title>OpenAI api-pricing: Updated pricing tables to reorder columns, moving cached input costs to the final position for all models.</title><link>https://dadwritestech.github.io/fineprint/diffs/2436a611d9-openai-api-pricing.html</link>
-<guid isPermaLink="false">2436a611d9-openai-api-pricing</guid><pubDate>Fri, 23 Oct 2026 01:33:09 +0000</pubDate>
-<category>openai</category><category>pricing</category>
-<description>Updated pricing tables to reorder columns, moving cached input costs to the final position for all models. (+35/-32 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/2436a611d9-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
 </channel></rss>

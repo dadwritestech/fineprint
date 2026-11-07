@@ -1,0 +1,11 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index 19d3e8c..6836cb7 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -225,4 +225,6 @@ Deprecated
+ ### Deprecated & retired models
+ 
++Serverless-only
++
+ Older models that have been deprecated or retired.
+ 
