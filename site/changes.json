@@ -13870,5 +13870,22 @@
   "added": 1,
   "removed": 1,
   "diff": "diffs/ef6267d5a2-openai-api-pricing.diff"
+ },
+ {
+  "id": "a0d3ab948d-cursor-privacy",
+  "v": 2,
+  "date": "2026-11-07T21:56:00Z",
+  "sha": "a0d3ab948d1cc551216f33081c388daa82095f0e",
+  "page": "cursor/privacy",
+  "vendor": "cursor",
+  "slug": "privacy",
+  "kind": "privacy",
+  "url": "https://cursor.com/privacy",
+  "summary": "11 line(s) added, 0 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 11,
+  "removed": 0,
+  "diff": "diffs/a0d3ab948d-cursor-privacy.diff"
  }
 ]

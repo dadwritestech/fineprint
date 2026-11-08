@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Sat, 07 Nov 2026 22:00:21 +0000</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 06:14:51 +0000</lastBuildDate>
+<item><title>Cursor privacy: 11 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/a0d3ab948d-cursor-privacy.html</link>
+<guid isPermaLink="false">a0d3ab948d-cursor-privacy</guid><pubDate>Sat, 07 Nov 2026 21:56:00 +0000</pubDate>
+<category>cursor</category><category>privacy</category>
+<description>11 line(s) added, 0 removed. (+11/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a0d3ab948d-cursor-privacy.diff . Page: https://cursor.com/privacy</description></item>
 <item><title>Anthropic api-release-notes: 44 line(s) added, 45 removed (around &quot;April 9, 2025&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/6d21385c88-anthropic-api-release-notes.html</link>
 <guid isPermaLink="false">6d21385c88-anthropic-api-release-notes</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
 <category>anthropic</category><category>changelog</category>
@@ -238,8 +242,4 @@
 <guid isPermaLink="false">585a3a9e69-google-gemini-api-pricing</guid><pubDate>Fri, 23 Oct 2026 09:23:48 +0000</pubDate>
 <category>google</category><category>pricing</category>
 <description>Removed Gemini Omni Flash Preview and Veo 3.1 models from the pricing page and updated the last updated date to 2026-10-22 UTC. (+1/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/585a3a9e69-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
-<item><title>Google Gemini gemini-api-pricing: 1 line(s) added, 22 removed (around &quot;Gemini Omni Flash Preview&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/efdffcdcf8-google-gemini-api-pricing.html</link>
-<guid isPermaLink="false">efdffcdcf8-google-gemini-api-pricing</guid><pubDate>Fri, 23 Oct 2026 09:23:48 +0000</pubDate>
-<category>google</category><category>pricing</category>
-<description>1 line(s) added, 22 removed (around &quot;Gemini Omni Flash Preview&quot;). (+1/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/efdffcdcf8-google-gemini-api-pricing.diff . Page: https://ai.google.dev/gemini-api/docs/pricing</description></item>
 </channel></rss>
