@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Sun, 08 Nov 2026 13:36:44 +0000</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 22:16:35 +0000</lastBuildDate>
 <item><title>Anthropic pricing: 1 line(s) added, 3 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/b993404f48-anthropic-pricing.html</link>
 <guid isPermaLink="false">b993404f48-anthropic-pricing</guid><pubDate>Sun, 08 Nov 2026 06:10:31 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
