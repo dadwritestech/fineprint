@@ -13887,5 +13887,22 @@
   "added": 11,
   "removed": 0,
   "diff": "diffs/a0d3ab948d-cursor-privacy.diff"
+ },
+ {
+  "id": "b993404f48-anthropic-pricing",
+  "v": 2,
+  "date": "2026-11-08T06:10:31Z",
+  "sha": "b993404f488168bec919114efc0cc3a0bc2e0eff",
+  "page": "anthropic/pricing",
+  "vendor": "anthropic",
+  "slug": "pricing",
+  "kind": "pricing",
+  "url": "https://claude.com/pricing",
+  "summary": "1 line(s) added, 3 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 1,
+  "removed": 3,
+  "diff": "diffs/b993404f48-anthropic-pricing.diff"
  }
 ]
