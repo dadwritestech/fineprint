@@ -1,1 +1,6 @@
-{}
+{
+ "anthropic/pricing": {
+  "first_seen": "2026-11-09T06:44:44+00:00",
+  "sha256": "e5ae914cbba5a45e744456dfc75486fcf343d1f8c2bb34d8fd74cbb00dc907df"
+ }
+}
