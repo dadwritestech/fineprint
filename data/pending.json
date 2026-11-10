@@ -1,22 +1,14 @@
 {
- "anthropic/api-pricing": {
-  "first_seen": "2026-11-09T22:27:16+00:00",
-  "sha256": "712918b3855fe1a5596cbd9bdc2de6c1b2947f3ceea060fb1c33afb6a4a56326"
- },
- "anthropic/api-release-notes": {
-  "first_seen": "2026-11-09T22:27:16+00:00",
-  "sha256": "c84a952522792ee2d1a419ddd1f6cc0c20154ebe8211552e788d3ce91f9009e9"
- },
- "anthropic/model-deprecations": {
-  "first_seen": "2026-11-09T22:27:16+00:00",
-  "sha256": "281f146bbca2e53e06a322df20495b96d1b1295b205a78b586b8309d8508908d"
- },
  "anthropic/pricing": {
-  "first_seen": "2026-11-09T22:27:16+00:00",
-  "sha256": "7764b8e4fc6d4a219762e7afab2e720ef8c06d6a600aa4afa4b808a2508d390d"
+  "first_seen": "2026-11-10T07:25:33+00:00",
+  "sha256": "356f88e6f6542aa45e5e6887dea44388d210e456f71d8354931f5f836dc6bb27"
  },
- "anthropic/rate-limits": {
-  "first_seen": "2026-11-09T22:27:16+00:00",
-  "sha256": "e95c5807562e6edc20f4ffaf185d3aed0dc0c7d230f0e59a773b8e3acb9f81f4"
+ "openai/api-pricing": {
+  "first_seen": "2026-11-10T07:25:33+00:00",
+  "sha256": "f99e2434a61325a1a35d39bb043a21e52f0fa259474efb2ebfabf6b78adf405b"
+ },
+ "openai/deprecations": {
+  "first_seen": "2026-11-10T07:25:33+00:00",
+  "sha256": "de84c30f7e86268ba2b1cb3b5cbc62506b0a56081fd47b3ebb9cca201a7b32c9"
  }
 }

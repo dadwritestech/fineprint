@@ -1,0 +1,11 @@
+diff --git a/snapshots/anthropic/model-deprecations.md b/snapshots/anthropic/model-deprecations.md
+index 2b34c4b..81edd94 100644
+--- a/snapshots/anthropic/model-deprecations.md
++++ b/snapshots/anthropic/model-deprecations.md
+@@ -63,4 +63,6 @@ Current and recently retired models are listed in the following table with their
+ | API model name | Current state | Deprecated | Tentative retirement date |
+ |---|---|---|---|
++| claude-fable-5-2 | Active | N/A | Not sooner than November 9, 2027 |
++| claude-mythos-5-2 | Active | N/A | Not sooner than November 9, 2027 |
+ | claude-fable-5-1 | Active | N/A | Not sooner than September 1, 2027 |
+ | claude-mythos-5-1 | Active | N/A | Not sooner than September 1, 2027 |

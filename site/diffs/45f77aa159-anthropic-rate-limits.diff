@@ -1,0 +1,42 @@
+diff --git a/snapshots/anthropic/rate-limits.md b/snapshots/anthropic/rate-limits.md
+index e2a7081..767a32d 100644
+--- a/snapshots/anthropic/rate-limits.md
++++ b/snapshots/anthropic/rate-limits.md
+@@ -112,5 +112,6 @@ Start tier
+ | Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+ |---|---|---|---|
+-| Claude Fable 5.x1 | 4,000 | 500,000 | 100,000 |
++| Claude Fable 5.2 | 4,000 | 500,000 | 100,000 |
++| Claude Fable 5.1 and Claude Fable 51 | 4,000 | 500,000 | 100,000 |
+ | Claude Opus 5.5 | 4,000 | 2,000,000 | 400,000 |
+ | Claude Opus 5 | 1,000 | 2,000,000 | 400,000 |
+@@ -126,5 +127,6 @@ Build tier
+ | Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+ |---|---|---|---|
+-| Claude Fable 5.x1 | 10,000 | 1,500,000 | 300,000 |
++| Claude Fable 5.2 | 10,000 | 1,500,000 | 300,000 |
++| Claude Fable 5.1 and Claude Fable 51 | 10,000 | 1,500,000 | 300,000 |
+ | Claude Opus 5.5 | 10,000 | 5,000,000 | 1,000,000 |
+ | Claude Opus 5 | 5,000 | 5,000,000 | 1,000,000 |
+@@ -140,5 +142,6 @@ Scale tier
+ | Model | Maximum requests per minute (RPM) | Maximum input tokens per minute (ITPM) | Maximum output tokens per minute (OTPM) |
+ |---|---|---|---|
+-| Claude Fable 5.x1 | 13,000 | 4,000,000 | 800,000 |
++| Claude Fable 5.2 | 13,000 | 4,000,000 | 800,000 |
++| Claude Fable 5.1 and Claude Fable 51 | 13,000 | 4,000,000 | 800,000 |
+ | Claude Opus 5.5 | 13,000 | 10,000,000 | 2,000,000 |
+ | Claude Opus 5 | 10,000 | 10,000,000 | 2,000,000 |
+@@ -154,5 +157,5 @@ Custom tier
+ If you need limits higher than the Scale tier, contact sales through the Rate limits page in the Claude Console.
+ 
+-1 Fable rate limit is a total limit that applies to combined traffic across Claude Fable 5.1 and Claude Fable 5. Claude Mythos 5.1 and Claude Mythos 5 share a separate combined limit on the same terms.
++1 Fable rate limit is a total limit that applies to combined traffic across Claude Fable 5.1 and Claude Fable 5. Claude Fable 5.2 has a separate rate limit and is not part of this combined bucket. Claude Mythos 5.2, Claude Mythos 5.1, and Claude Mythos 5 share a separate combined limit.
+ 
+ 2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5.5 and Claude Opus 5 each have a separate rate limit and are not part of this combined bucket.
+@@ -201,5 +204,5 @@ Files API requests have their own per-organization limit, shared across upload,
+ ### Fast mode rate limits
+ 
+-When using fast mode with `speed: "fast"` on Claude Opus 5.5, Claude Opus 5, or Claude Opus 4.8, dedicated rate limits apply that are separate from standard Opus rate limits. Claude Opus 5.5 has a default fast mode rate limit in the Start, Build, and Scale tiers, so you don't need to request access to use fast mode with it. Organizations in the Evaluation tier can use fast mode with Claude Opus 5.5 once they move to the Start, Build, or Scale tier. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. To see your fast mode rate limits, go to the Rate limits page in the Claude Console. When fast mode rate limits are exceeded, the API returns a `429` error with a `retry-after` header.
++When you use fast mode with `speed: "fast"` on Claude Fable 5.2, Claude Mythos 5.2, Claude Opus 5.5, Claude Opus 5, or Claude Opus 4.8, dedicated rate limits apply. They are separate from standard rate limits. Claude Opus 5.5 has a default fast mode rate limit in the Start, Build, and Scale tiers, so you don't need to request access to use fast mode with it. Organizations in the Evaluation tier can use fast mode with Claude Opus 5.5 once they move to the Start, Build, or Scale tier. The same applies to Claude Fable 5.2. It also applies to Claude Mythos 5.2. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. To see your fast mode rate limits, go to the Rate limits page in the Claude Console. When you exceed your fast mode rate limits, the API returns a `429` error with a `retry-after` header.
+ 
+ The response includes `anthropic-fast-*` headers that indicate your fast mode rate limit status. See Fast mode rate limits for details on these headers.

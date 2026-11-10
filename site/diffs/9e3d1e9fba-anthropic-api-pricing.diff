@@ -1,0 +1,87 @@
+diff --git a/snapshots/anthropic/api-pricing.md b/snapshots/anthropic/api-pricing.md
+index 961fa86..1e43d39 100644
+--- a/snapshots/anthropic/api-pricing.md
++++ b/snapshots/anthropic/api-pricing.md
+@@ -12,5 +12,5 @@ The following table shows pricing for all Claude models:
+ |---|---|---|---|---|---|
+ | Name | Input | Output | 5m writes | 1h writes | Hits and refreshes |
+-| Claude Fable 5.1For demanding reasoning and long-horizon agentic work | $10 / MTok | $50 / MTok | $12.50 / MTok | $20 / MTok | $0.25 / MTok |
++| Claude Fable 5.2For demanding reasoning and long-horizon agentic work | $8 / MTok | $40 / MTok | $10 / MTok | $16 / MTok | $0.20 / MTok |
+ | Claude Opus 5.5For long-running agentic coding and knowledge work | $4 / MTok | $20 / MTok | $5 / MTok | $8 / MTok | $0.20 / MTok |
+ | Claude Sonnet 5.5The best combination of speed and intelligence | $2 / MTok | $10 / MTok | $2.50 / MTok | $4 / MTok | $0.10 / MTok |
+@@ -18,4 +18,6 @@ The following table shows pricing for all Claude models:
+ | $0.50 / MTokfor prompts over 100,000 tokens | $2.50 / MTok | $0.625 / MTok | $1 / MTok | $0.05 / MTok |  |
+ | Additional models |  |  |  |  |  |
++| Claude Mythos 5.2 | $8 / MTok | $40 / MTok | $10 / MTok | $16 / MTok | $0.20 / MTok |
++| Claude Fable 5.1 | $10 / MTok | $50 / MTok | $12.50 / MTok | $20 / MTok | $0.25 / MTok |
+ | Claude Mythos 5.1 | $10 / MTok | $50 / MTok | $12.50 / MTok | $20 / MTok | $0.25 / MTok |
+ | Claude Fable 5 | $10 / MTok | $50 / MTok | $12.50 / MTok | $20 / MTok | $1 / MTok |
+@@ -58,5 +60,5 @@ Starting with Claude Sonnet 4.5, Haiku 4.5, and Opus 4.5:
+ Regional and multi-region endpoints include a 10 percent premium over global endpoints. The Claude API (first-party) is global by default; for first-party data residency options and pricing, see Data residency pricing.
+ 
+-Scope: This pricing structure applies to Claude Sonnet 4.5 (deprecated), Haiku 4.5, Opus 4.5, and all future models. Earlier models (Claude Opus 4.1 and prior releases) retain their existing pricing.
++Scope: This pricing structure applies to Claude Sonnet 4.5 (deprecated), Haiku 4.5, Opus 4.5, and later models. It doesn't apply to earlier models (Claude Opus 4.1 and prior releases).
+ 
+ For implementation details and code examples:
+@@ -126,7 +128,7 @@ Prompt caching uses the following pricing multipliers relative to base input tok
+ | 5-minute cache write | 1.25x base input price | Cache valid for 5 minutes |
+ | 1-hour cache write | 2x base input price | Cache valid for 1 hour |
+-| Cache read (hit) | 0.1x base input price (0.025x on Claude Fable 5.1 and Claude Mythos 5.1; 0.05x on Claude Opus 5.5 and Claude Sonnet 5.5) | Same duration as the preceding write |
++| Cache read (hit) | 0.1x base input price (0.025x on Claude Fable 5.2, Claude Mythos 5.2, Claude Fable 5.1, and Claude Mythos 5.1; 0.05x on Claude Opus 5.5 and Claude Sonnet 5.5) | Same duration as the preceding write |
+ 
+-Cache write tokens are charged when content is first stored. Cache read tokens are charged when a subsequent request retrieves the cached content. A cache hit costs 10% of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). On Claude Fable 5.1 and Claude Mythos 5.1, a cache hit costs 2.5% of the standard input price ($0.25 USD per million tokens). On Claude Opus 5.5 and Claude Sonnet 5.5, a cache hit costs 5% of the standard input price ($0.20 USD per million tokens on Claude Opus 5.5, $0.10 USD on Claude Sonnet 5.5).
++Cache write tokens are charged when content is first stored. Cache read tokens are charged when a subsequent request retrieves the cached content. A cache hit costs 10 percent of the standard input price, which means caching pays off after one cache read for the 5-minute duration (1.25x write), or after two cache reads for the 1-hour duration (2x write). On Claude Fable 5.2, Claude Mythos 5.2, Claude Fable 5.1, and Claude Mythos 5.1, a cache hit costs 2.5 percent of the standard input price ($0.20 USD per million tokens on Claude Fable 5.2 and Claude Mythos 5.2, $0.25 USD on Claude Fable 5.1 and Claude Mythos 5.1). On Claude Opus 5.5 and Claude Sonnet 5.5, a cache hit costs 5 percent of the standard input price ($0.20 USD per million tokens on Claude Opus 5.5, $0.10 USD on Claude Sonnet 5.5).
+ 
+ These multipliers stack with other pricing modifiers, including the Batch API discount and data residency.
+@@ -144,8 +146,18 @@ For more information, see Data residency.
+ ### Fast mode pricing
+ 
+-Fast mode provides significantly faster output for Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party) and, for Claude Opus 5.5, on Claude Models on Google Cloud (Anthropic managed) and on Claude in Microsoft Foundry for deployments hosted on Azure.
++Fast mode provides significantly faster output for Claude Fable 5.2, Claude Opus 5.5, Claude Opus 5, and Claude Opus 4.8 at premium pricing. Fast mode for Claude Opus 5 and Claude Opus 4.8 is in research preview. Fast mode pricing applies across the full context window, including requests over 200k input tokens. Fast mode is available on the Claude API (first-party). For Claude Opus 5.5, it is also available on Claude Models on Google Cloud (Anthropic managed) and on Claude in Microsoft Foundry for deployments hosted on Azure.
++
++Fast mode for Claude Fable 5.2 is also available on Claude Models on Google Cloud (Anthropic managed).
++
++Fast mode for Claude Fable 5.2 is also available on Claude Models on Google Cloud (Google managed). Google Cloud sets its prices there. See Cloud platform pricing.
++
++Fast mode for Claude Fable 5.2 is also available on Claude in Microsoft Foundry for deployments hosted on Anthropic. See Claude in Microsoft Foundry pricing.
++
++Fast mode is also available for Claude Mythos 5.2 on the Claude API. Availability of fast mode lists every platform where Claude Mythos 5.2 has fast mode.
+ 
+ | Model | Input | Output |
+ |---|---|---|
++| Claude Fable 5.2 | $16 USD / MTok | $80 USD / MTok |
++| Claude Mythos 5.2 | $16 USD / MTok | $80 USD / MTok |
+ | Claude Opus 5.5 | $8 USD / MTok | $40 USD / MTok |
+ | Claude Opus 5 / Claude Opus 4.8 | $10 USD / MTok | $50 USD / MTok |
+@@ -167,5 +179,5 @@ The Batch API allows asynchronous processing of large volumes of requests with a
+ |---|---|---|
+ | Name | Input | Output |
+-| Claude Fable 5.1For demanding reasoning and long-horizon agentic work | $5 / MTok | $25 / MTok |
++| Claude Fable 5.2For demanding reasoning and long-horizon agentic work | $4 / MTok | $20 / MTok |
+ | Claude Opus 5.5For long-running agentic coding and knowledge work | $2 / MTok | $10 / MTok |
+ | Claude Sonnet 5.5The best combination of speed and intelligence | $1 / MTok | $5 / MTok |
+@@ -173,4 +185,6 @@ The Batch API allows asynchronous processing of large volumes of requests with a
+ | $0.25 / MTokfor prompts over 100,000 tokens | $1.25 / MTok |  |
+ | Additional models |  |  |
++| Claude Mythos 5.2 | $4 / MTok | $20 / MTok |
++| Claude Fable 5.1 | $5 / MTok | $25 / MTok |
+ | Claude Mythos 5.1 | $5 / MTok | $25 / MTok |
+ | Claude Fable 5 | $5 / MTok | $25 / MTok |
+@@ -201,7 +215,7 @@ Claude Haiku 5.5 is priced by prompt length: a request whose prompt is over 100,
+ Tool use requests are priced based on:
+ 
+-1. The total number of input tokens sent to the model (including in the `tools` parameter)
+-2. The number of output tokens generated
+-3. For server-side tools, additional usage-based pricing (for example, web search charges per search performed)
++1. The total number of input tokens sent to the model (including in the `tools` parameter).
++2. The number of output tokens generated.
++3. For server-side tools, additional usage-based pricing (for example, web search charges per search performed).
+ 
+ Client-side tools are priced the same as any other Claude API request, although server-side tools can incur additional charges based on their specific usage.
+@@ -213,5 +227,5 @@ The additional tokens from tool use come from:
+ - `tool_result` content blocks in API requests
+ 
+-When you use `tools`, the API also automatically includes a special system prompt for the model that enables tool use. The number of tool use tokens required for each model is listed in the following table (excluding the additional tokens listed earlier). Note that the table assumes at least 1 tool is provided. If no `tools` are provided, then a tool choice of `none` uses 0 additional system prompt tokens.
++When you use `tools`, the API also automatically includes a special system prompt for the model that enables tool use. The following table lists the number of tool use tokens that each model requires (excluding the additional tokens listed earlier). The table assumes that you provide at least one tool. If you provide no `tools`, a tool choice of `none` uses 0 additional system prompt tokens.
+ 
+ | Model | Tool use system prompt tokens |  |
