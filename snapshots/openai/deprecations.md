@@ -15,7 +15,7 @@ We provide advance notice before retiring models so customers have time to plan 
 Unless safety or compliance concerns require a faster timeline, we provide the following minimum notice periods before model retirement:
 
 - Generally available models: At least 6 months.
-- Specialized variants of generally available models: At least 3 months. Examples include chat variants such as `gpt-5.1-chat-latest`, Codex variants such as `gpt-5.3-codex`, and deep research variants such as `o3-deep-research`.
+- Specialized variants of generally available models and image generation models: At least 3 months. Examples include chat variants such as `gpt-5.1-chat-latest`, Codex variants such as `gpt-5.3-codex`, and deep research variants such as `o3-deep-research`.
 - Preview models: Preview models, identified by `preview` in the model name, may be retired with much shorter notice, such as 2 weeks. Examples include `computer-use-preview` and `gpt-4o-audio-preview`. We don't recommend using preview models for business-critical production workloads unless you can migrate on short notice.
 
 If safety or compliance concerns require us to retire a model sooner, we will provide as much notice as reasonably possible.
@@ -33,6 +33,14 @@ We use the term "legacy" to refer to models and endpoints that no longer receive
 ## Upcoming deprecations
 
 Upcoming deprecations are listed below, with the most recent announcements at the top.
+
+### 2026-11-10: GPT Image 2
+
+The `gpt-image-2` model and `gpt-image-2-2026-04-21` snapshot are deprecated and will be removed from the API on February 10, 2027.
+
+| Shutdown date | Model / system | Recommended replacement |
+|---|---|---|
+| February 10, 2027 | `gpt-image-2` \| `gpt-image-2-2026-04-21` | `gpt-image-2.6-sunburst` or `gpt-image-2.6-flare` |
 
 ### 2026-11-05: GPT-5.5-Cyber
 
