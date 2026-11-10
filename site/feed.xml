@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Tue, 10 Nov 2026 07:29:55 +0000</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 19:53:04 +0000</lastBuildDate>
+<item><title>OpenAI deprecations: 6 line(s) added, 1 removed (around &quot;2026-11-10: GPT Image 2&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/459a1bd75b-openai-deprecations.html</link>
+<guid isPermaLink="false">459a1bd75b-openai-deprecations</guid><pubDate>Tue, 10 Nov 2026 07:25:33 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>6 line(s) added, 1 removed (around &quot;2026-11-10: GPT Image 2&quot;). (+6/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/459a1bd75b-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
 <item><title>Anthropic api-pricing: 20 line(s) added, 10 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/9e3d1e9fba-anthropic-api-pricing.html</link>
 <guid isPermaLink="false">9e3d1e9fba-anthropic-api-pricing</guid><pubDate>Mon, 09 Nov 2026 22:27:16 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -238,8 +242,4 @@
 <guid isPermaLink="false">dd0b1c5ea2-deepseek-news</guid><pubDate>Mon, 26 Oct 2026 04:27:47 +0000</pubDate>
 <category>deepseek</category><category>changelog</category>
 <description>26 line(s) added, 194 removed (around &quot;Your First API Call&quot;). (+26/-194 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/dd0b1c5ea2-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
-<item><title>Anthropic privacy: Converted the Legal Bases for Processing table from a markdown table format to a nested list format.</title><link>https://dadwritestech.github.io/fineprint/diffs/253af2a14c-anthropic-privacy.html</link>
-<guid isPermaLink="false">253af2a14c-anthropic-privacy</guid><pubDate>Sun, 25 Oct 2026 07:51:22 +0000</pubDate>
-<category>anthropic</category><category>privacy</category>
-<description>Converted the Legal Bases for Processing table from a markdown table format to a nested list format. (+108/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/253af2a14c-anthropic-privacy.diff . Page: https://www.anthropic.com/legal/privacy</description></item>
 </channel></rss>

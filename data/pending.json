@@ -1,14 +1,22 @@
 {
+ "anthropic/api-release-notes": {
+  "first_seen": "2026-11-10T19:48:44+00:00",
+  "sha256": "50825dcddff9781a9ece3d367c26328ccbd55a12955e09426c6467f5d195420b"
+ },
  "anthropic/pricing": {
-  "first_seen": "2026-11-10T07:25:33+00:00",
-  "sha256": "356f88e6f6542aa45e5e6887dea44388d210e456f71d8354931f5f836dc6bb27"
+  "first_seen": "2026-11-10T19:48:44+00:00",
+  "sha256": "cf5cfff5d35118d2da06bc0f82aa8e08a2b088f680cd28c31331923f0f7feba6"
+ },
+ "deepseek/api-pricing": {
+  "first_seen": "2026-11-10T19:48:44+00:00",
+  "sha256": "31a6be2276383acdfe91684fa1c87bcd5e72cd822f832b09ed17a816e70b4f7a"
+ },
+ "github-copilot/plans": {
+  "first_seen": "2026-11-10T19:48:44+00:00",
+  "sha256": "a8f89966a6453dc2e0d455fdbd1d876ed431eb8a36c197e9bee15c966537c3b9"
  },
  "openai/api-pricing": {
-  "first_seen": "2026-11-10T07:25:33+00:00",
-  "sha256": "f99e2434a61325a1a35d39bb043a21e52f0fa259474efb2ebfabf6b78adf405b"
- },
- "openai/deprecations": {
-  "first_seen": "2026-11-10T07:25:33+00:00",
-  "sha256": "de84c30f7e86268ba2b1cb3b5cbc62506b0a56081fd47b3ebb9cca201a7b32c9"
+  "first_seen": "2026-11-10T19:48:44+00:00",
+  "sha256": "99e111a00679c57cf71f479b6d6d9d001f71492a63da5a61f5f2e4b86db005f1"
  }
 }
