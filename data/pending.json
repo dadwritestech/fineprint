@@ -1,10 +1,18 @@
 {
- "anthropic/pricing": {
-  "first_seen": "2026-11-11T06:35:06+00:00",
-  "sha256": "69e0b9168d71500e33611511eab992de80fdde586618798e2b616222aec191d9"
+ "anthropic/api-pricing": {
+  "first_seen": "2026-11-11T19:40:43+00:00",
+  "sha256": "36d37f35708c96471092ca660b0744a6df5b722d58841c964a5767da5f30111b"
  },
- "github-copilot/plans": {
-  "first_seen": "2026-11-11T06:35:06+00:00",
-  "sha256": "3b39d5449ccfb20cb72b3c06a560d83fa64e2c36335b83fc6c7fb27839129aed"
+ "anthropic/api-release-notes": {
+  "first_seen": "2026-11-11T19:40:43+00:00",
+  "sha256": "8a125cdd3bf67acc81d9525b769c873420b00c5d21d1e43f896334fbaaa96036"
+ },
+ "anthropic/model-deprecations": {
+  "first_seen": "2026-11-11T19:40:43+00:00",
+  "sha256": "96a98f427864adb0a8086f6bce998206c402f0cdb30f46358dcedd5ac785e307"
+ },
+ "anthropic/rate-limits": {
+  "first_seen": "2026-11-11T19:40:43+00:00",
+  "sha256": "c7ea6555ef6bead9e061e11fe4bdcfd13701ad1db23c92d98f0c30c1e5a32527"
  }
 }

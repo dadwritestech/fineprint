@@ -1,0 +1,137 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 854a947..e51a505 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -34,5 +34,5 @@ Everything in Free, plus:
+ - Fable, paid with usage credits New
+ - Hand off and schedule tasks
+-- Claude Dashboards (beta)
++- Claude Data, plus Sheets and Whiteboards (beta)
+ - Claude Code
+ - Claude Science
+@@ -104,9 +104,11 @@ Try Claude
+ | Hand off and schedule tasks |  |  |  |  |
+ | Create Artifacts |  |  |  |  |
+-| Claude Dashboards (beta) |  |  |  |  |
++| Claude Data |  |  |  |  |
+ | Claude Design |  |  |  |  |
+ | Claude Docs |  |  |  |  |
+ | Claude Motion (beta) |  |  |  |  |
++| New Claude Sheets (beta) |  |  |  |  |
+ | Claude Slides |  |  |  |  |
++| New Claude Whiteboards (beta) |  |  |  |  |
+ | Claude Code |  |  |  |  |
+ | Claude for Microsoft 365 |  |  |  |  |
+@@ -143,5 +145,5 @@ Try Claude
+ | New Monthly API credits† |  |  | $100/month | $200/month |
+ | Priority access at high traffic times |  |  |  |  |
+-| User and organizational level spend controls |  |  |  |  |
++| Organizational level spend controls |  |  |  |  |
+ | Model training | Opt-out | Opt-out | Opt-out | Opt-out |
+ 
+@@ -197,5 +199,5 @@ Per seat / month if billed annually. $125 if billed monthly.
+ - Claude Code and Claude Cowork
+ - Claude Design, Slides, and Docs
+-- Claude Motion and Dashboards (beta)
++- Claude Data, plus Motion, Sheets, and Whiteboards (beta)
+ - Claude Science
+ - Microsoft 365, Claude Tag, and more
+@@ -265,9 +267,11 @@ Contact sales
+ | Chat on web, iOS, Android and Desktop |  |  |  |
+ | Create Artifacts |  |  |  |
+-| Claude Dashboards (beta) |  |  |  |
++| Claude Data |  |  |  |
+ | Claude Design |  |  |  |
+ | Claude Docs |  |  |  |
+ | Claude Motion (beta) |  |  |  |
++| New Claude Sheets (beta) |  |  |  |
+ | Claude Slides |  |  |  |
++| New Claude Whiteboards (beta) |  |  |  |
+ | Claude Code |  |  |  |
+ | Claude for Microsoft 365 |  |  |  |
+@@ -303,5 +307,5 @@ Contact sales
+ | New Monthly API credits† | Up to $500/month |  |  |
+ | Priority access at high traffic times |  |  |  |
+-| User and organizational level spend controls |  |  |  |
++| Spend controls |  |  |  |
+ | Model training | None by default | None by default | None by default |
+ 
+@@ -357,5 +361,5 @@ Save 50% with batch processing. Learn more
+ Batch processing
+ 
+-### Fable 5.1
++### Fable 5.2
+ 
+ Next generation intelligence for long-running agents
+@@ -365,17 +369,17 @@ Prompt caching
+ Read
+ 
+-$0.25 / MTok
++$0.20 / MTok
+ 
+ Write
+ 
+-$12.50 / MTok
++$10 / MTok
+ 
+ Input
+ 
+-$10 / MTok
++$8 / MTok
+ 
+ Output
+ 
+-$50 / MTok
++$40 / MTok
+ 
+ ### Opus 5.5
+@@ -471,5 +475,5 @@ $2.50 / MTok
+ For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
+ 
+-Get up to 2.5x faster speeds with fast mode for Opus 5.5 at 2x standard pricing. Learn more.
++Get up to 2.5x faster speeds with fast mode for Opus 5.5 and Fable 5.2 at 2x standard pricing. Learn more.
+ 
+ Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
+@@ -522,4 +526,24 @@ Learn moreContact sales
+ Learn moreExplore detailed pricing
+ 
++### Fable 5.1
++
++Prompt caching
++
++Read
++
++$0.25 / MTok
++
++Write
++
++$12.50 / MTok
++
++Input
++
++$10 / MTok
++
++Output
++
++$50 / MTok
++
+ ### Haiku 4.5
+ 
+@@ -542,4 +566,8 @@ Output
+ $5 / MTok
+ 
++Save 50% with batch processing. Learn more
++
++Batch processing
++
+ ### Sonnet 5
+ 
+@@ -562,8 +590,4 @@ Output
+ $10 / MTok
+ 
+-Save 50% with batch processing. Learn more
+-
+-Batch processing
+-
+ ### Opus 5
+ 

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Wed, 11 Nov 2026 06:39:27 +0000</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 19:45:04 +0000</lastBuildDate>
+<item><title>Anthropic pricing: 28 line(s) added, 14 removed (around &quot;Fable 5.2&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/6bf72b34f3-anthropic-pricing.html</link>
+<guid isPermaLink="false">6bf72b34f3-anthropic-pricing</guid><pubDate>Wed, 11 Nov 2026 06:35:06 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>28 line(s) added, 14 removed (around &quot;Fable 5.2&quot;). (+28/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6bf72b34f3-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>GitHub Copilot plans: 8 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/1e8748f3fd-github-copilot-plans.html</link>
+<guid isPermaLink="false">1e8748f3fd-github-copilot-plans</guid><pubDate>Wed, 11 Nov 2026 06:35:06 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>8 line(s) added, 0 removed. (+8/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1e8748f3fd-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
 <item><title>Anthropic api-release-notes: 1 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/8ff482da39-anthropic-api-release-notes.html</link>
 <guid isPermaLink="false">8ff482da39-anthropic-api-release-notes</guid><pubDate>Tue, 10 Nov 2026 19:48:44 +0000</pubDate>
 <category>anthropic</category><category>changelog</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">d01d83b017-anthropic-usage-policy</guid><pubDate>Wed, 28 Oct 2026 01:37:03 +0000</pubDate>
 <category>anthropic</category><category>policy</category>
 <description>Added High-risk Use Case Requirements requiring human accountability and disclosure for AI-driven decisions affecting health, legal rights, finances, or essential services. (+25/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/d01d83b017-anthropic-usage-policy.diff . Page: https://www.anthropic.com/legal/aup</description></item>
-<item><title>Anthropic usage-policy: 25 line(s) added, 22 removed (around &quot;Universal Usage Standards&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/8e0372118b-anthropic-usage-policy.html</link>
-<guid isPermaLink="false">8e0372118b-anthropic-usage-policy</guid><pubDate>Wed, 28 Oct 2026 01:37:03 +0000</pubDate>
-<category>anthropic</category><category>policy</category>
-<description>25 line(s) added, 22 removed (around &quot;Universal Usage Standards&quot;). (+25/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8e0372118b-anthropic-usage-policy.diff . Page: https://www.anthropic.com/legal/aup</description></item>
-<item><title>OpenAI deprecations: Updated deprecation schedules to include specific model snapshots and moved several legacy models to the past deprecations section.</title><link>https://dadwritestech.github.io/fineprint/diffs/a229ca0bb9-openai-deprecations.html</link>
-<guid isPermaLink="false">a229ca0bb9-openai-deprecations</guid><pubDate>Tue, 27 Oct 2026 07:51:44 +0000</pubDate>
-<category>openai</category><category>deprecations</category>
-<description>Updated deprecation schedules to include specific model snapshots and moved several legacy models to the past deprecations section. (+34/-41 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a229ca0bb9-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
 </channel></rss>

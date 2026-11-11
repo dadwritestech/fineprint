@@ -14040,5 +14040,39 @@
   "added": 86,
   "removed": 77,
   "diff": "diffs/6594f1a148-openai-api-pricing.diff"
+ },
+ {
+  "id": "6bf72b34f3-anthropic-pricing",
+  "v": 2,
+  "date": "2026-11-11T06:35:06Z",
+  "sha": "6bf72b34f35075c713afd7a6988ba92d0b36fa7a",
+  "page": "anthropic/pricing",
+  "vendor": "anthropic",
+  "slug": "pricing",
+  "kind": "pricing",
+  "url": "https://claude.com/pricing",
+  "summary": "28 line(s) added, 14 removed (around \"Fable 5.2\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 28,
+  "removed": 14,
+  "diff": "diffs/6bf72b34f3-anthropic-pricing.diff"
+ },
+ {
+  "id": "1e8748f3fd-github-copilot-plans",
+  "v": 2,
+  "date": "2026-11-11T06:35:06Z",
+  "sha": "1e8748f3fd1e14a1b6c232743832d738dff7ba22",
+  "page": "github-copilot/plans",
+  "vendor": "github-copilot",
+  "slug": "plans",
+  "kind": "pricing",
+  "url": "https://github.com/features/copilot/plans",
+  "summary": "8 line(s) added, 0 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 8,
+  "removed": 0,
+  "diff": "diffs/1e8748f3fd-github-copilot-plans.diff"
  }
 ]
