@@ -427,6 +427,7 @@ Free
 
 - Anthropic Claude Fable 5
 - Anthropic Claude Fable 5.1
+- Anthropic Claude Fable 5.2
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Haiku 5.5
 - Anthropic Claude Sonnet 4
@@ -456,6 +457,7 @@ Free
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
+- Google Gemini 4 Carbon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -465,6 +467,7 @@ Pro
 
 - Anthropic Claude Fable 5
 - Anthropic Claude Fable 5.1
+- Anthropic Claude Fable 5.2
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Haiku 5.5
 - Anthropic Claude Sonnet 4
@@ -494,6 +497,7 @@ Pro
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
+- Google Gemini 4 Carbon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -503,6 +507,7 @@ Pro+
 
 - Anthropic Claude Fable 5
 - Anthropic Claude Fable 5.1
+- Anthropic Claude Fable 5.2
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Haiku 5.5
 - Anthropic Claude Sonnet 4
@@ -532,6 +537,7 @@ Pro+
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
+- Google Gemini 4 Carbon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -541,6 +547,7 @@ Max
 
 - Anthropic Claude Fable 5
 - Anthropic Claude Fable 5.1
+- Anthropic Claude Fable 5.2
 - Anthropic Claude Haiku 4.5
 - Anthropic Claude Haiku 5.5
 - Anthropic Claude Sonnet 4
@@ -570,6 +577,7 @@ Max
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
+- Google Gemini 4 Carbon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
