@@ -15,7 +15,7 @@ Anthropic uses the following terms to describe the model lifecycle:
 
 Deprecated models are likely to be less reliable than active models. Move workloads to active models to maintain the highest level of support and reliability.
 
-The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, Claude Models on Google Cloud (Anthropic managed), and Microsoft Foundry. Partner-operated platforms, Claude Models on Google Cloud (Google managed) and Amazon Bedrock, set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock, Amazon Bedrock (Opus 4.6 and earlier), and Claude Models on Google Cloud (Google managed) model tables.
+The dates on this page apply to Anthropic-operated platforms: the Claude API, Claude Platform on AWS, Claude Models on Google Cloud (Anthropic managed), and Microsoft Foundry. Partner-operated platforms, Claude Models on Google Cloud (Google managed) and Amazon Bedrock, set their own retirement schedules, so a model's lifecycle status and dates can differ. See the Amazon Bedrock (`bedrock-mantle`), Amazon Bedrock (`bedrock-runtime`), and Claude Models on Google Cloud (Google managed) model tables.
 
 ## Migrating to replacements
 
