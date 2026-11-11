@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Tue, 10 Nov 2026 19:53:04 +0000</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 06:39:27 +0000</lastBuildDate>
+<item><title>Anthropic api-release-notes: 1 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/8ff482da39-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">8ff482da39-anthropic-api-release-notes</guid><pubDate>Tue, 10 Nov 2026 19:48:44 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>1 line(s) added, 0 removed. (+1/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8ff482da39-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>DeepSeek api-pricing: 35 line(s) added, 27 removed (around &quot;Models &amp; Pricing&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/4c985e7f19-deepseek-api-pricing.html</link>
+<guid isPermaLink="false">4c985e7f19-deepseek-api-pricing</guid><pubDate>Tue, 10 Nov 2026 19:48:44 +0000</pubDate>
+<category>deepseek</category><category>pricing</category>
+<description>35 line(s) added, 27 removed (around &quot;Models &amp; Pricing&quot;). (+35/-27 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/4c985e7f19-deepseek-api-pricing.diff . Page: https://api-docs.deepseek.com/quick_start/pricing</description></item>
+<item><title>OpenAI api-pricing: 86 line(s) added, 77 removed (around &quot;Suggested&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/6594f1a148-openai-api-pricing.html</link>
+<guid isPermaLink="false">6594f1a148-openai-api-pricing</guid><pubDate>Tue, 10 Nov 2026 19:48:44 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>86 line(s) added, 77 removed (around &quot;Suggested&quot;). (+86/-77 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6594f1a148-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
 <item><title>OpenAI deprecations: 6 line(s) added, 1 removed (around &quot;2026-11-10: GPT Image 2&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/459a1bd75b-openai-deprecations.html</link>
 <guid isPermaLink="false">459a1bd75b-openai-deprecations</guid><pubDate>Tue, 10 Nov 2026 07:25:33 +0000</pubDate>
 <category>openai</category><category>deprecations</category>
@@ -230,16 +242,4 @@
 <guid isPermaLink="false">a229ca0bb9-openai-deprecations</guid><pubDate>Tue, 27 Oct 2026 07:51:44 +0000</pubDate>
 <category>openai</category><category>deprecations</category>
 <description>Updated deprecation schedules to include specific model snapshots and moved several legacy models to the past deprecations section. (+34/-41 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a229ca0bb9-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
-<item><title>OpenAI deprecations: 34 line(s) added, 41 removed (around &quot;2026-04-22: Legacy GPT model snapshots&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/33512a03c0-openai-deprecations.html</link>
-<guid isPermaLink="false">33512a03c0-openai-deprecations</guid><pubDate>Tue, 27 Oct 2026 07:51:44 +0000</pubDate>
-<category>openai</category><category>deprecations</category>
-<description>34 line(s) added, 41 removed (around &quot;2026-04-22: Legacy GPT model snapshots&quot;). (+34/-41 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/33512a03c0-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
-<item><title>DeepSeek news: DeepSeek Harness is now in developer preview and the DeepSeek API now supports OpenAI and Anthropic compatible formats.</title><link>https://dadwritestech.github.io/fineprint/diffs/94fdb47dcc-deepseek-news.html</link>
-<guid isPermaLink="false">94fdb47dcc-deepseek-news</guid><pubDate>Mon, 26 Oct 2026 04:27:47 +0000</pubDate>
-<category>deepseek</category><category>changelog</category>
-<description>DeepSeek Harness is now in developer preview and the DeepSeek API now supports OpenAI and Anthropic compatible formats. (+26/-194 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/94fdb47dcc-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
-<item><title>DeepSeek news: 26 line(s) added, 194 removed (around &quot;Your First API Call&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/dd0b1c5ea2-deepseek-news.html</link>
-<guid isPermaLink="false">dd0b1c5ea2-deepseek-news</guid><pubDate>Mon, 26 Oct 2026 04:27:47 +0000</pubDate>
-<category>deepseek</category><category>changelog</category>
-<description>26 line(s) added, 194 removed (around &quot;Your First API Call&quot;). (+26/-194 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/dd0b1c5ea2-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
 </channel></rss>
