@@ -33,7 +33,7 @@ Everything in Free, plus:
 - More usage than Free, every 5 hours and every week*
 - Fable, paid with usage credits New
 - Hand off and schedule tasks
-- Claude Dashboards (beta)
+- Claude Data, plus Sheets and Whiteboards (beta)
 - Claude Code
 - Claude Science
 - Projects
@@ -103,11 +103,13 @@ Try Claude
 | Chat on web, iOS, Android and Desktop |  |  |  |  |
 | Hand off and schedule tasks |  |  |  |  |
 | Create Artifacts |  |  |  |  |
-| Claude Dashboards (beta) |  |  |  |  |
+| Claude Data |  |  |  |  |
 | Claude Design |  |  |  |  |
 | Claude Docs |  |  |  |  |
 | Claude Motion (beta) |  |  |  |  |
+| New Claude Sheets (beta) |  |  |  |  |
 | Claude Slides |  |  |  |  |
+| New Claude Whiteboards (beta) |  |  |  |  |
 | Claude Code |  |  |  |  |
 | Claude for Microsoft 365 |  |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |  |
@@ -142,7 +144,7 @@ Try Claude
 | Usage credits |  |  |  |  |
 | New Monthly API credits† |  |  | $100/month | $200/month |
 | Priority access at high traffic times |  |  |  |  |
-| User and organizational level spend controls |  |  |  |  |
+| Organizational level spend controls |  |  |  |  |
 | Model training | Opt-out | Opt-out | Opt-out | Opt-out |
 
 ### Security and administration
@@ -196,7 +198,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 
 - Claude Code and Claude Cowork
 - Claude Design, Slides, and Docs
-- Claude Motion and Dashboards (beta)
+- Claude Data, plus Motion, Sheets, and Whiteboards (beta)
 - Claude Science
 - Microsoft 365, Claude Tag, and more
 - Enterprise search across your organization
@@ -264,11 +266,13 @@ Contact sales
 |---|---|---|---|
 | Chat on web, iOS, Android and Desktop |  |  |  |
 | Create Artifacts |  |  |  |
-| Claude Dashboards (beta) |  |  |  |
+| Claude Data |  |  |  |
 | Claude Design |  |  |  |
 | Claude Docs |  |  |  |
 | Claude Motion (beta) |  |  |  |
+| New Claude Sheets (beta) |  |  |  |
 | Claude Slides |  |  |  |
+| New Claude Whiteboards (beta) |  |  |  |
 | Claude Code |  |  |  |
 | Claude for Microsoft 365 |  |  |  |
 | Claude for Microsoft Outlook |  |  |  |
@@ -302,7 +306,7 @@ Contact sales
 | Usage credits |  | n/a | n/a |
 | New Monthly API credits† | Up to $500/month |  |  |
 | Priority access at high traffic times |  |  |  |
-| User and organizational level spend controls |  |  |  |
+| Spend controls |  |  |  |
 | Model training | None by default | None by default | None by default |
 
 ### Security and administration
@@ -356,7 +360,7 @@ Save 50% with batch processing. Learn more
 
 Batch processing
 
-### Fable 5.1
+### Fable 5.2
 
 Next generation intelligence for long-running agents
 
@@ -364,19 +368,19 @@ Prompt caching
 
 Read
 
-$0.25 / MTok
+$0.20 / MTok
 
 Write
 
-$12.50 / MTok
+$10 / MTok
 
 Input
 
-$10 / MTok
+$8 / MTok
 
 Output
 
-$50 / MTok
+$40 / MTok
 
 ### Opus 5.5
 
@@ -470,7 +474,7 @@ $2.50 / MTok
 
 For workloads that need to run in the US, US-only inference is available at 1.1x pricing for input and output tokens. Learn more.
 
-Get up to 2.5x faster speeds with fast mode for Opus 5.5 at 2x standard pricing. Learn more.
+Get up to 2.5x faster speeds with fast mode for Opus 5.5 and Fable 5.2 at 2x standard pricing. Learn more.
 
 Prompt caching pricing reflects 5-minute TTL. Learn about extended prompt caching.
 
@@ -521,6 +525,26 @@ Learn moreContact sales
 
 Learn moreExplore detailed pricing
 
+### Fable 5.1
+
+Prompt caching
+
+Read
+
+$0.25 / MTok
+
+Write
+
+$12.50 / MTok
+
+Input
+
+$10 / MTok
+
+Output
+
+$50 / MTok
+
 ### Haiku 4.5
 
 Prompt caching
@@ -541,6 +565,10 @@ Output
 
 $5 / MTok
 
+Save 50% with batch processing. Learn more
+
+Batch processing
+
 ### Sonnet 5
 
 Prompt caching
@@ -560,10 +588,6 @@ $2 / MTok
 Output
 
 $10 / MTok
-
-Save 50% with batch processing. Learn more
-
-Batch processing
 
 ### Opus 5
 
