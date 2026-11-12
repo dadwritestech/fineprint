@@ -1,9 +1,5 @@
 <!-- fineprint snapshot: mistral/pricing | source: https://mistral.ai/pricing -->
 
-# Pricing
-
-# Pricing
-
 France
 
 Free
@@ -95,7 +91,7 @@ Private deployments powered by custom models, UI, and tools.
 
 Contact us
 
-|  | Free Start now | Pro Start now | Team Start now | Enterprise Contact us |
+|  | FreeStart now | ProStart now | TeamStart now | EnterpriseContact us |
 |---|---|---|---|---|
 | Interfaces. |  |  |  |  |
 | Vibe on web |  |  |  |  |
