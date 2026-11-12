@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Thu, 12 Nov 2026 07:23:42 +0000</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 20:04:18 +0000</lastBuildDate>
+<item><title>Anthropic pricing: 3 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/67982d41b6-anthropic-pricing.html</link>
+<guid isPermaLink="false">67982d41b6-anthropic-pricing</guid><pubDate>Thu, 12 Nov 2026 07:18:33 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>3 line(s) added, 1 removed. (+3/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/67982d41b6-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>Mistral pricing: 1 line(s) added, 3 removed (around &quot;Pricing&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/5b86ce17f8-mistral-pricing.html</link>
+<guid isPermaLink="false">5b86ce17f8-mistral-pricing</guid><pubDate>Thu, 12 Nov 2026 07:18:33 +0000</pubDate>
+<category>mistral</category><category>pricing</category>
+<description>1 line(s) added, 3 removed (around &quot;Pricing&quot;). (+1/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/5b86ce17f8-mistral-pricing.diff . Page: https://mistral.ai/pricing</description></item>
 <item><title>Anthropic api-pricing: 34 line(s) added, 21 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/3d4e15eaa6-anthropic-api-pricing.html</link>
 <guid isPermaLink="false">3d4e15eaa6-anthropic-api-pricing</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">72e5056cad-anthropic-api-pricing</guid><pubDate>Wed, 28 Oct 2026 13:12:53 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
 <description>Added Claude Models on Google Cloud (Google managed) to the pricing page and updated CCU conversion rates to $0.01 USD per CCU. (+48/-48 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/72e5056cad-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
-<item><title>Anthropic api-pricing: 48 line(s) added, 48 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/c58275de8b-anthropic-api-pricing.html</link>
-<guid isPermaLink="false">c58275de8b-anthropic-api-pricing</guid><pubDate>Wed, 28 Oct 2026 13:12:53 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>48 line(s) added, 48 removed. (+48/-48 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c58275de8b-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
-<item><title>Google Gemini gemini-api-changelog: New projects using the paid Generate Content API now store requests by default, matching the Interactions API.</title><link>https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.html</link>
-<guid isPermaLink="false">e426025c2c-google-gemini-api-changelog</guid><pubDate>Wed, 28 Oct 2026 10:31:14 +0000</pubDate>
-<category>google</category><category>changelog</category>
-<description>New projects using the paid Generate Content API now store requests by default, matching the Interactions API. (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
 </channel></rss>

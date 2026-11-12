@@ -1,0 +1,20 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index 9db092f..0d32f15 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -1,8 +1,4 @@
+ <!-- fineprint snapshot: mistral/pricing | source: https://mistral.ai/pricing -->
+ 
+-# Pricing
+-
+-# Pricing
+-
+ France
+ 
+@@ -96,5 +92,5 @@ Private deployments powered by custom models, UI, and tools.
+ Contact us
+ 
+-|  | Free Start now | Pro Start now | Team Start now | Enterprise Contact us |
++|  | FreeStart now | ProStart now | TeamStart now | EnterpriseContact us |
+ |---|---|---|---|---|
+ | Interfaces. |  |  |  |  |

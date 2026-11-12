@@ -14142,5 +14142,39 @@
   "added": 9,
   "removed": 7,
   "diff": "diffs/09b85654a5-anthropic-rate-limits.diff"
+ },
+ {
+  "id": "67982d41b6-anthropic-pricing",
+  "v": 2,
+  "date": "2026-11-12T07:18:33Z",
+  "sha": "67982d41b6fc8d361abcd07e34528af99b74b1aa",
+  "page": "anthropic/pricing",
+  "vendor": "anthropic",
+  "slug": "pricing",
+  "kind": "pricing",
+  "url": "https://claude.com/pricing",
+  "summary": "3 line(s) added, 1 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 3,
+  "removed": 1,
+  "diff": "diffs/67982d41b6-anthropic-pricing.diff"
+ },
+ {
+  "id": "5b86ce17f8-mistral-pricing",
+  "v": 2,
+  "date": "2026-11-12T07:18:33Z",
+  "sha": "5b86ce17f8ceb8bd30e72e9a218a4e4e71ad6b3e",
+  "page": "mistral/pricing",
+  "vendor": "mistral",
+  "slug": "pricing",
+  "kind": "pricing",
+  "url": "https://mistral.ai/pricing",
+  "summary": "1 line(s) added, 3 removed (around \"Pricing\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 1,
+  "removed": 3,
+  "diff": "diffs/5b86ce17f8-mistral-pricing.diff"
  }
 ]

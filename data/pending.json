@@ -1,10 +1,14 @@
 {
- "anthropic/pricing": {
-  "first_seen": "2026-11-12T07:18:33+00:00",
-  "sha256": "1ccd2f753827f0d470eb954b61257fbdeb7dc11a00866c364195f3ecf614f9a9"
+ "anthropic/api-pricing": {
+  "first_seen": "2026-11-12T19:59:56+00:00",
+  "sha256": "200e7eb993a90a4374311deec95be3035dcbef638dce09d7d36a066a4c01198f"
  },
- "mistral/pricing": {
-  "first_seen": "2026-11-12T07:18:33+00:00",
-  "sha256": "45e2dd71be838bb927ec4c9f523fbab4526d1002dac9bcda1b5f19c8277a605d"
+ "anthropic/api-release-notes": {
+  "first_seen": "2026-11-12T19:59:56+00:00",
+  "sha256": "95a92ab37c62463d7f5b3ac442566adc303457f92f0dea5a17947770c2f74610"
+ },
+ "anthropic/rate-limits": {
+  "first_seen": "2026-11-12T19:59:56+00:00",
+  "sha256": "b6f3e5757879e92ce301631b030c6aacb6084f68575b0c62a38c5d428b48a295"
  }
 }
