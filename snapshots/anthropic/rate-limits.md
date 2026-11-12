@@ -73,7 +73,7 @@ Limits on the Claude Code workspace are checked separately: Claude Code requests
 
 The rate limits for the Messages API are measured in requests per minute (RPM), input tokens per minute (ITPM), and output tokens per minute (OTPM) for each model class. If you exceed any of the rate limits, you get a 429 error describing which rate limit was exceeded. When the response has a `retry-after` header, wait that many seconds before retrying.
 
-You might also encounter 429 errors because of acceleration limits on the API if your organization has a sharp increase in usage. To avoid hitting acceleration limits, increase your traffic gradually and maintain consistent usage patterns.
+A sharp increase in usage can also cause 429 errors. See Ramp limits.
 
 ### Cache-aware ITPM
 
@@ -161,6 +161,26 @@ If you need limits higher than the Scale tier, contact sales through the Rate li
 2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 5.5 and Claude Opus 5 each have a separate rate limit and are not part of this combined bucket.
 
 3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5 (deprecated; see Model deprecations). Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.
+
+### Ramp limits
+
+A ramp limit caps how fast your organization's token usage on a model can grow. After a sharp increase in usage, requests can return a 429 error even while you're under your ITPM and OTPM rate limits. A burst of requests within a few seconds can also count as a sharp increase.
+
+Your ramp limit is your organization's highest per-minute usage of the model in the recent past, plus a step. Each minute you can go up to a step above that peak, so the limit rises as your successful usage grows. It stops rising at your rate limit. After a period of lower usage, the ramp limit comes back down. The limit never drops below a starting amount, even if you haven't used the model recently.
+
+- Ramp limits can apply to any model.
+- Input tokens and output tokens are counted separately.
+- Fast mode usage has its own ramp limits, separate from standard usage of the same model.
+- As with cache-aware ITPM, tokens read from the cache don't count toward a ramp limit. Uncached input tokens and tokens written to the cache do.
+- The step and the starting amount vary by model and can change. The error message usually states your current ramp limit, the step, and your rate limit.
+- The error type is `rate_limit_error`, the same as for a rate limit. On the Messages API, `error.details.error_code` is `ramp_limit_exceeded`. Use it to tell this response apart from a rate limit.
+- The Message Batches API isn't subject to ramp limits.
+
+If you get a 429 from a ramp limit:
+
+- Wait at least the number of seconds in the `retry-after` header before retrying.
+- Hold your traffic at a level where requests succeed, then increase it by at most one step per minute.
+- Start scheduled or bulk jobs at a low rate and spread requests evenly, rather than sending everything at once.
 
 ### Message Batches API
 
@@ -256,7 +276,7 @@ The following headers are returned:
 
 | Header | Description |
 |---|---|
-| `retry-after` | The number of seconds to wait until you can retry the request. Earlier retries fail. Not every 429 carries it; the spend-cap 429 never does (see Reaching your spend cap). |
+| `retry-after` | The number of seconds to wait until you can retry the request. Earlier retries might fail. Not every 429 carries it; the spend-cap 429 never does (see Reaching your spend cap). |
 | `anthropic-ratelimit-requests-limit` | The maximum number of requests allowed within any rate limit period. |
 | `anthropic-ratelimit-requests-remaining` | The number of requests remaining before being rate limited. |
 | `anthropic-ratelimit-requests-reset` | The time when the request rate limit is fully replenished, provided in RFC 3339 format. |
