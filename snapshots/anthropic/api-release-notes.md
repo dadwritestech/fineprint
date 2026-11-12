@@ -8,6 +8,10 @@ For release notes on Claude Apps, see the Release notes for Claude Apps in the C
 
 For updates to Claude Code, see the complete CHANGELOG.md in the `claude-code` repository.
 
+### November 12, 2026
+
+- We've launched self-hosted Claude Managed Agents. You run the whole Managed Agents service, not only self-hosted sandboxes, on your own infrastructure, and you store agents, sessions, and session history there. The server sends model requests to the provider that you choose, which is Anthropic by default. To request access, contact your Anthropic account team.
+
 ### November 9, 2026
 
 - We've launched Claude Fable 5.2 (`claude-fable-5-2`), built for demanding reasoning and long-horizon agentic work. Claude Mythos 5.2 (`claude-mythos-5-2`) offers the same capabilities only to organizations verified through Anthropic's verification programs, such as the Cyber Verification Program. Both models have a 1M token context window, 128k max output tokens, and always-on adaptive thinking. They cost $8 USD per MTok of input and $40 USD per MTok of output (Claude Fable 5.1 and Claude Mythos 5.1 cost $10 USD per MTok of input and $50 USD per MTok of output). Claude Fable 5.2 is available on the Claude API, Amazon Bedrock (`bedrock-runtime`), Claude Platform on AWS, Claude Models on Google Cloud (Anthropic managed), Claude Models on Google Cloud (Google managed), and Claude in Microsoft Foundry. See What's new in Claude Fable 5.2 for API changes and migration guidance. For model-specific prompting patterns, see Prompting Claude Fable 5.2.
