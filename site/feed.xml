@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Wed, 11 Nov 2026 19:45:04 +0000</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 07:23:42 +0000</lastBuildDate>
+<item><title>Anthropic api-pricing: 34 line(s) added, 21 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/3d4e15eaa6-anthropic-api-pricing.html</link>
+<guid isPermaLink="false">3d4e15eaa6-anthropic-api-pricing</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>34 line(s) added, 21 removed. (+34/-21 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3d4e15eaa6-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
+<item><title>Anthropic api-release-notes: 8 line(s) added, 6 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/0f9a6015d5-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">0f9a6015d5-anthropic-api-release-notes</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>8 line(s) added, 6 removed. (+8/-6 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/0f9a6015d5-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Anthropic model-deprecations: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/a71c6a0218-anthropic-model-deprecations.html</link>
+<guid isPermaLink="false">a71c6a0218-anthropic-model-deprecations</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
+<category>anthropic</category><category>deprecations</category>
+<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a71c6a0218-anthropic-model-deprecations.diff . Page: https://platform.claude.com/docs/en/about-claude/model-deprecations</description></item>
+<item><title>Anthropic rate-limits: 9 line(s) added, 7 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/09b85654a5-anthropic-rate-limits.html</link>
+<guid isPermaLink="false">09b85654a5-anthropic-rate-limits</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
+<category>anthropic</category><category>limits</category>
+<description>9 line(s) added, 7 removed. (+9/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/09b85654a5-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
 <item><title>Anthropic pricing: 28 line(s) added, 14 removed (around &quot;Fable 5.2&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/6bf72b34f3-anthropic-pricing.html</link>
 <guid isPermaLink="false">6bf72b34f3-anthropic-pricing</guid><pubDate>Wed, 11 Nov 2026 06:35:06 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -226,20 +242,4 @@
 <guid isPermaLink="false">e426025c2c-google-gemini-api-changelog</guid><pubDate>Wed, 28 Oct 2026 10:31:14 +0000</pubDate>
 <category>google</category><category>changelog</category>
 <description>New projects using the paid Generate Content API now store requests by default, matching the Interactions API. (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e426025c2c-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
-<item><title>Google Gemini gemini-api-changelog: 5 line(s) added, 1 removed (around &quot;October 27, 2026&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/8dd1511a4e-google-gemini-api-changelog.html</link>
-<guid isPermaLink="false">8dd1511a4e-google-gemini-api-changelog</guid><pubDate>Wed, 28 Oct 2026 10:31:14 +0000</pubDate>
-<category>google</category><category>changelog</category>
-<description>5 line(s) added, 1 removed (around &quot;October 27, 2026&quot;). (+5/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8dd1511a4e-google-gemini-api-changelog.diff . Page: https://ai.google.dev/gemini-api/docs/changelog</description></item>
-<item><title>Perplexity api-pricing: Clarified Search API pricing to confirm that costs are per successful request regardless of the number of queries or extracted text tokens.</title><link>https://dadwritestech.github.io/fineprint/diffs/8222507d25-perplexity-api-pricing.html</link>
-<guid isPermaLink="false">8222507d25-perplexity-api-pricing</guid><pubDate>Wed, 28 Oct 2026 10:24:43 +0000</pubDate>
-<category>perplexity</category><category>pricing</category>
-<description>Clarified Search API pricing to confirm that costs are per successful request regardless of the number of queries or extracted text tokens. (+13/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8222507d25-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
-<item><title>Perplexity api-pricing: 13 line(s) added, 5 removed (around &quot;Agent API Research Effort Level&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/36f1f7b0e6-perplexity-api-pricing.html</link>
-<guid isPermaLink="false">36f1f7b0e6-perplexity-api-pricing</guid><pubDate>Wed, 28 Oct 2026 10:24:43 +0000</pubDate>
-<category>perplexity</category><category>pricing</category>
-<description>13 line(s) added, 5 removed (around &quot;Agent API Research Effort Level&quot;). (+13/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/36f1f7b0e6-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
-<item><title>Anthropic usage-policy: Added High-risk Use Case Requirements requiring human accountability and disclosure for AI-driven decisions affecting health, legal rights, finances, or essential services.</title><link>https://dadwritestech.github.io/fineprint/diffs/d01d83b017-anthropic-usage-policy.html</link>
-<guid isPermaLink="false">d01d83b017-anthropic-usage-policy</guid><pubDate>Wed, 28 Oct 2026 01:37:03 +0000</pubDate>
-<category>anthropic</category><category>policy</category>
-<description>Added High-risk Use Case Requirements requiring human accountability and disclosure for AI-driven decisions affecting health, legal rights, finances, or essential services. (+25/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/d01d83b017-anthropic-usage-policy.diff . Page: https://www.anthropic.com/legal/aup</description></item>
 </channel></rss>
