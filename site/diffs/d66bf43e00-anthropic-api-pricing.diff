@@ -1,0 +1,11 @@
+diff --git a/snapshots/anthropic/api-pricing.md b/snapshots/anthropic/api-pricing.md
+index 3366d71..557c035 100644
+--- a/snapshots/anthropic/api-pricing.md
++++ b/snapshots/anthropic/api-pricing.md
+@@ -429,4 +429,6 @@ If you also use the computer use tool, bash tool, text editor tool, or your own
+ Claude Managed Agents is billed on two dimensions: tokens and session runtime.
+ 
++For pricing of self-hosted Claude Managed Agents, contact your Anthropic account team.
++
+ ### Tokens
+ 

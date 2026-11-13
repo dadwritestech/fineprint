@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>anthropic/rate-limits: 16 line(s) added, 2 removed (around &quot;Ramp limits&quot;).</title><link rel="alternate" type="application/rss+xml" title="fineprint" href="../feed.xml">
+<style>
+:root{--paper:#f6f3ec;--ink:#1d1b17;--muted:#6f685c;--rule:#d9d2c3;--red:#b3261e;--add:#e3f1e0;--del:#f7e1de;--card:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--paper:#16140f;--ink:#ece6d9;--muted:#9a917f;--rule:#38332a;--red:#ff7a6e;--add:#1d3320;--del:#3d1f1b;--card:#1d1a14}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+a{color:inherit;text-decoration-color:var(--red);text-underline-offset:3px}
+.wrap{max-width:880px;margin:0 auto;padding:40px 24px 80px}
+header.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px double var(--ink);padding-bottom:14px;margin-bottom:28px;gap:16px;flex-wrap:wrap}
+.brand{font-size:30px;font-weight:700;letter-spacing:-.5px;text-decoration:none}
+.brand span{color:var(--red)}
+.tag{font:13px/1.4 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--muted)}
+h1{font-size:40px;line-height:1.1;margin:0 0 6px;letter-spacing:-.8px}
+.lede{color:var(--muted);margin:0 0 30px;max-width:640px}
+.mono{font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;font-size:13px}
+.vendors{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin:0 0 40px}
+.vendors a{display:block;background:var(--card);border:1px solid var(--rule);padding:14px 16px;text-decoration:none}
+.vendors a:hover{border-color:var(--ink)}
+.vendors b{display:block;font-size:18px}
+.month{font:600 12px/1 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin:34px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+ol.tl{list-style:none;margin:0;padding:0}
+ol.tl li{display:grid;grid-template-columns:92px 1fr;gap:4px 18px;padding:12px 0;border-bottom:1px dotted var(--rule)}
+ol.tl li.minor{opacity:.55}
+.date{font:13px/1.9 ui-monospace,Consolas,monospace;color:var(--muted)}
+.what{font-size:17px}
+.meta{grid-column:2;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap}
+.chip{border:1px solid var(--rule);padding:0 6px;border-radius:2px}
+.plus{color:#2e7d32}.minus{color:var(--red)}
+.note{border-left:3px solid var(--red);padding:8px 14px;background:var(--card);color:var(--muted);font-size:14px;margin:0 0 26px}
+pre.diff{background:var(--card);border:1px solid var(--rule);padding:12px 0;overflow-x:auto;font:12.5px/1.5 ui-monospace,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+pre.diff span{display:block;padding:0 14px}
+pre.diff .a{background:var(--add)}pre.diff .d{background:var(--del)}pre.diff .h{color:var(--muted)}
+footer{margin-top:50px;color:var(--muted);font-size:13px;border-top:1px solid var(--rule);padding-top:14px}
+</style></head><body><div class="wrap">
+<header class="top"><a class="brand" href="../index.html">fine<span>print</span></a>
+<span class="tag">what AI companies quietly changed &middot; <a href="../feed.xml">RSS</a></span></header>
+<p class="mono">2026-11-12 19:59 UTC &middot; anthropic/rate-limits &middot; <a href="https://platform.claude.com/docs/en/api/rate-limits">live page</a></p>
+<h1 style="font-size:28px">16 line(s) added, 2 removed (around &quot;Ramp limits&quot;).</h1>
+<p class="note">Summary by fallback. It may be wrong; the diff below is what actually changed.
+Raw: <a href="a223a79c0e-anthropic-rate-limits.diff">a223a79c0e-anthropic-rate-limits.diff</a> &middot;
+commit <a href="https://github.com/dadwritestech/fineprint/commit/a223a79c0e7fdab783d3d42da82672e1a1431cfe">a223a79c0e</a></p>
+<pre class="diff"><span class="h">diff --git a/snapshots/anthropic/rate-limits.md b/snapshots/anthropic/rate-limits.md</span><span class="h">index e84d7d7..a73322f 100644</span><span class="h">--- a/snapshots/anthropic/rate-limits.md</span><span class="h">+++ b/snapshots/anthropic/rate-limits.md</span><span class="h">@@ -74,5 +74,5 @@ Limits on the Claude Code workspace are checked separately: Claude Code requests</span><span class=""> The rate limits for the Messages API are measured in requests per minute (RPM), input tokens per minute (ITPM), and output tokens per minute (OTPM) for each model class. If you exceed any of the rate limits, you get a 429 error describing which rate limit was exceeded. When the response has a `retry-after` header, wait that many seconds before retrying.</span><span class=""> </span><span class="d">-You might also encounter 429 errors because of acceleration limits on the API if your organization has a sharp increase in usage. To avoid hitting acceleration limits, increase your traffic gradually and maintain consistent usage patterns.</span><span class="a">+A sharp increase in usage can also cause 429 errors. See Ramp limits.</span><span class=""> </span><span class=""> ### Cache-aware ITPM</span><span class="h">@@ -163,4 +163,24 @@ If you need limits higher than the Scale tier, contact sales through the Rate li</span><span class=""> 3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5 (deprecated; see Model deprecations). Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.</span><span class=""> </span><span class="a">+### Ramp limits</span><span class="a">+</span><span class="a">+A ramp limit caps how fast your organization&#x27;s token usage on a model can grow. After a sharp increase in usage, requests can return a 429 error even while you&#x27;re under your ITPM and OTPM rate limits. A burst of requests within a few seconds can also count as a sharp increase.</span><span class="a">+</span><span class="a">+Your ramp limit is your organization&#x27;s highest per-minute usage of the model in the recent past, plus a step. Each minute you can go up to a step above that peak, so the limit rises as your successful usage grows. It stops rising at your rate limit. After a period of lower usage, the ramp limit comes back down. The limit never drops below a starting amount, even if you haven&#x27;t used the model recently.</span><span class="a">+</span><span class="a">+- Ramp limits can apply to any model.</span><span class="a">+- Input tokens and output tokens are counted separately.</span><span class="a">+- Fast mode usage has its own ramp limits, separate from standard usage of the same model.</span><span class="a">+- As with cache-aware ITPM, tokens read from the cache don&#x27;t count toward a ramp limit. Uncached input tokens and tokens written to the cache do.</span><span class="a">+- The step and the starting amount vary by model and can change. The error message usually states your current ramp limit, the step, and your rate limit.</span><span class="a">+- The error type is `rate_limit_error`, the same as for a rate limit. On the Messages API, `error.details.error_code` is `ramp_limit_exceeded`. Use it to tell this response apart from a rate limit.</span><span class="a">+- The Message Batches API isn&#x27;t subject to ramp limits.</span><span class="a">+</span><span class="a">+If you get a 429 from a ramp limit:</span><span class="a">+</span><span class="a">+- Wait at least the number of seconds in the `retry-after` header before retrying.</span><span class="a">+- Hold your traffic at a level where requests succeed, then increase it by at most one step per minute.</span><span class="a">+- Start scheduled or bulk jobs at a low rate and spread requests evenly, rather than sending everything at once.</span><span class="a">+</span><span class=""> ### Message Batches API</span><span class=""> </span><span class="h">@@ -257,5 +277,5 @@ The following headers are returned:</span><span class=""> | Header | Description |</span><span class=""> |---|---|</span><span class="d">-| `retry-after` | The number of seconds to wait until you can retry the request. Earlier retries fail. Not every 429 carries it; the spend-cap 429 never does (see Reaching your spend cap). |</span><span class="a">+| `retry-after` | The number of seconds to wait until you can retry the request. Earlier retries might fail. Not every 429 carries it; the spend-cap 429 never does (see Reaching your spend cap). |</span><span class=""> | `anthropic-ratelimit-requests-limit` | The maximum number of requests allowed within any rate limit period. |</span><span class=""> | `anthropic-ratelimit-requests-remaining` | The number of requests remaining before being rate limited. |</span></pre>
+<p><a href="../anthropic.html">&larr; Anthropic timeline</a></p>
+<footer>Snapshots of public, logged-out pages, normalized to markdown and committed to git.
+One-line summaries are written by a local LLM and can be wrong: every entry links the raw diff, which is the source of truth.
+History before the first live fetch is reconstructed from Wayback Machine captures sampled about weekly, so dates are "first seen in a capture", not exact change times.</footer>
+</div></body></html>
