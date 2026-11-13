@@ -33,15 +33,24 @@ Model prices are listed in units of per 1M tokens. A token, the smallest unit of
 
 (3) For more details on concurrency limits, please refer to Rate Limit & Isolation.
 
-Search and Fetch are standalone APIs billed per request.
+Search (text, image) and web fetch are billed per use, whether you call the Search and Fetch APIs directly or the model uses them through tools such as the web tools.
 
-| API | Unit | Price |
+| Item | Unit | Price |
 |---|---|---|
-| Search | Per 1,000 successful requests | $0.75 |
-| Fetch | Per 1,000 successful requests | $0.75 |
+| Search (text, image) | Per 1,000 searches | $0.75 |
+| Web fetch | Per 1,000 fetches | $0.75 |
 
-See the Search & Fetch guide for API usage and complete billing rules.
+For the billing rules, see Search & Fetch and Web Tools.
 
-For model usage, the expense = number of tokens × price. Search and Fetch are charged per successful request at the rates above. The corresponding fees will be directly deducted from your topped-up balance or granted balance, with a preference for using the granted balance first when both balances are available.
+| Item | Unit | Price |
+|---|---|---|
+| File parsing, OCR API | Per 1,000 pages | $0.225 |
+
+| API | Unit | List price | Limited-time price (50% off) |
+|---|---|---|---|
+| Text to Speech (TTS) | Per 10,000 characters | $0.45 | $0.225 |
+| Speech to Text (ASR) | Per hour of audio | $0.116 | $0.058 |
+
+For model usage, the expense = number of tokens × price. Search (text, image) and web fetch are charged per use at the rates above. The corresponding fees will be directly deducted from your topped-up balance or granted balance, with a preference for using the granted balance first when both balances are available.
 
 Product prices may vary and DeepSeek reserves the right to adjust them. We recommend topping up based on your actual usage and regularly checking this page for the most recent pricing information.
