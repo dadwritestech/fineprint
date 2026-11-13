@@ -14,8 +14,8 @@ Get startedOpen in VS Code
 
 - 2,000 completions per month
 - Access to Haiku 4.5, GPT-5 mini, and more
-- Copilot CLI
 - Community Support
+- Access to Copilot Fusion Standard
 
 No credit card required. Verified students have access to the GitHub Copilot Student plan. Learn more
 
@@ -49,6 +49,7 @@ Get started
 - Audit logs
 - 4x+ included usage than Pro
 - $70 monthly total credits for Pro+
+- Access to Copilot Fusion Standard, High, and Max
 
 ### Max
 
@@ -417,6 +418,56 @@ Pro+
 
 Max
 
+Copilot Fusion
+
+Fusion Standard
+
+Everyday work. Copilot Fusion selects one model for each task.
+
+Free
+
+Pro
+
+Pro+
+
+Max
+
+Fusion High
+
+Substantial, well-scoped coding tasks, such as fixing a complex bug or making a change across several files, when additional model calls may be worth the extra time and AI credits.
+
+Free
+
+Pro
+
+Pro+
+
+Max
+
+Fusion Max
+
+Tasks requiring the deepest possible reasoning and most thorough analysis.
+
+Free
+
+Pro
+
+Pro+
+
+Max
+
+Fusion Fast
+
+Not selectable by users. Only available in Visual Studio Code inline chat.
+
+Free
+
+Pro
+
+Pro+
+
+Max
+
 Models in Copilot
 
 Available models
@@ -458,6 +509,7 @@ Free
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
+- Google Gemini 4 Hydrogen
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -498,6 +550,7 @@ Pro
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
+- Google Gemini 4 Hydrogen
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -538,6 +591,7 @@ Pro+
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
+- Google Gemini 4 Hydrogen
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -578,6 +632,7 @@ Max
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
+- Google Gemini 4 Hydrogen
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
