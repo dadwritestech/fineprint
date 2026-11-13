@@ -45,7 +45,7 @@ Most tool costs are per invocation. `sandbox` is billed per container session �
 
 Billing unit: Search API charges for each successful `POST /search` request, not for each query in the request. A successful request containing an array of up to five queries is one billing unit. Invalid requests, rate-limited requests, and upstream failures are not billed. A successful response is billed even when it returns no results. There are no additional token-based charges.
 
-Search API cost = successful requests ÷ 1,000 × the price per 1K requests. The amount of extracted text (`max_tokens`, `max_tokens_per_page`) does not change the price.
+Search API cost = successful requests ÷ 1,000 × the price per 1K requests.
 
 | Request | Billing units | Cost |
 |---|---|---|
@@ -82,14 +82,16 @@ Embeddings cost = tokens ÷ 1,000,000 × the model's rate. For example, 40M toke
 
 ## Decisions API Pricing
 
-The Decisions API answers yes/no, multiple-choice, and scored questions about text and images with calibrated probabilities.
+The Decisions API answers yes/no, multiple-choice, and scored questions about text and images with calibrated probabilities, and finds matching text spans with `locate` questions.
 
 | Model | Price ($/1M input tokens) | Output tokens | Per-request fee |
 |---|---|---|---|
+| `pplx-decider-v1.3` | $0.02 | Free | None |
+| `pplx-decider-flash-v1.3` | $0.01 | Free | None |
 | `pplx-decider-v1.2` | $0.02 | Free | None |
 | `pplx-decider-flash-v1.2` | $0.01 | Free | None |
 
-Aliases: `pplx-decider-latest` and `perplexity/pplx-decider-latest` select `pplx-decider-v1.2`. `pplx-decider-flash-latest` and `perplexity/pplx-decider-flash-latest` select `pplx-decider-flash-v1.2`. An alias bills at the rate of the model it selects. Requests that name `pplx-decider-v1.1-27b` or `pplx-decider-v1-27b` select `pplx-decider-v1.2` and bill at $0.02.Billing unit: you pay for input tokens, plus web searches and URL fetches if you set `mode: "web_grounding"`. The `state`, every question, any images, fetched page text, and any search results added to the `state` count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the token cost of a request from the response you already receive. A request with 600 input tokens costs $0.000012 on `pplx-decider-v1.2` and $0.000006 on `pplx-decider-flash-v1.2`.
+Aliases: `pplx-decider-latest` and `perplexity/pplx-decider-latest` select `pplx-decider-v1.3`. `pplx-decider-flash-latest` and `perplexity/pplx-decider-flash-latest` select `pplx-decider-flash-v1.3`. An alias bills at the rate of the model it selects. Requests that name `pplx-decider-v1.1-27b` or `pplx-decider-v1-27b` select `pplx-decider-v1.2` and bill at $0.02.Billing unit: you pay for input tokens, plus web searches and URL fetches if you set `mode: "web_grounding"`. The `state`, every question, any images, fetched page text, and any search results added to the `state` count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the token cost of a request from the response you already receive. A request with 600 input tokens costs $0.000012 on `pplx-decider-v1.3` or `pplx-decider-v1.2` and $0.000006 on `pplx-decider-flash-v1.3` or `pplx-decider-flash-v1.2`.
 
 ### Web grounding
 
