@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Fri, 13 Nov 2026 06:56:23 +0000</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 19:51:55 +0000</lastBuildDate>
+<item><title>Anthropic pricing: 1 line(s) added, 3 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ca3d465f5a-anthropic-pricing.html</link>
+<guid isPermaLink="false">ca3d465f5a-anthropic-pricing</guid><pubDate>Fri, 13 Nov 2026 06:52:01 +0000</pubDate>
+<category>anthropic</category><category>pricing</category>
+<description>1 line(s) added, 3 removed. (+1/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ca3d465f5a-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
+<item><title>OpenAI deprecations: 188 line(s) added, 359 removed (around &quot;Upcoming deprecations&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/3c4a281fb5-openai-deprecations.html</link>
+<guid isPermaLink="false">3c4a281fb5-openai-deprecations</guid><pubDate>Fri, 13 Nov 2026 06:52:01 +0000</pubDate>
+<category>openai</category><category>deprecations</category>
+<description>188 line(s) added, 359 removed (around &quot;Upcoming deprecations&quot;). (+188/-359 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3c4a281fb5-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
 <item><title>Anthropic api-pricing: 1 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/d66bf43e00-anthropic-api-pricing.html</link>
 <guid isPermaLink="false">d66bf43e00-anthropic-api-pricing</guid><pubDate>Thu, 12 Nov 2026 19:59:56 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">978fafe2c6-google-gemini-models</guid><pubDate>Thu, 29 Oct 2026 00:39:24 +0000</pubDate>
 <category>google</category><category>deprecations</category>
 <description>8 line(s) added, 10 removed. (+8/-10 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/978fafe2c6-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
-<item><title>OpenAI rate-limits: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/11931369db-openai-rate-limits.html</link>
-<guid isPermaLink="false">11931369db-openai-rate-limits</guid><pubDate>Wed, 28 Oct 2026 21:04:56 +0000</pubDate>
-<category>openai</category><category>limits</category>
-<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/11931369db-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
-<item><title>OpenAI usage-policies: The usage policies effective date is updated to November 20, 2026, with new restrictions on model training, law enforcement use, and child safety.</title><link>https://dadwritestech.github.io/fineprint/diffs/7c1b97fa8d-openai-usage-policies.html</link>
-<guid isPermaLink="false">7c1b97fa8d-openai-usage-policies</guid><pubDate>Wed, 28 Oct 2026 15:35:46 +0000</pubDate>
-<category>openai</category><category>policy</category>
-<description>The usage policies effective date is updated to November 20, 2026, with new restrictions on model training, law enforcement use, and child safety. (+30/-14 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/7c1b97fa8d-openai-usage-policies.diff . Page: https://openai.com/policies/usage-policies/</description></item>
 </channel></rss>

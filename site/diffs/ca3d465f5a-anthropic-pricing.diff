@@ -1,0 +1,31 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index 5e98919..e51a505 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -21,6 +21,4 @@ Try Claude
+ ### Pro
+ 
+-Claude Code included
+-
+ For everyday work
+ 
+@@ -37,4 +35,5 @@ Everything in Free, plus:
+ - Hand off and schedule tasks
+ - Claude Data, plus Sheets and Whiteboards (beta)
++- Claude Code
+ - Claude Science
+ - Projects
+@@ -44,6 +43,4 @@ Everything in Free, plus:
+ ### Max
+ 
+-Claude Code included
+-
+ For all-day work
+ 
+@@ -64,6 +61,4 @@ Everything in Pro, plus:
+ ### Ultra
+ 
+-Claude Code included
+-
+ For your longest tasks
+ 

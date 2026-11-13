@@ -14227,5 +14227,39 @@
   "added": 16,
   "removed": 2,
   "diff": "diffs/a223a79c0e-anthropic-rate-limits.diff"
+ },
+ {
+  "id": "ca3d465f5a-anthropic-pricing",
+  "v": 2,
+  "date": "2026-11-13T06:52:01Z",
+  "sha": "ca3d465f5a18a75caae774f6ee731b64f7d7d5dd",
+  "page": "anthropic/pricing",
+  "vendor": "anthropic",
+  "slug": "pricing",
+  "kind": "pricing",
+  "url": "https://claude.com/pricing",
+  "summary": "1 line(s) added, 3 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 1,
+  "removed": 3,
+  "diff": "diffs/ca3d465f5a-anthropic-pricing.diff"
+ },
+ {
+  "id": "3c4a281fb5-openai-deprecations",
+  "v": 2,
+  "date": "2026-11-13T06:52:01Z",
+  "sha": "3c4a281fb52cd7bb309f7fbbeb9425316d4078cf",
+  "page": "openai/deprecations",
+  "vendor": "openai",
+  "slug": "deprecations",
+  "kind": "deprecations",
+  "url": "https://developers.openai.com/api/docs/deprecations",
+  "summary": "188 line(s) added, 359 removed (around \"Upcoming deprecations\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 188,
+  "removed": 359,
+  "diff": "diffs/3c4a281fb5-openai-deprecations.diff"
  }
 ]
