@@ -20,8 +20,6 @@ Try Claude
 
 ### Pro
 
-Claude Code included
-
 For everyday work
 
 $17
@@ -36,14 +34,13 @@ Everything in Free, plus:
 - Fable, paid with usage credits New
 - Hand off and schedule tasks
 - Claude Data, plus Sheets and Whiteboards (beta)
+- Claude Code
 - Claude Science
 - Projects
 - More Claude models
 - Claude in Chrome and Microsoft 365
 
 ### Max
-
-Claude Code included
 
 For all-day work
 
@@ -62,8 +59,6 @@ Everything in Pro, plus:
 - Priority access at high traffic times
 
 ### Ultra
-
-Claude Code included
 
 For your longest tasks
 
