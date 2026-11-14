@@ -1,18 +1,10 @@
 {
- "deepseek/api-pricing": {
-  "first_seen": "2026-11-13T19:47:35+00:00",
-  "sha256": "18ea6578fa82b7676f10ecea35f91d77b1546c3b2724b2fae6840e30c8d5cd95"
+ "openai/api-pricing": {
+  "first_seen": "2026-11-14T06:33:54+00:00",
+  "sha256": "09879a83d34e6d149ad4180225595052f2e4b1175ecfce77ed3c60b433629c8d"
  },
- "deepseek/news": {
-  "first_seen": "2026-11-13T19:47:35+00:00",
-  "sha256": "1d3a203a005be5440caf5c8875666a3ec1260e2c113cbc89ba8883b017c88fed"
- },
- "github-copilot/plans": {
-  "first_seen": "2026-11-13T19:47:35+00:00",
-  "sha256": "946f98df1b753eb471133e1404bddac65b43fdab6c0df66c1bb5caf0b8f771c0"
- },
- "perplexity/api-pricing": {
-  "first_seen": "2026-11-13T19:47:35+00:00",
-  "sha256": "e46da2be4f230cc504e7b79365e7af3a9e49971599b3f033cc09549e06908e01"
+ "xai/models-pricing": {
+  "first_seen": "2026-11-14T06:33:54+00:00",
+  "sha256": "75d399015fba40d6844bda9ce961e6d30d3cd6040681737a961f89e4900f41a4"
  }
 }

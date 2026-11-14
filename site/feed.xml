@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Fri, 13 Nov 2026 19:51:55 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 06:38:20 +0000</lastBuildDate>
+<item><title>DeepSeek api-pricing: 13 line(s) added, 6 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/9ef4f12f1a-deepseek-api-pricing.html</link>
+<guid isPermaLink="false">9ef4f12f1a-deepseek-api-pricing</guid><pubDate>Fri, 13 Nov 2026 19:47:35 +0000</pubDate>
+<category>deepseek</category><category>pricing</category>
+<description>13 line(s) added, 6 removed. (+13/-6 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/9ef4f12f1a-deepseek-api-pricing.diff . Page: https://api-docs.deepseek.com/quick_start/pricing</description></item>
+<item><title>DeepSeek news: 10 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/883b4aa9b0-deepseek-news.html</link>
+<guid isPermaLink="false">883b4aa9b0-deepseek-news</guid><pubDate>Fri, 13 Nov 2026 19:47:35 +0000</pubDate>
+<category>deepseek</category><category>changelog</category>
+<description>10 line(s) added, 0 removed. (+10/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/883b4aa9b0-deepseek-news.diff . Page: https://api-docs.deepseek.com/updates</description></item>
+<item><title>GitHub Copilot plans: 31 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/301359fa6a-github-copilot-plans.html</link>
+<guid isPermaLink="false">301359fa6a-github-copilot-plans</guid><pubDate>Fri, 13 Nov 2026 19:47:35 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>31 line(s) added, 1 removed. (+31/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/301359fa6a-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>Perplexity api-pricing: 5 line(s) added, 3 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/98534093d8-perplexity-api-pricing.html</link>
+<guid isPermaLink="false">98534093d8-perplexity-api-pricing</guid><pubDate>Fri, 13 Nov 2026 19:47:35 +0000</pubDate>
+<category>perplexity</category><category>pricing</category>
+<description>5 line(s) added, 3 removed. (+5/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/98534093d8-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
 <item><title>Anthropic pricing: 1 line(s) added, 3 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ca3d465f5a-anthropic-pricing.html</link>
 <guid isPermaLink="false">ca3d465f5a-anthropic-pricing</guid><pubDate>Fri, 13 Nov 2026 06:52:01 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -226,20 +242,4 @@
 <guid isPermaLink="false">ef91b3b042-anthropic-pricing</guid><pubDate>Thu, 29 Oct 2026 07:42:20 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
 <description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ef91b3b042-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
-<item><title>Anthropic api-release-notes: Removed the announcement that inference hooks are out of beta for Claude Enterprise organizations.</title><link>https://dadwritestech.github.io/fineprint/diffs/b6d72d8c67-anthropic-api-release-notes.html</link>
-<guid isPermaLink="false">b6d72d8c67-anthropic-api-release-notes</guid><pubDate>Thu, 29 Oct 2026 05:35:32 +0000</pubDate>
-<category>anthropic</category><category>changelog</category>
-<description>Removed the announcement that inference hooks are out of beta for Claude Enterprise organizations. (+4/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/b6d72d8c67-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
-<item><title>Anthropic api-release-notes: 4 line(s) added, 4 removed (around &quot;October 23, 2026&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/c7f3d80377-anthropic-api-release-notes.html</link>
-<guid isPermaLink="false">c7f3d80377-anthropic-api-release-notes</guid><pubDate>Thu, 29 Oct 2026 05:35:32 +0000</pubDate>
-<category>anthropic</category><category>changelog</category>
-<description>4 line(s) added, 4 removed (around &quot;October 23, 2026&quot;). (+4/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c7f3d80377-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
-<item><title>Google Gemini gemini-models: Removed Veo 3.1, Veo 3.1 Lite, and Gemini Robotics ER 1.6 from active models and moved them to the shut down section.</title><link>https://dadwritestech.github.io/fineprint/diffs/24bd93e2e0-google-gemini-models.html</link>
-<guid isPermaLink="false">24bd93e2e0-google-gemini-models</guid><pubDate>Thu, 29 Oct 2026 00:39:24 +0000</pubDate>
-<category>google</category><category>deprecations</category>
-<description>Removed Veo 3.1, Veo 3.1 Lite, and Gemini Robotics ER 1.6 from active models and moved them to the shut down section. (+8/-10 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/24bd93e2e0-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
-<item><title>Google Gemini gemini-models: 8 line(s) added, 10 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/978fafe2c6-google-gemini-models.html</link>
-<guid isPermaLink="false">978fafe2c6-google-gemini-models</guid><pubDate>Thu, 29 Oct 2026 00:39:24 +0000</pubDate>
-<category>google</category><category>deprecations</category>
-<description>8 line(s) added, 10 removed. (+8/-10 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/978fafe2c6-google-gemini-models.diff . Page: https://ai.google.dev/gemini-api/docs/models</description></item>
 </channel></rss>
