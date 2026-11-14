@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Sat, 14 Nov 2026 06:38:20 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 18:15:53 +0000</lastBuildDate>
+<item><title>OpenAI api-pricing: 2 line(s) added, 2 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/c645f3b331-openai-api-pricing.html</link>
+<guid isPermaLink="false">c645f3b331-openai-api-pricing</guid><pubDate>Sat, 14 Nov 2026 06:33:54 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>2 line(s) added, 2 removed. (+2/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/c645f3b331-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
+<item><title>xAI models-pricing: 3 line(s) added, 3 removed (around &quot;Image &amp; Video API&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/8e6e266de6-xai-models-pricing.html</link>
+<guid isPermaLink="false">8e6e266de6-xai-models-pricing</guid><pubDate>Sat, 14 Nov 2026 06:33:54 +0000</pubDate>
+<category>xai</category><category>pricing</category>
+<description>3 line(s) added, 3 removed (around &quot;Image &amp; Video API&quot;). (+3/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/8e6e266de6-xai-models-pricing.diff . Page: https://docs.x.ai/developers/models</description></item>
 <item><title>DeepSeek api-pricing: 13 line(s) added, 6 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/9ef4f12f1a-deepseek-api-pricing.html</link>
 <guid isPermaLink="false">9ef4f12f1a-deepseek-api-pricing</guid><pubDate>Fri, 13 Nov 2026 19:47:35 +0000</pubDate>
 <category>deepseek</category><category>pricing</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">1ea2c23010-openai-api-pricing</guid><pubDate>Thu, 29 Oct 2026 08:49:40 +0000</pubDate>
 <category>openai</category><category>pricing</category>
 <description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1ea2c23010-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
-<item><title>Anthropic pricing: Renamed Extra usage to Usage credits in the pricing table.</title><link>https://dadwritestech.github.io/fineprint/diffs/700a5d1c17-anthropic-pricing.html</link>
-<guid isPermaLink="false">700a5d1c17-anthropic-pricing</guid><pubDate>Thu, 29 Oct 2026 07:42:20 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>Renamed Extra usage to Usage credits in the pricing table. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/700a5d1c17-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
-<item><title>Anthropic pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ef91b3b042-anthropic-pricing.html</link>
-<guid isPermaLink="false">ef91b3b042-anthropic-pricing</guid><pubDate>Thu, 29 Oct 2026 07:42:20 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ef91b3b042-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
 </channel></rss>

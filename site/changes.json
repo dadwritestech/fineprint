@@ -14329,5 +14329,39 @@
   "added": 5,
   "removed": 3,
   "diff": "diffs/98534093d8-perplexity-api-pricing.diff"
+ },
+ {
+  "id": "c645f3b331-openai-api-pricing",
+  "v": 2,
+  "date": "2026-11-14T06:33:54Z",
+  "sha": "c645f3b331d74412209c2b63086ff57db153b7ad",
+  "page": "openai/api-pricing",
+  "vendor": "openai",
+  "slug": "api-pricing",
+  "kind": "pricing",
+  "url": "https://developers.openai.com/api/docs/pricing",
+  "summary": "2 line(s) added, 2 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 2,
+  "removed": 2,
+  "diff": "diffs/c645f3b331-openai-api-pricing.diff"
+ },
+ {
+  "id": "8e6e266de6-xai-models-pricing",
+  "v": 2,
+  "date": "2026-11-14T06:33:54Z",
+  "sha": "8e6e266de69bfbbcbc2826e1c62c5fd9916ff550",
+  "page": "xai/models-pricing",
+  "vendor": "xai",
+  "slug": "models-pricing",
+  "kind": "pricing",
+  "url": "https://docs.x.ai/developers/models",
+  "summary": "3 line(s) added, 3 removed (around \"Image & Video API\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 3,
+  "removed": 3,
+  "diff": "diffs/8e6e266de6-xai-models-pricing.diff"
  }
 ]
