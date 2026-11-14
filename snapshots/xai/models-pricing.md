@@ -56,7 +56,7 @@ $0.20 / hour
 
 Read docsTry in playground
 
-### Imagine API
+### Image & Video API
 
 Turn ideas into reality with image and video generation.
 
@@ -96,11 +96,11 @@ Grok 4.7
 
 Images
 
-Grok Imagine Image 2.0
+Image 2.0
 
 Videos
 
-Grok Imagine Video 1.5
+Video 1.5
 
 Voice
 
