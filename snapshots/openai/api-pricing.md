@@ -53,6 +53,7 @@ Models
 
 - Embeddings
 - Moderation
+- CSAM classifier
 
 API Dashboard
 
