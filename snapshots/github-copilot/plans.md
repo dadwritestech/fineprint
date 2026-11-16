@@ -485,9 +485,6 @@ Free
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
 - Anthropic Claude Sonnet 5.5
-- Anthropic Claude Opus 4.8
-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
-- Anthropic Claude Opus 5
 - Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
@@ -497,7 +494,6 @@ Free
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
 - OpenAI GPT-5.6 Sol
-- OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
@@ -526,9 +522,6 @@ Pro
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
 - Anthropic Claude Sonnet 5.5
-- Anthropic Claude Opus 4.8
-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
-- Anthropic Claude Opus 5
 - Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
@@ -538,7 +531,6 @@ Pro
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
 - OpenAI GPT-5.6 Sol
-- OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
@@ -567,9 +559,6 @@ Pro+
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
 - Anthropic Claude Sonnet 5.5
-- Anthropic Claude Opus 4.8
-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
-- Anthropic Claude Opus 5
 - Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
@@ -579,7 +568,6 @@ Pro+
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
 - OpenAI GPT-5.6 Sol
-- OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
@@ -608,9 +596,6 @@ Max
 - Anthropic Claude Sonnet 4.6
 - Anthropic Claude Sonnet 5
 - Anthropic Claude Sonnet 5.5
-- Anthropic Claude Opus 4.8
-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
-- Anthropic Claude Opus 5
 - Anthropic Claude Opus 5.5
 - OpenAI GPT-5 mini
 - OpenAI GPT-5.2
@@ -620,7 +605,6 @@ Max
 - OpenAI GPT-5.4 mini
 - OpenAI GPT-5.5
 - OpenAI GPT-5.6 Sol
-- OpenAI GPT-5.6 Terra
 - OpenAI GPT-5.6 Luna
 - OpenAI GPT-6 Astra
 - OpenAI GPT-6 Luna
