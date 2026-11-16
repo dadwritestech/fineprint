@@ -126,6 +126,42 @@ Search Rate Limiter Behavior:
 
 Billing and rate limiting use different units. A successful request containing five queries is one billable Search API request, but it consumes five rate-limit units. Search rate limits are independent of your usage tier and apply consistently across all accounts using the same leaky bucket algorithm. See Search API pricing for billing details.
 
+## Monitor API limits
+
+The Monitor API HTTP budget is shared across all API keys in an organization. It is separate from the Agent API budget.
+
+### HTTP request limits
+
+Every Monitor HTTP operation consumes one request: create, list, retrieve, update, delete, pause, resume, run now, list runs, and get a run. Polling therefore uses the same request budget as lifecycle operations.
+
+| Usage tier | Standard requests per second |
+|---|---|
+| Tier 0 | 1 |
+| Tier 1 | 3 |
+| Tier 2 | 8 |
+| Tier 3 | 17 |
+| Tier 4 | 33 |
+| Tier 5 | 33 |
+
+These are standard organization limits; custom organization limits may differ. A throttled request returns `429` with `error.type: "request_rate_limit_exceeded"` and a `Retry-After` header. Wait at least that interval, then retry with backoff and jitter; avoid tight polling loops that leave no capacity for other requests.
+
+### Active monitor limits
+
+The number of active monitors is limited by your organization's usage tier. Search and Page monitors share this limit across all API keys and the Console; paused monitors do not count.
+
+| Usage tier | Active monitor limit |
+|---|---|
+| Tier 0 | 100 |
+| Tier 1 | 100 |
+| Tier 2 | 200 |
+| Tier 3 | 300 |
+| Tier 4 | 400 |
+| Tier 5 | 500 |
+
+At the limit, creating a monitor or resuming a paused one returns `409` with `error.type: "quota_exceeded"` and no `Retry-After` header. Pause or delete an active monitor, or move to a tier with a higher limit, before trying again. Changes to available capacity can take a short time to appear.
+
+Need higher Monitor API limits? Contact us to request an increase.
+
 ## Embeddings API Rate Limits
 
 The Embeddings API uses tier-based rate limits that scale with your usage tier. Limits are higher than other APIs because each request is a single forward pass on an elastic backend.
