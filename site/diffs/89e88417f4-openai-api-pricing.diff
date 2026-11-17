@@ -1,0 +1,10 @@
+diff --git a/snapshots/openai/api-pricing.md b/snapshots/openai/api-pricing.md
+index 2bc1ecb..4a12a41 100644
+--- a/snapshots/openai/api-pricing.md
++++ b/snapshots/openai/api-pricing.md
+@@ -54,4 +54,5 @@ Models
+ - Embeddings
+ - Moderation
++- CSAM classifier
+ 
+ API Dashboard

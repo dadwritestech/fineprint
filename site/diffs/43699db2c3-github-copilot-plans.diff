@@ -1,0 +1,60 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index 75d3e76..c3761ea 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -486,7 +486,4 @@ Free
+ - Anthropic Claude Sonnet 5
+ - Anthropic Claude Sonnet 5.5
+-- Anthropic Claude Opus 4.8
+-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
+-- Anthropic Claude Opus 5
+ - Anthropic Claude Opus 5.5
+ - OpenAI GPT-5 mini
+@@ -498,5 +495,4 @@ Free
+ - OpenAI GPT-5.5
+ - OpenAI GPT-5.6 Sol
+-- OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+ - OpenAI GPT-6 Astra
+@@ -527,7 +523,4 @@ Pro
+ - Anthropic Claude Sonnet 5
+ - Anthropic Claude Sonnet 5.5
+-- Anthropic Claude Opus 4.8
+-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
+-- Anthropic Claude Opus 5
+ - Anthropic Claude Opus 5.5
+ - OpenAI GPT-5 mini
+@@ -539,5 +532,4 @@ Pro
+ - OpenAI GPT-5.5
+ - OpenAI GPT-5.6 Sol
+-- OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+ - OpenAI GPT-6 Astra
+@@ -568,7 +560,4 @@ Pro+
+ - Anthropic Claude Sonnet 5
+ - Anthropic Claude Sonnet 5.5
+-- Anthropic Claude Opus 4.8
+-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
+-- Anthropic Claude Opus 5
+ - Anthropic Claude Opus 5.5
+ - OpenAI GPT-5 mini
+@@ -580,5 +569,4 @@ Pro+
+ - OpenAI GPT-5.5
+ - OpenAI GPT-5.6 Sol
+-- OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+ - OpenAI GPT-6 Astra
+@@ -609,7 +597,4 @@ Max
+ - Anthropic Claude Sonnet 5
+ - Anthropic Claude Sonnet 5.5
+-- Anthropic Claude Opus 4.8
+-- Anthropic Claude Opus 4.8 (fast mode) (Preview)
+-- Anthropic Claude Opus 5
+ - Anthropic Claude Opus 5.5
+ - OpenAI GPT-5 mini
+@@ -621,5 +606,4 @@ Max
+ - OpenAI GPT-5.5
+ - OpenAI GPT-5.6 Sol
+-- OpenAI GPT-5.6 Terra
+ - OpenAI GPT-5.6 Luna
+ - OpenAI GPT-6 Astra
