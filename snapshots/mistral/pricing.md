@@ -13,7 +13,7 @@ Your personal AI agent for everyday tasks.
 - Basic image generation and editing.
 - 100+ connectors.
 
-Start now
+Start Free
 
 Popular
 
@@ -50,7 +50,7 @@ I'm a student
 - $15 /mo in API credits.
 - Chat and email support.
 
-Start now
+Get Pro
 
 Team
 
@@ -76,7 +76,7 @@ $50
 
 Users
 
-Start now
+Get Team
 
 Enterprise
 
@@ -89,9 +89,9 @@ Private deployments powered by custom models, UI, and tools.
 - SAML SSO.
 - White label.
 
-Contact us
+Contact Sales
 
-|  | FreeStart now | ProStart now | TeamStart now | EnterpriseContact us |
+|  | FreeStart Free | ProGet Pro | TeamGet Team | EnterpriseContact Sales |
 |---|---|---|---|---|
 | Interfaces. |  |  |  |  |
 | Vibe on web |  |  |  |  |
