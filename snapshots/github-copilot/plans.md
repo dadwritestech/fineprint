@@ -500,7 +500,11 @@ Free
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
 - OpenAI GPT-6.1 Terra
+- OpenAI GPT-6.2 Astra
+- OpenAI GPT-6.2 Sol
 - Microsoft MAI-Code-1.1-Flash
+- Microsoft MAI Code 2
+- Microsoft MAI Code 2 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
@@ -537,7 +541,11 @@ Pro
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
 - OpenAI GPT-6.1 Terra
+- OpenAI GPT-6.2 Astra
+- OpenAI GPT-6.2 Sol
 - Microsoft MAI-Code-1.1-Flash
+- Microsoft MAI Code 2
+- Microsoft MAI Code 2 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
@@ -574,7 +582,11 @@ Pro+
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
 - OpenAI GPT-6.1 Terra
+- OpenAI GPT-6.2 Astra
+- OpenAI GPT-6.2 Sol
 - Microsoft MAI-Code-1.1-Flash
+- Microsoft MAI Code 2
+- Microsoft MAI Code 2 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
@@ -611,7 +623,11 @@ Max
 - OpenAI GPT-6 Sol
 - OpenAI GPT-6.1 Sol
 - OpenAI GPT-6.1 Terra
+- OpenAI GPT-6.2 Astra
+- OpenAI GPT-6.2 Sol
 - Microsoft MAI-Code-1.1-Flash
+- Microsoft MAI Code 2
+- Microsoft MAI Code 2 Flash
 - Google Gemini 3.7 Flash
 - Google Gemini 3.8 Flash
 - Google Gemini 4 Argon
