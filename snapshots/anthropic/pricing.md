@@ -214,7 +214,7 @@ Per seat / month if billed annually. $125 if billed monthly.
 
 For large businesses operating at scale
 
-Get Enterprise planChat with buying specialist
+Get Enterprise planChat about your plan
 
 Seat price + usage at API rates
 
