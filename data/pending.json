@@ -1,30 +1,14 @@
 {
- "anthropic/api-release-notes": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "b7eb8ffc527553c1ceaa1f619859a5463401cd1462b3f71f0fd5fd54bb5bb710"
- },
- "anthropic/pricing": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "6150b0024115ec73dea1fb378d9c145368eac8eeebc492b9daddd0b0f90eaf7f"
- },
- "github-copilot/plans": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "d01d32445e5bf41df7f234048141d4d41f07ea52a92f2da7fa87c33dc7214997"
- },
- "mistral/pricing": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "8d7b4be21decdb5586bc8a778c7e28f62cfe2781ca4e939ae1d7699fd080ad18"
- },
- "openai/api-pricing": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "1f76e3ab7aa563b357979ab93fbd7fc1ab23fb9e27056c51b4041632f93848a7"
- },
- "openai/rate-limits": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "47cb1efeaabaf3edc124baf09bf84d84a3b98747ce02ca371ddd4b6116040748"
+ "deepseek/api-pricing": {
+  "first_seen": "2026-11-18T07:37:06+00:00",
+  "sha256": "aded7f3517ca42a0492268da1192ec398b4e48b3b75e3a6b171064a3b8b560b2"
  },
  "perplexity/api-pricing": {
-  "first_seen": "2026-11-17T20:59:58+00:00",
-  "sha256": "3755d8cdc93ab1be5bc6d07b81cef04ec13e0820e644c86a9440f2713b786c57"
+  "first_seen": "2026-11-18T07:37:06+00:00",
+  "sha256": "e0957d4f682daa11765227719a5dd9b2e8bb457acdb1d8ed5086b9b453d38512"
+ },
+ "perplexity/rate-limits": {
+  "first_seen": "2026-11-18T07:37:06+00:00",
+  "sha256": "9989975d28c19bf1f2cdf6ae25a0f36dad3706d146eec95cb85fd3faeb85919c"
  }
 }

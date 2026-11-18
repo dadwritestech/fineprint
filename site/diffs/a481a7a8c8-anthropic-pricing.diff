@@ -1,0 +1,11 @@
+diff --git a/snapshots/anthropic/pricing.md b/snapshots/anthropic/pricing.md
+index e51a505..6b63d91 100644
+--- a/snapshots/anthropic/pricing.md
++++ b/snapshots/anthropic/pricing.md
+@@ -215,5 +215,5 @@ Per seat / month if billed annually. $125 if billed monthly.
+ For large businesses operating at scale
+ 
+-Get Enterprise planChat with buying specialist
++Get Enterprise planChat about your plan
+ 
+ Seat price + usage at API rates

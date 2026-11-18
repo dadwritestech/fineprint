@@ -1,0 +1,35 @@
+diff --git a/snapshots/mistral/pricing.md b/snapshots/mistral/pricing.md
+index 0d32f15..1e75202 100644
+--- a/snapshots/mistral/pricing.md
++++ b/snapshots/mistral/pricing.md
+@@ -14,5 +14,5 @@ Your personal AI agent for everyday tasks.
+ - 100+ connectors.
+ 
+-Start now
++Start Free
+ 
+ Popular
+@@ -51,5 +51,5 @@ I'm a student
+ - Chat and email support.
+ 
+-Start now
++Get Pro
+ 
+ Team
+@@ -77,5 +77,5 @@ $50
+ Users
+ 
+-Start now
++Get Team
+ 
+ Enterprise
+@@ -90,7 +90,7 @@ Private deployments powered by custom models, UI, and tools.
+ - White label.
+ 
+-Contact us
++Contact Sales
+ 
+-|  | FreeStart now | ProStart now | TeamStart now | EnterpriseContact us |
++|  | FreeStart Free | ProGet Pro | TeamGet Team | EnterpriseContact Sales |
+ |---|---|---|---|---|
+ | Interfaces. |  |  |  |  |
