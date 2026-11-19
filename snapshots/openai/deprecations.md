@@ -65,6 +65,7 @@ For speech migrations, see the Realtime API guide and the transcription guide.
 | Nov 30, 2026 | Evals dashboard, API, and graders for eval workflows | Read-only | Migrate to Promptfoo. For fine-tuning graders, see the fine-tuning timeline. | Jun 3, 2026 |
 | Nov 30, 2026 | Agent Builder | Deprecated | Agents SDK or ChatGPT Workspace Agents. Migration guide. ChatKit remains available. | Jun 3, 2026 |
 | Jan 6, 2027 | Self-serve fine-tuning job creation | Restricted access | See the fine-tuning timeline. | May 7, 2026 |
+| Jan 11, 2027 | GPT-5.2, GPT-5.4, and GPT-5.4 mini with EU data residency and `service_tier: fast` or `priority` | Deprecated | The same models with EU data residency and Standard processing (`service_tier: default`), or the GPT-6.2 model family. | Nov 18, 2026 |
 | Feb 26, 2027 | `/v1/audio/translations` | Deprecated | `/v1/realtime/translations` | Aug 26, 2026 |
 
 ## Model deprecation notice periods
