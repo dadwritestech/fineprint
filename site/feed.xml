@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Wed, 18 Nov 2026 20:42:21 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 07:36:30 +0000</lastBuildDate>
+<item><title>Anthropic api-release-notes: 43 line(s) added, 42 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/1a62013c0d-anthropic-api-release-notes.html</link>
+<guid isPermaLink="false">1a62013c0d-anthropic-api-release-notes</guid><pubDate>Wed, 18 Nov 2026 20:38:00 +0000</pubDate>
+<category>anthropic</category><category>changelog</category>
+<description>43 line(s) added, 42 removed. (+43/-42 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1a62013c0d-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
+<item><title>Anthropic model-deprecations: 30 line(s) added, 26 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/0853ae71b8-anthropic-model-deprecations.html</link>
+<guid isPermaLink="false">0853ae71b8-anthropic-model-deprecations</guid><pubDate>Wed, 18 Nov 2026 20:38:00 +0000</pubDate>
+<category>anthropic</category><category>deprecations</category>
+<description>30 line(s) added, 26 removed. (+30/-26 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/0853ae71b8-anthropic-model-deprecations.diff . Page: https://platform.claude.com/docs/en/about-claude/model-deprecations</description></item>
+<item><title>Perplexity rate-limits: 9 line(s) added, 1 removed (around &quot;Context API Rate Limits&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/bc54fc0af6-perplexity-rate-limits.html</link>
+<guid isPermaLink="false">bc54fc0af6-perplexity-rate-limits</guid><pubDate>Wed, 18 Nov 2026 20:38:00 +0000</pubDate>
+<category>perplexity</category><category>limits</category>
+<description>9 line(s) added, 1 removed (around &quot;Context API Rate Limits&quot;). (+9/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/bc54fc0af6-perplexity-rate-limits.diff . Page: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers</description></item>
 <item><title>DeepSeek api-pricing: 6 line(s) added, 5 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/a280ec048d-deepseek-api-pricing.html</link>
 <guid isPermaLink="false">a280ec048d-deepseek-api-pricing</guid><pubDate>Wed, 18 Nov 2026 07:37:06 +0000</pubDate>
 <category>deepseek</category><category>pricing</category>
@@ -230,16 +242,4 @@
 <guid isPermaLink="false">d0f528cefd-github-copilot-plans</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
 <category>github-copilot</category><category>pricing</category>
 <description>50 line(s) added, 0 removed (around &quot;Take flight with GitHub Copilot&quot;). (+50/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/d0f528cefd-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
-<item><title>GitHub Copilot premium-requests: 17 line(s) added, 57 removed (around &quot;Requests in GitHub Copilot (legacy)&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/1d73c92d0e-github-copilot-premium-requests.html</link>
-<guid isPermaLink="false">1d73c92d0e-github-copilot-premium-requests</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
-<category>github-copilot</category><category>limits</category>
-<description>17 line(s) added, 57 removed (around &quot;Requests in GitHub Copilot (legacy)&quot;). (+17/-57 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1d73c92d0e-github-copilot-premium-requests.diff . Page: https://docs.github.com/en/copilot/concepts/billing/copilot-requests</description></item>
-<item><title>Mistral changelog: 12 line(s) added, 0 removed (around &quot;October 22&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/87403a7f9e-mistral-changelog.html</link>
-<guid isPermaLink="false">87403a7f9e-mistral-changelog</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
-<category>mistral</category><category>changelog</category>
-<description>12 line(s) added, 0 removed (around &quot;October 22&quot;). (+12/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/87403a7f9e-mistral-changelog.diff . Page: https://docs.mistral.ai/resources/changelogs</description></item>
-<item><title>Mistral models: 21 line(s) added, 21 removed (around &quot;Z.ai GLM 5.3 Flash&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/45e3d3cefb-mistral-models.html</link>
-<guid isPermaLink="false">45e3d3cefb-mistral-models</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
-<category>mistral</category><category>deprecations</category>
-<description>21 line(s) added, 21 removed (around &quot;Z.ai GLM 5.3 Flash&quot;). (+21/-21 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/45e3d3cefb-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
 </channel></rss>

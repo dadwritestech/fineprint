@@ -1,0 +1,28 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index 3e1a227..f0cbae0 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -56,5 +56,5 @@ Every Agent API call counts against one request limit shared across models and A
+ | Tier 5 | 33 QPS |
+ 
+-The limit uses a rolling one-second window. Each accepted request counts against the organization's shared Agent API request limit for one second, regardless of the model selected. Successful responses include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers for the request limit. A `429` carries `Retry-After` instead, and no response reports token budget.
++The limit uses a rolling one-second window. Each accepted request counts against the organization's shared Agent API request limit for one second, regardless of the model selected. Successful responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers for the request limit. A `429` carries `Retry-After` instead, and no response reports token budget.
+ 
+ ### Agent API Token Rate Limits
+@@ -185,4 +185,16 @@ Contextualized embeddings have separate, higher limits (5× the standard embeddi
+ Contextualized embeddings are rate limited by total chunks, not by request count. The 16,000-chunk request limit is a structural ceiling. With an otherwise empty rate-limit window, the effective maximum is the lower of 16,000 chunks and your organization's one-second chunk allowance. Earlier requests in the window reduce the number of chunks currently available.
+ 
++## Context API Rate Limits
++
++Your organization's usage tier sets two Context API limits: requests per second and URLs per request. Each request counts as one unit against the requests-per-second limit, whatever its URL count, and all API keys in the organization share that limit. The URL limit applies to each request.
++
++| Tier | Requests per second | URLs per request |
++|---|---|---|
++| Tier 0 | 1 | 10 |
++| Tiers 1–3 | 3 | 15 |
++| Tiers 4–5 | 5 | 25 |
++
++Over the requests-per-second limit, the request fails with `429` and error type `request_rate_limit_exceeded`, and no URLs are fetched. Wait for the number of seconds in the `Retry-After` header, then retry. A request with more URLs than your tier allows fails with `400`, error type `invalid_request`, and `param` `urls`, without counting against your rate limit. Split it into smaller requests. No request can carry more than 50 URLs. Successful responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers, counted in requests. The Context API quickstart covers how requests count. If you need a higher limit, fill out our rate limit increase request form.
++
+ ## How Rate Limiting Works
+ 
