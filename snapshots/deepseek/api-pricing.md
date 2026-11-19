@@ -42,7 +42,7 @@ The Search and Fetch APIs are billed per use.
 
 For the billing rules, see Search & Fetch.
 
-Starting 12:00 on November 18, 2026 (Beijing Time, UTC+8), server-side search and web fetch triggered when calling the model are no longer billed; only model token usage is billed. Server-side search is triggered when you use the web tools, the `web_search` tool in the Anthropic API or the `web_search` tool in the Responses API.
+Starting 12:00 on November 18, 2026 (Beijing Time, UTC+8), the server-side search and web fetch tool calls triggered when calling the model are no longer billed; the results they return are appended to the model context and billed as model token usage. Server-side search is triggered when you use the web tools, the `web_search` tool in the Anthropic API or the `web_search` tool in the Responses API.
 
 | Item | Unit | Price |
 |---|---|---|
