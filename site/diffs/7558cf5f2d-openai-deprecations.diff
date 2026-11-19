@@ -1,0 +1,10 @@
+diff --git a/snapshots/openai/deprecations.md b/snapshots/openai/deprecations.md
+index b7b581e..8b5f30b 100644
+--- a/snapshots/openai/deprecations.md
++++ b/snapshots/openai/deprecations.md
+@@ -66,4 +66,5 @@ For speech migrations, see the Realtime API guide and the transcription guide.
+ | Nov 30, 2026 | Agent Builder | Deprecated | Agents SDK or ChatGPT Workspace Agents. Migration guide. ChatKit remains available. | Jun 3, 2026 |
+ | Jan 6, 2027 | Self-serve fine-tuning job creation | Restricted access | See the fine-tuning timeline. | May 7, 2026 |
++| Jan 11, 2027 | GPT-5.2, GPT-5.4, and GPT-5.4 mini with EU data residency and `service_tier: fast` or `priority` | Deprecated | The same models with EU data residency and Standard processing (`service_tier: default`), or the GPT-6.2 model family. | Nov 18, 2026 |
+ | Feb 26, 2027 | `/v1/audio/translations` | Deprecated | `/v1/realtime/translations` | Aug 26, 2026 |
+ 

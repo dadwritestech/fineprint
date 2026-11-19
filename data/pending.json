@@ -1,26 +1,18 @@
 {
- "anthropic/api-pricing": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "c02a89ef7ebcc3c670e2c191a2e36d55bd8701218ee23371da66273eb7148b9a"
+ "mistral/pricing": {
+  "first_seen": "2026-11-19T20:43:00+00:00",
+  "sha256": "2629b37337135abf6819ebdfd808f2c87358af609ac096da5e66965ab07b6af7"
  },
- "anthropic/rate-limits": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "05c62347f3100bfd0c8f2450fcb4e835500921162da4cb44fc66d0fc99434ec4"
- },
- "deepseek/api-pricing": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "9028b68df91e6c34e2a3ffbfec5a75807e1349e85f13765b45ca7b9551aa0318"
- },
- "openai/deprecations": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "88bd20a93cf2088ce798476ec85e0f4e06be4a8964c20ed51314c1ff1904bfb5"
- },
- "openai/rate-limits": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "bcaaba5a073f7dd2c56e9295a14604cc704f035e567bc9c65e5aa5ffbc7ada52"
+ "openai/api-pricing": {
+  "first_seen": "2026-11-19T20:43:00+00:00",
+  "sha256": "bd264ea45ac147230407337a689c9b6dbcc41ccf69de5d28599b655abf455fa3"
  },
  "perplexity/api-pricing": {
-  "first_seen": "2026-11-19T07:32:09+00:00",
-  "sha256": "4526fad705c784bb8315aca8c1fb0063ce244f6c0cf1c396e54556eb01e88aa4"
+  "first_seen": "2026-11-19T20:43:00+00:00",
+  "sha256": "58312076baf9077d48038acabb15ee24527dca5bd22eb015d243fb80a9a6b6e4"
+ },
+ "perplexity/rate-limits": {
+  "first_seen": "2026-11-19T20:43:00+00:00",
+  "sha256": "f22afc838d28d8e67d845c9e10fa1ee4e71ca28bdbc1d4cda9a3eddb59d3037d"
  }
 }
