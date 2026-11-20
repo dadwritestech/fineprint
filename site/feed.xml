@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Thu, 19 Nov 2026 20:47:20 +0000</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 07:28:46 +0000</lastBuildDate>
+<item><title>Mistral pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/527b138852-mistral-pricing.html</link>
+<guid isPermaLink="false">527b138852-mistral-pricing</guid><pubDate>Thu, 19 Nov 2026 20:43:00 +0000</pubDate>
+<category>mistral</category><category>pricing</category>
+<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/527b138852-mistral-pricing.diff . Page: https://mistral.ai/pricing</description></item>
+<item><title>OpenAI api-pricing: 5 line(s) added, 4 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/db839a9533-openai-api-pricing.html</link>
+<guid isPermaLink="false">db839a9533-openai-api-pricing</guid><pubDate>Thu, 19 Nov 2026 20:43:00 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>5 line(s) added, 4 removed. (+5/-4 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/db839a9533-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
 <item><title>Anthropic api-pricing: 12 line(s) added, 4 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/72d11660e0-anthropic-api-pricing.html</link>
 <guid isPermaLink="false">72d11660e0-anthropic-api-pricing</guid><pubDate>Thu, 19 Nov 2026 07:32:09 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">cee9da298d-openai-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
 <category>openai</category><category>limits</category>
 <description>69 line(s) added, 22 removed (around &quot;Model availability&quot;). (+69/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/cee9da298d-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
-<item><title>Anthropic api-release-notes: 39 line(s) added, 25 removed (around &quot;November 5, 2026&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/bb0d910477-anthropic-api-release-notes.html</link>
-<guid isPermaLink="false">bb0d910477-anthropic-api-release-notes</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
-<category>anthropic</category><category>changelog</category>
-<description>39 line(s) added, 25 removed (around &quot;November 5, 2026&quot;). (+39/-25 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/bb0d910477-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
-<item><title>Anthropic model-deprecations: 17 line(s) added, 17 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/43061e5688-anthropic-model-deprecations.html</link>
-<guid isPermaLink="false">43061e5688-anthropic-model-deprecations</guid><pubDate>Thu, 05 Nov 2026 18:17:17 +0000</pubDate>
-<category>anthropic</category><category>deprecations</category>
-<description>17 line(s) added, 17 removed. (+17/-17 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/43061e5688-anthropic-model-deprecations.diff . Page: https://platform.claude.com/docs/en/about-claude/model-deprecations</description></item>
 </channel></rss>
