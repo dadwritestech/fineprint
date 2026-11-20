@@ -6,19 +6,19 @@ This page shows pricing information to help you understand API costs.For billing
 
 ## Orchestrator API Pricing
 
-Orchestrator API usage is billed per token at each model's published rates — there are no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's discounted cache-read rate and reasoning tokens billed at the output rate. You are always billed at the requested model's rates, regardless of how the request is served. See Orchestrator Models & Pricing for the full per-model rate card, including cache-read rates.
+Orchestrator API usage is billed per token at each model's published rates, with no per-request fees. Every model has its own input and output rate, with cache reads billed at the model's cache-read rate and reasoning tokens billed at the output rate. Some models also charge for cache writes; see Orchestrator billing. You are billed at the requested model's rates regardless of which deployment serves the request; with `perplexity/auto`, at the rates of the model that served it. See Orchestrator Models & Pricing for the full per-model rate card, including cache-read rates and usage tiers. For supported OpenAI models, service tiers scale token rates by 0.5× for `flex` and 2× for `priority`. The listed rates for `google/gemini-3.7-flash` and `google/gemini-3.8-flash` apply through December 31, 2026.
 
 ## Agent API Pricing
 
-The Agent API provides access to third-party models from providers including OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA with transparent, token-based pricing at each model's published rates.
+The Agent API charges for model tokens and tool calls. The catalog includes models from OpenAI, Anthropic, Google, xAI, Z.AI, DeepSeek, Moonshot AI, NVIDIA, and Perplexity.
 
 ### Model Pricing
 
-Agent API pricing varies by provider and model, with each provider offering multiple models at different price points.
+## View Agent API Model Pricing
 
-## View Complete Third-Party Model Pricing
+Compare model rates, cache rates, and supported service tiers.
 
-See the full pricing breakdown for all available models from OpenAI, Anthropic, Google, xAI, Z.AI, Moonshot AI, and NVIDIA, including cache rates and provider documentation links on the Agent API Models page.
+The `flex` and `priority` service tiers scale token rates by 0.5× and 2×, respectively, on models that list those tiers.  The introductory rates for `google/gemini-4-argon` and `google/gemini-4-carbon` apply through November 30, 2026. The listed rates for `google/gemini-3.7-flash` and `google/gemini-3.8-flash` apply through December 31, 2026.
 
 ### Tool Pricing
 
@@ -29,12 +29,13 @@ When using tools with the Agent API:
 | `web_search` (standard) | $0.0025 per invocation | Standard web search with `search_type: "web"`. $2.50 per 1,000 invocations |
 | `web_search` (Fast Search) | $0.001 per invocation | The same tool with `search_type: "fast"`. $1.00 per 1,000 invocations. See Fast Search |
 | `image_search` | $0.0025 per successful invocation | Finds structured image results with domain, format, and safe-search filters. $2.50 per 1,000 successful invocations |
-| `fetch_url` | $0.0005 per invocation | Fetches and extracts content from specific URLs |
+| `fetch_url` | $0.0005 per invocation | Fetches web pages. If the tool uses a model to extract content, you also pay for that model's tokens. |
 | `people_search` | $0.005 per invocation | Looks up professionals, employees, and people. $5 per 1,000 tool invocations |
 | `finance_search` | $0.005 per invocation | Retrieves financial data and market information. $5 per 1,000 tool invocations |
-| `sandbox` | $0.03 per session | Isolated container for executing code during an Agent API request. A session covers up to 20 minutes of active use for billing purposes — this is the billing window, not a runtime cap. SDK search queries made from inside the sandbox are billed at $0.0025 per request (same as `web_search`). |
+| `sandbox` | $0.03 per 20-minute block | Isolated container for running code during an Agent API request. Billed for each started 20-minute block of container time, measured from the container's start through its last command. The block is a billing unit, not a runtime cap. |
+| `sandbox` SDK web search | $0.001 per invocation | Web searches made with the SDK preinstalled in the sandbox. $1.00 per 1,000 invocations |
 
-Most tool costs are per invocation. `sandbox` is billed per container session — a 20-minute billing window per container, not a runtime cap — plus per SDK search query made from inside it. Tool costs are separate from model token costs.
+Most tool costs are per invocation. `sandbox` is billed per started 20-minute block of container time, plus each SDK web search made inside it. Tool costs are separate from model token costs.
 
 ## Search API Pricing
 
@@ -54,7 +55,7 @@ Search API cost = successful requests ÷ 1,000 × the price per 1K requests.
 | One `POST /search` with a `query` array of five queries | 1 | $0.005 (standard) or $0.001 (Fast Search) |
 | 10,000 successful standard requests in a month | 10,000 | 10 × $5.00 = $50.00 |
 
-What a result contains, the request controls, and the limits on queries, results, and extracted text are in the Search API overview.
+What a result contains, the request controls, and the limits on queries and results are in How Search Works.
 
 ## Monitor API Pricing
 
@@ -69,9 +70,26 @@ Cost = (succeeded Search runs + counted fetched URLs from succeeded Page runs) �
 
 See Monitor API limits for HTTP request limits by usage tier.
 
+## Context API Pricing
+
+The Context API returns the content of web pages you already have URLs for. It costs $1.00 per 1,000 fetched URLs ($0.001 per URL). Requests without `criteria` have no token billing.
+
+Billing unit: each URL in a successful `POST /v1/context` response whose `status.type` is `ok` or `not_modified`, whatever `formats` asks for. Highlights and metadata-only requests with `"formats": []` are billed the same way. URLs that fail are free, including invalid, blocked, empty, and timed-out URLs.
+
+Context API cost without `criteria` = billable URLs (`ok` or `not_modified`) ÷ 1,000 × $1.00. With `criteria`, scoring is billed as Decisions API input tokens on top of the per-URL price: the page text plus your questions, for each scored page. The response reports the count as `usage.criteria.input_tokens`. To estimate your cost, open the calculator and enter the URLs you expect to fetch per month. Each successful response reports the billed URL count in `usage.fetched_urls` and its list-price cost in `usage.cost.total_cost`, before any account-specific discounts, credits, or adjustments.
+
 ## Embeddings API Pricing
 
 Generate high-quality text embeddings for semantic search, retrieval-augmented generation (RAG), and other machine learning applications.
+
+### Contextualized Embeddings v2
+
+| Model | Dimensions | Price ($/1M tokens) | Images ($/1M tokens) |
+|---|---|---|---|
+| `pplx-embed-v2-context-0.6b` | 1024 | $0.02 | $0.40 |
+| `pplx-embed-v2-context-9b` | 2048 or 1024 | $0.12 | $0.42 |
+
+Text inputs use the token price. Image inputs use the image price.
 
 ### Standard Embeddings
 
@@ -104,11 +122,11 @@ The Decisions API answers yes/no, multiple-choice, and scored questions about te
 | `pplx-decider-v1.2` | $0.02 | Free | None |
 | `pplx-decider-flash-v1.2` | $0.01 | Free | None |
 
-Aliases: `pplx-decider-latest` and `perplexity/pplx-decider-latest` select `pplx-decider-v1.3`. `pplx-decider-flash-latest` and `perplexity/pplx-decider-flash-latest` select `pplx-decider-flash-v1.3`. An alias bills at the rate of the model it selects. Requests that name `pplx-decider-v1.1-27b` or `pplx-decider-v1-27b` select `pplx-decider-v1.2` and bill at $0.02.Billing unit: you pay for input tokens, plus web searches and URL fetches if you set `mode: "web_grounding"`. The `state`, every question, any images, fetched page text, and any search results added to the `state` count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the token cost of a request from the response you already receive. A request with 600 input tokens costs $0.000012 on `pplx-decider-v1.3` or `pplx-decider-v1.2` and $0.000006 on `pplx-decider-flash-v1.3` or `pplx-decider-flash-v1.2`.
+Aliases: `pplx-decider-latest` and `perplexity/pplx-decider-latest` select `pplx-decider-v1.3`. `pplx-decider-flash-latest` and `perplexity/pplx-decider-flash-latest` select `pplx-decider-flash-v1.3`. An alias bills at the rate of the model it selects. `pplx-decider-v1.1-27b` is a legacy alias of `pplx-decider-v1-27b`; both bill at $0.02.Billing unit: you pay for input tokens, plus web searches and URL fetches if you set `mode: "web_grounding"`. The `state`, every question, any images, fetched page text, and any search results added to the `state` count as input; the response reports the exact number as `usage.input_tokens`, so you can compute the token cost of a request from the response you already receive. A request with 600 input tokens costs $0.000012 on `pplx-decider-v1.3` or `pplx-decider-v1.2` and $0.000006 on `pplx-decider-flash-v1.3` or `pplx-decider-flash-v1.2`.
 
 ### Web grounding
 
-A request with `mode: "web_grounding"` runs one Fast Search for each of its questions, up to 100, before the model answers. Each search costs $0.001 ($1 per 1,000), in addition to input tokens, so at most $0.10 in searches per request. Questions that produce the same search query share one search. When `state` is a page URL, the API also fetches the page before searching. Each successful URL fetch costs $0.001; a failed fetch is not billed. One successful fetch and three successful searches cost $0.004, plus input tokens.
+A request with `mode: "web_grounding"` runs one Fast Search for each of its questions, up to 100, before the model answers. Each search costs $0.001 ($1 per 1,000), in addition to input tokens, so at most $0.10 in searches per request. Questions that produce the same search query share one search. When `state` is a page URL, the API also fetches the page before searching. Each successful URL fetch costs $0.0005; a failed fetch is not billed. One successful fetch and three successful searches cost $0.0035, plus input tokens.
 
 - Billed: every search that returns, even with no results. Completed searches and successful URL fetches remain billable if the request later fails, for example because the input exceeds the token limit.
 - Not billed: a search that fails or runs out of time, a question with no text to search, and requests rejected before search: an invalid `mode`, more than 100 questions, a missing or unknown `model`, or a `state` that is not a string, object, or array. A request can be billed for fewer searches than it has questions.
@@ -129,6 +147,7 @@ The number of tokens in your prompt or message to the API. This includes:
 - Your question or instruction
 - Any context or examples you provide
 - System messages and formatting
+- Tool results that the API passes to the model
 
 Example: "What is the weather in New York?" = ~8 input tokens
 
@@ -138,7 +157,6 @@ The number of tokens in the API's response. This includes:
 
 - The generated answer or content
 - Any explanations or additional context
-- Search results and references
 
 Example: "The weather in New York is currently sunny with a temperature of 72°F." = ~15 output tokens
 
@@ -148,7 +166,7 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 
 ## Agent API Web Search
 
-`openai/gpt-5.6-terra` • 500 input + 200 output tokens • 1 web search
+`openai/gpt-5.6-terra` • 500 fresh input + 200 output tokens • 1 standard web search
 
 | Component | Cost |
 |---|---|
@@ -159,17 +177,17 @@ Token Calculation: 1 token ≈ 4 characters in English text. The exact count may
 
 ## Agent API Research Effort Level
 
-`low` effort level representative run • `openai/gpt-6-luna` • 2,000 input + 1,000 output tokens • 1 web search + 1 fetch
+`low` effort level example • `openai/gpt-6-luna` • 2,000 fresh input + 1,000 output tokens • 1 Fast Search + 1 fetch
 
 | Component | Cost |
 |---|---|
 | Model input tokens | $0.0002 |
 | Model output tokens | $0.0005 |
 | `web_search` (Fast Search) | $0.001 |
-| `fetch_url` | $0.0005 |
+| `fetch_url` (base fee) | $0.0005 |
 | Total | $0.0022 |
 
-Actual effort level costs vary with the selected model, token usage, and tool invocations. When present on a completed response, `usage.cost.total_cost` reports the calculated request cost.
+Actual effort level costs vary with the model, token usage, and tool calls. When present, `usage.cost.total_cost` reports an estimate. Check Billing in the API Console for charged amounts.
 
 ## Purchase Options
 
