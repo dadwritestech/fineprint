@@ -2,7 +2,7 @@
 
 # Models & Pricing
 
-Model prices are listed in units of per 1M tokens. A token, the smallest unit of text that the model recognizes, can be a word, a number, or even a punctuation mark. We bill model usage based on the total number of input and output tokens by the model.
+Model prices are listed per 1M tokens. A token, the smallest unit of text that the model recognizes, can be a word, a number, or even a punctuation mark. We bill model usage based on the total number of input and output tokens by the model.
 
 | MODEL | deepseek-flash(1) | deepseek-v4-pro |  |  |
 |---|---|---|---|---|
