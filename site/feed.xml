@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Fri, 20 Nov 2026 07:28:46 +0000</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 20:31:51 +0000</lastBuildDate>
+<item><title>DeepSeek api-pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/4466be101e-deepseek-api-pricing.html</link>
+<guid isPermaLink="false">4466be101e-deepseek-api-pricing</guid><pubDate>Fri, 20 Nov 2026 07:24:24 +0000</pubDate>
+<category>deepseek</category><category>pricing</category>
+<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/4466be101e-deepseek-api-pricing.diff . Page: https://api-docs.deepseek.com/quick_start/pricing</description></item>
+<item><title>Perplexity rate-limits: 9 line(s) added, 9 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/a32d819dcd-perplexity-rate-limits.html</link>
+<guid isPermaLink="false">a32d819dcd-perplexity-rate-limits</guid><pubDate>Fri, 20 Nov 2026 07:24:24 +0000</pubDate>
+<category>perplexity</category><category>limits</category>
+<description>9 line(s) added, 9 removed. (+9/-9 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a32d819dcd-perplexity-rate-limits.diff . Page: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers</description></item>
 <item><title>Mistral pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/527b138852-mistral-pricing.html</link>
 <guid isPermaLink="false">527b138852-mistral-pricing</guid><pubDate>Thu, 19 Nov 2026 20:43:00 +0000</pubDate>
 <category>mistral</category><category>pricing</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">f2947051af-anthropic-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
 <category>anthropic</category><category>limits</category>
 <description>38 line(s) added, 44 removed. (+38/-44 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/f2947051af-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
-<item><title>OpenAI deprecations: 9 line(s) added, 3 removed (around &quot;2026-11-05: GPT-5.5-Cyber&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/808b6387d7-openai-deprecations.html</link>
-<guid isPermaLink="false">808b6387d7-openai-deprecations</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
-<category>openai</category><category>deprecations</category>
-<description>9 line(s) added, 3 removed (around &quot;2026-11-05: GPT-5.5-Cyber&quot;). (+9/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/808b6387d7-openai-deprecations.diff . Page: https://developers.openai.com/api/docs/deprecations</description></item>
-<item><title>OpenAI rate-limits: 69 line(s) added, 22 removed (around &quot;Model availability&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/cee9da298d-openai-rate-limits.html</link>
-<guid isPermaLink="false">cee9da298d-openai-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
-<category>openai</category><category>limits</category>
-<description>69 line(s) added, 22 removed (around &quot;Model availability&quot;). (+69/-22 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/cee9da298d-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
 </channel></rss>

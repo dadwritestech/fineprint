@@ -1,0 +1,59 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index f0cbae0..caa5f39 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -22,5 +22,5 @@ Tiers are based on cumulative purchases across your account lifetime, not curren
+ ## Orchestrator API Rate Limits
+ 
+-Orchestrator API requests are rate limited. When a request is rate limited, or an upstream model is overloaded, the API returns a `429` with a `Retry-After` header — retry after the indicated interval.
++Your usage tier also determines which Orchestrator models you can call. Orchestrator API requests are rate limited. When a request is rate limited, or an upstream model is overloaded, the API returns a `429` with a `Retry-After` header. Retry after the indicated interval.
+ 
+ Requests rejected with a `429` are not billed.
+@@ -129,9 +129,9 @@ Billing and rate limiting use different units. A successful request containing f
+ ## Monitor API limits
+ 
+-The Monitor API HTTP budget is shared across all API keys in an organization. It is separate from the Agent API budget.
++All API keys in an organization share the HTTP request budget for Monitor API. This budget is separate from the Agent API budget.
+ 
+ ### HTTP request limits
+ 
+-Every Monitor HTTP operation consumes one request: create, list, retrieve, update, delete, pause, resume, run now, list runs, and get a run. Polling therefore uses the same request budget as lifecycle operations.
++Each Monitor API HTTP operation uses one request from the budget. This applies when you create, list, get, update, delete, pause, resume, or run monitors on request. It also applies when you list runs, get a run, or test a webhook. Requests to poll or manage monitors share the same budget.
+ 
+ | Usage tier | Standard requests per second |
+@@ -144,9 +144,9 @@ Every Monitor HTTP operation consumes one request: create, list, retrieve, updat
+ | Tier 5 | 33 |
+ 
+-These are standard organization limits; custom organization limits may differ. A throttled request returns `429` with `error.type: "request_rate_limit_exceeded"` and a `Retry-After` header. Wait at least that interval, then retry with backoff and jitter; avoid tight polling loops that leave no capacity for other requests.
++The table shows the standard limits for an organization. The limits can differ if your organization has custom limits. If a request exceeds the limit, the service returns `429` with `error.type: "request_rate_limit_exceeded"` and a `Retry-After` header. Wait at least as long as the interval in `Retry-After`. Then retry with backoff and jitter. Do not poll so often that no capacity remains for other requests.
+ 
+ ### Active monitor limits
+ 
+-The number of active monitors is limited by your organization's usage tier. Search and Page monitors share this limit across all API keys and the Console; paused monitors do not count.
++Your organization's usage tier sets the maximum number of active monitors. Search and Page monitors share this limit across all API keys and the API Console. Paused monitors do not count toward the limit.
+ 
+ | Usage tier | Active monitor limit |
+@@ -159,7 +159,7 @@ The number of active monitors is limited by your organization's usage tier. Sear
+ | Tier 5 | 500 |
+ 
+-At the limit, creating a monitor or resuming a paused one returns `409` with `error.type: "quota_exceeded"` and no `Retry-After` header. Pause or delete an active monitor, or move to a tier with a higher limit, before trying again. Changes to available capacity can take a short time to appear.
++At the limit, a request to create or resume a monitor returns `409` with `error.type: "quota_exceeded"`. The response has no `Retry-After` header. Before you try again, pause or delete an active monitor, or move to a tier with a higher limit. Changes to available capacity can take a short time to appear.
+ 
+-Need higher Monitor API limits? Contact us to request an increase.
++To request higher Monitor API limits, contact us.
+ 
+ ## Embeddings API Rate Limits
+@@ -187,5 +187,5 @@ Contextualized embeddings are rate limited by total chunks, not by request count
+ ## Context API Rate Limits
+ 
+-Your organization's usage tier sets two Context API limits: requests per second and URLs per request. Each request counts as one unit against the requests-per-second limit, whatever its URL count, and all API keys in the organization share that limit. The URL limit applies to each request.
++Your organization's usage tier sets two Context API limits: requests per second and URLs per request. A request with at least one valid URL counts as one request against the requests-per-second limit, whatever its URL count, and all API keys in the organization share that limit. Requests rejected during validation, and requests whose URLs are all invalid, do not count. The URL limit applies to each request.
+ 
+ | Tier | Requests per second | URLs per request |
+@@ -195,5 +195,5 @@ Your organization's usage tier sets two Context API limits: requests per second
+ | Tiers 4–5 | 5 | 25 |
+ 
+-Over the requests-per-second limit, the request fails with `429` and error type `request_rate_limit_exceeded`, and no URLs are fetched. Wait for the number of seconds in the `Retry-After` header, then retry. A request with more URLs than your tier allows fails with `400`, error type `invalid_request`, and `param` `urls`, without counting against your rate limit. Split it into smaller requests. No request can carry more than 50 URLs. Successful responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers, counted in requests. The Context API quickstart covers how requests count. If you need a higher limit, fill out our rate limit increase request form.
++Over the requests-per-second limit, the request fails with `429` and error type `request_rate_limit_exceeded`, and no URLs are fetched. Wait for the number of seconds in the `Retry-After` header, then retry. A request with more URLs than your tier allows fails with `400`, error type `invalid_request`, and `param` `urls`, without counting against your rate limit. Split it into smaller requests. No request can carry more than 50 URLs. Responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers, counted in requests. If you need a higher limit, fill out our rate limit increase request form.
+ 
+ ## How Rate Limiting Works

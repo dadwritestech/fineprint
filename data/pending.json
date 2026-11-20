@@ -1,14 +1,18 @@
 {
- "deepseek/api-pricing": {
-  "first_seen": "2026-11-20T07:24:24+00:00",
-  "sha256": "9dcfc1ebda29c093ddaaf81eb5cdc3c9be00fb83f52e2ddfecb8834e90d18805"
+ "github-copilot/plans": {
+  "first_seen": "2026-11-20T20:27:30+00:00",
+  "sha256": "1619455864eac3360572ef055134f79607fa03ea3a89754654aa784745566209"
+ },
+ "mistral/pricing": {
+  "first_seen": "2026-11-20T20:27:30+00:00",
+  "sha256": "bfa037dbf0a0ffde9151fce3e0e07375098cb9a63823225fbc4dd58fed617e75"
+ },
+ "openai/rate-limits": {
+  "first_seen": "2026-11-20T20:27:30+00:00",
+  "sha256": "4164e4c1a790bc2ef212b49923ea7bd37c95fac4a77300105dfe32638637e475"
  },
  "perplexity/api-pricing": {
-  "first_seen": "2026-11-20T07:24:24+00:00",
-  "sha256": "67edee56dda0cbb6112c3ba1bcf0f4a3a059d922a73a5cb872134b62c3625974"
- },
- "perplexity/rate-limits": {
-  "first_seen": "2026-11-20T07:24:24+00:00",
-  "sha256": "06f404e606aa73c1f34daaefe9985a8564234bdf980d8855370bfebffa1f7f90"
+  "first_seen": "2026-11-20T20:27:30+00:00",
+  "sha256": "8098330e8bce647c83f8802a2128ab5300b9d34c881b56809bda71a6cd2eadd3"
  }
 }
