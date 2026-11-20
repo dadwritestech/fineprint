@@ -39,7 +39,6 @@ I'm a student
 - All-day coding in the CLI, IDE, or on web.
 - Generate spreadsheets and slides.
 - Better image generation and editing.
-- $25.5 /mo in API credits.
 - Chat and email support.
 
 - More access and usage.
@@ -47,7 +46,6 @@ I'm a student
 - Get more complex tasks done.
 - All-day coding in the CLI, IDE, or on web.
 - More image generations.
-- $15 /mo in API credits.
 - Chat and email support.
 
 Get Pro
@@ -132,7 +130,7 @@ Contact Sales
 | White label |  |  |  |  |
 | Usage and data. |  |  |  |  |
 | Extend usage with PAYG credits |  |  |  |  |
-| Model training |  |  |  | Opt-out |
+| Model training | Opt-out | Opt-out | Opt-out | Opt-out |
 | Customer service. |  |  |  |  |
 | Help center |  |  |  |  |
 | Chat and email support |  |  |  |  |
