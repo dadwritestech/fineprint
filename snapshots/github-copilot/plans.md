@@ -510,6 +510,7 @@ Free
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
 - Google Gemini 4 Hydrogen
+- Google Gemini 4 Neon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -551,6 +552,7 @@ Pro
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
 - Google Gemini 4 Hydrogen
+- Google Gemini 4 Neon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -592,6 +594,7 @@ Pro+
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
 - Google Gemini 4 Hydrogen
+- Google Gemini 4 Neon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
@@ -633,6 +636,7 @@ Max
 - Google Gemini 4 Argon
 - Google Gemini 4 Carbon
 - Google Gemini 4 Hydrogen
+- Google Gemini 4 Neon
 - xAI Grok 4.5
 - xAI Grok 4.6
 - xAI Grok 4.7
