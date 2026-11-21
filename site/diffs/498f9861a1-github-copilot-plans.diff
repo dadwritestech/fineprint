@@ -1,0 +1,28 @@
+diff --git a/snapshots/github-copilot/plans.md b/snapshots/github-copilot/plans.md
+index f8ac78c..199b948 100644
+--- a/snapshots/github-copilot/plans.md
++++ b/snapshots/github-copilot/plans.md
+@@ -511,4 +511,5 @@ Free
+ - Google Gemini 4 Carbon
+ - Google Gemini 4 Hydrogen
++- Google Gemini 4 Neon
+ - xAI Grok 4.5
+ - xAI Grok 4.6
+@@ -552,4 +553,5 @@ Pro
+ - Google Gemini 4 Carbon
+ - Google Gemini 4 Hydrogen
++- Google Gemini 4 Neon
+ - xAI Grok 4.5
+ - xAI Grok 4.6
+@@ -593,4 +595,5 @@ Pro+
+ - Google Gemini 4 Carbon
+ - Google Gemini 4 Hydrogen
++- Google Gemini 4 Neon
+ - xAI Grok 4.5
+ - xAI Grok 4.6
+@@ -634,4 +637,5 @@ Max
+ - Google Gemini 4 Carbon
+ - Google Gemini 4 Hydrogen
++- Google Gemini 4 Neon
+ - xAI Grok 4.5
+ - xAI Grok 4.6

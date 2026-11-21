@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Fri, 20 Nov 2026 20:31:51 +0000</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 07:21:58 +0000</lastBuildDate>
+<item><title>GitHub Copilot plans: 4 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/498f9861a1-github-copilot-plans.html</link>
+<guid isPermaLink="false">498f9861a1-github-copilot-plans</guid><pubDate>Fri, 20 Nov 2026 20:27:30 +0000</pubDate>
+<category>github-copilot</category><category>pricing</category>
+<description>4 line(s) added, 0 removed. (+4/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/498f9861a1-github-copilot-plans.diff . Page: https://github.com/features/copilot/plans</description></item>
+<item><title>Mistral pricing: 1 line(s) added, 3 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ad8c9bb539-mistral-pricing.html</link>
+<guid isPermaLink="false">ad8c9bb539-mistral-pricing</guid><pubDate>Fri, 20 Nov 2026 20:27:30 +0000</pubDate>
+<category>mistral</category><category>pricing</category>
+<description>1 line(s) added, 3 removed. (+1/-3 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ad8c9bb539-mistral-pricing.diff . Page: https://mistral.ai/pricing</description></item>
+<item><title>Perplexity api-pricing: 27 line(s) added, 16 removed (around &quot;View Agent API Model Pricing&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/23b465fbe8-perplexity-api-pricing.html</link>
+<guid isPermaLink="false">23b465fbe8-perplexity-api-pricing</guid><pubDate>Fri, 20 Nov 2026 20:27:30 +0000</pubDate>
+<category>perplexity</category><category>pricing</category>
+<description>27 line(s) added, 16 removed (around &quot;View Agent API Model Pricing&quot;). (+27/-16 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/23b465fbe8-perplexity-api-pricing.diff . Page: https://docs.perplexity.ai/docs/getting-started/pricing</description></item>
 <item><title>DeepSeek api-pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/4466be101e-deepseek-api-pricing.html</link>
 <guid isPermaLink="false">4466be101e-deepseek-api-pricing</guid><pubDate>Fri, 20 Nov 2026 07:24:24 +0000</pubDate>
 <category>deepseek</category><category>pricing</category>
@@ -230,16 +242,4 @@
 <guid isPermaLink="false">ef6267d5a2-openai-api-pricing</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
 <category>openai</category><category>pricing</category>
 <description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ef6267d5a2-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
-<item><title>DeepSeek api-pricing: 27 line(s) added, 35 removed (around &quot;Your First API Call&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/f4362d7332-deepseek-api-pricing.html</link>
-<guid isPermaLink="false">f4362d7332-deepseek-api-pricing</guid><pubDate>Fri, 06 Nov 2026 06:55:00 +0000</pubDate>
-<category>deepseek</category><category>pricing</category>
-<description>27 line(s) added, 35 removed (around &quot;Your First API Call&quot;). (+27/-35 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/f4362d7332-deepseek-api-pricing.diff . Page: https://api-docs.deepseek.com/quick_start/pricing</description></item>
-<item><title>Anthropic api-pricing: 3 line(s) added, 7 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/6ee83e075b-anthropic-api-pricing.html</link>
-<guid isPermaLink="false">6ee83e075b-anthropic-api-pricing</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>3 line(s) added, 7 removed. (+3/-7 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6ee83e075b-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
-<item><title>Anthropic rate-limits: 38 line(s) added, 44 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/f2947051af-anthropic-rate-limits.html</link>
-<guid isPermaLink="false">f2947051af-anthropic-rate-limits</guid><pubDate>Thu, 05 Nov 2026 23:43:25 +0000</pubDate>
-<category>anthropic</category><category>limits</category>
-<description>38 line(s) added, 44 removed. (+38/-44 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/f2947051af-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
 </channel></rss>

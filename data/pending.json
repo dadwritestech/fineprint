@@ -1,18 +1,10 @@
 {
- "github-copilot/plans": {
-  "first_seen": "2026-11-20T20:27:30+00:00",
-  "sha256": "1619455864eac3360572ef055134f79607fa03ea3a89754654aa784745566209"
- },
- "mistral/pricing": {
-  "first_seen": "2026-11-20T20:27:30+00:00",
-  "sha256": "bfa037dbf0a0ffde9151fce3e0e07375098cb9a63823225fbc4dd58fed617e75"
+ "openai/chatgpt-pricing": {
+  "first_seen": "2026-11-21T07:17:38+00:00",
+  "sha256": "b2b9fe312bc240c9d01af1cefad26c512d1954c90674b4050b370383230c6b9b"
  },
  "openai/rate-limits": {
-  "first_seen": "2026-11-20T20:27:30+00:00",
-  "sha256": "4164e4c1a790bc2ef212b49923ea7bd37c95fac4a77300105dfe32638637e475"
- },
- "perplexity/api-pricing": {
-  "first_seen": "2026-11-20T20:27:30+00:00",
-  "sha256": "8098330e8bce647c83f8802a2128ab5300b9d34c881b56809bda71a6cd2eadd3"
+  "first_seen": "2026-11-21T07:17:38+00:00",
+  "sha256": "a9f394ac7318cf98143fc12a2330ed31a1503ac79eab9e06c0535cb21173b674"
  }
 }
