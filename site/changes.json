@@ -14839,5 +14839,22 @@
   "added": 27,
   "removed": 16,
   "diff": "diffs/23b465fbe8-perplexity-api-pricing.diff"
+ },
+ {
+  "id": "83d04aacea-openai-rate-limits",
+  "v": 2,
+  "date": "2026-11-21T07:17:38Z",
+  "sha": "83d04aacea9be2202c2fed4d9e0afe0df69a21a0",
+  "page": "openai/rate-limits",
+  "vendor": "openai",
+  "slug": "rate-limits",
+  "kind": "limits",
+  "url": "https://developers.openai.com/api/docs/guides/rate-limits",
+  "summary": "328 line(s) added, 5 removed (around \"pragma warning disable OPENAI001\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 328,
+  "removed": 5,
+  "diff": "diffs/83d04aacea-openai-rate-limits.diff"
  }
 ]

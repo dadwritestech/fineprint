@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Sat, 21 Nov 2026 07:21:58 +0000</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 19:27:05 +0000</lastBuildDate>
+<item><title>OpenAI rate-limits: 328 line(s) added, 5 removed (around &quot;pragma warning disable OPENAI001&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/83d04aacea-openai-rate-limits.html</link>
+<guid isPermaLink="false">83d04aacea-openai-rate-limits</guid><pubDate>Sat, 21 Nov 2026 07:17:38 +0000</pubDate>
+<category>openai</category><category>limits</category>
+<description>328 line(s) added, 5 removed (around &quot;pragma warning disable OPENAI001&quot;). (+328/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/83d04aacea-openai-rate-limits.diff . Page: https://developers.openai.com/api/docs/guides/rate-limits</description></item>
 <item><title>GitHub Copilot plans: 4 line(s) added, 0 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/498f9861a1-github-copilot-plans.html</link>
 <guid isPermaLink="false">498f9861a1-github-copilot-plans</guid><pubDate>Fri, 20 Nov 2026 20:27:30 +0000</pubDate>
 <category>github-copilot</category><category>pricing</category>
@@ -238,8 +242,4 @@
 <guid isPermaLink="false">1115dd8802-mistral-models</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
 <category>mistral</category><category>deprecations</category>
 <description>1 line(s) added, 0 removed. (+1/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/1115dd8802-mistral-models.diff . Page: https://docs.mistral.ai/models</description></item>
-<item><title>OpenAI api-pricing: 1 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/ef6267d5a2-openai-api-pricing.html</link>
-<guid isPermaLink="false">ef6267d5a2-openai-api-pricing</guid><pubDate>Fri, 06 Nov 2026 19:28:21 +0000</pubDate>
-<category>openai</category><category>pricing</category>
-<description>1 line(s) added, 1 removed. (+1/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/ef6267d5a2-openai-api-pricing.diff . Page: https://developers.openai.com/api/docs/pricing</description></item>
 </channel></rss>
