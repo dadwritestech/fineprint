@@ -165,11 +165,97 @@ The following examples retry a `gpt-6-luna` request to the Responses API. Each w
 
 The Python examples below demonstrate fallback backoff. They don't inspect `Retry-After`: before using them, add handling for valid server hints so the wrappers don't retry sooner than requested. Disable SDK retries or account for them in your application's retry limits.
 
-The Python example uses Tenacity, a third-party retry library. Its `retry` decorator and `wait_random_exponential` function add random exponential backoff.
+Install `openai` and `p-retry` in your project, save the complete TypeScript program as `retry.ts`, and set `OPENAI_API_KEY`. Run `node --experimental-strip-types retry.ts`. The wrapper disables SDK retries, retries requests that hit transient rate limits, and honors `Retry-After` within its delay budget.
 
 Retry with exponential backoff
 
-Python
+TypeScript
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42import OpenAI from "openai";
+import { setTimeout as sleep } from "node:timers/promises";
+
+// Stop on permanent errors or server delays beyond this example's budget.
+function retryDelay(error: unknown): number | undefined {
+  if (
+    !(error instanceof OpenAI.RateLimitError) ||
+    error.code === "insufficient_quota" ||
+    error.code === "billing_hard_limit_reached"
+  )
+    return undefined;
+  const hint = error.headers?.get("retry-after")?.trim();
+  if (!hint) return 0;
+  let delay = Number(hint) * 1000;
+  if (Number.isNaN(delay)) delay = Date.parse(hint) - Date.now();
+  if (Number.isNaN(delay) || delay < 0) return 0;
+  return delay <= 60000 ? delay : undefined;
+}
+const client = new OpenAI({ maxRetries: 0 });
+const operation = () =>
+  client.responses.create({
+    model: "gpt-6-luna",
+    input: "Say hello in one sentence.",
+    reasoning: { effort: "low" },
+    max_output_tokens: 1024,
+  });
+
+import pRetry from "p-retry";
+const response = await pRetry(operation, {
+  retries: 5,
+  minTimeout: 1000,
+  maxTimeout: 60000,
+  randomize: true,
+  onFailedAttempt: async ({ error, retriesLeft }) => {
+    const delay = retryDelay(error);
+    if (delay === undefined) throw error;
+    if (retriesLeft && delay) await sleep(delay);
+  },
+});
+if (response.status !== "completed")
+  throw new Error("Response did not complete");
+console.log(response.output_text);
+```
 
 ```
 1
@@ -391,11 +477,99 @@ puts(response.output_text)
 
 These retry libraries are third-party tools; review their behavior and security for your application.
 
-The Python example uses backoff, which provides decorators for retry behavior.
+Install `openai` and `exponential-backoff` in your project, save the complete TypeScript program as `retry.ts`, and set `OPENAI_API_KEY`. Run `node --experimental-strip-types retry.ts`. The wrapper disables SDK retries, retries requests that hit transient rate limits, and honors `Retry-After` within its delay budget.
 
 Retry with a backoff schedule
 
-Python
+TypeScript
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43import OpenAI from "openai";
+import { setTimeout as sleep } from "node:timers/promises";
+
+// Stop on permanent errors or server delays beyond this example's budget.
+function retryDelay(error: unknown): number | undefined {
+  if (
+    !(error instanceof OpenAI.RateLimitError) ||
+    error.code === "insufficient_quota" ||
+    error.code === "billing_hard_limit_reached"
+  )
+    return undefined;
+  const hint = error.headers?.get("retry-after")?.trim();
+  if (!hint) return 0;
+  let delay = Number(hint) * 1000;
+  if (Number.isNaN(delay)) delay = Date.parse(hint) - Date.now();
+  if (Number.isNaN(delay) || delay < 0) return 0;
+  return delay <= 60000 ? delay : undefined;
+}
+const client = new OpenAI({ maxRetries: 0 });
+const operation = () =>
+  client.responses.create({
+    model: "gpt-6-luna",
+    input: "Say hello in one sentence.",
+    reasoning: { effort: "low" },
+    max_output_tokens: 1024,
+  });
+
+import { backOff } from "exponential-backoff";
+const response = await backOff(operation, {
+  numOfAttempts: 6,
+  startingDelay: 1000,
+  maxDelay: 60000,
+  jitter: "full",
+  retry: async (error: unknown, attempt: number) => {
+    const delay = retryDelay(error);
+    if (delay === undefined || attempt >= 6) return false;
+    if (delay) await sleep(delay);
+    return true;
+  },
+});
+if (response.status !== "completed")
+  throw new Error("Response did not complete");
+console.log(response.output_text);
+```
 
 ```
 1
@@ -621,7 +795,101 @@ If you don't want to use third-party libraries, you can implement your own backo
 
 Using manual backoff implementation
 
-Python
+TypeScript
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46import OpenAI from "openai";
+import { setTimeout as sleep } from "node:timers/promises";
+
+// Stop on permanent errors or server delays beyond this example's budget.
+function retryDelay(error: unknown): number | undefined {
+  if (
+    !(error instanceof OpenAI.RateLimitError) ||
+    error.code === "insufficient_quota" ||
+    error.code === "billing_hard_limit_reached"
+  )
+    return undefined;
+  const hint = error.headers?.get("retry-after")?.trim();
+  if (!hint) return 0;
+  let delay = Number(hint) * 1000;
+  if (Number.isNaN(delay)) delay = Date.parse(hint) - Date.now();
+  if (Number.isNaN(delay) || delay < 0) return 0;
+  return delay <= 60000 ? delay : undefined;
+}
+const client = new OpenAI({ maxRetries: 0 });
+const operation = () =>
+  client.responses.create({
+    model: "gpt-6-luna",
+    input: "Say hello in one sentence.",
+    reasoning: { effort: "low" },
+    max_output_tokens: 1024,
+  });
+
+async function withExponentialBackoff<T>(
+  request: () => Promise<T>
+): Promise<T> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await request();
+    } catch (error) {
+      const serverDelay = retryDelay(error);
+      if (serverDelay === undefined || attempt >= 10) throw error;
+      const jitteredDelay =
+        Math.random() * Math.min(60000, 1000 * 2 ** attempt);
+      await sleep(Math.max(serverDelay, jitteredDelay));
+    }
+  }
+}
+const response = await withExponentialBackoff(operation);
+if (response.status !== "completed")
+  throw new Error("Response did not complete");
+console.log(response.output_text);
+```
 
 ```
 1
@@ -919,6 +1187,74 @@ func main() {
 		panic("Response did not complete")
 	}
 	fmt.Println(response.OutputText())
+}
+```
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33using System.ClientModel;
+using System.ClientModel.Primitives;
+using OpenAI.Responses;
+#pragma warning disable OPENAI001
+
+ResponsesClientOptions clientOptions = new() { RetryPolicy = new ClientRetryPolicy(maxRetries: 0) };
+ResponsesClient client = new(new ApiKeyCredential(key), clientOptions);
+
+CreateResponseOptions options = new("gpt-6-luna", [ResponseItem.CreateUserMessageItem("Say hello in one sentence.")])
+{
+    ReasoningOptions = new() { ReasoningEffortLevel = ResponseReasoningEffortLevel.Low },
+    MaxOutputTokenCount = 2048
+};
+ResponseResult response = await RetryWithBackoffAsync(() => client.CreateResponseAsync(options));
+Console.WriteLine(response.GetOutputText());
+
+internal static async Task<ResponseResult> RetryWithBackoffAsync(Func<Task<ClientResult<ResponseResult>>> operation)
+{
+    double delaySeconds = 1;
+    const int maxRetries = 10;
+    for (int attempt = 0; ; attempt++)
+    {
+        try
+        {
+            return await operation();
+        }
+        catch (ClientResultException error) when (error.Status == 429 && attempt < maxRetries)
+        {
+            delaySeconds *= 2 * (1 + Random.Shared.NextDouble());
+            await Task.Delay(TimeSpan.FromSeconds(delaySeconds));
+        }
+    }
 }
 ```
 
