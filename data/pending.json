@@ -1,10 +1,1 @@
-{
- "anthropic/api-release-notes": {
-  "first_seen": "2026-11-22T06:57:51+00:00",
-  "sha256": "da62881a96dab5e62da278440ca44503eb441a6c8cfd9748b272e07266dc5dc1"
- },
- "deepseek/api-pricing": {
-  "first_seen": "2026-11-22T06:57:51+00:00",
-  "sha256": "4a904c40cf7371d08c46dc1f6f50f23f242b142be65cab2ff8ce6932fd37466b"
- }
-}
+{}

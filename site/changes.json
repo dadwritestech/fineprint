@@ -14856,5 +14856,22 @@
   "added": 328,
   "removed": 5,
   "diff": "diffs/83d04aacea-openai-rate-limits.diff"
+ },
+ {
+  "id": "dc25df7759-anthropic-api-release-notes",
+  "v": 2,
+  "date": "2026-11-22T06:57:51Z",
+  "sha": "dc25df77592bf5479b6d325ec500d70e964809b0",
+  "page": "anthropic/api-release-notes",
+  "vendor": "anthropic",
+  "slug": "api-release-notes",
+  "kind": "changelog",
+  "url": "https://platform.claude.com/docs/en/release-notes/overview",
+  "summary": "1 line(s) added, 0 removed.",
+  "minor": false,
+  "by": "fallback",
+  "added": 1,
+  "removed": 0,
+  "diff": "diffs/dc25df7759-anthropic-api-release-notes.diff"
  }
 ]
