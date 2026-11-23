@@ -147,7 +147,7 @@ The table shows the standard limits for an organization. The limits can differ i
 
 ### Active monitor limits
 
-Your organization's usage tier sets the maximum number of active monitors. Search and Page monitors share this limit across all API keys and the API Console. Paused monitors do not count toward the limit.
+Your organization's usage tier sets the maximum number of active monitors. Search, Page, and Agent monitors share this limit across all API keys and the API Console. Paused monitors do not count toward the limit.
 
 | Usage tier | Active monitor limit |
 |---|---|
