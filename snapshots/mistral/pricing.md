@@ -130,7 +130,7 @@ Contact Sales
 | White label |  |  |  |  |
 | Usage and data. |  |  |  |  |
 | Extend usage with PAYG credits |  |  |  |  |
-| Model training | Opt-out | Opt-out | Opt-out | Opt-out |
+| Model training | Opt-out available | Opt-out available | Opt-out available | Opt-out |
 | Customer service. |  |  |  |  |
 | Help center |  |  |  |  |
 | Chat and email support |  |  |  |  |
