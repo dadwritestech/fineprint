@@ -1,0 +1,13 @@
+diff --git a/snapshots/perplexity/api-pricing.md b/snapshots/perplexity/api-pricing.md
+index 5bdb3bd..6ecdb7a 100644
+--- a/snapshots/perplexity/api-pricing.md
++++ b/snapshots/perplexity/api-pricing.md
+@@ -64,6 +64,7 @@ What a result contains, the request controls, and the limits on queries and resu
+ | Search | $0.001 per succeeded Search run | $1 per 1,000 runs |
+ | Page | $0.001 per counted fetched URL in a succeeded Page run | $1 per 1,000 counted URLs |
++| Agent | Perplexity bills an Agent run as Agent API usage. | No separate Monitor API fee |
+ 
+-Cost = (succeeded Search runs + counted fetched URLs from succeeded Page runs) × $0.001. Failed and skipped runs are free. A succeeded Search run is billed once, even if it performs multiple searches or returns no findings. In the calculator, choose Monitor API and enter both totals for the same period. The run's `usage.cost` reports list-price cost, not the invoice or amount charged.
++Search and Page cost = (succeeded Search runs + counted fetched URLs from succeeded Page runs) × $0.001. Failed and skipped Search and Page runs are free. A succeeded Search run is billed once, even if it performs multiple searches or returns no findings. In the calculator, choose Monitor API to estimate Search and Page costs. Enter both totals for the same period. The run's `usage.cost` reports list-price cost, not the invoice or amount charged.
+ 
+ ### Rate limits
