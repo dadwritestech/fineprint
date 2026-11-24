@@ -1,6 +1,26 @@
 {
+ "anthropic/model-deprecations": {
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "28a925ca3983b4a2cc33714e1e74c4949126f013ec1a4bb4613133ae2c22af4e"
+ },
+ "anthropic/rate-limits": {
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "87a9722ea1354c5adb9e6dd39f4cb9b3628373be4feb3f4f7192407f83abffba"
+ },
+ "mistral/models": {
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "b0f62dc7dfa7074ebaab14a1620b33ed20a8a68d8df0aa99dafa1e26369e131e"
+ },
+ "openai/api-pricing": {
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "549f6bd2a6d53d7e57023fbdacf3d0b3e68cda6d1a1e04b6f79a4d7a65f1ac4a"
+ },
  "openai/chatgpt-pricing": {
-  "first_seen": "2026-11-24T09:59:37+00:00",
-  "sha256": "e4b53f04b50fb0e526e95c4eced03697a6e9305059a9a5c4f0a09ac60e191795"
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "9263e36e50a003b00000768531431681bb765ee282c54bac69e7923a20ee6a72"
+ },
+ "openai/rate-limits": {
+  "first_seen": "2026-11-24T22:31:20+00:00",
+  "sha256": "7a3c575a8854f629205ef2a4c27eea96aa2bb6655d1f72c5e9265574299e85d7"
  }
 }
