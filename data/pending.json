@@ -1,10 +1,6 @@
 {
- "mistral/models": {
-  "first_seen": "2026-11-25T17:00:43+00:00",
-  "sha256": "53df9067dc00f1e148ff2cac06937869f0a686e0947090a54841c989ea2e0d4c"
- },
  "openai/chatgpt-pricing": {
-  "first_seen": "2026-11-25T17:00:43+00:00",
-  "sha256": "9263e36e50a003b00000768531431681bb765ee282c54bac69e7923a20ee6a72"
+  "first_seen": "2026-11-25T21:45:48+00:00",
+  "sha256": "d750a33c624ef6d18e9b8ff0c76af04858b061aa3b7e48c2547d3d7e0361d371"
  }
 }

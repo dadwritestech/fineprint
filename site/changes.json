@@ -15111,5 +15111,22 @@
   "added": 6,
   "removed": 6,
   "diff": "diffs/d9d782fbb5-openai-deprecations.diff"
+ },
+ {
+  "id": "33d489130e-mistral-models",
+  "v": 2,
+  "date": "2026-11-25T17:00:43Z",
+  "sha": "33d489130e1f545b203b68e62beac0f35de9f05d",
+  "page": "mistral/models",
+  "vendor": "mistral",
+  "slug": "models",
+  "kind": "deprecations",
+  "url": "https://docs.mistral.ai/models",
+  "summary": "48 line(s) added, 30 removed (around \"Voxtral Mini TTS 3\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 48,
+  "removed": 30,
+  "diff": "diffs/33d489130e-mistral-models.diff"
  }
 ]
