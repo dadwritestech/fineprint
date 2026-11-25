@@ -35,5 +35,8 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
+      # The artifact list API can lag a just-finalized upload (seen as "Found 0
+      # artifact(s)" on workflow_run triggers); wait it out.
+      - run: sleep 20
       - id: deployment
         uses: actions/deploy-pages@v4
