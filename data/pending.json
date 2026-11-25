@@ -1,26 +1,26 @@
 {
+ "anthropic/api-pricing": {
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "4a634fc720ee692a51f02fa3e1485be982f36e5219573bb3cb9191272ad09e06"
+ },
+ "anthropic/api-release-notes": {
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "65cc69c0ef0ec9b782f2e042d2fa9ce5acd7cd677e9f08423d98f91acf64fbbc"
+ },
  "anthropic/model-deprecations": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "28a925ca3983b4a2cc33714e1e74c4949126f013ec1a4bb4613133ae2c22af4e"
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "eb3ecd0dc02941f48f94128a57696259e1111cb37bbb0b03d26e4b7b278fb3fb"
  },
  "anthropic/rate-limits": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "87a9722ea1354c5adb9e6dd39f4cb9b3628373be4feb3f4f7192407f83abffba"
- },
- "mistral/models": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "b0f62dc7dfa7074ebaab14a1620b33ed20a8a68d8df0aa99dafa1e26369e131e"
- },
- "openai/api-pricing": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "549f6bd2a6d53d7e57023fbdacf3d0b3e68cda6d1a1e04b6f79a4d7a65f1ac4a"
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "1a730da6bb5203ffef6c7086625b2ddd789bc8d3910d0b7f2b89e496fadaf36c"
  },
  "openai/chatgpt-pricing": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "9263e36e50a003b00000768531431681bb765ee282c54bac69e7923a20ee6a72"
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "d750a33c624ef6d18e9b8ff0c76af04858b061aa3b7e48c2547d3d7e0361d371"
  },
- "openai/rate-limits": {
-  "first_seen": "2026-11-24T22:31:20+00:00",
-  "sha256": "7a3c575a8854f629205ef2a4c27eea96aa2bb6655d1f72c5e9265574299e85d7"
+ "openai/deprecations": {
+  "first_seen": "2026-11-25T08:43:53+00:00",
+  "sha256": "69f82a1c4a6aab52cd4ab9eac2022c5a5826874ce0c7bc29d8eb6e383587bf51"
  }
 }
