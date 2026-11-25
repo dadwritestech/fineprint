@@ -38,6 +38,16 @@ v3.0
 
 Efficient, low-latency speech transcription model. Supports multilingual transcription, diarization and context biasing in over 50 languages.
 
+Voxtral Mini TTS 3
+
+Voxtral Mini TTS 3
+
+v3.0
+
+### Voxtral Mini TTS 3
+
+State-of-the-art expressiveness and instruction following across 35+ languages and 50+ dialects
+
 Mistral Large 4
 
 Mistral Large 4
@@ -82,16 +92,6 @@ Hybrid instruct and reasoning MoE; unifies Instruct, Magistral, and Devstral int
 
 Text and multimodal models for broad reasoning, coding, tool use, and agentic tasks.
 
-DeepSeek V4.1 Flash 1017
-
-DeepSeek V4.1 Flash 1017
-
-vv4.1-flash-1017
-
-### DeepSeek V4.1 Flash 1017
-
-DeepSeek V4.1 Flash 1017 is a third-party open weight model from DeepSeek, hosted by Mistral, with support for text and image inputs. Ideal for long-context coding and agentic workflows. The model is served without Mistral modifications.
-
 GLM 5.3 Flash
 
 GLM 5.3 Flash
@@ -102,15 +102,15 @@ v5.3-flash
 
 Z.AI's GLM 5.3 Flash is a multimodal 320B-parameter (18B active) Mixture-of-Experts model. Built for developer agent workflows, visual coding, and complex tool-use tasks. The model is served without Mistral modifications.
 
-Mistral Large 4
+DeepSeek V4.1 Flash 1017
 
-Mistral Large 4
+DeepSeek V4.1 Flash 1017
 
-v26.10
+vv4.1-flash-1017
 
-### Mistral Large 4
+### DeepSeek V4.1 Flash 1017
 
-Open-weight hybrid instruct-and-reasoning MoE with multimodal input; unifies instruction, reasoning, and agentic capabilities in a single model, state-of-the-art among open weights on cybersecurity, finance, and manufacturing, natively fluent in 160+ languages.
+DeepSeek V4.1 Flash 1017 is a third-party open weight model from DeepSeek, hosted by Mistral, with support for text and image inputs. Ideal for long-context coding and agentic workflows. The model is served without Mistral modifications.
 
 GLM 5.3
 
@@ -131,6 +131,16 @@ v26.03
 ### Mistral Small 4
 
 Hybrid instruct and reasoning MoE; unifies Instruct, Magistral, and Devstral into one model with multimodal input.
+
+Mistral Large 4
+
+Mistral Large 4
+
+v26.10
+
+### Mistral Large 4
+
+Open-weight hybrid instruct-and-reasoning MoE with multimodal input; unifies instruction, reasoning, and agentic capabilities in a single model, state-of-the-art among open weights on cybersecurity, finance, and manufacturing, natively fluent in 160+ languages.
 
 Ministral 3 (14B)
 
@@ -161,6 +171,14 @@ v25.12
 ### Ministral 3 (3B)
 
 Best-in-class frontier AI to the edge.
+
+Mistral Next
+
+Mistral Next
+
+### Mistral Next
+
+A prototype model, designed to be brief and concise.
 
 Timestral
 
@@ -262,6 +280,16 @@ v3.0
 
 Highest accuracy speech transcription model. State-of-the-art multilingual transcription and diarization, with support for over 50 languages and context biasing.
 
+Voxtral Mini TTS 3
+
+Voxtral Mini TTS 3
+
+v3.0
+
+### Voxtral Mini TTS 3
+
+State-of-the-art expressiveness and instruction following across 35+ languages and 50+ dialects
+
 Voxtral Small
 
 Voxtral Small
@@ -314,16 +342,6 @@ State-of-the-art semantic model for extracting representation of text extracts.
 
 Models for safety filtering, moderation, and policy checks.
 
-Shieldstral
-
-Shieldstral
-
-v1.0
-
-### Shieldstral
-
-Text and image safety classification against a supplied policy.
-
 Mistral Moderation 2
 
 Mistral Moderation 2
@@ -334,29 +352,29 @@ v26.03
 
 A classifier service for text content moderation.
 
+Shieldstral
+
+Shieldstral
+
+v1.0
+
+### Shieldstral
+
+Text and image safety classification against a supplied policy.
+
 ## Time series models
 
 Models for zero-shot time series forecasting with covariate support and probabilistic outputs.
 
-Timestral 1.0 5M
+Timestral 1.0 209M
 
-Timestral 1.0 5M
-
-v1.0
-
-### Timestral 1.0 5M
-
-Timestral 1.0 5M is a time series foundation model for zero-shot forecasting. The smallest model in the Timestral family, it delivers fast, lightweight forecasts, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
-
-Timestral 1.0 28M
-
-Timestral 1.0 28M
+Timestral 1.0 209M
 
 v1.0
 
-### Timestral 1.0 28M
+### Timestral 1.0 209M
 
-Timestral 1.0 28M is a time series foundation model for zero-shot forecasting. Part of the Timestral family, it is optimised for low-latency forecasting, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
+Timestral 1.0 209M is a time series foundation model for zero-shot forecasting. It ranks first among pretrained and zero-shot models on GIFT-Eval, TIME, and fev-bench, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
 
 Timestral 1.0 123M
 
@@ -368,15 +386,25 @@ v1.0
 
 Timestral 1.0 123M is a time series foundation model for zero-shot forecasting. Part of the Timestral family, it offers a balance of forecast accuracy and efficiency, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
 
-Timestral 1.0 209M
+Timestral 1.0 28M
 
-Timestral 1.0 209M
+Timestral 1.0 28M
 
 v1.0
 
-### Timestral 1.0 209M
+### Timestral 1.0 28M
 
-Timestral 1.0 209M is a time series foundation model for zero-shot forecasting. It ranks first among pretrained and zero-shot models on GIFT-Eval, TIME, and fev-bench, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
+Timestral 1.0 28M is a time series foundation model for zero-shot forecasting. Part of the Timestral family, it is optimised for low-latency forecasting, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
+
+Timestral 1.0 5M
+
+Timestral 1.0 5M
+
+v1.0
+
+### Timestral 1.0 5M
+
+Timestral 1.0 5M is a time series foundation model for zero-shot forecasting. The smallest model in the Timestral family, it delivers fast, lightweight forecasts, with support for contexts up to 32K timesteps, past-only and known-future covariates, and probabilistic quantile outputs.
 
 ## Other specialist
 
@@ -396,8 +424,12 @@ Older models that have been deprecated or retired.
 
 | Model | Version | API | Deprecation | Retirement | Alternative |
 |---|---|---|---|---|---|
+| Mistral Next |  | - | - | - | Mistral Large 3 |
+| Mathstral 7B | 0.1 | - | - | - | Mistral Small 4 |
+| Mistral Large 3 | 25.12 | mistral-large-2512 | 06/09/2026 | 05/03/2027 | Mistral Large 4 |
 | Voxtral Mini Transcribe 2 | 26.02 | voxtral-mini-2602voxtral-mini-latest | 06/09/2026 | 05/03/2027 | Voxtral Mini Transcribe 3 |
 | Voxtral Mini Transcribe Realtime | 26.02 | voxtral-mini-transcribe-realtime-2602voxtral-mini-realtime-latest | 06/09/2026 | 05/03/2027 | Voxtral Mini Transcribe Realtime 3 |
+| Voxtral TTS | 26.03 | voxtral-mini-tts-2603 | 06/09/2026 | 05/03/2027 | Voxtral Mini TTS 3 |
 | Mistral Medium 3.5 | 26.04 | mistral-medium-3-5mistral-medium-latest | 06/09/2026 | 05/03/2027 | Mistral Large 4 |
 | OCR 4.0 | 4.0 | mistral-ocr-4-0 | 02/08/2026 | 03/08/2026 | OCR 4.1 |
 | Leanstral 1.5 | 1.5 | labs-leanstral-1-5 | 02/08/2026 | 03/08/2026 | - |
