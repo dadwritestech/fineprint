@@ -160,7 +160,7 @@ If you need limits higher than the Scale tier, contact sales through the Rate li
 
 2 Opus rate limit is a total limit that applies to combined traffic across Claude Opus 4.8, Opus 4.7, Opus 4.6, and Opus 4.5. Claude Opus 4.5 is deprecated on the Claude API. For other platforms, see Model deprecations. Claude Opus 5.5 and Claude Opus 5 each have a separate rate limit and are not part of this combined bucket.
 
-3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5 (deprecated; see Model deprecations). Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.
+3 Sonnet 4.x rate limit is a total limit that applies to combined traffic across Sonnet 4.6 and Sonnet 4.5. Claude Sonnet 4.5 is deprecated on the Claude API. For other platforms, see Model deprecations. Claude Sonnet 5.5 and Claude Sonnet 5 each have a separate rate limit and are not part of this combined bucket.
 
 ### Ramp limits
 
@@ -251,6 +251,8 @@ To request higher rate limits or a higher monthly spend cap, use Request tier in
 
 Claude Platform on AWS: On the Rate limits page, the button for rate limits and the spend cap is Request higher limits. To use it, you need the Admin role in the Claude Console and the `ListAccountRateLimitIncreaseRequests` and `CreateAccountRateLimitIncreaseRequest` IAM actions. For what to include, who can't use the button, and other ways to ask, see Rate limits and quotas on Claude Platform on AWS.
 
+To request higher limits on Claude Models on Google Cloud (Anthropic managed), see Rate limits on Claude Models on Google Cloud (Anthropic managed).
+
 ## Setting lower limits for workspaces
 
 For more about workspaces, see Workspaces.
@@ -261,7 +263,7 @@ Example: If your organization's limit is 40,000 input tokens per minute and 8,00
 
 Note:
 
-- On Claude Models on Google Cloud (Anthropic managed) and Claude Platform on AWS, you can't set spend limits on the default workspace.
+- A spend limit on the default workspace is not available on Claude Models on Google Cloud (Anthropic managed) or Claude Platform on AWS.
 - A spend limit on the default workspace might not count or stop some usage in that workspace. This includes usage from the Claude Console (such as playground) and from Claude Managed Agents sessions. It also includes Claude Code or Claude Desktop usage when a member signs in with a Claude Console account and uses the default workspace. Your organization's spend limit applies to all of this usage.
 - If not set, workspace limits match the organization's limit.
 - Workspace limits are set for each limiter type (such as requests per minute, input tokens per minute, or output tokens per minute).
