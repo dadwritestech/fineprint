@@ -1,22 +1,26 @@
 <!-- fineprint snapshot: openai/chatgpt-pricing | source: https://openai.com/chatgpt/pricing/ -->
 
+### Get 2× usage and fast mode
+
+Sign up for ChatGPT Business by Nov 30 and get 2x included usage and fast mode at no extra cost for all seats through Dec 31.
+
+Get started
+
+### Get 2× usage and fast mode
+
+Sign up for ChatGPT Business by Nov 30 and get 2x included usage and fast mode at no extra cost for all seats through Dec 31.
+
+Get started
+
 ChatGPT
 
 # Pricing
 
 See pricing for our individual, business, and enterprise plans.
 
-### For life sciences research, explore the Rosalind Academic Plan.
-
-Learn more
-
-### For life sciences research, explore the Rosalind Academic Plan.
-
-Learn more
-
 ### Free
 
-Best for trying out ChatGPT
+Intelligence for everyday tasks
 
 / month
 
@@ -35,7 +39,7 @@ Have an existing plan? See billing help Unlimited text chats subject to abuse gu
 
 ### Go
 
-Best for longer conversations
+Expanded access
 
 / month
 
@@ -53,7 +57,7 @@ This plan may include ads. Learn more Unlimited text chats subject to abuse guar
 
 ### Plus
 
-Best for advanced work and productivity
+Do more with advanced intelligence
 
 / month
 
@@ -61,7 +65,7 @@ Get Plus
 
 Everything in Go and:
 
-- Advanced reasoning models with GPT-6
+- Advanced reasoning models with GPT-6.2
 - Expanded messages and uploads
 - More complex and accurate image creation
 - Expanded deep research
@@ -75,7 +79,7 @@ Limits apply
 
 ### Pro
 
-Best for research and coding
+Maximize your productivity
 
 From
 
