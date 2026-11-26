@@ -115,10 +115,12 @@ Grok Voice API
   - No role order limitation: You can mix `system`, `user`, or `assistant` roles in any sequence for your conversation context.
   - `logprobs` and `top_logprobs` are not supported by models `grok-4.20` and newer. These fields will be silently ignored if set.
 - Image input models
-  - Maximum image size: `20MiB`
-  - Maximum number of images: No limit
-  - Supported image file types: `jpg/jpeg` or `png`.
-  - Any image/text input order is accepted (e.g. text prompt can precede image prompt)
+  - Maximum image size: 25 MiB per image
+  - Maximum number of images: no fixed limit
+  - Supported image file types: JPEG, PNG, WebP, and ICO
+  - Minimum image size: both width and height at least 8 pixels, and at least 512 pixels in total (for example, 16×32 or 23×23)
+  - Image URLs must use `https://`, be publicly reachable and download within 5 seconds
+  - Any image/text input order is accepted (e.g., text prompt can precede image prompt)
 - Batch API
   - Not every model accepts Batch API requests. See Details on each model page.
 - Encrypted reasoning
@@ -136,4 +138,4 @@ Some models have aliases to help users automatically migrate to the next version
 
 For most users, the aliased `<modelname>` or `<modelname>-latest` are recommended, as you would receive the latest features automatically.
 
-Last updated: September 21, 2026
+Last updated: November 25, 2026
