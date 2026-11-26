@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Wed, 25 Nov 2026 21:50:09 +0000</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 08:33:28 +0000</lastBuildDate>
+<item><title>OpenAI chatgpt-pricing: 14 line(s) added, 12 removed (around &quot;Get 2× usage and fast mode&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/39d439121b-openai-chatgpt-pricing.html</link>
+<guid isPermaLink="false">39d439121b-openai-chatgpt-pricing</guid><pubDate>Wed, 25 Nov 2026 21:45:48 +0000</pubDate>
+<category>openai</category><category>pricing</category>
+<description>14 line(s) added, 12 removed (around &quot;Get 2× usage and fast mode&quot;). (+14/-12 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/39d439121b-openai-chatgpt-pricing.diff . Page: https://openai.com/chatgpt/pricing/</description></item>
 <item><title>Mistral models: 48 line(s) added, 30 removed (around &quot;Voxtral Mini TTS 3&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/33d489130e-mistral-models.html</link>
 <guid isPermaLink="false">33d489130e-mistral-models</guid><pubDate>Wed, 25 Nov 2026 17:00:43 +0000</pubDate>
 <category>mistral</category><category>deprecations</category>
@@ -238,8 +242,4 @@
 <guid isPermaLink="false">3d4e15eaa6-anthropic-api-pricing</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
 <category>anthropic</category><category>pricing</category>
 <description>34 line(s) added, 21 removed. (+34/-21 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/3d4e15eaa6-anthropic-api-pricing.diff . Page: https://platform.claude.com/docs/en/about-claude/pricing</description></item>
-<item><title>Anthropic api-release-notes: 8 line(s) added, 6 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/0f9a6015d5-anthropic-api-release-notes.html</link>
-<guid isPermaLink="false">0f9a6015d5-anthropic-api-release-notes</guid><pubDate>Wed, 11 Nov 2026 19:40:43 +0000</pubDate>
-<category>anthropic</category><category>changelog</category>
-<description>8 line(s) added, 6 removed. (+8/-6 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/0f9a6015d5-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
 </channel></rss>

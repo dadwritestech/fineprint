@@ -1,0 +1,66 @@
+diff --git a/snapshots/openai/chatgpt-pricing.md b/snapshots/openai/chatgpt-pricing.md
+index 0264bdf..f6c14df 100644
+--- a/snapshots/openai/chatgpt-pricing.md
++++ b/snapshots/openai/chatgpt-pricing.md
+@@ -1,21 +1,25 @@
+ <!-- fineprint snapshot: openai/chatgpt-pricing | source: https://openai.com/chatgpt/pricing/ -->
+ 
+-ChatGPT
++### Get 2× usage and fast mode
+ 
+-# Pricing
++Sign up for ChatGPT Business by Nov 30 and get 2x included usage and fast mode at no extra cost for all seats through Dec 31.
+ 
+-See pricing for our individual, business, and enterprise plans.
++Get started
++
++### Get 2× usage and fast mode
+ 
+-### For life sciences research, explore the Rosalind Academic Plan.
++Sign up for ChatGPT Business by Nov 30 and get 2x included usage and fast mode at no extra cost for all seats through Dec 31.
+ 
+-Learn more
++Get started
+ 
+-### For life sciences research, explore the Rosalind Academic Plan.
++ChatGPT
++
++# Pricing
+ 
+-Learn more
++See pricing for our individual, business, and enterprise plans.
+ 
+ ### Free
+ 
+-Best for trying out ChatGPT
++Intelligence for everyday tasks
+ 
+ / month
+@@ -36,5 +40,5 @@ Have an existing plan? See billing help Unlimited text chats subject to abuse gu
+ ### Go
+ 
+-Best for longer conversations
++Expanded access
+ 
+ / month
+@@ -54,5 +58,5 @@ This plan may include ads. Learn more Unlimited text chats subject to abuse guar
+ ### Plus
+ 
+-Best for advanced work and productivity
++Do more with advanced intelligence
+ 
+ / month
+@@ -62,5 +66,5 @@ Get Plus
+ Everything in Go and:
+ 
+-- Advanced reasoning models with GPT-6
++- Advanced reasoning models with GPT-6.2
+ - Expanded messages and uploads
+ - More complex and accurate image creation
+@@ -76,5 +80,5 @@ Limits apply
+ ### Pro
+ 
+-Best for research and coding
++Maximize your productivity
+ 
+ From

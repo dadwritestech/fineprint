@@ -15128,5 +15128,22 @@
   "added": 48,
   "removed": 30,
   "diff": "diffs/33d489130e-mistral-models.diff"
+ },
+ {
+  "id": "39d439121b-openai-chatgpt-pricing",
+  "v": 2,
+  "date": "2026-11-25T21:45:48Z",
+  "sha": "39d439121ba4438538a2a80d4590ee59667a5ee1",
+  "page": "openai/chatgpt-pricing",
+  "vendor": "openai",
+  "slug": "chatgpt-pricing",
+  "kind": "pricing",
+  "url": "https://openai.com/chatgpt/pricing/",
+  "summary": "14 line(s) added, 12 removed (around \"Get 2\u00d7 usage and fast mode\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 14,
+  "removed": 12,
+  "diff": "diffs/39d439121b-openai-chatgpt-pricing.diff"
  }
 ]

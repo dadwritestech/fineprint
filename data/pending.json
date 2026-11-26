@@ -1,6 +1,14 @@
 {
- "openai/chatgpt-pricing": {
-  "first_seen": "2026-11-25T21:45:48+00:00",
-  "sha256": "d750a33c624ef6d18e9b8ff0c76af04858b061aa3b7e48c2547d3d7e0361d371"
+ "mistral/changelog": {
+  "first_seen": "2026-11-26T08:28:48+00:00",
+  "sha256": "59c5bf34691dc823bb9f3adb113dc3c23904dab49e2afc3d8784e7335a29af2c"
+ },
+ "mistral/models": {
+  "first_seen": "2026-11-26T08:28:48+00:00",
+  "sha256": "8e41400523f67f7291c8ff6e212750954aafb64d233fff95ed6e00cd515ebe30"
+ },
+ "perplexity/rate-limits": {
+  "first_seen": "2026-11-26T08:28:48+00:00",
+  "sha256": "5e354d26c4d14ff0373df9192d5624230b5d4fd7336efb1bfb9f4e1b182e3531"
  }
 }
