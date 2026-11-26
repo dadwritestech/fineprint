@@ -12,7 +12,7 @@ DeepSeek V4.1 Flash 1017
 
 DeepSeek V4.1 Flash 1017
 
-vv4.1-flash-1017
+v4.1-flash-1017
 
 ### DeepSeek V4.1 Flash 1017
 
@@ -106,7 +106,7 @@ DeepSeek V4.1 Flash 1017
 
 DeepSeek V4.1 Flash 1017
 
-vv4.1-flash-1017
+v4.1-flash-1017
 
 ### DeepSeek V4.1 Flash 1017
 
