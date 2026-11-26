@@ -1,0 +1,18 @@
+diff --git a/snapshots/mistral/models.md b/snapshots/mistral/models.md
+index ae54609..32eff4e 100644
+--- a/snapshots/mistral/models.md
++++ b/snapshots/mistral/models.md
+@@ -13,5 +13,5 @@ DeepSeek V4.1 Flash 1017
+ DeepSeek V4.1 Flash 1017
+ 
+-vv4.1-flash-1017
++v4.1-flash-1017
+ 
+ ### DeepSeek V4.1 Flash 1017
+@@ -107,5 +107,5 @@ DeepSeek V4.1 Flash 1017
+ DeepSeek V4.1 Flash 1017
+ 
+-vv4.1-flash-1017
++v4.1-flash-1017
+ 
+ ### DeepSeek V4.1 Flash 1017
