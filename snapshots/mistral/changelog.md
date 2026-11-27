@@ -15,12 +15,12 @@
   ### Voice Agents released: managed real-time bidirectional voice pipeline
   Read release note
 - October 14, 2026What's newStudio
-  ### Workflow Visualizer
-  Read release note
-- October 14, 2026What's newStudio
   ### Secrets Manager — store and inject secrets in Studio
   Read release note
-- October 9, 2026What's newStudioStudio
+- October 14, 2026What's newStudio
+  ### Workflow Visualizer
+  Read release note
+- October 9, 2026What's newStudio
   ### Managed Deployments
   Read release note
 - October 6, 2026What's newModels
@@ -30,10 +30,10 @@
 ## September 2026
 
 - September 29, 2026DeprecationModels
-  ### Deprecation notice: OCR 4.0 (mistral-ocr-4-0)
+  ### Deprecation notice: Leanstral 1.5 (labs-leanstral-1-5)
   Read release note
 - September 29, 2026DeprecationModels
-  ### Deprecation notice: Leanstral 1.5 (labs-leanstral-1-5)
+  ### Deprecation notice: OCR 4.0 (mistral-ocr-4-0)
   Read release note
 - September 29, 2026DeprecationModels
   ### Deprecation notice: Z.ai GLM 5.2 (zai-glm-5-2)
@@ -41,16 +41,16 @@
 - September 28, 2026ImprovementModels
   ### Z.ai GLM 5.3 is now Generally Available
   Read release note
-- September 22, 2026What's newVibe WorkVibe Work
+- September 22, 2026What's newVibe Work
   ### Spreadsheets in Vibe Work
   Read release note
-- September 22, 2026What's newVibe WorkVibe Work
+- September 22, 2026What's newVibe Work
   ### Mini App Canvas
   Read release note
-- September 22, 2026What's newVibe WorkVibe Work
+- September 22, 2026What's newVibe Work
   ### Agentic Knowledge Base
   Read release note
-- September 22, 2026ImprovementVibe WorkVibe WorkVibe Code
+- September 22, 2026ImprovementVibe Code
   ### A simpler Vibe experience
   Read release note
 - September 14, 2026SecurityVibe Code
@@ -71,14 +71,14 @@
 
 ## July 2026
 
-- July 31, 2026ImprovementStudioStudio
+- July 31, 2026ImprovementStudio
   ### Enhanced Search and Filtering for Workflows
-  Read release note
-- July 16, 2026What's newModels
-  ### Mistral OCR 4.1 released
   Read release note
 - July 16, 2026ImprovementAPI
   ### OCR API: block-level confidence score granularity
+  Read release note
+- July 16, 2026What's newModels
+  ### Mistral OCR 4.1 released
   Read release note
 
 ## June 2026
@@ -92,11 +92,11 @@
 
 ## May 2026
 
-- May 28, 2026ImprovementVibe WorkVibe Code
-  ### Documentation restructured under /vibe/*
-  Read release note
 - May 28, 2026What's newVibe WorkVibe Code
   ### Launching Vibe: our unified agent across Work, Code, and Chat
+  Read release note
+- May 28, 2026ImprovementVibe WorkVibe Code
+  ### Documentation restructured under /vibe/*
   Read release note
 - May 12, 2026SecurityAPI
   ### MAI-2026-002: TanStack supply chain attack affecting Mistral SDK packages
@@ -122,11 +122,11 @@
 - March 16, 2026What's newModels
   ### Mistral Small 4 released
   Read release note
-- March 12, 2026What's newModels
-  ### Mistral Moderation 2 (26.03) released
-  Read release note
 - March 12, 2026What's newAPIStudio
   ### Custom Guardrails support for Agents, Conversations, and Chat Completions
+  Read release note
+- March 12, 2026What's newModels
+  ### Mistral Moderation 2 (26.03) released
   Read release note
 
 ## February 2026
@@ -137,11 +137,11 @@
 
 ## January 2026
 
-- January 27, 2026ImprovementAPI
-  ### Document Annotations update: 8-page limit removed
-  Read release note
 - January 27, 2026What's newVibe CodeModels
   ### Vibe 2.0 released and Devstral 2.0 moves to paid API access
+  Read release note
+- January 27, 2026ImprovementAPI
+  ### Document Annotations update: 8-page limit removed
   Read release note
 - January 19, 2026What's newAPI
   ### Inline batching available in the Batch API
@@ -185,11 +185,11 @@
 - July 30, 2025What's newModels
   ### Codestral 25.08 released
   Read release note
-- July 24, 2025What's newModels
-  ### Magistral Medium 1.1 and Magistral Small 1.1 released
-  Read release note
 - July 24, 2025What's newAPIStudio
   ### Document Library API and SDK audio/transcription support
+  Read release note
+- July 24, 2025What's newModels
+  ### Magistral Medium 1.1 and Magistral Small 1.1 released
   Read release note
 - July 15, 2025What's newModelsAPI
   ### Voxtral audio models and Transcription API released
@@ -269,11 +269,11 @@
 - November 18, 2024What's newModels
   ### Mistral Large 2.1 and Pixtral Large released
   Read release note
-- November 6, 2024What's newModelsAPI
-  ### Moderation API and Batch API released
-  Read release note
 - November 6, 2024ImprovementAPI
   ### New sampling parameters (presence_penalty, frequency_penalty, n) and temperature scaling
+  Read release note
+- November 6, 2024What's newModelsAPI
+  ### Moderation API and Batch API released
   Read release note
 
 ## October 2024
@@ -284,11 +284,11 @@
 
 ## September 2024
 
-- September 17, 2024What's newModels
-  ### Pixtral 12B and Mistral Small 24.09 released
-  Read release note
 - September 17, 2024ImprovementAPICloud
   ### Mistral Large 2 price reduction and new Free API tier
+  Read release note
+- September 17, 2024What's newModels
+  ### Pixtral 12B and Mistral Small 24.09 released
   Read release note
 - September 13, 2024SecurityVibe Work
   ### Security mitigation in Le Chat against obfuscated prompt data exfiltration
@@ -296,11 +296,11 @@
 
 ## July 2024
 
-- July 29, 2024What's newAPIStudio
-  ### Agents API released
-  Read release note
 - July 29, 2024What's newAPI
   ### Python and JavaScript SDKs v1.0 released
+  Read release note
+- July 29, 2024What's newAPIStudio
+  ### Agents API released
   Read release note
 - July 24, 2024What's newModels
   ### Mistral Large 2 released
