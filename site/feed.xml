@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>fineprint: what AI companies quietly changed</title>
 <link>https://dadwritestech.github.io/fineprint/</link><description>Diffs of AI vendors' pricing, limits, policies, terms and deprecation pages. Minor wording changes are excluded.</description>
-<lastBuildDate>Thu, 26 Nov 2026 21:43:42 +0000</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 08:47:43 +0000</lastBuildDate>
+<item><title>Perplexity rate-limits: 14 line(s) added, 1 removed (around &quot;Time Machine Limits&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/e3838e4208-perplexity-rate-limits.html</link>
+<guid isPermaLink="false">e3838e4208-perplexity-rate-limits</guid><pubDate>Thu, 26 Nov 2026 21:39:21 +0000</pubDate>
+<category>perplexity</category><category>limits</category>
+<description>14 line(s) added, 1 removed (around &quot;Time Machine Limits&quot;). (+14/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/e3838e4208-perplexity-rate-limits.diff . Page: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers</description></item>
+<item><title>xAI models-pricing: 7 line(s) added, 5 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/6c868eaa26-xai-models-pricing.html</link>
+<guid isPermaLink="false">6c868eaa26-xai-models-pricing</guid><pubDate>Thu, 26 Nov 2026 21:39:21 +0000</pubDate>
+<category>xai</category><category>pricing</category>
+<description>7 line(s) added, 5 removed. (+7/-5 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/6c868eaa26-xai-models-pricing.diff . Page: https://docs.x.ai/developers/models</description></item>
 <item><title>Mistral changelog: 312 line(s) added, 226 removed (around &quot;October 2026&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/961dcab700-mistral-changelog.html</link>
 <guid isPermaLink="false">961dcab700-mistral-changelog</guid><pubDate>Thu, 26 Nov 2026 08:28:48 +0000</pubDate>
 <category>mistral</category><category>changelog</category>
@@ -234,12 +242,4 @@
 <guid isPermaLink="false">2405091a71-anthropic-api-release-notes</guid><pubDate>Thu, 12 Nov 2026 19:59:56 +0000</pubDate>
 <category>anthropic</category><category>changelog</category>
 <description>2 line(s) added, 0 removed (around &quot;November 12, 2026&quot;). (+2/-0 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/2405091a71-anthropic-api-release-notes.diff . Page: https://platform.claude.com/docs/en/release-notes/overview</description></item>
-<item><title>Anthropic rate-limits: 16 line(s) added, 2 removed (around &quot;Ramp limits&quot;).</title><link>https://dadwritestech.github.io/fineprint/diffs/a223a79c0e-anthropic-rate-limits.html</link>
-<guid isPermaLink="false">a223a79c0e-anthropic-rate-limits</guid><pubDate>Thu, 12 Nov 2026 19:59:56 +0000</pubDate>
-<category>anthropic</category><category>limits</category>
-<description>16 line(s) added, 2 removed (around &quot;Ramp limits&quot;). (+16/-2 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/a223a79c0e-anthropic-rate-limits.diff . Page: https://platform.claude.com/docs/en/api/rate-limits</description></item>
-<item><title>Anthropic pricing: 3 line(s) added, 1 removed.</title><link>https://dadwritestech.github.io/fineprint/diffs/67982d41b6-anthropic-pricing.html</link>
-<guid isPermaLink="false">67982d41b6-anthropic-pricing</guid><pubDate>Thu, 12 Nov 2026 07:18:33 +0000</pubDate>
-<category>anthropic</category><category>pricing</category>
-<description>3 line(s) added, 1 removed. (+3/-1 lines). Raw diff: https://dadwritestech.github.io/fineprint/diffs/67982d41b6-anthropic-pricing.diff . Page: https://claude.com/pricing</description></item>
 </channel></rss>

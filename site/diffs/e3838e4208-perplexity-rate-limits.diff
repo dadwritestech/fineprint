@@ -1,0 +1,36 @@
+diff --git a/snapshots/perplexity/rate-limits.md b/snapshots/perplexity/rate-limits.md
+index 58e2119..b3e7c83 100644
+--- a/snapshots/perplexity/rate-limits.md
++++ b/snapshots/perplexity/rate-limits.md
+@@ -127,4 +127,6 @@ Search Rate Limiter Behavior:
+ Billing and rate limiting use different units. A successful request containing five queries is one billable Search API request, but it consumes five rate-limit units. Search rate limits are independent of your usage tier and apply consistently across all accounts using the same leaky bucket algorithm. See Search API pricing for billing details.
+ 
++A `POST /search` request with `snapshot_as_of` uses the Time Machine limits instead. If you need a higher limit, fill out our rate limit increase request form.
++
+ ## Monitor API limits
+ 
+@@ -195,5 +197,23 @@ Your organization's usage tier sets two Context API limits: requests per second
+ | Tiers 4–5 | 5 | 25 |
+ 
+-Over the requests-per-second limit, the request fails with `429` and error type `request_rate_limit_exceeded`, and no URLs are fetched. Wait for the number of seconds in the `Retry-After` header, then retry. A request with more URLs than your tier allows fails with `400`, error type `invalid_request`, and `param` `urls`, without counting against your rate limit. Split it into smaller requests. No request can carry more than 50 URLs. Responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers, counted in requests. If you need a higher limit, fill out our rate limit increase request form.
++Over the requests-per-second limit, the request fails with `429` and error type `request_rate_limit_exceeded`, and no URLs are fetched. Wait for the number of seconds in the `Retry-After` header, then retry. A request with more URLs than your tier allows fails with `400`, error type `invalid_request`, and `param` `urls`, without counting against your rate limit. Split it into smaller requests. No request can carry more than 50 URLs. Responses that went through rate limiting include `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` (Unix seconds) headers, counted in requests. A request with `snapshot_as_of` uses the Time Machine limits instead. If you need a higher limit, fill out our rate limit increase request form.
++
++## Time Machine Limits
++
++Search API and Context API requests with `snapshot_as_of` do not use the limits above. They have separate limits:
++
++| Tier | Search API (`POST /search`) | Context API (`POST /v1/context`) |
++|---|---|---|
++| Tier 0 | 1 request per second | 1 request per second |
++| Tiers 1–5 | 50 requests in total | 50 requests in total |
++
++- A request uses 1 unit, also when it has more than one query or URL.
++- On Tiers 1–5, the limit is a total, not a rate.
++- Over the limit, the request fails with `429` and error type `request_rate_limit_exceeded`. After you use all 50 requests, retrying does not help.
++- Responses include the `x-ratelimit-limit`, `x-ratelimit-remaining`, `x-ratelimit-used`, and `x-ratelimit-reset` headers. Read `x-ratelimit-remaining` to see how many requests you have left.
++
++## Need More Time Machine Requests?
++
++To raise your Time Machine limit, contact our sales team.
+ 
+ ## How Rate Limiting Works

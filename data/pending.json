@@ -1,14 +1,6 @@
 {
- "openai/chatgpt-pricing": {
-  "first_seen": "2026-11-26T21:39:21+00:00",
-  "sha256": "9263e36e50a003b00000768531431681bb765ee282c54bac69e7923a20ee6a72"
- },
- "perplexity/rate-limits": {
-  "first_seen": "2026-11-26T21:39:21+00:00",
-  "sha256": "9cba8779b274bdd3d374546b6b8eb1af38aa650209abf2dbd77fd4d3ca6ec7ed"
- },
- "xai/models-pricing": {
-  "first_seen": "2026-11-26T21:39:21+00:00",
-  "sha256": "a2512f15bcc994c73791de5d83714827aeb98cd15352fa4e8167e956c717d4f8"
+ "mistral/models": {
+  "first_seen": "2026-11-27T08:43:21+00:00",
+  "sha256": "621b1da1e126bf0cb1fe932953e297ead39a1aaaad7b5d50bbbca9e558d0fd4a"
  }
 }
