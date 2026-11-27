@@ -15213,5 +15213,22 @@
   "added": 7,
   "removed": 5,
   "diff": "diffs/6c868eaa26-xai-models-pricing.diff"
+ },
+ {
+  "id": "bf92de6607-mistral-models",
+  "v": 2,
+  "date": "2026-11-27T08:43:21Z",
+  "sha": "bf92de660794c464938724d972dae3e5368790d0",
+  "page": "mistral/models",
+  "vendor": "mistral",
+  "slug": "models",
+  "kind": "deprecations",
+  "url": "https://docs.mistral.ai/models",
+  "summary": "55 line(s) added, 51 removed (around \"Mistral Multimodal Embed\").",
+  "minor": false,
+  "by": "fallback",
+  "added": 55,
+  "removed": 51,
+  "diff": "diffs/bf92de6607-mistral-models.diff"
  }
 ]
