@@ -139,7 +139,7 @@ Frequently asked questions.
 
 Yes, Mistral's Free plan provides limited access to Vibe, including our latest models, chat, search, creation, and Vibe for code for agentic coding in your terminal. On the Free plan, you also get access to Mistral Studio.
 
-For most tasks and coding: Mistral Medium. For document AI: OCR. For audio and speech intelligence: Voxtral. For cost-sensitive projects: Mistral Small. See the Models overview for more information.
+For most tasks and coding: Mistral Large 4. For document AI: OCR 4.1. For audio and speech intelligence: Voxtral. For cost-sensitive projects: Mistral Small. See the Models overview for more information.
 
 Most models are priced per million tokens, with both input (your prompts) and output (responses) counted separately. For example, Mistral Large costs $0.5 /M tokens in and $1.5 /M tokens out. Batch processing, for high-volume work, reduces the price by 50%, and cached input tokens reduce input cost by up to 90% for repeated prompts. A few APIs are priced differently: OCR is per 1,000 pages, speech models are per minute, and tool APIs are priced per call.
 
