@@ -20,7 +20,7 @@ See pricing for our individual, business, and enterprise plans.
 
 ### Free
 
-Intelligence for everyday tasks
+Best for trying out ChatGPT
 
 / month
 
@@ -39,7 +39,7 @@ Have an existing plan? See billing help Unlimited text chats subject to abuse gu
 
 ### Go
 
-Expanded access
+Best for longer conversations
 
 / month
 
@@ -57,7 +57,7 @@ This plan may include ads. Learn more Unlimited text chats subject to abuse guar
 
 ### Plus
 
-Do more with advanced intelligence
+Best for advanced work and productivity
 
 / month
 
@@ -79,7 +79,7 @@ Limits apply
 
 ### Pro
 
-Maximize your productivity
+Best for research and coding
 
 From
 
