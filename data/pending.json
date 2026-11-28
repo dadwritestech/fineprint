@@ -1,1 +1,10 @@
-{}
+{
+ "mistral/models": {
+  "first_seen": "2026-11-28T20:12:17+00:00",
+  "sha256": "5dfce32338f65167809913435b4038d8990d42934b64f9e5124fcfc6d59bfe1a"
+ },
+ "openai/chatgpt-pricing": {
+  "first_seen": "2026-11-28T20:12:17+00:00",
+  "sha256": "d750a33c624ef6d18e9b8ff0c76af04858b061aa3b7e48c2547d3d7e0361d371"
+ }
+}
