@@ -1,0 +1,32 @@
+diff --git a/snapshots/openai/chatgpt-pricing.md b/snapshots/openai/chatgpt-pricing.md
+index f6c14df..2161695 100644
+--- a/snapshots/openai/chatgpt-pricing.md
++++ b/snapshots/openai/chatgpt-pricing.md
+@@ -21,5 +21,5 @@ See pricing for our individual, business, and enterprise plans.
+ ### Free
+ 
+-Intelligence for everyday tasks
++Best for trying out ChatGPT
+ 
+ / month
+@@ -40,5 +40,5 @@ Have an existing plan? See billing help Unlimited text chats subject to abuse gu
+ ### Go
+ 
+-Expanded access
++Best for longer conversations
+ 
+ / month
+@@ -58,5 +58,5 @@ This plan may include ads. Learn more Unlimited text chats subject to abuse guar
+ ### Plus
+ 
+-Do more with advanced intelligence
++Best for advanced work and productivity
+ 
+ / month
+@@ -80,5 +80,5 @@ Limits apply
+ ### Pro
+ 
+-Maximize your productivity
++Best for research and coding
+ 
+ From
